@@ -1,0 +1,59 @@
+(function(window) {
+
+function Animal(imageSource, sleepImageSource) {
+    this.oldX = 0;
+    this.oldY = 0;
+    this.radius = 38;
+    this.scale = 1;
+    this.imageSource = imageSource;
+    this.sleepImageSource = sleepImageSource;
+    this.sitBMP = null;
+    this.sleepBMP = null;
+    this.initialize();
+
+
+}
+
+Animal.prototype = new Container();
+
+Animal.prototype.vx = 0;
+Animal.prototype.vy = 0;
+Animal.prototype.oldX;
+Animal.prototype.oldY;
+Animal.prototype.radius;
+Animal.prototype.scale;
+Animal.prototype.bounce;
+Animal.prototype.imageSource;
+
+Animal.prototype.startX;
+Animal.prototype.startY;
+Animal.prototype.sleepImageSource;
+Animal.prototype.sitBMP;
+Animal.prototype.sleepBMP;
+
+
+Animal.prototype.Container_initialize = Animal.prototype.initialize;
+    Animal.prototype.initialize = function() {
+        this.Container_initialize();
+        var bmp = new Bitmap(this.imageSource);
+        this.addChild(bmp);
+        this.sleepBMP = new Bitmap(this.sleepImageSource);
+        this.sitBMP = bmp;
+
+    }
+    Animal.prototype.goToSleep = function()
+    {
+        this.removeChild(this.sitBMP);
+        this.addChild(this.sleepBMP);
+    }
+    function getInBed()
+    {
+        
+    }
+    function handleImageLoad() {
+       var bmp = new Bitmap(this.img);
+       this.addChild(bmp);
+    }
+
+window.Animal = Animal;
+}(window));

@@ -1,0 +1,431 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+ "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>
+    
+</title>
+<link href="skin/blue.monday/jplayer.blue.monday.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.jplayer.min.js"></script>
+<meta http-equiv="Content-Type" content="text/html;CHARSET=utf-8"/>
+<meta name="viewport" content="width=576,height=576" />
+<style type="text/css">
+@font-face {
+    font-family: "AldusLTStd-Italic";
+    src: url("font/ALDULTSI.TTF");
+}
+@font-face {
+    font-family: "AldusLTStd-Roman";
+    src: url("font/ALDULTSR.TTF");
+}
+@font-face {
+    font-family: "HandleOldstyleStd";
+    src: url("font/HANDLEOS.TTF");
+}
+body {
+    background-color: #FFFFFF;
+    border-bottom-style: solid;
+    border-bottom-width: 0;
+    border-top-style: solid;
+    border-top-width: 0;
+    height: 445px;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+    width: 850px;
+	font-size:14px
+}
+h1, h2, h3, h4, h5, h6 {
+    font-weight: normal;
+}
+p {
+    margin-bottom: 1.1em;
+    margin-top: 0;
+}
+#Lside p.lastNode {
+    margin-bottom: 0;
+}
+a:link img, a:visited img {
+    -moz-border-bottom-colors: none;
+    -moz-border-image: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    border-bottom-color: -moz-use-text-color;
+    border-bottom-style: none;
+    border-bottom-width: medium;
+    border-top-color: -moz-use-text-color;
+    border-top-style: none;
+    border-top-width: medium;
+}
+div.clearFloat {
+    clear: both;
+    font-size: 0;
+    height: 0;
+    line-height: 0;
+}
+li.clearFloat {
+    clear: both;
+}
+ul.symbolList {
+    display: inline;
+    float: left;
+    list-style-type: none;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+}
+.AbsWrap {
+    position: relative;
+    width: 100%;
+}
+.rowWrap {
+    width: 100%;
+}
+#Lside {
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: auto;
+    margin-top: 0;
+    width: 425px;
+}
+.box1 {
+    height: 445px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 425px;
+}
+.Rside {
+    left: 425px;
+    position: absolute;
+    top: 0;
+}
+.box2 {
+    background-color: white;
+    height: 445px;
+    width: 425px;
+}
+#id_Text_32 {
+    display: inline;
+    float: left;
+    height: 445px;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-top: 0;
+    width: 425px;
+}
+#id_Text_33 {
+    display: inline;
+    float: left;
+    height: 445px;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-top: 0;
+    width: 425px;
+}
+.Txt_So {
+    color: #000000;
+    /*font-family: 'AldusLTStd-Roman',Arial,Helvetica,sans-serif;
+    font-size: 14px;*/
+    left: 25px;
+    line-height: 192.86%;
+    margin-bottom: 0;
+    padding-bottom: 2px;
+    padding-top: 1px;
+    position: absolute;
+    text-align: left;
+    top: 109px;
+}
+.Txt_s {
+    color: #000000;
+    /*font-family: 'AldusLTStd-Roman',Arial,Helvetica,sans-serif;
+    font-size: 14px;*/
+    left: 244px;
+    line-height: 192.86%;
+    margin-bottom: 0;
+    padding-bottom: 2px;
+    padding-top: 1px;
+    position: absolute;
+    text-align: left;
+    top: 109px;
+}
+.Txt_The {
+    color: #000000;
+    /*font-family: 'AldusLTStd-Roman',Arial,Helvetica,sans-serif;
+    font-size: 14px;*/
+    left: 360px;
+    line-height: 192.86%;
+    margin-bottom: 0;
+    padding-bottom: 2px;
+    padding-top: 1px;
+    position: absolute;
+    text-align: left;
+    top: 109px;
+}
+.Txt_r {
+    color: #000000;
+    /*font-family: 'AldusLTStd-Roman',Arial,Helvetica,sans-serif;
+    font-size: 14px;*/
+    left: 390px;
+    line-height: 192.86%;
+    margin-bottom: 0;
+    padding-bottom: 2px;
+    padding-top: 1px;
+    position: absolute;
+    text-align: left;
+    top: 109px;
+}
+.Txt_st {
+    color: #000000;
+    /*font-family: 'AldusLTStd-Roman',Arial,Helvetica,sans-serif;
+    font-size: 14px;*/
+    left: 399px;
+    line-height: 192.86%;
+    margin-bottom: 0;
+    padding-bottom: 2px;
+    padding-top: 1px;
+    position: absolute;
+    text-align: left;
+    top: 109px;
+}
+.Txt_he {
+    color: #000000;
+    /*font-family: 'AldusLTStd-Roman',Arial,Helvetica,sans-serif;
+    font-size: 14px;*/
+    left: 25px;
+    line-height: 192.86%;
+    margin-bottom: 0;
+    padding-bottom: 2px;
+    padding-top: 1px;
+    position: absolute;
+    text-align: left;
+    top: 124px;
+}
+.Txt_The2 {
+    color: #000000;
+    /*font-family: 'AldusLTStd-Roman',Arial,Helvetica,sans-serif;
+    font-size: 14px;*/
+    left: 246px;
+    line-height: 192.86%;
+    margin-bottom: 0;
+    padding-bottom: 2px;
+    padding-top: 1px;
+    position: absolute;
+    text-align: left;
+    top: 124px;
+}
+.Txt_cried {
+    color: #000000;
+    /*font-family: 'AldusLTStd-Roman',Arial,Helvetica,sans-serif;
+    font-size: 14px;*/
+    left: 25px;
+    line-height: 192.86%;
+    margin-bottom: 0;
+    padding-bottom: 2px;
+    padding-top: 1px;
+    position: absolute;
+    text-align: left;
+    top: 139px;
+}
+.Txt_Oh {
+    color: #000000;
+    /*font-family: 'AldusLTStd-Roman',Arial,Helvetica,sans-serif;
+    font-size: 14px;*/
+    left: 20px;
+    line-height: 192.86%;
+    margin-bottom: 0;
+    padding-bottom: 2px;
+    padding-top: 1px;
+    position: absolute;
+    text-align: left;
+    top: 169px;
+}
+.Txt_how {
+    color: #000000;
+    /*font-family: 'AldusLTStd-Roman',Arial,Helvetica,sans-serif;
+    font-size: 14px;*/
+    left: 88px;
+    line-height: 192.86%;
+    margin-bottom: 0;
+    padding-bottom: 2px;
+    padding-top: 1px;
+    position: absolute;
+    text-align: left;
+    top: 169px;
+}
+.Txt_It {
+    color: #000000;
+    /*font-family: 'AldusLTStd-Roman',Arial,Helvetica,sans-serif;
+    font-size: 14px;*/
+    left: 25px;
+    line-height: 192.86%;
+    margin-bottom: 0;
+    padding-bottom: 2px;
+    padding-top: 1px;
+    position: absolute;
+    text-align: left;
+    top: 184px;
+}
+.Txt_Next {
+    color: #000000;
+    /*font-family: 'AldusLTStd-Roman',Arial,Helvetica,sans-serif;
+    font-size: 14px;*/
+    left: 249px;
+    line-height: 192.86%;
+    margin-bottom: 0;
+    padding-bottom: 2px;
+    padding-top: 1px;
+    position: absolute;
+    text-align: left;
+    top: 184px;
+}
+.Txt_alive {
+    color: #000000;
+    /*font-family: 'AldusLTStd-Roman',Arial,Helvetica,sans-serif;
+    font-size: 14px;*/
+    left: 25px;
+    line-height: 192.86%;
+    margin-bottom: 0;
+    padding-bottom: 2px;
+    padding-top: 1px;
+    position: absolute;
+    text-align: left;
+    top: 199px;
+}
+.Txt_The3 {
+    color: #000000;
+    /*font-family: 'AldusLTStd-Roman',Arial,Helvetica,sans-serif;
+    font-size: 14px;*/
+    left: 25px;
+    line-height: 192.86%;
+    margin-bottom: 0;
+    padding-bottom: 2px;
+    padding-top: 1px;
+    position: absolute;
+    text-align: left;
+    top: 229px;
+}
+.Txt_but {
+    color: #000000;
+    /*font-family: 'AldusLTStd-Roman',Arial,Helvetica,sans-serif;
+    font-size: 14px;*/
+    left: 25px;
+    line-height: 192.86%;
+    margin-bottom: 0;
+    padding-bottom: 2px;
+    padding-top: 1px;
+    position: absolute;
+    text-align: left;
+    top: 244px;
+}
+.Txt_by {
+    color: #000000;
+    /*font-family: 'AldusLTStd-Roman',Arial,Helvetica,sans-serif;
+    font-size: 14px;*/
+    left: 25px;
+    line-height: 192.86%;
+    margin-bottom: 0;
+    padding-bottom: 2px;
+    padding-top: 1px;
+    position: absolute;
+    text-align: left;
+    top: 259px;
+}
+.Txt_that {
+    color: #000000;
+    /*font-family: 'AldusLTStd-Roman',Arial,Helvetica,sans-serif;
+    font-size: 14px;*/
+    left: 25px;
+    line-height: 192.86%;
+    margin-bottom: 0;
+    padding-bottom: 2px;
+    padding-top: 1px;
+    position: absolute;
+    text-align: left;
+    top: 274px;
+}
+</style>
+</head>
+<body>
+      <div id="Lside">
+      	 <div class="box1">
+         <span class="box1"><img src="images/Text_32.jpg" id="id_Text_32" alt="" /></span>
+      	   <div class="clearFloat"></div>
+        <div class="Txt_So">
+	
+		<p class="lastNode"><span id="w000497">So he </span><span id="w000498">pulled the </span><span id="w000499">sleeping wolf&rsquo;s </span><span id="w000500">mouth </span><span id="w000501">wide open. </span><span id="w000502">The first thing</span>
+	</p>
+</div>
+<div class="Txt_he">
+	
+		<p class="lastNode"><span id="w000503">he saw </span><span id="w000504">was the little red </span><span id="w000505">cloak. </span><span id="w000506">The little </span><span id="w000507">girl </span><span id="w000508">sprang out and </span>
+	</p>
+</div>
+<div class="Txt_cried">
+	
+		<p class="lastNode"><span id="w000509">cried,</span>
+	</p>
+</div>
+<div class="Txt_Oh">
+	
+		<p class="lastNode"><span id="w000510">&ldquo;Oh, how </span><span id="w000511">frightened I was! </span>
+	</p>
+</div>
+<div class="Txt_It">
+	
+		<p class="lastNode"><span id="w000512">It was so </span><span id="w000513">dark </span><span id="w000514">inside </span><span id="w000515">the wolf.&rdquo; </span><span id="w000516">Next </span><span id="w000517">the </span><span id="w000518">old grandmother </span><span id="w000519">came, </span>
+	</p>
+</div>
+<div class="Txt_alive">
+	
+		<p class="lastNode"><span id="w000520">alive </span><span id="w000521">but </span><span id="w000522">hardly </span><span id="w000523">able to breathe.</span>
+	</p>
+</div>
+<div class="Txt_The3">
+	
+		<p class="lastNode"><span id="w000524">The wolf </span><span id="w000525">awoke </span><span id="w000526">and </span><span id="w000527">tried </span><span id="w000528">to spring up, </span>
+	</p>
+</div>
+<div class="Txt_but">
+	
+		<p class="lastNode"><span id="w000529">but he was so </span><span id="w000530">frightened </span>
+	</p>
+</div>
+<div class="Txt_by">
+	
+		<p class="lastNode"><span id="w000531">by the </span><span id="w000532">sight of the hunter </span>
+	</p>
+</div>
+<div class="Txt_that">
+	
+		<p class="lastNode"><span id="w000533">that he </span><span id="w000534">fell </span><span id="w000535">down </span><span id="w000536">dead.</span>
+	</p>
+</div>
+
+
+         </div>
+     </div>
+     
+<!--right side  -->
+    
+    <div class="Rside">
+	   <div class="box2">
+           <span id=""><img src="images/Text_33.jpg" id="id_Text_33" alt="" /></span>
+         </div>
+    </div>
+<div id="chk"></div>
+<div id="timeValue"></div>
+</body>
+</html>

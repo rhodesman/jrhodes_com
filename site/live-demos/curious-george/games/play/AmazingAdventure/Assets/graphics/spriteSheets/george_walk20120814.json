@@ -1,0 +1,22 @@
+{
+	"frames": {
+		"count": 162, 
+		"regY": 0, 
+		"height": 265, 
+		"regX": 0, 
+		"width": 183}, 
+	"images": [
+		"george_walk20120814_0.png",
+		"george_walk20120814_1.png",
+		"george_walk20120814_2.png"], 
+	"animations": {
+		"resting to walk right": [40, 47], 
+		"walk right": [48, 79], 
+		"resting to walk forward": [80, 87], 
+		"walk left": [7, 39], 
+		"walk back": [129, 161], 
+		"walk forward": [88, 120], 
+		"resting to walk left": [0, 6], 
+		"rest to walk back": [121, 128]
+	}
+}

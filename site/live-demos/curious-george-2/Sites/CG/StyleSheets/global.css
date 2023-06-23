@@ -1,0 +1,50 @@
+/**
+ * global.less
+ * @description Global variables / definitions
+ * @author Sean Smith
+ */
+.centered {
+  margin: 0 auto;
+  width: 916px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.rounded-wrapper {
+  border: 8px solid #ffffff;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  box-shadow: 0 0 9px rgba(0, 0, 0, 0.6);
+  -webkit-box-shadow: 0 0 9px rgba(0, 0, 0, 0.6);
+  -moz-box-shadow: 0 0 9px rgba(0, 0, 0, 0.6);
+}
+.image-box {
+  padding: 8px;
+  background: #ffffff;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+  -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+}
+.hidden-text {
+  text-decoration: none;
+  text-indent: -9999em;
+}
+.FilmotypeModern {
+  font-family: FilmotypeModern;
+  font-weight: normal;
+  font-style: normal;
+}
+.FilmotypePower {
+  font-family: FilmotypePower;
+  font-weight: normal;
+  font-style: normal;
+}
+.FilmotypeMajor {
+  font-family: FilmotypeMajor;
+  font-weight: normal;
+  font-style: normal;
+}

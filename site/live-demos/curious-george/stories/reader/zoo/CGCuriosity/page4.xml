@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<smil xmlns="http://www.w3.org/ns/SMIL" version="3.0" profile="http://www.idpf.org/epub/30/profile/content/">
+<body>
+  <par>
+    <audio clipBegin="32.310946" clipEnd="33.071330" aText="This" id="w0007"/>
+  </par>
+  <par>
+    <audio clipBegin="33.178426" clipEnd="34.195841" aText="is george" id="w0008"/>
+  </par>
+  <par>
+    <audio clipBegin="37.879953" clipEnd="38.394015" aText="he" id="w0009"/>
+  </par>
+  <par>
+    <audio clipBegin="38.394015" clipEnd="38.565369" aText="good" id="w00010"/>
+  </par>
+  <par>
+    <audio clipBegin="38.565369" clipEnd="39.398042" aText="little monkey" id="w00011"/>
+  </par>
+  <par>
+    <audio clipBegin="39.451591" clipEnd="39.719331" aText="in" id="w00012"/>
+  </par>
+  <par>
+    <audio clipBegin="39.796976" clipEnd="40.479715" aText="always" id="w00013"/>
+  </par>
+  <par>
+    <audio clipBegin="40.479715" clipEnd="41.044648" aText="very" id="w00014"/>
+  </par>
+  <par>
+    <audio clipBegin="41.060712" clipEnd="41.788967" aText="curious" id="w00015"/>
+  </par>
+  <par>
+    <audio clipBegin="49.716769" clipEnd="50.024670" aText="lets" id="w00016"/>
+  </par>
+  <par>
+    <audio clipBegin="50.024670" clipEnd="50.723474" aText="see what" id="w00017"/>
+  </par>
+  <par>
+    <audio clipBegin="50.723474" clipEnd="51.224149" aText="george" id="w00018"/>
+  </par>
+  <par>
+    <audio clipBegin="51.224149" clipEnd="52.118403" aText="curious about" id="w00019"/>
+  </par>
+  <par>
+    <audio clipBegin="52.242902" clipEnd="52.849335" aText="today" id="w00020"/>
+  </par>
+</body>
+</smil>

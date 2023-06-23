@@ -1,0 +1,114 @@
+$minheight: 500px;
+
+#options {
+  //min-height: $minheight;
+  div[class^="col"] {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    background-color: $jrblack;
+    padding:0;
+    &:after {
+      content:'';
+      display: inline-block;
+      width: 1px;
+      height: 15%;
+      background: rgba($sectBG,0.15);
+    }
+    .list {
+      color:$sectBG;
+      font-weight: 700;
+      font-size: 32px;
+      display:block;
+      padding:0;
+      height:10%;
+      width:100%;
+      text-align: center;
+      cursor: pointer;
+      overflow: hidden;
+      background-color: rgba($sectBG,0);
+      @extend .toAnimate;
+      .proj-list {
+        //overflow: hidden;
+        height:0;
+        opacity: 0;
+        ul {
+          list-style: none;
+          li {
+            text-align: left;
+            a {
+              font-size: 1rem;
+            }
+          }
+
+        }
+      }
+      &:hover {
+        text-decoration: none;
+        padding-top: 2rem;
+        height:100%;
+        color:$jrblack;
+        background-color: rgba($sectBG,1);
+        .proj-list {
+          //overflow: auto;
+          height:100%;
+          opacity: 1;
+        }
+      }
+    }
+    &:last-child {
+
+    }
+  }
+}
+#bizcard {
+
+  .logo {
+    display: block;
+    height: 100%;
+    background-image: url('../img/logo.png');
+    background-position: center;
+    background-size: 60%;
+    background-repeat: no-repeat;
+  }
+  div[class^="col"] + div[class^="col"] {
+    align-items: center;
+    display: flex;
+  }
+  .about-me {
+    h1 {
+      font-weight: 700;
+      font-size: 40px;
+      color:$jrblack;
+    }
+    ul {
+      list-style: none;
+      padding:0;
+      li {
+        font-size: 28px;
+        color:$jrblack;
+      }
+    }
+    a {
+      display: block;
+      position: relative;
+      overflow: hidden;
+      width: 40px;
+      height: 40px;
+      text-indent: -9999px;
+
+      &:before {
+        content: '\f0d7';
+        @extend .fas;
+        text-indent: 0;
+        display: block;
+        position: absolute;
+        top:0;
+        left:0;
+        right:0;
+        bottom: 0;
+        text-align: center;
+      }
+    }
+  }
+}

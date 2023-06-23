@@ -1,0 +1,37 @@
+CACHE MANIFEST
+
+#version 1.0 8-20-2014
+
+CACHE:
+
+#images
+https://m.pge.com/img/alert-icon-orange-transparent.png
+https://m.pge.com/img/carousel_1.jpg
+https://m.pge.com/img/carousel_2.jpg
+https://m.pge.com/img/carousel_3.jpg
+https://m.pge.com/img/home-currents.png
+https://m.pge.com/img/home-facebook.png
+https://m.pge.com/img/home-twitter.png
+https://m.pge.com/img/home-youtube.png
+https://m.pge.com/img/marketing_1.jpg
+https://m.pge.com/img/marketing_2.jpg
+https://m.pge.com/img/pgelogo.png
+
+#internal HTML documents
+http://opower-pge.herokuapp.com/mobile/
+http://opower-pge.herokuapp.commobile/wts.html
+
+#style sheets
+http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css
+https://m.pge.com/css/ccmoweb.min.css
+
+#style sheet images
+
+
+#javascript files
+http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js
+http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js
+https://m.pge.com/foresee/foresee-trigger.js
+
+NETWORK:
+*

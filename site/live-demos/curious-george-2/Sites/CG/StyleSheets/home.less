@@ -1,0 +1,223 @@
+/**
+ * home.less
+ * @description Styles exclusive to the front page
+ * @author Sean Smith
+ */
+
+//@import "global.less";
+
+body.home {
+	#main header nav {
+		ul { display: none }
+		#mobile-app {
+		}
+	}
+	#language { background: @white;
+		p {
+			height: 2em;
+			line-height: 2em;
+			font-size: 1em;
+			.centered;
+			* { font-weight: bold; padding: 0 0.5em }
+			b { color: @blue }
+			i { font-style: normal }
+		}
+	}
+}
+#main #home-navigation {
+	height: 675px;
+	.centered;
+	li {
+		position: relative;
+		float: left;
+		width: 290px;
+		height: 180px;
+		margin-left: 22px;
+		a {
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			background: transparent none scroll no-repeat 0 0;
+			.hidden-text;
+		}
+		&:first-child {
+			width: 900px;
+			height: 461px;
+			margin-left: 0;
+			margin-bottom: 32px;
+			& + li { margin-left: 0 }
+		}
+		&.games a	{ background-image: url(../imgs/home-games.png);   width: 306px; height: 200px; left:  -8px; top: -30px }
+		&.stories a	{ background-image: url(../imgs/home-stories.png); width: 330px; height: 182px; left: -20px; top: -16px }
+		&.create a	{ background-image: url(../imgs/home-create.png);  width: 339px; height: 192px; left: -22px; top: -16px  }
+	}
+}
+#home-content { margin-bottom: -32px;
+	section { background: @blue;
+		h1 {
+			margin: 0;
+			padding: 0;
+			height: 41px;
+			line-height: 41px;
+			font-size: 1.5em;
+			font-weight: normal;
+			white-space: nowrap;
+			a {
+				display: block;
+				margin: 0 auto;
+				width: @inner-width;
+				color: @white;
+				strong {
+					position: relative;
+					display: block;
+					float: left;
+					padding-right: 30px;
+					height: 41px;
+					line-height: 41px;
+					color: @yellow;
+					text-transform: uppercase;
+					&:after {
+						position: absolute;
+						top: 0;
+						right: 4px;
+						display: block;
+						width: 19px;
+						height: 41px;
+						content: " ";
+						background: transparent url(../imgs/arrow.png) scroll no-repeat 0% 50%;
+					}
+				}
+				&.is-open strong:after { background-position: 100% 50% }
+				&:hover { text-decoration: none }
+			}
+		}
+		& > div {
+			margin: 0 auto;
+			padding-bottom: 16px;
+			article {
+				padding: 16px;
+				background: @white;
+				overflow: hidden;
+				.rounded-wrapper;
+				.centered;
+				nav {
+					position: relative;
+					padding: 0;
+					ul {
+						padding-top: 0 !important;
+						height: 15px;
+						line-height: 18px;
+						font-size: 1.4em;
+						text-transform: none;
+						border-top-width: 0;
+						li { height: 15px;
+							a { height: 18px; }
+						}
+					}
+					.account {
+						position: absolute;
+						right: 0;
+						bottom: 5px;
+						a {
+							display: inline-block;
+							width: 83px;
+							height: 27px;
+							background: transparent url(../imgs/buttons/login.png) scroll no-repeat 0 0;
+							.hidden-text;
+							&.login { background-position: 0% 0 }
+							&.register { background-position: 100% 0 }
+						}
+					}
+				}
+				.top {
+					position: relative;
+					padding: 10px 0 10px 670px;
+					height: 292px;
+				}
+				.content {
+					& > div {
+						/*float: left;*/
+						width: 480px;
+						padding-right: 24px;
+						border-right: 1px dotted @dark-blue;
+						& + div {
+							width: 320px;
+							padding-left: 24px;
+							padding-right: 0;
+							border-right: none;
+						}
+						& + div#product-callout {
+							padding-top: 0px;
+						}
+					}
+					h2 { padding: 4px 0 }
+					.learn-more {
+						display: block;
+						position: relative;
+						left: -3px;
+						padding-top: 8px;
+						width: 218px;
+						height: 54px;
+						background: transparent url(../imgs/buttons/learn-more-big.png) scroll no-repeat 0 8px;
+						.hidden-text;
+					}
+				}
+				.app { background: transparent url(../imgs/parents-app.png) scroll no-repeat 0 10px;
+					a {
+						display: block;
+						position: relative;
+						top: 110px;
+						padding-bottom: 60px;
+						width: 180px;
+						font-size: 1.4em;
+						font-weight: bold;
+						color: @dark-blue;
+						background: transparent url(../imgs/app-store.png) scroll no-repeat 0 100%;
+					}
+				}
+				.pre-k { background: transparent url(../imgs/pre-k.png) scroll no-repeat 0 10px;
+					p {
+						position: absolute;
+						bottom: 24px;
+						font-size: 1.3em;
+						strong {
+							display: block;
+							padding-bottom: 8px;
+							font-size: 1.1em;
+							color: @green;
+						}
+					}
+				}
+				.main-product { background: transparent url(../imgs/main-product.png) scroll no-repeat 0 10px;
+					strong {
+						display: block;
+						padding: 4px 0;
+						font-size: 1.5em;
+						color: @dark-blue;
+					}
+				}
+				.large {
+					display: block;
+					padding: 4px 0;
+					font-size: 2em;
+					line-height: 1.25em;
+					font-weight: normal;
+					color: @blue;
+				}
+				p {
+					font-size: 1.1em;
+				}
+				.parents .large { width: 280px }
+			}
+		}
+		&.parents { background: @red }
+		&.teachers { background: @blue }
+		&.products { background: @light-green }
+		&.hmh { background: @light-blue;
+			& > h1 strong { color: @white }
+			article { padding: 24px 40px 160px;
+				h2 { line-height: 1.3em }
+			}
+		}
+	}
+}

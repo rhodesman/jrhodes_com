@@ -1,0 +1,75 @@
+<div class="my-account">
+  <div class="account-overview">
+    <div class="row">
+      <div class="small-2 columns">
+        <img src="img/my-home.png" />
+      </div>
+      <div class="small-3 columns">
+        <h3 class="title-case">Jonathan Smith</h3>
+        <p>Account #52552345-2</p>
+        <p><span class="geomicon-location"></span>119 Delano Ave</p>
+        <p>San Francisco, CA 94118</p>
+      </div>
+      <div class="small-3 columns">
+        <p><span class="geomicon-land-line"></span>555-555-555</p>
+      </div>
+      <div class="small-2 columns">
+        <p><span class="geomicon-mail"></span>jonathan.smith@opower.com</p>
+      </div>
+      <div class="small-2 columns">
+        <a href="">edit</a>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="account-details">
+    <div class="row">
+      <div class="small-3 columns">
+        <div ng-include src="'partials/my-account/_my-account-nav.html'"></div>
+      </div>
+      <div class="small-9 columns account-settings">
+        <table class="devices">
+          <thead>
+            <tr>
+              <th>
+                <h2><span class="geomicon-plug"></span>Devices</h2>
+                <p>Enter a MAC address to connect your device and to start sharing data.</p>
+              </th>
+            </tr>
+          </thead>
+        </table>
+        <!--input device-->
+        <div class="row add-devices" ng-show="viewDevice == 'input';">
+          <div class="small-9 columns">
+            <label>MAC Address
+              <input type="text" placeholder="00.00.00.00.00.00">
+            </label>
+          </div>
+          <div class="small-3 columns">
+            <a class="button" id="add-device" ng-click="connectDevice();">Add device</a>
+          </div>
+        </div>
+        <!--view device-->
+        <div class="row add-devices device-details" ng-show="viewDevice == 'view';">
+          <div class="small-9 columns">
+            <p class="device-title">Nest Thermostat<span>08-00-27-0E-25-B8</span></p>
+          </div>
+          <div class="small-3 columns">
+            <a class="edit" href="">edit</a>
+          </div>
+        </div>
+        <!--add another device-->
+        <div class="row add-devices another-device" ng-show="viewDevice == 'view';">
+          <div class="small-9 columns">
+            <label>MAC Address
+              <input type="text" placeholder="00.00.00.00.00.00">
+            </label>
+          </div>
+          <div class="small-3 columns">
+            <a href="" class="button" ng-click="connectDevice(); viewDevice = 'input';">Add device</a>
+          </div>
+        </div>
+    </div>
+  </div>
+</div>

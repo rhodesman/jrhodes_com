@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Liberty Mutual - Response Ability</title>
+	<meta name="author" content="Wonderbean Studios - Jason Rhodes">
+
+	<!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/main.css">
+
+	<script src="js/jquery-1.7.2.min.js" type="text/javascript"></script>
+	<script src="mediaelem/mediaelement-and-player.min.js"></script>
+	<link rel="stylesheet" href="mediaelem/mediaelementplayer.min.css" />
+	<script type="text/javascript" src="js/jquery.hoverIntent.minified.js"></script>
+
+	<script src="js/bootstrap-transition.js" type="text/javascript"></script>
+	<script src="js/bootstrap-modal.js" type="text/javascript"></script>
+
+	<script type="text/javascript">
+	$(document).ready(function(){
+		$(".mkt_button .span2-5").hoverIntent({
+			interval: 10, // milliseconds delay before onMouseOver
+			over: drops_show,
+			timeout: 300, // milliseconds delay before onMouseOut
+			out: drops_hide
+		});
+		$(".mkt_button .span2-5").addClass('with-js');
+	});
+	function drops_show(){ $(this).addClass('show'); $(this).removeClass('with-js'); }
+	function drops_hide(){ $(this).removeClass('show'); $(this).addClass('with-js'); }
+	</script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('.nav-tabs li').hover(function(){
+				$('ul', this).fadeOut(0).stop(true, true).fadeIn(400);
+			},
+			function(){
+				$('ul', this).css("display", "block").stop(true, true).delay(150).fadeOut(200);
+			});
+		});
+	</script>
+
+</head>
+
+<body>
+<div class="container home">
+	<header class="row">
+		<div class="span4">
+			<a href="index.html"><img src="img/liberty_mutual_logo.gif" alt="Liberty Mutual Insurance" class="LM_logo"></a>
+		</div>
+		<div class="span6">
+			<nav>
+				<ul class="nav nav-tabs">
+					<li class="dropdown">
+				  		<a class="dropdown-toggle" data-toggle="dropdown" href="#">To Our Stakeholders</a>
+				    	<ul class="dropdown-menu">
+				    		<li><a href="message_from_our_chairman.html">A Message from Our Chairman</a></li>
+				    		<li><a href="message_from_our_president.html">A Message from Our President and CEO</a></li>
+				    	</ul>
+					</li>
+					<li class="dropdown">
+						<a class="dropdown-toggle" data-toggle="dropdown" href="#">2011 in Review</a>
+						<ul class="dropdown-menu">
+							<li><a href="personal_markets.html">Personal Markets</a></li>
+							<li><a href="Liberty_Mutual_Agency_Corporation.html">Liberty Mutual Agency Corporation</a></li>
+							<li><a href="commercial_markets.html">Commercial Markets</a></li>
+							<li><a href="liberty_international.html">Liberty International</a></li>
+						</ul>
+					</li>
+					<li class="dropdown">
+						<a class="dropdown-toggle" data-toggle="dropdown" href="#">Overview</a>
+						<ul class="dropdown-menu">
+							<li><a class="dropdown-toggle" data-toggle="dropdown" href="company_overview.html">Company Overview</a></li>
+							<li><a href="global_presence.html">Global Presence</a></li>
+							<li><a href="board_of_directors.html">Board of Directors</a></li>
+							<li><a href="corporate_officers.html">Corporate Officers</a></li>
+							<li><a href="operating_management.html">Operating Management</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="financials.html">Financials</a>
+					</li>
+				</ul>
+			</nav>
+
+		</div>
+	</header>
+	<div class="row home_splash">
+		<div class="span8 offset2 splash_header">
+			<img src="img/response_ability.gif" width="100%" alt="Response Ability" />
+		</div>
+		<div class="span4 splash_copy">
+			<p>How an insurance company responds in times of crisis, and its ability to meet its customers’ ever-changing needs, are perhaps the two most important attributes consumers seek when choosing an insurer. At Liberty Mutual, we don’t just believe it’s important how or when we respond—but the care, compassion and dedication with which we do so. We also understand that things happen fast in today’s world—and anticipating our customer’s needs tomorrow is just as important as understanding their needs today.</p>
+
+			<p>Simply put, while our responsiveness and ability set us apart, it’s our commitment to responsibility that makes us who we are.</p>
+		</div>
+	</div>
+	<div class="row mkt_button">
+		<div class="span2-5 personal">
+			<a href="personal_markets.html" class="mkt_link" id="personal">Personal<br>Markets</a>
+			<div class="span2-5_roll mkt_button_rollover" id="personal_rollover">
+				<h2><a href="personal_markets.html">Read Business Overview</a></h2>
+
+
+				<a data-toggle="modal" href="#only_look_eyes" class="video_link" >Watch Video
+				<span class="video_title">"You Need Only Look In Their Eyes"</span></a>
+
+
+				<a data-toggle="modal" href="#smartphone_savvy" class="video_link">Watch Video
+				<span class="video_title">Smartphone Savvy Find Convenience in App</span></a>
+			</div>
+		</div>
+
+
+		<div class="span2-5 corp">
+			<a href="Liberty_Mutual_Agency_Corporation.html" class="mkt_link">Liberty Mutual<br>Agency Corporation</a>
+			<div class="span2-5_roll mkt_button_rollover">
+				<h2><a href="Liberty_Mutual_Agency_Corporation.html">Read Business Overview</a></h2>
+
+
+				<a data-toggle="modal" href="#the_worst" class="video_link">Watch Video
+				<span class="video_title">"The Worst I’ve Seen"</span></a>
+
+
+				<a data-toggle="modal" href="#bricks_clicks" class="video_link">Watch Video
+				<span class="video_title">“Bricks & Clicks™” Helps Agents Compete in the Digital Space</span></a>
+			</div>
+		</div>
+		<div class="span2-5 commercial">
+			<a href="commercial_markets.html" class="mkt_link">Commercial<br>Markets</a>
+			<div class="span2-5_roll mkt_button_rollover">
+				<h2><a href="commercial_markets.html">Read Business Overview</a></h2>
+
+
+				<a data-toggle="modal" href="#got_hit" class="video_link">Watch Video
+				<span class="video_title">"And Then We Got Hit"</span></a>
+
+
+				<a data-toggle="modal" href="#predictive_modeling" class="video_link">Watch Video
+				<span class="video_title">Predictive Modeling Results in Superior Claims Outcomes</span></a>
+			</div>
+		</div>
+		<div class="span2-5 international">
+			<a href="liberty_international.html" class="mkt_link">Liberty<br>International</a>
+			<div class="span2-5_roll mkt_button_rollover">
+				<h2><a href="liberty_international.html">Read Business Overview</a></h2>
+
+
+				<a data-toggle="modal" href="#all_togeather" class="video_link">Watch Video
+				<span class="video_title">"We Were All In This Together."</span></a>
+
+
+				<a data-toggle="modal" href="#tangible_assets" class="video_link">Watch Video
+				<span class="video_title">Protecting Tangible Assets</span></a>
+			</div>
+		</div>
+	</div>
+	<footer class="row">
+		<div class="span9 address">
+			<h1>2011 Annual Review </h1>
+			<h2>Liberty Mutual Insurance Group  |  175 Berkeley Street, Boston, MA 02117  |  <a href="www.libertymutualgroup.com">www.libertymutualgroup.com</a></h2>
+		</div>
+	</footer>
+</div>
+
+<!-- Video Modals -->
+<div id="only_look_eyes" class="modal hide">
+  <div class="modal-header">
+    <a class="close" data-dismiss="modal">×</a>
+    <h3>“You Need Only Look in Their Eyes”</h3>
+  </div>
+  <div class="modal-body">
+    <video id="only_look_eyes" controls="controls" preload="none" width="960" height="555">
+    	<source src="/Annual_Review/LibertyMutual_MobileClaimsApp.mp4" type="video/mp4"  />
+    	<source src="/Annual_Review/LibertyMutual_MobileClaimsApp.flv" type="video/flv"  />
+    </video>
+  </div>
+</div>
+
+<div id="smartphone_savvy" class="modal hide">
+  <div class="modal-header">
+    <a class="close" data-dismiss="modal">×</a>
+    <h3>Smartphone Savvy Find Convenience in App</h3>
+  </div>
+  <div class="modal-body">
+    <video id="smartphone_savvy" controls="controls" preload="none" width="960" height="555">
+    	<source src="/Annual_Review/LibertyMutual_MobileClaimsApp.mp4" type="video/mp4"  />
+    	<source src="/Annual_Review/LibertyMutual_MobileClaimsApp.flv" type="video/flv"  />
+    </video>
+  </div>
+</div>
+
+<div id="the_worst" class="modal hide">
+  <div class="modal-header">
+    <a class="close" data-dismiss="modal">×</a>
+    <h3>"The Worst I’ve Seen"</h3>
+  </div>
+  <div class="modal-body">
+    <video id="the_worst" controls="controls" preload="none" width="960" height="555">
+    	<source src="/Annual_Review/LibertyMutual_MobileClaimsApp.mp4" type="video/mp4"  />
+    	<source src="/Annual_Review/LibertyMutual_MobileClaimsApp.flv" type="video/flv"  />
+    </video>
+  </div>
+</div>
+
+<div id="bricks_clicks" class="modal hide">
+  <div class="modal-header">
+    <a class="close" data-dismiss="modal">×</a>
+    <h3>“Bricks & Clicks™” Helps Agents Compete in the Digital Space</h3>
+  </div>
+  <div class="modal-body">
+    <video id="bricks_clicks" controls="controls" preload="none" width="960" height="555">
+    	<source src="/Annual_Review/LibertyMutual_MobileClaimsApp.mp4" type="video/mp4"  />
+    	<source src="/Annual_Review/LibertyMutual_MobileClaimsApp.flv" type="video/flv"  />
+    </video>
+  </div>
+</div>
+
+<div id="got_hit" class="modal hide">
+  <div class="modal-header">
+    <a class="close" data-dismiss="modal">×</a>
+    <h3>"And Then We Got Hit"</h3>
+  </div>
+  <div class="modal-body">
+    <video id="got_hit" controls="controls" preload="none" width="960" height="555">
+    	<source src="/Annual_Review/LibertyMutual_MobileClaimsApp.mp4" type="video/mp4"  />
+    	<source src="/Annual_Review/LibertyMutual_MobileClaimsApp.flv" type="video/flv"  />
+    </video>
+  </div>
+</div>
+
+<div id="predictive_modeling" class="modal hide">
+  <div class="modal-header">
+    <a class="close" data-dismiss="modal">×</a>
+    <h3>Predictive Modeling Results in Superior Claims Outcomes</h3>
+  </div>
+  <div class="modal-body">
+    <video id="predictive_modeling" controls="controls" preload="none" width="960" height="555">
+    	<source src="/Annual_Review/LibertyMutual_MobileClaimsApp.mp4" type="video/mp4"  />
+    	<source src="/Annual_Review/LibertyMutual_MobileClaimsApp.flv" type="video/flv"  />
+    </video>
+  </div>
+</div>
+
+<div id="all_togeather" class="modal hide">
+  <div class="modal-header">
+    <a class="close" data-dismiss="modal">×</a>
+    <h3>"We Were All In This Together."</h3>
+  </div>
+  <div class="modal-body">
+    <video id="all_togeather" controls="controls" preload="none" width="960" height="555">
+    	<source src="/Annual_Review/LibertyMutual_MobileClaimsApp.mp4" type="video/mp4"  />
+    	<source src="/Annual_Review/LibertyMutual_MobileClaimsApp.flv" type="video/flv"  />
+    </video>
+  </div>
+</div>
+
+<div id="tangible_assets" class="modal hide">
+  <div class="modal-header">
+    <a class="close" data-dismiss="modal">×</a>
+    <h3>Protecting Tangible Assets</h3>
+  </div>
+  <div class="modal-body">
+    <video id="tangible_assets" controls="controls" preload="none" width="960" height="555">
+    	<source src="/Annual_Review/LibertyMutual_MobileClaimsApp.mp4" type="video/mp4"  />
+    	<source src="/Annual_Review/LibertyMutual_MobileClaimsApp.flv" type="video/flv"  />
+    </video>
+  </div>
+</div>
+
+<script src="js/video-settings.js" type="text/javascript"></script>
+</body>
+</html>

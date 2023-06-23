@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<smil xmlns="http://www.w3.org/ns/SMIL" version="3.0" profile="http://www.idpf.org/epub/30/profile/content/">
+<body>
+
+ <par>
+    <audio clipBegin="906.966231" clipEnd="908.567321" aText="musical instruments" id="w000533"/>
+  </par>
+  <par>
+    <audio clipBegin="910.794923" clipEnd="911.989047" aText="violin" id="w000534"/>
+  </par>
+  <par>
+    <audio clipBegin="912.064014" clipEnd="913.986392" aText="guitar" id="w000535"/>
+  </par>
+  <par>
+    <audio clipBegin="914.077424" clipEnd="915.416128" aText="cymbals" id="w000536"/>
+  </par>
+  <par>
+    <audio clipBegin="915.416128" clipEnd="916.176511" aText="tuba" id="w000537"/>
+  </par>
+  <par>
+    <audio clipBegin="916.535284" clipEnd="917.488441" aText="drums" id="w000538"/>
+  </par>
+  <par>
+    <audio clipBegin="917.606246" clipEnd="918.532629" aText="trombone" id="w000539"/>
+  </par>
+  <par>
+    <audio clipBegin="919.041337" clipEnd="919.908816" aText="flute" id="w000540"/>
+  </par>
+  <par>
+    <audio clipBegin="920.240815" clipEnd="921.954355" aText="trumpet" id="w000541"/>
+  </par>
+  <par>
+    <audio clipBegin="922.082871" clipEnd="923.635767" aText="xylophone" id="w000542"/>
+  </par>
+  <par>
+    <audio clipBegin="924.069507" clipEnd="924.920922" aText="bandleader" id="w000543"/>
+  </par>
+  
+
+</body>
+</smil>

@@ -1,0 +1,17 @@
+/* YUI 3.5.0 reset.css (http://developer.yahoo.com/yui/3/cssreset/) - http://cssreset.com */
+html{color:#000;background:#FFF}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td{margin:0;padding:0}table{border-collapse:collapse;border-spacing:0}fieldset,img{border:0}address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;font-weight:normal}ol,ul{list-style:none}caption,th{text-align:left}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal}q:before,q:after{content:''}abbr,acronym{border:0;font-variant:normal}sup{vertical-align:text-top}sub{vertical-align:text-bottom}input,textarea,select{font-family:inherit;font-size:inherit;font-weight:inherit}input,textarea,select{*font-size:100%}legend{color:#000}#yui3-css-stamp.cssreset{display:none}
+
+body { background: none repeat scroll 0 0 transparent; text-align: center; }
+#canvas-wrapper { display:inline-block; position: relative; width: 900px; height: 500px; }
+html { background-color: #009fc8; }
+#loader-img { display: block; left: 360px; position: absolute; top: 120px; }
+#cgp-btn-help { background: url(../images/btn-help.png) no-repeat scroll 0 0 transparent; height: 81px; width: 82px; position: absolute; top: 0; right: 0; cursor: pointer; display: none; }
+#cgp-btn-help.hover { background-position: 0 -81px; }
+#cgp-btn-play {  background: url(../images/btn-play-activity.png) no-repeat scroll 0 0 transparent; cursor: pointer; height: 123px; position: absolute;  width: 187px; top: 358px; left: 697px; display: none; }
+#cgp-btn-play.hover { background-position: 0 -123px; }
+#btn-playback, #btn-record { display: none; overflow: hidden; text-indent: -9999px; font-size: 0; width: 143px; height: 46px; background: none no-repeat scroll 0 0 transparent; position: absolute; top: 0; border-radius: 0 0 20px 20px; box-shadow: 1px 1px 5px 2px rgba(0, 0, 0, 0.4); }
+#btn-playback { left: 669px; background-image: url(../images/btn_playback.png); }
+#btn-record { left: 519px; background-image: url(../images/btn_record.png); }
+#btn-playback.hover, #btn-playback.active.hover, #btn-record.hover, #btn-record.active.hover { background-position: 0 -46px;  box-shadow: 0 0 5px 2px rgba(255, 230, 0, 0.4); }
+#btn-record.active.hover { background-position: 0 -138px; }
+#btn-playback.active, #btn-record.active { background-position: 0 -92px; }

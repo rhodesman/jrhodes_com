@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<smil xmlns="http://www.w3.org/ns/SMIL" version="3.0" profile="http://www.idpf.org/epub/30/profile/content/">
+<body>
+
+<par id="p0050">
+<audio src="images/Gossie.m4a" clipBegin="
+49.311832s" clipEnd="49.959142s" id="w0215" />
+</par>
+
+<par id="p0051">
+<audio src="images/Gossie.m4a" clipBegin="
+49.959142s" clipEnd="50.276983s" id="w0216" />
+</par>
+
+<par id="p0052">
+<audio src="images/Gossie.m4a" clipBegin="
+50.276983s" clipEnd="51.009567s" id="w0217" />
+</par>
+
+<par id="p0053">
+<audio src="images/Gossie.m4a" clipBegin="
+51.009567s" clipEnd="51.528966s" id="w0218" />
+</par>
+
+<par id="p0054">
+<audio src="images/Gossie.m4a" clipBegin="
+51.528966s" clipEnd="52.610399s" id="w0219" />
+</par>
+
+<par id="p0055">
+<audio src="images/Gossie.m4a" clipBegin="
+52.610399s" clipEnd="52.823585s" id="w0220" />
+</par>
+
+<par id="p0056">
+<audio src="images/Gossie.m4a" clipBegin="
+52.823585s" clipEnd="53.040647s" id="w0221" />
+</par>
+
+<par id="p0057">
+<audio src="images/Gossie.m4a" clipBegin="
+53.040647s" clipEnd="53.300347s" id="w0222" />
+</par>
+
+<par id="p0058">
+<audio src="images/Gossie.m4a" clipBegin="
+53.300347s" clipEnd="53.656948s" id="w0223" />
+</par>
+
+<par id="p0059">
+<audio src="images/Gossie.m4a" clipBegin="
+53.656948s" clipEnd="54.056187s" id="w0224" />
+</par>
+
+<par id="p0060">
+<audio src="images/Gossie.m4a" clipBegin="
+54.056187s" clipEnd="54.715126s" id="w0225" />
+</par>
+
+<par id="p0061">
+<audio src="images/Gossie.m4a" clipBegin="
+54.715126s" clipEnd="55.540736s" id="w0226" />
+</par>
+
+<par id="p0062">
+<audio src="images/Gossie.m4a" clipBegin="
+55.540736s" clipEnd="55.730666s" id="w0227" />
+</par>
+
+<par id="p0063">
+<audio src="images/Gossie.m4a" clipBegin="
+55.730666s" clipEnd="55.912843s" id="w0228" />
+</par>
+
+<par id="p0064">
+<audio src="images/Gossie.m4a" clipBegin="
+55.912843s" clipEnd="56.374099s" id="w0229" />
+</par>
+
+<par id="p0065">
+<audio src="images/Gossie.m4a" clipBegin="
+56.374099s" clipEnd="56.637675s" id="w0230" />
+</par>
+
+<par id="p0066">
+<audio src="images/Gossie.m4a" clipBegin="
+56.637675s" clipEnd="57.358666s" id="w0231" />
+</par>
+
+
+</body>
+</smil>

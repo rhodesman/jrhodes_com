@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<smil xmlns="http://www.w3.org/ns/SMIL" version="3.0" profile="http://www.idpf.org/epub/30/profile/content/">
+<body>
+ <par>
+    <audio clipBegin="313.004931" clipEnd="313.765314" aText="whre" id="w000156"/>
+  </par>
+  <par>
+    <audio clipBegin="313.818862" clipEnd="314.509633" aText="george" id="w000157"/>
+  </par>
+  <par>
+    <audio clipBegin="316.223174" clipEnd="316.822913" aText="mill" id="w000158"/>
+  </par>
+  <par>
+    <audio clipBegin="317.262008" clipEnd="318.140197" aText="uice" id="w000159"/>
+  </par>
+  <par>
+    <audio clipBegin="318.402583" clipEnd="319.152257" aText="water" id="w000160"/>
+  </par>
+  <par>
+    <audio clipBegin="319.302192" clipEnd="320.129510" aText="ars of" id="w000161"/>
+  </par>
+  <par>
+    <audio clipBegin="320.156285" clipEnd="320.932732" aText="baby food" id="w000162"/>
+  </par>
+  <par>
+    <audio clipBegin="321.462859" clipEnd="322.466887" aText="pineapple" id="w000163"/>
+  </par>
+  <par>
+    <audio clipBegin="322.611467" clipEnd="323.537849" aText="banannas" id="w000164"/>
+  </par>
+  <par>
+    <audio clipBegin="323.904654" clipEnd="324.512426" aText="fish" id="w000165"/>
+  </par>
+  <par>
+    <audio clipBegin="325.524485" clipEnd="326.646319" aText="string beans" id="w000166"/>
+  </par>
+  <par>
+    <audio clipBegin="326.954221" clipEnd="327.864539" aText="blue berrys" id="w000167"/>
+  </par>
+  <par>
+    <audio clipBegin="328.108183" clipEnd="328.900695" aText="carrot" id="w000168"/>
+  </par>
+  <par>
+    <audio clipBegin="329.553983" clipEnd="330.349173" aText="ice cream" id="w000169"/>
+  </par>
+  <par>
+    <audio clipBegin="330.729364" clipEnd="331.283588" aText="butter" id="w000170"/>
+  </par>
+  <par>
+    <audio clipBegin="331.864585" clipEnd="332.603549" aText="soda" id="w000171"/>
+  </par>
+  <par>
+    <audio clipBegin="333.219353" clipEnd="334.025252" aText="cherries" id="w000172"/>
+  </par>
+  <par>
+    <audio clipBegin="334.914151" clipEnd="335.669180" aText="apples" id="w000173"/>
+  </par>
+  <par>
+    <audio clipBegin="336.212694" clipEnd="336.799046" aText="soup" id="w000174"/>
+  </par>
+  <par>
+    <audio clipBegin="337.538010" clipEnd="338.327845" aText="lemons" id="w000175"/>
+  </par>
+  <par>
+    <audio clipBegin="338.844585" clipEnd="339.730806" aText="oranges" id="w000176"/>
+  </par>
+  <par>
+    <audio clipBegin="340.193998" clipEnd="341.163219" aText="melons" id="w000177"/>
+  </par>
+  <par>
+    <audio clipBegin="341.762958" clipEnd="342.686664" aText="onions" id="w000178"/>
+  </par>
+  <par>
+    <audio clipBegin="342.908888" clipEnd="343.915593" aText="tomattoes" id="w000179"/>
+  </par>
+  <par>
+    <audio clipBegin="344.424301" clipEnd="344.997266" aText="baset" id="w000180"/>
+  </par>
+  <par>
+    <audio clipBegin="345.578263" clipEnd="346.542129" aText="potato" id="w000181"/>
+  </par>
+  <par>
+    <audio clipBegin="346.788451" clipEnd="347.535447" aText="cabbage" id="w000182"/>
+  </par>
+  <par>
+    <audio clipBegin="347.915639" clipEnd="348.574281" aText="melon" id="w000183"/>
+  </par>
+  <par>
+    <audio clipBegin="349.270407" clipEnd="350.084339" aText="stae" id="w000184"/>
+  </par>
+  <par>
+    <audio clipBegin="350.585014" clipEnd="351.214204" aText="chicen" id="w000185"/>
+  </par>
+  <par>
+    <audio clipBegin="351.958524" clipEnd="353.356130" aText="cash" id="w000186"/>
+  </par>
+  <par>
+    <audio clipBegin="353.490000" clipEnd="354.528834" aText="shopping cart" id="w000187"/>
+  </par>
+  <par>
+    <audio clipBegin="355.115186" clipEnd="355.728313" aText="bread" id="w000188"/>
+  </par>
+  <par>
+    <audio clipBegin="356.416406" clipEnd="357.168757" aText="cheese" id="w000189"/>
+  </par>
+
+</body>
+</smil>

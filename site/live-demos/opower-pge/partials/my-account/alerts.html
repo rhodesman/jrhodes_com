@@ -1,0 +1,135 @@
+<div class="my-account" ng-switch="userPrefs.isResidentialUser()">
+
+  <!--residential account overview-->
+  <div class="account-overview" ng-switch-when="true">
+    <div class="row">
+      <div class="small-2 columns">
+        <img src="img/my-home.png"/>
+      </div>
+      <div class="small-3 columns">
+        <h3 class="title-case">Jonathan Smith</h3>
+        <p>Account #52552345-2</p>
+        <p><span class="geomicon-location"></span>647 Spruce Street</p>
+        <p>San Francisco, CA 94118</p>
+      </div>
+      <div class="small-3 columns">
+        <p><span class="geomicon-land-line"></span>555-555-555</p>
+      </div>
+      <div class="small-2 columns">
+        <p><span class="geomicon-mail"></span>jonathan.smith@opower.com</p>
+      </div>
+      <div class="small-2 columns">
+        <a href="">edit</a>
+      </div>
+    </div>
+  </div>
+  <!--residential account details-->
+  <div class="account-details" ng-switch-when="true">
+    <div class="row">
+      <div class="small-3 columns">
+        <div ng-include src="'partials/my-account/_my-account-nav.html'"></div>
+      </div>
+      <div class="small-9 columns account-settings">
+        <table class="contact-info">
+          <thead>
+            <tr>
+              <th width="225"><h2><span class="geomicon-land-line"></span>Alert Contact</h2></th>
+              <th width="300"></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Name:</td>
+              <td><input type="text"></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Email Address:</td>
+              <td><input type="text"></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Phone Number:</td>
+              <td><input type="text"></td>
+              <td></td>
+            </tr>
+          </tbody>
+        </table>
+        <table class="manage-alerts">
+          <thead>
+            <tr>
+              <th width="225"><h2><span class="geomicon-bell"></span>Manage Alerts</h2></th>
+              <th width="300"></th>
+              <th></th>
+              <th></th>
+            </tr>
+          </thead>
+          <thead>
+            <tr>
+              <th width="70%">Send alerts for:</th>
+              <th width="10%">email</th>
+              <th width="10%">mobile</th>
+              <th width="10%">voice</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                Bill Threshold
+                <p>We will send you an alert when your bill exceeds a certain dollar amount that you set.</p>
+              </td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+            </tr>
+            <tr>
+              <td>
+                Unusual Usage Alert
+                <p>We will alert you when we see that your usage spikes a significant amount.</p>
+              </td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+            </tr>
+            <tr>
+              <td>
+                Hot Cold Temperature Alert
+                <p>We'll alert you three days in advance of an exceptionally hot or cold day so that you can make any changes to avoid high costs.</p>
+              </td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+            </tr>
+            <tr>
+              <td>
+                Weekly Usage
+                <p>Once a week, we'll share details about how you used energy for the past 7 days.</p>
+              </td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+            </tr>
+            <tr>
+              <td>
+                Transaction Alert
+                <p>We'll notify you when any payments have posted to your account.</p>
+              </td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+            </tr>
+            <tr>
+              <td>
+                Rebate Available
+                <p>We'll notify you when a new rebate becomes available for a product on your Savings Plan.</p>
+              </td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>

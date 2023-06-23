@@ -1,0 +1,116 @@
+
+// _button-groups.scss
+// Author: justin.secor@opower.com
+
+// Import foundation defaults
+@import "../../zurb-foundation/scss/foundation/components/button-groups";
+
+// Button groups
+//
+// For sets of buttons that control common features, associate them together within a button group. Use the .active class to indicate toggling or selected functionality.
+//
+// Markup:
+// <ul class="button-group">
+//        <li><a href="#" class="secondary active button">Button 1</a></li>
+//        <li><a href="#" class="secondary button">Button 2</a></li>
+//        <li><a href="#" class="secondary disabled button">Button 3</a></li>
+// </ul>
+//
+// Styleguide 3.2
+
+
+.button-group {
+    li {
+        .button {
+            @include radius(0);
+            border-color: darken($secondary-button-color, $button-function-factor*2);
+            border-left-color: rgba(255, 255, 255, 0.5);
+            &.disabled, &[disabled] {
+                border-color: darken($secondary-button-color, $button-function-factor*2);
+                border-left-color: rgba(255, 255, 255, 0.5);
+            }
+            &:hover {
+                border-left-color: transparent;
+            }
+            &.active:hover {
+                border-left-color: darken($secondary-button-color, $button-function-factor*4+10);
+            }
+        }
+        &:first-child > a,
+        &:first-child > button,
+        &:first-child > .button {
+            @include side-radius(left, $button-radius);
+            border-left: $button-border-width $button-border-style darken($secondary-button-color, $button-function-factor*2);
+            &:hover {
+                border-left-color: darken($secondary-button-color, $button-function-factor*2);
+            }
+            &.active {
+                border-left-color: darken($secondary-button-color, $button-function-factor*4+10);
+            }
+        }
+        &:last-child > a,
+        &:last-child > button,
+        &:last-child > .button {
+            @include side-radius(right, $button-radius);
+        }
+    }
+}
+
+
+// Navigation
+//
+// Styleguide 4.0
+
+
+// Arrow navigation
+//
+// Arrow buttons can be used for moving fowrard/backward through a task or flow. For accessibility, use clear language in the link element itself, and replace the text with iconography for visual users.
+//
+// Markup:
+// <ul class="button-group arrow-navigation">
+//     <li><a href="#" class="secondary button back {$modifiers}">Go back</a></li>
+//     <li><a href="#" class="secondary button forward">Go forward</a></li>
+// </ul>
+//
+// .disabled - Disable the button if a user has reached the end of their ability to go forward/back.
+//
+// Styleguide 4.1
+
+
+.arrow-navigation {
+    .button {
+        color: #777;
+        height: 0;
+        line-height: 1;
+        padding: 1.25em;
+        text-indent: -9999px;
+        width: 0;
+    }
+    .back, .forward {
+        &.disabled, &.disabled:hover {
+          color: $lighter-gray;
+        }
+        &:before {
+            color: $lighter-gray;
+            font-size: 1.5em;
+            text-indent: 0;
+        }
+    }
+    .back {
+        @include geomicon("\e604", 0.4em 0 0 0.4em);
+    }
+    .forward {
+        @include geomicon("\e602", 0.4em 0 0 0.4em);
+    }
+    .disabled, [disabled] {
+        background-image: none;
+        background-color: #eee;
+        border-color: darken($secondary-button-color, $button-function-factor*2);
+        opacity: 1;
+        &:hover {
+            background-color: #eee;
+            border-color: darken($secondary-button-color, $button-function-factor*2);
+            color: $lighter-gray;
+        }
+    }
+}

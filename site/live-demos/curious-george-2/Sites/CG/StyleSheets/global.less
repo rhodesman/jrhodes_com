@@ -1,0 +1,76 @@
+/**
+ * global.less
+ * @description Global variables / definitions
+ * @author Sean Smith
+ */
+
+@white: #fff;
+@grey: #e4e4e4;
+@black: #000;
+@red: #f20018;
+@blue: #009fc6;
+@green: #2aa519;
+@yellow: #fff200;
+@orange: #ff7900;
+@light-red: #ed1c24;
+@light-blue: #18cbf6;
+@light-green: #2ebc1a;
+@dark-blue: #009bce;
+@dark-green: #238e13;
+@background-color: #ffe600;
+@inner-width: 916px;
+
+.box-sizing (@type: border-box) {
+	-webkit-box-sizing: @type;
+	   -moz-box-sizing: @type;
+	        box-sizing: @type;
+}
+.box-shadow (@definition: 1px 1px @black) {
+	        box-shadow: @definition;
+	-webkit-box-shadow: @definition;
+	   -moz-box-shadow: @definition;
+}
+.text-shadow (@definition: 1px 1px @black) {
+	text-shadow: @definition;
+}
+.border-radius (@radius: 8px) {
+	        border-radius: @radius;
+	-webkit-border-radius: @radius;
+	   -moz-border-radius: @radius;
+}
+.background-size (@type: cover) {
+	-webkit-background-size: @type;
+	   -moz-background-size: @type;
+	     -o-background-size: @type;
+	        background-size: @type;
+}
+.rotate (@degrees: 0deg) {
+	-webkit-transform:rotate(@degrees);
+	   -moz-transform:rotate(@degrees);
+	     -o-transform:rotate(@degrees);
+	    -ms-transform:rotate(@degrees);
+}
+.vertical-gradient(@color: #F5F5F5, @start: #EEE, @stop: #FFF) {
+	background: @color;
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0, @start), color-stop(1, @stop));
+	background: -ms-linear-gradient(top, @start, @stop);
+	background: -moz-linear-gradient(center top, @start 0%, @stop 100%);
+}
+.radial-gradient (@from, @to) {
+	background: @from;
+	background:    -moz-radial-gradient(center, ellipse cover, @from 0%, @to 100%);
+	background:        -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,@from), color-stop(100%,@to));
+	background: -webkit-radial-gradient(center, ellipse cover, @from 0%,@to 100%);
+	background:      -o-radial-gradient(center, ellipse cover, @from 0%,@to 100%);
+	background:     -ms-radial-gradient(center, ellipse cover, @from 0%,@to 100%);
+	background:         radial-gradient(center, ellipse cover, @from 0%,@to 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='@from', endColorstr='@to',GradientType=1 );
+}
+
+.centered			{ margin: 0 auto; width: @inner-width; .box-sizing; }
+.rounded-wrapper	{ border: 8px solid @white; .border-radius(20px); .box-shadow(0 0 9px fade(@black, 60%)) }
+.image-box			{ padding: 8px; background: @white; .border-radius(8px); .box-shadow(0 0 10px fade(@black, 60%)) }
+.hidden-text		{ text-decoration: none; text-indent: -9999em }
+.FilmotypeModern	{ font-family: FilmotypeModern; font-weight: normal; font-style: normal }
+.FilmotypePower		{ font-family: FilmotypePower;  font-weight: normal; font-style: normal }
+.FilmotypeMajor		{ font-family: FilmotypeMajor;  font-weight: normal; font-style: normal }

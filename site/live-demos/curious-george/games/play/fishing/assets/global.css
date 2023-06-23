@@ -1,0 +1,47 @@
+body, canvas{
+  margin:0;
+  padding:0;
+  position:absolute;
+}
+
+body{
+  background-color: #009fc8;
+}
+
+#loader-img {
+  display: block;
+  left: 360px;
+  position: absolute;
+  top: 120px;
+}
+
+canvas{
+  -webkit-tap-highlight-color:rgba(0, 0, 0, 0);
+}
+#debugCanvas{
+  -moz-box-shadow:    inset 5px -5px 21px #000000;
+  -webkit-box-shadow: inset 5px -5px 21px #000000;
+  box-shadow:         inset 5px -5px 21px #000000;
+  
+  
+  -webkit-transform: scaleY(-1);
+  width: 900px;
+  height: 500px; 
+  opacity:0.5;
+  position: relative;
+  top:-500px;
+  pointer-events:none;
+}
+#cgp-btn-help {
+  background: url(images/btn-help.png) no-repeat scroll 0 0 transparent;
+  height: 104px;
+  width: 99px;
+  position: absolute;
+  top: 0;
+  left: 801px;
+  cursor: pointer;
+  display: none;
+}
+#cgp-btn-help:hover {
+  background-position: 0 -104px;
+}

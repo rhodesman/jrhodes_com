@@ -1,0 +1,22 @@
+ Volume in drive C is OS
+ Volume Serial Number is B084-5AED
+
+ Directory of C:\Users\robot\WebstormProjects\CuriousGeorge2\sound\bedsounds
+
+08/24/2012  02:40 PM    <DIR>          .
+08/24/2012  02:40 PM    <DIR>          ..
+08/21/2012  04:04 PM            18,571 CG-ManInYellowHat_BeanCreative_GamesActivities_AnimalBedtime_Introduction_VO_1_05-2.ogg
+08/24/2012  02:31 PM            44,182 CG-ManInYellowHat_BeanCreative_GamesActivities_AnimalBedtime_Introduction_VO_1_11-1.ogg
+08/24/2012  02:31 PM            36,727 CG-ManInYellowHat_BeanCreative_GamesActivities_AnimalBedtime_Introduction_VO_1_15-1.ogg
+08/24/2012  02:31 PM            38,373 CG-ManInYellowHat_BeanCreative_GamesActivities_AnimalBedtime_Introduction_VO_1_17-1.ogg
+08/24/2012  02:31 PM            41,755 CG-ManInYellowHat_BeanCreative_GamesActivities_AnimalBedtime_Introduction_VO_1_19-1.ogg
+08/24/2012  02:31 PM            38,624 CG-ManInYellowHat_BeanCreative_GamesActivities_AnimalBedtime_Introduction_VO_1_21-1.ogg
+08/24/2012  02:31 PM            49,148 CG-ManInYellowHat_BeanCreative_GamesActivities_AnimalBedtime_Introduction_VO_1_23-1.ogg
+08/24/2012  02:31 PM            46,331 CG-ManInYellowHat_BeanCreative_GamesActivities_AnimalBedtime_Introduction_VO_1_25-1.ogg
+08/24/2012  02:31 PM            42,419 CG-ManInYellowHat_BeanCreative_GamesActivities_AnimalBedtime_Introduction_VO_1_27-1.ogg
+08/24/2012  02:36 PM            41,564 CG-ManInYellowHat_BeanCreative_GamesActivities_AnimalBedtime_Introduction_VO_2_01-1.ogg
+08/24/2012  02:36 PM            43,157 CG-ManInYellowHat_BeanCreative_GamesActivities_AnimalBedtime_Introduction_VO_2_03-1.ogg
+08/22/2012  04:33 PM            53,012 CG-ManInYellowHat_BeanCreative_GamesActivities_AnimalBedtime_Introduction_VO_2_05-2.ogg
+08/24/2012  02:40 PM                 0 list.txt
+              13 File(s)        493,863 bytes
+               2 Dir(s)  26,116,849,664 bytes free

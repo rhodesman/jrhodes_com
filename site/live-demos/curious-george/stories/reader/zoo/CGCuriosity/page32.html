@@ -1,0 +1,619 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+ "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>
+    Untitled Document
+</title>
+<link href="skin/blue.monday/jplayer.blue.monday.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.jplayer.min.js"></script>
+<meta http-equiv="Content-Type" content="text/html;CHARSET=utf-8"/>
+<meta name="viewport" content="width=450,height=450" />
+
+<style type="text/css">
+ 
+    a:link {
+        color:blue;
+        text-decoration:underline;
+    }
+    a:active { color:red }
+    a:visited { color:purple }
+    
+  @font-face {
+  font-family: 'Adobe Garamond Semibold Italic';
+  src: url("font/AGARAMSI.TTF");
+  }
+@font-face {
+  font-family: 'CuriousGerogeheader-Medium';
+  src: url("font/CURIOUGM.TTF");
+  }
+@font-face {
+  font-family: 'New Century Schoolbook Italic';
+  src: url("font/NEWCENSI.TTF");
+  }
+@font-face {
+  font-family: 'New Century Schoolbook Roman';
+  src: url("font/NEWCENSR.TTF");
+  }
+@font-face {
+  font-family: 'OPTIMajerIrregular';
+  src: url("font/OPTIMAJI.TTF");
+  }
+
+body {
+   width: 450px;
+   height: 450px;
+   margin:0; 
+
+        background-color:white;
+        color:#393838;
+    }
+    .text34 {
+        font-family:'OPTIMajerIrregular';
+        font-size:28px;
+        text-decoration:none;
+        color:#CE4695;
+		
+    }
+    .para3 {
+        line-height:24px;
+        text-align:center;
+		position: absolute;
+    	text-align: center;
+    	top: -15px;
+		left:-15px;
+    }
+    .box1 {
+        background-color:white;
+        width:450px;
+        height:450px;
+    }
+    .box2 {
+        position:absolute;
+        left:1.016px;
+        top:363.282px;
+        background-color:#EDC1A7;
+        width:718.983px;
+        height:356.716px;
+    }
+    .box3 {
+        position:absolute;
+        left:85.687px;
+        top:531.237px;
+        width:65.795px;
+        height:20.854px;
+    }
+    .box4 {
+        position:absolute;
+        left:27.873px;
+        top:549.325px;
+        width:209.215px;
+        height:148.71px;
+    }
+    .box5 {
+        position:absolute;
+        left:283.464px;
+        top:513.071px;
+        width:194.046px;
+        height:184.355px;
+    }
+    .box6 {
+        position:absolute;
+        left:522.135px;
+        top:377.175px;
+        width:150.178px;
+        height:330.819px;
+    }
+    .box7 {
+        position:absolute;
+        left:532.823px;
+        top:443px;
+        width:79.87px;
+        height:20.854px;
+    }
+    .box8 {
+        position:absolute;
+        left:348.39px;
+        top:511.5px;
+        width:67.912px;
+        height:20.854px;
+    }
+    .box9 {
+        position:absolute;
+        left:438.995px;
+        top:1.563px;
+        background-color:#D0D8A8;
+        width:280.999px;
+        height:373.291px;
+    }
+    .box10 {
+        position:absolute;
+        left:449.156px;
+        top:320.146px;
+        width:86.322px;
+        height:20.854px;
+    }
+    .box11 {
+        position:absolute;
+        left:451.6px;
+        top:183.424px;
+        width:81.03px;
+        height:20.854px;
+    }
+    .box12 {
+        position:absolute;
+        left:449.515px;
+        top:60.067px;
+        width:84.002px;
+        height:20.951px;
+    }
+    .box13 {
+        position:absolute;
+        left:525.029px;
+        top:19.286px;
+        width:143.947px;
+        height:343.166px;
+    }
+    .box14 {
+        position:absolute;
+        left:0.588px;
+        top:216.012px;
+        width:443.601px;
+        height:278.677px;
+    }
+    .box15 {
+        position:absolute;
+        left:33.323px;
+        top:233.896px;
+        width:348.648px;
+        height:257.401px;
+    }
+    .box16 {
+        position:absolute;
+        left:312.875px;
+        top:315.54px;
+        width:66.342px;
+        height:20.854px;
+    }
+    .box17 {
+        position:absolute;
+        left:278.721px;
+        top:380.544px;
+        width:57.677px;
+        height:20.854px;
+    }
+    .box18 {
+        position:absolute;
+        left:355.75px;
+        top:260px;
+        width:73.041px;
+        height:20.854px;
+    }
+    .box19 {
+        position:absolute;
+        left:0px;
+        top:0px;
+        background-color:#FFF9AB;
+        width:443.699px;
+        height:223.354px;
+    }
+    .box20 {
+        position:absolute;
+        left:42.877px;
+        top:26.354px;
+        padding:0px;
+        width:222.998px;
+        height:54.418px;
+    }
+    .box21 {
+        position:absolute;
+        left:58.762px;
+        top:76.896px;
+        width:321.081px;
+        height:132.867px;
+    }
+    .box22 {
+        position:absolute;
+        left:89.789px;
+        top:73.873px;
+        width:252.825px;
+        height:21.426px;
+    }
+	
+	
+	.softer,.softest,.lower,.low,.soft,.farthest,.farther,.lowest,.far,.high,.higher,.highest
+	{
+		position:absolute;
+		font-size:13px;
+	}
+	
+	.soft
+	{
+		left: 58px;
+    	top: 40px;
+	}
+	.softer
+	{
+		left: 112px;
+    	top: 40px;
+	}
+	
+	.softest
+	{
+		left: 164px;
+    	top: 40px;
+	}
+	
+	.low
+	{
+		left: 281px;
+    	top: 28px;
+	}
+	
+	.lower
+	{
+		left: 278px;
+    	top: 106px;
+	}
+	
+	.lowest
+	{
+		left: 273px;
+    	top: 192px;
+	}
+	
+	.far
+	{
+		left: 175px;
+    	top: 230px;
+	}
+	
+	.farther
+	{
+		left: 196px;
+    	top: 191px;
+	}
+	
+	.farthest
+	{
+		left: 214px;
+    	top: 154px;
+	}
+		
+	.high
+	{
+		left: 57px;
+    	top: 321px;
+	}
+	.higher
+	{
+		left: 210px;
+    	top: 310px;
+	}
+	.highest
+	{
+		left: 312px;
+    	top: 274px;
+	}
+	 .rbox1 {
+        background-color:white;
+        width:450px;
+        height:450px;
+    }
+    .rbox2 {
+        position:absolute;
+        left:464.466px;
+        top:0.545px;
+        background-color:#FFF9AB;
+        width:255.722px;
+        height:560.404px;
+    }
+    .rbox3 {
+        position:absolute;
+        left:496.25px;
+        top:36.782px;
+        width:201.26px;
+        height:496.491px;
+    }
+    .rbox4 {
+        position:absolute;
+        left:531.38px;
+        top:96px;
+        width:50.929px;
+        height:20.854px;
+    }
+    .rbox5 {
+        position:absolute;
+        left:510.58px;
+        top:265.866px;
+        width:60.92px;
+        height:24.134px;
+    }
+    .rbox6 {
+        position:absolute;
+        left:496.375px;
+        top:425.646px;
+        width:68.971px;
+        height:20.854px;
+    }
+    .rbox7 {
+        position:absolute;
+        left:0px;
+        top:560.11px;
+        background-color:#D0D8A8;
+        width:718.183px;
+        height:159.893px;
+    }
+    .rbox8 {
+        position:absolute;
+        left:139.957px;
+        top:684.497px;
+        width:59.862px;
+        height:22.169px;
+    }
+    .rbox9 {
+        position:absolute;
+        left:321.375px;
+        top:684.497px;
+        width:63.741px;
+        height:23.356px;
+    }
+    .rbox10 {
+        position:absolute;
+        left:517.828px;
+        top:684.821px;
+        width:70.446px;
+        height:20.854px;
+    }
+    .rbox11 {
+        position:absolute;
+        left:126.756px;
+        top:594.456px;
+        width:96.603px;
+        height:85.202px;
+    }
+    .rbox12 {
+        position:absolute;
+        left:308.538px;
+        top:588.422px;
+        width:108.155px;
+        height:92.617px;
+    }
+    .rbox13 {
+        position:absolute;
+        left:488.538px;
+        top:570.7px;
+        width:123.326px;
+        height:110.083px;
+    }
+    .rbox14 {
+        position:absolute;
+        left:0.14px;
+        top:186.397px;
+        background-color:#E8BAD5;
+        width:469px;
+        height:374.604px;
+    }
+    .rbox15 {
+        position:absolute;
+        left:61.438px;
+        top:197.804px;
+        width:344.803px;
+        height:357.786px;
+    }
+    .rbox16 {
+        position:absolute;
+        left:74.5px;
+        top:229.339px;
+        width:43.375px;
+        height:20.854px;
+    }
+    .rbox17 {
+        position:absolute;
+        left:312.707px;
+        top:447px;
+        width:75.792px;
+        height:20.854px;
+    }
+    .rbox18 {
+        position:absolute;
+        left:376.875px;
+        top:274.397px;
+        width:72.606px;
+        height:20.854px;
+    }
+    .rbox19 {
+        position:absolute;
+        left:0.307px;
+        top:0px;
+        background-color:#9FD5F7;
+        width:469.146px;
+        height:191.998px;
+    }
+    .rbox20 {
+        position:absolute;
+        left:79.375px;
+        top:162.999px;
+        width:64.352px;
+        height:18.995px;
+    }
+    .rbox21 {
+        position:absolute;
+        left:204.295px;
+        top:163.847px;
+        width:66.212px;
+        height:20.854px;
+    }
+    .rbox22 {
+        position:absolute;
+        left:322.085px;
+        top:163.672px;
+        width:97.965px;
+        height:20.854px;
+    }
+    .rbox23 {
+        position:absolute;
+        left:74.307px;
+        top:17.484px;
+        width:75.162px;
+        height:140.729px;
+    }
+    .rbox24 {
+        position:absolute;
+        left:202.283px;
+        top:16.172px;
+        width:77.592px;
+        height:139.201px;
+    }
+    .rbox25 {
+        position:absolute;
+        left:338.432px;
+        top:17.008px;
+        width:76.149px;
+        height:139.73px;
+    }
+	
+	
+	
+	
+	
+	
+	.heavier,.heaviest,.brighter,.bright,.heavy,.loud,.louder,.brightest,.loudest,.tasty,.tastier,.tastiest
+	{
+		position:absolute;
+		font-size:13px;
+	}
+	
+	.heavy
+	{
+		left: 49px;
+    	top: 94px;
+	}
+	.heavier
+	{
+		left: 122px;
+    	top: 94px;
+	}
+	
+	.heaviest
+	{
+		left: 198px;
+    	top: 94px;
+	}
+	
+	.bright
+	{
+		left: 308px;
+    	top: 53px;
+	}
+	
+	.brighter
+	{
+		left: 295px;
+    	top: 156px;
+	}
+	
+	.brightest
+	{
+		left: 284px;
+    	top: 255px;
+	}
+	
+	.loudest
+	{
+		left: 193px;
+    	top: 266px;
+	}
+	
+	.louder
+	{
+		left: 230px;
+    	top: 163px;
+	}
+	
+	.loud
+	{
+		left: 40px;
+    	top: 138px;
+	}
+	
+	.tasty
+	{
+		left: 86px;
+    	top: 420px;
+	}
+	.tastier
+	{
+		left: 195px;
+    	top: 420px;
+	}
+	.tastiest
+	{
+		left: 305px;
+    	top: 420px;
+	}
+	
+	#Rside{
+		position:absolute;
+		left:425px;
+		top:0px;
+	}
+ 
+</style>
+</head>
+
+<body>
+
+    
+        
+        <div class="box1"><span id="t1241"><img src="images/30.jpg" alt="" width="425" height="445" /></span></div>
+        <div class="soft"><span id="w000387">soft</span></div>
+        <div class="softer"><span id="w000388">softer</span></div>
+        <div class="softest"><span id="w000389">softest</span></div>
+        <div class="low"><span id="w000390">low</span></div>
+        <div class="lower"><span id="w000391">lower</span></div>
+        <div class="lowest"><span id="w000392">lowest</span></div>
+        <div class="far"><span id="w000393">far</span></div>
+        <div class="farther"><span id="w000394">farther</span></div>
+        <div class="farthest"><span id="w000395">farthest</span></div>
+        <div class="high"><span id="w000396">high</span></div>
+        <div class="higher"><span id="w000397">higher</span></div>
+        <div class="highest"><span id="w000398">highest</span></div>      
+        
+    
+    
+        
+        
+        
+
+<div class="box20">
+    <div class="para3">
+        <span class="text34"><span id="w000386">Superlatives</span></span>
+    </div>
+</div>
+
+    <div id="Rside">
+        
+        <div class="rbox1"><span id="t2241"><img src="images/31.jpg" alt="" width="425" height="445" /></span></div>
+        <div class="heavy"><span id="w000399">heavy</span></div>
+        <div class="heavier"><span id="w000400">heavier</span></div>
+        <div class="heaviest"><span id="w000401">heaviest</span></div>
+        <div class="bright"><span id="w000405">bright</span></div>
+        <div class="brighter"><span id="w000406">brighter</span></div>
+        <div class="brightest"><span id="w000407">brightest</span></div>
+        <div class="loudest"><span id="w000404">loudest</span></div>
+        <div class="louder"><span id="w000403">louder</span></div>
+        <div class="loud"><span id="w000402">loud</span></div>
+        <div class="tasty"><span id="w000408">tasty</span></div>
+        <div class="tastier"><span id="w000409">tastier</span></div>
+        <div class="tastiest"><span id="w000410">tastiest!</span></div> 
+        
+        
+    
+    </div>
+
+<div id="chk"></div>
+<div id="timeValue"></div>
+</body>
+</html>

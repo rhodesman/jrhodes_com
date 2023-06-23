@@ -1,0 +1,698 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+ "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>
+    Untitled Document
+</title>
+<link href="skin/blue.monday/jplayer.blue.monday.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.jplayer.min.js"></script>
+<meta http-equiv="Content-Type" content="text/html;CHARSET=utf-8"/>
+<meta name="viewport" content="width=450,height=450" />
+
+<style type="text/css">
+ 
+    a:link {
+        color:blue;
+        text-decoration:underline;
+    }
+    a:active { color:red }
+    a:visited { color:purple }
+    
+  @font-face {
+  font-family: 'Adobe Garamond Semibold Italic';
+  src: url("font/AGARAMSI.TTF");
+  }
+@font-face {
+  font-family: 'CuriousGerogeheader-Medium';
+  src: url("font/CURIOUGM.TTF");
+  }
+@font-face {
+  font-family: 'New Century Schoolbook Italic';
+  src: url("font/NEWCENSI.TTF");
+  }
+@font-face {
+  font-family: 'New Century Schoolbook Roman';
+  src: url("font/NEWCENSR.TTF");
+  }
+@font-face {
+  font-family: 'OPTIMajerIrregular';
+  src: url("font/OPTIMAJI.TTF");
+  }
+
+body {
+   width: 850px;
+   height: 450px;
+   margin:0; 
+
+        background-color:white;
+        color:#393838;
+    }
+    .text58 {
+        font-family:'OPTIMajerIrregular';
+        font-size:28px;
+        text-decoration:none;
+        color:#CD383B;
+    }
+    .para3 {
+        line-height:24px;
+        text-align:center;
+    }
+    .rbox1 {
+        background-color:white;
+        width:450px;
+        height:450px;
+    }
+    .rbox2 {
+        position:absolute;
+        left:65.647px;
+        top:17.06px;
+        width:160.201px;
+        height:212.546px;
+    }
+    .rbox3 {
+        position:absolute;
+        left:2.707px;
+        top:31px;
+        width:134.258px;
+        height:56.418px;
+    }
+    .rbox4 {
+        position:absolute;
+        left:400.256px;
+        top:9.084px;
+        width:98.641px;
+        height:220.032px;
+    }
+    .rbox5 {
+        position:absolute;
+        left:452.098px;
+        top:248.147px;
+        width:96.221px;
+        height:216.735px;
+    }
+    .rbox6 {
+        position:absolute;
+        left:591.96px;
+        top:247.839px;
+        width:94.794px;
+        height:204.896px;
+    }
+    .rbox7 {
+        position:absolute;
+        left:27px;
+        top:467.5px;
+        width:92.613px;
+        height:215.649px;
+    }
+    .rbox8 {
+        position:absolute;
+        left:145.507px;
+        top:468.5px;
+        width:99.663px;
+        height:211.815px;
+    }
+    .rbox9 {
+        position:absolute;
+        left:284.828px;
+        top:467.5px;
+        width:141.137px;
+        height:212.815px;
+    }
+    .rbox10 {
+        position:absolute;
+        left:429.07px;
+        top:483.977px;
+        width:171.875px;
+        height:174.308px;
+    }
+    .rbox11 {
+        position:absolute;
+        left:87.375px;
+        top:455.994px;
+        width:96.088px;
+        height:20.854px;
+    }
+    .rbox12 {
+        position:absolute;
+        left:303.133px;
+        top:456.083px;
+        width:79.603px;
+        height:20.854px;
+    }
+    .rbox13 {
+        position:absolute;
+        left:453.737px;
+        top:456.083px;
+        width:83.003px;
+        height:20.854px;
+    }
+    .rbox14 {
+        position:absolute;
+        left:596.407px;
+        top:456.083px;
+        width:82.861px;
+        height:20.854px;
+    }
+    .rbox15 {
+        position:absolute;
+        left:48.377px;
+        top:683.1px;
+        width:45.863px;
+        height:20.854px;
+    }
+    .rbox16 {
+        position:absolute;
+        left:163.196px;
+        top:683.1px;
+        width:68.075px;
+        height:20.854px;
+    }
+    .rbox17 {
+        position:absolute;
+        left:299.936px;
+        top:683.1px;
+        width:78.254px;
+        height:20.854px;
+    }
+    .rbox18 {
+        position:absolute;
+        left:438.052px;
+        top:683.1px;
+        width:154.138px;
+        height:20.854px;
+    }
+    .rbox19 {
+        position:absolute;
+        left:260.634px;
+        top:227.191px;
+        width:86.087px;
+        height:18.809px;
+    }
+    .rbox20 {
+        position:absolute;
+        left:114.5px;
+        top:227.2px;
+        width:77.137px;
+        height:19.759px;
+    }
+    .rbox21 {
+        position:absolute;
+        left:400.875px;
+        top:227.191px;
+        width:95.923px;
+        height:20.854px;
+    }
+    .rbox22 {
+        position:absolute;
+        left:602.525px;
+        top:475.396px;
+        width:87.988px;
+        height:209.528px;
+    }
+    .rbox23 {
+        position:absolute;
+        left:251.5px;
+        top:12.891px;
+        width:101.379px;
+        height:209.955px;
+    }
+    .rbox24 {
+        position:absolute;
+        left:23.633px;
+        top:244.929px;
+        width:207.257px;
+        height:209.383px;
+    }
+    .rbox25 {
+        position:absolute;
+        left:267.543px;
+        top:250.32px;
+        width:124.595px;
+        height:199.529px;
+    }
+    .rbox26 {
+        position:absolute;
+        left:529.489px;
+        top:9.951px;
+        width:159.488px;
+        height:219.279px;
+    }
+    .rbox27 {
+        position:absolute;
+        left:563.628px;
+        top:227.191px;
+        width:96.088px;
+        height:20.854px;
+    }
+    .rbox28 {
+        position:absolute;
+        left:617.621px;
+        top:683.1px;
+        width:57.721px;
+        height:20.854px;
+    }
+    .rbox29 {
+        position:absolute;
+        left:0px;
+        top:0px;
+        background-color:#FFFCD1;
+        width:450px;
+        height:450px;
+    }
+    .rbox31 {
+	position:absolute;
+	left:-3px;
+	top:13px;
+	padding:0px;
+	width:79px;
+	height:32px;
+    }
+ .commondiv{
+ 	font-size:13px;
+	}
+ .librarian{
+ 	left:71px;
+	top:137px;
+	position:absolute;
+ 	}
+	.teacher{
+ 	left:159px;
+	top:137px;
+	position:absolute;
+ 	}
+	.police{
+ 	left:240px;
+	top:137px;
+	position:absolute;
+ 	}
+	.officer{
+ 	left:280px;
+	top:137px;
+	position:absolute;
+ 	}
+	.astronaut{
+ 	left:341px;
+	top:137px;
+	position:absolute;
+ 	}
+	.firefighters{
+ 	left:59px;
+	top:276px;
+	position:absolute;
+ 	}
+	.farmer{
+ 	left:186px;
+	top:276px;
+	position:absolute;
+ 	}
+	.lifeguard{
+ 	left:271px;
+	top:276px;
+	position:absolute;
+ 	}
+	.carpenter{
+ 	left:356px;
+	top:276px;
+	position:absolute;
+ 	}
+	.nurse{
+ 	left:40px;
+	top:420px;
+	position:absolute;
+ 	}
+	.scientist{
+ 	left:96px;
+	top:420px;
+	position:absolute;
+ 	}
+	.magician{
+ 	left:180px;
+	top:420px;
+	position:absolute;
+ 	}
+	.rock{
+ 	left:280px;
+	top:420px;
+	position:absolute;
+ 	}
+	.star{
+ 	left:307px;
+	top:420px;
+	position:absolute;
+ 	}
+	.doctor{
+ 	left:364px;
+	top:420px;
+	position:absolute;
+ 	}
+	.Rside
+	{
+		position:absolute;
+		left:425px;
+		top:0px;
+		
+	}
+	 .box1 {
+        background-color:white;
+        width:450px;
+        height:450px;
+    }
+    .box2 {
+        position:absolute;
+        left:0px;
+        top:0px;
+        background-color:#FFFCD1;
+        width:450px;
+        height:450px;
+    }
+    .box3 {
+        position:absolute;
+        left:37.156px;
+        top:13.191px;
+        width:119.123px;
+        height:226.06px;
+    }
+    .box4 {
+        position:absolute;
+        left:35.198px;
+        top:471.195px;
+        width:98.031px;
+        height:216.356px;
+    }
+    .box5 {
+        position:absolute;
+        left:173.136px;
+        top:476.72px;
+        width:115.997px;
+        height:207.713px;
+    }
+    .box6 {
+        position:absolute;
+        left:209.202px;
+        top:11.191px;
+        width:112.821px;
+        height:214.683px;
+    }
+    .box8 {
+        position:absolute;
+        left:387.625px;
+        top:5.773px;
+        width:167.859px;
+        height:214.446px;
+    }
+    .box10 {
+        position:absolute;
+        left:43.926px;
+        top:241.579px;
+        width:115.674px;
+        height:221.655px;
+    }
+    .box11 {
+        position:absolute;
+        left:433.905px;
+        top:475.5px;
+        width:94.901px;
+        height:204.815px;
+    }
+    .box12 {
+        position:absolute;
+        left:212.567px;
+        top:239.894px;
+        width:116.251px;
+        height:213.649px;
+    }
+    .box13 {
+        position:absolute;
+        left:398.549px;
+        top:244.795px;
+        width:95.011px;
+        height:207.188px;
+    }
+    .box14 {
+        position:absolute;
+        left:557.735px;
+        top:249.449px;
+        width:121.029px;
+        height:209.764px;
+    }
+    .box15 {
+        position:absolute;
+        left:562.043px;
+        top:472.537px;
+        width:138.977px;
+        height:232.972px;
+    }
+    .box16 {
+        position:absolute;
+        left:581.842px;
+        top:683.5px;
+        width:95.158px;
+        height:20.854px;
+    }
+    .box17 {
+        position:absolute;
+        left:190.842px;
+        top:683.4px;
+        width:71.649px;
+        height:20.854px;
+    }
+    .box18 {
+        position:absolute;
+        left:68px;
+        top:683.4px;
+        width:63.737px;
+        height:20.854px;
+    }
+    .box19 {
+        position:absolute;
+        left:446.305px;
+        top:683.5px;
+        width:85.162px;
+        height:20.854px;
+    }
+    .box21 {
+        position:absolute;
+        left:258.907px;
+        top:455.894px;
+        width:48.494px;
+        height:20.854px;
+    }
+    .box22 {
+        position:absolute;
+        left:393.875px;
+        top:455.894px;
+        width:103.427px;
+        height:20.854px;
+    }
+    .box23 {
+        position:absolute;
+        left:574.997px;
+        top:455.894px;
+        width:85.644px;
+        height:20.854px;
+    }
+    .box24 {
+        position:absolute;
+        left:84px;
+        top:455.894px;
+        width:56.064px;
+        height:20.854px;
+    }
+    .box25 {
+        position:absolute;
+        left:71.474px;
+        top:227.191px;
+        width:54.306px;
+        height:20.854px;
+    }
+    .box26 {
+        position:absolute;
+        left:415.375px;
+        top:227.191px;
+        width:84.542px;
+        height:20.854px;
+    }
+    .box27 {
+        position:absolute;
+        left:256.846px;
+        top:227.191px;
+        width:52.588px;
+        height:20.854px;
+    }
+    .box28 {
+        position:absolute;
+        left:323.016px;
+        top:470.551px;
+        width:95.744px;
+        height:210.509px;
+    }
+    .box29 {
+        position:absolute;
+        left:325.611px;
+        top:683.401px;
+        width:82.619px;
+        height:20.854px;
+    }
+    .box51 {
+        position:absolute;
+        left:569.321px;
+        top:-8.31px;
+        width:113.086px;
+        height:243.003px;
+    }
+    .box52 {
+        position:absolute;
+        left:604.357px;
+        top:227.191px;
+        width:42.485px;
+        height:20.854px;
+    }
+ .commondiv{
+ 	font-size:13px;
+	}
+	.janitor{
+		position:absolute;
+		left:50px;
+		top:136px;
+	}
+	.dancer{
+		position:absolute;
+		left:150px;
+		top:136px;
+	}
+	.fisherman{
+		position:absolute;
+		left:250px;
+		top:136px;
+	}
+	.baker{
+		position:absolute;
+		left:360px;
+		top:136px;
+	}
+	.soldier{
+		position:absolute;
+		left:50px;
+		top:278px;
+	}
+	.pilot{
+		position:absolute;
+		left:157px;
+		top:278px;
+	}
+	.veterinarian{
+		position:absolute;
+		left:233px;
+		top:278px;
+	}
+	.store{
+		position:absolute;
+		left:341px;
+		top:278px;
+	}
+	.clerk{
+		position:absolute;
+		left:370px;
+		top:278px;
+	}
+	.writer{
+		position:absolute;
+		left:47px;
+		top:419px;
+	}
+	.artist{
+		position:absolute;
+		left:123px;
+		top:419px;
+	}
+	.athlete{
+		position:absolute;
+		left:202px;
+		top:419px;
+	}
+	.hairdresser{
+		position:absolute;
+		left:263px;
+		top:419px;
+	}
+	.letter{
+		position:absolute;
+		left:345px;
+		top:419px;
+	}
+	.carrier{
+		position:absolute;
+		left:374px;
+		top:419px;
+	}	
+</style>
+</head>
+
+<body>
+
+    
+        
+        <div class="rbox1">
+            <span id="t0318"><img src="images/12.jpg" alt="" width="425" height="445" 
+             /></span></div>
+        
+        <div class="commondiv">
+        	<div class="librarian"><span id='w000117'>librarian</span></div>
+            	<div class="teacher"><span id='w000118'>teacher</span></div>
+                	<div class="police"><span id='w000119'>police officer</span></div>
+                        	<div class="astronaut"><span id='w000120'>astronaut</span></div>
+                            	<div class="firefighters"><span id='w000121'>firefighters</span></div>
+                                	<div class="farmer"><span id='w000122'>farmer</span></div>
+                                    	<div class="lifeguard"><span id='w000123'>lifeguard</span></div>
+                                        	<div class="carpenter"><span id='w000124'>carpenter</span></div>
+                                            	<div class="nurse"><span id='w000125'>nurse</span></div>	
+                                                	<div class="scientist"><span id='w000126'>scientist</span></div>
+                                                    	<div class="magician"><span id='w000127'>magician</span></div>
+                                                        	<div class="rock"><span id='w000128'>rock star</span></div>
+                                                                	<div class="doctor"><span id='w000129'>doctor</span></div>
+        
+        </div>
+    
+    
+        
+        
+        
+
+<div class="rbox31">
+    <div class="para3">
+        <span class="text58"><span id="w000116">Jobs</span> </span>
+    </div>
+</div>
+
+
+<!--right side-->
+<div class="Rside">
+ <div class="box1">
+            <span id="t0110"><img src="images/13.jpg" alt="" width="425" height="445" 
+             /></span></div>
+        <div class="commondiv">
+        	<div class="janitor"><span id='w000130'>janitor</span></div>
+            	<div class="dancer"><span id='w000131'>dancer</span></div>
+                	<div class="fisherman"><span id='w000132'>fisherman</span></div>
+                    	<div class="baker"><span id='w000133'>baker</span></div>
+                        	<div class="soldier"><span id='w000134'>soldier</span></div>
+                            	<div class="pilot"><span id='w000135'>pilot</span></div>
+                                	<div class="veterinarian"><span id='w000136'>veterinarian</span></div>
+                                    	<div class="store"><span id='w000137'>store clerk</span></div>
+                                            	<div class="writer"><span id='w000138'>writer</span></div>
+                                                	<div class="artist"><span id='w000139'>artist</span></div>
+                                                    	<div class="athlete"><span id='w000140'>athlete</span></div>
+                                                        	<div class="hairdresser"><span id='w000141'>hairdresser</span></div>
+                                                            	<div class="letter"><span id='w000142'>letter carrier</span></div>
+        
+        </div>
+        
+    
+    
+</div>
+<div id="chk"></div>
+<div id="timeValue"></div>
+</body>
+</html>

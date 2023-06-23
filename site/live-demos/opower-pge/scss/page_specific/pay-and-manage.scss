@@ -1,0 +1,200 @@
+.rate-tier {
+  padding:35px;
+
+  h1{
+    margin-top:10px;
+  }
+
+  .current > label{
+    color:$oP-blue;
+    font-weight:bold;
+  }
+
+  .compared > label{
+    color: $op-orange;
+    font-weight:bold;
+  }
+
+  .analyze{
+    position:relative;
+    left:-30px;
+  }
+
+  & .rate-plan {
+    position:relative;
+    margin-top:10px;
+    min-height:400px;
+    padding:0 40px;
+    &:first-child {
+      border-right:1px solid $oP-gray-to;
+      padding-left: 0;
+    }
+  }
+  & .rate-plan {
+    & a, strong {
+      display:block;
+      width:100%;
+    }
+    & p strong {
+      font-size:rem-calc(23);
+      color: $oP-blue;
+      padding: 5px 0;
+    }
+    & p.recommended {
+      padding-left:1.5em !important;
+      color: $dark-green;
+      font-weight:bold;
+      font-size:rem-calc(18);
+      @include geomicon("\e07a",5px 0 0 -5px,inherit);
+      &:before {
+        font-size:1.5rem;
+        top:initial !important;
+      }
+      + p{
+        margin-bottom:5px;
+        + p{
+          color:$dark-green;
+          font-weight:bold;
+          font-size: rem-calc(17);
+        }
+      }
+    }
+  }
+  & .compared {
+    &:before {
+      content:'vs.';
+      background-color: #ccc;
+      color:white;
+      @include radius(26px);
+      height:40px;
+      width:40px;
+      text-align:center;
+      position:absolute;
+      top:25px;
+      left:-20px;
+      line-height:2.5;
+    }
+    & p strong {
+      color:$op-orange;
+    }
+  }
+  & .comparison {
+    text-align:right;
+    & h2 {
+      text-align:left;
+      font-size:rem-calc(16);
+      padding:20px 0 10px;
+      border-bottom:1px solid #ccc;
+    }
+    & .alert-box {
+      padding:rem-calc(8);
+      margin-bottom:14px;
+      width:90%;
+      text-align:left;
+
+      &.undo{
+        text-align:right;
+        background-color:transparent;
+      }
+
+      & .close {
+        opacity:0.6;
+      }
+      &.add-one {
+        background-color: $oP-blue;
+        padding-left:10px;
+      }
+      & a.add {
+        color:white;
+        span{
+          float:right;
+          font-size: rem-calc(18);
+          position:relative;
+          top:-3px;
+          right:2px;
+        }
+      }
+
+    }
+  }
+  & .chart-content {
+    margin-top:10px;
+    padding-top:20px;
+    & h2 {
+      font-size:rem-calc(24);
+    }
+    & .chart-grab li:not(:first-child) {
+      @include geomicon("\e0dc",6px 0 0 -13px,inherit);
+      padding-left: 0px;
+      &:before {
+        font-size:4px;
+        padding-top:2px;
+
+      }
+    }
+    & .tier-chart {
+      width:100%;
+      height:auto;
+      & span {
+        display:block;
+        width:100%;
+        height:100%;
+        background-color:$oP-gray;
+        text-align:center;
+        vertical-align:middle;
+        padding-top:200px;
+      }
+    }
+  }
+  .key{
+    list-style:none;
+    margin-top:20px;
+    li{
+      float:left;
+      color: #888888;
+      width:180px;
+      font-size: rem-calc(13);
+      line-height:1.3;
+      margin-right:20px;
+      position:relative;
+      padding-left:20px;
+      &:first-child{
+        &:before{
+          content: '';
+          background-color: #0B87CA;
+          border-radius: 50%;
+          width:10px;
+          height:10px;
+          display:block;
+          position:absolute;
+          left:0px;
+          top:2px;
+        }
+      }
+      &:last-child{
+        &:before{
+          content: '';
+          background-color: transparent;
+          border: 3px solid #FFAC06;
+          border-radius: 50%;
+          width:10px;
+          height:10px;
+          display:block;
+          position:absolute;
+          left:0px;
+          top:2px;
+        }
+      }
+    }
+  }
+}
+.page-content {
+  border-top: 1px solid $oP-gray-to;
+  padding-top:8px;
+}
+
+.manage-alerts{
+  padding-top:15px;
+  display:inline-block;
+  font-size:rem-calc(14);
+}

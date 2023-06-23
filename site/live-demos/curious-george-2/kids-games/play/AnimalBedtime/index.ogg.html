@@ -1,0 +1,921 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <title>Animal Bedtime</title>
+	<link href="assets/demoStyles.css" rel="stylesheet" type="text/css" />
+	<script src="http://code.createjs.com/easeljs-0.4.2.min.js"></script>
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script type="text/javascript" src="script/soundmanager2.js"></script>
+    <script src="assets/Animal.js"></script>
+    <script src="assets/MyButton.js"></script>
+    <script type="text/javascript" src="lib/easeljs-NEXT.min.js"></script>
+
+	<script type="text/javascript" src="src/tweenjs/Tween.js"></script>
+	<script type="text/javascript" src="src/tweenjs/Ease.js"></script>
+
+    <script type="text/javascript" src="src/preloadjs/AbstractLoader.js"></script>
+    <script type="text/javascript" src="src/preloadjs/PreloadJS.js"></script >
+    <script type="text/javascript" src="src/preloadjs/TagLoader.js"></script>
+    <script type="text/javascript" src="src/preloadjs/XHRLoader.js"></script>
+
+    <script type="text/javascript">
+
+        var canvas;
+        var stage = 0;
+        var img;
+        var blanketBMP = null;
+		var animalArray =[];
+        var blanketRect = null;//new Rectangle()
+        var countSounds = [];
+        var nightImageName = "bedtime_blueoverlay.png";
+        var georgeImageName = "game_george.png";
+        var blanketImageName = "game_blanketcover.png";
+        var backgroundImageName = "game_bg.png";
+        var titleBGname = 'title_bg.png';
+        var btnPlayName = 'btn_play.png';
+        var btnHelpName = 'btn_help.png';
+        var btnPlayBMP = null;
+        var btnHelpBMP = null;
+        var btn_help = null;
+        var help_btn_sound = null;
+        var thanksSound = null;
+        var num1ImageName = 'num1.png';
+        var num2ImageName = 'num2.png';
+        var num3ImageName = 'num3.png';
+        var num1BMP = null;
+        var num2BMP = null;
+        var num3BMP = null;
+        var elephant_sleep = "game_elephant_sleeping.png";
+        var elephant_stand = "game_elephant.png";
+        var lion_sleep = "game_lion_sleeping.png";
+        var lion_stand = "game_lion.png";
+        var animalKind = 0;
+        var play_btn_sound = null;
+        var animalSleepBMP = null;
+        var animalStandBMP = null;
+        var lionSleepBMP = null;
+        var lionStandBMP = null;
+        var elephantSleepBMP = null;
+        var elephantStandBMP = null;
+        var sleepSkew = [];
+        var imgFiles = [backgroundImageName,elephant_sleep, elephant_stand, lion_sleep, lion_stand, blanketImageName, georgeImageName, nightImageName, titleBGname, btnPlayName, num1ImageName, num2ImageName, num3ImageName, btnHelpName];
+           var numImgFiles = [
+                   'num1.png',
+                   'num2.png',
+                   'num3.png',
+                   'num4.png',
+                   'num5.png',
+                   'num6.png',
+                   'num7.png',
+                   'num8.png',
+                   'num9.png',
+                   'num10.png'
+           ];
+        var totalLoaded = 0;
+        var numImages = [];
+        var images = [];
+        var imageCount = 0;
+        var bitmaps = [];
+        var blanketContainer = 0;
+        var animalContainer = 0;
+        var mainContainer = 0;
+        var nightContainer = null;
+        var titleContainer = null;
+        var btnPlayContainer = null;
+        var backgroundContainer = 0;
+        var imagePath = "img/";
+        var sleepNum = 0;
+        var nightBmp = 0;
+        var numAnimals = 0;
+        var update = true;
+         var mouseTarget;	// the display object currently under the mouse, or being dragged
+        var dragStarted;	// indicates whether we are currently in a drag operation
+        var offset = new Point();
+
+        var goodNightManSound = null;
+        var blanketInstructSound = null;
+        var endCountSound = null;
+        var introVOSound = null;
+        var wrapUpManSound = null;
+        var helpSound = null;
+        var playBtnInstSound = null;
+
+        var topBoundary;
+        var left;
+        var right;
+        var bottom;
+        //var balls;
+        var total;
+        var currentBall;
+        var bedPositions = [];
+        var tweening = false;
+        var tuckedNum = 0;
+        var preload = null;
+        var btn_play = null;
+
+        var endCountSoundNames = [
+                "CG-ManInYellowHat_BeanCreative_GamesActivities_AnimalBedtime_WrapUp_VO_1_19.ogg",
+                "CG-ManInYellowHat_BeanCreative_GamesActivities_AnimalBedtime_WrapUp_VO_1_20.ogg",
+                "CG-ManInYellowHat_BeanCreative_GamesActivities_AnimalBedtime_WrapUp_VO_1_21.ogg",
+                "CG-ManInYellowHat_BeanCreative_GamesActivities_AnimalBedtime_WrapUp_VO_1_22.ogg",
+                "CG-ManInYellowHat_BeanCreative_GamesActivities_AnimalBedtime_WrapUp_VO_1_23.ogg",
+                "CG-ManInYellowHat_BeanCreative_GamesActivities_AnimalBedtime_WrapUp_VO_1_24.ogg",
+                "CG-ManInYellowHat_BeanCreative_GamesActivities_AnimalBedtime_WrapUp_VO_1_25.ogg",
+                "CG-ManInYellowHat_BeanCreative_GamesActivities_AnimalBedtime_WrapUp_VO_1_26.ogg",
+                "CG-ManInYellowHat_BeanCreative_GamesActivities_AnimalBedtime_WrapUp_VO_1_27.ogg",
+                "CG-ManInYellowHat_BeanCreative_GamesActivities_AnimalBedtime_WrapUp_VO_1_28.ogg",
+        ];
+        var bedSoundNames = [
+            "CG-ManInYellowHat_BeanCreative_GamesActivities_AnimalBedtime_Introduction_VO_1_11-1.ogg",
+            "CG-ManInYellowHat_BeanCreative_GamesActivities_AnimalBedtime_Introduction_VO_1_15-1.ogg",
+            "CG-ManInYellowHat_BeanCreative_GamesActivities_AnimalBedtime_Introduction_VO_1_17-1.ogg",
+            "CG-ManInYellowHat_BeanCreative_GamesActivities_AnimalBedtime_Introduction_VO_1_19-1.ogg",
+            "CG-ManInYellowHat_BeanCreative_GamesActivities_AnimalBedtime_Introduction_VO_1_21-1.ogg",
+            "CG-ManInYellowHat_BeanCreative_GamesActivities_AnimalBedtime_Introduction_VO_1_23-1.ogg",
+            "CG-ManInYellowHat_BeanCreative_GamesActivities_AnimalBedtime_Introduction_VO_1_25-1.ogg",
+            "CG-ManInYellowHat_BeanCreative_GamesActivities_AnimalBedtime_Introduction_VO_1_27-1.ogg",
+            "CG-ManInYellowHat_BeanCreative_GamesActivities_AnimalBedtime_Introduction_VO_2_01-1.ogg",
+            "CG-ManInYellowHat_BeanCreative_GamesActivities_AnimalBedtime_Introduction_VO_2_03-1.ogg",
+            "CG-ManInYellowHat_BeanCreative_GamesActivities_AnimalBedtime_Introduction_VO_2_05-2.ogg"
+        ];
+        var bedSounds = [];
+        soundManager.setup({
+          preferFlash: false,
+            waitForWindowLoad: true,
+          debugMode: true,
+          consoleOnly: false,
+            url: 'swf/' // path to SoundManager2 SWF files (note trailing slash)
+
+        });
+
+		var sleepSound = 0;/*soundManager.createSound({
+            id: 'hello',
+            url: 'sound/CG_MonkeyChitter_Sentences_Eight.ogg'
+
+          });*/
+        //sleepSound.play();
+        soundManager.onready(function(oStatus) {
+          if (!oStatus.success) {
+            return false;
+          }
+            playBtnInstSound = soundManager.createSound({
+            id: 'playBtnInstSound',
+            url: 'CG-ManInYellowHat_GENERIC_PlayButton_VO_ClickOrTapTheGreenButtonToPlay-1.ogg'
+
+          });
+            sleepSound = soundManager.createSound({
+            id: 'hello',
+            url: 'sound/CG_MonkeyChitter_Sentences_Hooray_2.ogg'
+
+          });
+            introVOSound = soundManager.createSound({
+            id: 'introVO',
+            url: 'sound/CG_Game-ActivityTitles_AnimalBedtime_Girl.ogg'
+
+          });
+            thanksSound = soundManager.createSound({
+            id: 'thanks',
+            url: 'sound/CG-ManInYellowHat_BeanCreative_GamesActivities_AnimalBedtime_WrapUp_VO_1_16.ogg'
+
+          });
+            blanketInstructSound = soundManager.createSound({
+            id: 'blanketInstruct',
+            url: 'sound/CG-ManInYellowHat_BeanCreative_GamesActivities_AnimalBedtime_WrapUp_VO_2_01.ogg'
+
+          });
+            goodNightManSound = soundManager.createSound({
+            id: 'goodNight',
+            url: 'sound/CG-ManInYellowHat_BeanCreative_GamesActivities_AnimalBedtime_WrapUp_VO_2_03.ogg'
+
+          });
+           wrapUpManSound = soundManager.createSound({
+            id: 'wrapUp',
+            url: 'sound/CG-ManInYellowHat_BeanCreative_GamesActivities_AnimalBedtime_WrapUp_VO_2_07.ogg'
+
+          });
+            helpSound = soundManager.createSound({
+            id: 'help',
+            url: 'sound/help.ogg'
+
+          });
+           play_btn_sound = soundManager.createSound({
+               id: 'play_btn',
+               url: 'sound/CG_Game-NavigationButtons_Play_Girl_1.ogg'
+
+           }    );
+            help_btn_sound = soundManager.createSound({
+                id: 'help_btn',
+                url: 'sound/help_btn.ogg'
+
+            }    );
+            /*for (var i=0;i<=2;i++){
+                bedSounds[i] = soundManager.createSound({
+                    id: 'bedSound'+(i),
+                    url: 'sound/bed_' + (i+1) + '.ogg'
+                  });
+            }*/
+            for (var i=0;i<=9;i++){
+                bedSounds[i] = soundManager.createSound({
+                    id: 'bedSound'+(i),
+                    url: 'sound/bedsounds/' + bedSoundNames[i]
+                });
+            }
+            for (var i=0;i<=9;i++){
+                countSounds[i] = soundManager.createSound({
+                    id: 'countSound'+(i),
+                    url: 'sound/' + endCountSoundNames[i]
+                });
+            }
+               // alert(numAnimals);
+               /* endCountSound = soundManager.createSound({
+            id: 'endCount',
+            url: 'sound/' + endCountSoundNames[numAnimals-1]
+
+          });*/
+
+
+            //imgFiles.concat(numImgFiles);
+            //loadImageFiles();
+            loadImages();
+        });
+
+         function loadImages()
+         {
+                console.log('loadImages');
+             manifest = [
+                 {src:"img/bedtime_blueoverlay.png", id:"night"},
+                 {src:"img/game_george.png", id:"george"},
+                 {src:"img/game_blanketcover.png", id:"blanket"},
+                 {src:"img/game_bg.png", id:"game_bg"},
+                 {src:"img/title_bg.png", id:"title_screen"},
+                 {src:"img/btn_play.png", id:"btn_play"},
+                 {src:"img/btn_play_hover.png", id:"btn_play_over"},
+                 {src:"img/btn_help.png", id:"btn_help"},
+                 {src:"img/btn_help_hover.png", id:"btn_help_over"},
+                 {src:"img/game_elephant_sleeping.png", id:"elephant_sleep"},
+                 {src:"img/game_elephant.png", id:"elephant"},
+                 {src:"img/game_lion_sleeping.png", id:"lion_sleep"},
+                 {src:"img/game_lion.png", id:"lion"},
+                 {src:"img/num1.png", id:"num1"},
+                 {src:"img/num2.png", id:"num2"},
+                 {src:"img/num3.png", id:"num3"},
+                 {src:"img/num4.png", id:"num4"},
+                 {src:"img/num5.png", id:"num5"},
+                 {src:"img/num6.png", id:"num6"},
+                 {src:"img/num7.png", id:"num7"},
+                 {src:"img/num8.png", id:"num8"},
+                 {src:"img/num9.png", id:"num9"},
+                 {src:"img/num10.png", id:"num10"}
+             ]
+             preload = new createjs.PreloadJS();
+             //preload.onFileProgress = handleFileProgress;
+             preload.onProgress = handleOverallProgress;
+             preload.onComplete = handleComplete;
+             preload.onFileLoad = handleFileLoad;
+             preload.onError = handleFileError;
+             preload.setMaxConnections(5);
+             preload.loadManifest(manifest);
+         }
+        // An error happened on a file
+        function handleFileError(event) {
+           alert('Can not load: ' + event.src)     ;
+        }
+        // Overall progress handler
+        function handleOverallProgress(event) {
+           // $("#mainProgress > .progress").width(preload.progress * $("#mainProgress").width());
+        }
+
+
+        function handleFileLoad(event) {
+            var img = new Image();
+            img.src = event.src;
+            console.log('file load: ' + img.src);
+            img.onload = handleLoadComplete;
+        }
+
+        function handleLoadComplete(event) {
+
+           // var movieClip = new createjs.Container();
+            var bmp = new createjs.Bitmap(this);
+            totalLoaded += 1;
+
+            if (totalLoaded == manifest.length) {
+                //update = false;
+                //stage.update();
+                //console.log('Images Loaded');
+                createBitMaps();
+                titleScreen();
+            }
+        }
+        function handleComplete(event) {
+            console.log('handleComplete', event, totalLoaded);
+            console.log('Images Loaded');
+            return;
+            createBitMaps();
+            titleScreen();
+
+        }
+  // soundManager is initialised, ready to use. Create a sound for this demo page.
+
+        function titleScreen()
+        {
+            console.log('titleScreen()');
+            stage.addChild(titleContainer);
+            //stage.addChild(btnPlayContainer);
+
+
+            introVOSound.play({onfinish: function() {
+                    // alert('ppp');
+                     playBtnInstSound.play();
+                 }
+                 });
+            numAnimals = 1;
+            initPlayBtn();
+
+            stage.update();
+        }
+        function initHelpBtn()
+        {
+            btn_help = new MyButton(stage, preload.getResult("btn_help").result, preload.getResult("btn_help_over").result);
+            stage.addChild(btn_help);
+            btn_help.x = 860;
+            btn_help.y = 40;
+
+
+            btn_help.onMouseOver = function(mouseEvent){
+                btn_help.expand();
+                help_btn_sound.play();
+            }
+            btn_help.onMouseOut = function(mouseEvent){
+                btn_help.retract();
+            }
+            btn_help.onClick = function(mouseEvent) {
+                btn_help.onPress = null;
+                helpSound.play();
+            }
+        }
+        function initPlayBtn()
+        {
+            btn_play = new MyButton(stage, preload.getResult("btn_play").result, preload.getResult("btn_play_over").result);
+            stage.addChild(btn_play);
+            btn_play.x = 730;
+            btn_play.y = 400;
+
+            btn_play.onMouseOver = function(mouseEvent){
+                btn_play.expand();
+                play_btn_sound.play();
+            }
+            btn_play.onMouseOut = function(mouseEvent){
+                btn_play.retract();
+            }
+            btn_play.onClick = function(mouseEvent) {
+                btn_play.onPress = null;
+                stage.removeChild(btn_play);
+                newGame();
+            }
+        }
+        function createBitMaps()
+        {
+            console.log('createBitMaps()');
+            var bmp;
+            btnPlayBMP = new Bitmap(preload.getResult("btn_play").result);
+            btnPlayContainer.addChild(btnPlayBMP);
+
+            bmp  = new Bitmap(preload.getResult("title_screen").result);
+            titleContainer.addChild(bmp);
+            blanketBMP = new Bitmap(preload.getResult("blanket").result);
+            blanketContainer.addChild(blanketBMP );
+            bmp = new Bitmap(preload.getResult("game_bg").result);
+            backgroundContainer.addChild(bmp);
+            bmp  = new Bitmap(preload.getResult("george").result);
+            bmp.y = 300;
+            animalContainer.addChild(bmp);
+
+            nightBmp  = new Bitmap(preload.getResult("night").result);
+            nightContainer.addChild(nightBmp);
+
+            num1BMP  = new Bitmap(preload.getResult("num1").result);
+            num2BMP  = new Bitmap(preload.getResult("num2").result);
+            num3BMP  = new Bitmap(preload.getResult("num3").result);
+
+            //btnHelpBMP  = new Bitmap(preload.getResult("btn_help").result);
+            elephantSleepBMP  = new Bitmap(preload.getResult("elephant_sleep").result);
+            elephantStandBMP  = new Bitmap(preload.getResult("elephant").result);
+            lionSleepBMP  = new Bitmap(preload.getResult("lion_sleep").result);
+            lionStandBMP  = new Bitmap(preload.getResult("lion").result);
+
+        }
+        function init() {
+        	if (window.top != window) {
+        		document.getElementById("header").style.display = "none";
+        	}
+            //return;
+            //
+            // numAnimals = Math.floor((Math.random()*3)+1);
+            canvas = document.getElementById("testCanvas");
+            // create a new stage and point it at our canvas:
+            
+            stage = new Stage(canvas);
+           // if (Touch.isSupported()) { Touch.enable(stage); }
+            // enable touch interactions if supported on the current device:
+	        Touch.enable(stage);
+
+	        // enabled mouse over / out events
+	        stage.enableMouseOver(10);
+            // grab canvas width and height for later calculations:
+            w = canvas.width;
+            h = canvas.height;
+
+            /*img = new Image();
+            img.onload = layout;
+            img.src = "./assets/daisy.png";
+            */
+            mainContainer = new Container();
+            //stage.addChild(mainContainer);
+
+            backgroundContainer = new Container();
+            //stage.addChild(backgroundContainer);
+
+            animalContainer = new Container();
+            //stage.addChild(animalContainer);
+            
+            blanketContainer = new Container();
+            //stage.addChild(blanketContainer);
+
+            nightContainer = new Container();
+            titleContainer = new Container();
+            btnPlayContainer = new Container();
+
+           // loadImageFiles();
+        }
+		/*function Animal(innum, inx)
+		{
+			this.num = innum;
+			var b = new Bitmap(images[1]);
+            b.x = inx;
+            b.y = 340;
+            this.bmp_sleep = new Bitmap(images[2]);
+            this.bmp_stand = b;
+
+            stage.addChild(b);
+            b.onPress = handlePress;
+            b.onMouseOver = handleMouseOver;
+            b.onMouseOut = handleMouseOut;
+        }*/
+        function handleMouseUp(event) {
+            var ball = currentBall;
+            if (ball == null) { return; }
+            if (ball.scale == undefined) { ball.scale = 1; }
+            ball.scaleX = ball.scaleY = ball.scale;
+            ball.shadow = null;
+            update = true;
+            ball.isMouseDown = false;
+            currentBall = null;
+            var bedDrop = false;
+            if (ball.x > 100 && ball.x < 800){
+                if (ball.y > 50 && ball.y < 200){
+                    sleepAnimal(ball);
+                    bedDrop = true;
+                }
+            }
+            if (!bedDrop){
+                ball.x = ball.startX;
+                ball.y = ball.startY;
+            }
+        }
+
+        function handlePress(event) {
+
+            var ball = event.target;
+            currentBall = ball;
+
+            stage.addChildAt(currentBall, stage.children.length - 1);
+
+            offset = {x:ball.x-event.stageX, y:ball.y-event.stageY};
+            ball.scaleX = ball.scaleY = ball.scale*1.2;
+            ball.shadow = new Shadow('#000000', 0, 0, 5);
+
+            currentBall.isMouseDown = true;
+            update = true;
+            ball.oldX = ball.x;
+            ball.oldY = ball.y;
+            //vx = vy = 0;
+            event.onMouseMove = handleMove;
+        }
+
+        function handleMove(event) {
+
+            currentBall.x = event.stageX+offset.x;
+            currentBall.y = event.stageY+offset.y;
+
+            // indicate that the stage should be updated on the next tick:
+            update = true;
+        }
+
+        function handleMouseOver(event) {
+            var ball = event.target;
+            ball.scaleX = ball.scaleY = ball.scale*1.1;
+            ball.shadow = new Shadow('#000000', 0, 0, 5);
+            update = true;
+
+        }
+
+        function handleMouseOut(event) {
+            var ball = event.target;
+            ball.scaleX = ball.scaleY = ball.scale;
+            ball.shadow = null;
+
+            update = true;
+        }
+
+        function tick() {
+            if (tweening){
+                stage.update();
+                return;
+            }
+           for(var i=0;i<total;i++) {
+               var ball = animalArray[i];
+               ball.vy += g;
+               ball.vx *= f;
+               ball.vy *= f;
+               if (!ball.isMouseDown){
+                   ball.x +=ball.vx;
+                   ball.y +=ball.vy;
+
+                   if ((ball.x + ball.radius) > right) {
+                       ball.x = right - ball.radius;
+                       ball.vx *= ball.bounce;
+                   } else if ((ball.x - ball.radius) < left) {
+                       ball.x = left + ball.radius;
+                       ball.vx *= ball.bounce;
+                   }
+                   if ((ball.y + ball.radius) > bottom) {
+                       ball.y = bottom - ball.radius;
+                       ball.vy *= ball.bounce;
+                   } else if((ball.y - ball.radius) < topBoundary) {
+                       ball.y = topBoundary + (ball.radius);
+                       ball.vy *= ball.bounce;
+                   }
+               } else {
+                   ball.vx = ball.x - ball.oldX;
+                   ball.vy = ball.y - ball.oldY;
+
+                   ball.oldX = ball.x;
+                   ball.oldY = ball.y;
+               }
+               ball.rotation += .25*ball.vx;
+           }
+
+
+          stage.update();
+        }
+
+		function sleepAnimal(animal)
+        {
+            sleepNum++;
+            //soundManager.play('hello');
+            //animal.getInBed();
+            animal.onPress = null;
+            animal.onMouseOver = null;
+            animal.onMouseOut = null;
+            animal.bedIndex = sleepNum;
+            var newX = bedPositions[sleepNum-1].x;
+            var newY = bedPositions[sleepNum-1].y;
+
+            tweening = true;
+            var tween = createjs.Tween.get(animal, {loop:false})
+                         .to({x:newX, y:newY}, 1000, createjs.Ease.cubicIn())
+                         .wait(1000).call(tweenToBedDone);
+
+            //tween.start();
+
+            /*if (sleepNum >=numAnimals){
+                stage.addChild(blanketContainer);
+                stage.addChild(nightBmp);
+            }*/
+            sleepSound.play();
+        }
+        function tweenToBedDone()
+        {
+            tuckedNum++;
+             if (tuckedNum >=numAnimals){
+                //stage.addChild(blanketContainer);
+                //stage.addChild(nightBmp);
+                 thanksSound.play({onfinish: function() {
+                    // alert('ppp');
+                     endCount();
+                 }
+                 });
+            }
+        }
+        function endCount()
+        {
+            for (var i=0;i<numAnimals;i++){
+                //showNumber(i+1);
+                  var tween = createjs.Tween.get(blanketContainer, {loop:false})
+                         .wait( (i*500)).call(showNumber, [i+1]);
+
+            }
+            endCountSound.play({onfinish: function() {
+                 var tween = createjs.Tween.get(blanketContainer, {loop:false})
+                        .wait(1000).call(endCountFinish);
+            }
+            });
+
+        }
+        function endCountFinish()
+        {
+            console.log('endCountFinish()');
+            blanketInstructSound.play({onfinish: blanketInstructFinish});
+        }
+        function blanketInstructFinish()
+        {
+          //  alert('blanketInstructFinish()');
+            //blanketContainer.x += 100;
+            stage.onPress = function(mouseEvent) {
+                console.log('blanketContainer.x:'+blanketContainer.x);
+              //  console.log('blanketBMP.width:'+blanketBMP.width);
+                blanketRect = new Rectangle(blanketContainer.x, blanketContainer.y, 657, 65 + 100);
+                if (mouseEvent.stageX > blanketRect.x && mouseEvent.stageX < blanketRect.x + blanketRect.width){
+                    if (mouseEvent.stageY > blanketRect.y && mouseEvent.stageY < blanketRect.y + blanketRect.height){
+                       stage.onPress = null;
+                        stage.addChild(blanketContainer);
+                        var tween = createjs.Tween.get(blanketContainer, {loop:false})
+                         .to({ y:blanketContainer.y - 20}, 1000, createjs.Ease.cubicIn())
+                         .wait(600).call(blanketPullDone);
+                    }
+                }
+
+            }
+            return;
+            blanketContainer.onPress = function(mouseEvent) {
+                blanketContainer.onPress = null;
+                //alert('blaNKY');
+                stage.addChild(blanketContainer);
+				  var tween = createjs.Tween.get(blanketContainer, {loop:false})
+                         .to({ y:blanketContainer.y - 20}, 1000, createjs.Ease.cubicIn())
+                         .wait(600).call(blanketPullDone);
+				  //stage.update();
+				}
+        }
+        function blanketPullDone()
+        {
+
+            goodNightManSound.play({onfinish: goodNightManDone});
+            for (var i=0;i<animalArray.length;i++){
+                animalArray[i].goToSleep(sleepSkew[animalArray[i].bedIndex]);
+
+
+
+            }
+            stage.update();
+        }
+        function goodNightManDone()
+        {
+            nightContainer.alpha = 0;
+            stage.addChild(nightContainer);
+             var tween = createjs.Tween.get(nightContainer, {loop:false})
+                         .to({ alpha:0.8}, 1000, createjs.Ease.cubicIn())
+                         .wait(1).call(nightFallDone);
+        }
+        function nightFallDone()
+        {
+            alert('Curious George celebrates here!');
+            //stage.addChild(btnPlayBMP);
+            wrapUpManSound.play();
+            initPlayBtn();
+               // endCountSound = null;
+            stage.update();
+
+        }
+        function showNumber(num)
+        {
+            console.log('showNumber(' + num +')');
+            console.log('bmp should be: ' + ('num' + num + 'BMP'));
+            var bmp = new Bitmap(preload.getResult('num'+num).result);
+               //
+           /* switch(num){
+                case 1:
+                bmp = num1BMP;
+                break;
+                case 2:
+                bmp = num2BMP;
+                break;
+                case 3:
+                bmp = num3BMP;
+                break;
+
+            }          */
+            stage.addChild(bmp);
+           // trace('bmp:' + bmp.name);
+            bmp.x = bedPositions[num-1].x + 30;
+            bmp.y = 15;
+           // bmp.alpha = 0;
+
+            stage.update();
+
+        }
+        function newGame()
+        {
+            blanketContainer.x = 160;
+            blanketContainer.y = 160;
+            sleepNum = 0;
+            tuckedNum = 0;
+            animalArray = [];
+             numAnimals = 5;//Math.floor((Math.random()*3)+1);
+            endCountSound = countSounds[numAnimals-1];
+            bedPositions = [];
+             animalKind = Math.floor((Math.random()*2)+1);
+            switch (animalKind){
+                case 1:
+                    animalSleepBMP = elephantSleepBMP;
+                    animalStandBMP = elephantStandBMP;
+                break;
+                case 2:
+                    animalSleepBMP = lionSleepBMP;
+                    animalStandBMP = lionStandBMP;
+                break;
+            }
+            //endCountSound = null;
+
+            layout();
+
+        }
+        function layout()
+        {
+
+            console.log('numAnimals:'+ numAnimals);
+            /*var numAnimalsTemp = numAnimals;
+            if (numAnimalsTemp > 3){
+                numAnimalsTemp = 3;
+            }*/
+            bedSounds[numAnimals-1].play();
+            var arr = [createStar, createHex, createLineTo, createRadialGradientFill, createEllipse, createRectGradientFill, createBitmapFill];
+            var padding = 5;
+            var _width = 900;
+            var _height = 500;
+            var cols = 4;
+            var space = 0;
+            var l = arr.length;
+
+            var border = createBorder();
+
+            stage.addChild(mainContainer);
+
+            stage.addChild(backgroundContainer);
+
+            stage.addChild(animalContainer);
+
+            stage.addChild(blanketContainer);
+
+            //stage.addChild(btnHelpBMP);
+            initHelpBtn();
+            /*for(var i=0;i<l;i++) {
+                var tile = arr[i]();
+                tile.x = 42+(_width + padding) *(i%cols);
+                tile.y = 42+(i/cols | 0) * (_height+padding);
+                stage.addChild(tile);
+            }*/
+			for(var i=0;i<numAnimals;i++) {
+				//var a = new Animal(i, i * 110 + 190);
+                var a = new Animal(animalSleepBMP, animalStandBMP);
+                a.scale = .58;
+                a.scaleX = .58;
+                a.scaleY = .58;
+                //balls[i] = a;
+
+                stage.addChild(a);
+                animalArray.push(a);
+                bedPositions[i] = new Point((i*120)+200, 75);
+                sleepSkew[i] = 10* (2 - i);
+				a.x = (i * 110 ) + 190;
+                a.y = 340;
+                a.startX = a.x;
+                a.startY = a.y;
+                a.onPress = handlePress;
+                a.onMouseOver = handleMouseOver;
+                a.onMouseOut = handleMouseOut;
+
+                a.oldX = a.oldY = 0;
+				//a.make();
+                
+				
+			}
+            //stage.addChild(border);
+
+            bottom = (canvas.height) - 25;
+            topBoundary = 0//(-35) + 25;
+            left = 0//-35;
+            right = canvas.width//-38;
+             stage.onMouseUp = handleMouseUp;
+            stage.autoClear = false;
+			//makeAnimal();
+            stage.update();
+             Ticker.addListener(window);
+        }
+
+        function createBorder() {
+            return;
+            var container = new Container();
+            var s = new Shape();
+            s.graphics.bs(img).ss(32).drawRect(20,20,920,360);
+            container.addChild(s);
+            return container;
+        }
+
+        function createBitmapFill() {
+            var container = createTile();
+            var s = new Shape();
+            s.graphics.bf(img).ss(8).rs(["#FFF","#000"],[0,1],0,0,0,0,30,130).dr(0, 0, 130, 130);
+            s.x = 12;
+            s.y = 10;
+            container.addChild(s);
+            return container;
+        }
+
+        function createRectGradientFill() {
+            var container = createTile();
+            var s = new Shape();
+            s.graphics.lf(["#FFF","#000"],[0,1],0,0,0,130).es().dr(0,0,130,130);
+            s.x = 12;
+            s.y = 10;
+            container.addChild(s);
+            return container;
+        }
+
+        function createEllipse() {
+            var container = createTile();
+            var s = new Shape();
+            s.graphics.f(Graphics.getRGB(0,0x66,0x99,0.5)).ss(4).ls(["#F00","#000"],[0,1],0,0,70,140).de(0,0,70,140,8);
+            s.x = 40;
+            s.y = 10;
+            container.addChild(s);
+            return container;
+        }
+
+        function createRadialGradientFill() {
+            var container = createTile();
+            var s = new Shape();
+            s.graphics.ss(8).s("#f0f").rf(["#FFF","#0FF"],[0,1],0,0,0,0,0,40).dc(0,0,40);
+            s.x = s.y = 80;
+            container.addChild(s);
+            return container;
+        }
+
+        function createLineTo() {
+            var container = createTile();
+            var s = new Shape();
+            s.graphics.ss(16, "round", "round").s("#f90").mt(20,10).lt(90,90).lt(90,140);
+            container.addChild(s);
+            return container;
+        }
+
+        function createHex() {
+            var container = createTile();
+            var s = new Shape();
+            s.graphics.f("#0F0").dp(0,0,40,6).dp(0,75,40,6);
+            s.x = 80
+            s.y = 40;
+
+            container.addChild(s);
+            return container;
+        }
+
+        function createStar() {
+            var container = createTile();
+            var s = new Shape();
+            s.graphics.ss(1).s(Graphics.getRGB(255, 255, 0)).f("#FF0").es().dp(0,0,80,5,0.6,-90);
+            s.x = 80
+            s.y = 85;
+
+            container.addChild(s);
+            return container;
+        }
+
+        function createTile() {
+            var container = new Container();
+            var bg = new Shape();
+            bg.graphics.f('#CCCCCC').dr(0, 0, 155, 155).ef();
+            bg.alpha = 0.25;
+            container.addChild(bg);
+            return container;
+        }
+
+
+    </script>
+</head>
+<body onload="init();">
+
+	<!-- header id="header" class="EaselJS">
+	    <h1><span class="text-product">Easel<strong>JS</strong></span> Graphics Test (tiny)</h1>
+	    <p>This demo is identical to the graphicsTest demo, except that it uses the tiny interface on <b>Graphics</b>
+		    to compact the drawing commands.</p>
+	</header -->
+
+	<div class="canvasHolder">
+	    <canvas id="testCanvas" width="900" height="500"></canvas>
+	</div>
+
+</body>
+</html>

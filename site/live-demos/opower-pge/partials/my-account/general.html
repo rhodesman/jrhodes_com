@@ -1,0 +1,259 @@
+<div class="my-account" ng-switch="userPrefs.isResidentialUser()">
+
+  <!--residential account overview-->
+  <div class="account-overview" ng-switch-when="true">
+    <div class="row">
+      <div class="small-2 columns">
+        <img src="img/my-home.png"/>
+      </div>
+      <div class="small-3 columns">
+        <h3 class="title-case">Jonathan Smith</h3>
+        <p>Account #52552345-2</p>
+        <p><span class="geomicon-location"></span>647 Spruce Street</p>
+        <p>San Francisco, CA 94118</p>
+      </div>
+      <div class="small-3 columns">
+        <p><span class="geomicon-land-line"></span>555-555-555</p>
+      </div>
+      <div class="small-2 columns">
+        <p><span class="geomicon-mail"></span>jonathan.smith@opower.com</p>
+      </div>
+      <div class="small-2 columns">
+        <a href="">edit</a>
+      </div>
+    </div>
+  </div>
+  <!--business account overview-->
+  <div class="account-overview business" ng-switch-when="false">
+    <div class="row">
+      <div class="small-2 columns">
+        <img src="img/smart-purchases/osha.png"/>
+      </div>
+      <div class="small-3 columns">
+        <h3>Laita Souksamlane</h3>
+        <p>Account #52552345-2</p>
+      </div>
+      <div class="small-3 columns">
+        <label>View profile for
+          <select>
+            <option value="1">Osha 2nd st - All meters</option>
+            <option value="2">Osha 2nd st - Main building</option>
+            <option value="3">Osha 2nd st - Back Patio</option>
+            <option value="4">Osha Tenderloin</option>
+            <option value="5">Osha Mission</option>
+            <option value="6">Osha 3rd St</option>
+            <option value="7">Osha Embarcadero</option>
+            <option value="8">Osha Cow Hollow</option>
+            <option value="9">Osha Glen Park</option>
+            </select>
+        </label>
+      </div>
+    </div>
+    <div class="row">
+      <div class="small-3 push-2 columns">
+        <p><span class="geomicon-location"></span>2033 Union St</p>
+        <p>San Francisco, CA 94123</p>
+      </div>
+      <div class="small-3 push-2 columns telephone">
+        <p><span class="geomicon-land-line"></span>(415) 567-6742</p>
+      </div>
+      <div class="small-2 push-2 columns">
+        <p><span class="geomicon-mail"></span>laita@oshathai.com</p>
+      </div>
+      <div class="small-2 columns">
+        <a href="">edit</a>
+      </div>
+    </div>
+  </div>
+
+  <!--residential account details-->
+  <div class="account-details" ng-switch-when="true">
+    <div class="row">
+      <div class="small-3 columns">
+        <div ng-include src="'partials/my-account/_my-account-nav.html'"></div>
+      </div>
+      <div class="small-9 columns account-settings">
+      <table>
+        <thead>
+          <tr>
+            <th width="225"><h2><span class="geomicon-house"></span>General</h2></th>
+            <th width="300"></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Size</td>
+            <td>2,423 square feet</td>
+            <td>edit</td>
+          </tr>
+          <tr>
+            <td>Type</td>
+            <td>Single family home</td>
+            <td>edit</td>
+          </tr>
+          <tr>
+            <td>Own / Rent</td>
+            <td>Rent</td>
+            <td>edit</td>
+          </tr>
+          <tr>
+            <td>Occupants</td>
+            <td>1 adult, 2 minors</td>
+            <td>edit</td>
+          </tr>
+        </tbody>
+      </table>
+      <table>
+        <thead>
+          <tr>
+            <th width="225"><h2><span class="geomicon-fire"></span>Heating</h2></th>
+            <th width="300"></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Heating system</td>
+            <td>Radiators</td>
+            <td>edit</td>
+          </tr>
+          <tr>
+            <td>Fuel</td>
+            <td>Natural Gas</td>
+            <td>edit</td>
+          </tr>
+          <tr>
+            <td>Thermostat Home Settings</td>
+            <td>60 ºF</td>
+            <td>edit</td>
+          </tr>
+          <tr>
+            <td>Thermostat Away Settings</td>
+            <td>50 ºF</td>
+            <td>edit</td>
+          </tr>
+          <tr>
+            <td>Thermostat Asleep Settings</td>
+            <td>72 ºF</td>
+            <td>edit</td>
+          </tr>
+          <tr>
+            <td>Heating system age</td>
+            <td>+20 years old</td>
+            <td>edit</td>
+          </tr>
+          <tr>
+            <td>Additional factors</td>
+            <td>Drafty doors, drafty windows...</td>
+            <td>edit</td>
+          </tr>
+        </tbody>
+      </table>
+      </div>
+    </div>
+  </div>
+  <!--business account details-->
+  <div class="account-details business" ng-switch-when="false">
+    <div class="row">
+      <div class="small-3 columns">
+        <div ng-include src="'partials/my-account/_my-account-nav.html'"></div>
+      </div>
+      <div class="small-9 columns account-settings">
+      <table>
+        <thead>
+          <tr>
+            <th width="225"><h2><span class="geomicon-gauge"></span>My Meters</h2></th>
+            <th width="300"></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Service Agreement 1<span>Natural Gas - 8194230-1</span></td>
+            <td>Main Building</td>
+            <td>edit</td>
+          </tr>
+          <tr>
+            <td>Service Agreement 2<span>Electricity - 8194230-2</span></td>
+            <td>Back Patio</td>
+            <td>edit</td>
+          </tr>
+        </tbody>
+      </table>
+      <table>
+        <thead>
+          <tr>
+            <th width="225"><h2><span class="geomicon-business"><span class="geomicon-business"></span></span>Business Information</h2></th>
+            <th width="300"></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Business Size</td>
+            <td>6,300 square feet</td>
+            <td>edit</td>
+          </tr>
+          <tr>
+            <td>Business Type</td>
+            <td>Thai Restaurant</td>
+            <td>edit</td>
+          </tr>
+          <tr>
+            <td>Own / Rent</td>
+            <td>Rent</td>
+            <td>edit</td>
+          </tr>
+          <tr>
+            <td>Employees</td>
+            <td>10 full-time, 8 part-time</td>
+            <td>edit</td>
+          </tr>
+        </tbody>
+      </table>
+      <table>
+        <thead>
+          <tr>
+            <th width="225"><h2><span class="geomicon-fire"></span>Heating</h2></th>
+            <th width="300"></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Heating system</td>
+            <td>Radiators</td>
+            <td>edit</td>
+          </tr>
+          <tr>
+            <td>Fuel</td>
+            <td>Natural Gas</td>
+            <td>edit</td>
+          </tr>
+          <tr>
+            <td>Thermostat Home Setting</td>
+            <td>60 ºF</td>
+            <td>edit</td>
+          </tr>
+          <tr>
+            <td>Thermostat Away Setting</td>
+            <td>50 ºF</td>
+            <td>edit</td>
+          </tr>
+          <tr>
+            <td>Thermostat Asleep Setting</td>
+            <td>72 ºF</td>
+            <td>edit</td>
+          </tr>
+          <tr>
+            <td>Heating system age</td>
+            <td>+20 years</td>
+            <td>edit</td>
+          </tr>
+          <tr>
+            <td>Additional factors</td>
+            <td>Drafty doors, drafty windows</td>
+            <td>edit</td>
+          </tr>
+        </tbody>
+      </table>
+      </div>
+    </div>
+  </div>
+</div>

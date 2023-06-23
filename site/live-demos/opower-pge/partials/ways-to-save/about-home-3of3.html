@@ -1,0 +1,91 @@
+<div class="section-head">
+  <div class="row">
+    <div class="large-9 columns">
+      <h1 class="section-heading">About my home</h1>
+    </div>
+    <div class="large-3 columns">
+      <a href="#/my-usage/by-category" class="save-close">Save & Close</a>
+    </div>
+  </div>
+</div>
+<div class="ways-to-save">
+  <div class="row">
+    <div class="large-3 columns sidebar">
+        <div class="panel savings-total">
+          <p>Reward Balance <strong><span count-to="630" value="600" duration="0.5"></span><sub>pts</sub></strong></p>
+          <a href="">View My Savings Plan</a>
+        </div>
+        <div class="ways-save-progress-container">
+        <span class="meter-3"></span>
+        <h3>12 questions left</h3>
+      </div>
+        <ul class="prog-position">
+          <li class="active"><a href="">Home Information</a></li>
+          <li><a href="">Heating & Cooling</a></li>
+          <li><a href="">Water Heating</a></li>
+          <li><a href="">Cooking & Refrigeration</a></li>
+          <li><a href="">Lighting</a></li>
+          <li><a href="">Other</a></li>
+        </ul>
+    </div>
+    <div class="large-9 columns info-details">
+      <h3>Home Information 3 of 3</h3>
+      <form>
+        <div class="row select">
+          <div class="large-10 columns">
+            <h4>How many people live in your home?</h4>
+            <div class="row">
+              <section class="large-6 columns family-select">
+                <ul class="">
+                  <li class=""><a href="" class="Adult"></a></li>
+                  <li class=""><a href="" class="Adult"></a></li>
+                  <li class="not-selected"><a href="" class="Adult"></a></li>
+                  <li class="not-selected"><a href="" class="Adult"></a></li>
+                </ul>
+                <div class="row">
+                  <div class="large-5 columns">
+                    <select id="family-size">
+                      <option value="1">1</option>
+                      <option value="2" selected>2</option>
+                      <option value="3">3</option>
+                      <option value="Over 4">Over 4</option>
+                    </select>
+                    <span>18 and over</span>
+                  </div>
+                </div>
+              </section>
+              <section class="large-6 columns family-select">
+                <ul class="children">
+                  <li class=""><a href="" class="Adult"></a></li>
+                  <li class=""><a href="" class="Adult"></a></li>
+                  <li class=""><a href="" class="Adult"></a></li>
+                  <li class="not-selected"><a href="" class="Adult"></a></li>
+                </ul>
+                <div class="row">
+                  <div class="large-5 columns">
+                    <select id="family-size">
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3" selected>3</option>
+                      <option value="Over 4">Over 4</option>
+                    </select>
+                    <span>under 18</span>
+                  </div>
+                </div>
+              </section>
+            </div>
+          </div>
+        <div class="form-buttons">
+          <a ng-class="{ 'is-active': $root.pageTitle === 'Ways to Save' }" href="#/my-usage/by-category-post-audit" class="button has-points-value">
+            Next
+            <span class="points-value">
+              <span class="points-amount"><strong>30</strong> points!</span>
+            </span>
+          </a>
+          <a href="#/ways-to-save/about-home-2of3" class="button secondary">Previous</a>
+          <a href="#/my-usage/by-category-post-audit" class="skip-quest">Skip Question</a>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

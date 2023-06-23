@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<smil xmlns="http://www.w3.org/ns/SMIL" version="3.0" profile="http://www.idpf.org/epub/30/profile/content/">
+<body>
+
+
+<par id="p0101">
+<audio src="images/Gossie.m4a" clipBegin="
+91.662177s" clipEnd="93.635115s" id="w0266" />
+</par>
+
+<par id="p0102">
+<audio src="images/Gossie.m4a" clipBegin="
+93.635115s" clipEnd="94.739806s" id="w0267" />
+</par>
+
+<par id="p0103">
+<audio src="images/Gossie.m4a" clipBegin="
+94.739806s" clipEnd="95.158425s" id="w0268" />
+</par>
+
+<par id="p0104">
+<audio src="images/Gossie.m4a" clipBegin="
+95.158425s" clipEnd="95.408434s" id="w0269" />
+</par>
+
+<par id="p0105">
+<audio src="images/Gossie.m4a" clipBegin="
+95.408434s" clipEnd="95.751470s" id="w0270" />
+</par>
+
+<par id="p0106">
+<audio src="images/Gossie.m4a" clipBegin="
+95.751470s" clipEnd="96.454983s" id="w0271" />
+</par>
+
+<par id="p0107">
+<audio src="images/Gossie.m4a" clipBegin="
+96.454983s" clipEnd="96.761196s" id="w0272" />
+</par>
+
+<par id="p0108">
+<audio src="images/Gossie.m4a" clipBegin="
+96.761196s" clipEnd="97.236019s" id="w0273" />
+</par>
+
+<par id="p0109">
+<audio src="images/Gossie.m4a" clipBegin="
+97.236019s" clipEnd="97.902709s" id="w0274" />
+</par>
+
+<par id="p0110">
+<audio src="images/Gossie.m4a" clipBegin="
+97.902709s" clipEnd="99.112090s" id="w0275" />
+</par>
+
+
+</body>
+</smil>

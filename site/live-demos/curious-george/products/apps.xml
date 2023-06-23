@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<catalog>
+	<product>
+		<title>Curious George at the Zoo</title>
+		<description>George has been asked to help out at the zoo. George needs your child’s help to wake, clean, and feed the animals.</description>
+		<prodimage>imgs/CG_Zoo_APP.jpg</prodimage>
+		<prodlink>http://itunes.apple.com/us/app/curious-george-at-zoo-for/id513304499?ls=1&amp;mt=8</prodlink>
+	</product>
+	<product>
+		<title>Curious George's Dictionary</title>
+		<description>The world’s most curious monkey investigates new words in this fully interactive picture dictionary for young children. Both entertaining and educationally sound, it features charming illustrations and reflects recent research in early childhood literacy. Children can navigate from A to Z with simple swipes and taps, through nearly six hundred words.</description>
+		<prodimage>imgs/CG_Dictionary.jpg</prodimage>
+		<prodlink>http://itunes.apple.com/us/app/curious-georges-dictionary/id310452570?mt=8</prodlink>
+	</product>
+</catalog>

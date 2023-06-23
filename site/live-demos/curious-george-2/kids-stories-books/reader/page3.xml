@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?> 
+
+
+<smil xmlns="http://www.w3.org/ns/SMIL" version="3.0" profile="http://www.idpf.org/epub/30/profile/content/">
+<body>
+
+<par id="p0004">
+
+<audio src="images/Pancakes2.m4a" clipBegin="32.242347s" clipEnd="32.854016s" id="w0000"/>
+</par>
+<par id="p0005">
+
+<audio src="images/Pancakes2.m4a" clipBegin="32.888149s" clipEnd="32.983723s" id="w0001"/>
+</par>
+<par id="p0006">
+
+<audio src="images/Pancakes2.m4a" clipBegin="32.983723s" clipEnd="33.069739s" id="w0002"/>
+</par>
+<par id="p0007">
+
+<audio src="images/Pancakes2.m4a" clipBegin="33.095680s" clipEnd="33.573547s" id="w0003"/>
+</par>
+<par id="p0008">
+
+<audio src="images/Pancakes2.m4a" clipBegin="33.583104s" clipEnd="33.731925s" id="w0004"/>
+</par>
+<par id="p0009">
+
+<audio src="images/Pancakes2.m4a" clipBegin="33.828864s" clipEnd="34.106027s" id="w0005"/>
+</par>
+<par id="p0010">
+
+<audio src="images/Pancakes2.m4a" clipBegin="34.141525s" clipEnd="34.272597s" id="w0006"/>
+</par>
+<par id="p0011">
+
+<audio src="images/Pancakes2.m4a" clipBegin="34.395477s" clipEnd="34.780501s" id="w0007"/>
+</par>
+<par id="p0012">
+
+<audio src="images/Pancakes2.m4a" clipBegin="35.049472s" clipEnd="35.326635s" id="w0008"/>
+</par>
+<par id="p0013">
+
+<audio src="images/Pancakes2.m4a" clipBegin="35.378517s" clipEnd="35.759445s" id="w0009"/>
+</par>
+<par id="p0014">
+
+<audio src="images/Pancakes2.m4a" clipBegin="35.778560s" clipEnd="36.607317s" id="w0010"/>
+</par>
+</body>
+</smil>

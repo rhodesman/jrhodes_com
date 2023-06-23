@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<smil xmlns="http://www.w3.org/ns/SMIL" version="3.0" profile="http://www.idpf.org/epub/30/profile/content/">
+<body>
+  <par>
+    <audio clipBegin="200.532422" clipEnd="201.185709" aText="your" id="w00091"/>
+  </par>
+  <par>
+    <audio clipBegin="201.308870" clipEnd="202.149576" aText="neib" id="w00092"/>
+  </par>
+  <par>
+    <audio clipBegin="204.366468" clipEnd="205.250013" aText="trees" id="w00093"/>
+  </par>
+  <par>
+    <audio clipBegin="205.662333" clipEnd="206.594071" aText="leaves" id="w00094"/>
+  </par>
+  <par>
+    <audio clipBegin="207.022456" clipEnd="207.997032" aText="sprinler" id="w00095"/>
+  </par>
+  <par>
+    <audio clipBegin="208.698513" clipEnd="209.485670" aText="bushes" id="w00096"/>
+  </par>
+  <par>
+    <audio clipBegin="209.903346" clipEnd="211.124243" aText="street lights" id="w00097"/>
+  </par>
+  <par>
+    <audio clipBegin="211.590112" clipEnd="212.479011" aText="play ground" id="w00098"/>
+  </par>
+  <par>
+    <audio clipBegin="212.928816" clipEnd="213.860553" aText="traffic light" id="w00099"/>
+  </par>
+  <par>
+    <audio clipBegin="214.224681" clipEnd="215.306353" aText="statue" id="w000100"/>
+  </par>
+  <par>
+    <audio clipBegin="215.675835" clipEnd="216.634347" aText="school" id="w000101"/>
+  </par>
+  <par>
+    <audio clipBegin="217.218022" clipEnd="218.283629" aText="street sign" id="w000102"/>
+  </par>
+  <par>
+    <audio clipBegin="218.551370" clipEnd="219.659817" aText="side wal" id="w000103"/>
+  </par>
+  <par>
+    <audio clipBegin="219.841880" clipEnd="221.009230" aText="lamp post" id="w000104"/>
+  </par>
+  <par>
+    <audio clipBegin="221.330519" clipEnd="222.535352" aText="mail box" id="w000105"/>
+  </par>
+  <par>
+    <audio clipBegin="223.188639" clipEnd="224.404182" aText="fire" id="w000106"/>
+  </par>
+  <par>
+    <audio clipBegin="224.736180" clipEnd="225.823207" aText="crossing gaurd" id="w000107"/>
+  </par>
+  <par>
+    <audio clipBegin="226.198044" clipEnd="227.054814" aText="cross" id="w000108"/>
+  </par>
+  <par>
+    <audio clipBegin="227.467135" clipEnd="228.730871" aText="street" id="w000109"/>
+  </par>
+   <par>
+    <audio clipBegin="229.368094" clipEnd="230.080284" aText="bus" id="w000110"/>
+  </par>
+  <par>
+    <audio clipBegin="230.787120" clipEnd="231.611761" aText="flag" id="w000111"/>
+  </par>
+  <par>
+    <audio clipBegin="232.602402" clipEnd="233.421688" aText="pay phone" id="w000112"/>
+  </par>
+  <par>
+    <audio clipBegin="233.957169" clipEnd="234.776456" aText="flowers" id="w000113"/>
+  </par>
+  <par>
+    <audio clipBegin="235.204841" clipEnd="235.852774" aText="car" id="w000114"/>
+  </par>
+  <par>
+    <audio clipBegin="236.254385" clipEnd="237.994699" aText="fire" id="w000115"/>
+  </par>
+
+
+</body>
+</smil>

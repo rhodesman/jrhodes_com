@@ -1,0 +1,92 @@
+<ul class="custom-side-nav">
+  <li ng-class="{ 'active': pageSection === 'my-savings-plan' }">
+    <a href="#/ways-to-save/smart-purchases"><span class="geomicon-view-list-alt geomicon-smaller"></span>My Savings Plan</a>
+    <ul class="custom-side-nav secondary">
+      <li ng-class="{ 'active': pageTitle === 'Smart Purchases' }">
+        <a href="#/ways-to-save/smart-purchases">Smart Purchases</a>
+      </li>
+      <li ng-class="{ 'active': pageTitle === 'Simple Habits' }">
+        <a href="#/ways-to-save/simple-habits">Simple Habits</a>
+      </li>
+    </ul>
+  </li>
+  <li ng-class="{ 'active': pageSection === 'all-ways' }">
+    <a href="#/ways-to-save/all"><span class="geomicon-view-list geomicon-smaller"></span>All Ways to Save</a>
+    <ul class="custom-side-nav secondary">
+      <li class="active">
+        <a href="#/ways-to-save/all">View all tips</a>
+      </li>
+      <li>
+        <a href="">Heating</a>
+      </li>
+      <li>
+        <a href="">Cooling</a>
+      </li>
+      <li>
+        <a href="">Hot Water</a>
+      </li>
+      <li>
+        <a href="">Lighting</a>
+      </li>
+      <li>
+        <a href="">Appliances</a>
+      </li>
+    </ul>
+  </li>
+  <li ng-class="{ 'active': pageSection === 'marketplace'}">
+    <a href="#/ways-to-save/marketplace"><span class="geomicon-cash"></span>Marketplace</a>
+    <ul class="custom-side-nav secondary category">
+      <li ng-class="{ 'active': subSection === 'products' }">
+        <a ng-class="{ 'active': subSection === 'products' }" href="#/ways-to-save/marketplace">Products</a>
+        <ul class="custom-side-nav tertiary">
+          <li ng-class="{ 'active': subSection === 'products' }">
+            <a href="">Thermostats</a>
+          </li>
+          <li ng-class="{ 'active': pageTitle === 'Lighting' }">
+            <a href="">Lighting</a>
+          </li>
+          <li ng-class="{ 'active': pageTitle === 'Home Appliances' }">
+            <a href="">Home Appliances</a>
+          </li>
+          <li ng-class="{ 'active': pageTitle === 'Office Equipment' }">
+            <a href="">Office Equipment</a>
+          </li>
+          <li ng-class="{ 'active': pageTitle === 'Other' }">
+            <a href="">Other</a>
+          </li>
+        </ul>
+      </li>
+      <li ng-class="{ 'active': subSection === 'services' }">
+        <a ng-class="{ 'active': subSection === 'services' }" href="#/ways-to-save/marketplace/services">Services</a>
+        <ul class="custom-side-nav tertiary">
+          <li ng-class="{ 'active': subSection === 'services' }">
+            <a href="">Lighting installation</a>
+          </li>
+          <li ng-class="{ 'active': pageTitle === 'HVAC contractors' }">
+            <a href="" class="title-case">HVAC contractors</a>
+          </li>
+          <li ng-class="{ 'active': pageTitle === 'Window installation' }">
+            <a href="">Window installation</a>
+          </li>
+          <li ng-class="{ 'active': pageTitle === 'Electrians' }">
+            <a href="">Electrician</a>
+          </li>
+          <li ng-class="{ 'active': pageTitle === 'Home energy auditors' }">
+            <a href="" class="title-case">Home energy Auditors</a>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li ng-class="{ 'active': pageTitle === 'Get Rewards' }">
+    <a href="#/ways-to-save/rewards/get-rewards"><span class="geomicon-points"></span>Rewards</a>
+    <ul class="custom-side-nav secondary">
+      <li ng-class="{ 'active': pageTitle === 'Get Rewards' }">
+        <a href="#/ways-to-save/get-rewards">Claim Rewards</a>
+      </li>
+      <li ng-class="{ 'active': pageTitle === 'View History' }">
+        <a href="">View History</a>
+      </li>
+    </ul>
+  </li>
+</ul>

@@ -1,0 +1,408 @@
+// Presentational styling just for the styleguide
+// These styles will be compiled in the final rendered.css bundle so they appear in the styleguide,
+// but _NOTHING_ here will actually ever be visible anywhere outside of this package. Do not put styles in here
+// that you want to be available for widgets to use.
+
+$nav-background-color: #333;
+//$nav-text-color: lighten($nav-background-color, 30%); // temporary contrast boost for demo
+$nav-text-color: #ccc;
+//$nav-text-color-bright: lighten($nav-background-color, 60%); // temporary contrast boost for demo
+$nav-text-color-bright: #fff;
+$nav-width: 140px;
+$medium-up: "only screen and (min-width:500px)";
+
+#styleguide { 
+    .nav {
+        background-color: $nav-background-color;
+        ul {
+            margin: $spacing 0 5px;
+        }
+        a {
+            @include transition (color 0.3s, padding-left 0.3s);
+            border-bottom: 1px solid lighten($nav-background-color, 10%);
+            color: $nav-text-color;
+            display: block;
+            margin: 0 $spacing;
+            padding: $halfSpacing;
+            &:hover {
+                color: $nav-text-color-bright;
+                padding-left: $spacing*0.75;
+            }
+        }
+        @media #{$small} {
+            width: $nav-width;
+            position: fixed;
+            overflow-y: scroll;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            ul {
+                margin-top: ($nav-width*0.7)+$spacing*2;
+            }
+        }
+    }
+
+    .page-header {
+        h1 {
+            font-size: 3em;
+            padding: $spacing;
+        }
+        @media #{$small} {
+            position: fixed; top: 0; left: 0;
+            z-index: 10;
+            h1 {
+                color: lighten($nav-background-color, 10%);
+                font-size: $nav-width*0.7;
+                margin: 0;
+                padding: $spacing;
+            }
+        }
+        .nav-link {
+            @include radius($button-radius);
+            background-color: $divider-color;
+            color: $body-font-color;
+            font-size: 1em;
+            padding: $spacing/2 $spacing;
+            position: absolute; top: $spacing; right: $spacing;
+            @media #{$small} {
+                display: none;
+            }
+        }
+    }
+
+    .main {
+        @media #{$small} {
+            margin: 0 0 0 $nav-width;
+            padding: $spacing*2;
+        }
+    }
+
+    .page-heading, .page-description {
+        margin-left: $spacing;
+        @media #{$small} {
+            margin-left: 0;
+        }
+    }
+
+    .back-to-top {
+        @include geomicon("\e601");
+        display: block;
+        margin: $spacing 0 0 $spacing;
+        @media #{$small} {
+            margin-left: 0;
+        }
+    }
+
+    .section {
+        .section-head {
+            @include bottom-border;
+            .share {
+                display: inline-block;
+                float: right;
+            }
+        }
+        .section-body {
+            @include grid-row(nest);
+            .styleguide-element,
+            .styleguide-markup {
+                @include grid-column(12);
+            }
+            .styleguide-modifiers {
+                @include grid-row(nest);
+                padding-top: $spacing;
+                position: relative;
+                &[data-modifiers="1"] {
+                    .styleguide-element {
+                        @include grid-column(12);
+                    }
+                }
+                &[data-modifiers="2"] {
+                    .styleguide-element {
+                        @media #{$small} {
+                            @include grid-column(6);
+                        }
+                    }
+                }
+                .styleguide-element {
+                    @media #{$small} {
+                        @include grid-column(4);
+                        &:nth-child(3n+1) {
+                            clear: both;
+                        }
+                    }
+                }
+                &:after {
+                    content: " ";
+                    display: block;
+                    @include top-border;
+                    @include position(absolute, 0px $column-gutter/2 0 $column-gutter/2);
+                }
+            }
+            .styleguide-markup {
+                padding: 0;
+                pre {
+                    @include radius($global-radius);
+                    border: 1px solid $divider-color;
+                    padding: $spacing+10 $spacing $spacing;
+                    position: relative;
+                    font-size: 12px;
+                    &:before {
+                        @include radius($global-radius+-1 0 $global-radius 0);
+                        background-color: $divider-color;
+                        content: "code";
+                        color: $white;
+                        display: block;
+                        font-family: $body-font-family;
+                        font-weight: bold;
+                        padding: 3px 8px 4px;
+                        position: absolute;
+                        top: 0; left: 0;
+                    }
+                }
+            }
+            .modifier-heading {
+                background-color: $divider-color;
+                display: inline-block;
+                color: $white;
+                font-family: $code-font-family;
+                font-size: 12px;
+                padding: 4px 8px 3px;
+            }
+        }
+        hr {
+            border-color: $divider-color;
+        }
+    }
+
+    .slab .slab {
+        border: 1px solid $divider-color;
+    }
+
+    .widget .widget-body {
+        @include grid-row;
+    }
+
+    // grid example
+
+    .row-example {
+        @include grid-row(nest);
+    }
+    .column-example-8 {
+        @include grid-column(8);
+        p {
+            background-color: $light-gray;
+            padding: $spacing;
+        }
+    }
+    .column-example-6 {
+        @include grid-column(6);
+        p {
+            background-color: $darker-gray;
+            color: $white;
+            padding: $spacing;
+        }
+    }
+    .column-example-4 {
+        @include grid-column(4);
+        p {
+            background-color: $dark-gray;
+            color: $white;
+            padding: $spacing;
+        }
+    }
+
+    // form overrides, for styleguide presentation only
+
+    .alert-message, .success-message, .disabled-message {
+        display: none;
+        margin-top: $spacing/2;
+    }
+    .alert .alert-message,
+    .success .success-message,
+    .disabled .disabled-message {
+        display: block;
+    }
+
+    // geomicons
+
+    .geomicons-example-mixin {
+        &.skull {
+            @include geomicon("\e08b");
+        }
+        &.winter {
+            @include geomicon("\e03e");
+        }
+    }
+
+    .geomicons-example {
+        > span {
+            display: inline-block;
+            font-size: 4em;
+            margin-bottom: $spacing;
+        }
+    }
+
+    .geomicon-insight-good, .geomicon-insight-warn, .geomicon-error {
+        margin-bottom: 20px;
+    }
+
+
+      // ========================== //
+     // =        Westeros        = //
+    // ========================== //
+
+
+    .westeros {
+        .display-selector {
+            .custom.dropdown {
+                display: inline-block;
+            }
+            label {
+                display: inline-block;
+                font-size: 0.875em;
+                line-height: 2.5em;
+                margin-right: $spacing/2;
+            }
+        }
+        .westeros-graph {
+            @include grid-column(12);
+            @media #{$small} {
+                @include grid-column(6);
+            }
+        }
+        .graph-head {
+            @include grid-row(nest);
+        }
+        .graph {
+            @include grid-row(nest);
+            @include bottom-border;
+            @media #{$small} {
+                border-bottom: 0;
+                margin-bottom: 0;
+            }
+        }
+        h4 {
+            color: $graph-label-font-color;
+            margin-top: 0;
+        }
+        .house {
+            @include grid-column(4);
+            height: 100%;
+            text-align: center;
+            &:first-child {
+                .bar:after {
+                    right: -$spacing*2;
+                }
+            }
+            &:last-child {
+                .bar:after {
+                    left: -$spacing*2;
+                }
+            }
+        }
+        .lannister {
+            .amount {
+                height: 30%;
+                &:after {
+                    background-color: $medium-gray;
+                    right: 0; left: 12%;
+                }
+            }
+        }
+        .stark {
+            .amount {
+                height: 80%;
+                &:after {
+                    background-color: $primary-color;
+                }
+            }
+        }
+        .targaryen {
+            .amount {
+                &:after {
+                    background-color: $success-color;
+                    left: 0; right: 12%;
+                }
+            }
+        }
+        .bar {
+            height: 200px;
+            @media #{$small} {
+                height: 300px;
+            }
+            position: relative;
+            &:after {
+                @include bottom-border;
+                content: "";
+                display: block;
+                margin: 0;
+                @include position(absolute, 0 0px 0px 0px);
+                height: 0; 
+            }
+        }
+        .amount {
+            font-size: $font-size-large;
+            font-weight: bold;
+            @include position(absolute, 0 0 0px 0px);
+            height: 100%; width: 100%;
+            &:after {
+                content: " ";
+                display: block;
+                margin-top: $spacing/2;
+                @include position(absolute, 1em 6% 0px 6%);
+            }
+        }
+        .graph-label {
+            line-height: 1.3;
+            margin: $spacing 0;
+            strong {
+                display: block;
+            }
+        }
+        .westeros-insights {
+            @include grid-column(12);
+            @media #{$small} {
+                @include grid-column(6);
+            }
+            .insight {
+                @include bottom-border;
+                padding-left: $spacing*2;
+                position: relative;
+                .insight-more {
+                    @include geomicon("\50", 0px 0 0 -1.5em, $alert-color);
+                    padding-left: 0;
+                }
+                .insight-less {
+                    @include geomicon("\69", 0px 0 0 -1.5em, $success-color);
+                    padding-left: 0;
+                }
+            }
+            .view-more, .view-bill {
+                text-align: right;
+                a {
+                    text-decoration: none;
+                }
+            }
+            aside {
+                padding-left: $spacing*2;
+                .additional-info {
+                    @include geomicon("\40", 0px 0 0 -1.5em);
+                    padding-left: 0;
+                    &:before {
+                        font-size: 1.4em;
+                    }
+                }
+            }
+        }
+    }
+}
+body ::-webkit-scrollbar {
+    width: 10px;
+}
+body ::-webkit-scrollbar-track {
+    background-color: #000;
+}
+
+body ::-webkit-scrollbar-thumb {
+    background-color: #777;
+}

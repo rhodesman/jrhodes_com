@@ -1,0 +1,54 @@
+
+// _tables.scss
+// Author: justin.secor@opower.com
+
+// Import foundation defaults
+@import "../../zurb-foundation/scss/foundation/components/tables";
+
+
+// Tables
+//
+// Styleguide 6.0
+
+
+// Tables
+//
+// Use a table for presenting tabular data. Load it up with the appropriate headings for accessibility.
+//
+// Markup: 
+// <table>
+//   <thead>
+//     <tr>
+//       <th>Table Header</th>
+//       <th>Table Header</th>
+//       <th>Table Header</th>
+//     </tr>
+//   </thead>
+//   <tbody>
+//     <tr>
+//       <td>Content</td>
+//       <td>Content</td>
+//       <td>Content</td>
+//     </tr>
+//     <tr>
+//       <td>Content</td>
+//       <td>Content</td>
+//       <td>Content</td>
+//     </tr>
+//   </tbody>
+// </table>
+//
+// Styleguide 6.1
+
+
+table {
+    border-top: 0 none;
+    border-right: 0 none;
+    border-bottom: 0 none;
+    border-left: 0 none;
+    table-layout: fixed;
+    tr {
+        border-top: 1px solid $divider-color;
+        border-bottom: 1px solid $divider-color;
+    }
+}

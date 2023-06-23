@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>eReader - Curious George</title>
+<base href="https://jasonleerhodes.com/live-demos/curious-george/">
+<!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+<link rel="stylesheet" href="css/style.css" type="text/css">
+
+<script src="Sites/CG/Javascript/modernizr.custom.40745.js"></script>
+<script src="Sites/CG/Javascript/jquery-1.7.2.min.js" type="text/javascript"></script>
+<script src="Sites/CG/Javascript/jquery.history.js" type="text/javascript"></script>
+
+<script src="Sites/CG/Javascript/bootstrap.min.js" type="text/javascript"></script>
+<script src="Sites/CG/Javascript/basic-jquery-slider.min.js" type="text/javascript"></script>
+<script src="Sites/CG/Javascript/main.js" type="text/javascript"></script>
+
+<!--eReader includes -->
+<link rel="stylesheet" href="stories/reader/css/ereader-style.css" type="text/css">
+<script src="stories/reader/script/ebookActions.js" type="text/javascript"></script>
+<script type="stories/reader/text/javascript" src="Sites/CG/Javascript/jquery.jplayer.min.js"></script>
+<script type="stories/reader/text/javascript" src="script/action.js"></script>
+<!--end eReader includes -->
+</head>
+<body class="games-play">
+	<div id="main">
+		<header>
+            <nav>
+                <h1><a href="" title="Home">Curious George</a></h1>
+				<ul>
+                    <li><a class="nav-games" href="kids-games" title="Games">Games</a></li>
+          <li><a class="nav-stories" href="kids-stories-books" title="Stories">Stories</a></li>
+          <li><a class="nav-create" href="kids-activities" title="Create">Create</a></li>
+          <li><a class="nav-curious" href="kids-activities/fun-themes" title="Curious?">Curious About</a></li>
+                </ul>
+				<a id="mobile-app" href="#" title="Get our mobile app!"><strong>Curious George at the Zoo</strong> Free on iPhone and iPad</a>
+				<a id="playhouse" href="playhouse.html" title="Visit Curious George's Playhouse">Visit George's Playhouse</a> 
+            </nav>
+        </header>
+        
+        <!--Main div start -->
+         <div id='progressCont'>
+             <div id='progBar'></div>
+              <div id='progLabel'>Loading Audio</div>
+          </div>  
+        <div id="mainDiv">
+        
+              
+         <!----------------------------centerMoveDiv menu div-------------------------------->    
+         		 <div id="centerTitleDiv" style="display:none"></div>
+                 
+                 
+                 <div id="searchDiv" >
+                   <input type="button" id="close_button" onclick="closeSearchDiv();"/>
+                   <div id="searchInnerDiv" >
+                    </div>
+                    </div>
+          <!----------------------------Left menu div----------------------------------------->    
+         		 <div id="leftMenuDiv" style="display:none">
+                 	
+                 	<div id="left_nav"></div>
+                    <div id="left_nav_content">
+                    <div id='left_img_book'></div>
+                    <div id='reference' onclick="tabSelect(null)" ></div>
+        			<div id='activity' onclick="tabSelect(null)"></div>			
+                           
+                    <!--end bookmark---------------->
+                    </div> 
+                    <div id="left_nav_footer"></div>     
+          		</div>
+                 
+                 
+         <!----------------------------centerMoveDiv menu div-------------------------------->   
+         		
+         		 <div id="centerContentDiv"><div id="cente_Menu" style="display:none"><div id="Book_pages" onclick="menuChange(this)" style='margin-top:-40px'></div><div id="Book_pages1" style='margin-top:-40px' onclick="menuChange(this)"></div><div id="images" style='margin-top:-40px' onclick="menuChange(this) "></div><div id="images1"  style='margin-top:-40px' onclick="menuChange(this)"></div>
+                 
+                
+                 <div id="tb_chapter_1">
+                     <img src="stories/reader/images/sec_dropdown.png"   />
+                     <div id="chapterno_1"><input type="text" id="section" name="chapter" readonly="readonly"/></div>
+                    <a href="javascript:showTopics();"><img id='updown' src="stories/reader/images/arrw_dropdown.png" /></a> 
+                  
+                </div>
+                
+               
+                 </div>
+                <div class="leftArrow" onclick="previousChapter();"><img src="stories/reader/images/btn_02.png" width="60" height="61" /></div>
+              <div class="rightArrow" onclick="nextChapter();"><img src="stories/reader/images/btn_01.png" width="60" height="61" /></div>
+              
+              
+              <div id="outerLine">
+              
+                 <div id="Frame_tool"><iframe id="pageLeft"  onload="javascript:onPageLoad1();"  frameborder="0" style="overflow:hidden;width:450px;height:500px; border:none;" scrolling="no" ></iframe>
+        <iframe id="pageRight" onload="javascript:onPageLoad2();" frameborder="0"  style="overflow:hidden;width:450px;height:500px;margin-left:-15px;border:none;" scrolling="no"></iframe></div>
+        
+        </div>
+        
+        <div id="centerMoveDiv">
+                 		<!--<div id="tb_left" style="display:none"></div>
+                 		<div id="toolbox">
+                           <div id="tb_chapter" onclick="TocDisabled()" style="visibility:hidden">
+                        		<div id="chapterno"><input type="text" id="chapter" name="chapter" readonly="readonly" /></div>
+                            	<a href="javascript:fillChapter();"><img id="arr_imge" src="images/arrw_dropdown.png" style='border:none'  /></a>
+                           		<select id="chapter_drop"><option>select a chapter ....</option></select>-->
+                        	<!-- 	</div>-->
+                                
+                        	<div class="previous" onclick="previousChapter();" style="visibility:hidden"></div>
+                            <div id="tb_jump" style="visibility:hidden">
+                                <div id="pgno">
+                                    <input type="text" id="pg" name="pg" maxlength="3"  onkeypress="return gotopage_key(event)"/>
+                                </div>
+                                <a href="javascript:goTargetPage();"><img id="go_imge" src="stories/reader/images/go.png" style='border:none' /></a>
+                            	</div>
+                            <div class="next" onclick="nextChapter();" style="visibility:hidden"></div>
+                                
+                                   
+                                  <div id='audioPanel'>
+                                  <div onclick="playAudio(this)" id='playBtn'></div>
+                                 <div onclick="stopAudio(this)"  id='stopBtn'></div>
+                        </div>
+                        
+                     
+                                 
+                        </div> 
+                        
+                       
+                         
+                        <div id="tb_right" style="display:none"></div> 
+                          <div id='chapterList'></div> 	
+               
+                 </div>
+        
+        
+        
+                 
+                 </div>
+                    	 <div id="image_gallery">
+            </div>
+         
+        
+        <!----------------------------events-------------------------------------------- -->   
+        
+        		<!--	<div id="notepad">
+                    <div id='notepad_close'></div>
+                    <div id='notepad_delete'></div>
+                   <div id='notepad_save'></div>
+                   <textarea rows="10" cols="50" id='notepad_txt'></textarea> 
+               		</div>-->
+            
+            		
+                    
+                    <div id="BodyContent">
+        		       
+        		</div>
+               
+            
+           <!-- <div id ='sectionList'></div>-->
+                <div id='swf_mask'>
+            </div>
+            <div id = 'higPallate'>
+               <div id='red_btn'></div>
+               <div id='green_btn'></div>
+               <div id='blue_btn'></div>
+               <div id='orange_btn'></div>
+               <div id='delete_btn'></div>
+               <div id='close_btn'></div>
+            </div>
+            <div id="loadingDiv">
+               </div>
+               
+        
+            
+        </div>
+        <!--Main div end -->
+        
+        
+        <div id="jquery_jplayer"></div>
+        
+        <div class="jp-single-player">
+        	
+        </div>
+               
+                
+                <div id="timeValue" style="display:none"></div><div id="lastTimeValue" style="display:none"  ></div>
+               </div>
+        
+        </div>
+            <footer>
+                <div id="hmh">
+                    <a href="#">Houghton Mifflin Harcourt</a>
+                    <address>
+                        222 Berkeley Street | Boston, MA 02116
+                    </address>
+                </div>
+                <div id="blurb">
+                    <p>Changing people's lives by fostering passionate, curious learners.</p>
+                </div>
+                <p id="legal"><a>Terms &amp; Conditions of Use</a> <a>Privacy Policy</a> <a>Children's Privacy Policy</a> <span>© Houghton Mifflin Harcourt. All rights reserved.</span></p>
+            </footer>
+            <div class="modal cgModal hide fade" id="cgThankYouModal">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">x</button>
+                    <h3 class="FilmotypeMajor">Thank you for Registering!</h3>
+                </div>
+                <div class="modal-body">
+                    <div class="row cg_register">
+                        <div class="span4">
+                            <p>You now have access to additional games, stories and content on curiousgeorge.com</p>
+                        </div>
+                        <div class="span6">
+                            <a href="#" class="btn btn-primary" data-dismiss="modal">Close</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer"></div>
+            </div>
+            <div class="modal cgModal hide fade" id="cgPromptModal">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">x</button>
+                    <h3 class="FilmotypeMajor">Sorry. You must log in to access this content.</h3>
+                </div>
+                <div class="modal-body">
+                    <form class="row cg_register">
+                        <div class="span3">
+                            <label>Email Address</label> <input type="text" class="span3" placeholder=""> <label>Password</label> <input type="password" class="span3" placeholder="">
+                        </div>
+                        <div class="span3">
+                            <label class="not_reg">Not signed up yet? Registration is free!</label>
+                        </div>
+                        <div class="span3">
+                            <button type="submit" class="btn btn-primary">Login</button>
+                        </div>
+                        <div class="span3">
+                            <button type="submit" class="btn btn-primary reg_btn">Register</button>
+                        </div>
+                        <div class="span6 forgot_pw">
+                            <a href="#">Forgot your password?</a>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer"></div>
+            </div>
+            <div class="modal cgModal hide fade" id="cgLoginModal">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">x</button>
+                    <h3 class="FilmotypeMajor">Login</h3>
+                </div>
+                <div class="modal-body">
+                    <form class="row cg_register">
+                        <div class="span3">
+                            <label>Email Address</label> <input type="text" class="span3" placeholder=""> <label>Password</label> <input type="password" class="span3" placeholder="">
+                        </div>
+                        <div class="span6">
+                            <button type="submit" class="btn btn-primary">Login</button>
+                        </div>
+                        <div class="span6 forgot_pw">
+                            <a href="#">Forgot your password?</a>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer"></div>
+            </div>
+            <div class="modal cgModal hide fade" id="cgRegModal">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">x</button>
+                    <h3 class="FilmotypeMajor">Register</h3>
+                </div>
+                <div class="modal-body">
+                    <form class="row cg_register">
+                        <div class="span3">
+                            <label>First Name</label> <input type="text" class="span3" placeholder=""> <label>Zipcode</label> <input type="text" class="span3" placeholder=""> <label>Email Address</label> <input type="text" class="span3" placeholder=""> <label>Password</label> <input type="password" class="span3" placeholder="">
+                        </div>
+                        <div class="span3">
+                            <label>Last Name</label> <input type="text" class="span3" placeholder=""> <label class="vfy_pwd">Verify Password</label> <input type="password" class="span3" placeholder="">
+                        </div>
+                        <div class="span6">
+                            <label class="checkbox"><input type="checkbox" checked="checked"> Send me special offers and promotions.</label> <button type="submit" class="btn btn-primary">Register</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer"></div>
+            </div>
+            <div id="loading"></div>
+        </body>
+        </html>
+        
+   

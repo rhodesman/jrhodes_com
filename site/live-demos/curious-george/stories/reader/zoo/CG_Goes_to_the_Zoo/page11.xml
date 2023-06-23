@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<smil xmlns="http://www.w3.org/ns/SMIL" VERSION="3.0" PROFILE="http://www.idpf.org/epub/30/profile/content/">
+<body>
+<par id="p0001">
+<audio src="images/CG_ZOO.m4a" clipBegin="86.111687s" clipEnd="86.441509s" id="w0295"/>
+</par>
+<par id="p0002">
+<audio src="images/CG_ZOO.m4a" clipBegin="86.441509s" clipEnd="87.291504s" id="w0296"/>
+</par>
+<par id="p0003">
+<audio src="images/CG_ZOO.m4a" clipBegin="87.291504s" clipEnd="87.663377s" id="w0297"/>
+</par>
+<par id="p0004">
+<audio src="images/CG_ZOO.m4a" clipBegin="87.663377s" clipEnd="87.972007s" id="w0298"/>
+</par>
+<par id="p0005">
+<audio src="images/CG_ZOO.m4a" clipBegin="87.972007s" clipEnd="88.257868s" id="w0299"/>
+</par>
+<par id="p0006">
+<audio src="images/CG_ZOO.m4a" clipBegin="88.257868s" clipEnd="88.490605s" id="w0300"/>
+</par>
+<par id="p0007">
+<audio src="images/CG_ZOO.m4a" clipBegin="88.490605s" clipEnd="88.857419s" id="w0301"/>
+</par>
+<par id="p0008">
+<audio src="images/CG_ZOO.m4a" clipBegin="88.857419s" clipEnd="88.940900s" id="w0302"/>
+</par>
+<par id="p0009">
+<audio src="images/CG_ZOO.m4a" clipBegin="88.940900s" clipEnd="90.403095s" id="w0303"/>
+</par>
+<par id="p0010">
+<audio src="images/CG_ZOO.m4a" clipBegin="90.403095s" clipEnd="90.810385s" id="w0304"/>
+</par>
+<par id="p0011">
+<audio src="images/CG_ZOO.m4a" clipBegin="90.810385s" clipEnd="90.959640s" id="w0306"/>
+</par>
+<par id="p0012">
+<audio src="images/CG_ZOO.m4a" clipBegin="90.959640s" clipEnd="91.162020s" id="w0307"/>
+</par>
+<par id="p0013">
+<audio src="images/CG_ZOO.m4a" clipBegin="91.162020s" clipEnd="91.956361s" id="w0307"/>
+</par>
+<par id="p0014">
+<audio src="images/CG_ZOO.m4a" clipBegin="91.956361s" clipEnd="92.472429s" id="w0308"/>
+</par>
+<par id="p0015">
+<audio src="images/CG_ZOO.m4a" clipBegin="92.472429s" clipEnd="93.238943s" id="w0309"/>
+</par>
+<par id="p0016">
+<audio src="images/CG_ZOO.m4a" clipBegin="93.238943s" clipEnd="93.342663s" id="w0310"/>
+</par>
+<par id="p0017">
+<audio src="images/CG_ZOO.m4a" clipBegin="93.342663s" clipEnd="93.486859s" id="w0311"/>
+</par>
+<par id="p0018">
+<audio src="images/CG_ZOO.m4a" clipBegin="93.486859s" clipEnd="94.129415s" id="w0312"/>
+</par>
+<par id="p0019">
+<audio src="images/CG_ZOO.m4a" clipBegin="94.129415s" clipEnd="94.685959s" id="w0313"/>
+</par>
+<par id="p0020">
+<audio src="images/CG_ZOO.m4a" clipBegin="94.685959s" clipEnd="95.093249s" id="w0314"/>
+</par>
+<par id="p0021">
+<audio src="images/CG_ZOO.m4a" clipBegin="95.093249s" clipEnd="95.257683s" id="w0315"/>
+</par>
+<par id="p0022">
+<audio src="images/CG_ZOO.m4a" clipBegin="95.257683s" clipEnd="95.322225s" id="w0316"/>
+</par>
+</body>
+</smil>

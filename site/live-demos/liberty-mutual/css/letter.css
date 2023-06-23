@@ -1,0 +1,29 @@
+.sub_head {
+	margin-bottom: 25px;
+}
+
+p#first {
+	font-family: Rockwell, serif;
+	color: #5381ac;
+	font-size: inherit;
+		line-height: 1.3em;
+	
+}
+
+p{
+	font-size: 9pt;
+	line-height: 1.7em;
+}
+
+article.img{
+	float: left;
+}
+
+p#signature{
+	clear: left;
+}
+
+div.right_side img{
+	margin-top: 175px;
+	margin-left: 40px;
+}

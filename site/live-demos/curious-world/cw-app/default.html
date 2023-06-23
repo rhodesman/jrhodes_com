@@ -1,0 +1,54 @@
+<div id="apps">
+  <div class="get-app">
+    <a>
+      <span>Get the <strong>Curious World App</strong> for <strong>FREE!</strong></span>
+    </a>
+  </div>
+  <div id="video" class="row video">
+    <div class="video-wrapper">
+      <iframe src="//player.vimeo.com/video/20732587?color=969696"frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+      <span class="shadow"></span>
+    </div>
+  </div>
+  <section class="more-info"
+    ng-init="curiousIsOpen = false"
+    ng-class="{ 'is-open': curiousIsOpen }">
+    <h3 ng-click="curiousIsOpen = !curiousIsOpen">
+      <a>
+        <img class="avatar kid" src="img/cw-app/about-icon-kid.png" />
+        <span><span>Is your child curious about...everything?</span></span>
+        <img class="arrow" src="img/down-arrow-white.png" />
+      </a>
+    </h3>
+    <div class="explanation-info slide row" ng-show="curiousIsOpen">
+      <div class="small-10 medium-6 columns small-centered">
+        <p>The Curious World app offers open-ended exploration on a wide variety of kid-friendly topics, many inspired by well-loved children's books such as Curious George and Gossie. It encourages kids to investigate, imagine, observe, and discover new things as they play. Each app pack available provides at least five activities, including a real-world experience that parents and children can enjoy together.</p>
+        <p>The Curious World app and the first pack are available for no charge, and each subsequent app pack displayed below is $1.99 and filled with new and exciting activities for your child to enjoy.</p>
+      </div>
+    </div>
+  </section>
+  <header id="header-bar" class="row">
+    <div class="small-12 columns">
+      <h1><span>Curious World App Packs</span></h1>
+    </div>
+  </header>
+  <ul id="app-packs" class="row">
+    <li class="small-6 large-3 columns"
+      ng-repeat="appPack in appPacks">
+      <a class="app">
+        <img ng-src="{{appPack.image}}" />
+        <strong>{{appPack.title}}</strong>
+        <span class="price">{{appPack.price | currency: "$"}}</span>
+      </a>
+    <li>
+  </ul>
+  <h2><span>Other HMH Apps</span></h2>
+  <ul id="apps" class="small-block-grid-3 medium-block-grid-4 large-block-grid-6">
+    <li ng-repeat="app in apps">
+      <a class="app">
+        <img ng-src="{{app.image}}" />
+        <strong dotdotdot>{{app.title | fixAppTitle}}</strong>
+      </a>
+    <li>
+  </ul>
+</div>

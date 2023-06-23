@@ -1,0 +1,58 @@
+table{
+	font-size: 10pt;
+	text-align: right;
+	width: 500px;
+	margin-bottom: 20px;
+	line-height: 15px;
+}
+
+tr th{
+	text-align: left;
+	font-weight: normal;
+}
+
+#header th{
+	display: table-cell;
+	text-align: right;
+	font-weight: ;
+}
+
+#header{
+	margin-bottom: 8px;
+}
+
+thead td{
+	text-align: left;
+}
+
+caption{
+	font-weight: bold;
+	color: #5381ac;
+	text-align: left;
+}
+
+tbody td, tbody th, caption{
+	border-bottom: 1px solid #bbb;
+}
+
+tbody th, #header thead td {
+	width: 290px;
+}
+
+tbody td, #header thead th {
+	width: 70px;
+}
+
+p{
+	clear: left;
+	font-size: 9pt;
+	line-height: 14pt;
+}
+
+.pdf_link {
+	margin-top: 130px;
+}
+
+.hang{
+	text-indent: -8px;
+}

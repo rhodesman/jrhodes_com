@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<smil xmlns="http://www.w3.org/ns/SMIL" version="3.0" profile="http://www.idpf.org/epub/30/profile/content/">
+<body>
+ <par>
+    <audio clipBegin="877.605787" clipEnd="878.580364" aText="playground" id="w000515"/>
+  </par>
+  <par>
+    <audio clipBegin="880.759773" clipEnd="881.707575" aText="swings" id="w000516"/>
+  </par>
+  <par>
+    <audio clipBegin="881.911058" clipEnd="883.148020" aText="moneybars" id="w000517"/>
+  </par>
+  <par>
+    <audio clipBegin="883.410406" clipEnd="884.256466" aText="kick ball" id="w000518"/>
+  </par>
+  <par>
+    <audio clipBegin="884.577755" clipEnd="885.611234" aText="merrygoround" id="w000519"/>
+  </par>
+  <par>
+    <audio clipBegin="885.959297" clipEnd="886.569746" aText="kite" id="w000520"/>
+  </par>
+  <par>
+    <audio clipBegin="887.164130" clipEnd="888.299351" aText="baseball glove" id="w000521"/>
+  </par>
+  <par>
+    <audio clipBegin="888.690252" clipEnd="889.434571" aText="baseball" id="w000522"/>
+  </par>
+  <par>
+    <audio clipBegin="889.980762" clipEnd="891.517594" aText="baseball bat" id="w000523"/>
+  </par>
+  <par>
+    <audio clipBegin="892.588556" clipEnd="893.541713" aText="jungle gym" id="w000524"/>
+  </par>
+  <par>
+    <audio clipBegin="893.921905" clipEnd="894.703708" aText="seessaw" id="w000525"/>
+  </par>
+  <par>
+    <audio clipBegin="895.207060" clipEnd="896.138798" aText="hopscotch" id="w000526"/>
+  </par>
+  <par>
+    <audio clipBegin="896.872407" clipEnd="897.632791" aText="slide" id="w000527"/>
+  </par>
+  <par>
+    <audio clipBegin="898.162918" clipEnd="899.148203" aText="tire swing" id="w000528"/>
+  </par>
+  <par>
+    <audio clipBegin="899.576588" clipEnd="900.652906" aText="sand box" id="w000529"/>
+  </par>
+  <par>
+    <audio clipBegin="901.000969" clipEnd="901.761352" aText="jump rope" id="w000530"/>
+  </par>
+  <par>
+    <audio clipBegin="902.393221" clipEnd="903.335668" aText="tricycle" id="w000531"/>
+  </par>
+ 
+
+
+</body>
+</smil>

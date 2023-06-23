@@ -1,0 +1,18 @@
+<div class='audit-complete-modal' ng-class="{'calculating' : animationReady }">
+  <h3 class="calculating-title title-case">Hang tight!</h3>
+  <p class="calculating-description">You're personalized energy breakdown is being calculated.</p>
+  <div class="modal-body">
+    <div class="calculating-progress progress-1">
+      <div class="progress-message">Analyzing energy usage data</div>
+      <div class="calculating-progress-bar"></div>
+    </div>
+    <div class="calculating-progress progress-2">
+      <div class="progress-message">Analyzing your survey answers</div>
+      <div class="calculating-progress-bar"></div>
+    </div>
+  </div>
+  <div class="modal-actions">
+    <button class="button primary disabled" ng-click="ok()" ng-class="{'disabled' : !pieReady }">See my energy breakdown</button>
+  </div>
+  <a class="close-reveal-modal" ng-click="cancel()">&#215;</a>
+</div>

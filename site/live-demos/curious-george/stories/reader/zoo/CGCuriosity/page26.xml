@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<smil xmlns="http://www.w3.org/ns/SMIL" version="3.0" profile="http://www.idpf.org/epub/30/profile/content/">
+<body>
+ <par>
+    <audio clipBegin="497.606781" clipEnd="498.313617" aText="counting" id="w000279"/>
+  </par>
+  <par>
+    <audio clipBegin="500.246705" clipEnd="500.873218" aText="one" id="w000280"/>
+  </par>
+  <par>
+    <audio clipBegin="501.285538" clipEnd="501.794246" aText="whale" id="w000281"/>
+  </par>
+  <par>
+    <audio clipBegin="502.950886" clipEnd="503.539915" aText="two" id="w000282"/>
+  </par>
+  <par>
+    <audio clipBegin="503.829075" clipEnd="504.712619" aText="elephants" id="w000283"/>
+  </par>
+  <par>
+    <audio clipBegin="505.360552" clipEnd="505.965646" aText="three" id="w000284"/>
+  </par>
+  <par>
+    <audio clipBegin="506.238741" clipEnd="507.116931" aText="rhinos" id="w000285"/>
+  </par>
+  <par>
+    <audio clipBegin="507.995120" clipEnd="508.514537" aText="four" id="w000286"/>
+  </par>
+  <par>
+    <audio clipBegin="508.825116" clipEnd="509.585500" aText="hippos" id="w000287"/>
+  </par>
+  <par>
+    <audio clipBegin="510.367303" clipEnd="511.047364" aText="five" id="w000288"/>
+  </par>
+  <par>
+    <audio clipBegin="511.208008" clipEnd="512.096908" aText="giraffes" id="w000289"/>
+  </par>
+  <par>
+    <audio clipBegin="512.814453" clipEnd="513.467740" aText="six" id="w000290"/>
+  </par>
+  <par>
+    <audio clipBegin="513.671223" clipEnd="514.394123" aText="camels" id="w000291"/>
+  </par>
+  <par>
+    <audio clipBegin="515.154506" clipEnd="515.930954" aText="seven" id="w000292"/>
+  </par>
+  <par>
+    <audio clipBegin="516.327210" clipEnd="517.050110" aText="bears" id="w000293"/>
+  </par>
+  <par>
+    <audio clipBegin="517.826558" clipEnd="518.260298" aText="eight" id="w000294"/>
+  </par>
+  <par>
+    <audio clipBegin="518.624426" clipEnd="519.668614" aText="lions" id="w000295"/>
+  </par>
+  <par>
+    <audio clipBegin="520.273708" clipEnd="520.943060" aText="nine" id="w000296"/>
+  </par>
+  <par>
+    <audio clipBegin="521.366090" clipEnd="522.217506" aText="ostriches" id="w000297"/>
+  </par>
+  <par>
+    <audio clipBegin="523.010018" clipEnd="523.620467" aText="ten" id="w000298"/>
+  </par>
+  <par>
+    <audio clipBegin="523.845369" clipEnd="524.830655" aText="kangaroos" id="w000299"/>
+  </par>
+  <par>
+    <audio clipBegin="525.542845" clipEnd="526.394260" aText="eleven" id="w000300"/>
+  </par>
+  <par>
+    <audio clipBegin="526.528131" clipEnd="527.229611" aText="zebra" id="w000301"/>
+  </par>
+  <par>
+    <audio clipBegin="527.957866" clipEnd="528.728959" aText="twelve" id="w000302"/>
+  </par>
+  <par>
+    <audio clipBegin="528.959216" clipEnd="529.714245" aText="seals" id="w000303"/>
+  </par>
+  <par>
+    <audio clipBegin="530.496048" clipEnd="531.368882" aText="thirteen" id="w000304"/>
+  </par>
+  <par>
+    <audio clipBegin="531.459914" clipEnd="532.354168" aText="monkeys" id="w000305"/>
+  </par>
+  <par>
+    <audio clipBegin="532.889649" clipEnd="533.832097" aText="fourteen" id="w000306"/>
+  </par>
+  <par>
+    <audio clipBegin="534.014160" clipEnd="534.892350" aText="penguins" id="w000307"/>
+  </par>
+  <par>
+    <audio clipBegin="535.550992" clipEnd="536.359569" aText="fifteen" id="w000308"/>
+  </par>
+  <par>
+    <audio clipBegin="536.546987" clipEnd="537.334145" aText="dogs" id="w000309"/>
+  </par>
+  <par>
+    <audio clipBegin="538.003497" clipEnd="538.967363" aText="sixteen" id="w000310"/>
+  </par>
+  <par>
+    <audio clipBegin="539.208330" clipEnd="539.877681" aText="cats" id="w000311"/>
+  </par>
+  <par>
+    <audio clipBegin="541.264578" clipEnd="542.212380" aText="seventeen" id="w000312"/>
+  </par>
+  <par>
+    <audio clipBegin="542.281993" clipEnd="543.063796" aText="rabbits" id="w000313"/>
+  </par>
+  <par>
+    <audio clipBegin="543.706373" clipEnd="544.488176" aText="eighteen" id="w000314"/>
+  </par>
+  <par>
+    <audio clipBegin="544.723788" clipEnd="545.489526" aText="turtles" id="w000315"/>
+  </par>
+  <par>
+    <audio clipBegin="546.089265" clipEnd="547.031713" aText="nineteen" id="w000316"/>
+  </par>
+  <par>
+    <audio clipBegin="547.219131" clipEnd="548.199062" aText="hedgehogs" id="w000317"/>
+  </par>
+  <par>
+    <audio clipBegin="548.964801" clipEnd="549.725184" aText="twenty" id="w000318"/>
+  </par>
+  <par>
+    <audio clipBegin="549.778732" clipEnd="550.576599" aText="frogs" id="w000319"/>
+  </par>
+  <par>
+    <audio clipBegin="553.741294" clipEnd="554.614129" aText="shapes" id="w000320"/>
+  </par>
+  <par>
+    <audio clipBegin="556.247347" clipEnd="557.071989" aText="circle" id="w000321"/>
+  </par>
+  <par>
+    <audio clipBegin="557.666373" clipEnd="558.432111" aText="square" id="w000322"/>
+  </par>
+  <par>
+    <audio clipBegin="559.058624" clipEnd="560.027846" aText="triangle" id="w000323"/>
+  </par>
+  <par>
+    <audio clipBegin="560.777520" clipEnd="561.537903" aText="diamond" id="w000324"/>
+  </par>
+  <par>
+    <audio clipBegin="562.250094" clipEnd="563.197896" aText="rectangle" id="w000325"/>
+  </par>
+  <par>
+    <audio clipBegin="564.033247" clipEnd="564.627631" aText="oval" id="w000326"/>
+  </par>
+  
+
+</body>
+</smil>

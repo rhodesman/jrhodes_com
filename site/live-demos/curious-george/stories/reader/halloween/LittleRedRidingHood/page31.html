@@ -1,0 +1,256 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+ "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>
+    
+</title>
+<link href="skin/blue.monday/jplayer.blue.monday.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.jplayer.min.js"></script>
+<meta http-equiv="Content-Type" content="text/html;CHARSET=utf-8"/>
+<meta name="viewport" content="width=576,height=576" />
+<style type="text/css">
+@font-face {
+    font-family: "AldusLTStd-Italic";
+    src: url("font/ALDULTSI.TTF");
+}
+@font-face {
+    font-family: "AldusLTStd-Roman";
+    src: url("font/ALDULTSR.TTF");
+}
+@font-face {
+    font-family: "HandleOldstyleStd";
+    src: url("font/HANDLEOS.TTF");
+}
+body {
+    background-color: #FFFFFF;
+    border-bottom-style: solid;
+    border-bottom-width: 0;
+    border-top-style: solid;
+    border-top-width: 0;
+    height: 445px;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+    width: 850px;
+	font-size:14px
+}
+h1, h2, h3, h4, h5, h6 {
+    font-weight: normal;
+}
+p {
+    margin-bottom: 1.1em;
+    margin-top: 0;
+}
+#Lside p.lastNode {
+    margin-bottom: 0;
+}
+a:link img, a:visited img {
+    -moz-border-bottom-colors: none;
+    -moz-border-image: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    border-bottom-color: -moz-use-text-color;
+    border-bottom-style: none;
+    border-bottom-width: medium;
+    border-top-color: -moz-use-text-color;
+    border-top-style: none;
+    border-top-width: medium;
+}
+div.clearFloat {
+    clear: both;
+    font-size: 0;
+    height: 0;
+    line-height: 0;
+}
+li.clearFloat {
+    clear: both;
+}
+ul.symbolList {
+    display: inline;
+    float: left;
+    list-style-type: none;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+}
+.AbsWrap {
+    position: relative;
+    width: 100%;
+}
+.rowWrap {
+    width: 100%;
+}
+#Lside {
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: auto;
+    margin-top: 0;
+    width: 425px;
+}
+.box1 {
+    height: 445px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 425px;
+}
+.Rside {
+    left: 425px;
+    position: absolute;
+    top: 0;
+}
+.box2 {
+    background-color: white;
+    height: 445px;
+    width: 425px;
+}
+#id_Text_34 {
+    display: inline;
+    float: left;
+    height: 445px;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-top: 0;
+    width: 425px;
+}
+#id_Text_35 {
+    display: inline;
+    float: left;
+    height: 445px;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-top: 0;
+    width: 425px;
+}
+.Txt_They {
+    color: #000000;
+    /*font-family: 'AldusLTStd-Roman',Arial,Helvetica,sans-serif;
+    font-size: 14px;*/
+    left: 25px;
+    line-height: 192.86%;
+    margin-bottom: 0;
+    padding-bottom: 2px;
+    padding-top: 1px;
+    position: absolute;
+    text-align: left;
+    top: 75px;
+}
+.Txt_took {
+    color: #000000;
+    /*font-family: 'AldusLTStd-Roman',Arial,Helvetica,sans-serif;
+    font-size: 14px;*/
+    left: 25px;
+    line-height: 192.86%;
+    margin-bottom: 0;
+    padding-bottom: 2px;
+    padding-top: 1px;
+    position: absolute;
+    text-align: left;
+    top: 90px;
+}
+.Txt_The2 {
+    color: #000000;
+    /*font-family: 'AldusLTStd-Roman',Arial,Helvetica,sans-serif;
+    font-size: 14px;*/
+    left: 25px;
+    line-height: 192.86%;
+    margin-bottom: 0;
+    padding-bottom: 2px;
+    padding-top: 1px;
+    position: absolute;
+    text-align: left;
+    top: 115px;
+}
+.Txt_wine {
+    color: #000000;
+    /*font-family: 'AldusLTStd-Roman',Arial,Helvetica,sans-serif;
+    font-size: 14px;*/
+    left: 25px;
+    line-height: 192.86%;
+    margin-bottom: 0;
+    padding-bottom: 2px;
+    padding-top: 1px;
+    position: absolute;
+    text-align: left;
+    top: 130px;
+}
+.Txt_and {
+    color: #000000;
+    /*font-family: 'AldusLTStd-Roman',Arial,Helvetica,sans-serif;
+    font-size: 14px;*/
+    left: 25px;
+    line-height: 192.86%;
+    margin-bottom: 0;
+    padding-bottom: 2px;
+    padding-top: 1px;
+    position: absolute;
+    text-align: left;
+    top: 145px;
+}
+.Txt_Little {
+    color: #000000;
+    /*font-family: 'AldusLTStd-Roman',Arial,Helvetica,sans-serif;
+    font-size: 14px;*/
+    left: 25px;
+    line-height: 192.86%;
+    margin-bottom: 0;
+    padding-bottom: 2px;
+    padding-top: 1px;
+    position: absolute;
+    text-align: left;
+    top: 170px;
+}
+.Txt_I {
+    color: #000000;
+    /*font-family: 'AldusLTStd-Roman',Arial,Helvetica,sans-serif;
+    font-size: 14px;*/
+    left: 20px;
+    line-height: 192.86%;
+    margin-bottom: 0;
+    padding-bottom: 2px;
+    padding-top: 1px;
+    position: absolute;
+    text-align: left;
+    top: 185px;
+}
+.Txt_as {
+    color: #000000;
+    /*font-family: 'AldusLTStd-Roman',Arial,Helvetica,sans-serif;
+    font-size: 14px;*/
+    left: 25px;
+    line-height: 192.86%;
+    margin-bottom: 0;
+    padding-bottom: 2px;
+    padding-top: 1px;
+    position: absolute;
+    text-align: left;
+    top: 200px;
+}
+
+</style>
+</head>
+<body>
+      <div id="Lside">
+   <div class="box2">
+           <span id=""><img src="images/Text_35.jpg" id="id_Text_35" alt="" /></span>
+         </div>
+     </div>
+     
+
+<div id="chk"></div>
+<div id="timeValue"></div>
+</body>
+</html>

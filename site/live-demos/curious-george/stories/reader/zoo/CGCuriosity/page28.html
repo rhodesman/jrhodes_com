@@ -1,0 +1,698 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+ "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>
+    Untitled Document
+</title>
+<link href="skin/blue.monday/jplayer.blue.monday.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.jplayer.min.js"></script>
+<meta http-equiv="Content-Type" content="text/html;CHARSET=utf-8"/>
+<meta name="viewport" content="width=450,height=450" />
+
+<style type="text/css">
+ 
+    a:link {
+        color:blue;
+        text-decoration:underline;
+    }
+    a:active { color:red }
+    a:visited { color:purple }
+    
+  @font-face {
+  font-family: 'Adobe Garamond Semibold Italic';
+  src: url("font/AGARAMSI.TTF");
+  }
+@font-face {
+  font-family: 'CuriousGerogeheader-Medium';
+  src: url("font/CURIOUGM.TTF");
+  }
+@font-face {
+  font-family: 'New Century Schoolbook Italic';
+  src: url("font/NEWCENSI.TTF");
+  }
+@font-face {
+  font-family: 'New Century Schoolbook Roman';
+  src: url("font/NEWCENSR.TTF");
+  }
+@font-face {
+  font-family: 'OPTIMajerIrregular';
+  src: url("font/OPTIMAJI.TTF");
+  }
+
+body {
+   width: 850px;
+   height: 450px;
+   margin:0; 
+
+        background-color:white;
+        color:#393838;
+    }
+    .text96 {
+        font-family:'OPTIMajerIrregular';
+        font-size:40px;
+        text-decoration:none;
+        color:#335C93;
+    }
+    .pHeadparagraph {
+        line-height:42px;
+        text-align:center;
+    }
+    .rbox1 {
+        background-color:white;
+        width:450px;
+        height:450px;
+    }
+    .rbox2 {
+        position:absolute;
+        left:72px;
+        top:72px;
+        width:576px;
+        height:576px;
+    }
+    .rbox3 {
+        position:absolute;
+        left:196px;
+        top:233px;
+        width:87px;
+        height:102px;
+    }
+    .rbox4 {
+        position:absolute;
+        left:380px;
+        top:211px;
+        width:70px;
+        height:87px;
+    }
+    .rbox5 {
+        position:absolute;
+        left:280px;
+        top:253px;
+        width:62px;
+        height:85px;
+    }
+    .rbox6 {
+        position:absolute;
+        left:450px;
+        top:207px;
+        width:97px;
+        height:90px;
+    }
+    .rbox7 {
+        position:absolute;
+        left:289px;
+        top:372px;
+        width:142px;
+        height:114px;
+    }
+    .rbox8 {
+        position:absolute;
+        left:492.58px;
+        top:38.569px;
+        width:163.824px;
+        height:113.203px;
+    }
+    .rbox9 {
+        position:absolute;
+        left:276.251px;
+        top:15.118px;
+        width:198.094px;
+        height:127.151px;
+    }
+    .rbox10 {
+        position:absolute;
+        left:56px;
+        top:66px;
+        width:149px;
+        height:56px;
+    }
+    .rbox11 {
+        position:absolute;
+        left:22px;
+        top:205px;
+        width:153px;
+        height:107px;
+    }
+    .rbox12 {
+        position:absolute;
+        left:585px;
+        top:230px;
+        width:115px;
+        height:120px;
+    }
+    .rbox13 {
+        position:absolute;
+        left:581px;
+        top:232px;
+        width:41px;
+        height:81px;
+    }
+    .rbox14 {
+        position:absolute;
+        left:54px;
+        top:410px;
+        width:174px;
+        height:97px;
+    }
+    .rbox15 {
+        position:absolute;
+        left:480px;
+        top:368px;
+        width:213px;
+        height:141px;
+    }
+    .rbox16 {
+        position:absolute;
+        left:480px;
+        top:348px;
+        width:220px;
+        height:161px;
+    }
+    .rbox17 {
+        position:absolute;
+        left:26px;
+        top:577px;
+        width:137px;
+        height:103px;
+    }
+    .rbox18 {
+        position:absolute;
+        left:194px;
+        top:542px;
+        width:131px;
+        height:124px;
+    }
+    .rbox19 {
+        position:absolute;
+        left:347px;
+        top:592px;
+        width:159px;
+        height:102px;
+    }
+    .rbox20 {
+        position:absolute;
+        left:522px;
+        top:560px;
+        width:182px;
+        height:102px;
+    }
+    .rbox21 {
+        position:absolute;
+        left:194px;
+        top:518px;
+        width:131px;
+        height:148px;
+    }
+    .rbox28 {
+        position:absolute;
+        left:0px;
+        top:0px;
+        background-color:#EDC1A7;
+        width:450px;
+        height:188px;
+    }
+    .rbox31 {
+	position:absolute;
+	left:15px;
+	top:57px;
+	padding:0px;
+	width:149px;
+	height:56px;
+    }
+    .rbox38 {
+        position:absolute;
+        left:718px;
+        top:353px;
+        background-color:#C2BADB;
+        width:5px;
+        height:193px;
+    }
+    .rbox39 {
+        position:absolute;
+        left:2px;
+        top:540px;
+        background-color:#D0D8A8;
+        width:717px;
+        height:180px;
+    }
+    .rbox44 {
+        position:absolute;
+        left:719px;
+        top:180px;
+        background-color:#FFF9AB;
+        width:1px;
+        height:180px;
+    }
+    .rbox46 {
+        position:absolute;
+        left:717px;
+        top:353px;
+        background-color:#C2BADB;
+        width:1px;
+        height:193px;
+    }
+  .box1 {
+        background-color:white;
+        width:450px;
+        height:450px;
+    }
+    .box2 {
+        position:absolute;
+        left:72.1px;
+        top:71.729px;
+        width:576px;
+        height:576px;
+    }
+    .box3 {
+        position:absolute;
+        left:287.502px;
+        top:202.75px;
+        width:152.767px;
+        height:112.586px;
+    }
+    .box4 {
+        position:absolute;
+        left:525.16px;
+        top:210.92px;
+        width:112.29px;
+        height:114.542px;
+    }
+    .box5 {
+        position:absolute;
+        left:221.946px;
+        top:401.381px;
+        width:71.19px;
+        height:80.722px;
+    }
+    .box6 {
+        position:absolute;
+        left:296.721px;
+        top:382.677px;
+        width:111.229px;
+        height:137.578px;
+    }
+    .box7 {
+        position:absolute;
+        left:417.955px;
+        top:381.617px;
+        width:69.508px;
+        height:113.862px;
+    }
+    .box8 {
+        position:absolute;
+        left:491.194px;
+        top:439.37px;
+        width:36.05px;
+        height:55.085px;
+    }
+    .box9 {
+        position:absolute;
+        left:35.133px;
+        top:25.512px;
+        width:160.458px;
+        height:117.195px;
+    }
+    .box10 {
+        position:absolute;
+        left:225.526px;
+        top:18.229px;
+        width:222.348px;
+        height:144.984px;
+    }
+    .box11 {
+        position:absolute;
+        left:487.389px;
+        top:32.163px;
+        width:186.442px;
+        height:99.29px;
+    }
+    .box12 {
+        position:absolute;
+        left:54.984px;
+        top:185.764px;
+        width:116.941px;
+        height:148.725px;
+    }
+    .box13 {
+        position:absolute;
+        left:147.684px;
+        top:257.465px;
+        width:27.289px;
+        height:97.722px;
+    }
+    .box14 {
+        position:absolute;
+        left:50.374px;
+        top:403.942px;
+        width:127.49px;
+        height:113.059px;
+    }
+    .box15 {
+        position:absolute;
+        left:564.094px;
+        top:394.812px;
+        width:117.494px;
+        height:84.243px;
+    }
+    .box16 {
+        position:absolute;
+        left:55.496px;
+        top:574.49px;
+        width:138.427px;
+        height:80.921px;
+    }
+    .box17 {
+        position:absolute;
+        left:242.945px;
+        top:601.634px;
+        width:66.711px;
+        height:77.955px;
+    }
+    .box18 {
+        position:absolute;
+        left:314.646px;
+        top:595.144px;
+        width:155.315px;
+        height:108.467px;
+    }
+    .box19 {
+        position:absolute;
+        left:484.724px;
+        top:549.921px;
+        width:200.844px;
+        height:118.315px;
+    }
+ .Rside
+	{
+		position:absolute;
+		left:425px;
+		top:0px;
+		
+	}	
+	.Rside
+	{
+		position:absolute;
+		left:425px;
+		top:0px;
+		
+	}	
+	.aa
+	{
+	left:218px;
+	top:38px;
+	position:absolute;
+	font-weight:bolder;
+	font-size:50px;
+	font-family:Arial, Helvetica, sans-serif;
+	}
+	.bb
+	{
+	left:343px;
+	top:40px;
+	position:absolute;
+	font-weight:bolder;
+	font-size:50px;
+	font-family:Arial, Helvetica, sans-serif;
+	}
+	.ff
+	{
+	left:26px;
+	top:135px;
+	position:absolute;
+	font-weight:bolder;
+	font-size:50px;
+	font-family:Arial, Helvetica, sans-serif;
+	}
+	.gg
+	{
+	left:161px;
+	top:148px;
+	position:absolute;
+	font-weight:bolder;
+	font-size:50px;
+	font-family:Arial, Helvetica, sans-serif;
+	}
+	.hh
+	{
+	left:234px;
+	top:134px;
+	position:absolute;
+	font-weight:bolder;
+	font-size:50px;
+	font-family:Arial, Helvetica, sans-serif;
+	}
+	.ii
+	{
+	left:355px;
+	top:146px;
+	position:absolute;
+	font-weight:bolder;
+	font-size:50px;
+	font-family:Arial, Helvetica, sans-serif;
+	}
+	.mm
+	{
+	left:42px;
+	top:257px;
+	position:absolute;
+	font-weight:bolder;
+	font-size:50px;
+	font-family:Arial, Helvetica, sans-serif;
+	}
+	.nn
+	{
+	left:219px;
+	top:245px;
+	position:absolute;
+	font-weight:bolder;
+	font-size:50px;
+	font-family:Arial, Helvetica, sans-serif;
+	}
+	.oo
+	{
+	left:298px;
+	top:254px;
+	position:absolute;
+	font-weight:bolder;
+	font-size:50px;
+	font-family:Arial, Helvetica, sans-serif;
+	}
+	.tt
+	{
+	left:75px;
+	top:369px;
+	position:absolute;
+	font-weight:bolder;
+	font-size:50px;
+	font-family:Arial, Helvetica, sans-serif;
+	}
+	.uu
+	{
+	left:154px;
+	top:356px;
+	position:absolute;
+	font-weight:bolder;
+	font-size:50px;
+	font-family:Arial, Helvetica, sans-serif;
+	}
+	.vv
+	{
+	left:210px;
+	top:367px;
+	position:absolute;
+	font-weight:bolder;
+	font-size:50px;
+	font-family:Arial, Helvetica, sans-serif;
+	}
+	.ww
+	{
+	left:371px;
+	top:355px;
+	position:absolute;
+	font-weight:bolder;
+	font-size:50px;
+	font-family:Arial, Helvetica, sans-serif;
+	}
+	.cc
+	{
+	left:77px;
+	top:27px;
+	position:absolute;
+	font-weight:bolder;
+	font-size:50px;
+	font-family:Arial, Helvetica, sans-serif;
+	}
+	.dd
+	{
+	left:224px;
+	top:35px;
+	position:absolute;
+	font-weight:bolder;
+	font-size:50px;
+	font-family:Arial, Helvetica, sans-serif;
+	}
+	.ee
+	{
+	left:355px;
+	top:25px;
+	position:absolute;
+	font-weight:bolder;
+	font-size:50px;
+	font-family:Arial, Helvetica, sans-serif;
+	}
+	.jj
+	{
+	left:91px;
+	top:150px;
+	position:absolute;
+	font-weight:bolder;
+	font-size:50px;
+	font-family:Arial, Helvetica, sans-serif;
+	}
+	.kk
+	{
+	left:174px;
+	top:135px;
+	position:absolute;
+	font-weight:bolder;
+	font-size:50px;
+	font-family:Arial, Helvetica, sans-serif;
+	}
+	.ll
+	{
+	left:361px;
+	top:145px;
+	position:absolute;
+	font-weight:bolder;
+	font-size:50px;
+	font-family:Arial, Helvetica, sans-serif;
+	}
+	.pp
+	{
+	left:71px;
+	top:251px;
+	position:absolute;
+	font-weight:bolder;
+	font-size:50px;
+	font-family:Arial, Helvetica, sans-serif;
+	}
+	.qq
+	{
+	left:139px;
+	top:242px;
+	position:absolute;
+	font-weight:bolder;
+	font-size:50px;
+	font-family:Arial, Helvetica, sans-serif;
+	}
+	.rr
+	{
+	left:287px;
+	top:257px;
+	position:absolute;
+	font-weight:bolder;
+	font-size:50px;
+	font-family:Arial, Helvetica, sans-serif;
+	}
+	.ss
+	{
+	left:367px;
+	top:245px;
+	position:absolute;
+	font-weight:bolder;
+	font-size:50px;
+	font-family:Arial, Helvetica, sans-serif;
+	}
+	.xx
+	{
+	left:78px;
+	top:354px;
+	position:absolute;
+	font-weight:bolder;
+	font-size:50px;
+	font-family:Arial, Helvetica, sans-serif;
+	}
+	.yy
+	{
+	left:151px;
+	top:370px;
+	position:absolute;
+	font-weight:bolder;
+	font-size:50px;
+	font-family:Arial, Helvetica, sans-serif;
+	}
+	.zz
+	{
+	left:371px;
+	top:350px;
+	position:absolute;
+	font-weight:bolder;
+	font-size:50px;
+	font-family:Arial, Helvetica, sans-serif;
+	}
+</style>
+</head>
+
+<body>
+
+    
+        
+        <div class="rbox1">
+            <span id="t1239"><img src="images/26.jpg" alt="" width="425" height="445" 
+             /></span></div>
+        
+             <span class="aa"><span id="w000329">a</span></span>
+             <span class="bb"><span id="w000330">b</span></span>             
+             <span class="ff"><span id="w000334">F</span></span>
+             <span class="gg"><span id="w000335">g</span></span>
+             <span class="hh"><span id="w000336">H</span></span>
+             <span class="ii"><span id="w000337">I</span></span>            
+             <span class="mm"><span id="w000341">M</span></span>
+             <span class="nn"><span id="w000342">n</span></span>
+             <span class="oo"><span id="w000343">O</span></span>    
+             <span class="tt"><span id="w000348">t</span></span>
+             <span class="uu"><span id="w000349">u</span></span>
+             <span class="vv"><span id="w000350">V</span></span>
+             <span class="ww"><span id="w000351">w</span></span>
+             
+    
+        
+        
+        
+
+<div class="rbox31">
+    <div class="pHeadparagraph">
+        <span class="text96"><span id="w000328">Alphabet</span>  </span>
+  </div>
+</div>
+
+<!--right side-->
+<div class="Rside">
+ <div class="box1">
+            <span id="t2239"><img src="images/27.jpg" alt="" width="425" height="445" 
+             /></span></div>
+             
+             <span class="cc"><span id="w000331">c</span></span>
+             <span class="dd"><span id="w000332">d</span></span>
+             <span class="ee"><span id="w000333">e</span></span>
+             <span class="jj"><span id="w000338">j</span></span>
+              <span class="kk"><span id="w000339">K</span></span>
+             <span class="ll"><span id="w000340">l</span></span>            
+             <span class="pp"><span id="w000344">p</span></span>
+             <span class="qq"><span id="w000345">Q</span></span>
+              <span class="rr"><span id="w000346">r</span></span>
+             <span class="ss"><span id="w000347">s</span></span>            
+             <span class="xx"><span id="w000352">x</span></span>
+              <span class="yy"><span id="w000353">Y</span></span>
+             <span class="zz"><span id="w000354">z</span></span>
+            
+            
+        
+        
+</div>
+
+<div id="chk"></div>
+<div id="timeValue"></div>
+</body>
+</html>

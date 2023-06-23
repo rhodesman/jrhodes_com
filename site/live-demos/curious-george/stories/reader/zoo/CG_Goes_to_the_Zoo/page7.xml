@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<smil xmlns="http://www.w3.org/ns/SMIL" VERSION="3.0" PROFILE="http://www.idpf.org/epub/30/profile/content/">
+<body>
+<par id="p0001">
+<audio src="images/CG_ZOO.m4a" clipBegin="28.489009s" clipEnd="28.591181s" id="w0162"/>
+</par>
+<par id="p0002">
+<audio src="images/CG_ZOO.m4a" clipBegin="28.591181s" clipEnd="29.104393s" id="w0163"/>
+</par>
+<par id="p0003">
+<audio src="images/CG_ZOO.m4a" clipBegin="29.104393s" clipEnd="29.408962s" id="w0164"/>
+</par>
+<par id="p0004">
+<audio src="images/CG_ZOO.m4a" clipBegin="29.408962s" clipEnd="29.943758s" id="w0165"/>
+</par>
+<par id="p0005">
+<audio src="images/CG_ZOO.m4a" clipBegin="29.943758s" clipEnd="30.435386s" id="w0166"/>
+</par>
+<par id="p0006">
+<audio src="images/CG_ZOO.m4a" clipBegin="30.435386s" clipEnd="31.066109s" id="w0167"/>
+</par>
+<par id="p0007">
+<audio src="images/CG_ZOO.m4a" clipBegin="31.066109s" clipEnd="31.148247s" id="w0168"/>
+</par>
+<par id="p0008">
+<audio src="images/CG_ZOO.m4a" clipBegin="31.148247s" clipEnd="31.437828s" id="w0169"/>
+</par>
+<par id="p0009">
+<audio src="images/CG_ZOO.m4a" clipBegin="31.437828s" clipEnd="32.141696s" id="w0170"/>
+</par>
+<par id="p0010">
+<audio src="images/CG_ZOO.m4a" clipBegin="32.141696s" clipEnd="32.500225s" id="w0171"/>
+</par>
+<par id="p0011">
+<audio src="images/CG_ZOO.m4a" clipBegin="32.500225s" clipEnd="32.608143s" id="w0172"/>
+</par>
+<par id="p0012">
+<audio src="images/CG_ZOO.m4a" clipBegin="32.608143s" clipEnd="32.708867s" id="w0173"/>
+</par>
+<par id="p0013">
+<audio src="images/CG_ZOO.m4a" clipBegin="32.708867s" clipEnd="33.565020s" id="w0174"/>
+</par>
+<par id="p0014">
+<audio src="images/CG_ZOO.m4a" clipBegin="33.565020s" clipEnd="33.929544s" id="w0175"/>
+</par>
+<par id="p0015">
+<audio src="images/CG_ZOO.m4a" clipBegin="33.929544s" clipEnd="34.585448s" id="w0176"/>
+</par>
+<par id="p0016">
+<audio src="images/CG_ZOO.m4a" clipBegin="34.585448s" clipEnd="35.000001s" id="w0177"/>
+</par>
+</body>
+</smil>

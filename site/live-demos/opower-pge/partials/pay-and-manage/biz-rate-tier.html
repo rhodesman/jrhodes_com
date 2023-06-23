@@ -1,0 +1,128 @@
+<div class="rate-tier" ng-controller="chartsController">
+  <div class="row">
+    <div class="large-9 columns " >
+      <h1>
+        Compare rate plans
+      </h1>
+    </div>
+    <div class="large-3 columns analyze">
+      <label>Analyze scenario for:
+        <select>
+          <option value="osha-2">Osha 2nd st</option>
+          <option value="option-3">Osha tenderloin</option>
+          <option value="option-3">Osha Mission</option>
+          <option value="option-3">Osha 3rd St</option>
+          <option value="option-3">Osha Embarcadero</option>
+          <option value="option-3">Osha Cow Hollow</option>
+          <option value="option-3">Osha Glen Park</option>
+        </select>
+      </label>
+    </div>
+  </div>
+  <div class="row page-content">
+    <div class="large-4 columns rate-plan current">
+      <label>Current rate plan
+        <select ng-model="tierSelectionCurrent" ng-options="tierOption.value as tierOption.title for tierOption in tierOptions">
+        </select>
+      </label>
+      <p>
+        This rate schedule is an option for customers who use much of their electricity at times other than noon to 6pm on weekdays. <!-- A-6 rates vary by season and according to the time of day electricity is used. Rates are lowest between 9:30pm and 8:30am weekdays, and all day on weekends and holidays. -->
+        <a href="">Learn more</a>
+        <p>Your estimated cost next year <strong>${{currentTotal | number}}</strong></p>
+      </p>
+    </div>
+    <div class="large-4 columns rate-plan compared" ng-switch on="tierSelection">
+      <label>Compared rate plan
+        <!-- <select ng-model="tiers" ng-init="tiers = 'a-1-small'">
+          <option  value="a-1-small">A-1 Small General Service</option>
+          <option  value="a-1-time">A-1 Time of Use</option>
+          <option value="a-6-time">A-6 Time of Use</option>
+        </select> -->
+        <select ng-model="tierSelection" ng-options="tierOption.value as tierOption.title for tierOption in tierOptions">
+        </select>
+      </label>
+      <p ng-switch-when="a-1-small">
+        This rate is best for people who can be flexible about when they use energy. If you're willing to significantly reduce your use on a few specific days each summer, you could save a lot. <!-- A-6 rates vary by season and according to the time of day electricity is used. Rates are lowest between 9:30pm and 8:30am weekdays, and all day on weekends and holidays. -->
+        <a href="">Learn more</a>
+      </p>
+      <p ng-switch-when="a-1-time">
+        On this rate the price of electricity changes by time of day. Also, your overall prices are lower most days, but will be much higher on a few hot afternoons.<!-- A-6 rates vary by season and according to the time of day electricity is used. Rates are lowest between 9:30pm and 8:30am weekdays, and all day on weekends and holidays. -->
+        <a href="">Learn more</a>
+      </p>
+      <div ng-switch-when="a-1-small">
+      <p class="recommended">
+        Recommended for you
+      </p>
+      <p>Your estimated cost next year <strong>${{comparedTotal | number}}</strong></p>
+      <p>You could save ${{currentTotal - comparedTotal}}/year</p>
+  </div>
+  <div ng-switch-when="a-1-time">
+  <p>Your estimated cost next year <strong>${{comparedTotalA1 | number}}</strong></p>
+  <p class="orange">You could pay an additional ${{ comparedTotalA1  - currentTotal}}/year</p>
+</div>
+    </div>
+    <div class="large-4 columns comparison">
+      <h2>Comparison based on</h2>
+
+      <!--efficient lighting-->
+      <div data-alert class="alert-box secondary" ng-show="efficientLightingShown">
+        Installed efficient lighting
+        <a ng-click="calculateTotal(100, 1);addValue();" href="" class="close">&times;</a>
+      </div>
+      <div class="alert-box secondary undo" ng-show="!efficientLightingShown">
+        <a class="undo" ng-click="calculateTotal(-100, 1);lowerValue();" href="">Undo</a>
+      </div>
+
+      <!--timer lighting-->
+      <div data-alert class="alert-box secondary" ng-show="timerLightingShown">
+        Installed timers for lighting
+        <a ng-click="calculateTotal(100, 2);addValue()" href="" class="close">&times;</a>
+      </div>
+      <div class="alert-box secondary undo" ng-show="!timerLightingShown">
+        <a class="undo" ng-click="calculateTotal(-100, 2);lowerValue();" href="">Undo</a>
+      </div>
+
+      <!--programmable thermostat-->
+      <div data-alert class="alert-box secondary" ng-show="programmableThermostatShown">
+        Installed a programmable thermostat
+        <a ng-click="calculateTotal(100, 3);addValue()" href="" class="close">&times;</a>
+      </div>
+      <div class="alert-box secondary undo" ng-show="!programmableThermostatShown">
+        <a class="undo" ng-click="calculateTotal(-100, 3);lowerValue();" href="">Undo</a>
+      </div>
+
+      <!--add-->
+      <div data-alert class="alert-box add-one">
+        <a href="" class="add">Add a "What if" scenario<span class="geomicon-circle-max"></span></a>
+      </div>
+    </div>
+  </div>
+  <div class="row page-content chart-content">
+    <div class="large-9 columns" >
+      <h2>
+        Projected costs for the next 12 months
+      </h2>
+    </div>
+    <div class="large-3 columns">
+      <ul class="inline-list chart-grab">
+        <li><a href="">Print</a></li>
+        <li><a href="">Share</a></li>
+        <li><a href="">Download</a></li>
+      </ul>
+    </div>
+    <div class="large-12 columns" ng-switch on="tierSelection">
+      <div ng-switch-default class="tier-chart chart" ng-switch on="rateOption">
+          <canvas ng-switch-when="true" id="rateChart" tc-chartjs-line chart-data="tierDataTime" chart-options="bizRateOptions"></canvas>
+          <canvas ng-switch-when="false" tc-chartjs-line chart-data="tierDataTime" chart-options="bizRateOptions"></canvas>
+      </div>
+      <div ng-switch-when="a-1-time" class="tier-chart chart" ng-switch on="rateOption">
+          <canvas ng-switch-when="true" tc-chartjs-line chart-data="tierData" chart-options="bizRateOptions"></canvas>
+          <canvas ng-switch-when="false" tc-chartjs-line chart-data="tierData" chart-options="bizRateOptions"></canvas>
+      </div>
+      <ul class="key">
+        <li>Projected costs with A-6 Small General TOU</li>
+        <li>Projected costs</li>
+      </ul>
+    </div>
+  </div>
+</div>

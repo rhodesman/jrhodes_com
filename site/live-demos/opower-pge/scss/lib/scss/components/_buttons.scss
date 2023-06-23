@@ -1,0 +1,144 @@
+
+// _buttons.scss
+// Author: justin.secor@opower.com
+
+// Import foundation defaults
+@import "../../zurb-foundation/scss/foundation/components/buttons";
+
+
+// Buttons
+//
+// Styleguide 3.0
+
+
+// Standard buttons
+//
+// Buttons are calls-to-action, so they carry more visual weight than a standard text link. They come in a variety of colors, each intended for their own use case.
+//
+// Markup: <a href="#" class="button {$modifiers}">Click me</a>
+//
+// .primary - Use a primary button for links that take users into a new flow.
+// .secondary - For links that keep users in the same flow, use a secondary button. Also useful for when it triggers a secondary action.
+// .success - Use a success button for an action that concludes a longer flow, or the completion of a task.
+// .alert - Alert buttons are useful for warning the user of a critical or an unsuggested action, such as opting out of a recommended communication.
+// .disabled - Disable buttons that require a user action to enable.
+// .call-to-action - Calls to action are the main buttons we want users to click. Stylistically identical to any other button, except it expands to fill the column width in a mobile layout.
+//
+// Styleguide 3.1
+
+
+button, .button {
+    &.button, &.primary, &.secondary, &.disabled, &.success, &.alert {
+        @include radius($button-radius);
+        @include single-transition(background-color);
+    }
+    @if $three-d-buttons {
+        &.primary, &.secondary, &.disabled, &.success, &.alert {
+            border-top-color: transparent;
+            border-top-width: $button-border-width+2;
+            border-bottom-width: $button-border-width+3;
+            &:hover, &.active {
+                border-bottom-color: rgba(0,0,0,0.25);
+            }
+            &:active, &:focus {
+                border-top-color: rgba(0,0,0,0.25);
+                border-bottom-color: transparent;
+            }
+        }
+    }
+    @else {
+        border: $button-border-width $button-border-style $primary-button-color;
+        box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+        &.button, &.primary {
+            @include linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0.2));
+            background-color: $primary-button-color;
+            border-color: darken($primary-button-color, $button-function-factor);
+            color: $white;
+            &:hover {
+                background-color: darken($primary-button-color, $button-function-factor);
+            }
+            &.active {
+                @include button-style(darken($primary-button-color, $button-function-factor+20), false, false);
+                @include linear-gradient(darken($primary-button-color, $button-function-factor+20), darken($primary-button-color, $button-function-factor+10));
+            }
+        }
+        &.success {
+            background-color: $success-button-color;
+            border-color: darken($success-button-color, $button-function-factor);
+            &:hover {
+                border-color: darken($success-button-color, $button-function-factor*2);
+                background-color: darken($success-button-color, $button-function-factor);
+            }
+            &.active {
+                border-color: darken($success-button-color, $button-function-factor*1.5+10);
+            }
+        }
+        &.alert {
+            background-color: $alert-button-color;
+            border-color: darken($alert-button-color, $button-function-factor);
+            &:hover {
+                border-color: darken($alert-button-color, $button-function-factor*2);
+                background-color: darken($alert-button-color, $button-function-factor);
+            }
+            &.active {
+                @include linear-gradient(darken($alert-button-color, $button-function-factor*1.5+10), darken($alert-button-color, $button-function-factor*1.5));
+                border-color: darken($alert-button-color, $button-function-factor*1.5+10);
+            }
+        }
+        &.secondary {
+            @include linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0.15));
+            background-color: $secondary-button-color;
+            border-color: darken($secondary-button-color, $button-function-factor*2);
+            color: $darker-gray;
+            &:hover {
+                background-color: darken($secondary-button-color, $button-function-factor);
+                border-color: darken($secondary-button-color, $button-function-factor*2);
+                color: $darker-gray;
+            }
+            &.active {
+                @include linear-gradient(darken($secondary-button-color, $button-function-factor*4+10), darken($secondary-button-color, $button-function-factor*4+-10));
+                border-color: darken($secondary-button-color, $button-function-factor*4+10);
+            }
+        }
+    }
+    &.disabled, &[disabled] {
+        background-image: none;
+        background-color: #eee;
+        border-color: darken($secondary-button-color, $button-function-factor*2);
+        color: $lighter-gray;
+        opacity: 1;
+        &:hover {
+            background-color: #eee;
+            border-color: darken($secondary-button-color, $button-function-factor*2);
+            color: $lighter-gray;
+      }
+        &, &.primary, &.secondary, &.success, &.alert {
+            @if $three-d-buttons {
+                border-top-color: transparent;
+            }
+            box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+            cursor: not-allowed;
+        }
+    }
+    &.call-to-action {
+        display: block;
+        @media #{$small} {
+            display: inline-block;
+        }
+    }
+}
+
+$secondary-bg-lightness: lightness($secondary-button-color);
+
+@if $secondary-bg-lightness == 100% {
+    html.ie9 {
+        button, .button {
+            &.secondary {
+                background-color: darken($secondary-button-color, 7.5%);
+                &:hover {
+                    background-color: darken($secondary-button-color, $button-function-factor);
+                }
+            }
+        }
+    }
+}

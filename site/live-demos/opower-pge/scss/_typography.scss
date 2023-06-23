@@ -1,0 +1,231 @@
+$heading-gray: $dark-gray;
+$border-gray-color: $extra-lt-gray;
+$border-blue-color: $deep-blue;
+$oP-blue: $dark-blue;
+$oP-gray: $shade-gray;
+$oP-gray-from: $white;
+$oP-gray-to: $shade-gray;
+$oP-blue-from: $light-blue;
+$oP-blue-to: $dark-blue;
+$op-orange: $orange;
+$op-green: $green;
+$op-blue: $light-blue;
+
+
+
+$color-gray: #222;
+$lighter-gray: $shade-gray;
+
+$column-gutter: rem-calc(90);
+$total-columns: 10;
+
+$include-html-media-classes: $include-html-classes;
+
+// We use this to set the prog bar height
+$progress-bar-height: rem-calc(21);
+$progress-bar-color: transparent;
+
+// We use these to control the border styles
+$progress-bar-border-color: scale-color(#e5e5e5, $lightness: 20%);
+$progress-bar-border-size: 4px;
+$progress-bar-border-style: solid;
+$progress-bar-border-radius: 11px;
+
+// We use these to control the margin and padding
+$progress-bar-pad: rem-calc(1);
+$progress-bar-margin-bottom: rem-calc(30);
+
+// We use these to set the meter colors
+$progress-meter-color: $oP-blue;
+$progress-meter-secondary-color: #fff;
+
+$include-html-nav-classes: $include-html-classes;
+
+// We use this to control padding.
+$side-nav-padding: rem-calc(14 0 14 7);
+
+// We use these to control list styles.
+$side-nav-list-type: none;
+$side-nav-list-position: inside;
+$side-nav-list-margin: rem-calc(10 0 20 0);
+
+// We use these to control link styles.
+$side-nav-link-color: $color-gray;
+$side-nav-link-color-active: $side-nav-link-color;
+$side-nav-link-color-hover: $side-nav-link-color;
+$side-nav-font-size: rem-calc(16);
+$side-nav-font-weight: bold;
+$side-nav-font-weight-active: bold;
+$side-nav-font-family: $body-font-family;
+$side-nav-font-family-active: $side-nav-font-family;
+
+// We use these to control border styles
+$side-nav-divider-size: 1px;
+$side-nav-divider-style: solid;
+$side-nav-divider-color: scale-color(#fff, $lightness: 10%);
+
+$include-html-button-classes: $include-html-classes;
+
+// We use these to build padding for buttons.
+$button-med: rem-calc(12);
+$button-tny: rem-calc(7);
+$button-sml: rem-calc(9);
+$button-lrg: rem-calc(16);
+$button-radius: 10px;
+$button-round: 10px;
+
+$include-html-form-classes: $include-html-classes;
+
+$input-font-family: inherit;
+$input-font-color: rgba(0,0,0,0.75);
+$input-font-size: rem-calc(14);
+$input-bg-color: #fff;
+$input-focus-bg-color: #fff;
+$input-border-color: scale-color($border-gray-color, $lightness: -20%);
+$input-focus-border-color: scale-color($border-gray-color, $lightness: -40%);
+$input-border-style: solid;
+$input-border-width: 1px;
+$input-border-radius: $global-radius;
+$input-disabled-bg: #ddd;
+$input-disabled-cursor: $cursor-default-value;
+$input-box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
+$input-include-glowing-effect: true;
+
+body {
+    -webkit-font-smoothing: antialiased;
+}
+
+@mixin oPower-button($from, $to, $border-color) {
+  background: -webkit-gradient(linear, left top, left bottom, from($from), to($to));
+  background: -moz-linear-gradient(top,  $from, $to);
+  filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#{$from}', endColorstr='#{$to}');
+  border: solid 2px $border-color;
+  @include radius(6px);
+  font-weight:bold;
+  text-decoration:none;
+  color:$color-gray;
+  display:inline-block;
+}
+
+
+p, li, h1, h2, h3, h4 {
+  color: $heading-gray;
+  font-weight:300;
+}
+
+h1, h2, h3, h4 {
+  &:not(.title-case) {
+    text-transform: lowercase;
+    &:first-letter {
+      text-transform: uppercase;
+    }
+  }
+}
+
+h1 {
+  font-size: rem-calc(30);
+  margin-bottom: rem-calc(33);
+}
+
+h2{
+  font-size: rem-calc(20);
+  margin-bottom: 20px;
+}
+
+h3{
+  font-size: rem-calc(18);
+}
+
+h4{
+  font-weight:600;
+  color: $black;
+  font-size: rem-calc(18);
+}
+
+.page-heading {
+  color: $heading-gray;
+  font-size: $font-size-large;
+  font-weight: bold;
+}
+
+.section-head {
+  border-bottom: 1px solid $divider-color;
+  padding: $spacing*0.75 $spacing $spacing*0.75 $spacing*1.25;
+  &.no-side-nav {
+    padding-left: $spacing*2;
+  }
+}
+
+@media #{$small-only}{
+  .section-head {
+      padding:20px;
+    &.no-side-nav {
+      padding: 30px 20px 20px 20px;
+
+    }
+  }
+}
+
+.section-heading {
+  color: $primary-color;
+  font-weight: bold;
+  letter-spacing: -0.025em;
+  margin: 0;
+}
+
+.slab-heading {
+  font-size: rem-calc(20);
+  font-weight: bold;
+  strong {
+    color: $txt-color;
+  }
+}
+
+.slab-subheading,
+.page-subheading {
+  color: $heading-gray;
+  font-size: $font-size-small;
+}
+
+.slab-heading + .slab-subheading,
+.page-heading + .page-subheading {
+  margin-top: - $spacing*0.8;
+  margin-bottom: $spacing;
+}
+
+@media #{$small-only}{
+  .slab{
+    padding:20px;
+  }
+}
+
+p{
+  font-size: rem-calc(16);
+}
+
+/*label > select{
+  margin-top:5px;
+}*/
+input[type="text"].oP-input {
+   @include prefix-postfix-base();
+   background-color: $white;
+}
+input[type="radio"] {
+  display:inline-block;
+  width:25px;
+  height:25px;
+  & + label {
+    vertical-align:top;
+    color: $dark-gray;
+    margin-left:1rem;
+  }
+}
+
+.full-block-link{
+  display:block;
+  width:100%;
+  height:100%;
+  position:absolute;
+  top:0;
+  left:0;
+}

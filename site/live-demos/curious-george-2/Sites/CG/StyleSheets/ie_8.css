@@ -1,0 +1,20 @@
+.bjqs .page ul li a span {
+  position: absolute;
+  z-index: 100;
+}
+.bjqs .page ul li a span img {
+  position: absolute;
+  top: 8px;
+  z-index: -1;
+}
+.bjqs .page ul li a.coming-soon span:before {
+	position: relative;
+	left: 0px;
+	z-index: 20;
+}
+.bjqs .page ul li a strong { 
+	position:absolute;
+	top:140px;
+	width:100%;
+	text-align:center
+}

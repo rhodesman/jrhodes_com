@@ -1,0 +1,2084 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+ "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>
+    Untitled Document
+</title>
+<link href="skin/blue.monday/jplayer.blue.monday.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.jplayer.min.js"></script>
+<meta http-equiv="Content-Type" content="text/html;CHARSET=utf-8"/>
+<meta name="viewport" content="width=450,height=450" />
+
+<style type="text/css">
+ 
+    a:link {
+        color:blue;
+        text-decoration:underline;
+    }
+    a:active { color:red }
+    a:visited { color:purple }
+    
+  @font-face {
+  font-family: 'Adobe Garamond Semibold Italic';
+  src: url("font/AGARAMSI.TTF");
+  }
+@font-face {
+  font-family: 'CuriousGerogeheader-Medium';
+  src: url("font/CURIOUGM.TTF");
+  }
+@font-face {
+  font-family: 'New Century Schoolbook Italic';
+  src: url("font/NEWCENSI.TTF");
+  }
+@font-face {
+  font-family: 'New Century Schoolbook Roman';
+  src: url("font/NEWCENSR.TTF");
+  }
+@font-face {
+  font-family: 'OPTIMajerIrregular';
+  src: url("font/OPTIMAJI.TTF");
+  }
+
+body {
+   width: 450px;
+   height: 450px;
+   margin:0; 
+
+        background-color:white;
+        color:#393838;
+    }
+    .text58 {
+        font-family:'OPTIMajerIrregular';
+        font-size:28px;
+        text-decoration:none;
+        color:#CD383B;
+    }
+    .para3 {
+        line-height:24px;
+        text-align:center;
+    }
+    .box1 {
+        background-color:white;
+        width:450px;
+        height:450px;
+    }
+    .box2 {
+        position:absolute;
+        left:0px;
+        top:0px;
+        background-color:#C9E8FB;
+        width:450px;
+        height:450px;
+    }
+    .box3 {
+	position:absolute;
+	left:225px;
+	top:20px;
+	padding:0px;
+	width:131px;
+	height:34px;
+    }
+    .box4 {
+        position:absolute;
+        left:133.474px;
+        top:14.323px;
+        width:113.641px;
+        height:38.615px;
+    }
+    .box5 {
+        position:absolute;
+        left:136.915px;
+        top:55.246px;
+        width:51.778px;
+        height:50.827px;
+    }
+    .box6 {
+        position:absolute;
+        left:205.216px;
+        top:55.246px;
+        width:51.778px;
+        height:50.827px;
+    }
+    .box7 {
+        position:absolute;
+        left:126.511px;
+        top:110.05px;
+        width:59.039px;
+        height:36.771px;
+    }
+    .box8 {
+        position:absolute;
+        left:184.905px;
+        top:110.05px;
+        width:59.039px;
+        height:36.771px;
+    }
+    .box9 {
+        position:absolute;
+        left:243.299px;
+        top:110.05px;
+        width:59.039px;
+        height:36.771px;
+    }
+    .box10 {
+        position:absolute;
+        left:134.235px;
+        top:181.032px;
+        width:39.204px;
+        height:51.669px;
+    }
+    .box11 {
+        position:absolute;
+        left:179.873px;
+        top:181.032px;
+        width:39.204px;
+        height:51.669px;
+    }
+    .box12 {
+        position:absolute;
+        left:225.51px;
+        top:181.032px;
+        width:39.204px;
+        height:51.669px;
+    }
+    .box13 {
+        position:absolute;
+        left:271.148px;
+        top:181.032px;
+        width:39.204px;
+        height:51.669px;
+    }
+    .box14 {
+        position:absolute;
+        left:316.786px;
+        top:181.032px;
+        width:39.204px;
+        height:51.669px;
+    }
+    .box15 {
+        position:absolute;
+        left:128.883px;
+        top:150.835px;
+        width:49.7px;
+        height:29.87px;
+    }
+    .box16 {
+        position:absolute;
+        left:180.19px;
+        top:150.835px;
+        width:49.7px;
+        height:29.87px;
+    }
+    .box17 {
+        position:absolute;
+        left:231.497px;
+        top:150.835px;
+        width:49.7px;
+        height:29.87px;
+    }
+    .box18 {
+        position:absolute;
+        left:282.804px;
+        top:150.835px;
+        width:49.7px;
+        height:29.87px;
+    }
+    .box19 {
+        position:absolute;
+        left:133.574px;
+        top:230.25px;
+        width:32.427px;
+        height:44.11px;
+    }
+    .box20 {
+        position:absolute;
+        left:176.094px;
+        top:230.25px;
+        width:32.427px;
+        height:44.11px;
+    }
+    .box21 {
+        position:absolute;
+        left:218.613px;
+        top:230.25px;
+        width:32.427px;
+        height:44.11px;
+    }
+    .box22 {
+        position:absolute;
+        left:261.133px;
+        top:230.25px;
+        width:32.427px;
+        height:44.11px;
+    }
+    .box23 {
+        position:absolute;
+        left:303.653px;
+        top:230.25px;
+        width:32.427px;
+        height:44.11px;
+    }
+    .box24 {
+        position:absolute;
+        left:346.172px;
+        top:230.25px;
+        width:32.427px;
+        height:44.11px;
+    }
+    .box25 {
+        position:absolute;
+        left:132.658px;
+        top:275.373px;
+        width:33.769px;
+        height:31.913px;
+    }
+    .box26 {
+        position:absolute;
+        left:173.761px;
+        top:275.373px;
+        width:33.769px;
+        height:31.913px;
+    }
+    .box27 {
+        position:absolute;
+        left:214.863px;
+        top:275.373px;
+        width:33.769px;
+        height:31.913px;
+    }
+    .box28 {
+        position:absolute;
+        left:255.965px;
+        top:275.373px;
+        width:33.769px;
+        height:31.913px;
+    }
+    .box29 {
+        position:absolute;
+        left:297.068px;
+        top:275.373px;
+        width:33.769px;
+        height:31.913px;
+    }
+    .box30 {
+        position:absolute;
+        left:338.17px;
+        top:275.373px;
+        width:33.769px;
+        height:31.913px;
+    }
+    .box31 {
+        position:absolute;
+        left:379.272px;
+        top:275.373px;
+        width:33.769px;
+        height:31.913px;
+    }
+    .box32 {
+        position:absolute;
+        left:132.531px;
+        top:307.223px;
+        width:31.751px;
+        height:32.125px;
+    }
+    .box33 {
+        position:absolute;
+        left:172.216px;
+        top:307.223px;
+        width:31.751px;
+        height:32.125px;
+    }
+    .box34 {
+        position:absolute;
+        left:211.901px;
+        top:307.223px;
+        width:31.751px;
+        height:32.125px;
+    }
+    .box35 {
+        position:absolute;
+        left:251.586px;
+        top:307.223px;
+        width:31.751px;
+        height:32.125px;
+    }
+    .box36 {
+        position:absolute;
+        left:291.271px;
+        top:307.223px;
+        width:31.751px;
+        height:32.125px;
+    }
+    .box37 {
+        position:absolute;
+        left:330.956px;
+        top:307.223px;
+        width:31.751px;
+        height:32.125px;
+    }
+    .box38 {
+        position:absolute;
+        left:370.641px;
+        top:307.223px;
+        width:31.751px;
+        height:32.125px;
+    }
+    .box39 {
+        position:absolute;
+        left:410.326px;
+        top:307.223px;
+        width:31.751px;
+        height:32.125px;
+    }
+    .box40 {
+        position:absolute;
+        left:133.753px;
+        top:340.133px;
+        width:26.67px;
+        height:43.452px;
+    }
+    .box41 {
+        position:absolute;
+        left:171.85px;
+        top:340.133px;
+        width:26.67px;
+        height:43.452px;
+    }
+    .box42 {
+        position:absolute;
+        left:209.948px;
+        top:340.133px;
+        width:26.67px;
+        height:43.452px;
+    }
+    .box43 {
+        position:absolute;
+        left:248.046px;
+        top:340.133px;
+        width:26.67px;
+        height:43.452px;
+    }
+    .box44 {
+        position:absolute;
+        left:286.143px;
+        top:340.133px;
+        width:26.67px;
+        height:43.452px;
+    }
+    .box45 {
+        position:absolute;
+        left:324.241px;
+        top:340.133px;
+        width:26.67px;
+        height:43.452px;
+    }
+    .box46 {
+        position:absolute;
+        left:362.339px;
+        top:340.133px;
+        width:26.67px;
+        height:43.452px;
+    }
+    .box47 {
+        position:absolute;
+        left:400.436px;
+        top:340.133px;
+        width:26.67px;
+        height:43.452px;
+    }
+    .box48 {
+        position:absolute;
+        left:438.534px;
+        top:340.133px;
+        width:26.67px;
+        height:43.452px;
+    }
+    .box49 {
+        position:absolute;
+        left:134.532px;
+        top:385.006px;
+        width:26.862px;
+        height:32.613px;
+    }
+    .box50 {
+        position:absolute;
+        left:170.815px;
+        top:385.006px;
+        width:26.862px;
+        height:32.613px;
+    }
+    .box51 {
+        position:absolute;
+        left:207.098px;
+        top:385.006px;
+        width:26.862px;
+        height:32.613px;
+    }
+    .box52 {
+        position:absolute;
+        left:243.382px;
+        top:385.006px;
+        width:26.862px;
+        height:32.613px;
+    }
+    .box53 {
+        position:absolute;
+        left:279.665px;
+        top:385.006px;
+        width:26.862px;
+        height:32.613px;
+    }
+    .box54 {
+        position:absolute;
+        left:315.949px;
+        top:385.006px;
+        width:26.862px;
+        height:32.613px;
+    }
+    .box55 {
+        position:absolute;
+        left:352.232px;
+        top:385.006px;
+        width:26.862px;
+        height:32.613px;
+    }
+    .box56 {
+        position:absolute;
+        left:388.516px;
+        top:385.006px;
+        width:26.862px;
+        height:32.613px;
+    }
+    .box57 {
+        position:absolute;
+        left:424.799px;
+        top:385.006px;
+        width:26.862px;
+        height:32.613px;
+    }
+    .box58 {
+        position:absolute;
+        left:461.083px;
+        top:385.006px;
+        width:26.862px;
+        height:32.613px;
+    }
+    .box59 {
+        position:absolute;
+        left:134.292px;
+        top:419.015px;
+        width:27.856px;
+        height:26.024px;
+    }
+    .box60 {
+        position:absolute;
+        left:169.441px;
+        top:419.015px;
+        width:27.856px;
+        height:26.024px;
+    }
+    .box61 {
+        position:absolute;
+        left:204.591px;
+        top:419.015px;
+        width:27.856px;
+        height:26.024px;
+    }
+    .box62 {
+        position:absolute;
+        left:239.741px;
+        top:419.015px;
+        width:27.856px;
+        height:26.024px;
+    }
+    .box63 {
+        position:absolute;
+        left:274.89px;
+        top:419.015px;
+        width:27.856px;
+        height:26.024px;
+    }
+    .box64 {
+        position:absolute;
+        left:310.04px;
+        top:419.015px;
+        width:27.856px;
+        height:26.024px;
+    }
+    .box65 {
+        position:absolute;
+        left:345.189px;
+        top:419.015px;
+        width:27.856px;
+        height:26.024px;
+    }
+    .box66 {
+        position:absolute;
+        left:380.339px;
+        top:419.015px;
+        width:27.856px;
+        height:26.024px;
+    }
+    .box67 {
+        position:absolute;
+        left:415.489px;
+        top:419.015px;
+        width:27.856px;
+        height:26.024px;
+    }
+    .box68 {
+        position:absolute;
+        left:450.638px;
+        top:419.015px;
+        width:27.856px;
+        height:26.024px;
+    }
+    .box69 {
+        position:absolute;
+        left:485.788px;
+        top:419.015px;
+        width:27.856px;
+        height:26.024px;
+    }
+    .box70 {
+        position:absolute;
+        left:132.923px;
+        top:448.72px;
+        width:29.315px;
+        height:22.165px;
+    }
+    .box71 {
+        position:absolute;
+        left:167.08px;
+        top:448.72px;
+        width:29.315px;
+        height:22.165px;
+    }
+    .box72 {
+        position:absolute;
+        left:201.238px;
+        top:448.72px;
+        width:29.315px;
+        height:22.165px;
+    }
+    .box73 {
+        position:absolute;
+        left:235.395px;
+        top:448.72px;
+        width:29.315px;
+        height:22.165px;
+    }
+    .box74 {
+        position:absolute;
+        left:269.553px;
+        top:448.72px;
+        width:29.315px;
+        height:22.165px;
+    }
+    .box75 {
+        position:absolute;
+        left:303.71px;
+        top:448.72px;
+        width:29.315px;
+        height:22.165px;
+    }
+    .box76 {
+        position:absolute;
+        left:337.868px;
+        top:448.72px;
+        width:29.315px;
+        height:22.165px;
+    }
+    .box77 {
+        position:absolute;
+        left:372.025px;
+        top:448.72px;
+        width:29.315px;
+        height:22.165px;
+    }
+    .box78 {
+        position:absolute;
+        left:406.183px;
+        top:448.72px;
+        width:29.315px;
+        height:22.165px;
+    }
+    .box79 {
+        position:absolute;
+        left:440.34px;
+        top:448.72px;
+        width:29.315px;
+        height:22.165px;
+    }
+    .box80 {
+        position:absolute;
+        left:474.498px;
+        top:448.72px;
+        width:29.315px;
+        height:22.165px;
+    }
+    .box81 {
+        position:absolute;
+        left:508.655px;
+        top:448.72px;
+        width:29.315px;
+        height:22.165px;
+    }
+    .box82 {
+        position:absolute;
+        left:133.628px;
+        top:471.231px;
+        width:27.835px;
+        height:26.375px;
+    }
+    .box83 {
+        position:absolute;
+        left:166.51px;
+        top:471.231px;
+        width:27.835px;
+        height:26.375px;
+    }
+    .box84 {
+        position:absolute;
+        left:199.392px;
+        top:471.231px;
+        width:27.835px;
+        height:26.375px;
+    }
+    .box85 {
+        position:absolute;
+        left:265.156px;
+        top:471.231px;
+        width:27.835px;
+        height:26.375px;
+    }
+    .box86 {
+        position:absolute;
+        left:298.038px;
+        top:471.231px;
+        width:27.835px;
+        height:26.375px;
+    }
+    .box87 {
+        position:absolute;
+        left:330.92px;
+        top:471.231px;
+        width:27.835px;
+        height:26.375px;
+    }
+    .box88 {
+        position:absolute;
+        left:363.802px;
+        top:471.231px;
+        width:27.835px;
+        height:26.375px;
+    }
+    .box89 {
+        position:absolute;
+        left:396.684px;
+        top:471.231px;
+        width:27.835px;
+        height:26.375px;
+    }
+    .box90 {
+        position:absolute;
+        left:429.565px;
+        top:471.231px;
+        width:27.835px;
+        height:26.375px;
+    }
+    .box91 {
+        position:absolute;
+        left:462.447px;
+        top:471.231px;
+        width:27.835px;
+        height:26.375px;
+    }
+    .box92 {
+        position:absolute;
+        left:495.329px;
+        top:471.231px;
+        width:27.835px;
+        height:26.375px;
+    }
+    .box93 {
+        position:absolute;
+        left:528.211px;
+        top:471.231px;
+        width:27.835px;
+        height:26.375px;
+    }
+    .box94 {
+        position:absolute;
+        left:133.993px;
+        top:501.722px;
+        width:20.514px;
+        height:31.854px;
+    }
+    .box95 {
+        position:absolute;
+        left:166.308px;
+        top:501.722px;
+        width:20.514px;
+        height:31.854px;
+    }
+    .box96 {
+        position:absolute;
+        left:198.623px;
+        top:501.722px;
+        width:20.514px;
+        height:31.854px;
+    }
+    .box97 {
+        position:absolute;
+        left:230.938px;
+        top:501.722px;
+        width:20.514px;
+        height:31.854px;
+    }
+    .box98 {
+        position:absolute;
+        left:263.253px;
+        top:501.722px;
+        width:20.514px;
+        height:31.854px;
+    }
+    .box99 {
+        position:absolute;
+        left:295.568px;
+        top:501.722px;
+        width:20.514px;
+        height:31.854px;
+    }
+    .box100 {
+        position:absolute;
+        left:327.883px;
+        top:501.722px;
+        width:20.514px;
+        height:31.854px;
+    }
+    .box101 {
+        position:absolute;
+        left:360.198px;
+        top:501.722px;
+        width:20.514px;
+        height:31.854px;
+    }
+    .box102 {
+        position:absolute;
+        left:392.513px;
+        top:501.722px;
+        width:20.514px;
+        height:31.854px;
+    }
+    .box103 {
+        position:absolute;
+        left:424.828px;
+        top:501.722px;
+        width:20.514px;
+        height:31.854px;
+    }
+    .box104 {
+        position:absolute;
+        left:457.143px;
+        top:501.722px;
+        width:20.514px;
+        height:31.854px;
+    }
+    .box105 {
+        position:absolute;
+        left:489.458px;
+        top:501.722px;
+        width:20.514px;
+        height:31.854px;
+    }
+    .box106 {
+        position:absolute;
+        left:521.773px;
+        top:501.722px;
+        width:20.514px;
+        height:31.854px;
+    }
+    .box107 {
+        position:absolute;
+        left:554.088px;
+        top:501.722px;
+        width:20.514px;
+        height:31.854px;
+    }
+    .box108 {
+        position:absolute;
+        left:135.661px;
+        top:537.573px;
+        width:23.079px;
+        height:33.322px;
+    }
+    .box109 {
+        position:absolute;
+        left:166.984px;
+        top:537.573px;
+        width:23.079px;
+        height:33.322px;
+    }
+    .box110 {
+        position:absolute;
+        left:198.307px;
+        top:537.573px;
+        width:23.079px;
+        height:33.322px;
+    }
+    .box111 {
+        position:absolute;
+        left:229.63px;
+        top:537.573px;
+        width:23.079px;
+        height:33.322px;
+    }
+    .box112 {
+        position:absolute;
+        left:260.952px;
+        top:537.573px;
+        width:23.079px;
+        height:33.322px;
+    }
+    .box113 {
+        position:absolute;
+        left:292.218px;
+        top:537.573px;
+        width:23.079px;
+        height:33.322px;
+    }
+    .box114 {
+        position:absolute;
+        left:323.485px;
+        top:537.573px;
+        width:23.079px;
+        height:33.322px;
+    }
+    .box115 {
+        position:absolute;
+        left:354.751px;
+        top:537.573px;
+        width:23.079px;
+        height:33.322px;
+    }
+    .box116 {
+        position:absolute;
+        left:385.932px;
+        top:537.573px;
+        width:23.079px;
+        height:33.322px;
+    }
+    .box117 {
+        position:absolute;
+        left:417.113px;
+        top:537.573px;
+        width:23.079px;
+        height:33.322px;
+    }
+    .box118 {
+        position:absolute;
+        left:448.294px;
+        top:537.573px;
+        width:23.079px;
+        height:33.322px;
+    }
+    .box119 {
+        position:absolute;
+        left:479.475px;
+        top:537.573px;
+        width:23.079px;
+        height:33.322px;
+    }
+    .box120 {
+        position:absolute;
+        left:510.656px;
+        top:537.573px;
+        width:23.079px;
+        height:33.322px;
+    }
+    .box121 {
+        position:absolute;
+        left:541.837px;
+        top:537.573px;
+        width:23.079px;
+        height:33.322px;
+    }
+    .box122 {
+        position:absolute;
+        left:573.019px;
+        top:537.573px;
+        width:23.079px;
+        height:33.322px;
+    }
+    .box123 {
+        position:absolute;
+        left:137.219px;
+        top:573.233px;
+        width:21.521px;
+        height:27.937px;
+    }
+    .box124 {
+        position:absolute;
+        left:167.714px;
+        top:573.233px;
+        width:21.521px;
+        height:27.937px;
+    }
+    .box125 {
+        position:absolute;
+        left:198.209px;
+        top:573.233px;
+        width:21.521px;
+        height:27.937px;
+    }
+    .box126 {
+        position:absolute;
+        left:228.704px;
+        top:573.233px;
+        width:21.521px;
+        height:27.937px;
+    }
+    .box127 {
+        position:absolute;
+        left:259.197px;
+        top:573.233px;
+        width:21.521px;
+        height:27.937px;
+    }
+    .box128 {
+        position:absolute;
+        left:289.669px;
+        top:573.233px;
+        width:21.521px;
+        height:27.937px;
+    }
+    .box129 {
+        position:absolute;
+        left:320.113px;
+        top:573.233px;
+        width:21.521px;
+        height:27.937px;
+    }
+    .box130 {
+        position:absolute;
+        left:349.529px;
+        top:573.233px;
+        width:21.521px;
+        height:27.937px;
+    }
+    .box131 {
+        position:absolute;
+        left:379.945px;
+        top:573.233px;
+        width:21.521px;
+        height:27.937px;
+    }
+    .box132 {
+        position:absolute;
+        left:410.36px;
+        top:573.233px;
+        width:21.521px;
+        height:27.937px;
+    }
+    .box133 {
+        position:absolute;
+        left:440.776px;
+        top:573.233px;
+        width:21.521px;
+        height:27.937px;
+    }
+    .box134 {
+        position:absolute;
+        left:471.192px;
+        top:573.233px;
+        width:21.521px;
+        height:27.937px;
+    }
+    .box135 {
+        position:absolute;
+        left:501.608px;
+        top:573.233px;
+        width:21.521px;
+        height:27.937px;
+    }
+    .box136 {
+        position:absolute;
+        left:532.023px;
+        top:573.233px;
+        width:21.521px;
+        height:27.937px;
+    }
+    .box137 {
+        position:absolute;
+        left:562.439px;
+        top:573.233px;
+        width:21.521px;
+        height:27.937px;
+    }
+    .box138 {
+        position:absolute;
+        left:592.855px;
+        top:573.233px;
+        width:21.521px;
+        height:27.937px;
+    }
+    .box139 {
+        position:absolute;
+        left:137.771px;
+        top:599.649px;
+        width:26.331px;
+        height:21.997px;
+    }
+    .box140 {
+        position:absolute;
+        left:167.081px;
+        top:599.649px;
+        width:26.331px;
+        height:21.997px;
+    }
+    .box141 {
+        position:absolute;
+        left:196.391px;
+        top:599.649px;
+        width:26.331px;
+        height:21.997px;
+    }
+    .box142 {
+        position:absolute;
+        left:225.701px;
+        top:599.649px;
+        width:26.331px;
+        height:21.997px;
+    }
+    .box143 {
+        position:absolute;
+        left:255.012px;
+        top:599.649px;
+        width:26.331px;
+        height:21.997px;
+    }
+    .box144 {
+        position:absolute;
+        left:284.336px;
+        top:599.649px;
+        width:26.331px;
+        height:21.997px;
+    }
+    .box145 {
+        position:absolute;
+        left:313.66px;
+        top:599.649px;
+        width:26.331px;
+        height:21.997px;
+    }
+    .box146 {
+        position:absolute;
+        left:342.985px;
+        top:599.649px;
+        width:26.331px;
+        height:21.997px;
+    }
+    .box147 {
+        position:absolute;
+        left:372.309px;
+        top:599.649px;
+        width:26.331px;
+        height:21.997px;
+    }
+    .box148 {
+        position:absolute;
+        left:401.634px;
+        top:599.649px;
+        width:26.331px;
+        height:21.997px;
+    }
+    .box149 {
+        position:absolute;
+        left:430.958px;
+        top:599.649px;
+        width:26.331px;
+        height:21.997px;
+    }
+    .box150 {
+        position:absolute;
+        left:460.282px;
+        top:599.649px;
+        width:26.331px;
+        height:21.997px;
+    }
+    .box151 {
+        position:absolute;
+        left:489.607px;
+        top:599.649px;
+        width:26.331px;
+        height:21.997px;
+    }
+    .box152 {
+        position:absolute;
+        left:518.931px;
+        top:599.649px;
+        width:26.331px;
+        height:21.997px;
+    }
+    .box153 {
+        position:absolute;
+        left:548.256px;
+        top:599.649px;
+        width:26.331px;
+        height:21.997px;
+    }
+    .box154 {
+        position:absolute;
+        left:577.58px;
+        top:599.649px;
+        width:26.331px;
+        height:21.997px;
+    }
+    .box155 {
+        position:absolute;
+        left:606.904px;
+        top:599.649px;
+        width:26.331px;
+        height:21.997px;
+    }
+    .box156 {
+        position:absolute;
+        left:135.243px;
+        top:622.46px;
+        width:22.59px;
+        height:23.227px;
+    }
+    .box157 {
+        position:absolute;
+        left:164.298px;
+        top:622.46px;
+        width:22.59px;
+        height:23.227px;
+    }
+    .box158 {
+        position:absolute;
+        left:193.353px;
+        top:622.46px;
+        width:22.59px;
+        height:23.227px;
+    }
+    .box159 {
+        position:absolute;
+        left:222.408px;
+        top:622.46px;
+        width:22.59px;
+        height:23.227px;
+    }
+    .box160 {
+        position:absolute;
+        left:251.492px;
+        top:622.46px;
+        width:22.59px;
+        height:23.227px;
+    }
+    .box161 {
+        position:absolute;
+        left:280.575px;
+        top:622.46px;
+        width:22.59px;
+        height:23.227px;
+    }
+    .box162 {
+        position:absolute;
+        left:309.658px;
+        top:622.46px;
+        width:22.59px;
+        height:23.227px;
+    }
+    .box163 {
+        position:absolute;
+        left:338.742px;
+        top:622.46px;
+        width:22.59px;
+        height:23.227px;
+    }
+    .box164 {
+        position:absolute;
+        left:367.825px;
+        top:622.46px;
+        width:22.59px;
+        height:23.227px;
+    }
+    .box165 {
+        position:absolute;
+        left:396.909px;
+        top:622.46px;
+        width:22.59px;
+        height:23.227px;
+    }
+    .box166 {
+        position:absolute;
+        left:425.992px;
+        top:622.46px;
+        width:22.59px;
+        height:23.227px;
+    }
+    .box167 {
+        position:absolute;
+        left:455.076px;
+        top:622.46px;
+        width:22.59px;
+        height:23.227px;
+    }
+    .box168 {
+        position:absolute;
+        left:484.159px;
+        top:622.46px;
+        width:22.59px;
+        height:23.227px;
+    }
+    .box169 {
+        position:absolute;
+        left:513.243px;
+        top:622.46px;
+        width:22.59px;
+        height:23.227px;
+    }
+    .box170 {
+        position:absolute;
+        left:542.326px;
+        top:622.46px;
+        width:22.59px;
+        height:23.227px;
+    }
+    .box171 {
+        position:absolute;
+        left:571.41px;
+        top:622.46px;
+        width:22.59px;
+        height:23.227px;
+    }
+    .box172 {
+        position:absolute;
+        left:600.493px;
+        top:622.46px;
+        width:22.59px;
+        height:23.227px;
+    }
+    .box173 {
+        position:absolute;
+        left:629.577px;
+        top:622.46px;
+        width:22.59px;
+        height:23.227px;
+    }
+    .box174 {
+        position:absolute;
+        left:136.723px;
+        top:645.831px;
+        width:20.6px;
+        height:24.667px;
+    }
+    .box175 {
+        position:absolute;
+        left:165.07px;
+        top:645.831px;
+        width:20.6px;
+        height:24.667px;
+    }
+    .box176 {
+        position:absolute;
+        left:194.416px;
+        top:645.831px;
+        width:20.6px;
+        height:24.667px;
+    }
+    .box177 {
+        position:absolute;
+        left:222.763px;
+        top:645.831px;
+        width:20.6px;
+        height:24.667px;
+    }
+    .box178 {
+        position:absolute;
+        left:251.109px;
+        top:645.831px;
+        width:20.6px;
+        height:24.667px;
+    }
+    .box179 {
+        position:absolute;
+        left:279.455px;
+        top:645.831px;
+        width:20.6px;
+        height:24.667px;
+    }
+    .box180 {
+        position:absolute;
+        left:307.802px;
+        top:645.831px;
+        width:20.6px;
+        height:24.667px;
+    }
+    .box181 {
+        position:absolute;
+        left:336.148px;
+        top:645.831px;
+        width:20.6px;
+        height:24.667px;
+    }
+    .box182 {
+        position:absolute;
+        left:364.495px;
+        top:645.831px;
+        width:20.6px;
+        height:24.667px;
+    }
+    .box183 {
+        position:absolute;
+        left:393.409px;
+        top:645.831px;
+        width:20.6px;
+        height:24.667px;
+    }
+    .box184 {
+        position:absolute;
+        left:421.756px;
+        top:645.831px;
+        width:20.6px;
+        height:24.667px;
+    }
+    .box185 {
+        position:absolute;
+        left:450.669px;
+        top:645.831px;
+        width:20.6px;
+        height:24.667px;
+    }
+    .box186 {
+        position:absolute;
+        left:479.015px;
+        top:645.831px;
+        width:20.6px;
+        height:24.667px;
+    }
+    .box187 {
+        position:absolute;
+        left:507.362px;
+        top:645.831px;
+        width:20.6px;
+        height:24.667px;
+    }
+    .box188 {
+        position:absolute;
+        left:535.708px;
+        top:645.831px;
+        width:20.6px;
+        height:24.667px;
+    }
+    .box189 {
+        position:absolute;
+        left:564.197px;
+        top:645.831px;
+        width:20.6px;
+        height:24.667px;
+    }
+    .box190 {
+        position:absolute;
+        left:592.685px;
+        top:645.831px;
+        width:20.6px;
+        height:24.667px;
+    }
+    .box191 {
+        position:absolute;
+        left:621.173px;
+        top:645.831px;
+        width:20.6px;
+        height:24.667px;
+    }
+    .box192 {
+        position:absolute;
+        left:649.661px;
+        top:645.831px;
+        width:20.6px;
+        height:24.667px;
+    }
+    .box193 {
+        position:absolute;
+        left:135.025px;
+        top:671px;
+        width:20.622px;
+        height:18.496px;
+    }
+    .box194 {
+        position:absolute;
+        left:162.89px;
+        top:671px;
+        width:20.622px;
+        height:18.496px;
+    }
+    .box195 {
+        position:absolute;
+        left:190.754px;
+        top:671px;
+        width:20.622px;
+        height:18.496px;
+    }
+    .box196 {
+        position:absolute;
+        left:218.619px;
+        top:671px;
+        width:20.622px;
+        height:18.496px;
+    }
+    .box197 {
+        position:absolute;
+        left:246.483px;
+        top:671px;
+        width:20.622px;
+        height:18.496px;
+    }
+    .box198 {
+        position:absolute;
+        left:274.334px;
+        top:671px;
+        width:20.622px;
+        height:18.496px;
+    }
+    .box199 {
+        position:absolute;
+        left:302.184px;
+        top:671px;
+        width:20.622px;
+        height:18.496px;
+    }
+    .box200 {
+        position:absolute;
+        left:330.034px;
+        top:671px;
+        width:20.622px;
+        height:18.496px;
+    }
+    .box201 {
+        position:absolute;
+        left:357.885px;
+        top:671px;
+        width:20.622px;
+        height:18.496px;
+    }
+    .box202 {
+        position:absolute;
+        left:385.721px;
+        top:671px;
+        width:20.622px;
+        height:18.496px;
+    }
+    .box203 {
+        position:absolute;
+        left:412.557px;
+        top:671px;
+        width:20.622px;
+        height:18.496px;
+    }
+    .box204 {
+        position:absolute;
+        left:440.393px;
+        top:671px;
+        width:20.622px;
+        height:18.496px;
+    }
+    .box205 {
+        position:absolute;
+        left:468.23px;
+        top:671px;
+        width:20.622px;
+        height:18.496px;
+    }
+    .box206 {
+        position:absolute;
+        left:496.066px;
+        top:671px;
+        width:20.622px;
+        height:18.496px;
+    }
+    .box207 {
+        position:absolute;
+        left:523.902px;
+        top:671px;
+        width:20.622px;
+        height:18.496px;
+    }
+    .box208 {
+        position:absolute;
+        left:551.738px;
+        top:671px;
+        width:20.622px;
+        height:18.496px;
+    }
+    .box209 {
+        position:absolute;
+        left:579.575px;
+        top:671px;
+        width:20.622px;
+        height:18.496px;
+    }
+    .box210 {
+        position:absolute;
+        left:607.411px;
+        top:671px;
+        width:20.622px;
+        height:18.496px;
+    }
+    .box211 {
+        position:absolute;
+        left:635.247px;
+        top:671px;
+        width:20.622px;
+        height:18.496px;
+    }
+    .box212 {
+        position:absolute;
+        left:663.083px;
+        top:671px;
+        width:20.622px;
+        height:18.496px;
+    }
+    .box213 {
+        position:absolute;
+        left:29.382px;
+        top:33px;
+        width:105.849px;
+        height:23.036px;
+    }
+    .box214 {
+        position:absolute;
+        left:29.482px;
+        top:76.34px;
+        width:105.311px;
+        height:23.036px;
+    }
+    .box215 {
+        position:absolute;
+        left:29.482px;
+        top:120.464px;
+        width:105.311px;
+        height:23.036px;
+    }
+    .box216 {
+        position:absolute;
+        left:29.482px;
+        top:161.55px;
+        width:105.311px;
+        height:23.036px;
+    }
+    .box217 {
+        position:absolute;
+        left:29.482px;
+        top:201.649px;
+        width:105.311px;
+        height:23.036px;
+    }
+    .box218 {
+        position:absolute;
+        left:29.651px;
+        top:242.254px;
+        width:105.311px;
+        height:23.036px;
+    }
+    .box219 {
+        position:absolute;
+        left:29.482px;
+        top:280.095px;
+        width:105.311px;
+        height:23.036px;
+    }
+    .box220 {
+        position:absolute;
+        left:29.651px;
+        top:316.437px;
+        width:105.311px;
+        height:23.036px;
+    }
+    .box221 {
+        position:absolute;
+        left:29.482px;
+        top:355.714px;
+        width:105.311px;
+        height:23.036px;
+    }
+    .box222 {
+        position:absolute;
+        left:29.482px;
+        top:390.634px;
+        width:105.311px;
+        height:23.036px;
+    }
+    .box223 {
+        position:absolute;
+        left:29.651px;
+        top:422.718px;
+        width:105.311px;
+        height:23.036px;
+    }
+    .box224 {
+        position:absolute;
+        left:29.651px;
+        top:451.783px;
+        width:105.311px;
+        height:23.036px;
+    }
+    .box225 {
+        position:absolute;
+        left:29.651px;
+        top:480.606px;
+        width:105.311px;
+        height:23.036px;
+    }
+    .box226 {
+        position:absolute;
+        left:29.651px;
+        top:511.935px;
+        width:105.311px;
+        height:23.036px;
+    }
+    .box227 {
+        position:absolute;
+        left:29.651px;
+        top:546.275px;
+        width:105.311px;
+        height:23.036px;
+    }
+    .box228 {
+        position:absolute;
+        left:29.651px;
+        top:575.343px;
+        width:105.311px;
+        height:23.036px;
+    }
+    .box229 {
+        position:absolute;
+        left:29.651px;
+        top:603px;
+        width:105.311px;
+        height:23.036px;
+    }
+    .box230 {
+        position:absolute;
+        left:29.651px;
+        top:626.72px;
+        width:105.311px;
+        height:23.036px;
+    }
+    .box231 {
+        position:absolute;
+        left:29.651px;
+        top:649.714px;
+        width:105.311px;
+        height:23.036px;
+    }
+    .box232 {
+        position:absolute;
+        left:29.651px;
+        top:671.816px;
+        width:105.311px;
+        height:23.036px;
+    }
+    .box233 {
+        position:absolute;
+        left:447.593px;
+        top:81.004px;
+        width:146.265px;
+        height:133.012px;
+    }
+    .box234 {
+        position:absolute;
+        left:231.94px;
+        top:473.575px;
+        width:27.857px;
+        height:24.335px;
+    }
+	.whale{
+		left:36px;
+		top:13px;
+		position:absolute;
+		font-size:12px;
+	}
+ .elephants{
+	 left:36px;
+	 top:43px;
+	 position:absolute;
+	 font-size:12px;
+ }
+ .rhinos{
+	 left:36px;
+	 top:70px;
+	 position:absolute;
+	 font-size:12px;
+ }
+ .hippos{
+	 left:36px;
+	 top:96px;
+	 position:absolute;
+	 font-size:12px;
+ }
+ .giraffes{
+	 left:36px;
+	 top:120px;
+	 position:absolute;
+	 font-size:12px;
+ }
+ .camels{
+	 left:36px;
+	 top:146px;
+	 position:absolute;
+	 font-size:12px;
+ }
+ 
+ .bears{
+	 left:36px;
+	 top:169px;
+	 position:absolute;
+	 font-size:12px;
+ }
+ .lions{
+	 left:36px;
+	 top:192px;
+	 position:absolute;
+	 font-size:12px;
+ }
+ .ostriches{
+	 left:36px;
+	 top:216px;
+	 position:absolute;
+	 font-size:12px;
+ }
+  .kangaroos{
+	 left:36px;
+	 top:238px;
+	 position:absolute;
+	 font-size:12px;
+ }
+ .zebra{
+	 left:36px;
+	 top:257px;
+	 position:absolute;
+	 font-size:12px;
+ }
+ .seals{
+	 left:36px;
+	 top:275px;
+	 position:absolute;
+	 font-size:12px;
+ }
+ .monkeys{
+	 left:36px;
+	 top:292px;
+	 position:absolute;
+	 font-size:12px;
+ }
+ 
+  .penguins{
+	 left:36px;
+	 top:311px;
+	 position:absolute;
+	 font-size:12px;
+ }
+ .dogs{
+	 left:36px;
+	 top:333px;
+	 position:absolute;
+	 font-size:12px;
+ }
+ .cats{
+	 left:36px;
+	 top:352px;
+	 position:absolute;
+	 font-size:12px;
+ }
+ 
+   .rabbits{
+	 left:36px;
+	 top:368px;
+	 position:absolute;
+	 font-size:12px;
+ }
+ .turtles{
+	 left:36px;
+	 top:383px;
+	 position:absolute;
+	 font-size:12px;
+ }
+ .hedgehogs{
+	 left:36px;
+	 top:398px;
+	 position:absolute;
+	 font-size:12px;
+ }
+ .frogs{
+	 left:36px;
+	 top:411px;
+	 position:absolute;
+	 font-size:12px;
+ }
+.text86 {
+        font-family:'OPTIMajerIrregular';
+        font-size:28px;
+        text-decoration:none;
+        color:#40A75F;
+    }
+    .pHeadparagraph {
+        line-height:42px;
+        text-align:center;
+    }
+    .box1 {
+        background-color:white;
+        width:450px;
+        height:450px;
+    }
+    .box2 {
+        position:absolute;
+        left:0px;
+        top:0px;
+        background-color:#D0D8A8;
+        width:450px;
+        height:450px;
+    }
+    .box3 {
+	position:absolute;
+	left:188px;
+	top:14px;
+	width:221px;
+	height:33px;
+    }
+    .box4 {
+	position:absolute;
+	left:130px;
+	top:196px;
+	padding:0px;
+	width:135px;
+	height:42px;
+    }
+    .box5 {
+        position:absolute;
+        left:72px;
+        top:217px;
+        width:141px;
+        height:18px;
+    }
+    .box6 {
+        position:absolute;
+        left:72px;
+        top:423px;
+        width:141px;
+        height:21px;
+    }
+    .box7 {
+        position:absolute;
+        left:73px;
+        top:646px;
+        width:139px;
+        height:20px;
+    }
+    .box8 {
+        position:absolute;
+        left:463px;
+        top:423px;
+        width:205px;
+        height:36px;
+    }
+    .box9 {
+        position:absolute;
+        left:61px;
+        top:48px;
+        width:161px;
+        height:160px;
+    }
+    .box10 {
+        position:absolute;
+        left:273px;
+        top:51px;
+        width:165px;
+        height:161px;
+    }
+    .box11 {
+        position:absolute;
+        left:58px;
+        top:246px;
+        width:164px;
+        height:164px;
+    }
+    .box12 {
+        position:absolute;
+        left:286px;
+        top:217px;
+        width:138px;
+        height:27px;
+    }
+    .box13 {
+        position:absolute;
+        left:487px;
+        top:217px;
+        width:165px;
+        height:19px;
+    }
+    .box14 {
+        position:absolute;
+        left:482px;
+        top:50px;
+        width:180px;
+        height:159px;
+    }
+    .box15 {
+        position:absolute;
+        left:451px;
+        top:253px;
+        width:226px;
+        height:162px;
+    }
+    .box16 {
+        position:absolute;
+        left:32px;
+        top:487px;
+        width:213px;
+        height:150px;
+    }
+	.Rside
+	{
+		position:absolute;
+		left:425px;
+		top:0px;
+		
+	}	
+	
+	
+	.TextContent{
+		 font-size: 13px;
+	}
+	
+	
+.circle{
+	    left: 69px;
+    position: absolute;
+    top: 129px;
+}
+.square{
+	    left: 194px;
+    position: absolute;
+    top: 129px;
+}
+.triangle{
+	 left: 319px;
+    position: absolute;
+    top: 129px;
+}
+.diamond{
+	    left: 64px;
+    position: absolute;
+    top: 260px;
+}
+.rectangle{
+	    left: 309px;
+    position: absolute;
+    top: 260px;
+}
+.oval{
+	    left: 74px;
+    position: absolute;
+    top: 397px;
+}
+
+</style>
+</head>
+
+<body>
+
+    
+        
+        <div class="box1">
+            <img src="images/24.jpg" alt="" width="425" height="445" 
+             />
+             <span class="whale"><span id="w000281">whale</span></span>
+             <span class="elephants"><span id="w000283">elephants</span></span>
+             <span class="rhinos"><span id="w000285">rhinos</span></span>
+             <span class="hippos"><span id="w000287">hippos</span></span>
+             <span class="giraffes"><span id="w000289">giraffes</span></span>
+             <span class="camels"><span id="w000291">camels</span></span>
+             <span class="bears"><span id="w000293">bears</span></span>
+             <span class="lions"><span id="w000295">lions</span></span>
+             <span class="ostriches"><span id="w000297">ostriches</span></span>
+             <span class="kangaroos"><span id="w000299">kangaroos</span></span>
+             <span class="zebra"><span id="w000301">zebra</span></span>
+             <span class="seals"><span id="w000303">seals</span></span>
+             <span class="monkeys"><span id="w000305">monkeys</span></span>
+             <span class="penguins"><span id="w000307">penguins</span></span>
+             <span class="dogs"><span id="w000309">dogs</span></span>
+             <span class="cats"><span id="w000311">cats</span></span>
+             <span class="rabbits"><span id="w000313">rabbits</span></span>
+             <span class="turtles"><span id="w000315">turtles</span></span>
+             <span class="hedgehogs"><span id="w000317">hedgehogs</span></span>
+             <span class="frogs"><span id="w000319">frogs</span></span>
+             
+             
+             <span id="w000280"></span>
+             <span id="w000282"></span>
+             <span id="w000284"></span>
+             <span id="w000286"></span>
+             <span id="w000288"></span>
+             <span id="w000290"></span>
+             <span id="w000292"></span>
+             <span id="w000294"></span>
+             <span id="w000296"></span>
+             <span id="w000298"></span>
+             <span id="w000300"></span>
+             <span id="w000302"></span>
+             <span id="w000304"></span>
+             <span id="w000306"></span>
+             <span id="w000308"></span>
+             <span id="w000310"></span>
+             <span id="w000312"></span>
+             <span id="w000314"></span>
+             <span id="w000316"></span>
+             <span id="w000318"></span>
+            
+            
+             
+             </div>
+<div class="box3">
+    <div class="para3">
+        <span class="text58"><span id="w000279">Counting</span> </span>
+    </div>
+</div>
+
+<!--right side-->
+<div class="Rside">
+	 <div class="box1">
+            <img src="images/25.jpg" alt="" width="425" height="445" 
+             /></div>
+             
+         <div class="TextContent">
+           <div  class="circle"><span id="w000321">circle</span></div>
+           <div  class="square"><span id="w000322">square</span></div>
+           <div  class="triangle"><span id="w000323">triangle</span></div>
+           <div  class="diamond"><span id="w000324">diamond</span></div>            
+           <div  class="rectangle"><span id="w000325">rectangle</span></div>
+           <div  class="oval"><span id ="w000326">oval</span></div>                      
+        </div>
+        
+        
+    
+    
+        
+        
+        
+
+<div class="box4">
+    <div class="pHeadparagraph">
+        <span class="text86"><span id="w000320">Shapes</span> </span><span id="t0238"></span>
+    </div>
+</div>
+</div>
+
+<div id="chk"></div>
+<div id="timeValue"></div>
+</body>
+</html>

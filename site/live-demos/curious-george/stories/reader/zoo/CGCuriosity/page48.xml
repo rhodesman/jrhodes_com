@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<smil xmlns="http://www.w3.org/ns/SMIL" version="3.0" profile="http://www.idpf.org/epub/30/profile/content/">
+<body>
+<par>
+    <audio clipBegin="951.014930" clipEnd="951.802087" aText="bathtime" id="w000558"/>
+  </par>
+  <par>
+    <audio clipBegin="953.280016" clipEnd="953.927948" aText="towel" id="w000559"/>
+  </par>
+  <par>
+    <audio clipBegin="954.254592" clipEnd="955.095298" aText="shampoo" id="w000560"/>
+  </par>
+  <par>
+    <audio clipBegin="955.545102" clipEnd="956.176970" aText="soap" id="w000561"/>
+  </par>
+  <par>
+    <audio clipBegin="956.664258" clipEnd="958.302831" aText="rubber duckie" id="w000562"/>
+  </par>
+  <par>
+    <audio clipBegin="958.474185" clipEnd="958.966828" aText="tub" id="w000563"/>
+  </par>
+  <par>
+    <audio clipBegin="959.513019" clipEnd="960.444757" aText="clothes hamper" id="w000564"/>
+  </par>
+  <par>
+    <audio clipBegin="961.756686" clipEnd="962.779456" aText="tooth brush" id="w000565"/>
+  </par>
+  <par>
+    <audio clipBegin="962.961519" clipEnd="963.759387" aText="tooth paste" id="w000566"/>
+  </par>
+  <par>
+    <audio clipBegin="964.107449" clipEnd="964.937446" aText="slippers" id="w000567"/>
+  </par>
+  <par>
+    <audio clipBegin="965.344411" clipEnd="966.351116" aText="bath room" id="w000568"/>
+  </par>
+  <par>
+    <audio clipBegin="966.693825" clipEnd="967.261435" aText="comb" id="w000569"/>
+  </par>
+  <par>
+    <audio clipBegin="967.925432" clipEnd="968.760783" aText="hair brush" id="w000570"/>
+  </par>
+  <par>
+    <audio clipBegin="969.226651" clipEnd="969.906713" aText="toilet" id="w000571"/>
+  </par>
+  <par>
+    <audio clipBegin="970.399356" clipEnd="971.079417" aText="mirror" id="w000572"/>
+  </par>
+  <par>
+    <audio clipBegin="971.534576" clipEnd="973.451600" aText="sink" id="w000573"/>
+  </par>
+  <par>
+    <audio clipBegin="974.431530" clipEnd="975.250817" aText="bedtime" id="w000574"/>
+  </par>
+  <par>
+    <audio clipBegin="976.498489" clipEnd="977.221388" aText="curtains" id="w000575"/>
+  </par>
+  <par>
+    <audio clipBegin="977.810418" clipEnd="978.303061" aText="bed" id="w000576"/>
+  </par>
+  <par>
+    <audio clipBegin="978.795704" clipEnd="979.866666" aText="pajamas" id="w000577"/>
+  </par>
+  <par>
+    <audio clipBegin="980.305761" clipEnd="981.055435" aText="blanket" id="w000578"/>
+  </par>
+  <par>
+    <audio clipBegin="981.596271" clipEnd="982.410203" aText="friends" id="w000579"/>
+  </par>
+  <par>
+    <audio clipBegin="982.945684" clipEnd="983.738197" aText="blocks" id="w000580"/>
+  </par>
+  <par>
+    <audio clipBegin="984.289743" clipEnd="985.050126" aText="toys" id="w000581"/>
+  </par>
+  <par>
+    <audio clipBegin="985.719478" clipEnd="986.801150" aText="bedtime story" id="w000582"/>
+  </par>
+  <par>
+    <audio clipBegin="987.470502" clipEnd="988.493271" aText="teddy bear" id="w000583"/>
+  </par>
+  <par>
+    <audio clipBegin="989.028753" clipEnd="989.569589" aText="lamp" id="w000584"/>
+  </par>
+  <par>
+    <audio clipBegin="990.292489" clipEnd="990.929712" aText="poster" id="w000585"/>
+  </par>
+  <par>
+    <audio clipBegin="991.604418" clipEnd="994.249696" aText="clock" id="w000586"/>
+  </par>
+  <par>
+    <audio clipBegin="994.490663" clipEnd="995.261756" aText="night light" id="w000587"/>
+  </par>
+ 
+
+</body>
+</smil>

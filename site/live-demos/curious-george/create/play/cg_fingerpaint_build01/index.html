@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Curious George Finger-paint</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+  <script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+  <script type="text/javascript" src="js/jquery.color.js"></script>
+  <script type="text/javascript" src="js/jquery.json-2.3.min.js"></script>
+  <script type="text/javascript" src="js/Iuppiter.js"></script>
+  <script type="text/javascript" src="js/jquery.cookies.2.2.0.min.js"></script>
+  <script type="text/javascript" src="js/jquery.ui.touch-punch.min.js"></script>
+  <script type="text/javascript" src="js/jquery.event.move.js"></script>
+  <script type="text/javascript" src="js/paper-0.22.js"></script>
+  <script type="text/javascript" src="js/recordings.js"></script>
+  <script type="text/paperscript" src="js/cdraw.js" canvas="cgp-canvas"></script>
+  <script type="text/javascript" src="js/main.js"></script>
+
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/main.css" />
+
+</head>
+<body>
+  <div id="cgp">
+    <div id="cgp-loader">
+      <img src="images/loader.gif" width="159" height="288" alt="Loading" />
+    </div>
+
+    <div id="recording-replay-overlay"></div>
+
+    <div id="cgp-intro-screen">
+      <div id="cgp-btn-play" title="Play"></div>
+    </div>
+
+    <div id="cgp-video-help">
+      <div id="cgp-video-help-overlay"></div>
+      <div id="cgp-video-container">
+        <div id="cgp-video-wrapper">
+          <div id="cgp-video">
+            <video width="640" height="360" preload="auto">
+              <source src="CGFingerpainting_howto.ogv" type="video/ogg" />
+              <source src="CGFingerpainting_howto.m4v" type="video/mp4" />
+            </video>
+          </div>
+          <div id="cgp-btn-skip-video" title="Skip"></div>
+        </div>
+      </div>
+    </div>
+    
+    <div id="cgp-donedlg">
+      <div id="cgp-donedlg-overlay"></div>
+      <div id="cgp-donedlg-container">
+        <div id="cgp-donedlg-btns-wrapper">
+          <div id="cgp-donedlg-btn-close"></div>
+          <div id="cgp-donedlg-btn-print"></div>
+          <div id="cgp-donedlg-btn-download" class="saveCanvasImage"></div>
+          <div id="cgp-donedlg-btn-keeppainting"></div>
+          <div id="cgp-donedlg-btn-startover"></div>
+        </div>
+      </div>
+    </div>
+
+    <div id="recording-results-wrapper">
+      <p>Please add the information below as an element into the array found in js/recordings.js <a href="javascript:;">Close window</a></p>
+      <textarea id="recording-results"></textarea>
+    </div>
+
+    <div id="cgp-tools-drawer">
+      <ul id="cgp-tools">
+        <li id="cgp-tool-eraser"></li>
+        <li id="cgp-tool-brush"></li>
+        <li id="cgp-tool-foot"></li>
+        <li id="cgp-tool-hand"></li>
+      </ul>
+      <div class="clear"></div>
+
+      <ul id="cgp-size-drawer">
+        <li id="cgp-size-small"><canvas width="43" height="60"></canvas></li>
+        <li id="cgp-size-medium"><canvas width="51" height="60"></canvas></li>
+        <li id="cgp-size-large"><canvas width="60" height="60"></canvas></li>
+      </ul>
+      <div class="clear"></div>
+
+      <ul id="cgp-daub-drawer">
+        <li id="cgp-daub-0"></li>
+        <li id="cgp-daub-1"></li>
+        <li id="cgp-daub-2"></li>
+        <li id="cgp-daub-3"></li>
+        <li id="cgp-daub-4"></li>
+        <li id="cgp-daub-5"></li>
+        <li id="cgp-daub-6"></li>
+        <li id="cgp-daub-7"></li>
+        <li id="cgp-daub-8"></li>
+        <li id="cgp-daub-9"></li>
+        <li id="cgp-daub-10"></li>
+        <li id="cgp-daub-11"></li>
+        <li id="cgp-daub-12"></li>
+        <li id="cgp-daub-13"></li>
+        <li id="cgp-daub-14"></li>
+      </ul>
+      <div class="clear"></div>
+    </div>
+
+    <div id="cgp-georges-turn-drawer"></div>
+
+    <div id="cgp-background-drawer">
+      <ul id="cgp-background-options">
+        <li id="cgp-btn-background-0"></li>
+        <li id="cgp-btn-background-1"></li>
+        <li id="cgp-btn-background-2"></li>
+        <li id="cgp-btn-background-3"></li>
+        <li id="cgp-btn-background-4"></li>
+      </ul>
+    </div>
+
+    <div id="cgp-canvas-wrapper">
+      <div id="cgp-canvas-wrap">
+        <canvas id="cgp-canvas" width="570" height="428"></canvas>
+      </div>
+    </div>
+    
+
+    <div id="cgp-btn-help" title="Help"></div>
+    <div id="cgp-btn-done" title="Done"></div>
+    <div id="cgp-btn-record" title="Start / Stop Recording (Space)"></div>
+
+    <div id="cgp-preloader">
+      <img id="cgp-canvas-bg" src="images/canvas-bg.png" alt="" />
+      <img src="images/btn-skip-video.png" alt="" />
+      <img src="images/donedlg-bg.png" alt="" />
+      <img src="images/donedlg-close.png" alt="" />
+      <img src="images/donedlg-download.png" alt="" />
+      <img src="images/donedlg-keeppainting.png" alt="" />
+      <img src="images/donedlg-print.png" alt="" />
+      <img src="images/donedlg-startover.png" alt="" />
+      <img id="watermark" src="images/watermark.png" width="236" height="19" alt="www.curiousgeorge.com" />
+      <img id="cgp-size-img" src="images/size.png" alt="" />
+      <img id="cgp-tool-foot-img" src="images/stamp-foot.png" alt="" />
+      <img id="cgp-tool-hand-img" src="images/stamp-hand.png" alt="" />
+    </div>
+
+    <iframe id="cgp-download-image-frame" name="cgp-download-image-frame"></iframe>
+  </div>
+  <iframe id="cgp-print-image-frame" src="print.html"></iframe>
+</body>
+</html>

@@ -1,0 +1,31 @@
+
+// _breadcrumbs.scss
+// Author: justin.secor@opower.com
+
+// Import foundation defaults
+@import "../../zurb-foundation/scss/foundation/components/breadcrumbs";
+
+
+// Breadcrumbs
+//
+// Breadcrumb navigation is useful when an interaction takes a user into a nested series of screens. Breadbrumbs should appear below primary and secondary navigation, and before any headers or content.
+//
+// Markup: 
+// <ul class="breadcrumbs">
+//     <li><a href="#">Home</a></li>
+//     <li><a href="#">Ways to save</a></li>
+//     <li class="unavailable"><a href="#">Heating</a></li>
+//     <li class="current"><a href="#">Wear a sweater</a></li>
+// </ul>
+//
+// Styleguide 4.4
+
+
+.breadcrumbs {
+    margin-bottom: 0;
+    li {
+        &:before {
+            font-size: $crumb-slash-size;
+        }
+    }
+}

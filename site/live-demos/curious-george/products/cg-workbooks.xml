@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalog>
+	<product>
+		<title>Pre-K Reading</title>
+		<description>
+			<text>Everyone's favorite mischievous little monkey brings fun to early reading in this activity-packed 64-page workbook. In Learning with Curious George Pre-K Reading, kids learn:</text>
+		 	<list>
+			 	<listitem>to recognize letters</listitem>
+				<listitem>to put letters in ABC order</listitem>
+				<listitem>to recognize rhyming words</listitem>
+				<listitem>to hold a crayon and pencil</listitem>
+				<listitem>to right from left to right</listitem>
+				<listitem>to trace letters and words</listitem>
+			</list>
+		</description>
+		<prodimage>imgs/products/workbooks/9780547790541_64p_CG_PreK_Reading_Cover_118x156.jpg</prodimage>
+		<prodlink>http://www.thelearningcompany.com/hmh/site/thelearningcompany/home/wbhome/wbbooks</prodlink>
+	</product>
+	<product>
+		<title>Preschool Math</title>
+		<description>
+			<text>Curiosity leads to learning with our favorite mischievous monkey and the Man in the Yellow Hat. With this fun-filled 64-page workbook, your preschooler will delight in:
+			</text>
+			<list>
+				<listitem>counting, tracing, and ordering numbers</listitem>
+				<listitem>matching groups, words, and numbers</listitem>
+				<listitem>counting groups</listitem>
+				<listitem>using base 10 blocks</listitem>
+				<listitem>recognizing and coloring shapes.</listitem>
+			</list>
+		</description>
+		<prodimage>imgs/products/workbooks/64p_Preschool_Math_9780547790558.jpg</prodimage>
+		<prodlink>http://www.thelearningcompany.com/hmh/site/thelearningcompany/home/wbhome/wbbooks</prodlink>
+	</product>
+	<product>
+		<title>Preschool ABCs</title>
+		<description>
+			<text>Curious George makes learning ABCs more fun than a barrel of monkeys! In this book, your child will learn the alphabetical order of both uppercase and lowercase letters and of words.</text>
+		</description>
+		<prodimage>imgs/products/workbooks/Preschool_ABCs_9780547749754.jpg</prodimage>
+		<prodlink>http://www.thelearningcompany.com/hmh/site/thelearningcompany/home/wbhome/wbbooks</prodlink>
+	</product>
+	<product>
+		<title>Preschool Writing</title>
+		<description>
+			<text>Kids will love putting pencil to paper in this fun writing workbook. It teaches your child how to hold a crayon or pencil and how text moves. It also provides plenty of practice with drawing and writing.</text>
+		</description>
+		<prodimage>imgs/products/workbooks/Preschool_Writing_9780547749808.jpg</prodimage>
+		<prodlink>http://www.thelearningcompany.com/hmh/site/thelearningcompany/home/wbhome/wbbooks</prodlink>
+	</product>
+	<product>
+		<title>Preschool Numbers</title>
+		<description>
+			<text>Numbers abound in this workbook filled with colorful activities. Guided by Curious George, your child will learn how to:</text>
+			<list>
+			 	<listitem>write and count numbers</listitem>
+				<listitem>match words to numbers</listitem>
+				<listitem>count and draw objects.</listitem>
+			</list>
+		</description>
+		<prodimage>imgs/products/workbooks/Preschool_Numbers_9780547749815.jpg</prodimage>
+		<prodlink>http://www.thelearningcompany.com/hmh/site/thelearningcompany/home/wbhome/wbbooks</prodlink>
+	</product>
+	<product>
+		<title>Preschool Shapes &amp; Colors</title>
+		<description>
+			<text>Rich illustrations and a mischievous little monkey bring learning to life for preschoolers. This workbook teaches:</text>
+		 	<list>
+			 	<listitem>colors</listitem>
+				<listitem>shapes</listitem>
+				<listitem>opposites</listitem>
+				<listitem>things that are alike.</listitem>
+			</list>
+		</description>
+		<prodimage>imgs/products/workbooks/Preschool_Shapes-Colors_9780547749839.jpg</prodimage>
+		<prodlink>http://www.thelearningcompany.com/hmh/site/thelearningcompany/home/wbhome/wbbooks</prodlink>
+	</product>
+	<product>
+		<title>Kindergarten Reading</title>
+		<description>
+			<text>Curious George and friends make letters and shapes come alive in this 64-page workbook filled with more than 60 kid-friendly reading activities. In Learning with Curious George Kindergarten Reading, kids learn:</text>
+		 	<list>
+			 	<listitem>to recognize and write capital letters</listitem>
+				<listitem>to recognize and write lowercase letters</listitem>
+				<listitem>to match letters and sounds</listitem>
+				<listitem>to recognize and write words</listitem>
+			</list>
+		</description>
+		<prodimage>imgs/products/workbooks/9780547790961_64p_CG_K_Reading_Cover_118x156.jpg</prodimage>
+		<prodlink>http://www.thelearningcompany.com/hmh/site/thelearningcompany/home/wbhome/wbbooks</prodlink>
+	</product>
+	<product>
+		<title>Kindergarten Math</title>
+		<description>
+			<text>Learning math has never been more fun than with Curious George and the Man with the Yellow Hat. With more than 60 activities to engage your kindergartner, in Learning with Curious George Kindergarten Math, kids learn:</text>
+			<list>
+			 	<listitem>to gather information</listitem>
+				<listitem>to read and complete graphs</listitem>
+				<listitem>to organize and sort objects</listitem>
+				<listitem>to recognize differences</listitem>
+				<listitem>to recognize and extend patterns</listitem>
+				<listitem>to follow directions</listitem>
+			</list>
+		</description>
+		<prodimage>imgs/products/workbooks/9780547790978_CG_K_Math_Cover_118x156.jpg</prodimage>
+		<prodlink>http://www.thelearningcompany.com/hmh/site/thelearningcompany/home/wbhome/wbbooks</prodlink>
+	</product>
+	<product>
+		<title>Kindergarten Letters</title>
+		<description>
+			<text>Join Curious George as he explores the world of letters in this fun-filled workbook that helps young learners recognize and name uppercase and lowercase letters and match letters to sounds.</text>
+		</description>
+		<prodimage>imgs/products/workbooks/Kindergarten_Letters_9780547749846.jpg</prodimage>
+		<prodlink>http://www.thelearningcompany.com/hmh/site/thelearningcompany/home/wbhome/wbbooks</prodlink>
+	</product>
+	<product>
+		<title>Kindergarten Thinking Skills</title>
+		<description>
+			<text>Help your child develop important thinking skills early on with this highly engaging workbook. In it, Curious George teaches how to:</text>
+			<list>
+			 	<listitem>recognize differences in size and shape</listitem>
+				<listitem>recognize differences in number and color</listitem>
+				<listitem>recognize, describe, and create patterns.</listitem>
+			</list>
+		</description>
+		<prodimage>imgs/products/workbooks/Kindergarten_ThinkingSkills_9780547749877.jpg</prodimage>
+		<prodlink>http://www.thelearningcompany.com/hmh/site/thelearningcompany/home/wbhome/wbbooks</prodlink>
+	</product>
+	<product>
+		<title>Kindergarten Writing</title>
+		<description>
+			<text>Packed with engaging activities, this colorful workbook will help your kindergartner:</text>
+			<list>
+				<listitem>write letters of the alphabet</listitem>
+				<listitem>recognize, name, and draw different shapes</listitem>
+				<listitem>combine different shapes to make new or larger shapes.</listitem>
+			</list>
+		</description>
+		<prodimage>imgs/products/workbooks/Kindergarten_Writing_9780547749853.jpg</prodimage>
+		<prodlink>http://www.thelearningcompany.com/hmh/site/thelearningcompany/home/wbhome/wbbooks</prodlink>
+	</product>
+	<product>
+		<title>Kindergarten Math Skills</title>
+		<description>
+			<text>Give your kindergartner the opportunity to learn with Curious George, and together they will explore how to:</text>
+			<list>
+			 	<listitem>gather information</listitem>
+				<listitem>organize and sort objects</listitem>
+				<listitem>read and count with tally marks</listitem>
+				<listitem>understand pictographs and bar graphs.</listitem>
+			</list>
+		</description>
+		<prodimage>imgs/products/workbooks/Kindergarten_MathSkills_9780547749860.jpg</prodimage>
+		<prodlink>http://www.thelearningcompany.com/hmh/site/thelearningcompany/home/wbhome/wbbooks</prodlink>
+	</product>
+	
+</catalog>

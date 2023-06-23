@@ -1,0 +1,392 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+ "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>
+    Untitled Document
+</title>
+<link href="skin/blue.monday/jplayer.blue.monday.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.jplayer.min.js"></script>
+<meta http-equiv="Content-Type" content="text/html;CHARSET=utf-8"/>
+<meta name="viewport" content="width=450,height=450" />
+
+<style type="text/css">
+ 
+    a:link {
+        color:blue;
+        text-decoration:underline;
+    }
+    a:active { color:red }
+    a:visited { color:purple }
+    
+  @font-face {
+  font-family: 'Adobe Garamond Semibold Italic';
+  src: url("font/AGARAMSI.TTF");
+  }
+@font-face {
+  font-family: 'CuriousGerogeheader-Medium';
+  src: url("font/CURIOUGM.TTF");
+  }
+@font-face {
+  font-family: 'New Century Schoolbook Italic';
+  src: url("font/NEWCENSI.TTF");
+  }
+@font-face {
+  font-family: 'New Century Schoolbook Roman';
+  src: url("font/NEWCENSR.TTF");
+  }
+@font-face {
+  font-family: 'OPTIMajerIrregular';
+  src: url("font/OPTIMAJI.TTF");
+  }
+
+body {
+   width: 450px;
+   height: 450px;
+   margin:0; 
+
+        background-color:white;
+        color:#393838;
+    }
+    .box1 {
+        background-color:white;
+        width:450px;
+        height:450px;
+    }
+    .box2 {
+        position:absolute;
+        left:0px;
+        top:0px;
+        width:450px;
+        height:450px;
+    }
+    .box3 {
+        position:absolute;
+        left:441.518px;
+        top:113.001px;
+        width:50.747px;
+        height:20.854px;
+    }
+    .box5 {
+        position:absolute;
+        left:73.242px;
+        top:494.5px;
+        width:40.489px;
+        height:23.075px;
+    }
+    .box6 {
+        position:absolute;
+        left:365.917px;
+        top:573.621px;
+        width:39.575px;
+        height:19.461px;
+    }
+    .box8 {
+        position:absolute;
+        left:217.031px;
+        top:33.924px;
+        width:56.283px;
+        height:20.854px;
+    }
+    .box10 {
+        position:absolute;
+        left:39.118px;
+        top:545.876px;
+        width:83.267px;
+        height:20.854px;
+    }
+    .box11 {
+        position:absolute;
+        left:115.465px;
+        top:610.078px;
+        width:98.876px;
+        height:20.854px;
+    }
+    .box13 {
+        position:absolute;
+        left:534.842px;
+        top:510.75px;
+        width:51.139px;
+        height:16.569px;
+    }
+    .box15 {
+        position:absolute;
+        left:472.482px;
+        top:683.033px;
+        width:41.347px;
+        height:27.467px;
+    }
+    .box17 {
+        position:absolute;
+        left:512.982px;
+        top:352.122px;
+        width:47.671px;
+        height:16.232px;
+    }
+    .box18 {
+        position:absolute;
+        left:188.142px;
+        top:407.555px;
+        width:54.022px;
+        height:13.921px;
+    }
+    .box20 {
+        position:absolute;
+        left:181.862px;
+        top:268.132px;
+        width:33.832px;
+        height:22.702px;
+    }
+    .box21 {
+        position:absolute;
+        left:91.509px;
+        top:559.848px;
+        width:36.911px;
+        height:27.794px;
+    }
+    .box22 {
+        position:absolute;
+        left:402.014px;
+        top:459.768px;
+        width:38.485px;
+        height:29.115px;
+    }
+    .box24 {
+        position:absolute;
+        left:100.651px;
+        top:357.202px;
+        width:45.048px;
+        height:28.895px;
+    }
+    .box26 {
+        position:absolute;
+        left:436.651px;
+        top:512.276px;
+        width:45.717px;
+        height:32.165px;
+    }
+    .box28 {
+        position:absolute;
+        left:147.493px;
+        top:13.176px;
+        width:49.157px;
+        height:32.581px;
+    }
+    .box30 {
+        position:absolute;
+        left:537.725px;
+        top:589.222px;
+        width:90.396px;
+        height:35.578px;
+    }
+    .box32 {
+        position:absolute;
+        left:543.813px;
+        top:362.837px;
+        width:63.729px;
+        height:31.47px;
+    }
+    .box33 {
+        position:absolute;
+        left:355.907px;
+        top:636.674px;
+        width:26.996px;
+        height:18.572px;
+    }
+    .box35 {
+        position:absolute;
+        left:109.565px;
+        top:238.186px;
+        width:80.205px;
+        height:41.435px;
+    }
+    .box36 {
+        position:absolute;
+        left:39.282px;
+        top:456.215px;
+        width:40.556px;
+        height:44.332px;
+    }
+    .box37 {
+        position:absolute;
+        left:637.292px;
+        top:683.104px;
+        width:36.265px;
+        height:27.467px;
+    }
+    .box39 {
+        position:absolute;
+        left:620.265px;
+        top:56.878px;
+        width:50.747px;
+        height:20.854px;
+    }
+	
+	.TextContent{
+		 font-size: 13px;
+	}
+ 
+ 
+ 
+.tween{
+	 left: 67.289px;
+    position: absolute;
+    top: 16.22px;
+}
+.birds{
+	     left: 138.289px;
+    position: absolute;
+    top: 16.22px;
+}
+.silo{
+	 left: 377.289px;
+    position: absolute;
+    top: 27.22px;
+}
+.barn{
+	 left: 259.289px;
+    position: absolute;
+    top: 62.22px;
+}
+
+.owl{
+	 left: 111.289px;
+    position: absolute;
+    top: 166.22px;
+}
+.neigh{
+	     color: #FFFFFF;
+    font-weight: bold;
+    left: 55.289px;
+    position: absolute;
+    top: 235.22px;
+}
+.horses{
+	     left: 110.289px;
+    position: absolute;
+    top: 248.22px;
+}
+.bees{
+	     left: 305.289px;
+    position: absolute;
+    top: 211.22px;
+}
+.buzzzz{
+	    left: 313.289px;
+    position: absolute;
+    top: 231.22px;
+	color: #FFFFFF;
+    font-weight: bold;
+}
+.hay{
+	     left: 50.289px;
+    position: absolute;
+    top: 306.22px;
+}
+.vegetables{
+	     left: 18.289px;
+    position: absolute;
+    top: 331.22px;
+}
+	
+.wheelbarrow{
+	    left: 65.289px;
+    position: absolute;
+    top: 371.22px;
+}
+.moo{
+	 left: 229.289px;
+    position: absolute;
+    top: 290.22px;
+	color: #FFFFFF;
+    font-weight: bold;
+}
+.cows{
+	     left: 315.289px;
+    position: absolute;
+    top: 314.22px;
+}
+.woof{
+	     left: 255.289px;
+    position: absolute;
+    top: 323.22px;
+	font-weight:bold;
+	 color:#0000FF;
+}
+.dog{
+	     left: 218.289px;
+    position: absolute;
+    top: 350.22px;
+}
+.quack{
+	     left: 318.289px;
+    position: absolute;
+    top: 370.22px;
+	font-weight:bold;
+	 color:#0000FF;
+}
+.ribbit{
+	     left: 207.289px;
+    position: absolute;
+    top: 390.22px;
+	font-weight:bold;
+	 color:#0000FF;
+}
+.duck{
+	     left: 273.289px;
+    position: absolute;
+    top: 419.22px;
+}
+.pond{
+	     left: 367.289px;
+    position: absolute;
+    top: 412.22px;
+}
+
+
+</style>
+</head>
+
+<body>
+
+    
+        
+        <div class="box1">
+            <span id="t0237"><img src="images/23.jpg" alt="" width="425" height="445" 
+             /></span></div>
+        <div class="TextContent">
+         <div  class="tween"><span>tween</span></div>
+          <div  class="birds"><span id="w000265">birds</span></div>
+           <div  class="silo"><span id="w000268">silo</span></div>
+            <div  class="barn"><span id="w000267">barn</span></div>
+            
+             <div  class="owl"><span id="w000266">owl</span></div>
+              <div  class="neigh"><span>neigh</span></div>
+               <div  class="horses"><span id="w000270">horses</span></div>
+                <div  class="bees"><span id="w000269">bees</span></div>
+                 <div  class="buzzzz"><span>buzzzz</span></div>
+                  <div  class="hay"><span id="w000271">hay</span></div>
+                  <div  class="vegetables"><span id="w000272">vegetables</span></div>     
+                   <div  class="wheelbarrow"><span id="w000273">wheel barrow</span></div>  
+                   	<div  class="moo"><span>moo</span></div> 
+                   	 <div  class="cows"><span id="w000277">cows</span></div>  
+                      <div  class="woof"><span>woof!</span></div>    
+                       <div  class="dog"><span id="w000274">dog</span></div> 
+                        <div  class="quack"><span>quack-quack</span></div>  
+                         <div  class="ribbit"><span>ribbit</span></div>     
+                          <div  class="duck"><span  id="w000275">duck</span></div>   
+                           <div  class="pond"><span id="w000276">pond</span></div>   
+                       
+        </div>
+        
+    
+    
+        
+        
+        
+
+<div id="chk"></div>
+<div id="timeValue"></div>
+</body>
+</html>

@@ -1,0 +1,28 @@
+.calculating-progress-bar {
+  border: 4px solid $divider-color;
+  border-radius: 100px;
+  height: 20px;
+  width: 100%;
+  margin-top: $spacing;
+  position: relative;
+  &:after {
+    @include transition(all 1.6s 0.6s);
+    @include position(absolute, 0px 0 0 0px);
+    background-color: $primary-color;
+    border-radius: 100px;
+    border:1px solid $white;
+    content: " ";
+    display: block;
+    height: 100%;
+    width: 0%;
+  }
+}
+.calculating {
+  .calculating-progress-bar:after {
+    width: 100%;
+  }
+}
+.progress-message {
+  padding-top: $spacing;
+  text-align: center;
+}

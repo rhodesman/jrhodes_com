@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<smil xmlns="http://www.w3.org/ns/SMIL" version="3.0" profile="http://www.idpf.org/epub/30/profile/content/">
+<body>
+  <par>
+    <audio clipBegin="141.940049" clipEnd="142.807529" aText="clothing" id="w00064"/>
+  </par>
+  <par>
+    <audio clipBegin="143.557203" clipEnd="144.462167" aText="shirt" id="w00065"/>
+  </par>
+  <par>
+    <audio clipBegin="145.185066" clipEnd="146.250674" aText="underpants" id="w00066"/>
+  </par>
+  <par>
+    <audio clipBegin="146.930736" clipEnd="147.723248" aText="pants" id="w00067"/>
+  </par>
+  <par>
+    <audio clipBegin="148.290858" clipEnd="149.013758" aText="dress" id="w00068"/>
+  </par>
+  <par>
+    <audio clipBegin="149.715239" clipEnd="150.395300" aText="jacket" id="w00069"/>
+  </par>
+  <par>
+    <audio clipBegin="150.855814" clipEnd="151.857164" aText="socks" id="w00070"/>
+  </par>
+  <par>
+    <audio clipBegin="152.371227" clipEnd="153.447544" aText="sneekers" id="w00071"/>
+  </par>
+  <par>
+    <audio clipBegin="153.929477" clipEnd="154.561345" aText="hat" id="w00072"/>
+  </par>
+   <par>
+    <audio clipBegin="156.612239" clipEnd="157.447590" aText="toys" id="w00073"/>
+  </par>
+  <par>
+    <audio clipBegin="158.384682" clipEnd="159.075453" aText="ite" id="w00074"/>
+  </par>
+  <par>
+    <audio clipBegin="159.589515" clipEnd="160.788994" aText="rocing horse" id="w00075"/>
+  </par>
+  <par>
+    <audio clipBegin="162.368664" clipEnd="163.145112" aText="puppets" id="w00076"/>
+  </par>
+  <par>
+    <audio clipBegin="163.793044" clipEnd="164.419558" aText="ball" id="w00077"/>
+  </par>
+  <par>
+    <audio clipBegin="166.374065" clipEnd="167.241544" aText="dolls" id="w00078"/>
+  </par>
+  <par>
+    <audio clipBegin="168.066186" clipEnd="168.997923" aText="bubbles" id="w00079"/>
+  </par>
+  <par>
+    <audio clipBegin="170.668625" clipEnd="171.589653" aText="tool set" id="w00080"/>
+  </par>
+  <par>
+    <audio clipBegin="175.659312" clipEnd="176.505372" aText="blocs" id="w00081"/>
+  </par>
+  <par>
+    <audio clipBegin="177.110466" clipEnd="177.951172" aText="cards" id="w00082"/>
+  </par>
+  <par>
+    <audio clipBegin="178.631233" clipEnd="179.402327" aText="paints" id="w00083"/>
+  </par>
+  <par>
+    <audio clipBegin="181.351479" clipEnd="182.235023" aText="trainset" id="w00084"/>
+  </par>
+  <par>
+    <audio clipBegin="188.698283" clipEnd="189.769246" aText="yo yo" id="w00085"/>
+  </par>
+  <par>
+    <audio clipBegin="190.561758" clipEnd="191.595238" aText="marbles" id="w00086"/>
+  </par>
+  <par>
+    <audio clipBegin="192.200332" clipEnd="193.142779" aText="crayons" id="w00087"/>
+  </par>
+  <par>
+    <audio clipBegin="193.453358" clipEnd="195.065157" aText="robots" id="w00088"/>
+  </par>
+  <par>
+    <audio clipBegin="195.209737" clipEnd="195.830895" aText="pule" id="w00089"/>
+  </par>
+  <par>
+    <audio clipBegin="196.414570" clipEnd="197.201728" aText="clay" id="w00090"/>
+  </par>
+</body>
+</smil>

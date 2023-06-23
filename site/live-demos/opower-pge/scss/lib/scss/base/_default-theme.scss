@@ -1,0 +1,217 @@
+
+// _default-theme.scss
+// Author: justin.secor@opower.com
+
+
+// These defaults whip foundation into shape. They're overidden by a theme's variables.
+
+// Grid Settings
+$spacing: 20px !default;
+$halfSpacing: $spacing/2 !default;
+$row-width: 2000px !default;
+$column-gutter: $spacing !default;
+$total-columns: 12 !default;
+$mobile-total-columns: 6 !default;
+
+// Text Direction Settings
+$text-direction: ltr !default; // Controls default global text direction, 'rtl' or 'ltr'
+
+// Icons
+$icon-size: 22px !default;
+
+// Colors
+
+// - Opower palette
+$opower-blue: #0088CE !default;
+$navy: #02477E !default;
+$light-blue: #69C8F8 !default;
+$warm-gray: #ebeced !default;
+$white: #fff !default;
+$light-gray: #D5D6D2 !default;
+$lighter-gray: #cccccc !default;
+$medium-gray: #ADAFAF !default;
+$dark-gray: #616365 !default;
+$darker-gray: #222 !default;
+$bright-orange: #FFA100 !default;
+$yellow: #FED100 !default;
+$lime: #D9E506 !default;
+$bright-green: #7AB800 !default;
+$dark-orange: #FF5800 !default;
+$magenta: #A30050 !default;
+$purple: #B1059D !default;
+
+// -- UI colors
+$primary-color: $opower-blue !default;
+$secondary-color: $warm-gray !default;
+$alert-color: $dark-orange !default;
+$success-color: $bright-green !default;
+$success-color-lighter: tint($success-color, 80%) !default;
+$success-color-light: tint($success-color, 70%) !default;
+$warning-color: $yellow !default;
+$warning-color-lighter: tint($warning-color, 80%) !default;
+$warning-color-light: tint($warning-color, 70%) !default;
+$error-color: $alert-color !default;
+$error-color-lighter: tint($error-color, 80%) !default;
+$error-color-light: tint($error-color, 70%) !default;
+$info-color: tint($primary-color, 80%) !default;
+$dark-bg: $darker-gray !default;
+$txt-color: $darker-gray !default;
+$highlight-color: $yellow !default;
+$select-color:lighten($primary-color, 50%) !default;
+$black: #000 !default;
+$white: #fff !default;
+$shiny-edge: rgba(#fff, .5) !default;
+$dark-edge: rgba(#000, .2) !default;
+$divider-color: $lighter-gray !default;
+$table-border-color: $divider-color !default;
+$table-head-bg: lighten($divider-color, 10%) !default;
+
+// -- Comparison colors
+$you-color: $primary-color !default;
+$neighbor-color: $dark-gray !default;
+$efficient-color: $bright-green !default;
+
+
+// Typography
+
+// - Font sizes/weights/margins
+$font-size-tiny: rem-calc(12) !default;
+$font-size-small: rem-calc(14) !default;
+$font-size-medium: rem-calc(16) !default;
+$font-size-large: rem-calc(24) !default;
+$font-size-huge: rem-calc(30) !default;
+$header-font-weight: bold !default;
+$header-spacing: $spacing !default;
+$h1-font-size: $font-size-large !default;
+$h1-font-weight: normal !default;
+$h2-font-size: rem-calc(20) !default;
+$h2-font-weight: $header-font-weight !default;
+$h3-font-size: rem-calc(20) !default;
+$h3-font-weight: normal !default;
+$h4-font-size: $font-size-medium !default;
+$h4-font-weight: $header-font-weight !default;
+$h5-font-size: $font-size-medium !default;
+$h5-font-weight: normal !default;
+$h6-font-size: $font-size-tiny !default;
+$h6-font-weight: $header-font-weight !default;
+$paragraph-font-size: $font-size-small !default;
+$paragraph-aside-font-size: $paragraph-font-size !default;
+$paragraph-spacing: $spacing !default;
+$widget-header-font-size: $font-size-medium !default;
+$widget-header-font-size-subdued: $font-size-medium !default;
+$insight-header-font-size: $font-size-medium !default;
+
+// - Font family/weight/style
+$body-font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif !default;
+$header-font-family: $body-font-family !default;
+$font-smoothing: false !default;
+
+// - Font color
+$body-font-color: $txt-color !default;
+$header-font-color: $darker-gray !default;
+$alert-box-header-font-color: $header-font-color !default;
+$alert-box-link-font-color: $primary-color !default;
+$graph-label-font-color: $dark-gray !default;
+$widget-header-font-color: $dark-gray !default;
+$widget-header-font-color-subdued: $dark-gray !default;
+$insight-header-font-color: $header-font-color !default;
+$paragraph-aside-font-color: $medium-gray !default;
+
+// Links
+$anchor-text-decoration: none !default;
+$anchor-font-color: $primary-color !default;
+$anchor-font-color-hover: lighten($primary-color, 20%) !default;
+
+// Structural elements
+$widget-background-color: $white !default;
+$widget-margin: $spacing 0 !default;
+$widget-padding: $spacing !default;
+$widget-shadow: 0px 3px 3px rgba(0,0,0,0.2) !default;
+$widget-border: none !default;
+$global-radius: 4px !default;
+$pagination-li-font-size: 14px !default;
+
+// Alert boxes
+$alert-border-width: 0 !default;
+$alert-radius: $global-radius !default;
+
+// Buttons
+$primary-button-color: $primary-color !default;
+$secondary-button-color: $white !default;
+$success-button-color: $success-color !default;
+$alert-button-color: $alert-color !default;
+$three-d-buttons: false !default;
+$button-radius: $global-radius !default;
+$button-border-width: 1px !default;
+$btnBase: 10px !default;
+$shiny-edge-size: 0 0 0 !default;
+$shiny-edge-color: rgba(0,0,0,0.25) !default;
+$shiny-edge-active-color: rgba(0,0,0,0.2) !default;
+$button-function-factor: 10% !default;
+$button-font-color-alt: $dark-gray !default;
+$button-med: $font-size-small !default;
+$button-font-med: $font-size-small !default;
+
+// Forms
+$input-radius: $global-radius !default;
+$input-border-width: 1px !default;
+$input-border-color: $divider-color !default;
+$input-box-shadow: none !default;
+$input-bg-color: lighten($lighter-gray, 15%) !default;
+$input-focus-bg-color: $white !default;
+$form-label-bottom-margin: $spacing/4 !default;
+$fieldset-border-style: none !default;
+$fieldset-border-width: 0 !default;
+$fieldset-border-color: transparent !default;
+$select-bg-color: $white !default;
+
+// Tabs
+$tabHeight: 40px !default;
+
+// Nav Bar
+$navBarHeight: 40px !default;
+$navFlyoutBaseWidth: 250px !default;
+
+// Components
+$thumbRadius: 3px !default;
+$progBarHeight: 25px !default;
+$progBarBorderColor: darken($white, 20%) !default;
+$progBarBorderSize: 1px !default;
+$progBarPad: 2px !default;
+$navbarHeight: 40px !default;
+
+// Tooltips
+$into-tooltip-width: 10em !default;
+$tooltip-font-color: $white !default;
+$tooltip-bg-color: $dark-bg !default;
+$has-tip-cursor-type: help !default;
+
+// Modals
+$reveal-overlay-bg: rgba(#000, 0.75) !default;
+$reveal-border-style: solid !default;
+$reveal-border-width: 3px !default;
+$reveal-border-color: $light-gray !default;
+$reveal-close-top: -0.875em !default;
+$reveal-close-side: -0.875em !default;
+$reveal-modal-padding: $spacing !default;
+$modal-h3-font-size: 1.25em !default;
+
+// Breadcrumbs
+$crumb-bg: transparent !default;
+$crumb-border-color: transparent !default;
+$crumb-font-size: $font-size-tiny !default;
+$crumb-font-color: $primary-color !default;
+$crumb-font-color-current: $darker-gray !default;
+$crumb-font-color-unavailable: $medium-gray !default;
+$crumb-font-transform: none !default;
+$crumb-padding: $halfSpacing 0 !default;
+$crumb-side-padding: $halfSpacing !default;
+$crumb-slash: "\203a" !default;
+$crumb-slash-color: $divider-color !default;
+$crumb-slash-size: 1.5em !default;
+
+// To fix the "Times New Roman" javascript bug
+$namespace: false;
+
+// Animations
+$animation-speed: 0.4s;

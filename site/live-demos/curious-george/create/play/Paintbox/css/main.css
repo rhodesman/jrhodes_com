@@ -1,0 +1,594 @@
+@font-face {
+    font-family: 'filmotype_modernregular';
+    src: url('filmotype_modern-webfont.eot');
+    src: url('filmotype_modern-webfont.eot?#iefix') format('embedded-opentype'),
+         url('filmotype_modern-webfont.woff') format('woff'),
+         url('filmotype_modern-webfont.ttf') format('truetype'),
+         url('filmotype_modern-webfont.svg#filmotype_modernregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+#cgp {
+  width: 900px;
+  height: 500px;
+  background: transparent url(../images/body-bg.jpg) no-repeat scroll left top;
+  position: relative;
+  overflow: hidden;
+}
+
+#cgp-loader {
+  position: absolute;
+  background: #009fc8;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 9999;
+}
+  #cgp-loader img {
+    margin: 106px 0 0 370px;
+  }
+
+#cgp-intro-screen {
+  position: absolute;
+  background: transparent url(../images/intro-screen-bg.jpg) no-repeat scroll left top;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 9998;
+}
+  #cgp-intro-screen img {
+    float: left;
+    margin: 40px 0 0 65px;
+  }
+  #cgp-btn-play {
+    float: right;
+    background: transparent url(../images/btn-play-activity.png) no-repeat scroll left top;
+    width: 187px;
+    height: 123px;
+    margin: 359px 17px 0 0;
+    cursor: pointer;
+  }
+  #cgp-btn-play:hover {background-position: left bottom}
+
+#cgp-preloader {
+  position: absolute;
+  left: -9999px;
+  top: -9999px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+#cgp-print-image-frame, #cgp-download-image-frame, #cgp-download-image-form {
+  display:none;
+}
+@media print{
+  body * {
+    display: none;
+  }
+  #cgp-print-image-frame {
+    display: block;
+    width: 100%;
+    min-width: 600px;
+    height: 500px;
+  }
+}
+
+#cgp-tools-drawer {
+  background: transparent url(../images/tools-drawer.png) no-repeat scroll left top;
+  position: absolute;
+  left: -111px/*0*/;
+  top: 0;
+  width: 111px;
+  height: 500px;
+  z-index: 2;
+}
+  #cgp-tools-drawer-wrapper {
+    position: relative;
+  }
+    #cgp-tool-brush {
+      background: transparent url(../images/tool-brush.png) no-repeat scroll left top;
+      position: absolute;
+      width: 117px;
+      height: 103px;
+      left: 0;
+      top: 0;
+      cursor: pointer;
+    }
+    #cgp-tool-brush:hover {background-position: left center}
+    #cgp-tool-brush.active {background-position: left bottom}
+      #cgp-tool-brush img, #cgp-tool-brush canvas {
+        margin: 21px 0 0 52px;
+      }
+
+    #cgp-tool-eraser {
+      background: transparent url(../images/tool-eraser.png) no-repeat scroll left top;
+      position: absolute;
+      width: 103px;
+      height: 90px;
+      left: 0;
+      top: 50px;
+      cursor: pointer;
+    }
+    #cgp-tool-eraser:hover {background-position: left center}
+    #cgp-tool-eraser.active {background-position: left bottom}
+
+    #cgp-btn-theme-browser {
+      background: transparent url(../images/btn-theme-selector.png) no-repeat scroll left top;
+      position: absolute;
+      width: 89px;
+      height: 58px;
+      left: 0;
+      top: 135px;
+      cursor: pointer;
+      z-index: 1;
+      display: none;
+    }
+    #cgp-btn-theme-browser:hover {background-position: left center}
+    #cgp-btn-theme-browser:active {background-position: left bottom}
+      #cgp-btn-theme-browser-caption {
+        font-family: filmotype_modernregular;
+        font-size: 19px;
+        color: #fff;
+        text-align: center;
+        margin: 10px 4px 0 4px;
+      }
+
+    #cgp-tool-clipart {
+      background: transparent url(../images/tool-clipart.png) no-repeat scroll left top;
+      position: absolute;
+      width: 91px;
+      height: 87px;
+      left: 0;
+      top: 187px;
+      cursor: pointer;
+      z-index: 0;
+      display: none;
+    }
+    #cgp-tool-clipart:hover {background-position: left center}
+    #cgp-tool-clipart.active {background-position: left bottom}
+      #cgp-tool-clipart img {
+        margin: 19px 0 0 13px;
+      }
+
+    #cgp-tool-stamp {
+      position: absolute;
+      top: 279px;
+      left: 1px;
+    }
+
+    #cgp-tool-stamp li {
+      background: transparent url(../images/tool-stamp.png) no-repeat scroll left top;
+      display: block;
+      width: 91px;
+      height: 91px;
+      margin-top: -34px;
+      cursor: pointer;
+      position: relative;
+      overflow: hidden;
+    }
+    #cgp-tool-stamp li:hover {background-position: left center}
+    #cgp-tool-stamp li.active {background-position: left bottom}
+      #cgp-tool-stamp li img {
+        width: 40px;
+        height: 40px;
+        margin: 22px 0 0 23px;
+      }
+      #cgp-tool-stamp li img.sprite {
+        width: auto;
+        height: auto;
+        visibility: hidden;
+      }
+
+
+#cgp-tools-drawer-options {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 1;
+}
+  #cgp-tools-brush-drawer-options {
+    background: transparent url(../images/tools-brush-drawer-options-bg.png) no-repeat scroll left top;
+    position: absolute;
+    left: -253px;/*26px;*/
+    top: 0;
+    width: 227px;
+    height: 500px;
+    z-index: 0;
+  }
+  #cgp-tools-eraser-drawer-options {
+    background: transparent url(../images/tools-eraser-drawer-options-bg.png) no-repeat scroll left top;
+    position: absolute;
+    left: -253px;/*26px;*/
+    top: 0;
+    width: 227px;
+    height: 270px;
+    z-index: 0;
+  }
+  #cgp-tools-clipart-drawer-options {
+    background: transparent url(../images/tools-clipart-drawer-options-bg.png) no-repeat scroll left top;
+    position: absolute;
+    left: -253px;/*26px;*/
+    top: 46px;
+    width: 227px;
+    height: 484px;
+    z-index: 0;
+  }
+  #cgp-tools-stamps-drawer-options {
+    background: transparent url(../images/tools-stamps-drawer-options-bg.png) no-repeat scroll left top;
+    position: absolute;
+    left: -253px;/*26px;*/
+    top: 157px;
+    width: 227px;
+    height: 373px;
+    z-index: 0;
+  }
+#cgp-background-drawer {
+  background: transparent url(../images/background-drawer.png) no-repeat scroll left top;
+  position: absolute;
+  left: 900px/*804px*/;
+  top: 73px;
+  width: 96px;
+  height: 331px;
+  z-index: 1;
+}
+  #cgp-btn-background-frame {
+    background: transparent url(../images/tool-background.png) no-repeat scroll left top;
+    width: 100px;
+    height: 72px;
+    margin-top: 13px;
+    cursor: pointer;
+  }
+  #cgp-btn-background-frame:hover {background-position: -100px top}
+
+  #cgp-background-options {
+    margin-top: 30px;
+  }
+    #cgp-background-options li {
+      display: block;
+      background: transparent url(../images/tool-background.png) no-repeat scroll left top;
+      width: 100px;
+      margin-top: -35px;
+      position: relative;
+      cursor: pointer;
+    }
+
+    #cgp-background-options li#cgp-btn-background-0 {background-position: 0 -73px; height: 70px; z-index: 5}
+    #cgp-background-options li#cgp-btn-background-1 {background-position: 0 -145px; height: 74px; z-index: 4}
+    #cgp-background-options li#cgp-btn-background-2 {background-position: 0 -223px; height: 77px; z-index: 3}
+    #cgp-background-options li#cgp-btn-background-3 {background-position: 0 -304px; height: 78px; z-index: 2}
+    #cgp-background-options li#cgp-btn-background-4 {background-position: 0 -387px; height: 76px; z-index: 1}
+
+    #cgp-background-options li#cgp-btn-background-0:hover {background-position: -100px -73px}
+    #cgp-background-options li#cgp-btn-background-1:hover {background-position: -100px -145px}
+    #cgp-background-options li#cgp-btn-background-2:hover {background-position: -100px -223px}
+    #cgp-background-options li#cgp-btn-background-3:hover {background-position: -100px -304px}
+    #cgp-background-options li#cgp-btn-background-4:hover {background-position: -100px -387px}
+
+    #cgp-background-options li#cgp-btn-background-0.active {background-position: -200px -73px}
+    #cgp-background-options li#cgp-btn-background-1.active {background-position: -200px -145px}
+    #cgp-background-options li#cgp-btn-background-2.active {background-position: -200px -223px}
+    #cgp-background-options li#cgp-btn-background-3.active {background-position: -200px -304px}
+    #cgp-background-options li#cgp-btn-background-4.active {background-position: -200px -387px}
+
+#cgp-canvas-wrapper {
+  background: transparent url(../images/canvas-bg.png) no-repeat scroll left top;
+  position: absolute;
+  left: 209px;
+  top: 17px;
+  width: 600px;
+  height: 465px;
+  z-index: 1;
+}
+  #cgp-canvas-wrap {
+    position: relative;
+  }
+    #cgp-canvas-frame {
+      position: absolute;
+      left: 11px;
+      top: 14px;
+      width: 578px;
+      height: 434px;
+      z-index: 0;
+    }
+    #cgp-canvas {
+      position: absolute;
+      z-index: 1;
+      left: 15px;
+      top: 16px;
+    }
+
+#cgp-btn-help {
+  background: transparent url(../images/btn-help.png) no-repeat scroll left top;
+  position: absolute;
+  left: 823px;
+  top: 0px;
+  width: 77px;
+  height: 76px;
+  cursor: pointer;
+  z-index: 2;
+}
+#cgp-btn-help:hover { background-position: left bottom}
+
+#cgp-btn-done {
+  background: transparent url(../images/btn-done.png) no-repeat scroll left top;
+  position: absolute;
+  left: 794px;
+  top: 395px;
+  width: 109px;
+  height: 95px;
+  cursor: pointer;
+  z-index: 2;
+}
+#cgp-btn-done:hover { background-position: left bottom}
+
+#cgp-eraser-btn-undo {
+  background: transparent url(../images/eraser-btn-undo.png) no-repeat scroll left top;
+  float: right;
+  clear: both;
+  width: 118px;
+  height: 75px;
+  cursor: pointer;
+  margin: 17px 38px 0 0;
+}
+#cgp-eraser-btn-undo:hover { background-position: left bottom }
+
+.size-selector {
+  float: right;
+  background: transparent url(../images/size-selector-bg.png) no-repeat scroll left top;
+  width: 98px;
+  height: 109px;
+  margin: 28px 41px 0 0;
+  position: relative;
+}
+  #cgp-tools-stamps-drawer-options .size-selector {
+    margin-top: 135px;
+  }
+
+.size-selector .size-selector-knob {
+  background: transparent url(../images/size-selector-knob.png) no-repeat scroll left top;
+  display: block;
+  position: absolute;
+  left: 8px;
+  top: 2px;
+  width: 42px;
+  height: 36px;
+  cursor: pointer;
+  z-index: 1;
+}
+.size-selector .size-selector-knob:hover {
+  background-position: left bottom;
+}
+
+.size-selector .size-selector-sample {
+  float: right;
+}
+.size-selector .size-selector-sample li {
+  background: transparent url(../images/size-selector-sample.png) no-repeat scroll;
+  display: block;
+  width: 66px;
+  margin-top: -15px;
+  cursor: pointer;
+  position: relative;
+}
+.size-selector .size-selector-sample li.size-selector-sample-big {background-position: 0 0; height: 65px;}
+.size-selector .size-selector-sample li.size-selector-sample-medium {background-position: 0 -65px; height: 57px;}
+.size-selector .size-selector-sample li.size-selector-sample-small {background-position: 0 -122px; height: 46px;}
+
+.size-selector .size-selector-sample li.size-selector-sample-big:hover {background-position: -66px 0}
+.size-selector .size-selector-sample li.size-selector-sample-medium:hover {background-position: -66px -65px}
+.size-selector .size-selector-sample li.size-selector-sample-small:hover {background-position: -66px -122px}
+
+.size-selector .size-selector-sample li .size-selector-selected-color {
+  position: absolute;
+  display: none;
+}
+  #cgp-tools-eraser-drawer-options .size-selector .size-selector-sample li .size-selector-selected-color {
+    background: #fff;
+  }
+  #cgp-tools-stamps-drawer-options .size-selector .size-selector-sample li .size-selector-selected-color {
+    background: #009ec8;
+  }
+.size-selector .size-selector-sample li.active .size-selector-selected-color {
+  display: block;
+}
+.size-selector .size-selector-sample li .size-selector-selected-color .size-selector-selected-color-overlay {
+  background: transparent url(../images/size-selector-sample.png) no-repeat scroll;
+  width: 100%;
+  height: 100%;
+}
+
+.size-selector .size-selector-sample li.size-selector-sample-big .size-selector-selected-color {width: 38px; height: 38px; border-radius: 19px; left: 15px; top: 15px;}
+.size-selector .size-selector-sample li.size-selector-sample-medium .size-selector-selected-color {width: 29px; height: 29px; border-radius: 16px; left: 18px; top: 14px;}
+.size-selector .size-selector-sample li.size-selector-sample-small .size-selector-selected-color {width: 22px; height: 22px; border-radius: 12px; left: 22px; top: 12px;}
+
+.size-selector .size-selector-sample li.size-selector-sample-big .size-selector-selected-color-overlay {background-position: -147px -15px;}
+.size-selector .size-selector-sample li.size-selector-sample-medium .size-selector-selected-color-overlay {background-position: -151px -80px;}
+.size-selector .size-selector-sample li.size-selector-sample-small .size-selector-selected-color-overlay {background-position: -154px -134px;}
+
+#cgp-colorpicker-wrapper {
+  background: transparent url(../images/color-palette-bg.png) no-repeat scroll left top;
+  width: 122px;
+  height: 333px;
+  float: right;
+  margin: 9px 49px 0 0;
+}
+  #cgp-colorpicker {
+    margin: 7px 0 0 23px;
+  }
+    #cgp-colorpicker li {
+      position: relative;
+      width: 65px;
+      height: 64px;
+      float: left;
+      margin: -9px;
+    }
+      #cgp-colorpicker li .cgp-colorpicker-color {
+        position: absolute;
+        border-radius: 20px;
+        left: 12px;
+        top: 10px;
+        width: 40px;
+        height: 40px;
+      }
+      #cgp-colorpicker li .cgp-colorpicker-color-overlay {
+        position: absolute;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background: transparent url(../images/color-palette-selector.png) no-repeat scroll left top;
+        cursor: pointer;
+      }
+      #cgp-colorpicker li .cgp-colorpicker-color-overlay:hover {background-position: left center}
+      #cgp-colorpicker li.active .cgp-colorpicker-color-overlay {background-position: left bottom}
+
+#cgp-clipart {
+  margin: 50px 0 0 83px;
+}
+#cgp-clipart li {
+  display: block;
+  position: relative;
+  width: 91px;
+  height: 90px;
+  margin-bottom: 6px;
+  cursor: pointer;
+}
+#cgp-clipart li:hover {background: transparent url(../images/clipart-tool-hover-bg.png) no-repeat scroll left top}
+
+  #cgp-clipart li img {
+    position: absolute;
+    visibility: hidden;
+  }
+
+#cgp-video-help {
+  display: none;
+}
+#cgp-video-help-overlay {
+  position: absolute;
+  z-index: 9990;
+  background: #000;
+  opacity: 0.75;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0
+}
+#cgp-video-container {
+  position: absolute;
+  z-index: 9991;
+  left: 0;
+  top: -500px /*0*/;
+}
+#cgp-video-wrapper {
+  position: relative;
+}
+#cgp-video {
+  position: absolute;
+  left: 25px;
+  top: 24px;
+  width: 640px;
+  height: 360px;
+  padding: 15px 13px;
+  background: #fff;
+  border-radius: 15px;
+  overflow: hidden;
+}
+#cgp-btn-skip-video {
+  position: absolute;
+  left: 696px;
+  top: 358px;
+  width: 187px;
+  height: 124px;
+  background: transparent url(../images/btn-skip-video.png) no-repeat scroll left top;
+  cursor: pointer;
+}
+#cgp-btn-skip-video:hover {background-position: left bottom}
+
+#cgp-donedlg {
+  display: none;
+}
+
+#cgp-donedlg-overlay {
+  position: absolute;
+  z-index: 9990;
+  background: #000;
+  opacity: 0.75;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  display: none;
+}
+
+#cgp-donedlg-container {
+  position: absolute;
+  z-index: 9991;
+  left: 252px;
+  top: -380px /*39px*/;
+  width: 386px;
+  height: 380px;
+  background: transparent url(../images/donedlg-bg.png) no-repeat scroll left top;
+}
+#cgp-donedlg-btns-wrapper {
+  position: relative;
+}
+
+#cgp-donedlg-btn-close {
+  position: absolute;
+  left: 353px;
+  top: 53px;
+  width: 25px;
+  height: 23px;
+  background: transparent url(../images/donedlg-close.png) no-repeat scroll left top;
+  cursor: pointer;
+}
+#cgp-donedlg-btn-close:hover {background-position: left bottom}
+
+#cgp-donedlg-btn-print {
+  position: absolute;
+  left: 8px;
+  top: 229px;
+  width: 193px;
+  height: 83px;
+  background: transparent url(../images/donedlg-print.png) no-repeat scroll left top;
+  cursor: pointer;
+}
+#cgp-donedlg-btn-print:hover {background-position: left bottom}
+
+#cgp-donedlg-btn-download {
+  position: absolute;
+  left: 185px;
+  top: 229px;
+  width: 193px;
+  height: 83px;
+  background: transparent url(../images/donedlg-download.png) no-repeat scroll left top;
+  cursor: pointer;
+}
+#cgp-donedlg-btn-download:hover {background-position: left bottom}
+
+#cgp-donedlg-btn-keeppainting {
+  position: absolute;
+  left: -3px;
+  top: 309px;
+  width: 206px;
+  height: 75px;
+  background: transparent url(../images/donedlg-keeppainting.png) no-repeat scroll left top;
+  cursor: pointer;
+}
+#cgp-donedlg-btn-keeppainting:hover {background-position: left bottom}
+
+#cgp-donedlg-btn-startover {
+  position: absolute;
+  left: 184px;
+  top: 309px;
+  width: 206px;
+  height: 75px;
+  background: transparent url(../images/donedlg-startover.png) no-repeat scroll left top;
+  cursor: pointer;
+}
+#cgp-donedlg-btn-startover:hover {background-position: left bottom}
+

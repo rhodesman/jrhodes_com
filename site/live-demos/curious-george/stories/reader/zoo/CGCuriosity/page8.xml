@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<smil xmlns="http://www.w3.org/ns/SMIL" version="3.0" profile="http://www.idpf.org/epub/30/profile/content/">
+<body>
+  <par>
+    <audio clipBegin="119.182091" clipEnd="120.317311" aText="family" id="w00051"/>
+  </par>
+  <par>
+    <audio clipBegin="121.136598" clipEnd="121.977303" aText="sister" id="w00052"/>
+  </par>
+  <par>
+    <audio clipBegin="122.443172" clipEnd="123.224975" aText="brother" id="w00053"/>
+  </par>
+  <par>
+    <audio clipBegin="124.049616" clipEnd="124.745742" aText="father" id="w00054"/>
+  </par>
+  <par>
+    <audio clipBegin="125.190192" clipEnd="125.966640" aText="mother" id="w00055"/>
+  </par>
+  <par>
+    <audio clipBegin="126.678830" clipEnd="127.583793" aText="friend" id="w00056"/>
+  </par>
+  <par>
+    <audio clipBegin="128.253145" clipEnd="129.302689" aText="grand parents" id="w00057"/>
+  </par>
+    <par>
+    <audio clipBegin="131.160809" clipEnd="131.840870" aText="uncle" id="w00058"/>
+  </par>
+  <par>
+    <audio clipBegin="132.467384" clipEnd="133.088542" aText="aunt" id="w00059"/>
+  </par>
+  <par>
+    <audio clipBegin="133.875700" clipEnd="134.657502" aText="friend" id="w00060"/>
+  </par>
+  <par>
+    <audio clipBegin="135.267951" clipEnd="136.151496" aText="cousins" id="w00061"/>
+  </par>
+  <par>
+    <audio clipBegin="136.826202" clipEnd="137.479489" aText="patch" id="w00062"/>
+  </par>
+  <par>
+    <audio clipBegin="138.234518" clipEnd="139.096643" aText="friends" id="w00063"/>
+  </par>
+</body>
+</smil>

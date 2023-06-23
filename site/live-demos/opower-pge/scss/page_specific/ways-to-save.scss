@@ -1,0 +1,469 @@
+.title {
+	padding-left:40px;
+	a {
+		font-size:rem-calc(13);
+	}
+}
+.ways-to-save {
+	padding:0 40px 0 $spacing;
+	& .title {
+		padding:0;
+	}
+  .sidebar {
+    padding-top: $spacing;
+  }
+}
+.change-business {
+  font-size: $font-size-small;
+  font-weight: normal;
+  letter-spacing: 0;
+  padding: 0 10px;
+  position: relative;
+  top: -5px;
+}
+
+.save-close {
+  font-size: $font-size-small;
+  display: block;
+  padding: 10px 0;
+  text-align: right;
+}
+
+.info-details {
+  padding-top: $spacing;
+
+	& .label-col {
+		@include grid-column(
+		$columns:4,
+		$collapse:true,
+		$float:left
+		);
+		padding-left:10px;
+		& label {
+			line-height: 2;
+		}
+	}
+	& .counter-toggle {
+		& label {
+			line-height: 3;
+		}
+	}
+	& .input-col {
+
+		@include grid-column(
+		$columns:5,
+		$collapse:true,
+		$float:left
+		);
+		& select {
+			@include radius(6px);
+		}
+	}
+	& .weekday-col {
+		@include grid-column(
+		$columns:2,
+		$collapse:true,
+		$float:left
+		);
+		margin-left:30px;
+		&:first-child {
+			margin-left:10px;
+		}
+		select {
+			@include radius(6px);
+		}
+		& .add-day {
+			padding: 8px 15px;
+			padding-left:30px !important;
+			@include geomicon("\37",9px 0 0 8px,inherit);
+		}
+	}
+}
+
+.counter-toggle + .counter-toggle {
+	margin-top:30px;
+}
+
+.sidebar {
+		padding-right: 20px;
+		border-right: $border-style;
+		height:100%;
+		& .savings-total {
+		@include radius(6px);
+		padding: 0;
+		border: $border-style;
+		p {
+			padding: rem-calc(16);
+			text-align: center;
+			margin: 0;
+			font-size: rem-calc(20);
+			strong {
+				display: block;
+				padding-top: rem-calc(6);
+				width: 100%;
+				font-size: 200%;
+				sub {
+					font-size: 40%;
+					font-weight: normal;
+					bottom:0;
+				}
+			}
+		}
+		& a {
+			display: block;
+			position: relative;
+			bottom: 0;
+			border-top: $border-style;
+			padding: rem-calc(8 13);
+			font-size: rem-calc(13);
+			text-align: center;
+		}
+	}
+	& .ways-save-progress-container {
+		@include progress-container;
+		@include radius($progress-bar-border-radius);
+		& > span {
+	    @include progress-meter($progress-meter-color);
+			@include radius($progress-bar-border-radius);
+			width: 0%;
+			margin-left: 0.06rem;
+			height: (100% - 1);
+			&.meter-1 {
+				-webkit-animation-duration: 1s;
+				-webkit-animation-name: questions-animate-10;
+				width:10%;
+			}
+			&.meter-2 {
+				-webkit-animation-duration: 1s;
+				-webkit-animation-name: questions-animate-20;
+				width:20%;
+			}
+			&.meter-3 {
+				-webkit-animation-duration: 1s;
+				-webkit-animation-name: questions-animate-30;
+				width:30%;
+			}
+			&.meter-4 {
+				-webkit-animation-duration: 1s;
+				-webkit-animation-name: questions-animate-40;
+				width:40%;
+			}
+			&.meter-5 {
+				-webkit-animation-duration: 1s;
+				-webkit-animation-name: questions-animate-50;
+				width:50%;
+			}
+			&.meter-6 {
+				-webkit-animation-duration: 1s;
+				-webkit-animation-name: questions-animate-60;
+				width:60%;
+			}
+		}
+		h3 {
+			margin-top: rem-calc(15);
+		}
+	}
+	& .prog-position {
+		@include side-nav();
+
+		li {
+			padding-left: rem-calc(40);
+			font-size: rem-calc(14);
+			&:before {
+				content: "";
+				position: absolute;
+				left: 15px;
+				width: 20px;
+				height: ($side-nav-font-size * 1.4);
+				background: url(../img/prog-not-complete.png) no-repeat center center;
+			}
+			&.complete:before {
+				background: url(../img/prog-complete.png) no-repeat center center;
+			}
+			&.active {
+				font-weight: bold;
+			}
+		}
+	}
+}
+.info-details {
+		padding-left:40px;
+		padding-bottom:100px;
+		min-height:522px;
+	h3 {
+		font-size: rem-calc(22);
+	}
+	h4 {
+		font-size: rem-calc(28);
+		font-weight: normal;
+		max-width: 80%;
+		margin-bottom: 30px;
+	}
+	& .radio-buttons {
+		input[type="radio"] {
+			margin-left:25px;
+		}
+	}
+	.select {
+		h4 {
+			margin-bottom:5px;
+		}
+		h5 {
+			color: $dark-gray;
+		}
+	}
+	& .text-field {
+		input[type="text"] {
+			height:2.5rem;
+			background:transparent;
+
+		}
+		label {
+			line-height:1;
+			sub {
+				font-size:100%;
+				color:$deep-gray;
+				top:0;
+			}
+		}
+	}
+
+	ul {
+		@include block-grid($per-row: 3, $spacing: $block-grid-default-spacing, $base-style: true);
+		> li {
+			padding-bottom: rem-calc(32);
+		}
+		span {
+			display: block;
+			width: 100%;
+			input {
+				width: rem-calc(25);
+			}
+			input, label {
+				height: rem-calc(25);
+				margin: rem-calc(10 0);
+				display: inline;
+				vertical-align: middle;
+			}
+			label {
+				padding-left: rem-calc(8);
+				font-size: rem-calc(16);
+			}
+		}
+	}
+	& .family-select {
+		margin-top:20px;
+		ul {
+			@include block-grid($per-row: 5, $spacing: $block-grid-default-spacing, $base-style: true);
+			margin-bottom:40px;
+			li{
+				padding:0;
+				margin-right:10px;
+				color:$light-gray;
+				font-size:rem-calc(50);
+				height:50px;
+				width:40px;
+				a {
+					color:$dark-blue;
+					padding-left:0 !important;
+					display:block;
+					width:100%;
+					height:100%;
+					@include geomicon("\e035",0 0 0 0,inherit);
+				}
+				a:before {
+					bottom:0;
+				}
+				&.not-selected a{
+					color:inherit;
+				}
+				&:last-child {
+					position:relative;
+					a:after {
+						content:'+';
+						position:absolute;
+						vertical-align:middle;
+						display:block;
+						height:100%;
+						width:100%;
+						left:90%;
+						top:10px;
+						font-size:rem-calc(25);
+					}
+				}
+				&:last-child:after:hover, a:hover {
+					color: lighten($dark-blue, 30%);
+				}
+			}
+			&.children li {
+				font-size:rem-calc(40);
+				&:last-child a:after {
+					left:75%;
+				}
+			}
+		}
+	}
+	& .form-buttons {
+		position:absolute;
+		bottom:0px;
+		right:0;
+		height:90px;
+		a {
+			float:right;
+			margin-right: rem-calc(15);
+			font-size: rem-calc(18);
+			&.skip-quest {
+				display: block;
+				width: 100%;
+				text-align: right;
+				text-decoration: underline;
+				font-size: rem-calc(14);
+			}
+			&.secondary {
+				color: $color-gray;
+			}
+		}
+	}
+}
+.counter-toggle {
+	input[type="text"].oP-input {
+		width:rem-calc(50);
+		padding: 0;
+		display:inline-block;
+		border-width:3px;
+		margin: 0 8px;
+		height:3rem;
+		font-size:1.2rem;
+		color:$color-gray;
+	}
+	& .toggle-button {
+		@include oPower-button($oP-gray-from, $oP-gray-to, $border-gray-color);
+		padding:0 8px;
+		font-size:rem-calc(32);
+		position:relative;
+		top:4px;
+		&:before {
+			position:relative;
+			display:inline-table;
+			width:20px;
+			height:30px;
+			text-align:center;
+			vertical-align:middle;
+		}
+		&.subtract:before{
+			content:'-';
+			top:-2px;
+		}
+		&.add:before{
+			content:'+';
+		}
+	}
+}
+
+.oP-table {
+	width:90%;
+	thead, tr:nth-of-type(even) {
+		background:transparent;
+	}
+	thead th {
+		color: $heading-gray;
+		font-size:rem-calc(22);
+	}
+	tr {
+		border-bottom:none;
+		&:first-child {
+			border-top:none;
+		}
+	}
+	td:first-child {
+		font-weight:bold;
+	}
+	td:nth-child(2){
+		text-align:center;
+	}
+	td:last-child {
+		text-align:right;
+	}
+}
+
+
+@-webkit-keyframes questions-animate-10 {
+	from { width:0% }
+	to { width:10% }
+}
+@-webkit-keyframes questions-animate-20 {
+	from { width:10% }
+	to { width:20% }
+}
+@-webkit-keyframes questions-animate-30 {
+	from { width:20% }
+	to { width:30% }
+}
+@-webkit-keyframes questions-animate-40 {
+	from { width:30% }
+	to { width:40% }
+}
+@-webkit-keyframes questions-animate-50 {
+	from { width:40% }
+	to { width:50% }
+}
+@-webkit-keyframes questions-animate-60 {
+	from { width:50% }
+	to { width:60% }
+}
+
+
+#mobile{
+	@media #{$small-only}{
+		width:100%;
+		h4{
+			margin: 0 0 10px!important;
+			line-height:1;
+		}
+		.side-nav-container{
+			padding-left:0;
+		}
+		.page-heading{
+			width:70%;
+		}
+		.tip-filtering{
+			select{
+
+			}
+		}
+		.tip-targeting{
+			strong{
+				display:block;
+			}
+			span{
+				font-size:rem-calc(13);
+				white-space: no-wrap;
+			}
+			input{
+				width:100%;
+			}
+			.page-actions{
+				float:left!important;
+			}
+		}
+		.product-heading{
+			p{
+				margin-top:10px;
+			}
+			.button{
+				padding-left:0;
+				padding-right:0;
+				width:100%;
+			}
+		}
+		.show-all{
+			.button{
+				padding-left:0;
+				padding-right:0;
+				width:100%;
+				margin-bottom:0;
+			}
+		}
+
+	}
+}

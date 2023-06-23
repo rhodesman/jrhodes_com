@@ -1,0 +1,271 @@
+.account-side-nav{
+  @include side-nav;
+  margin: 0 0 0 40px;
+  padding:0;
+
+  li{
+    position:relative;
+    margin: 10px 0 10px 0;
+    &.active{
+      &>a:first-child:not(.button){
+        background-color: $active-blue-background;
+      }
+    }
+    a{
+      padding-left:45px;
+      font-size:rem-calc(17);
+    }
+    &:first-child {
+      margin-top:0;
+    }
+  }
+}
+
+.my-account{
+  padding:20px 20px 45px 20px;
+
+  a{
+    font-size:rem-calc(15);
+    color:$oP-blue;
+  }
+
+  h3{
+    font-weight:bold;
+    font-size:rem-calc(20);
+    color:$black;
+    margin-bottom:3px;
+    & + p{
+      margin-bottom:15px;
+      padding-left:0;
+    }
+  }
+
+
+    p{
+      margin:0;
+      padding:0;
+      color:$black;
+      font-size: rem-calc(14);
+      padding-left:40px;
+      position:relative;
+      &:first-child{
+        margin-top:60px;
+        margin-left:20px;
+      }
+      span{
+        position:absolute;
+        left:0;
+        top:2px;
+      }
+    }
+
+
+  .account-overview{
+    border: $border-style;
+    padding: 30px 20px;
+    a{
+      position:relative;
+      left:35px;
+    }
+    &.business{
+      p{
+        &:first-child{
+          margin-top:10px;
+          margin-left:0;
+        }
+      }
+      a{
+        top:11px;
+        left: 45px;
+      }
+      .telephone{
+        padding-left:40px;
+      }
+    }
+  }
+
+  .account-details{
+    margin-top:60px;
+    div.small-3.columns {
+      padding-right:0;
+    }
+    &.business{
+      tr{
+        white-space: nowrap;
+      }
+      td{
+        span{
+          display:block;
+          font-size: rem-calc(12);
+        }
+      }
+    }
+  }
+
+  .account-settings{
+    border-left: $border-style;
+    padding-left:70px;
+    padding-right:70px;
+  }
+
+  [class^="geomicon-"]{
+    position:absolute;
+    top:0;
+    left:-40px;
+    font-size: rem-calc(25);
+  }
+
+  .geomicon-business{
+    position:absolute;
+
+    > .geomicon-business{
+      position:absolute;
+      top:6px;
+      left:-9px;
+      font-size: rem-calc(18);
+    }
+  }
+
+  .account-overview{
+    [class^="geomicon-"]{
+      left:0px;
+    }
+  }
+
+  table{
+    &.contact-info{
+      input{
+        width:320px;
+        border-radius:5px;
+      }
+      tr{
+        td{
+          &:nth-child(2){
+            input{
+              margin:0;
+            }
+          }
+        }
+      }
+    }
+    &.manage-alerts{
+      tr{
+        &:first-of-type{
+          height:40px;
+        }
+      }
+      th{
+        &:first-of-type{
+          padding:0;
+        }
+        color: $heading-gray;
+        font-weight:normal;
+      }
+      p{
+        margin:0;
+        padding-left:0;
+        color:$heading-gray;
+        font-size: rem-calc(13);
+      }
+    }
+    width:100%;
+    thead{
+      background: transparent;
+      tr{
+        border-top:none;
+        border-bottom:none;
+        th{
+          padding-left:0;
+          h2{
+            font-size: rem-calc(24);
+            font-weight:bold;
+            color:$black;
+            margin:0;
+            position:relative;
+          }
+        }
+      }
+    }
+    tr{
+      height:70px;
+    }
+    td{
+      &:nth-child(2){
+        color:#A7A7A7;
+      }
+      &:nth-child(3){
+        color: $oP-blue;
+        margin-top:5px;
+        margin-right:20px;
+      }
+    }
+    &.devices{
+      border-bottom: 1px solid #ccc;
+
+      h2{
+        + p{
+          margin-top:10px;
+          padding-left:0;
+        }
+      }
+    }
+  }
+  .add-devices{
+    border-bottom: 1px solid #ccc;
+
+    .button{
+      font-size: $font-size-medium;
+      color:white;
+      padding-left:10px;
+      padding-right:10px;
+      &.secondary{
+      }
+    }
+
+    &.another-device{
+      padding-top:18px;
+    }
+    p{
+      font-size: rem-calc(15);
+      padding-top:10px;
+      color: #aeaeae;
+      margin-bottom:29px;
+    }
+    label{
+      padding-top:4px;
+      display:inline-block;
+      input{
+        width:200px;
+        margin-left:15px;
+        display:inline-block;
+      }
+    }
+    .device-title{
+      color: $black;
+    }
+    span{
+      margin-left:100px;
+      color: #aeaeae;
+    }
+  }
+  .device-details{
+    padding-top:5px;
+    padding-bottom:30px;
+    p{
+      margin:0;
+      padding-bottom:20px;
+      &:first-child{
+        margin:0;
+        padding:0;
+      }
+    }
+    span{
+      margin-left:200px;
+    }
+    .edit{
+      position:absolute;
+      top:3px;
+      right:42px;
+    }
+  }
+}

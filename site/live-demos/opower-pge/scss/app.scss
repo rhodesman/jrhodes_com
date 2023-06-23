@@ -1,0 +1,32 @@
+@import "theme"; //set all theme variabls here.
+@import "lib/scss/root"; //imports opower front-end styles including foundation and bourbon
+@import "lib/elroi";
+@import "_custom-settings";
+
+//Base styles
+@import "typography";
+@import "buttons";
+@import "layout";
+@import "forms";
+@import "op-tooltip";
+@import "op-progress-bar";
+@import "lib/geomicons/style.css";
+@import "lib/scss/base/geomicons";
+
+//import modules and reusable UI components.
+@import "modules/manifest"; // UI modules should be placed in the modules folder and imported via the manifest file.
+
+@import "overrides";
+
+//Import page specific styles
+@import "page_specific/manifest"; //any styles you can't figure out where to put for specific page builds. Again import via tha manifest file. This is basically your "shame.scss" file for each ticket.
+
+
+//override styles for m.pge
+@import "mobile-overides";
+
+//Get rid of font preview bar
+
+#mfPreviewBarShow, #mfPreviewBar {
+    display: none !important;
+}

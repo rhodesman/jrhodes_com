@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<smil xmlns="http://www.w3.org/ns/SMIL" version="3.0" profile="http://www.idpf.org/epub/30/profile/content/">
+<body>
+  
+  <par>
+    <audio clipBegin="449.895391" clipEnd="450.891386" aText="farm animals" id="w000253"/>
+  </par>
+  <par>
+    <audio clipBegin="451.052030" clipEnd="451.298352" aText="and" id="w000254"/>
+  </par>
+  <par>
+    <audio clipBegin="451.325126" clipEnd="452.015897" aText="sounds" id="w000255"/>
+  </par>
+  <par>
+    <audio clipBegin="453.108279" clipEnd="454.216725" aText="farm house" id="w000256"/>
+  </par>
+  <par>
+    <audio clipBegin="454.950335" clipEnd="455.769621" aText="rooster" id="w000257"/>
+  </par>
+  <par>
+    <audio clipBegin="456.219426" clipEnd="456.824520" aText="fence" id="w000258"/>
+  </par>
+  <par>
+    <audio clipBegin="457.959740" clipEnd="459.212766" aText="chicken" id="w000259"/>
+  </par>
+  <par>
+    <audio clipBegin="459.330572" clipEnd="460.690695" aText="pigs" id="w000260"/>
+  </par>
+  <par>
+    <audio clipBegin="460.744243" clipEnd="461.274370" aText="chick" id="w000261"/>
+  </par>
+  <par>
+    <audio clipBegin="461.841980" clipEnd="463.523392" aText="sheep" id="w000262"/>
+  </par>
+  <par>
+    <audio clipBegin="463.850035" clipEnd="464.642548" aText="field" id="w000263"/>
+  </par> 
+  
+  <par>
+    <audio clipBegin="465.408286" clipEnd="467.164665" aText="cat" id="w000264"/>
+  </par>
+  <par>
+    <audio clipBegin="468.546207" clipEnd="470.024136" aText="birds" id="w000265"/>
+  </par>
+  <par>
+    <audio clipBegin="470.307941" clipEnd="471.464580" aText="owl" id="w000266"/>
+  </par>
+  <par>
+    <audio clipBegin="471.925094" clipEnd="472.599801" aText="barn" id="w000267"/>
+  </par>
+  <par>
+    <audio clipBegin="473.751086" clipEnd="474.538244" aText="silo" id="w000268"/>
+  </par>
+  <par>
+    <audio clipBegin="476.096494" clipEnd="477.547649" aText="bees" id="w000269"/>
+  </par>
+  <par>
+    <audio clipBegin="477.617262" clipEnd="478.757837" aText="horses" id="w000270"/>
+  </par>
+  <par>
+    <audio clipBegin="478.929191" clipEnd="479.486092" aText="hay" id="w000271"/>
+  </par>
+  <par>
+    <audio clipBegin="480.246475" clipEnd="481.194277" aText="vegetables" id="w000272"/>
+  </par>
+  <par>
+    <audio clipBegin="481.681565" clipEnd="482.591884" aText="wheel barrow" id="w000273"/>
+  </par>
+  <par>
+    <audio clipBegin="483.989490" clipEnd="486.238512" aText="dog" id="w000274"/>
+  </par>
+  <par>
+    <audio clipBegin="486.848960" clipEnd="487.893149" aText="duck" id="w000275"/>
+  </par>
+  <par>
+    <audio clipBegin="487.968117" clipEnd="490.222493" aText="pond" id="w000276"/>
+  </par>
+  <par>
+    <audio clipBegin="491.031070" clipEnd="493.408607" aText="cows" id="w000277"/>
+  </par>
+  
+
+</body>
+</smil>

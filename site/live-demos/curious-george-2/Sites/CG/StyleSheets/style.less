@@ -1,0 +1,291 @@
+/**
+ * style.less
+ * @description Basic CSS shared on all pages
+ * @author Sean Smith
+ */
+
+@import "myfonts";
+@import "bootstrap";
+@import "global";
+@font-face { font-family: TradeGothic; src: url(./fonts/TradeGothic-BoldCondTwenty.otf) }
+
+html, body {
+	padding: 0;
+	margin: 0;
+	overflow-x: hidden;
+	overflow-y: visible;
+	background: #393a3a;
+}
+html { font: 0.75em/1.5em Helvetica, Arial, sans-serif }
+body { overflow-y: hidden }
+a {
+	text-decoration: none;
+	color: @blue;
+	&:hover { text-decoration: underline }
+}
+.cgModal {
+	width: 637px;
+	background-color: transparent;
+	border: none;
+	.border-radius(0);
+	.box-shadow(0 3px 7px rgba(0, 0, 0, 0));
+	.modal-header {
+		background: url(../imgs/modal/mBG_header.png) top no-repeat;
+		border-bottom: none;
+		padding-top: 30px;
+		padding-left: 80px;
+		h3 {
+			margin-top: 30px;
+			padding-bottom: 5px;
+			width: 85%;
+			color: #009bce;	
+			font-size: 38pt;
+			line-height: 35pt;
+			border-bottom: thin dotted #009bce;
+		}
+		.close {
+			margin-top: -30px;
+			margin-right: -10px;
+			padding: 10px;
+			color: white;
+		}
+	}
+	.modal-body {
+		background: url(../imgs/modal/mBG_body.png) top repeat-y;
+		border-bottom: none;
+		padding-left: 80px;
+		.cg_register {
+			margin-bottom: 0;
+			.not_reg {
+				margin-left: 40px;
+				padding-bottom: 5px;
+				width: 60%;
+			}
+			p {
+				margin-bottom: 20px;
+				color: #666666;
+			}
+			label {
+				margin-bottom: 0;
+				color: #666666;
+			}
+			.vfy_pwd { margin-top: 110px }
+			.checkbox { margin-bottom: 20px }
+			.btn { padding: 2px 20px 2px }
+			.forgot_pw {
+				margin-top: 30px;
+				padding-top: 4px;
+				border-top: thin dotted #009bce;
+			}
+		}
+		form .reg_btn { margin-left: 40px }
+	}
+	.modal-footer {
+		background: url(../imgs/modal/mBG_footer.png) bottom no-repeat;
+		border-top: none;
+		padding-left: 80px;
+		padding-bottom: 30px;
+		padding-right: 40px;
+		text-align: left;
+		.box-shadow(none);
+	}
+}
+#main {
+	background: @background-color url(../imgs/bg.png);
+	ul { list-style: none; margin: 0; padding: 0 }
+	header {
+		position: relative;
+		height: 88px;
+		z-index: 100;
+		.centered;
+		nav { height: 100%;
+			& > * { display: block; float: left }
+			h1 {
+				margin: 0;
+				padding: 0;
+				height: 100%;
+				width: 356px;
+				a {
+					display: block;
+					height: 100%;
+					background: transparent url(../imgs/curious-george-red.png) scroll no-repeat 0% 50%;
+					.hidden-text;
+				}
+			}
+			ul {
+				margin-left: 27px;
+				width: 352px;
+				height: 70px;
+				li {
+					float: left;
+					width: 81px;
+					height: 100%;
+					& + li { margin-left: 9px }
+					a {
+						display: block;
+						position: relative;
+						top: -5px;
+						width: 97px;
+						height: 87px;
+						background: transparent none scroll no-repeat 50% 0;
+						.hidden-text;
+						&:active { left: -1px; margin-top: -1px }
+						&.nav-games		{ background-image: url(../imgs/buttons/game_btn_up.png);
+							&:active	{ background-image: url(../imgs/buttons/game_btn_dwn.png) }
+						}
+						&.nav-stories	{ background-image: url(../imgs/buttons/stories_btn_up.png);
+							&:active	{ background-image: url(../imgs/buttons/stories_btn_dwn.png) }
+						}
+						&.nav-create	{ background-image: url(../imgs/buttons/create_btn_up.png);
+							&:active	{ background-image: url(../imgs/buttons/create_btn_dwn.png) }
+						}
+						&.nav-curious	{ background-image: url(../imgs/buttons/curious_btn_up.png);
+							&:active	{ background-image: url(../imgs/buttons/curious_btn_dwn.png) }
+						}
+					}
+				}
+			}
+			#mobile-app {
+				display: none;
+				position: relative;
+				margin-left: 19px;
+				margin-bottom: -16px;
+				height: 102px;
+				width: 361px;
+				background: transparent url(../imgs/space/app.png) scroll no-repeat 0 0;
+				z-index: 4;
+				.hidden-text;
+			}
+			#playhouse {
+				float: right;
+				width: 181px;
+				height: 100%;
+				margin-right: -8px;
+				background: transparent url(../imgs/space/playroom.png) scroll no-repeat 50% 50%;
+				.hidden-text;
+			}
+		}
+	}
+}
+#content { padding-bottom: 32px }
+footer {
+	height: 500px;
+	color: @white;
+	background: #464646 url(../imgs/footer-bg.png) scroll repeat-x 0 0;
+	#hmh {
+		height: 117px;
+		.centered;
+		a {
+			display: block;
+			float: left;
+			width: 222px;
+			height: 100%;
+			background: transparent url(../imgs/hmh.png) scroll no-repeat 0% 50%;
+			text-indent: -9999em;
+		}
+		address {
+			display: block;
+			height: 100%;
+			line-height: 164px;
+			font-style: normal;
+		}
+	}
+	#related {
+		padding: 16px 0;
+		border: 1px solid #464646;
+		border-width: 1px 0;
+		overflow: hidden;
+		ul, ol {
+			margin: 0;
+			padding: 0;
+			list-style: none;
+		}
+		& > ul { .centered;
+			& > li {
+				float: left;
+				width: 300px;
+				strong {
+					display: block;
+					padding-bottom: 8px;
+					color: @blue;
+				}
+				ul {
+					float: left;
+					width: 150px;
+					li { cursor: pointer;
+						&:hover { text-decoration: underline }
+					}
+				}
+			}
+		}
+	}
+	#blurb {
+		padding: 28px 0;
+		background: #191919;
+		border: 1px solid #464646;
+		border-width: 1px 0;
+		p {
+			padding-right: 345px;
+			.centered
+		}
+	}
+	#legal {
+		padding: 16px 0;
+		.centered;
+		a { color: @white; cursor: pointer }
+		a + a:before {
+			margin: 0 4px;
+			content: " | ";
+		}
+		span { display: block }
+	}
+}
+
+@import "bjqs";
+@import "home";
+@import "games";
+@import "player";
+@import "articles";
+@import "themes/space";
+
+/* 404 */
+#not-found {
+	position: relative;
+	height: 500px;
+	text-align: center;
+	font-size: 4em;
+	.centered;
+	p {
+		position: absolute;
+		top: 250px;
+		margin: 0;
+		padding: 0;
+		margin-top: -2em;
+		width: 100%;
+		line-height: 1.5em;
+		.rotate(-10deg);
+		.text-shadow(2px 2px 8px fade(@black, 60%));
+		span {
+			display: block;
+			.rotate(100deg);
+		}
+	}
+}
+
+/* Loading */
+#loading {
+	display: none;
+	position: fixed;
+	right: 0;
+	bottom: 0;
+	width: 288px;
+	height: 320px;
+	background: transparent url(../imgs/loading.png) scroll no-repeat 0 0;
+}
+
+/* Temporary "mobile" resizing */
+@media (max-width: 767px)							{ html { font-size: 1em; line-height: 1.0em } #main { zoom: 0.5 } }
+@media (min-width: 768px) and (max-width: 979px)	{ html { font-size: 1em; line-height: 1.3em } #main { zoom: 0.7 } }
+
+
+@import "sub-main";

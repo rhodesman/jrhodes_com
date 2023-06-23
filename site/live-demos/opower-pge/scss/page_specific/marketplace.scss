@@ -1,0 +1,673 @@
+.primary-content-container {
+  padding: $spacing*2;
+}
+.page-header.row {
+  //margin-bottom: $spacing;
+}
+.marketplace-stars {
+  @include position(relative, 2px 0 0 0);
+  background-image: url(../../img/marketplace/stars.png);
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+  line-height: 0;
+  height: 14px;
+  width: 90px;
+}
+.marketplace-status {
+  text-align: right;
+  .marketplace-status-button {
+    @include clearfix;
+    @include radius($global-radius);
+    border: 1px solid $divider-color;
+    color: $dark-gray;
+    display: table;
+    float: right;
+    height: 50px;
+    margin-left: $halfSpacing;
+    padding: 2px $spacing;
+    position: relative;
+    text-align: center;
+    width: 180px;
+  }
+  .marketplace-status-button-inner {
+    display: table-cell;
+    vertical-align: middle;
+    width: 100%;
+  }
+}
+.rewards-balance {
+  font-size: $font-size-tiny;
+  line-height: 1.4;
+  .rewards-balance-amount {
+    color: $primary-color;
+    display: block;
+    font-size: $font-size-medium;
+    strong {
+      margin-right:4px;
+    }
+  }
+}
+.get-rewards .shopping-list-indicator {
+  display: none;
+}
+.shopping-list-indicator {
+  color: $dark-gray;
+  font-size: $font-size-medium;
+  .geomicon-cart {
+    @include position(relative, 8px 0 0 -4px);
+    font-size: 1.75em;
+    line-height: 0;
+    padding-right: 10px;
+  }
+  .shopping-list-quanity-badge {
+    @include position(absolute, -2px 0px 0 0);
+    @include radius(100%);
+    background-color: $primary-color;
+    color: $white;
+    display: block;
+    font-size: 12px;
+    font-weight: bold;
+    height: 1.25em;
+    width: 1.25em;
+    line-height: 1.2;
+    text-align: center;
+  }
+}
+.nest { // ugh so hacky, this is a weird bug though so FUCK IT
+  .shopping-list-indicator {
+    .shopping-list-quanity-badge {
+      right: -1px;
+    }
+  }
+}
+.marketplace-products,
+.rewards-items {
+  @include block-grid($per-row:2, $spacing:$spacing*2);
+  > li {
+    padding-bottom: $spacing*2;
+  }
+}
+.marketplace-item,
+.rewards-item {
+  overflow:hidden;
+  @include transition(border-color 0.2s);
+  border: 1px solid $divider-color;
+  padding: 0;
+  text-align: center;
+  &:hover {
+    border-color: $primary-color;
+    .marketplace-title h4 {
+      color: $primary-color;
+    }
+    .marketplace-price {
+      background-color: $primary-color;
+    }
+  }
+}
+
+.thumbnail-container{
+  overflow:hidden;
+  border-bottom: 1px solid $divider-color;
+}
+
+.marketplace-thumbnail {
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 250px;
+  -webkit-transition: ease 0.2s;
+  &:hover{
+    -webkit-transform: scale(1.05);
+  }
+}
+.marketplace-title {
+  display: table;
+  height: 4em;
+  padding: $halfSpacing 0 0;
+  text-align: center;
+  width: 100%;
+  h4 {
+    @include transition(color $animation-speed);
+    display: table-cell;
+    margin-bottom: 0;
+    vertical-align: middle;
+    width: 100%;
+  }
+}
+.marketplace-ratings {
+  padding-bottom: $halfSpacing;
+
+}
+.marketplace-ratings-link {
+  color: $primary-color;
+}
+.marketplace-meta {
+  @include clearfix;
+  border-top: 1px solid $divider-color;
+  color: $dark-gray;
+  font-size: $font-size-tiny;
+  padding: $halfSpacing 0;
+  margin: 0 $halfSpacing;
+  div {
+    width: 50%;
+    float: left;
+    &:last-child {
+      border-left: 1px solid $divider-color;
+    }
+  }
+  strong {
+    color: $txt-color;
+    display: block;
+    font-size: $font-size-medium;
+    font-weight: normal;
+    line-height: 1.1;
+  }
+}
+.marketplace-price {
+  @include transition(background-color 0.2s);
+  background-color: $dark-gray;
+  color: $white;
+  padding: $halfSpacing;
+  &.rebate {
+    background-color: $green;
+  }
+  strong {
+    display: block;
+    font-size: $font-size-large;
+    font-weight: bold;
+    line-height: 1.1;
+    text-transform: uppercase;
+  }
+}
+.marketplace-actions {
+  @include clearfix;
+  background-color: $divider-color;
+  padding: 4px $halfSpacing;
+  text-align: left;
+  label {
+    float: left;
+    line-height: 2;
+    margin-bottom: 0;
+    width: 50%;
+  }
+  input {
+    margin-bottom: 0;
+  }
+}
+.rewards-item {
+  cursor: pointer;
+}
+.rewards-img {
+  @include radius(10px);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.25);
+  height: 140px;
+  margin: $spacing*2;
+}
+.rewards-title {
+  color: $txt-color;
+  font-weight: bold;
+  font-size: $font-size-medium;
+  margin-bottom: 6px;
+}
+.rewards-points-amount {
+  margin-bottom: $spacing;
+}
+.rewards-action .button {
+  font-size: $font-size-medium;
+}
+.rewards-learnmore {
+  margin-bottom: $spacing;
+}
+
+.breadcrumb-back {
+  clear: both;
+  float: left !important;
+}
+
+.product-container {
+  border: 1px solid $divider-color;
+  margin-bottom: $spacing;
+}
+.product-banner {
+  background: url(../../img/marketplace/nest-banner.png) top right no-repeat;
+  background-size: cover;
+  height: 400px;
+  position: relative;
+  width: 100%;
+  .on-list {
+    @include position(absolute, 0 0 0px 0px);
+    background-color: $primary-color;
+    color: $white;
+    font-weight: bold;
+    padding: 6px $spacing 4px;
+  }
+}
+.product-details {
+  padding: $spacing $spacing $halfSpacing;
+}
+.product-heading {
+  @include clearfix;
+  border-bottom: 1px solid $divider-color;
+  margin: $spacing*0.5 0 $spacing;
+}
+.product-title {
+  color: $txt-color;
+  font-size: $font-size-large;
+  font-weight: bold;
+  float: left;
+}
+.product-ratings {
+  float: right;
+  font-size: $font-size-medium;
+  .marketplace-stars {
+    height: 18px;
+    width: 140px;
+  }
+}
+.product-learnmore {
+  border-top: 1px solid $divider-color;
+  clear: both;
+  font-size: $font-size-small;
+  margin-bottom: 0;
+  padding-top: $halfSpacing;
+  text-align: center;
+  a {
+    text-decoration: none;
+  }
+}
+.product-facts {
+  padding-right: $spacing*1.5;
+}
+.product-fact {
+  border-top: 1px solid $divider-color;
+  color: $dark-gray;
+  padding: $halfSpacing 0 $spacing*1.5;
+  text-align: center;
+  &.rebate-available {
+    background-color: $white;
+    border-color: $green;
+    color: $green;
+    padding-bottom: $halfSpacing;
+    .fact-heading {
+      font-weight: bold;
+    }
+  }
+  &:first-child {
+    border-top: none;
+  }
+  &.rebate {
+    @include radius($global-radius);
+    border-color: $green;
+    background-color: $green;
+    color: $white;
+    margin: $spacing 0-$halfSpacing 0;
+    padding-bottom: 12px;
+    .rebate-amount {
+      font-size: 1.25em;
+    }
+    .amount {
+      font-weight: bold;
+      line-height: 1.5;
+    }
+  }
+  .fact-header {
+    height: 50px;
+    display: table;
+    width: 100%;
+    .fact-heading {
+      font-size: $font-size-small;
+      display: table-cell;
+      vertical-align:  middle;
+      width: 100%;
+    }
+  }
+  .amount {
+    font-size: 2.25em;
+    font-weight: normal;
+    line-height: 0.8;
+    &.appears-above {
+      display: inline-block;
+      padding-top: $spacing;
+    }
+    sub {
+      @include position(relative, -0.125em 0 0 0);
+      font-size: $font-size-medium;
+      font-weight: normal;
+    }
+  }
+  .button {
+    display: block;
+    font-weight: bold !important; // ugh
+    padding: 8px 0;
+    margin: $halfSpacing $halfSpacing 0;
+  }
+}
+
+.product-meta {
+  border: 1px solid $divider-color;
+  margin-bottom: $spacing;
+  padding: $spacing*0.65 $spacing;
+  .geomicon {
+    color: $dark-gray;
+    padding-right: 6px;
+    position: relative; top: 2px;
+  }
+  h4 {
+    border-bottom: 1px solid $divider-color;
+    margin-bottom: 0;
+    padding-bottom: $spacing*0.65;
+    img {
+      margin-right: $halfSpacing;
+    }
+  }
+  ul.product-meta-list {
+    padding: 0;
+    margin: 0;
+    li {
+      @include clearfix;
+      border-bottom: 1px solid $divider-color;
+      clear: both;
+      list-style-type: none;
+      padding: $halfSpacing 0;
+      &:last-child {
+        border-bottom: none;
+      }
+    }
+  }
+  .contractor-title {
+    color: $txt-color;
+    font-size: $font-size-small;
+    font-weight: bold;
+  }
+  .contractor-description {
+    font-size: $font-size-tiny;
+  }
+  .key {
+    border-bottom: none;
+    .mini-column {
+      font-size: 10px;
+      &:nth-child(1),
+      &:nth-child(2),
+      &:nth-child(3),
+      &:nth-child(4),
+      &:nth-child(5) {
+        color: $dark-gray;
+        padding-top: 0;
+      }
+    }
+  }
+  .mini-column {
+    float: left;
+    font-size: $font-size-tiny;
+    text-align: center;
+    &.price {
+      font-weight: bold;
+      font-size: $font-size-small;
+    }
+    &.rebate {
+      color: $txt-color;
+      font-size: $font-size-medium;
+      font-weight: bold;
+      text-align: center;
+    }
+    &.action {
+      .button {
+        display: block;
+        font-weight: bold !important; // ugh
+        padding: 6px 26px;
+        margin-bottom: 0;
+        width: 100%;
+      }
+    }
+    &.is-bueno {
+      color: $green;
+    }
+    &:nth-child(1) {
+      width: 20%;
+      text-align: left;
+    }
+    &:nth-child(2) {
+      padding-top: 14px;
+      width: 16%;
+    }
+    &:nth-child(3) {
+      padding-top: 14px;
+      width: 16%;
+    }
+    &:nth-child(4) {
+      width: 16%;
+      padding-top: 14px;
+    }
+    &:nth-child(5) {
+      width: 16%;
+      padding-top: 12px;
+    }
+    &:nth-child(6),
+    &.action {
+      width: 16%;
+    }
+    &.twoline {
+      padding-top: 5px;
+    }
+  }
+  &.product-retailers {
+    li {
+      padding: 6px 0;
+      &.key {
+        padding: 8px 0;
+      }
+    }
+    .amazon {
+      margin-left: -14px;
+    }
+    .walmart {
+      margin-left: -8px;
+    }
+    .sears {
+      margin-top:10px;
+      width: 80%;;
+    }
+  }
+  &.product-contractors {
+    .contractor-title {
+      color: $dark-gray;
+      font-size: $font-size-medium;
+    }
+    .key {
+      color: $dark-gray;
+      font-size: 10px;
+      margin-bottom: -6px;
+      padding: 5px 36px 0 0;
+      text-align: right;
+    }
+    .product-ratings {
+      float: right;
+      font-size: $font-size-tiny;
+      .marketplace-stars {
+        height: 14px;
+        margin-top: 2px;
+        width: 80px;
+      }
+    }
+  }
+  &.product-reviews {
+    .product-ratings {
+      float: none;
+      padding: $halfSpacing 0;
+      .marketplace-stars {
+        margin-right: $halfSpacing;
+        width: 100px;
+      }
+    }
+    .review-poster {
+      padding: $halfSpacing 0;
+    }
+  }
+}
+
+.rebate-modal {
+  .rebate-modal-header {
+    background-color: $green;
+    color: $white;
+    font-size: $font-size-large;
+    font-weight: bold;
+    margin: -20px -20px 40px;
+    padding: $spacing*2.5;
+    position: relative;
+    text-align: center;
+    &:after {
+      @include position(absolute, 0 0 -0.5em 50%);
+      content: "\e0e3";
+      display: block;
+      font-family: "Geomicons";
+      font-size: 2em;
+      height: 1em;
+      line-height: 1em;
+      width: 1em;
+      margin-left: -0.5em;
+      display: block;
+      text-align: center;
+    }
+    &:before {
+      @include radius(100%);
+      @include position(absolute, 0 0 -0.5em 50%);
+      content: " ";
+      display: block;
+      background-color: $green;
+      border: 4px solid #fff;
+      font-size: 2em;
+      height: 1em;
+      width: 1em;
+      margin-left: -0.5em;
+      display: block;
+    }
+  }
+  .modal-body {
+    padding: 0 30px;
+  }
+  .modal-actions {
+    margin-top: $spacing*2;
+    text-align: right;
+  }
+}
+.reveal-modal.in.rebate {
+  .rebate-body > div {
+      @include transition(all 0.6s 0 cubic-bezier(.51,-0.14,.28,1.22));
+  }
+  .button span {
+    @include transition(all 0.3s);
+  }
+}
+.reveal-modal.rebate {
+  top: 20%;
+  .rebate-body {
+    height: 100px;
+    perspective: 1000px;
+    position: relative;
+    > div {
+      @include transform-origin(50% 50%);
+      @include position(absolute, 0px 0 0 0px);
+      backface-visibility: hidden;
+      height: 100%;
+      width: 100%;
+      opacity: 1;
+    }
+    &.calculating {
+      .rebate-email-form {
+        @include transform(rotateX(180deg));
+        z-index: 100;
+        opacity: 0;
+      }
+      .calculating-progress {
+        @include transform(rotateX(0deg));
+        z-index: 100;
+        opacity: 1;
+      }
+    }
+    &.rebate-sent {
+      .calculating-progress {
+        @include transform(rotateX(180deg));
+        z-index: 100;
+        opacity: 0;
+      }
+      .calculating-progress-sent {
+        @include transform(rotateX(0deg));
+        z-index: 100;
+        opacity: 1;
+      }
+    }
+  }
+  .rebate-email-form {
+    @include transform(rotateX(0deg));
+    z-index: 100;
+  }
+  .calculating-progress {
+    @include transform(rotateX(-180deg));
+    color: $dark-gray;
+    text-align: center;
+    z-index: 0;
+  }
+  .calculating-progress-sent {
+    @include transform(rotateX(-180deg));
+    color: $green;
+    font-size: $font-size-huge;
+    text-align: center;
+    z-index: 0;
+    .progress-sub {
+      color: $txt-color;
+      font-size: $font-size-medium;
+      font-weight: normal;
+      padding-top: $halfSpacing;
+    }
+  }
+  .button {
+    display: inline-block;
+    height: 44px;
+    position: relative;
+    overflow: hidden;
+    width: 150px;
+    &:focus {
+      outline: none;
+    }
+    &.button-state-sending {
+      background-color: $green;
+      .rebate-send {
+        @include transform(translateY(40px));
+      }
+      .rebate-sending {
+        @include transform(translateY(0));
+      }
+    }
+    &.button-state-sent {
+      background-color: $primary-color;
+      .rebate-send {
+        @include transform(translateY(40px));
+      }
+      .rebate-sending {
+        @include transform(translateY(40px));
+      }
+      .rebate-finish {
+        @include transform(translateY(0));
+      }
+    }
+    span {
+      @include transform(translateY(-40px));
+      @include position(absolute, 50% 0 0 50%);
+      display: block;
+      height: 1em;
+      line-height: 1em;
+      margin-top: -0.5em;
+      margin-left: -50px;
+      text-align: center;
+      width: 100px;
+    }
+    .rebate-send {
+      @include transform(translateY(0));
+    }
+  }
+}

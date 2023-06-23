@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<smil xmlns="http://www.w3.org/ns/SMIL" version="3.0" profile="http://www.idpf.org/epub/30/profile/content/">
+<body>
+  <par>
+    <audio clipBegin="240.265140" clipEnd="241.132620" aText="obs" id="w000116"/>
+  </par>
+  <par>
+    <audio clipBegin="242.465969" clipEnd="243.440545" aText="librarian" id="w000117"/>
+  </par>
+  <par>
+    <audio clipBegin="243.863575" clipEnd="244.527572" aText="teacher" id="w000118"/>
+  </par>
+  <par>
+    <audio clipBegin="244.993441" clipEnd="246.235757" aText="police officer" id="w000119"/>
+  </par>
+  <par>
+    <audio clipBegin="247.071108" clipEnd="248.029620" aText="astronet" id="w000120"/>
+  </par>
+  <par>
+    <audio clipBegin="255.017652" clipEnd="256.757967" aText="fire fighters" id="w000121"/>
+  </par>
+  <par>
+    <audio clipBegin="256.881127" clipEnd="257.571898" aText="farmer" id="w000122"/>
+  </par>
+  <par>
+    <audio clipBegin="258.069896" clipEnd="258.851699" aText="life gaurd" id="w000123"/>
+  </par>
+  <par>
+    <audio clipBegin="259.285439" clipEnd="260.163628" aText="carpenter" id="w000124"/>
+  </par>
+  <par>
+    <audio clipBegin="260.699110" clipEnd="261.593363" aText="nurse" id="w000125"/>
+  </par>
+  <par>
+    <audio clipBegin="261.957491" clipEnd="263.103421" aText="scientist" id="w000126"/>
+  </par>
+  <par>
+    <audio clipBegin="263.526451" clipEnd="264.329673" aText="magician" id="w000127"/>
+  </par>
+  <par>
+    <audio clipBegin="264.999025" clipEnd="266.069988" aText="roc star" id="w000128"/>
+  </par>
+  <par>
+    <audio clipBegin="269.379263" clipEnd="270.155711" aText="doctor" id="w000129"/>
+  </par>
+   <par>
+    <audio clipBegin="270.584096" clipEnd="271.317705" aText="an" id="w000130"/>
+  </par>
+  <par>
+    <audio clipBegin="271.821058" clipEnd="272.634989" aText="dancer" id="w000131"/>
+  </par>
+  <par>
+    <audio clipBegin="273.207955" clipEnd="274.048660" aText="fisher men" id="w000132"/>
+  </par>
+  <par>
+    <audio clipBegin="274.482400" clipEnd="275.317751" aText="baeer" id="w000133"/>
+  </par>
+  <par>
+    <audio clipBegin="275.756846" clipEnd="276.608261" aText="soldier" id="w000134"/>
+  </par>
+  <par>
+    <audio clipBegin="277.052711" clipEnd="277.684579" aText="pilot" id="w000135"/>
+  </par>
+  <par>
+    <audio clipBegin="278.123674" clipEnd="279.199991" aText="vertinerian" id="w000136"/>
+  </par>
+  <par>
+    <audio clipBegin="279.655150" clipEnd="280.715403" aText="store" id="w000137"/>
+  </par>
+  <par>
+    <audio clipBegin="281.556109" clipEnd="282.327202" aText="writer" id="w000138"/>
+  </par>
+  <par>
+    <audio clipBegin="283.339262" clipEnd="284.105001" aText="artist" id="w000139"/>
+  </par>
+  <par>
+    <audio clipBegin="284.651192" clipEnd="285.358027" aText="ath" id="w000140"/>
+  </par>
+  <par>
+    <audio clipBegin="285.781057" clipEnd="286.771698" aText="hair dresser" id="w000141"/>
+  </par>
+  <par>
+    <audio clipBegin="287.050148" clipEnd="288.121111" aText="letter" id="w000142"/>
+  </par>
+
+</body>
+</smil>

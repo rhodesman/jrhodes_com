@@ -1,0 +1,4362 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="viewport" content="width=576,height=576" />
+	<title></title>
+<link href="skin/blue.monday/jplayer.blue.monday.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6/jquery.min.js"></script>
+<script type="text/javascript" src="Sites/CG/Javascript/jquery.jplayer.min.js"></script>
+<style type="text/css">
+	@charset "utf-8";
+	@font-face {
+		font-family: "Adobe Garamond Pro";
+		src: url("font/AGARAMPR.TTF");
+	}
+	@font-face {
+		font-family: "Adobe Garamond Pro Italic";
+		src: url("font/AGARAMPI.TTF");
+	}
+	@font-face {
+		font-family: "MShannon-Regular";
+		src: url("font/MSHANNOR.TTF");
+	}
+	body {
+		background-color: #FFFFFF;
+		border-style: solid;
+		border-width: 0;
+		height: 450px;
+		margin: 0;
+		padding: 0;
+		width: 850px;
+		font-size:14px;
+	}
+	a:active { color:red }
+	a:visited { color:purple }
+	#box1 {
+		width:425px;
+		height:445px;
+	}
+	.Lside{
+		position:absolute;
+		left:0px;
+		top:0px;
+	}	
+	.Rside{
+		position:absolute;
+		left:425px;
+		top:0px;
+	}
+	
+	h1, h2, h3, h4, h5, h6 {
+		font-weight: normal;
+	}
+	p {
+		margin-bottom: 1.1em;
+		margin-top: 0;
+	}
+	#box1 p.lastNode {
+		margin-bottom: 0;
+	}
+	#box2 p.lastNode {
+		margin-bottom: 0;
+	}
+	a:link img, a:visited img {
+		border: medium none;
+	}
+	div.clearFloat {
+		clear: both;
+		font-size: 0;
+		height: 0;
+		line-height: 0;
+	}
+	li.clearFloat {
+		clear: both;
+	}
+	ul.symbolList {
+		display: inline;
+		float: left;
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+	}
+	.AbsWrap {
+		position: relative;
+		width: 100%;
+	}
+	.rowWrap {
+		width: 100%;
+	}
+	#box2 {
+		margin: 0 auto 0 0;
+		width: 425px;
+	}
+	#id_OLLIES_HALOWEEN_8-9_2_image {
+		display: inline;
+		float: left;
+		height: 445px;
+		margin-bottom: 0;
+		margin-left: 0;
+		margin-top: 0;
+		width: 425px;
+	}
+	.Txt_Co {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		left: 43px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 5px;
+	}
+	.Txt_py {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		left: 83px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 45px;
+	}
+	.Txt_righ {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		left: 90px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 45px;
+	}
+	.Txt_t {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		left: 103px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 45px;
+	}
+	.Txt_01 {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		left: 120px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 45px;
+	}
+	.Txt_0 {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		left: 128px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 45px;
+	}
+	.Txt_li {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		left: 150px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 45px;
+	}
+	.Txt_vi {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		left: 154px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 45px;
+	}
+	.Txt_er {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		left: 160px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 45px;
+	}
+	.Txt_un {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		left: 174px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 45px;
+	}
+	.Txt_re {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		left: 183px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 45px;
+	}
+	.Txt_a {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		left: 189px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 45px;
+	}
+	.Txt_Al {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		left: 43px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 18px;
+	}
+	.Txt_l {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		left: 80px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 63px;
+	}
+	.Txt_ig {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		left: 87px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 63px;
+	}
+	.Txt_ht {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		left: 93px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 63px;
+	}
+	.Txt_s {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		left: 100px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 63px;
+	}
+	.Txt_es {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		left: 107px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 63px;
+	}
+	.Txt_er2 {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		left: 113px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 63px;
+	}
+	.Txt_ve {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		left: 120px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 63px;
+	}
+	.Txt_d {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		left: 126px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 63px;
+	}
+	.Txt_For {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		left: 131px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 63px;
+	}
+	.Txt_nf {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		left: 150px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 63px;
+	}
+	.Txt_o {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		left: 157px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 63px;
+	}
+	.Txt_rma {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		left: 160px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 63px;
+	}
+	.Txt_ti {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		left: 173px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 63px;
+	}
+	.Txt_on {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		left: 178px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 63px;
+	}
+	.Txt_bo {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		left: 191px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 63px;
+	}
+	.Txt_ut {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		left: 199px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 63px;
+	}
+	.Txt_er3 {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		left: 212px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 63px;
+	}
+	.Txt_miss {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		left: 218px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 63px;
+	}
+	.Txt_ion {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		left: 232px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 63px;
+	}
+	.Txt_duc {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		left: 269px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 63px;
+	}
+	.Txt_e {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		left: 281px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 63px;
+	}
+	.Txt_el {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		left: 289px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 63px;
+	}
+	.Txt_ecti {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		left: 294px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 63px;
+	}
+	.Txt_on2 {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		left: 306px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 63px;
+	}
+	.Txt_s2 {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		left: 314px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 63px;
+	}
+	.Txt_rom {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		left: 321px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 63px;
+	}
+	.Txt_hi {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		left: 339px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 63px;
+	}
+	.Txt_s3 {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		left: 345px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 63px;
+	}
+	.Txt_boo {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		left: 350px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 63px;
+	}
+	.Txt_k {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		left: 362px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 63px;
+	}
+	.quark {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		left: 366px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 63px;
+	}
+	.Txt_wr {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		left: 43px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 26px;
+	}
+	.Txt_it {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		left: 81px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 72px;
+	}
+	.Txt_e2 {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		left: 86px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 72px;
+	}
+	.Txt_er4 {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		left: 104px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 72px;
+	}
+	.Txt_miss2 {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		left: 110px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 72px;
+	}
+	.Txt_io {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		left: 124px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 72px;
+	}
+	.Txt_ns {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		left: 130px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 72px;
+	}
+	.Txt_Hou {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		left: 137px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 72px;
+	}
+	.Txt_gh {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		left: 155px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 72px;
+	}
+	.Txt_ton {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		left: 163px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 72px;
+	}
+	.Txt_iffl {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		left: 183px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 72px;
+	}
+	.Txt_i {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		left: 188px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 72px;
+	}
+	.Txt_n {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		left: 194px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 72px;
+	}
+	.Txt_ar {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		left: 207px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 72px;
+	}
+	.Txt_co {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		left: 213px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 72px;
+	}
+	.Txt_ur {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		left: 221px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 72px;
+	}
+	.Txt_t2 {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		left: 228px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 72px;
+	}
+	.Txt_ub {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		left: 237px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 72px;
+	}
+	.Txt_lishin {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		left: 245px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 72px;
+	}
+	.Txt_g {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		left: 263px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 72px;
+	}
+	.Txt_om {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		left: 274px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 72px;
+	}
+	.Txt_pa {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		left: 284px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 72px;
+	}
+	.Txt_ny {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		left: 292px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 72px;
+	}
+	.Txt_2 {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		left: 299px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 72px;
+	}
+	.Txt_1 {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		left: 307px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 72px;
+	}
+	.Txt_5 {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		left: 311px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 72px;
+	}
+	.Txt_ar2 {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		left: 321px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 72px;
+	}
+	.Txt_k2 {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		left: 327px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 72px;
+	}
+	.Txt_ve2 {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		left: 338px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 72px;
+	}
+	.Txt_nu {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		left: 344px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 72px;
+	}
+	.Txt_e3 {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		left: 353px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 72px;
+	}
+	.Txt_ou {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		left: 362px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 72px;
+	}
+	.Txt_th {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		left: 370px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 72px;
+	}
+	.put {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		left: 377px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 72px;
+	}
+	.Txt_Ne {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		left: 43px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 35px;
+	}
+	.Txt_w {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		left: 83px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 81px;
+	}
+	.Txt_ork {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		left: 94px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 81px;
+	}
+	.Txt_Ne2 {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		left: 105px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 81px;
+	}
+	.Txt_w2 {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		left: 118px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 81px;
+	}
+	.Txt_ork2 {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		left: 130px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 81px;
+	}
+	.Txt_000 {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		left: 146px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 81px;
+	}
+	.Txt_3 {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		left: 158px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 81px;
+	}
+	.Txt_Ho {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		left: 43px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 48px;
+	}
+	.Txt_ug {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		left: 83px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 99px;
+	}
+	.Txt_ht2 {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		left: 91px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 99px;
+	}
+	.Txt_on3 {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		left: 98px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 99px;
+	}
+	.Txt_iffl2 {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		left: 115px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 99px;
+	}
+	.Txt_i2 {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		left: 120px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 99px;
+	}
+	.Txt_n2 {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		left: 126px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 99px;
+	}
+	.Txt_oo {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		left: 138px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+	
+		top: 99px;
+	}
+	.Txt_k3 {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		left: 146px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 99px;
+	}
+	.Txt_s4 {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		left: 150px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 99px;
+	}
+	.Txt_or {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		left: 157px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 99px;
+	}
+	.Txt_hi2 {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		left: 171px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 99px;
+	}
+	.Txt_ld {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		left: 178px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 99px;
+	}
+	.Txt_ren {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		left: 184px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 99px;
+	}
+	.Txt_s5 {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		left: 198px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 99px;
+	}
+	.Txt_n3 {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		left: 206px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 99px;
+	}
+	.Txt_mp {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		left: 215px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 99px;
+	}
+	.Txt_rin {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		left: 225px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 99px;
+	}
+	.Txt_t3 {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		left: 234px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 99px;
+	}
+	.Txt_gh2 {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		left: 262px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 99px;
+	}
+	.Txt_ton2 {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		left: 270px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 99px;
+	}
+	.Txt_iffl3 {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		left: 290px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 99px;
+	}
+	.Txt_i3 {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		left: 294px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 99px;
+	}
+	.Txt_n4 {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		left: 301px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 99px;
+	}
+	.Txt_ar3 {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		left: 313px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 99px;
+	}
+	.Txt_co2 {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		left: 320px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 99px;
+	}
+	.Txt_ur2 {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		left: 327px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 99px;
+	}
+	.Txt_t4 {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		left: 334px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 99px;
+	}
+	.Txt_Pu {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		left: 43px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 57px;
+	}
+	.Txt_bl {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		left: 82px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 108px;
+	}
+	.Txt_ishin {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		left: 88px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 108px;
+	}
+	.Txt_g2 {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		left: 104px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 108px;
+	}
+	.Txt_om2 {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		left: 115px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 108px;
+	}
+	.Txt_pa2 {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		left: 125px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 108px;
+	}
+	.Txt_ny2 {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		left: 133px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 108px;
+	}
+	.what {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		left: 140px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 108px;
+	}
+	.Txt_www {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		left: 43px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 71px;
+	}
+	.Txt_h {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		left: 89px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 126px;
+	}
+	.Txt_mh {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		left: 96px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 126px;
+	}
+	.Txt_boo2 {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		left: 106px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 126px;
+	}
+	.Txt_k4 {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		left: 119px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 126px;
+	}
+	.Txt_s6 {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		left: 123px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 126px;
+	}
+	.Txt_co3 {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		left: 127px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 126px;
+	}
+	.Txt_m {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		left: 135px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 126px;
+	}
+	.Txt_Th {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		left: 43px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 86px;
+	}
+	.Txt_e4 {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		left: 81px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 144px;
+	}
+	.Txt_ex {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		left: 89px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 144px;
+	}
+	.Txt_t5 {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		left: 96px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 144px;
+	}
+	.Txt_hi3 {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		left: 112px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 144px;
+	}
+	.Txt_s7 {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		left: 118px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 144px;
+	}
+	.Txt_boo3 {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		left: 123px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 144px;
+	}
+	.Txt_k5 {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		left: 135px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 144px;
+	}
+	.Txt_s8 {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		left: 143px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 144px;
+	}
+	.Txt_e5 {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		left: 150px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 144px;
+	}
+	.Txt_t6 {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		left: 153px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 144px;
+	}
+	.Txt_n5 {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		left: 160px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 144px;
+	}
+	.Txt_Sh {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		left: 174px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 144px;
+	}
+	.Txt_an {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		left: 182px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 144px;
+	}
+	.Txt_non {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		left: 190px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 144px;
+	}
+	.Txt_aper {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		left: 366px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 153px;
+	}
+	.Txt_lor {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		left: 352px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 153px;
+	}
+	.Txt_co4 {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		left: 344px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 153px;
+	}
+	.Txt_ater {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		left: 333px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 153px;
+	}
+	.Txt_s9 {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		left: 323px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 153px;
+	}
+	.Txt_s10 {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		left: 320px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 153px;
+	}
+	.Txt_oldpre {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		left: 300px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 153px;
+	}
+	.Txt_s11 {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		left: 292px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 153px;
+	}
+	.Txt_he {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		left: 284px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 153px;
+	}
+	.Txt_rc {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		left: 278px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 153px;
+	}
+	.Txt_ou2 {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		left: 248px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 153px;
+	}
+	.Txt_-p {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		left: 242px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 153px;
+	}
+	.Txt_40 {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		left: 233px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 153px;
+	}
+	.Txt_e6 {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		left: 214px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 153px;
+	}
+	.Txt_ach {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		left: 203px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 153px;
+	}
+	.Txt_ou3 {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		left: 195px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 153px;
+	}
+	.Txt_nd2 {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		left: 181px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 153px;
+	}
+	.Txt_a2 {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		left: 176px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 153px;
+	}
+	.Txt_nk {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		left: 167px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 153px;
+	}
+	.Txt_nd3 {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		left: 155px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 153px;
+	}
+	.Txt_en {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		left: 142px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 153px;
+	}
+	.Txt_re2 {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		left: 130px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 153px;
+	}
+	.Txt_s12 {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		left: 122px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 153px;
+	}
+	.Txt_ion2 {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		left: 111px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 153px;
+	}
+	.Txt_at {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		left: 106px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 153px;
+	}
+	.Txt_tr {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		left: 100px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 153px;
+	}
+	.Txt_us {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		left: 93px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 153px;
+	}
+	.Txt_ll {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		left: 89px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 153px;
+	}
+	.Txt_e7 {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		left: 81px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 153px;
+	}
+	.Txt_Th2 {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		left: 43px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 94px;
+	}
+	.that {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		left: 380px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 153px;
+	}
+	.Txt_Li1 {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro Italic',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		font-style: italic;
+		left: 43px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 109px;
+	}
+	.Txt_brar {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro Italic',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		font-style: italic;
+		left: 80px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 171px;
+	}
+	.Txt_y {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro Italic',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		font-style: italic;
+		left: 92px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 171px;
+	}
+	.Txt_on4 {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro Italic',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		font-style: italic;
+		left: 110px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 171px;
+	}
+	.Txt_gr {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro Italic',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		font-style: italic;
+		left: 117px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 171px;
+	}
+	.Txt_es2 {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro Italic',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		font-style: italic;
+		left: 124px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 171px;
+	}
+	.Txt_s13 {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro Italic',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		font-style: italic;
+		left: 129px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 171px;
+	}
+	.Txt_ataloging-in-Publicatio {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro Italic',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		font-style: italic;
+		left: 139px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 171px;
+	}
+	.Txt_n6 {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro Italic',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		font-style: italic;
+		left: 210px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 171px;
+	}
+	.Txt_at2 {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro Italic',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		font-style: italic;
+		left: 222px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 171px;
+	}
+	.Txt_a3 {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro Italic',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		font-style: italic;
+		left: 228px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 171px;
+	}
+	.Txt_Du {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		left: 43px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 124px;
+	}
+	.Txt_nr {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		left: 84px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 189px;
+	}
+	.Txt_ea {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		left: 91px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 189px;
+	}
+	.Txt_O {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		left: 97px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 189px;
+	}
+	.Txt_li2 {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		left: 108px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 189px;
+	}
+	.Txt_vi2 {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		left: 112px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 189px;
+	}
+	.Txt_er5 {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		left: 118px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 189px;
+	}
+	.indd {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		left: 124px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 189px;
+	}
+	.Txt_O2 {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		left: 46px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 133px;
+	}
+	.Txt_ll2 {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		left: 83px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 198px;
+	}
+	.Txt_al {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		left: 106px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 198px;
+	}
+	.Txt_lowe {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		left: 111px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 198px;
+	}
+	.Txt_en2 {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		left: 126px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 198px;
+	}
+	.Txt_ri {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		left: 146px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 198px;
+	}
+	.Txt_tt {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		left: 150px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 198px;
+	}
+	.Txt_en3 {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		left: 156px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 198px;
+	}
+	.Txt_nd4 {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		left: 168px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 198px;
+	}
+	.Txt_ll3 {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		left: 181px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 198px;
+	}
+	.Txt_us2 {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		left: 185px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 198px;
+	}
+	.Txt_tr2 {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		left: 192px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 198px;
+	}
+	.Txt_ated {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		left: 198px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 198px;
+	}
+	.Txt_li3 {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		left: 229px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 198px;
+	}
+	.Txt_vi3 {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		left: 233px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 198px;
+	}
+	.Txt_er6 {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		left: 239px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 198px;
+	}
+	.Txt_un2 {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		left: 253px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 198px;
+	}
+	.Txt_re3 {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		left: 262px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 198px;
+	}
+	.Txt_a4 {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		left: 268px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 198px;
+	}
+	.Txt_p {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		left: 59px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 141px;
+	}
+	.Txt_m2 {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		left: 98px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 207px;
+	}
+	.Txt_S0 {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		left: 49px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 149px;
+	}
+	.Txt_umma {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		left: 81px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 216px;
+	}
+	.Txt_ry {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		left: 102px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 216px;
+	}
+	.Txt_ {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		left: 108px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 216px;
+	}
+	.Txt_sse {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		left: 125px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 216px;
+	}
+	.Txt_d2 {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		left: 134px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 216px;
+	}
+	.Txt_n7 {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		left: 142px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 216px;
+	}
+	.Txt_hei {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		left: 151px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 216px;
+	}
+	.Txt_r {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		left: 160px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 216px;
+	}
+	.Txt_os {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		left: 168px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 216px;
+	}
+	.Txt_tu {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		left: 175px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 216px;
+	}
+	.Txt_me {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		left: 182px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 216px;
+	}
+	.Txt_s15 {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		left: 192px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 216px;
+	}
+	.Txt_O3 {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		left: 194px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 216px;
+	}
+	.Txt_lli {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		left: 205px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 216px;
+	}
+	.Txt_e8 {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		left: 211px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 216px;
+	}
+	.Txt_nd5 {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		left: 220px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 216px;
+	}
+	.Txt_i4 {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		left: 235px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 216px;
+	}
+	.Txt_s16 {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		left: 237px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 216px;
+	}
+	.Txt_ling {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		left: 250px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 216px;
+	}
+	.Txt_s17 {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		left: 263px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 216px;
+	}
+	.Txt_o2 {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		left: 271px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 216px;
+	}
+	.Txt_al2 {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		left: 306px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 216px;
+	}
+	.Txt_lowe2 {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		left: 312px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 216px;
+	}
+	.Txt_en4 {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		left: 326px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 216px;
+	}
+	.Txt_ig2 {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		left: 340px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 216px;
+	}
+	.Txt_ht3 {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		left: 346px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 216px;
+	}
+	.Txt_nd6 {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		left: 358px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 216px;
+	}
+	.Txt_ave {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		left: 373px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 216px;
+	}
+	.Txt_a5 {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		left: 43px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 157px;
+	}
+	.Txt_car {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		left: 81px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 225px;
+	}
+	.Txt_y2 {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		left: 91px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 225px;
+	}
+	.Txt_u {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		left: 111px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 225px;
+	}
+	.Txt_n8 {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		left: 116px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 225px;
+	}
+	.Txt_dven {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		left: 125px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 225px;
+	}
+	.Txt_tu2 {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		left: 140px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 225px;
+	}
+	.Txt_re4 {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		left: 147px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 225px;
+	}
+	.dont {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		left: 153px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 225px;
+	}
+	.Txt_I {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		left: 49px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 167px;
+	}
+	.Txt_SBN {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		left: 80px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 234px;
+	}
+	.Txt_78 {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		left: 101px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 234px;
+	}
+	.Txt_-0-6 {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		left: 109px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 234px;
+	}
+	.Txt_18 {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		left: 123px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 234px;
+	}
+	.Txt_-5 {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		left: 131px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 234px;
+	}
+	.Txt_32 {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		left: 137px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 234px;
+	}
+	.Txt_41 {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		left: 145px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 234px;
+	}
+	.Txt_-4 {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		left: 152px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 234px;
+	}
+	.Txt_2 {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		left: 43px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 175px;
+	}
+	.Txt_12 {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		left: 77px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 243px;
+	}
+	.Txt_Sto {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		left: 81px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 243px;
+	}
+	.Txt_ri2 {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		left: 95px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 243px;
+	}
+	.Txt_e9 {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		left: 100px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 243px;
+	}
+	.Txt_s18 {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		left: 103px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 243px;
+	}
+	.Txt_n9 {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		left: 110px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 243px;
+	}
+	.Txt_me2 {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		left: 127px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 243px;
+	}
+	.Txt_G {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		left: 145px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 243px;
+	}
+	.Txt_eese {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		left: 155px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 243px;
+	}
+	.Txt_—F {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		left: 168px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 243px;
+	}
+	.Txt_ic {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		left: 180px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 243px;
+	}
+	.Txt_ti2 {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		left: 186px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 243px;
+	}
+	.Txt_on5 {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		left: 191px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 243px;
+	}
+	.Txt_32 {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		left: 199px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 243px;
+	}
+	.Txt_al3 {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		left: 217px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 243px;
+	}
+	.Txt_lowe3 {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		left: 223px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 243px;
+	}
+	.Txt_en5 {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		left: 238px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 243px;
+	}
+	.Txt_—F2 {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		left: 245px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 243px;
+	}
+	.Txt_ic2 {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		left: 258px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 243px;
+	}
+	.Txt_ti3 {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		left: 263px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 243px;
+	}
+	.Txt_on6 {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		left: 268px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 243px;
+	}
+	.so {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		left: 276px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 243px;
+	}
+	.Txt_3 {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		left: 278px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 243px;
+	}
+	.Txt_Tit {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		left: 287px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 243px;
+	}
+	.Txt_le {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		left: 301px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 243px;
+	}
+	.if {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		left: 306px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 243px;
+	}
+	.Txt_P2 {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		left: 49px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 185px;
+	}
+	.Txt_Z8 {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		left: 81px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 252px;
+	}
+	.Txt_33 {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		left: 91px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 252px;
+	}
+	.Txt_66O {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		left: 114px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 252px;
+	}
+	.Txt_l2 {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		left: 128px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 252px;
+	}
+	.Txt_012 {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		left: 136px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 252px;
+	}
+	.Txt_02 {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		left: 144px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 252px;
+	}
+	.Txt_4 {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		left: 49px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 195px;
+	}
+	.Txt_E {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		left: 80px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 261px;
+	}
+	.Txt_—d {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		left: 87px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 261px;
+	}
+	.Txt_c2 {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		left: 100px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 261px;
+	}
+	.Txt_22 {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		left: 107px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 261px;
+	}
+	.Txt_20 {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		left: 43px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 204px;
+	}
+	.Txt_09 {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		left: 81px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 270px;
+	}
+	.Txt_04 {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		left: 90px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 270px;
+	}
+	.Txt_96 {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		left: 98px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 270px;
+	}
+	.Txt_99 {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		left: 106px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 270px;
+	}
+	.Txt_E- {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		left: 43px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 217px;
+	}
+	.Txt_ISB {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		left: 80px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 288px;
+	}
+	.Txt_N {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		left: 92px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 288px;
+	}
+	.Txt_782 {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		left: 104px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 288px;
+	}
+	.Txt_-0 {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		left: 113px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 288px;
+	}
+	.Txt_-52 {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		left: 120px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 288px;
+	}
+	.Txt_47 {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		left: 126px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 288px;
+	}
+	.Txt_-7 {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		left: 134px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 288px;
+	}
+	.Txt_71 {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		left: 140px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 288px;
+	}
+	.Txt_10 {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		left: 148px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 288px;
+	}
+	.Txt_-6 {
+		color: #000000;
+		/*font-family: 'Adobe Garamond Pro',Arial,Helvetica,sans-serif;
+		font-size: 8px;*/
+		left: 156px;
+		line-height: 337.5%;
+		margin-bottom: 0;
+		padding-bottom: 2px;
+		padding-top: 1px;
+		position: absolute;
+		text-align: left;
+		top: 288px;
+	}
+
+#id_OLLIES_HALOWEEN_8-9_3_image {
+	margin-left: 0px;
+	margin-top: 0px;
+	display: inline;
+	float: left;
+	height: 445px;
+	margin-bottom: 0;
+	width: 425px;
+}
+.Txt_For {
+	/*font-family: 'MShannon-Regular', Arial, Helvetica, sans-serif;
+	font-size: 15px;*/
+	text-align: left;
+	color: #000;
+	line-height: 170.45%;
+	padding-bottom: 2px;
+	padding-top: 1px;
+	left: 30px;
+	position: absolute;
+	top: 50px;
+	margin-bottom: 0;
+}
+.Txt_ve {
+	/*font-family: 'MShannon-Regular', Arial, Helvetica, sans-serif;
+	font-size: 15px;*/
+	text-align: left;
+	color: #000;
+	line-height: 170.45%;
+	padding-bottom: 2px;
+	padding-top: 1px;
+	left: 136px;
+	position: absolute;
+	top: 86px;
+	margin-bottom: 0;
+}
+.Txt_in {
+	/*font-family: 'MShannon-Regular', Arial, Helvetica, sans-serif;
+	font-size: 15px;*/
+	text-align: left;
+	color: #000;
+	line-height: 170.45%;
+	padding-bottom: 2px;
+	padding-top: 1px;
+	left: 30px;
+	position: absolute;
+	top: 71px;
+	margin-bottom: 0;
+}
+.Txt_Johnny {
+	/*font-family: 'MShannon-Regular', Arial, Helvetica, sans-serif;
+	font-size: 15px;*/
+	text-align: left;
+	color: #000;
+	line-height: 170.45%;
+	padding-bottom: 2px;
+	padding-top: 1px;
+	left: 30px;
+	position: absolute;
+	top: 94px;
+	margin-bottom: 0;
+}
+.Txt_Peedie {
+	/*font-family: 'MShannon-Regular', Arial, Helvetica, sans-serif;
+	font-size: 15px;*/
+	text-align: left;
+	color: #000;
+	line-height: 170.45%;
+	padding-bottom: 2px;
+	padding-top: 1px;
+	left: 30px;
+	position: absolute;
+	top: 118px;
+	margin-bottom: 0;
+}
+
+</style>
+
+	<!--[if IE]>
+	<style type="text/css" media="all">.borderitem {border-style: solid;}</style>
+	<![endif]-->
+</head>
+
+<body>
+<!-- #Left Div -->
+<div class="Lside">
+    <div id="box2">
+        <img src="images/OLLIES_HALOWEEN_8-9_3_image.png" id="id_OLLIES_HALOWEEN_8-9_3_image" alt="" />
+            <div class="Txt_For">
+        
+            <p class="lastNode">For the five wee goblins
+        </p>
+        </div>
+        <div class="Txt_in">
+        
+            <p class="lastNode">in my life&mdash;
+        </p>
+        </div>
+        <div class="Txt_Johnny">
+        
+            <p class="lastNode">Johnny, Molly, Gabe,
+        </p>
+        </div>
+        <div class="Txt_Peedie">
+        
+            <p class="lastNode">Peedie, and Fergus
+        </p>
+        </div>
+    </div>
+</div>
+<div id="chk"></div>
+<div id="timeValue"></div>
+</body>
+</html>

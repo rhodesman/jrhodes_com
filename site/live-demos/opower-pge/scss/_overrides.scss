@@ -1,0 +1,10 @@
+
+
+// hack to fix the width transition 
+.reveal-modal {
+  @include transition-property(transform, opacity);
+}
+
+html, body {
+  height: auto !important;
+}

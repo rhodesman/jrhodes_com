@@ -1,0 +1,66 @@
+CACHE MANIFEST
+
+#version 1.0 8-20-2014
+
+CACHE:
+
+#images
+http://opower-pge.herokuapp.com/img/smart-purchases/bulb1.png
+http://opower-pge.herokuapp.com/img/smart-purchases/bulb2.png
+http://opower-pge.herokuapp.com/img/smart-purchases/bulb3.png
+http://opower-pge.herokuapp.com/img/smart-purchases/power1.png
+http://opower-pge.herokuapp.com/img/smart-purchases/power2.png
+http://opower-pge.herokuapp.com/img/smart-purchases/power3.png
+http://opower-pge.herokuapp.com/img/smart-purchases/thumb-honeywell1.png
+http://opower-pge.herokuapp.com/img/smart-purchases/thumb-lyric.png
+http://opower-pge.herokuapp.com/img/smart-purchases/thumb-nest.png
+http://opower-pge.herokuapp.com/img/smart-purchases/timer1.png
+http://opower-pge.herokuapp.com/img/smart-purchases/timer2.png
+http://opower-pge.herokuapp.com/img/smart-purchases/timer3.png
+http://opower-pge.herokuapp.com/img/smart-purchases/tiny-person.png
+http://opower-pge.herokuapp.com/img/smart-purchases/tube1.png
+http://opower-pge.herokuapp.com/img/smart-purchases/tube2.png
+http://opower-pge.herokuapp.com/img/smart-purchases/tube3.png
+
+#internal HTML documents
+http://opower-pge.herokuapp.com/ways-to-save-mobile.html
+
+#style sheets
+http://cdn.myfonts.net/widgets/webfont_preview_bar/webfont_preview_bar.css
+http://opower-pge.herokuapp.com/css/app.css
+
+#style sheet images
+'data:image/svg+xml;base64, PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgeD0iMHB4IiB5PSIwcHgiIHdpZHRoPSI2cHgiIGhlaWdodD0iM3B4IiB2aWV3Qm94PSIwIDAgNiAzIiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCA2IDMiIHhtbDpzcGFjZT0icHJlc2VydmUiPjxwb2x5Z29uIHBvaW50cz0iNS45OTIsMCAyLjk5MiwzIC0wLjAwOCwwICIvPjwvc3ZnPg=='
+http://opower-pge.herokuapp.com/img/custom-select.png
+http://opower-pge.herokuapp.com/img/marketplace/nest-banner.png
+http://opower-pge.herokuapp.com/img/marketplace/stars.png
+http://opower-pge.herokuapp.com/img/prog-complete.png
+http://opower-pge.herokuapp.com/img/prog-not-complete.png
+http://opower-pge.herokuapp.com/img/smart-purchases/fluorescent-tubes.png
+http://opower-pge.herokuapp.com/img/smart-purchases/rebate-catalog.png
+http://opower-pge.herokuapp.com/img/star-empty.png
+http://opower-pge.herokuapp.com/img/star-filled.png
+
+#javascript files
+http://easy.myfonts.net/v2/get?U4EE9fOUltGfcFAO3qaVrWXY&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cCo6Ly8qL3YyL2dldD9VNEVFOWZPVWx0R2ZjRkFPM3FhVnJXWFkiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE0MDg2NjMxNTh9fX1dfQ__&Signature=cDD29nsoB2~ebC7y64v6n66edvh8Y1iXfMIFjMgvIELZoJgxCQ7NFMgwsScxK4CZtk~D8pHDAo4uGU-aVVdo2aBTY2uVlmNw2kuOVKw1AaELVRvpmwd1uscD3RqLHWAL6pQZ-bGTuC-AdB533qz4aC-~YV4bdUaTdT3yN5qc-A8avzPHs15rfzXVGXMsSs4VGGxLSd~gCjV6xp7FBmehQRyUxubPH939JXzCD3BIwCqrXSEj-n1q1InrwSqhecmfn0cjbp96A2EeyKuCPgcr3mAr3tFtTTKoGdcgKlB9rvM9dVcSsciLE0DwFTNiZjn1GWv3YmJoNT4dqDU11YQcGA__&Key-Pair-Id=APKAJN6QFZEE4BZCL6XQ
+http://easy.myfonts.net/v2/js?sid=87244(font-family=DIN+Mittel+Regular)&sid=87246(font-family=DIN+Mittel+Bold)&sid=196376(font-family=DIN+Mittel+Medium)&key=WhMl3XTL37
+chrome-extension://jgghnecdoiloelcogfmgjgcacadpaejf/inject.js
+http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js
+http://opower-pge.herokuapp.com/js/vendor/angularjs-slider/rzslider.js
+http://opower-pge.herokuapp.com/scss/lib/zurb-foundation/js/foundation/foundation.js
+http://opower-pge.herokuapp.com/js/vendor/angular-route-min.js
+http://opower-pge.herokuapp.com/js/vendor/mm-foundation-tpls-0.3.0.min.js
+http://opower-pge.herokuapp.com/js/vendor/angular-animate.min.js
+http://opower-pge.herokuapp.com/js/vendor/lodash.js
+http://opower-pge.herokuapp.com/js/vendor/angularjs-dropdown-multiselect.js
+http://opower-pge.herokuapp.com/js/vendor/Chart.min.js
+http://opower-pge.herokuapp.com/js/vendor/tc-angular-chartjs.min.js
+http://opower-pge.herokuapp.com/js/vendor/raphael.js
+http://opower-pge.herokuapp.com/js/vendor/elroi.js
+http://opower-pge.herokuapp.com/js/vendor/d3.min.js
+http://opower-pge.herokuapp.com/js/vendor/angular-charts.js
+http://opower-pge.herokuapp.com/js/vendor/angular-count-to.min.js
+http://opower-pge.herokuapp.com/js/app.js
+
+NETWORK:
+*

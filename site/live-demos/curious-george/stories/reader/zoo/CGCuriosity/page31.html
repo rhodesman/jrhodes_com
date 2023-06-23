@@ -1,0 +1,306 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+ "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>
+    Untitled Document
+</title>
+<link href="skin/blue.monday/jplayer.blue.monday.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.jplayer.min.js"></script>
+<meta http-equiv="Content-Type" content="text/html;CHARSET=utf-8"/>
+<meta name="viewport" content="width=450,height=450" />
+
+<style type="text/css">
+ 
+    a:link {
+        color:blue;
+        text-decoration:underline;
+    }
+    a:active { color:red }
+    a:visited { color:purple }
+    
+  @font-face {
+  font-family: 'Adobe Garamond Semibold Italic';
+  src: url("font/AGARAMSI.TTF");
+  }
+@font-face {
+  font-family: 'CuriousGerogeheader-Medium';
+  src: url("font/CURIOUGM.TTF");
+  }
+@font-face {
+  font-family: 'New Century Schoolbook Italic';
+  src: url("font/NEWCENSI.TTF");
+  }
+@font-face {
+  font-family: 'New Century Schoolbook Roman';
+  src: url("font/NEWCENSR.TTF");
+  }
+@font-face {
+  font-family: 'OPTIMajerIrregular';
+  src: url("font/OPTIMAJI.TTF");
+  }
+
+body {
+   width: 450px;
+   height: 450px;
+   margin:0; 
+
+        background-color:white;
+        color:#393838;
+    }
+    .box1 {
+        background-color:white;
+        width:450px;
+        height:450px;
+    }
+    .box2 {
+        position:absolute;
+        left:0px;
+        top:0px;
+        background-color:#FFF9AB;
+        width:450px;
+        height:450px;
+    }
+    .box3 {
+        position:absolute;
+        left:573.74px;
+        top:530.079px;
+        width:113.755px;
+        height:151.248px;
+    }
+    .box4 {
+        position:absolute;
+        left:376.936px;
+        top:485.008px;
+        width:181.29px;
+        height:143.346px;
+    }
+    .box5 {
+        position:absolute;
+        left:65.936px;
+        top:17.008px;
+        width:300.871px;
+        height:195.591px;
+    }
+    .box6 {
+        position:absolute;
+        left:88.375px;
+        top:172.272px;
+        width:111.324px;
+        height:15.854px;
+    }
+    .box7 {
+        position:absolute;
+        left:307.016px;
+        top:109.646px;
+        width:43.359px;
+        height:20.854px;
+    }
+    .box11 {
+        position:absolute;
+        left:353.556px;
+        top:239.132px;
+        width:360.069px;
+        height:170.77px;
+    }
+    .box12 {
+        position:absolute;
+        left:31.746px;
+        top:233.466px;
+        width:293.708px;
+        height:144.141px;
+    }
+    .box13 {
+        position:absolute;
+        left:92.875px;
+        top:260.798px;
+        width:61.465px;
+        height:20.854px;
+    }
+    .box14 {
+        position:absolute;
+        left:251.145px;
+        top:261.737px;
+        width:61.18px;
+        height:16.854px;
+    }
+    .box18 {
+        position:absolute;
+        left:397.692px;
+        top:394px;
+        width:61.285px;
+        height:20.854px;
+    }
+    .box19 {
+        position:absolute;
+        left:597.838px;
+        top:393.646px;
+        width:61.18px;
+        height:20.854px;
+    }
+    .box20 {
+        position:absolute;
+        left:142.907px;
+        top:483.146px;
+        width:56.285px;
+        height:20.854px;
+    }
+    .box22 {
+        position:absolute;
+        left:596.513px;
+        top:152.499px;
+        width:47.918px;
+        height:20.854px;
+    }
+    .box24 {
+        position:absolute;
+        left:262.768px;
+        top:667.005px;
+        width:61.214px;
+        height:22.854px;
+    }
+    .box26 {
+        position:absolute;
+        left:591.11px;
+        top:675px;
+        width:61.393px;
+        height:19.854px;
+    }
+    .box27 {
+        position:absolute;
+        left:455.483px;
+        top:615.646px;
+        width:60.388px;
+        height:19.854px;
+    }
+    .box28 {
+        position:absolute;
+        left:413.858px;
+        top:56.693px;
+        width:152.131px;
+        height:102.047px;
+    }
+    .box29 {
+        position:absolute;
+        left:575.433px;
+        top:76.535px;
+        width:95.75px;
+        height:66.982px;
+    }
+    .box31 {
+        position:absolute;
+        left:481.482px;
+        top:151.703px;
+        width:50.054px;
+        height:20.854px;
+    }
+	
+	.stop,.go,.fast,.slow,.out,.in,.fat,.thin,.above,.below,.goodbye,.hello
+	{
+		position:absolute;
+		font-size:13px;
+	}
+	.stop
+	{
+		left: 77px;
+    	top: 101px;
+	}
+	
+	.go
+	{
+		left: 190px;
+    	top: 64px;
+	}
+	
+	.fast
+	{
+		left: 292px;
+    	top: 90px;
+	}
+	
+	.slow
+	{
+		left: 354px;
+    	top: 90px;
+	}
+	
+	.out
+	{
+		left: 66px;
+    	top: 152px;
+	}
+	.in
+	{
+		left: 160px;
+    	top: 152px;
+	}
+	.fat
+	{
+		left: 248px;
+    	top: 242px;
+	}
+	.thin
+	{
+		left: 360px;
+    	top: 242px;
+	}
+	
+	
+	.above
+	{
+		left: 87px;
+    	top: 297px;
+	}
+	.below
+	{
+		left: 164px;
+    	top: 408px;
+	}
+	.goodbye
+	{
+		left: 261px;
+    	top: 381px;
+	}
+	.hello
+	{
+		left: 356px;
+    	top: 412px;
+	}
+ 
+</style>
+</head>
+
+<body>
+
+    
+        
+        <div class="box1"><span id="t2240"><img src="images/29.jpg" alt="" width="425" height="445" /></span></div>
+        
+        
+        <div class="stop"><span id="w000373">stop</span></div>
+        <div class="go"><span id="w000374">go</span></div>
+        <div class="fast"><span id="w000375">fast</span></div>
+        <div class="slow"><span id="w000376">slow</span></div>
+        <div class="out"><span id="w000377">out</span></div>
+        <div class="in"><span id="w000378">in</span></div>
+        <div class="fat"><span id="w000379">fat</span></div>
+        <div class="thin"><span id="w000380">thin</span></div>
+        <div class="above"><span id="w000381">above</span></div>
+        <div class="below"><span id="w000382">below</span></div>
+        <div class="goodbye"><span id="w000383">goodbye</span></div>
+        <div class="hello"><span id="w000384">hello</span></div>
+        
+              
+        
+    
+    
+        
+        
+        
+
+
+<div id="chk"></div>
+<div id="timeValue"></div>
+</body>
+</html>

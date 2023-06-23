@@ -1,0 +1,43 @@
+<div class="thermostats" ng-controller="WaysToSaveCtrl">
+  <div class="section-head">
+    <div class="row">
+      <div class="large-9 columns">
+        <h1 class="section-heading">Ways to Save</h1>
+      </div>
+    </div>
+  </div>
+  <div class="row has-side-nav">
+    <div class="large-3 columns side-nav-container" ng-include="'partials/ways-to-save/_sidebar.html'"></div>
+    <div class="large-9 columns">
+      <div class="primary-content-container">
+        <div class="page-header">
+          <h2 class="page-heading">All tips to reduce your use</h2>
+          <div class="tip-targeting" ng-include="'partials/ways-to-save/_tip-targeting.html'"></div>
+          <div class="tip-filtering" ng-include="'partials/ways-to-save/_tip-filtering.html'"></div>
+        </div>
+
+        <ul class="tips">
+          <li ng-repeat="tip in tips">
+            <div class="tip" ng-class="{ 'tip-do-it' : tipDoIt , 'tip-done' : tipDone , 'tip-nothanks' : tipNoThanks }">
+              <span class="op-tooltip tip-do-it-tooltip">Great! Added to <a href="">My savings plan</a></span>
+              <span class="op-tooltip tip-done-tooltip">Amazing! You rock.</span>
+              <a href="" class="tip-link">
+                <img class="tip-image" src="/img/tips/{{ tip.img }}.jpg"></img>
+                <h4 class="tip-title">{{ tip.title }}</h4>
+              </a>
+              <p class="tip-completers">
+               {{ tip.completers }} people do this
+              </p>
+              <ul class="tip-actions button-group" ng-init=" tipDoIt = false ; tipDone = false ; tipNoThanks = false ">
+                <li><a href="" class="secondary button tiny" ng-click=" tipDoIt = !tipDoIt " ng-class="{ 'active' : tipDoIt }">I'll do it</a></li>
+                <li><a href="" class="secondary button tiny" ng-click=" tipDone = !tipDone " ng-class="{ 'active' : tipDone }">Already do it</a></li>
+                <li><a href="" class="secondary button tiny" ng-click=" tipNoThanks = !tipNoThanks" ng-class="{ 'active' : tipNoThanks }">No thanks</a></li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+
+      </div>
+    </div>
+  </div>
+</div>

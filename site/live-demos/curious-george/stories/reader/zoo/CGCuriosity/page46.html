@@ -1,0 +1,308 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+ "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>
+    Untitled Document
+</title>
+<link href="skin/blue.monday/jplayer.blue.monday.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.jplayer.min.js"></script>
+<meta http-equiv="Content-Type" content="text/html;CHARSET=utf-8"/>
+<meta name="viewport" content="width=450,height=450" />
+
+<style type="text/css">
+ 
+    a:link {
+        color:blue;
+        text-decoration:underline;
+    }
+    a:active { color:red }
+    a:visited { color:purple }
+    
+  @font-face {
+  font-family: 'Adobe Garamond Semibold Italic';
+  src: url("font/AGARAMSI.TTF");
+  }
+@font-face {
+  font-family: 'CuriousGerogeheader-Medium';
+  src: url("font/CURIOUGM.TTF");
+  }
+@font-face {
+  font-family: 'New Century Schoolbook Italic';
+  src: url("font/NEWCENSI.TTF");
+  }
+@font-face {
+  font-family: 'New Century Schoolbook Roman';
+  src: url("font/NEWCENSR.TTF");
+  }
+@font-face {
+  font-family: 'OPTIMajerIrregular';
+  src: url("font/OPTIMAJI.TTF");
+  }
+
+body {
+   width: 450px;
+   height: 450px;
+   margin:0; 
+
+        background-color:white;
+        color:#393838;
+    }
+	.text46 {
+        font-family:'OPTIMajerIrregular';
+        font-size:28px;
+        text-decoration:none;
+        color:#FFF676;
+    }
+    .box1 {
+        background-color:white;
+        width:450px;
+        height:450px;
+    }
+    .box2 {
+        position:absolute;
+        left:396.362px;
+        top:184.117px;
+        width:77.833px;
+        height:20.854px;
+    }
+    .box3 {
+        position:absolute;
+        left:285.416px;
+        top:81.784px;
+        width:39.881px;
+        height:20.854px;
+    }
+    .box4 {
+        position:absolute;
+        left:586.966px;
+        top:307.646px;
+        width:54.485px;
+        height:20.854px;
+    }
+    .box5 {
+        position:absolute;
+        left:543.5px;
+        top:206.339px;
+        width:54.578px;
+        height:20.854px;
+    }
+    .box6 {
+        position:absolute;
+        left:97.963px;
+        top:393.812px;
+        width:54.578px;
+        height:20.854px;
+    }
+    .box7 {
+        position:absolute;
+        left:538.078px;
+        top:557.421px;
+        width:54.578px;
+        height:20.854px;
+    }
+    .box8 {
+        position:absolute;
+        left:589px;
+        top:140.228px;
+        width:54.485px;
+        height:20.854px;
+    }
+    .box9 {
+        position:absolute;
+        left:0px;
+        top:0px;
+        background-color:white;
+        width:450px;
+        height:450px;
+    }
+ 
+  .TextDiv
+	{
+		font-size:13px;
+	}
+	
+	.sun
+	{
+	    left: 173.289px;
+    position: absolute;
+    top: 45.22px;
+	}
+	.mountains
+	{
+	       left: 231.289px;
+    position: absolute;
+    top: 102.22px;
+	}
+	.volcano
+	{ 
+	  left: 339.289px;
+    position: absolute;
+    top: 83.22px;
+	}
+	.valley
+	{
+	    left: 320.289px;
+    position: absolute;
+    top: 121.22px;
+	}
+	.river
+	{
+	    left: 341.289px;
+    position: absolute;
+    top: 187.22px;
+	}
+	.lake
+	{
+	    left: 84.289px;
+    position: absolute;
+    top: 243.22px;
+	}
+	.forest
+	{
+	     left: 313.289px;
+    position: absolute;
+    top: 336.22px;
+	}
+	
+	  .rbox1 {
+        background-color:white;
+        width:450px;
+        height:450px;
+    }
+    .rbox2 {
+        position:absolute;
+        left:0px;
+        top:0px;
+        background-color:white;
+        width:450px;
+        height:450px;
+    }
+    .rbox3 {
+        position:absolute;
+        left:510.304px;
+        top:65.867px;
+        width:54.578px;
+        height:20.854px;
+    }
+    .rbox4 {
+        position:absolute;
+        left:351px;
+        top:257.486px;
+        width:54.485px;
+        height:20.854px;
+    }
+    .rbox5 {
+        position:absolute;
+        left:296.982px;
+        top:137.702px;
+        width:54.326px;
+        height:20.854px;
+    }
+    .rbox6 {
+        position:absolute;
+        left:315px;
+        top:535.924px;
+        width:54.485px;
+        height:20.854px;
+    }
+    .rbox7 {
+	position:absolute;
+	left:16px;
+	top:19px;
+	padding:0px;
+	width:156px;
+	height:49px;
+    }
+  .TextDiv
+	{
+		font-size:13px;
+	}
+	
+	.stars
+	{
+	left: 181px;
+	position: absolute;
+	top: 83px;
+	color:#FFF;
+	}
+	.moon
+	{
+	left: 297px;
+	position: absolute;
+	top: 43px;
+	color:#FFF;
+	}
+	.ocean
+	{
+	left: 222px;
+	position: absolute;
+	top: 162px;
+	color:#FFF;
+	}
+	.desert
+	{
+	left: 186px;
+	position: absolute;
+	top: 328px;
+	}
+	
+	#Rside{
+		position:absolute;
+		left:425px;
+		top:0px;
+	}
+</style>
+</head>
+
+<body>
+
+    
+        
+        <div class="box1">
+           <span id="t0054"><img src="images/44.jpg" alt="" width="425" height="445" 
+             /></span></div>
+        
+        
+      
+     <div class="TextDiv">
+        	<div  class="sun"><span id="w000546">sun</span></div>
+            <div class="mountains"><span  id="w000547">mountains</span></div>
+            <div  class="volcano"><span  id="w000548">volcano</span></div>
+             <div  class="valley"><span  id="w000549">valley</span></div>
+              <div  class="river"><span  id="w000550">river</span></div>
+               <div  class="lake"><span  id="w000551">lake</span></div>
+               <div  class="forest"><span  id="w000552">forest</span></div>          
+              
+        </div>
+        
+    
+        
+        
+<div id="Rside">
+	
+<div class="rbox1">
+<span id="t0256"><img src="images/45.jpg" alt="" width="425" height="445"/></span></div>
+<div class="TextDiv">
+<div  class="stars"><span  id="w000555">stars</span></div>
+<div class="moon"><span  id="w000556">moon</span></div>
+<div  class="ocean"><span  id="w000554">ocean</span></div>
+<div  class="desert"><span  id="w000553">desert</span></div>
+</div>
+<div class="rbox7">
+<div class="pHeadparagraph">
+<span class="text46"><span  id="w000545">Your World</span> </span>
+</div>
+</div>
+
+</div>
+
+        
+        
+
+
+<div id="chk"></div>
+<div id="timeValue"></div>
+</body>
+</html>

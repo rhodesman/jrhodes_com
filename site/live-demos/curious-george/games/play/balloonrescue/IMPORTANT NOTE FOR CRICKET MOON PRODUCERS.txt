@@ -1,0 +1,11 @@
+IMPORTANT PRODUCER NOTE!
+
+In order for this HTML template to work when you copy it to a different server (like for posting for the client), you MUST update 2 lines at the end of the HTML file. 
+
+
+1)  Open the HTML file in a text editor
+
+2)  Scroll down to the bottom of the file
+
+3)  Note the hard-coded paths "http://dev.cricketmoonmedia.com/houghtonmifflin/balloonrescue/build/wrapper.swf" in lines 153 and 159.  Update BOTH to the location you are posting to, such as:
+"http://www.cricketmoonmedia.com/projecthoughtonmifflin/review/120915/balloonrescue/build/wrapper.swf"

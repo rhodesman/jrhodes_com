@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<smil xmlns="http://www.w3.org/ns/SMIL" version="3.0" profile="http://www.idpf.org/epub/30/profile/content/">
+<body>
+  
+  
+  <par>
+    <audio clipBegin="360.740418" clipEnd="361.391028" aText="meals" id="w000190"/>
+  </par>
+  <par>
+    <audio clipBegin="362.702958" clipEnd="363.506180" aText="brea fast" id="w000191"/>
+  </par>
+  <par>
+    <audio clipBegin="363.894404" clipEnd="364.839528" aText="pancales" id="w000192"/>
+  </par>
+  <par>
+    <audio clipBegin="365.265236" clipEnd="365.878362" aText="uice" id="w000193"/>
+  </par>
+  <par>
+    <audio clipBegin="366.464714" clipEnd="367.131389" aText="toast" id="w000194"/>
+  </par>
+  <par>
+    <audio clipBegin="367.656160" clipEnd="368.271964" aText="elly" id="w000195"/>
+  </par>
+  <par>
+    <audio clipBegin="368.935961" clipEnd="370.328212" aText="eggs" id="w000196"/>
+  </par>
+  <par>
+    <audio clipBegin="370.855662" clipEnd="371.567852" aText="cereal" id="w000197"/>
+  </par>
+  <par>
+    <audio clipBegin="372.472815" clipEnd="373.259973" aText="lunch" id="w000198"/>
+  </par>
+  <par>
+    <audio clipBegin="374.440709" clipEnd="374.978868" aText="apple" id="w000199"/>
+  </par>
+  <par>
+    <audio clipBegin="375.661607" clipEnd="376.577280" aText="sandwiches" id="w000200"/>
+  </par>
+  <par>
+    <audio clipBegin="377.072600" clipEnd="377.474211" aText="mil" id="w000201"/>
+  </par>
+  <par>
+    <audio clipBegin="378.199789" clipEnd="379.024430" aText="pizza" id="w000202"/>
+  </par>
+  <par>
+    <audio clipBegin="379.426041" clipEnd="380.416682" aText="veggies" id="w000203"/>
+  </par>
+  <par>
+    <audio clipBegin="380.620164" clipEnd="381.873191" aText="pottato chips" id="w000204"/>
+  </par>
+  <par>
+    <audio clipBegin="382.065964" clipEnd="383.136927" aText="carrot sticks" id="w000205"/>
+  </par>
+   <par>
+    <audio clipBegin="383.399313" clipEnd="384.154342" aText="snack" id="w000206"/>
+  </par>
+  <par>
+    <audio clipBegin="385.043241" clipEnd="385.744721" aText="cheese" id="w000207"/>
+  </par>
+  <par>
+    <audio clipBegin="385.744721" clipEnd="386.831748" aText="and crackers" id="w000208"/>
+  </par>
+  <par>
+    <audio clipBegin="387.254779" clipEnd="388.218645" aText="raisins" id="w000209"/>
+  </par>
+  <par>
+    <audio clipBegin="388.684514" clipEnd="389.385995" aText="grapes" id="w000210"/>
+  </par>
+  <par>
+    <audio clipBegin="389.942895" clipEnd="390.987084" aText="apple sauce" id="w000211"/>
+  </par>
+  <par>
+    <audio clipBegin="391.501146" clipEnd="392.175853" aText="cookies" id="w000212"/>
+  </par>
+  <par>
+    <audio clipBegin="392.989784" clipEnd="393.482427" aText="dinner" id="w000213"/>
+  </par>
+  <par>
+    <audio clipBegin="394.430229" clipEnd="394.997839" aText="ham" id="w000214"/>
+  </par>
+  <par>
+    <audio clipBegin="395.458353" clipEnd="396.325833" aText="potatoes" id="w000215"/>
+  </par>
+  <par>
+    <audio clipBegin="396.770283" clipEnd="397.610989" aText="veggies" id="w000216"/>
+  </par>
+  <par>
+    <audio clipBegin="398.146470" clipEnd="398.885434" aText="rolls" id="w000217"/>
+  </par>
+  <par>
+    <audio clipBegin="399.474464" clipEnd="400.015300" aText="fish" id="w000218"/>
+  </par>
+  <par>
+    <audio clipBegin="400.497233" clipEnd="401.204069" aText="salt" id="w000219"/>
+  </par>
+  <par>
+    <audio clipBegin="401.691357" clipEnd="402.258967" aText="pepper" id="w000220"/>
+  </par>
+  <par>
+    <audio clipBegin="402.660578" clipEnd="403.592316" aText="spaghetti" id="w000221"/>
+  </par>
+  <par>
+    <audio clipBegin="403.656573" clipEnd="403.908250" aText="and" id="w000222"/>
+  </par>
+  <par>
+    <audio clipBegin="403.881476" clipEnd="404.625795" aText="meat balls" id="w000223"/>
+  </par>
+  <par>
+    <audio clipBegin="405.097018" clipEnd="406.296497" aText="chicken fingers" id="w000224"/>
+  </par>
+  <par>
+    <audio clipBegin="406.773075" clipEnd="407.512039" aText="salad" id="w000225"/>
+  </par>
+  <par>
+    <audio clipBegin="408.497325" clipEnd="409.305902" aText="hamburger" id="w000226"/>
+  </par>
+  <par>
+    <audio clipBegin="409.354095" clipEnd="410.269768" aText="and fries" id="w000227"/>
+  </par>
+  <par>
+    <audio clipBegin="410.890927" clipEnd="411.704859" aText="dessert" id="w000228"/>
+  </par>
+  <par>
+    <audio clipBegin="412.636596" clipEnd="413.466592" aText="icecream" id="w000229"/>
+  </par>
+ 
+</body>
+</smil>

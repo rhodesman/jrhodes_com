@@ -1,0 +1,604 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+ "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>
+    
+</title>
+<link href="skin/blue.monday/jplayer.blue.monday.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.jplayer.min.js"></script>
+<meta http-equiv="Content-Type" content="text/html;CHARSET=utf-8"/>
+<meta name="viewport" content="width=576,height=576" />
+<style type="text/css">
+@font-face {
+    font-family: "AldusLTStd-Italic";
+    src: url("font/ALDULTSI.TTF");
+}
+@font-face {
+    font-family: "AldusLTStd-Roman";
+    src: url("font/ALDULTSR.TTF");
+}
+@font-face {
+    font-family: "HandleOldstyleStd";
+    src: url("font/HANDLEOS.TTF");
+}
+body {
+    background-color: #FFFFFF;
+    border-bottom-style: solid;
+    border-bottom-width: 0;
+    border-top-style: solid;
+    border-top-width: 0;
+    height: 576px;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+    width: 850px;
+	font-size:14px;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-weight: normal;
+}
+p {
+    margin-bottom: 1.1em;
+    margin-top: 0;
+}
+#Lside p.lastNode {
+    margin-bottom: 0;
+}
+a:link img, a:visited img {
+    -moz-border-bottom-colors: none;
+    -moz-border-image: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    border-bottom-color: -moz-use-text-color;
+    border-bottom-style: none;
+    border-bottom-width: medium;
+    border-top-color: -moz-use-text-color;
+    border-top-style: none;
+    border-top-width: medium;
+}
+div.clearFloat {
+    clear: both;
+    font-size: 0;
+    height: 0;
+    line-height: 0;
+}
+li.clearFloat {
+    clear: both;
+}
+ul.symbolList {
+    display: inline;
+    float: left;
+    list-style-type: none;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+}
+.AbsWrap {
+    position: relative;
+    width: 100%;
+}
+.rowWrap {
+    width: 100%;
+}
+#Lside {
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: auto;
+    margin-top: 0;
+    width: 425px;
+}
+.box1 {
+    height: 445px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 425px;
+}
+.Rside {
+    left: 425px;
+    position: absolute;
+    top: 0;
+}
+.box2 {
+    background-color: white;
+    height: 445px;
+    width: 425px;
+}
+#id_Text_8 {
+    display: inline;
+    float: left;
+    height: 445px;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-top: 0;
+    width: 425px;
+}
+#id_Text_9 {
+    display: inline;
+    float: left;
+    height: 445px;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-top: 0;
+    width: 425px;
+}
+.Txt_One {
+    color: #000000;
+    /*font-family: 'AldusLTStd-Roman',Arial,Helvetica,sans-serif;
+    font-size: 14px;*/
+    left: 70px;
+    line-height: 192.86%;
+    margin-bottom: 0;
+    padding-bottom: 2px;
+    padding-top: 1px;
+    position: absolute;
+    text-align: left;
+    top: 132px;
+}
+.rtyy {
+    color: #000000;
+    /*font-family: 'AldusLTStd-Roman',Arial,Helvetica,sans-serif;
+    font-size: 14px;*/
+    left: 319px;
+    line-height: 192.86%;
+    margin-bottom: 0;
+    padding-bottom: 2px;
+    padding-top: 1px;
+    position: absolute;
+    text-align: left;
+    top: 181px;
+}
+.Txt_Little {
+    color: #000000;
+    /*font-family: 'AldusLTStd-Roman',Arial,Helvetica,sans-serif;
+    font-size: 14px;*/
+    left: 70px;
+    line-height: 192.86%;
+    margin-bottom: 0;
+    padding-bottom: 2px;
+    padding-top: 1px;
+    position: absolute;
+    text-align: left;
+    top: 146px;
+}
+.Txt_T {
+    color: #000000;
+    /*font-family: 'AldusLTStd-Roman',Arial,Helvetica,sans-serif;
+    font-size: 14px;*/
+    left: 281px;
+    line-height: 192.86%;
+    margin-bottom: 0;
+    padding-bottom: 2px;
+    padding-top: 1px;
+    position: absolute;
+    text-align: left;
+    top: 196px;
+}
+.Txt_ake {
+    color: #000000;
+    /*font-family: 'AldusLTStd-Roman',Arial,Helvetica,sans-serif;
+    font-size: 14px;*/
+    left: 288px;
+    line-height: 192.86%;
+    margin-bottom: 0;
+    padding-bottom: 2px;
+    padding-top: 1px;
+    position: absolute;
+    text-align: left;
+    top: 196px;
+}
+.Txt_bottle {
+    color: #000000;
+    /*font-family: 'AldusLTStd-Roman',Arial,Helvetica,sans-serif;
+    font-size: 14px;*/
+    left: 70px;
+    line-height: 192.86%;
+    margin-bottom: 0;
+    padding-bottom: 2px;
+    padding-top: 1px;
+    position: absolute;
+    text-align: left;
+    top: 160px;
+}
+.tyu {
+    color: #000000;
+    /*font-family: 'AldusLTStd-Roman',Arial,Helvetica,sans-serif;
+    font-size: 14px;*/
+    left: 314px;
+    line-height: 192.86%;
+    margin-bottom: 0;
+    padding-bottom: 2px;
+    padding-top: 1px;
+    position: absolute;
+    text-align: left;
+    top: 211px;
+}
+.Txt_She {
+    color: #000000;
+    /*font-family: 'AldusLTStd-Roman',Arial,Helvetica,sans-serif;
+    font-size: 14px;*/
+    left: 321px;
+    line-height: 192.86%;
+    margin-bottom: 0;
+    padding-bottom: 2px;
+    padding-top: 1px;
+    position: absolute;
+    text-align: left;
+    top: 211px;
+}
+.Txt_and {
+    color: #000000;
+    /*font-family: 'AldusLTStd-Roman',Arial,Helvetica,sans-serif;
+    font-size: 14px;*/
+    left: 70px;
+    line-height: 192.86%;
+    margin-bottom: 0;
+    padding-bottom: 2px;
+    padding-top: 1px;
+    position: absolute;
+    text-align: left;
+    top: 174px;
+}
+.Txt_Go {
+    color: #000000;
+    /*font-family: 'AldusLTStd-Roman',Arial,Helvetica,sans-serif;
+    font-size: 14px;*/
+    left: 70px;
+    line-height: 192.86%;
+    margin-bottom: 0;
+    padding-bottom: 2px;
+    padding-top: 1px;
+    position: absolute;
+    text-align: left;
+    top: 188px;
+}
+.Txt_Don {
+    color: #000000;
+    /*font-family: 'AldusLTStd-Roman',Arial,Helvetica,sans-serif;
+    font-size: 14px;*/
+    left: 70px;
+    line-height: 192.86%;
+    margin-bottom: 0;
+    padding-bottom: 2px;
+    padding-top: 1px;
+    position: absolute;
+    text-align: left;
+    top: 202px;
+}
+.Txt_t {
+    color: #000000;
+    /*font-family: 'AldusLTStd-Roman',Arial,Helvetica,sans-serif;
+    font-size: 14px;*/
+    left: 166px;
+    line-height: 192.86%;
+    margin-bottom: 0;
+    padding-bottom: 2px;
+    padding-top: 1px;
+    position: absolute;
+    text-align: left;
+    top: 256px;
+}
+.Txt_y {
+    color: #000000;
+    /*font-family: 'AldusLTStd-Roman',Arial,Helvetica,sans-serif;
+    font-size: 14px;*/
+    left: 282px;
+    line-height: 192.86%;
+    margin-bottom: 0;
+    padding-bottom: 2px;
+    padding-top: 1px;
+    position: absolute;
+    text-align: left;
+    top: 256px;
+}
+.Txt_nor {
+    color: #000000;
+    /*font-family: 'AldusLTStd-Roman',Arial,Helvetica,sans-serif;
+    font-size: 14px;*/
+    left: 291px;
+    line-height: 192.86%;
+    margin-bottom: 0;
+    padding-bottom: 2px;
+    padding-top: 1px;
+    position: absolute;
+    text-align: left;
+    top: 256px;
+}
+.Txt_or {
+    color: #000000;
+    /*font-family: 'AldusLTStd-Roman',Arial,Helvetica,sans-serif;
+    font-size: 14px;*/
+    left: 343px;
+    line-height: 192.86%;
+    margin-bottom: 0;
+    padding-bottom: 2px;
+    padding-top: 1px;
+    position: absolute;
+    text-align: left;
+    top: 256px;
+}
+.saw {
+    color: #000000;
+    /*font-family: 'AldusLTStd-Roman',Arial,Helvetica,sans-serif;
+    font-size: 14px;*/
+    left: 253px;
+    line-height: 192.86%;
+    margin-bottom: 0;
+    padding-bottom: 2px;
+    padding-top: 1px;
+    position: absolute;
+    text-align: left;
+    top: 271px;
+}
+.Txt_and2 {
+    color: #000000;
+    /*font-family: 'AldusLTStd-Roman',Arial,Helvetica,sans-serif;
+    font-size: 14px;*/
+    left: 70px;
+    line-height: 192.86%;
+    margin-bottom: 0;
+    padding-bottom: 2px;
+    padding-top: 1px;
+    position: absolute;
+    text-align: left;
+    top: 217px;
+}
+.Txt_and3 {
+    color: #000000;
+    /*font-family: 'AldusLTStd-Roman',Arial,Helvetica,sans-serif;
+    font-size: 14px;*/
+    left: 256px;
+    line-height: 192.86%;
+    margin-bottom: 0;
+    padding-bottom: 2px;
+    padding-top: 1px;
+    position: absolute;
+    text-align: left;
+    top: 271px;
+}
+.Txt_Grandmother {
+    color: #000000;
+    /*font-family: 'AldusLTStd-Roman',Arial,Helvetica,sans-serif;
+    font-size: 14px;*/
+    left: 70px;
+    line-height: 192.86%;
+    margin-bottom: 0;
+    padding-bottom: 2px;
+    padding-top: 1px;
+    position: absolute;
+    text-align: left;
+    top: 232px;
+}
+.nf {
+    color: #000000;
+    /*font-family: 'AldusLTStd-Roman',Arial,Helvetica,sans-serif;
+    font-size: 14px;*/
+    left: 215px;
+    line-height: 192.86%;
+    margin-bottom: 0;
+    padding-bottom: 2px;
+    padding-top: 1px;
+    position: absolute;
+    text-align: left;
+    top: 286px;
+}
+.Txt_When {
+    color: #000000;
+    /*font-family: 'AldusLTStd-Roman',Arial,Helvetica,sans-serif;
+    font-size: 14px;*/
+    left: 221px;
+    line-height: 192.86%;
+    margin-bottom: 0;
+    padding-bottom: 2px;
+    padding-top: 1px;
+    position: absolute;
+    text-align: left;
+    top: 286px;
+}
+.et {
+    color: #000000;
+    /*font-family: 'AldusLTStd-Roman',Arial,Helvetica,sans-serif;
+    font-size: 14px;*/
+    left: 338px;
+    line-height: 192.86%;
+    margin-bottom: 0;
+    padding-bottom: 2px;
+    padding-top: 1px;
+    position: absolute;
+    text-align: left;
+    top: 286px;
+}
+.Txt_to {
+    color: #000000;
+    /*font-family: 'AldusLTStd-Roman',Arial,Helvetica,sans-serif;
+    font-size: 14px;*/
+    left: 70px;
+    line-height: 192.86%;
+    margin-bottom: 0;
+    padding-bottom: 2px;
+    padding-top: 1px;
+    position: absolute;
+    text-align: left;
+    top: 247px;
+}
+.e {
+    color: #000000;
+    /*font-family: 'AldusLTStd-Roman',Arial,Helvetica,sans-serif;
+    font-size: 14px;*/
+    left: 313px;
+    line-height: 192.86%;
+    margin-bottom: 0;
+    padding-bottom: 2px;
+    padding-top: 1px;
+    position: absolute;
+    text-align: left;
+    top: 301px;
+}
+.Txt_without {
+    color: #000000;
+    /*font-family: 'AldusLTStd-Roman',Arial,Helvetica,sans-serif;
+    font-size: 14px;*/
+    left: 316px;
+    line-height: 192.86%;
+    margin-bottom: 0;
+    padding-bottom: 2px;
+    padding-top: 1px;
+    position: absolute;
+    text-align: left;
+    top: 301px;
+}
+.gfg {
+    color: #000000;
+    /*font-family: 'AldusLTStd-Roman',Arial,Helvetica,sans-serif;
+    font-size: 14px;*/
+    left: 475px;
+    line-height: 192.86%;
+    margin-bottom: 0;
+    padding-bottom: 2px;
+    padding-top: 1px;
+    position: absolute;
+    text-align: left;
+    top: 301px;
+}
+.Txt_I {
+    color: #000000;
+    /*font-family: 'AldusLTStd-Roman',Arial,Helvetica,sans-serif;
+    font-size: 14px;*/
+    left: 70px;
+    line-height: 192.86%;
+    margin-bottom: 0;
+    padding-bottom: 2px;
+    padding-top: 1px;
+    position: absolute;
+    text-align: left;
+    top: 263px;
+}
+.fef {
+    color: #000000;
+    /*font-family: 'AldusLTStd-Roman',Arial,Helvetica,sans-serif;
+    font-size: 14px;*/
+    left: 294px;
+    line-height: 192.86%;
+    margin-bottom: 0;
+    padding-bottom: 2px;
+    padding-top: 1px;
+    position: absolute;
+    text-align: left;
+    top: 331px;
+}
+.Txt_Little2 {
+    color: #000000;
+    /*font-family: 'AldusLTStd-Roman',Arial,Helvetica,sans-serif;
+    font-size: 14px;*/
+    left: 70px;
+    line-height: 192.86%;
+    margin-bottom: 0;
+    padding-bottom: 2px;
+    padding-top: 1px;
+    position: absolute;
+    text-align: left;
+    top: 278px;
+}
+.sd {
+    color: #000000;
+    /*font-family: 'AldusLTStd-Roman',Arial,Helvetica,sans-serif;
+    font-size: 14px;*/
+    left: 397px;
+    line-height: 192.86%;
+    margin-bottom: 0;
+    padding-bottom: 2px;
+    padding-top: 1px;
+    position: absolute;
+    text-align: left;
+    top: 346px;
+}
+
+</style>
+</head>
+<body>
+      <div id="Lside">
+      	 <div class="box1">
+               <span id=""><img src="images/Text_8.jpg" id="id_Text_8" alt="" /></span>
+                 <div class="clearFloat"></div>
+                    <div class="Txt_One">
+                
+                    <p class="lastNode"><span id="w00046">One</span> <span id="w00047"> day</span> <span id="w00048"> her mother</span> <span id="w00049"> said</span> <span id="w00050"> to her,</span><span id="w00051">&ldquo;Come here,</span>
+                </p>
+            </div>
+            <div class="Txt_Little">
+                
+                    <p class="lastNode"><span id="w00052">Little Red</span> <span id="w00053"> Riding Hood!</span> <span id="w00054">Take this</span> <span id="w00055"> cake and</span> 
+                </p>
+            </div>
+            <div class="Txt_bottle">
+                
+                    <p class="lastNode"><span id="w00056"> bottle of</span> <span id="w00057"> wine</span> <span id="w00058"> to Grandmother.</span> <span id="w00059">She is</span> <span id="w00060"> weak and ill,</span>
+                </p>
+            </div>
+            <div class="Txt_and">
+                
+                    <p class="lastNode"><span id="w00061"> and they</span> <span id="w00062"> will</span> <span id="w00063"> do her</span> <span id="w00064"> good.</span>
+                </p>
+            </div>
+            <div class="Txt_Go">
+                
+                    <p class="lastNode"><span id="w00065">Go</span> <span id="w00066"> quickly</span> <span id="w00067"> before it</span> <span id="w00068"> gets</span> <span id="w00069"> too hot.</span>
+                </p>
+            </div>
+            <div class="Txt_Don">
+                
+                    <p class="lastNode"><span id="w00070">Don&rsquo;t</span> <span id="w00071"> loiter along the way,</span> <span id="w00072"> nor run,</span> <span id="w00073"> or</span> <span id="w00074"> you will</span> <span id="w00075"> fall</span>
+                </p>
+            </div>
+            <div class="Txt_and2">
+                
+                    <p class="lastNode"><span id="w00076">and</span> <span id="w00077"> break the bottle,</span> <span id="w00078"> and there will</span> <span id="w00079"> be no</span> <span id="w00080"> wine for </span> 
+                </p>
+            </div>
+            <div class="Txt_Grandmother">
+                
+                    <p class="lastNode"><span id="w00081">Grandmother.</span> <span id="w00082">When you</span> <span id="w00083"> get</span>  <span id="w00084">there,</span>  <span id="w00085"> don&rsquo;t</span>  <span id="w00086"> forget</span>
+                </p>
+            </div>
+            <div class="Txt_to">
+                
+                    <p class="lastNode"><span id="w00087"> to say</span> <span id="w00088"> &lsquo;Good morning&rsquo;</span> <span id="w00089"> prettily,</span> <span id="w00090"> without</span> <span id="w00091"> staring</span> <span id="w00092"> about you.&ldquo;</span>
+                </p>
+            </div>
+            <div class="Txt_I">
+                
+                    <p class="lastNode"><span id="w00093">&ldquo;I will</span> <span id="w00094"> do just</span> <span id="w00095"> as you</span> <span id="w00096">tell me,&rdquo;</span>
+                </p>
+            </div>
+            <div class="Txt_Little2">
+                
+                    <p class="lastNode"><span id="w00097">Little Red</span> <span id="w00098"> Riding Hood</span> <span id="w00099"> promised</span> <span id="w000100">her mother.</span>
+                </p>
+            </div>   
+         </div>
+     </div>
+<!--right side  -->
+    <div class="Rside">
+   		<div class="box2">
+           <span id=""><img src="images/Text_9.jpg" id="id_Text_9" alt="" /></span>
+                           
+        
+        </div>
+    </div>
+<div id="chk"></div>
+<div id="timeValue"></div>
+</body>
+</html>

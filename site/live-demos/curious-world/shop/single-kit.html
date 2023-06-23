@@ -1,0 +1,24 @@
+<div class="kit">
+  <!-- <a href="shop/#/{{\$index}}"></a> -->
+  <div class="kit-container">
+    <div class="image">
+      <a class="kit-link" href="shop/#/{{$index}}">
+        <img ng-src="{{kit.thumbnail}}" alt="">
+      </a>
+    </div>
+
+    <div class="domains">
+      <ul>
+        <li ng-repeat="domain in kit.domains"
+          ng-class="'domain-' + domain.name">
+          <span>{{domain.title}}</span>
+        </li>
+      </ul>
+    </div>
+    <div class="description">
+      <strong>{{kit.title}}</strong>
+      <div>{{kit.description}}</div>
+      <em>{{kit.price | currency: "$"}}</em>
+    </div>
+  </div>
+</div>

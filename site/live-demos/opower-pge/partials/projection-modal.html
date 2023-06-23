@@ -1,0 +1,77 @@
+<div class='projection-modal'>
+  <div class="modal-head">
+    <h3>About your projected bill</h3>
+  </div>
+  <div class="modal-body">
+    <div class="projection-warn">
+      <div class="geomicon-insight-warn"></div>
+      You are headed to a higher rate tier, and your bill is projected to be $382.00
+    </div>
+    <div class="projection-modal-graph">
+      <div class="tiers">
+        <div class="tier">
+          <div class="tier-description">
+            Tier 4
+            <div class="tier-cost">32&cent;</div>
+          </div>
+          <div class="tier-kwh">
+            675 kWh
+          </div>
+        </div>
+        <div class="tier">
+          <div class="tier-description">
+            Tier 3
+            <div class="tier-cost">26&cent;</div>
+          </div>
+          <div class="tier-kwh">
+            450
+          </div>
+        </div>
+        <div class="tier">
+          <div class="tier-description">
+            Tier 2
+            <div class="tier-cost">17&cent;</div>
+          </div>
+          <div class="tier-kwh">
+            293
+          </div>
+        </div>
+        <div class="tier">
+          <div class="tier-description">
+            Tier 1
+            <div class="tier-cost">15&cent;</div>
+          </div>
+          <div class="tier-kwh">
+            225
+          </div>
+        </div>
+      </div>
+      <div class="projection-bars" ng-class="{'ready-to-animate' : animationReady }">
+        <div class="projection-bar to-date">
+          <div class="projection-bar-label">
+          <div class="projection-bar-label">
+             <div class="label-title">Use-to-date</div>
+            <div class="label-datespan">Jul 15 - Aug 1</div>
+            <div class="label-cost">$110.75</div>
+          </div>
+          </div>
+        </div>
+        <div class="projection-bar projection">
+          <div class="projection-bar-label">
+            <div class="label-title">Projection</div>
+            <div class="label-datespan">For Aug 15</div>
+            <div class="label-cost">$382.00</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="projection-description">
+      <p>To estimate your bill, we calculate your cost so far in this billing period, apply that same pattern of consumption to the remaining days, and then adjust for the appropriate billing rate.</p>
+      <p class="aside">Note: your actual bill will vary based on usage, taxes, and fees.</p>
+    </div>
+  </div>
+  <div class="modal-actions">
+    <button class="button secondary" ng-click="cancel()">Close</button>
+  </div>
+  <a class="close-reveal-modal" ng-click="cancel()">&#215;</a>
+</div>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<smil xmlns="http://www.w3.org/ns/SMIL" version="3.0" profile="http://www.idpf.org/epub/30/profile/content/">
+<body>
+  <par>
+    <audio clipBegin="291.071613" clipEnd="292.506703" aText="home" id="w000143"/>
+  </par>
+  <par>
+    <audio clipBegin="293.342054" clipEnd="294.123857" aText="house" id="w000144"/>
+  </par>
+  <par>
+    <audio clipBegin="294.595081" clipEnd="295.596431" aText="tree" id="w000145"/>
+  </par>
+  <par>
+    <audio clipBegin="296.233654" clipEnd="296.967263" aText="igloo" id="w000146"/>
+  </par>
+  <par>
+    <audio clipBegin="297.567003" clipEnd="298.354160" aText="castle" id="w000147"/>
+  </par>
+  <par>
+    <audio clipBegin="298.862867" clipEnd="300.169442" aText="sy" id="w000148"/>
+  </par>
+  <par>
+    <audio clipBegin="300.742407" clipEnd="301.186857" aText="hut" id="w000149"/>
+  </par>
+  <par>
+    <audio clipBegin="302.102530" clipEnd="302.814720" aText="cabin" id="w000150"/>
+  </par>
+  <par>
+    <audio clipBegin="303.516201" clipEnd="304.271229" aText="tray" id="w000151"/>
+  </par>
+  <par>
+    <audio clipBegin="304.972710" clipEnd="305.711674" aText="peb" id="w000152"/>
+  </par>
+  <par>
+    <audio clipBegin="306.289994" clipEnd="307.055733" aText="house" id="w000153"/>
+  </par>
+  <par>
+    <audio clipBegin="307.757213" clipEnd="308.956691" aText="bird house" id="w000154"/>
+  </par>
+  <par>
+    <audio clipBegin="309.133400" clipEnd="310.022299" aText="apartment" id="w000155"/>
+  </par>
+ 
+
+</body>
+</smil>

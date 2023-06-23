@@ -1,0 +1,747 @@
+/**
+ * articles.less
+ * @description Styles for articles
+ * @author Sean Smith
+ */
+article {
+	overflow: hidden;
+	padding: 16px;
+	background: @white;
+	.centered;
+	.rounded-wrapper;
+	h1, h2 {
+		padding: 0;
+		margin: 0;
+		color: @dark-blue;
+	}
+	h2 {
+		min-height: 24px;
+		line-height: 24px;
+		font-size: 24px;
+	}
+	p { font-size: 12px }
+	& > h1 {
+		float: left;
+		width: 50%;
+		height: 50px;
+		a:hover { text-decoration: none; color: @light-blue }
+	}
+	.share {
+		float: right;
+		padding-top: 16px;
+		height: 32px;
+		color: @dark-blue;
+		font-weight: bold;
+		font-size: 1.1em;
+		line-height: 36px;
+		padding-right: 258px;
+		background: transparent url(../imgs/share-bar.png) scroll no-repeat 100% 100%;
+		a {
+			display: none;//inline-block;
+			width: 29px;
+			height: 32px;
+			background: transparent url(../imgs/share.png) scroll no-repeat 0 0;
+			.hidden-text;
+			&.facebook	{ background-position: 0 0 }
+			&.twitter	{ background-position: -30px 0 }
+			&.youtube	{ background-position: -60px 0 }
+		}
+	}
+	nav {
+		position: relative;
+		clear: both;
+		padding-top: 10px;
+		ul {
+			padding: 10px 0 !important;
+			height: 14px;
+			line-height: 20px;
+			font-size: 1.4em;
+			border: 1px dotted @dark-blue;
+			border-width: 1px 0;
+			li {
+				float: left;
+				padding-right: 10px;
+				height: 14px;
+				& + li {
+					padding-left: 10px;
+					border-left: 1px solid @dark-blue;
+				}
+				a {
+					position: relative;
+					top: -3px;
+					height: 20px;
+					font-weight: bold;
+					color: @dark-blue;
+					&:hover, &:active, &.active {
+						text-decoration: none;
+						color: @light-blue;
+					}
+				}
+			}
+		}
+		.account {
+			position: absolute;
+			right: 0;
+			bottom: 5px;
+			a {
+				display: inline-block;
+				width: 83px;
+				height: 27px;
+				background: transparent url(../imgs/buttons/login.png) scroll no-repeat 0 0;
+				.hidden-text;
+				&.login { background-position: 0% 0 }
+				&.register { background-position: 100% 0 }
+			}
+		}
+	}
+	.theme-related {
+		position: relative;
+		padding: 16px;
+		margin: 8px 0;
+		.rounded-wrapper;
+		& > strong {
+			display: block;
+			height: 26px;
+			font-size: 18px;
+			color: @white;
+		}
+		& > div {
+			strong {
+				display: block;
+				font-size: 16px;
+			}
+			a {
+				display: block;
+				height: 27px;
+				background: transparent none scroll no-repeat 50% 50%;
+				.hidden-text;
+			}
+		}
+	}
+	.content, .social {
+		float: left;
+		width: 100%;
+		padding: 10px 0;
+		border-top: 1px dotted @dark-blue;
+	}
+	.important-wrapper {
+		margin: 10px 0;
+		padding: 16px 0;
+		color: @white;
+		background: @blue;
+		.rounded-wrapper;
+		border-color: @dark-blue;
+		h2 { color: white }
+	}
+	.placeholder {
+		background: @light-blue;
+		border-color: @light-blue;
+		div {
+			padding: 16px;
+			min-height: 200px;
+			background: @white;
+			.border-radius(16px);
+		}
+	}
+	.merchandise {
+		/*min-height: 1300px;*/
+		overflow: hidden;
+		.border-radius(20px);
+		.selectors {
+			float: left;
+			width: 300px;
+			.selections {
+				float: left;
+				position: relative;
+				width: 100%;
+				padding: 0;
+				padding-left: 20px;
+				.border-radius(10px);
+			}
+			.filter-lists {
+				position: relative;
+				margin-top: 0;
+				background-color: @light-green;
+				min-height: 1025px;
+				h3 {
+					margin: 0;
+					padding-top: 20px;
+					font-size: 20pt;
+					color: white;
+				}
+				label {
+					display:  block;
+					margin-top: 10px;
+					color: #ffe500;
+					font-size: 12pt;
+				}
+				ul { width: 200px;
+					li { border-bottom: 1px dotted white;
+						a { color: white }
+					}
+				}
+			}
+		}
+		.results-list {
+			float: left;
+			position: relative;
+			left: 8px;
+			margin-left: -40px;
+			width: 536px;
+			/*height: 1164px;*/
+			padding: 20px;
+			border: 8px solid #009bce;
+			background-color: @white;
+			.border-radius(20px);
+		}
+	}
+	&.full-page 
+		& > h1 {
+			font-size: 66px;
+			line-height: 50px;
+			.FilmotypeMajor;
+		}
+		.theme-related {
+			min-height: 300px;
+			h2 {
+				line-height: 32px;
+				font-size: 46px;
+				padding-bottom: 16px;
+				.FilmotypeMajor;
+			}
+			h4 {
+				padding-bottom: 16px;
+				line-height: 32px;
+				font-size: 36px;
+				padding-bottom: 16px;
+				.FilmotypeMajor;
+			}
+			p + p { margin-top: 16px }
+		}
+		.content > div {
+			float: left;
+			width: 600px;
+			h2 {
+				margin-bottom: 8px;
+			}
+			& + div {
+				float: none;
+				padding-top: 36px;
+				margin-left: 520px;
+				width: auto;
+				span {
+					display: block;
+					margin-bottom: 16px;
+					width: 170px;
+					height: 104px;
+					background: @grey;
+				}
+				h2 {
+					font-size: 1.5em;
+				}
+			}
+			
+		}
+		.social > div {
+			float: left;
+			width: 50%;
+			h2 {
+				font-size: 1.4em;
+				height: 1.5em;
+			}
+			div {
+				padding: 50px 0;
+				width: 95%;
+				text-align: center;
+				color: @white;
+				background: @light-blue;
+				.border-radius(16px);
+			}
+			& + div div { background: @blue }
+		}
+	}
+	&#parents {
+		.theme-related {
+			padding-left: 340px;
+			border-color: @green;
+			.vertical-gradient(@light-green, @light-green, @dark-green);
+			& > div {
+				padding: 12px;
+				padding-left: 80px;
+				background: @white;
+				overflow: hidden;
+				.rounded-wrapper;
+				strong {
+					padding-top: 8px;
+					width: 250px;
+					color: @dark-blue;
+				}
+				ul {
+					width: 280px;
+					font-size: 14px;
+					li { margin: 4px 0 }
+				}
+				a {
+					float: right;
+					width: 117px;
+					background-image: url(../imgs/buttons/learn-more.png);
+				}
+			}
+			.george {
+				position: absolute;
+				left: 1px;
+				bottom: 0;
+				width: 405px;
+				height: 348px;
+				background: transparent url(../imgs/reading-to-george.png) scroll no-repeat 0 0;
+			}
+		}
+		.featured-products {
+			padding-top: 8px;
+			border-top: 1px dotted @dark-blue;
+			a {
+				display: block;
+				text-align: center;
+			}
+			ul {
+				padding: 16px 20px;
+				overflow: hidden;
+				.border-radius(16px);
+				li {
+					float: left;
+					width: 190px;
+					& + li { margin-left: 12px }
+					span {
+						display: block;
+						height: 170px;
+					}
+					strong {
+						display: block;
+						padding: 10px 0 4px;
+						font-size: 1.1em;
+						color: @dark-blue;
+					}
+				}
+			}
+		}
+		.links {
+			position: relative;
+			margin-top: -18px;
+			height: 167px;
+			a {
+				position: absolute;
+				top: 0;
+				display: block;
+				width: 445px;
+				height: 100%;
+				.hidden-text;
+				&.workbooks {
+					left: -4px;
+					background: transparent url(../imgs/buttons/workbooks.png) scroll no-repeat 50% 50%;
+				}
+				&.friends {
+					right: -15px;
+					background: transparent url(../imgs/buttons/meet-georges-friends.png) scroll no-repeat 50% 50%;
+				}
+			}
+		}
+	}
+	&#teachers {
+		.theme-related {
+			padding: 52px 520px 8px 36px;
+			color: @white;
+			border-color: @dark-blue;
+			.vertical-gradient(@light-blue, @light-blue, @dark-blue);
+			& > strong {
+				position: absolute;
+				top: 24px;
+				left: 36px;
+				font-size: 22px;
+				font-weight: normal;
+			}
+			h2 {
+				font-size: 60px;
+				height: 58px;
+				padding-top: 8px;
+				padding-bottom: 0;
+				color: @yellow;
+			}
+			& > div {
+				strong {
+					padding: 8px 0;
+					color: @yellow;
+				}
+				a {
+					margin-top: 16px;
+					width: 117px;
+					background-image: url(../imgs/buttons/learn-more.png);
+				}
+			}
+			.george {
+				position: absolute;
+				right: 8px;
+				bottom: 0;
+				width: 531px;
+				height: 352px;
+				background: transparent url(../imgs/first-day-of-school.png) scroll no-repeat 0 0;
+			}
+		}
+		.links {
+			position: relative;
+			margin: 16px 0;
+			height: 280px;
+			a {
+				position: absolute;
+				display: block;
+				width: 445px;
+				height: 150px;
+				.hidden-text;
+				&.resources {
+					top: -7px;
+					left: -7px;
+					background: transparent url(../imgs/buttons/classroom-resources.png) scroll no-repeat 50% 0%;
+				}
+				&.books {
+					top: -14px;
+					right: -14px;
+					background: transparent url(../imgs/buttons/books.png) scroll no-repeat 50% 0%;
+				}
+				&.workbooks {
+					bottom: -4px;
+					left: -4px;
+					background: transparent url(../imgs/buttons/workbooks.png) scroll no-repeat 50% 100%;
+				}
+				&.pre-k {
+					bottom: -11px;
+					right: -4px;
+					background: transparent url(../imgs/buttons/splash-into-pre-k.png) scroll no-repeat 50% 100%;
+				}
+			}
+		}
+	}
+	.important-wrapper {
+		& > h2 {
+			font-size: 52px;
+			line-height: 36px;
+			height: 40px;
+			text-indent: 16px;
+			padding-bottom: 8px;
+			.FilmotypeMajor;
+		}
+	}
+	&#parents-activities {
+		.important-wrapper {
+			background: @light-blue;
+			border-color: @light-blue;
+			.theme-related {
+				padding-left: 333px;
+				background: @light-green;
+				border-color: @green;
+				& > h3 {
+					position: absolute;
+					top: 0;
+					left: 0;
+					width: 554px;
+					height: 187px;
+					background: transparent url(../imgs/birthday-banner.png) scroll no-repeat 0 0;
+					.hidden-text;
+				}
+				.george {
+					position: absolute;
+					display: block;
+					bottom: -16px;
+					left: 100px;
+					width: 215px;
+					height: 314px;
+					background: transparent url(../imgs/george.png) scroll no-repeat 0 0;
+				}
+				& > div {
+					position: relative;
+					padding: 16px 32px;
+					color: @black;
+					background: @white;
+					z-index: 2;
+					.rounded-wrapper;
+					h4 { color: @green }
+					p {
+						padding-bottom: 16px;
+						font-size: 0.9em;
+						line-height: 1.2em;
+						a {
+							height: auto;
+							text-indent: 0;
+							font-weight: bold;
+						}
+					}
+				}
+			}
+			.more-activities {
+				padding: 4px 20px 32px;
+				color: @black;
+				background: @white;
+				overflow: hidden;
+				.border-radius(16px);
+				& > a {
+					display: block;
+					height: 2em;
+					line-height: 2em;
+					font-size: 1.4em;
+					color: @green;
+					border-bottom: 1px dotted @dark-blue;
+					strong {
+						position: relative;
+						display: block;
+						float: left;
+						padding-right: 24px;
+						&:after {
+							position: absolute;
+							top: -4px;
+							right: 0px;
+							display: block;
+							width: 19px;
+							height: 41px;
+							content: " ";
+							background: transparent url(../imgs/blue-arrow.png) scroll no-repeat 0% 50%;
+						}
+					}
+					&:hover { text-decoration: none }
+					&.is-open strong:after {
+						right: 2px;
+						background-position: 100% 50%;
+					}
+				}
+				& > div {
+					float: left;
+					margin-top: 16px;
+					width: 50%;
+					.box-sizing;
+					& + div {
+						padding-left: 20px;
+						border-left: 1px dotted @dark-blue;
+					}
+					h3 {
+						padding-bottom: 4px;
+						font-size: 1.8em;
+						color: @dark-blue;
+					}
+					ul { overflow: hidden;
+						li {
+							float: left;
+							width: 49%;
+							padding: 0 32px 8px 0;
+							.box-sizing;
+							strong {
+								font-size: 1.1em;
+								color: @dark-blue;
+							}
+							p { font-size: 0.85em }
+						}
+					}
+				}
+				.collapsed {
+					margin-top: -1px;
+					width: 100%;
+					color: @green;
+					font-weight: bold;
+					border-bottom: 1px dotted @dark-blue;
+					overflow: hidden;
+					li {
+						float: left;
+						padding: 16px 0;
+						width: 25%;
+						font-size: 1.3em;
+						line-height: 1.5em;
+					}
+				}
+			}
+		}
+	}
+	&#teachers-resources {
+		.important-wrapper {
+			background: @light-green;
+			border-color: @light-green;
+			.theme-related {
+				padding-right: 363px;
+				background: @light-blue;
+				border-color: @blue;
+				.george {
+					position: absolute;
+					display: block;
+					bottom: 0;
+					right: -5px;
+					width: 383px;
+					height: 366px;
+					background: transparent url(../imgs/man-teaching.png) scroll no-repeat 0 0;
+					z-index: 2;
+				}
+				& > div {
+					position: relative;
+					padding: 16px 32px;
+					color: @white;
+					background: @blue;
+					overflow: hidden;
+					.rounded-wrapper;
+					border-color: @blue;
+					h3 {
+						padding-bottom: 16px;
+						font-size: 36px;
+						line-height: 34px;
+						color: @yellow;
+						.FilmotypeMajor;
+					}
+					div {
+						float: left;
+						padding-right: 5%;
+						width: 50%;
+						& + div {
+							padding-right: 0;
+							width: 40%;
+						}
+						p { font-size: 12px;
+							a {
+								height: auto;
+								text-indent: 0;
+								font-weight: bold;
+								color: @yellow;
+							}
+						}
+					}
+				}
+			}
+			.more-activities {
+				padding: 4px 20px 32px;
+				color: @black;
+				background: @white;
+				overflow: hidden;
+				.border-radius(16px);
+				& > a {
+					display: block;
+					height: 2em;
+					line-height: 2em;
+					font-size: 1.4em;
+					color: @green;
+					border-bottom: 1px dotted @dark-blue;
+					strong {
+						position: relative;
+						display: block;
+						float: left;
+						padding-right: 24px;
+						&:after {
+							position: absolute;
+							top: -4px;
+							right: 0px;
+							display: block;
+							width: 19px;
+							height: 41px;
+							content: " ";
+							background: transparent url(../imgs/blue-arrow.png) scroll no-repeat 0% 50%;
+						}
+					}
+					&:hover { text-decoration: none }
+					&.is-open strong:after {
+						right: 2px;
+						background-position: 100% 50%;
+					}
+				}
+				& > div {
+					float: left;
+					margin-top: 16px;
+					width: 50%;
+					.box-sizing;
+					h3 {
+						padding-bottom: 4px;
+						font-size: 1.8em;
+						color: @dark-blue;
+					}
+					ul { overflow: hidden;
+						li {
+							float: left;
+							width: 49%;
+							padding: 0 32px 8px 0;
+							.box-sizing;
+							strong {
+								font-size: 1.1em;
+								color: @dark-blue;
+							}
+							p { font-size: 0.85em }
+						}
+					}
+					& + div {
+						width: 25%;
+						padding-left: 20px;
+						border-left: 1px dotted @dark-blue;
+						li {
+							width: 100%;
+						}
+					}
+				}
+				.collapsed {
+					margin-top: -1px;
+					width: 100%;
+					color: @green;
+					font-weight: bold;
+					border-bottom: 1px dotted @dark-blue;
+					overflow: hidden;
+					li {
+						float: left;
+						padding: 16px 0;
+						width: 25%;
+						font-size: 1.3em;
+						line-height: 1.5em;
+					}
+				}
+			}
+		}
+	}
+	&#parents-friends {
+		.important-wrapper {
+			background: @light-blue;
+			border-color: @light-blue;
+			& > ul {
+				padding: 24px;
+				color: @black;
+				background: @white;
+				.border-radius(16px);
+				& > li {
+					position: relative;
+					padding: 16px 0 16px 412px;
+					min-height: 180px;
+					& + li { border-top: 1px dotted @dark-blue }
+					h3 {
+						font-size: 1.5em;
+						color: @dark-blue;
+					}
+					img {
+						position: absolute;
+						left: 5px;
+						top: 16px;
+					}
+					.links {
+						height: 12px;
+						margin-top: 8px;
+						padding: 2px 0;
+						overflow: hidden;
+						li {
+							float: left;
+							height: 12px;
+							padding-right: 12px;
+							& + li {
+								padding-left: 12px;
+								border-left: 1px solid @black;
+							}
+							a {
+								position: relative;
+								top: -2px;
+								height: 16px;
+								line-height: 16px;
+								font-size: 1.3em;
+								font-weight: bold;
+								color: @light-blue;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

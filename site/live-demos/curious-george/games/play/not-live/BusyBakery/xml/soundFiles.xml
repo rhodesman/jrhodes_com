@@ -1,0 +1,414 @@
+<data dir="mp3/">
+	<music channel="music" volume="50">
+		<sound file="music1" volume="40" inLibrary="true" />
+		<sound file="music2" volume="40" inLibrary="true" />
+		<sound file="introLoop" volume="40" inLibrary="true" />
+		<sound file="sting1" volume="50" loops="1" inLibrary="true" />
+	</music>
+	
+	<sfx channel="sfx" volume="50">
+		<sound file="click1" volume="20" inLibrary="true" />
+		<sound file="click2" volume="20" inLibrary="true" />
+		<sound file="ro1" volume="30" inLibrary="true" />
+		<sound file="ro2" volume="20" inLibrary="true" />\
+		<sound file="ro10" volume="15" inLibrary="true" />
+		<sound file="ro11" volume="15" inLibrary="true" />
+		<sound file="ro12" volume="15" inLibrary="true" />
+		<sound file="click10" volume="15" inLibrary="true" />
+		<sound file="click11" volume="15" inLibrary="true" />
+		<sound file="click12" volume="15" inLibrary="true" />
+
+		<sound file="drop1" volume="20" inLibrary="true" />
+		<sound file="drop2" volume="20" inLibrary="true" />
+		<sound file="drop3" volume="20" inLibrary="true" />
+		<sound file="drop4" volume="20" inLibrary="true" />
+		<sound file="drop5" volume="20" inLibrary="true" />
+		<sound file="drop6" volume="20" inLibrary="true" />
+		<sound file="drop7" volume="20" inLibrary="true" />
+		<sound file="bell" volume="50" inLibrary="true" />
+		<sound file="oven" volume="50" inLibrary="true" />
+		<sound file="spoon" volume="60" inLibrary="true" />
+		<sound file="baked" volume="60" inLibrary="true" />
+		<sound file="trayCA" volume="50" inLibrary="true" />
+		<sound file="timerBell" volume="60" inLibrary="true" />
+		<sound file="timerLoop" volume="30" loops="99999" inLibrary="true" />
+		<sound file="cardUp" volume="40" inLibrary="true" />
+		<sound file="cardOut" volume="40" inLibrary="true" />
+		<sound file="ingredHilite1" volume="60" inLibrary="true" />
+		<sound file="ingredHilite2" volume="60" inLibrary="true" />
+		<sound file="ingredHilite3" volume="60" inLibrary="true" />
+
+		<sound file="fling1" volume="50" inLibrary="true" />
+		<sound file="fling2" volume="50" inLibrary="true" />
+		<sound file="fling3" volume="50" inLibrary="true" />
+		<sound file="fling4" volume="50" inLibrary="true" />
+		<sound file="fling5" volume="50" inLibrary="true" />
+
+		<sound file="vanillaPickup" volume="50" inLibrary="true"/>
+		<sound file="vanillaDump1" volume="70" inLibrary="true" />
+		<sound file="vanillaDump2" volume="70" inLibrary="true" />
+		<sound file="vanillaDump3" volume="70" inLibrary="true" />
+		<sound file="vanillaDump4" volume="70" inLibrary="true" />
+		<sound file="vanillaDump5" volume="70" inLibrary="true" />
+		<sound file="vanillaDump6" volume="70" inLibrary="true" />
+		<sound file="vanillaDump7" volume="70" inLibrary="true" />
+		<sound file="vanillaDump8" volume="70" inLibrary="true" />
+		<sound file="vanillaDump9" volume="70" inLibrary="true" />
+		<sound file="vanillaDump10" volume="70" inLibrary="true" />
+
+		<sound file="butterPickup" volume="50" inLibrary="true" />
+		<sound file="butterDump1" volume="70" inLibrary="true" />
+		<sound file="butterDump2" volume="70" inLibrary="true" />
+		<sound file="butterDump3" volume="70" inLibrary="true" />
+		<sound file="butterDump4" volume="70" inLibrary="true" />
+		<sound file="butterDump5" volume="70" inLibrary="true" />
+		<sound file="butterDump6" volume="70" inLibrary="true" />
+		<sound file="butterDump7" volume="70" inLibrary="true" />
+		<sound file="butterDump8" volume="70" inLibrary="true" />
+		<sound file="butterDump9" volume="70" inLibrary="true" />
+		<sound file="butterDump10" volume="70" inLibrary="true" />
+
+		<sound file="eggPickup1" volume="50" inLibrary="true" />
+		<sound file="eggPickup2" volume="50" inLibrary="true" />
+		<sound file="eggPickup3" volume="50" inLibrary="true" />
+		<sound file="eggPickup4" volume="50" inLibrary="true" />
+		<sound file="eggPickup5" volume="50" inLibrary="true" />
+		<sound file="eggPickup6" volume="50" inLibrary="true" />
+		<sound file="eggPickup7" volume="50" inLibrary="true" />
+		<sound file="eggPickup8" volume="50" inLibrary="true" />
+		<sound file="eggPickup9" volume="50" inLibrary="true" />
+		<sound file="eggPickup10" volume="50" inLibrary="true" />
+		<sound file="eggDump1" volume="70" inLibrary="true" />
+		<sound file="eggDump2" volume="70" inLibrary="true" />
+		<sound file="eggDump3" volume="70" inLibrary="true" />
+		<sound file="eggDump4" volume="70" inLibrary="true" />
+		<sound file="eggDump5" volume="70" inLibrary="true" />
+		<sound file="eggDump6" volume="70" inLibrary="true" />
+		<sound file="eggDump7" volume="70" inLibrary="true" />
+		<sound file="eggDump8" volume="70" inLibrary="true" />
+		<sound file="eggDump9" volume="70" inLibrary="true" />
+		<sound file="eggDump10" volume="70" inLibrary="true" />
+
+		<sound file="flourPickup" volume="50" inLibrary="true" />
+		<sound file="flourDump1" volume="70" inLibrary="true" />
+		<sound file="flourDump2" volume="70" inLibrary="true" />
+		<sound file="flourDump3" volume="70" inLibrary="true" />
+		<sound file="flourDump4" volume="70" inLibrary="true" />
+		<sound file="flourDump5" volume="70" inLibrary="true" />
+		<sound file="flourDump6" volume="70" inLibrary="true" />
+		<sound file="flourDump7" volume="70" inLibrary="true" />
+		<sound file="flourDump8" volume="70" inLibrary="true" />
+		<sound file="flourDump9" volume="70" inLibrary="true" />
+		<sound file="flourDump10" volume="70" inLibrary="true" />
+
+		<sound file="sugarPickup" volume="50" inLibrary="true" />
+		<sound file="sugarDump1" volume="70" inLibrary="true" />
+		<sound file="sugarDump2" volume="70" inLibrary="true" />
+		<sound file="sugarDump3" volume="70" inLibrary="true" />
+		<sound file="sugarDump4" volume="70" inLibrary="true" />
+		<sound file="sugarDump5" volume="70" inLibrary="true" />
+		<sound file="sugarDump6" volume="70" inLibrary="true" />
+		<sound file="sugarDump7" volume="70" inLibrary="true" />
+		<sound file="sugarDump8" volume="70" inLibrary="true" />
+		<sound file="sugarDump9" volume="70" inLibrary="true" />
+		<sound file="sugarDump10" volume="70" inLibrary="true" />
+
+		<sound file="milkPickup" volume="50" inLibrary="true" />
+		<sound file="milkDump1" volume="70" inLibrary="true" />
+		<sound file="milkDump2" volume="70" inLibrary="true" />
+		<sound file="milkDump3" volume="70" inLibrary="true" />
+		<sound file="milkDump4" volume="70" inLibrary="true" />
+		<sound file="milkDump5" volume="70" inLibrary="true" />
+		<sound file="milkDump6" volume="70" inLibrary="true" />
+		<sound file="milkDump7" volume="70" inLibrary="true" />
+		<sound file="milkDump8" volume="70" inLibrary="true" />
+		<sound file="milkDump9" volume="70" inLibrary="true" />
+		<sound file="milkDump10" volume="70" inLibrary="true" />
+
+		<sound file="mixingLoop" volume="100" loops="99999" inLibrary="true" />
+		<sound file="mix1" volume="100" id="mix" inLibrary="true" />
+		<sound file="mix2" volume="100" id="mix" inLibrary="true" />
+		<sound file="mix3" volume="100" id="mix" inLibrary="true" />
+		<sound file="mix4" volume="100" id="mix" inLibrary="true" />
+		<sound file="mix5" volume="100" id="mix" inLibrary="true" />
+		<sound file="mix6" volume="100" id="mix" inLibrary="true" />
+		<sound file="mix7" volume="100" id="mix" inLibrary="true" />
+		<sound file="mix8" volume="100" id="mix" inLibrary="true" />
+		<sound file="mix9" volume="100" id="mix" inLibrary="true" />
+		<sound file="mix10" volume="100" id="mix" inLibrary="true" />
+		<sound file="mix11" volume="100" id="mix" inLibrary="true" />
+		<sound file="mix12" volume="100" id="mix" inLibrary="true" />
+		<sound file="mix13" volume="100" id="mix" inLibrary="true" />
+		<sound file="mix14" volume="100" id="mix" inLibrary="true" />
+		<sound file="mix15" volume="100" id="mix" inLibrary="true" />
+		<sound file="mix16" volume="100" id="mix" inLibrary="true" />
+		<sound file="mix17" volume="100" id="mix" inLibrary="true" />
+		<sound file="mix18" volume="100" id="mix" inLibrary="true" />
+
+		<sound file="catch2" volume="70" inLibrary="true" />
+		<sound file="catch3" volume="70" inLibrary="true" />
+		<sound file="catch4" volume="70" inLibrary="true" />
+		<sound file="catch5" volume="70" inLibrary="true" />
+		<sound file="catch6" volume="70" inLibrary="true" />
+		<sound file="catch7" volume="70" inLibrary="true" />
+		<sound file="catch8" volume="70" inLibrary="true" />
+		<sound file="catch9" volume="70" inLibrary="true" />
+		<sound file="catch10" volume="70" inLibrary="true" />
+
+		<sound file="bowlCA" volume="80" inLibrary="true" />
+		<sound file="bowlWA" volume="60" inLibrary="true" />
+		<sound file="roBowl1" volume="20" inLibrary="true" />
+		<sound file="roBowl2" volume="20" inLibrary="true" />
+		<sound file="roBowl3" volume="20" inLibrary="true" />
+		<sound file="roBowl4" volume="20" inLibrary="true" />
+		<sound file="roBowl5" volume="20" inLibrary="true" />
+		<sound file="roBowl6" volume="20" inLibrary="true" />
+		<sound file="roBowl7" volume="20" inLibrary="true" />
+		<sound file="roBowl8" volume="20" inLibrary="true" />
+		<sound file="roBowl9" volume="20" inLibrary="true" />
+		<sound file="roBowl10" volume="20" inLibrary="true" />
+	</sfx>
+	
+	<vo channel="vo" volume="50">
+		
+		<sound volume="100" inLibrary="false" file="CGBB_1.mp3" id="titleintro" />
+		<sound volume="100" inLibrary="false" file="CGBB_2.mp3" id="titleintro" />
+		<sound volume="100" inLibrary="false" file="CGBB_3.mp3" id="roplay" />
+		
+		<sound volume="100" inLibrary="false" file="CGBB_8.mp3" id="bowlchallenge1" />
+		<sound volume="100" inLibrary="false" file="CGBB_9.mp3" id="bowlchallenge2" />
+		<sound volume="100" inLibrary="false" file="CGBB_10.mp3" id="bowlchallenge3" />
+		<sound volume="100" inLibrary="false" file="CGBB_11.mp3" id="bowlprompt" />
+		<sound volume="100" inLibrary="false" file="CGBB_12.mp3" id="bowlnum1" />
+		<sound volume="100" inLibrary="false" file="CGBB_13.mp3" id="bowlnum2" />
+		<sound volume="100" inLibrary="false" file="CGBB_14.mp3" id="bowlnum3" />
+		<sound volume="100" inLibrary="false" file="CGBB_15.mp3" id="bowlnum4" />
+		<sound volume="100" inLibrary="false" file="CGBB_16.mp3" id="bowlnum5" />
+		<sound volume="100" inLibrary="false" file="CGBB_17.mp3" id="bowlnum6" />
+		<sound volume="100" inLibrary="false" file="CGBB_18.mp3" id="bowlnum7" />
+		<sound volume="100" inLibrary="false" file="CGBB_19.mp3" id="bowlnum8" />
+		<sound volume="100" inLibrary="false" file="CGBB_20.mp3" id="bowlnum9" />
+		<sound volume="100" inLibrary="false" file="CGBB_21.mp3" id="bowlnum10" />
+		
+		<sound volume="100" inLibrary="false" file="CGBB_21a.mp3" id="bowlbig1" />
+		<sound volume="100" inLibrary="false" file="CGBB_21b.mp3" id="bowlbig2" />
+		<sound volume="100" inLibrary="false" file="CGBB_21c.mp3" id="bowlbig3" />
+		<sound volume="100" inLibrary="false" file="CGBB_21d.mp3" id="bowlbig4" />
+		<sound volume="100" inLibrary="false" file="CGBB_21e.mp3" id="bowlbig5" />
+		<sound volume="100" inLibrary="false" file="CGBB_21f.mp3" id="bowlbig6" />
+		<sound volume="100" inLibrary="false" file="CGBB_21g.mp3" id="bowlbig7" />
+		<sound volume="100" inLibrary="false" file="CGBB_21h.mp3" id="bowlbig8" />
+		<sound volume="100" inLibrary="false" file="CGBB_21i.mp3" id="bowlbig9" />
+		<sound volume="100" inLibrary="false" file="CGBB_21j.mp3" id="bowlbig10" />
+		
+		<sound volume="100" inLibrary="false" file="CGBB_23.mp3" id="bowlnumq2" />
+		<sound volume="100" inLibrary="false" file="CGBB_24.mp3" id="bowlnumq3" />
+		<sound volume="100" inLibrary="false" file="CGBB_25.mp3" id="bowlnumq4" />
+		<sound volume="100" inLibrary="false" file="CGBB_26.mp3" id="bowlnumq5" />
+		<sound volume="100" inLibrary="false" file="CGBB_27.mp3" id="bowlnumq6" />
+		<sound volume="100" inLibrary="false" file="CGBB_28.mp3" id="bowlnumq7" />
+		<sound volume="100" inLibrary="false" file="CGBB_29.mp3" id="bowlnumq8" />
+		<sound volume="100" inLibrary="false" file="CGBB_30.mp3" id="bowlnumq9" />
+		<sound volume="100" inLibrary="false" file="CGBB_31.mp3" id="bowlnumq10" />
+		<sound volume="100" inLibrary="false" file="CGBB_32.mp3" id="bowlwrong1a" />
+		<sound volume="100" inLibrary="false" file="CGBB_33.mp3" id="bowlwrong2a" />
+		<sound volume="100" inLibrary="false" file="CGBB_34.mp3" id="bowlwrong1b" />
+		<sound volume="100" inLibrary="false" file="CGBB_35.mp3" id="bowlwrong2b" />
+		<sound volume="100" inLibrary="false" file="CGBB_36.mp3" id="bowlwrong1c" />
+		<sound volume="100" inLibrary="false" file="CGBB_37.mp3" id="bowlwrong1d" />
+<!--		<sound volume="100" inLibrary="false" file="CGBB_38.mp3" id="bowlwrong2c" />-->
+		<sound volume="100" inLibrary="false" file="CGBB_39.mp3" id="bowlright1" />
+		<sound volume="100" inLibrary="false" file="CGBB_40.mp3" id="bowlright2" />
+		<sound volume="100" inLibrary="false" file="CGBB_41.mp3" id="bowlright3" />
+		<sound volume="100" inLibrary="false" file="CGBB_42.mp3" id="bowlright4" />
+		
+		<sound volume="100" inLibrary="false" file="CGBB_44.mp3" id="" />
+		<sound volume="100" inLibrary="false" file="CGBB_45.mp3" id="" />
+		<sound volume="100" inLibrary="false" file="CGBB_46.mp3" id="countdelay" />
+		<sound volume="100" inLibrary="false" file="CGBB_47.mp3" id="count1" />
+		<sound volume="100" inLibrary="false" file="CGBB_48.mp3" id="count2" />
+		<sound volume="100" inLibrary="false" file="CGBB_49.mp3" id="count3" />
+		<sound volume="100" inLibrary="false" file="CGBB_50.mp3" id="count4" />
+		<sound volume="100" inLibrary="false" file="CGBB_51.mp3" id="count5" />
+		<sound volume="100" inLibrary="false" file="CGBB_52.mp3" id="count6" />
+		<sound volume="100" inLibrary="false" file="CGBB_53.mp3" id="count7" />
+		<sound volume="100" inLibrary="false" file="CGBB_54.mp3" id="count8" />
+		<sound volume="100" inLibrary="false" file="CGBB_55.mp3" id="count9" />
+		<sound volume="100" inLibrary="false" file="CGBB_56.mp3" id="count10" />
+		<sound volume="100" inLibrary="false" file="CGBB_57.mp3" id="" />
+		<sound volume="100" inLibrary="false" file="CGBB_58.mp3" id="counting1" />
+		<sound volume="100" inLibrary="false" file="CGBB_59.mp3" id="" />
+		<sound volume="100" inLibrary="false" file="CGBB_60.mp3" id="counting2" />
+		<sound volume="100" inLibrary="false" file="CGBB_61.mp3" id="" />
+		<sound volume="100" inLibrary="false" file="CGBB_62.mp3" id="counting3" />
+		<sound volume="100" inLibrary="false" file="CGBB_63.mp3" id="" />
+		<sound volume="100" inLibrary="false" file="CGBB_64.mp3" id="counting4" />
+		<sound volume="100" inLibrary="false" file="CGBB_65.mp3" id="" />
+		<sound volume="100" inLibrary="false" file="CGBB_66.mp3" id="counting5" />
+		<sound volume="100" inLibrary="false" file="CGBB_67.mp3" id="" />
+		<sound volume="100" inLibrary="false" file="CGBB_68.mp3" id="counting6" />
+		
+		<sound volume="100" inLibrary="false" file="CGBB_69.mp3" id="countq1" />
+		<sound volume="100" inLibrary="false" file="CGBB_70.mp3" id="countqs1" />
+		<sound volume="100" inLibrary="false" file="CGBB_71.mp3" id="countq2" />
+		<sound volume="100" inLibrary="false" file="CGBB_72.mp3" id="countqs2" />
+		<sound volume="100" inLibrary="false" file="CGBB_73.mp3" id="countq3" />
+		<sound volume="100" inLibrary="false" file="CGBB_74.mp3" id="countqs3" />
+		<sound volume="100" inLibrary="false" file="CGBB_75.mp3" id="countq4" />
+		<sound volume="100" inLibrary="false" file="CGBB_76.mp3" id="countqs4" />
+		<sound volume="100" inLibrary="false" file="CGBB_77.mp3" id="countq5" />
+		<sound volume="100" inLibrary="false" file="CGBB_78.mp3" id="countqs5" />
+		<sound volume="100" inLibrary="false" file="CGBB_79.mp3" id="countq6" />
+		<sound volume="100" inLibrary="false" file="CGBB_80.mp3" id="countqs6" />
+		
+		<sound volume="100" inLibrary="false" file="CGBB_80a.mp3" id="carton1" />
+		<sound volume="100" inLibrary="false" file="CGBB_80g.mp3" id="carton2" />
+		<sound volume="100" inLibrary="false" file="CGBB_80c.mp3" id="carton3" />
+		<sound volume="100" inLibrary="false" file="CGBB_80d.mp3" id="carton4" />
+		<sound volume="100" inLibrary="false" file="CGBB_80e.mp3" id="carton5" />
+		<sound volume="100" inLibrary="false" file="CGBB_80f.mp3" id="carton6" />
+		
+		
+		<sound volume="100" inLibrary="false" file="CGBB_81.mp3" id="countingend1" />
+		<sound volume="100" inLibrary="false" file="CGBB_82.mp3" id="countingend2" />
+		<sound volume="100" inLibrary="false" file="CGBB_83.mp3" id="countingend3" />
+		<sound volume="100" inLibrary="false" file="CGBB_84.mp3" id="countingend4" />
+		<sound volume="100" inLibrary="false" file="CGBB_215.mp3" id="countingend5" />
+		<sound volume="100" inLibrary="false" file="CGBB_85.mp3" id="countingend6" />
+		
+		
+		<sound volume="100" inLibrary="false" file="CGBB_86.mp3" id="countmore1" />
+		<sound volume="100" inLibrary="false" file="CGBB_87.mp3" id="countmore2" />
+		<sound volume="100" inLibrary="false" file="CGBB_88.mp3" id="countmore3" />
+		<sound volume="100" inLibrary="false" file="CGBB_89.mp3" id="countmore4" />
+		<sound volume="100" inLibrary="false" file="CGBB_90.mp3" id="countmore5" />
+		<sound volume="100" inLibrary="false" file="CGBB_91.mp3" id="countmore6" />
+		<sound volume="100" inLibrary="false" file="CGBB_92.mp3" id="countmore7" />
+		<sound volume="100" inLibrary="false" file="CGBB_93.mp3" id="countmore8" />
+		<sound volume="100" inLibrary="false" file="CGBB_94.mp3" id="countmore9" />
+
+		<sound volume="100" inLibrary="false" file="CGBB_95.mp3" id="countsolo1" />
+		<sound volume="100" inLibrary="false" file="CGBB_96.mp3" id="countsolo2" />
+		<sound volume="100" inLibrary="false" file="CGBB_97.mp3" id="countsolo3" />
+		<sound volume="100" inLibrary="false" file="CGBB_98.mp3" id="countsolo4" />
+		<sound volume="100" inLibrary="false" file="CGBB_99.mp3" id="countsolo5" />
+		<sound volume="100" inLibrary="false" file="CGBB_100.mp3" id="countsolo6" />
+		<sound volume="100" inLibrary="false" file="CGBB_101.mp3" id="countsolo7" />
+		<sound volume="100" inLibrary="false" file="CGBB_102.mp3" id="countsolo8" />
+		<sound volume="100" inLibrary="false" file="CGBB_103.mp3" id="countsolo9" />
+		<sound volume="100" inLibrary="false" file="CGBB_104.mp3" id="countsolo10" />
+		
+		
+		<sound volume="100" inLibrary="false" file="CGBB_104a.mp3" id="countbig1" />
+		<sound volume="100" inLibrary="false" file="CGBB_104b.mp3" id="countbig2" />
+		<sound volume="100" inLibrary="false" file="CGBB_104c.mp3" id="countbig3" />
+		<sound volume="100" inLibrary="false" file="CGBB_104d.mp3" id="countbig4" />
+		<sound volume="100" inLibrary="false" file="CGBB_104e.mp3" id="countbig5" />
+		<sound volume="100" inLibrary="false" file="CGBB_104f.mp3" id="countbig6" />
+		<sound volume="100" inLibrary="false" file="CGBB_104g.mp3" id="countbig7" />
+		<sound volume="100" inLibrary="false" file="CGBB_104h.mp3" id="countbig8" />
+		<sound volume="100" inLibrary="false" file="CGBB_104i.mp3" id="countbig9" />
+		<sound volume="100" inLibrary="false" file="CGBB_104j.mp3" id="countbig10" />
+		
+		<sound volume="100" inLibrary="false" file="CGBB_105.mp3" id="" />
+		<sound volume="100" inLibrary="false" file="CGBB_107.mp3" id="" />
+		
+		<sound volume="100" inLibrary="false" file="CGBB_108.mp3" id="countreward1" />
+		<sound volume="100" inLibrary="false" file="CGBB_109.mp3" id="countreward2" />
+		<sound volume="100" inLibrary="false" file="CGBB_110.mp3" id="countreward3" />
+		<sound volume="100" inLibrary="false" file="CGBB_111.mp3" id="countreward4" />
+		<sound volume="100" inLibrary="false" file="CGBB_112.mp3" id="countreward5" />
+		<sound volume="100" inLibrary="false" file="CGBB_113.mp3" id="countreward6" />
+		<sound volume="100" inLibrary="false" file="CGBB_114.mp3" id="countreward7" />
+		<sound volume="100" inLibrary="false" file="CGBB_115.mp3" id="countrewardB1" />
+		<sound volume="100" inLibrary="false" file="CGBB_116.mp3" id="countrewardB2" />
+		<sound volume="100" inLibrary="false" file="CGBB_117.mp3" id="countrewardB3" />
+		<sound volume="100" inLibrary="false" file="CGBB_118.mp3" id="countrewardB4" />
+				
+			
+		<sound volume="100" inLibrary="false" file="CGBB_124.mp3" id="trayintro0" />
+		<sound volume="100" inLibrary="false" file="CGBB_127.mp3" id="traying1" />
+		<sound volume="100" inLibrary="false" file="CGBB_129.mp3" id="traying2" />
+		<sound volume="100" inLibrary="false" file="CGBB_131.mp3" id="traying3" />
+		<sound volume="100" inLibrary="false" file="CGBB_133.mp3" id="traying4" />
+		<sound volume="100" inLibrary="false" file="CGBB_135.mp3" id="traying5" />
+		<sound volume="100" inLibrary="false" file="CGBB_137.mp3" id="traying6" />
+		<sound volume="100" inLibrary="false" file="CGBB_139.mp3" id="trayingq1" />
+		<sound volume="100" inLibrary="false" file="CGBB_141.mp3" id="trayingq2" />
+		<sound volume="100" inLibrary="false" file="CGBB_143.mp3" id="trayingq3" />
+		<sound volume="100" inLibrary="false" file="CGBB_145.mp3" id="trayingq4" />
+		<sound volume="100" inLibrary="false" file="CGBB_147.mp3" id="trayingq5" />
+		<sound volume="100" inLibrary="false" file="CGBB_149.mp3" id="trayingq6" />
+		<sound volume="100" inLibrary="false" file="CGBB_150.mp3" id="trayintro1" />
+		<sound volume="100" inLibrary="false" file="CGBB_151.mp3" id="trayintro1" />
+		<sound volume="100" inLibrary="false" file="CGBB_152.mp3" id="trayintro2" />
+		<sound volume="100" inLibrary="false" file="CGBB_153.mp3" id="trayintro2" />
+		
+		
+		<sound volume="100" inLibrary="false" file="CGBB_154.mp3" id="traywrongmore1" />
+		<sound volume="100" inLibrary="false" file="CGBB_155.mp3" id="traywrongmore2" />
+
+		<sound volume="100" inLibrary="false" file="CGBB_156.mp3" id="fewwrong1a" />
+		<sound volume="100" inLibrary="false" file="CGBB_157.mp3" id="fewwrong1b" />
+		
+		<sound volume="100" inLibrary="false" file="CGBB_158.mp3" id="fewwrong2a" />
+		<sound volume="100" inLibrary="false" file="CGBB_159.mp3" id="fewwrong2b" />
+		
+		<sound volume="100" inLibrary="false" file="CGBB_160.mp3" id="fewwrong3a" />
+		<sound volume="100" inLibrary="false" file="CGBB_161.mp3" id="fewwrong3b" />
+		
+		<sound volume="100" inLibrary="false" file="CGBB_162.mp3" id="trayrewardA0" />
+		<sound volume="100" inLibrary="false" file="CGBB_169.mp3" id="trayrewardB0" />
+		<sound volume="100" inLibrary="false" file="CGBB_163.mp3" id="trayrewardA1" />
+		<sound volume="100" inLibrary="false" file="CGBB_170.mp3" id="trayrewardB1" />
+		<sound volume="100" inLibrary="false" file="CGBB_164.mp3" id="trayrewardA2" />
+		<sound volume="100" inLibrary="false" file="CGBB_171.mp3" id="trayrewardB2" />
+		
+		
+		<sound volume="100" inLibrary="false" file="CGBB_173.mp3" id="mixintro" />
+		<sound volume="100" inLibrary="false" file="CGBB_174.mp3" id="mixdelay" />
+		<sound volume="100" inLibrary="false" file="CGBB_174a.mp3" id="mixdelayb" />
+		<sound volume="100" inLibrary="false" file="CGBB_175.mp3" id="mixhalf" />
+		<sound volume="100" inLibrary="false" file="CGBB_176.mp3" id="mixend1" />
+		<sound volume="100" inLibrary="false" file="CGBB_177.mp3" id="mixend2" />
+		<sound volume="100" inLibrary="false" file="CGBB_178.mp3" id="mixend3" />
+		<sound volume="100" inLibrary="false" file="CGBB_179.mp3" id="intooven" />
+		
+		<sound volume="100" inLibrary="false" file="CGBB_208.mp3" id="decoratedelay" />
+		
+		
+		<sound volume="100" inLibrary="false" file="CGBB_180.mp3" id="ovenreward3" />
+		<sound volume="100" inLibrary="false" file="CGBB_181.mp3" id="ovenreward3b" />
+		<sound volume="100" inLibrary="false" file="CGBB_184.mp3" id="ovenreward5" />
+		<sound volume="100" inLibrary="false" file="CGBB_185.mp3" id="ovenreward5b" />
+		<sound volume="100" inLibrary="false" file="CGBB_188.mp3" id="ovenreward1" />
+		<sound volume="100" inLibrary="false" file="CGBB_189.mp3" id="ovenreward1b" />
+		<sound volume="100" inLibrary="false" file="CGBB_192.mp3" id="ovenreward2" />
+		<sound volume="100" inLibrary="false" file="CGBB_193.mp3" id="ovenreward2b" />
+		<sound volume="100" inLibrary="false" file="CGBB_197.mp3" id="ovenreward4" />
+		<sound volume="100" inLibrary="false" file="CGBB_195.mp3" id="ovenreward4b" />
+		
+		
+		<sound volume="100" inLibrary="false" file="CGBB_198.mp3" id="" />
+		<sound volume="100" inLibrary="false" file="CGBB_200.mp3" id="" />
+		<sound volume="100" inLibrary="false" file="CGBB_213.mp3" id="roprint" />
+		<sound volume="100" inLibrary="false" file="CGBB_214.mp3" id="roplayagain" />
+		<sound volume="100" inLibrary="false" file="CGBB_217.mp3" id="deletePrompt" />
+		<sound volume="100" inLibrary="false" file="CGBB_218.mp3" id="deleteYes" />
+		<sound volume="100" inLibrary="false" file="CGBB_219.mp3" id="deleteNo" />
+		
+		
+		<!--
+		<sound volume="100" inLibrary="false" file="CGBB_30.mp3" id="" />
+		<sound volume="100" inLibrary="false" file="CGBB_31.mp3" id="" />
+		<sound volume="100" inLibrary="false" file="CGBB_32.mp3" id="" />
+		<sound volume="100" inLibrary="false" file="CGBB_33.mp3" id="" />
+		<sound volume="100" inLibrary="false" file="CGBB_34.mp3" id="" />
+		<sound volume="100" inLibrary="false" file="CGBB_35.mp3" id="" />
+		<sound volume="100" inLibrary="false" file="CGBB_36.mp3" id="" />
+		<sound volume="100" inLibrary="false" file="CGBB_37.mp3" id="" />
+		<sound volume="100" inLibrary="false" file="CGBB_38.mp3" id="" />
+		<sound volume="100" inLibrary="false" file="CGBB_39.mp3" id="" />
+		-->
+	</vo>
+</data>

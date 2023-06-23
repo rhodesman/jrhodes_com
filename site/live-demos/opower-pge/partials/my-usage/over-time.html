@@ -1,0 +1,278 @@
+<div class="my-usage">
+  <div class="section-head">
+    <div class="row">
+      <div class="large-9 columns">
+        <h1 class="section-heading">My Usage</h1>
+      </div>
+    </div>
+  </div>
+  <div class="row has-side-nav">
+    <div class="large-3 columns side-nav-container">
+      <ul class="custom-side-nav">
+        <li class="over-time active">
+          <a href=""><span class="geomicon-line-graph"></span>Over Time</a>
+        </li>
+        <li class="by-category"><a href="#/my-usage/by-category"><span class="geomicon-pie-chart"></span>By Category</a>
+        </li>
+        <li class="bill-comparison"><a href=""><span class="geomicon-cash"></span>Bill Compare</a>
+        </li>
+      </ul>
+    </div>
+    <!--end of large-3-->
+    <div class="large-9 columns">
+      <div class="primary-content-container" ng-controller="chartsController">
+
+      <div class="residential-filters" ng-show="userPrefs.isResidentialUser()">
+        <div class="row">
+          <div class="small-12 columns">
+            <h2 class="page-heading">Energy breakdown over time</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="large-3 columns">
+            <label>Compared to
+          <select ng-model="chartSelection" ng-options="chartOption.value as chartOption.title for chartOption in chartOptions">
+          </select>
+            </label>
+          </div>
+          <div class="large-3 columns">
+            <label>Timeframe
+              <select>
+                <option value="use-last-year">By Day</option>
+                <option value="option 2">By Month</option>
+              </select>
+            </label>
+          </div>
+          <div class="large-3 columns">
+            <label>View
+              <ul class="button-group chart-button-group">
+                <li><a class="button active secondary" href="">kWh</a>
+                </li>
+                <li><a class="button secondary" href="">$</a>
+                </li>
+              </ul>
+            </label>
+          </div>
+          <div class="large-3 columns chart-annotation-buttons">
+            <button class="secondary chart-annotation-toggle" ng-init="openAnnotation = false" ng-click="openAnnotation = !openAnnotation">Add note</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="business-filters" ng-show="userPrefs.isBusinessUser()">
+        <div class="row">
+          <div class="small-12 columns">
+            <h2 class="page-heading">Energy breakdown over time</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="large-4 columns">
+            <label>Business Location
+              <select ng-model="location" ng-init="location = 'osha-2'">
+                <option value="osha-2">Osha 2nd st - All meters</option>
+                <option value="option-2">Osha 2nd st - Main building</option>
+                <option value="option-3">Osha 2nd st - Back Patio</option>
+                <option value="option-3">Osha Tenderloin</option>
+                <option value="option-3">Osha Mission</option>
+                <option value="option-3">Osha 3rd St</option>
+                <option value="option-3">Osha Embarcadero</option>
+                <option value="option-3">Osha Cow Hollow</option>
+                <option value="option-3">Osha Glen Park</option>
+              </select>
+            </label>
+          </div>
+          <div class="large-3 columns">
+            <label>Compared to
+              <div class="over-time" ng-dropdown-multiselect="" ng-init="options = 'last-year'" extra-settings="checkboxSettings" options="dropdownCheckboxData" selected-model="dropdownCheckbox" translation-texts="translatedText" checkboxes="true" events="eventsModel">
+              </div>
+            </label>
+          </div>
+          <div class="large-3 columns">
+            <label>Timeframe
+              <select>
+                    <option value="use-last-year">Last bill period</option>
+                    <option value="option 3">Last 3 months</option>
+                    <option value="option 4">Last 12 months</option>
+                  <select>
+            </label>
+          </div>
+          <div class="large-2 columns end">
+            <label>View
+              <ul class="button-group chart-button-group">
+                <li><a class="button active secondary" href="">kWh</a>
+                </li>
+                <li><a class="button secondary" href="">$</a>
+                </li>
+              </ul>
+            </label>
+          </div>
+        </div>
+      </div>
+
+      <div class="chart-annotation" ng-class="{'open' : openAnnotation}">
+        <div class="chart-annotation-inner">
+          <div class="chart-annotation-date">August 20, 2014</div>
+          <div class="chart-annotation-heading">Add an annotation to your usage graph!</div>
+          <textarea placeholder="For example: &ldquo;Away on vacation during this month,&rdquo; or &ldquo;Installed a new air conditioner.&rdquo;"></textarea>
+          <button class="primary" ng-click="openAnnotation = false">Save annotation</button>
+          <a href="" class="cancel-link" ng-click="openAnnotation = false">Cancel</a>
+        </div>
+      </div>
+
+      <div class="chart" ng-switch on="userPrefs.isResidentialUser()">
+        <div ng-switch-when="false" class="line-chart-switch-wrap" ng-switch on="selectedIndex">
+            <canvas  ng-switch-default tc-chartjs-line chart-data="smbData" chart-options="smbLineOptions"></canvas>
+            <canvas  ng-switch-when="7" tc-chartjs-line chart-data="smbData3rd" chart-options="bizLineOptionsLocation"></canvas>
+            <canvas  ng-switch-when="8" tc-chartjs-line chart-data="smbDataEmbarcadero" chart-options="bizLineOptionsLocation"></canvas>
+            <canvas  ng-switch-when="9" tc-chartjs-line chart-data="smbDataCow" chart-options="bizLineOptionsLocation"></canvas>
+        </div>
+        <div ng-switch-when="true" class="line-chart-switch-wrap" ng-switch on="chartSelection">
+            <canvas ng-switch-when="similar-homes" tc-chartjs-line chart-data="resNeighborData" chart-options="resLineOptions"></canvas>
+          <div class="weatherWrap" ng-switch-when="weather">
+            <a class="chart-weather-tooltip-control"></a>
+            <div class="chart-weather-tooltip-hover">
+              <h4>July 28</h4>
+              <label class="you">Your Use
+                <span>29 kWH</span>
+              </label>
+              <label class="avg">Avg Temp
+                <span>73&deg;F</span>
+              </label>
+              <label class="high">High
+                <span>80&deg;F</span>
+              </label>
+              <label class="low">Low
+                <span>71&deg;F</span>
+              </label>
+              <a href="">View each hour</a>
+            </div>
+            <canvas  tc-chartjs-line chart-data="resWeatherData" chart-options="resLineOptions"></canvas>
+            <canvas  class="weatherChart"tc-chartjs-line chart-data="weatherData" chart-options="weatherOptions" width="620px" height="354px"></canvas>
+          </div>
+            <canvas ng-switch-when="last-year" tc-chartjs-line chart-data="resYearData" chart-options="resLineOptions"></canvas>
+        </div>
+        <!-- <div id="neighborChart" ng-show="userPrefs.isResidentialUser()"></div> -->
+        <div ng-show="userPrefs.isResidentialUser()" class="chart-legend" ng-switch on="chartSelection">
+            <p ng-switch-when="similar-homes"><span class="geomicon-record-alt blue"></span> You <span class="geomicon-record-alt gray"></span> All similar homes <span class="geomicon-record-alt green"></span> Efficient similar homes</p>
+            <p ng-switch-when="weather"><span class="geomicon-record-alt blue"></span> This year (2014) <span class="geomicon-record purple"></span> Average Temperature</p>
+            <p ng-switch-when="last-year"><span class="geomicon-record-alt blue"></span> This year (2014) <span class="geomicon-record-alt lightBlue"></span> Last year (2013)</p>
+        </div>
+        <div ng-show="userPrefs.isBusinessUser()" class="chart-legend">
+            <p ng-show="selectedIndex == 1"><span class="geomicon-record blue"></span> This year (2014) <span class="geomicon-record-alt lightBlue"></span> Last year (2013)</p>
+
+            <p ng-show="selectedIndex != 1"><span class="geomicon-record blue"></span> Osha 2nd st <span class="compared"> Compared with: </span> <span class="geomicon-record-alt orange"></span> Osha 3rd st <span ng-show="selectedIndex >= 8"><span class="geomicon-record-alt lightBlue"></span> Osha Embarcadero</span> <span ng-show="selectedIndex >= 9"> <span class="geomicon-record-alt green"></span> Osha Cow Hollow </p></span>
+        </div>
+      </div>
+
+      <div ng-switch on="userPrefs.isResidentialUser()">
+
+        <!--if last-year is selected for business-->
+        <div ng-switch-when="false">
+          <div class="use-summary-head">
+            <h3>Electricity use summary</h3>
+          </div>
+          <ul class="use-summary">
+            <li>
+              <h4>Last month: August</h4>
+              <p><span class="geomicon-arrow-forward"></span><em>Increased 33%</em> compared to last year</p>
+            </li>
+            <li>
+              <h4>So far this year</h4>
+              <p><span class="geomicon-arrow-forward"></span><em>26% more</em> compared to last year</p>
+            </li>
+            <li ng-switch on="selectedIndex">
+              <a ng-switch-when="8" href="#/my-usage/by-category">
+                <h4>By Category</h4>
+                <p class="weather"><span class="geomicon-pie-chart"></span>See what uses most in your business</p>
+              </a>
+              <a ng-switch-default href="#/my-usage#8">
+                <h4>Next up</h4>
+                <p class="weather"><span class="geomicon-business"></span>See how your locations compare<br /><div class="small-link">See comparison</div></p>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div ng-switch ng-switch-when="true">
+
+          <div ng-switch on="chartSelection">
+
+            <!--if last-year is selected-->
+            <div ng-switch-default>
+              <div class="use-summary-head">
+                <h3>Electricity use summary</h3>
+              </div>
+              <ul class="use-summary">
+                <li>
+                  <h4>So far this period</h4>
+                  <p><span class="geomicon-arrow-forward"></span><em>121% more</em> compared to last year</p>
+                </li>
+                <li>
+                  <h4>Last 5 days</h4>
+                  <p><span class="geomicon-arrow-forward"></span><em>Increased 14%</em> compared to last year</p>
+                </li>
+                <li>
+                  <a href="#/my-usage#weather">
+                    <h4>Next up</h4>
+                    <p class="weather"><span class="geomicon-weather"></span>See how weather affects your home</p>
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            <!--if similar-homes is selected-->
+            <div ng-switch-when="similar-homes">
+              <div class="use-summary-head">
+                <h3>Similar homes comparison summary</h3>
+              </div>
+              <ul class="use-summary">
+                <li>
+                  <h4>So far this period</h4>
+                  <p class="decrease"><span class="geomicon-arrow-forward"></span><em>20% less</em> than average similar homes</p>
+                </li>
+                <li>
+                  <h4>Compared to last year</h4>
+                  <p class="increase"><span class="geomicon-arrow-forward"></span>All similar homes used <em>14% more</em> electricity due to cooling</p>
+                </li>
+                <li>
+                  <a href="#/my-usage/by-category">
+                    <h4>Next up</h4>
+                    <p class="chart-icon"><span class="geomicon-pie-chart"></span>Find out what uses most in your home</p>
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            <!-- selectedIndex == "0" the id number-->
+            <!--if weather is selected-->
+            <div ng-switch-when="weather">
+              <div class="use-summary-head">
+                <h3>Weather comparison summary</h3>
+              </div>
+              <ul class="use-summary">
+                <li>
+                  <h4>So far this period</h4>
+                  <p class="weather"><span class="geomicon-weather"></span>The average temp was <em>8&deg;F warmer</em> than last year</p>
+                </li>
+                <li>
+                  <h4>Hottest days so far</h4>
+                  <ul>
+                    <li>Tuesday, July 22</li>
+                    <li>Thursday, July 31</li>
+                    <li>Friday, August 1</li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#/my-usage#similar-homes">
+                    <h4>Next up</h4>
+                    <p class="people"><span class="geomicon-people"></span>See how you compare to similar homes</p>
+                  </a>
+                </li>
+            </ul>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>

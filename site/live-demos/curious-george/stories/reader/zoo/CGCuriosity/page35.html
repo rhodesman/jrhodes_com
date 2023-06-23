@@ -1,0 +1,530 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+ "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>
+    Untitled Document
+</title>
+<link href="skin/blue.monday/jplayer.blue.monday.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.jplayer.min.js"></script>
+<meta http-equiv="Content-Type" content="text/html;CHARSET=utf-8"/>
+<meta name="viewport" content="width=450,height=450" />
+
+<style type="text/css">
+ 
+    a:link {
+        color:blue;
+        text-decoration:underline;
+    }
+    a:active { color:red }
+    a:visited { color:purple }
+    
+  @font-face {
+  font-family: 'Adobe Garamond Semibold Italic';
+  src: url("font/AGARAMSI.TTF");
+  }
+@font-face {
+  font-family: 'CuriousGerogeheader-Medium';
+  src: url("font/CURIOUGM.TTF");
+  }
+@font-face {
+  font-family: 'New Century Schoolbook Italic';
+  src: url("font/NEWCENSI.TTF");
+  }
+@font-face {
+  font-family: 'New Century Schoolbook Roman';
+  src: url("font/NEWCENSR.TTF");
+  }
+@font-face {
+  font-family: 'OPTIMajerIrregular';
+  src: url("font/OPTIMAJI.TTF");
+  }
+
+body {
+   width: 450px;
+   height: 450px;
+   margin:0; 
+
+        background-color:white;
+        color:#393838;
+    }
+    .text33 {
+        font-family:'OPTIMajerIrregular';
+        font-size:25px;
+        text-decoration:none;
+        color:#40A75F;
+    }
+    .text15 {
+        font-family:'OPTIMajerIrregular';
+        font-size:25px;
+        text-decoration:none;
+        color:#A32F54;
+    }
+    .pHeadparagraph {
+        line-height:42px;
+        text-align:center;
+    }
+    .box1 {
+        background-color:white;
+        width:450px;
+        height:450px;
+    }
+    .box2 {
+        position:absolute;
+        left:0px;
+        top:0px;
+        background-color:#EDC1A7;
+        width:450px;
+        height:450px;
+    }
+    .box3 {
+        position:absolute;
+        left:27.185px;
+        top:31.3px;
+        width:666px;
+        height:316.8px;
+    }
+    .box4 {
+        position:absolute;
+        left:516.9px;
+        top:267.086px;
+        width:27.868px;
+        height:16.354px;
+    }
+    .box5 {
+        position:absolute;
+        left:574.421px;
+        top:158.861px;
+        width:60.943px;
+        height:20.854px;
+    }
+    .box6 {
+        position:absolute;
+        left:113.562px;
+        top:314.464px;
+        width:68.92px;
+        height:20.854px;
+    }
+    .box7 {
+        position:absolute;
+        left:267.088px;
+        top:308.839px;
+        width:67.617px;
+        height:20.854px;
+    }
+    .box8 {
+        position:absolute;
+        left:560.775px;
+        top:327.554px;
+        width:92.849px;
+        height:16.038px;
+    }
+    .box9 {
+        position:absolute;
+        left:233.413px;
+        top:135.27px;
+        width:70.857px;
+        height:20.854px;
+    }
+    .box10 {
+        position:absolute;
+        left:561.137px;
+        top:124.348px;
+        width:40.644px;
+        height:20.854px;
+    }
+    .box11 {
+        position:absolute;
+        left:188.26px;
+        top:209.125px;
+        width:46.872px;
+        height:33.139px;
+    }
+    .box12 {
+        position:absolute;
+        left:385px;
+        top:133.839px;
+        width:84.324px;
+        height:20.854px;
+    }
+    .box13 {
+        position:absolute;
+        left:374.076px;
+        top:270.175px;
+        width:83.263px;
+        height:20.854px;
+    }
+    .box14 {
+        position:absolute;
+        left:131.944px;
+        top:69.964px;
+        width:70.538px;
+        height:17.729px;
+    }
+    .box15 {
+        position:absolute;
+        left:272.628px;
+        top:165.5px;
+        width:46.358px;
+        height:38.354px;
+    }
+    .box16 {
+        position:absolute;
+        left:567.455px;
+        top:281.699px;
+        width:37.489px;
+        height:20.854px;
+    }
+    .box17 {
+        position:absolute;
+        left:222.482px;
+        top:41.286px;
+        width:102.935px;
+        height:20.854px;
+    }
+    .box18 {
+        position:absolute;
+        left:96.248px;
+        top:263.619px;
+        width:61.234px;
+        height:20.854px;
+    }
+    .box19 {
+        position:absolute;
+        left:460.853px;
+        top:47.868px;
+        width:169.756px;
+        height:49.247px;
+    }
+    .box20 {
+        position:absolute;
+        left:422.543px;
+        top:147.635px;
+        width:32.371px;
+        height:69.493px;
+    }
+    .box21 {
+        position:absolute;
+        left:462px;
+        top:266.986px;
+        width:45px;
+        height:16.354px;
+    }
+    .box22 {
+        position:absolute;
+        left:140.857px;
+        top:298.712px;
+        width:14.551px;
+        height:17.229px;
+    }
+    .box39 {
+	position:absolute;
+	left:254px;
+	top:19px;
+	padding:0px;
+	width:131px;
+	height:33px;
+    }
+    .box43 {
+        position:absolute;
+        left:27px;
+        top:371.5px;
+        width:666px;
+        height:316.8px;
+    }
+    .box44 {
+        position:absolute;
+        left:466.754px;
+        top:663.146px;
+        width:37.228px;
+        height:20.854px;
+    }
+    .box45 {
+        position:absolute;
+        left:60.381px;
+        top:493.055px;
+        width:56.494px;
+        height:42.445px;
+    }
+    .box46 {
+        position:absolute;
+        left:294.09px;
+        top:460.964px;
+        width:73.346px;
+        height:20.854px;
+    }
+    .box47 {
+        position:absolute;
+        left:164.594px;
+        top:628.75px;
+        width:73.305px;
+        height:17.339px;
+    }
+    .box48 {
+        position:absolute;
+        left:436.5px;
+        top:523.845px;
+        width:71.141px;
+        height:20.854px;
+    }
+    .box49 {
+        position:absolute;
+        left:334.57px;
+        top:487.486px;
+        width:73.305px;
+        height:20.854px;
+    }
+    .box50 {
+        position:absolute;
+        left:591.607px;
+        top:549.611px;
+        width:73.432px;
+        height:20.854px;
+    }
+    .box51 {
+        position:absolute;
+        left:213.405px;
+        top:388.566px;
+        width:216.595px;
+        height:40.049px;
+    }
+    .box52 {
+        position:absolute;
+        left:376.689px;
+        top:501.054px;
+        width:30.119px;
+        height:14.036px;
+    }
+    .box53 {
+        position:absolute;
+        left:557.778px;
+        top:381.471px;
+        width:54.557px;
+        height:17.633px;
+    }
+    .box62 {
+	position:absolute;
+	left:152px;
+	top:235px;
+	padding:0px;
+	width:99px;
+	height:33px;
+    }
+   .TextDiv
+	{
+		font-size:13px;
+	}
+		.sunglasses
+	{
+	  left: 74.289px;
+    position: absolute;
+    top: 37.22px;
+	}
+		.sun
+	{
+ left: 123.289px;
+    position: absolute;
+    top: 18.22px;
+	}	
+	.swimsuit
+	{
+	  left: 138.289px;
+    position: absolute;
+    top: 77.22px;
+	}
+
+	.beach
+	{
+	   left: 156.289px;
+    position: absolute;
+    top: 94.22px;
+	}
+	.water
+	{
+     left: 108.289px;
+    position: absolute;
+    top: 117.22px;
+	}
+	.flip
+	{
+    left: 46.289px;
+    position: absolute;
+    top: 156.22px;
+	}
+	.seashells
+	{
+	    left: 67.289px;
+    position: absolute;
+    top: 190.22px;
+	}
+	.seaweed
+	{
+	    left: 158.289px;
+    position: absolute;
+    top: 186.22px;
+	}.sunscreen
+	{
+ 	left: 219.289px;
+    position: absolute;
+    top: 166.22px;
+	}
+	.sandcastle
+	{
+   left: 230.289px;
+    position: absolute;
+    top: 79.22px;
+	}
+	.shovel
+	{
+	 left: 268.289px;
+    position: absolute;
+    top: 158.22px;
+	}
+	.pail
+	{ 
+	  left: 302.289px;
+    position: absolute;
+    top: 163.22px;
+	}
+	.crab
+	{
+left: 332.289px;
+    position: absolute;
+    top: 169.22px;
+	}
+	.sand
+	{
+	   left: 332.289px;
+    position: absolute;
+    top: 74.22px;
+	}
+	.seagulls
+	{
+	   left: 333.289px;
+    position: absolute;
+    top: 89.22px;
+	}
+	.ocean
+	{
+	 left: 356.289px;
+    position: absolute;
+    top: 197.22px;
+	}
+	.TextDiv_1
+	{
+		font-size:13px;
+	}
+
+	.apples
+	{ 
+	  left: 35.289px;
+    position: absolute;
+    top: 299.22px;
+	}
+	.leaves
+	{ 
+	    left: 96.289px;
+    position: absolute;
+    top: 381.22px;
+	}
+	.scarecrow
+	{ 
+	   left: 172.289px;
+    position: absolute;
+    top: 279.22px;
+	}
+	.cider
+	{ 
+	   left: 201.289px;
+    position: absolute;
+    top: 295.22px;
+	}
+	.pumpkins
+	{
+ left: 262.289px;
+    position: absolute;
+    top: 317.22px;
+	}
+	.rake
+	{
+ left: 278.289px;
+    position: absolute;
+    top: 402.22px;
+	}
+	.shed
+	{
+	 left: 341.289px;
+    position: absolute;
+    top: 230.22px;
+	}
+	.sweater
+	{
+	  left: 356.289px;
+    position: absolute;
+    top: 335.22px;
+	}
+</style>
+</head>
+
+<body>
+
+    
+        
+        <div class="box1">
+            <img src="images/33.jpg" alt="" width="425" height="445" 
+             /></div>
+        
+        
+    
+     <div class="TextDiv">
+	   <div  class="sunglasses"><span>sunglasses</span></div>
+   	   <div  class="sun"><span>sun</span><span>umbrella</span></div>
+       <div class="swimsuit"><span>swimsuit</span></div>
+       <div  class="beach"><span>beach</span><br /><span>chair</span></div>
+       <div  class="water"><span>water</span><br /><span>wings</span></div>
+       <div  class="flip"><span>flip-flop</span></div>
+       <div  class="seashells"><span>seashells</span></div>
+       <div  class="seaweed"><span>seaweed</span></div>
+       <div  class="sunscreen"><span>sunscreen</span></div> 
+       <div  class="sandcastle"><span>sandcastle</span></div>
+       <div  class="shovel"><span>shovel</span></div> 
+       <div  class="pail"><span>pail</span></div> 
+       <div  class="crab"><span>crab</span></div>     
+       <div  class="sand"><span>sand</span></div> 
+       <div  class="seagulls"><span>seagulls</span></div> 
+       <div  class="ocean"><span>ocean</span></div> 
+                                    
+              
+</div>
+<div class="TextDiv_1">
+ 			<div  class="apples"><span>apples</span></div>
+        	<div class="leaves"><span>leaves</span></div>
+            <div  class="scarecrow"><span>scarecrow</span></div>
+  <div  class="cider"><span>cider</span></div>
+  <div  class="pumpkins"><span>pumpkins</span></div>
+  <div  class="rake"><span>rake</span></div>
+  <div  class="shed"><span>shed</span></div>
+  <div  class="sweater"><span>sweater</span></div>
+             
+                                    
+              
+</div>
+        
+        
+        
+
+<div class="box39">
+    <div class="pHeadparagraph">
+        <span class="text33"><span id="w0245">Summer</span> </span><span id="t1246"></span>
+    </div>
+    </div>
+<div class="box62">
+<div class="pHeadparagraph">
+        <span class="text15"><span id="w0246">Fall</span> </span><span id="t2246"></span>
+    </div>
+</div>
+<div id="chk"></div>
+<div id="timeValue"></div>
+</body>
+</html>

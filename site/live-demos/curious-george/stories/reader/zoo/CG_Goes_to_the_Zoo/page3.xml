@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<smil xmlns="http://www.w3.org/ns/SMIL" VERSION="3.0" PROFILE="http://www.idpf.org/epub/30/profile/content/">
+<body>
+<par id="p0001">
+<audio src="images/CG_ZOO.m4a" clipBegin="0.000000s" clipEnd="4.544337s" id="t0000"/>
+</par>
+</body>
+</smil>

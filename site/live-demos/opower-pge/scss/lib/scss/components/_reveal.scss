@@ -1,0 +1,75 @@
+
+// _reveal.scss
+// Author: justin.secor@opower.com
+
+// Import foundation defaults
+@import "../../zurb-foundation/scss/foundation/components/reveal";
+
+.reveal-modal-bg {
+    @include reveal-bg;
+    @include transition(opacity $animation-speed);
+    position: fixed;
+    z-index: 9998;
+}
+
+.reveal-modal {
+    @include transition-property(transform, opacity);
+    @include transition-duration(0.2s);
+    @include transition-timing-function(ease-in-out);
+    @include transform(scale(0.8));
+    border: $reveal-border-width $reveal-border-style $reveal-border-color;
+    border-radius: $global-radius;
+    opacity: 0;
+    outline: none;
+    padding: $reveal-modal-padding;
+    position: fixed;
+    z-index: 9999;
+    &.in {
+        @include transform(scale(1));
+        opacity: 1;
+    }
+    .modal-head {
+        @include bottom-border;
+        padding-bottom:$spacing;
+        h2 {
+            font-size: $font-size-small;
+            margin: 0;
+        }
+    }
+    .modal-body {
+        @include transition(height, $animation-speed);
+        position: relative;
+        min-height: 200px;
+    }
+    .close-reveal-modal {
+        @include box-sizing(content-box);
+        @include geomicon("\7e", 0.35em 0 0 0.35em);
+        background-color: $darker-gray;
+        border: $reveal-border-width $reveal-border-style $reveal-border-color;
+        border-radius: 2em;
+        color: $white;
+        display: block;
+        font-size: $font-size-small;
+        height: 1em;
+        text-indent: -9999px;
+        padding: 0.35em;
+        position: absolute;
+        width: 1em;
+        &:before {
+            text-indent:0;
+        }
+    }
+    h3 {
+        font-size: $modal-h3-font-size;
+    }
+    .modal-buttons {
+        text-align: right;
+        padding-right: 0px;
+        .button {
+            margin-bottom: 0;
+        }
+        .cancel-button {
+            margin-right: 20px;
+        }
+    }
+}

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<smil xmlns="http://www.w3.org/ns/SMIL" VERSION="3.0" PROFILE="http://www.idpf.org/epub/30/profile/content/">
+<body>
+<par id="p0001">
+<audio src="images/CG_ZOO.m4a" clipBegin="253.113994s" clipEnd="253.331552s" id="w0635"/>
+</par>
+<par id="p0002">
+<audio src="images/CG_ZOO.m4a" clipBegin="253.331552s" clipEnd="254.100596s" id="w0636"/>
+</par>
+<par id="p0003">
+<audio src="images/CG_ZOO.m4a" clipBegin="254.100596s" clipEnd="254.882288s" id="w0637"/>
+</par>
+<par id="p0004">
+<audio src="images/CG_ZOO.m4a" clipBegin="254.882288s" clipEnd="255.130203s" id="w0638"/>
+</par>
+<par id="p0005">
+<audio src="images/CG_ZOO.m4a" clipBegin="255.130203s" clipEnd="255.975139s" id="w0639"/>
+</par>
+<par id="p0006">
+<audio src="images/CG_ZOO.m4a" clipBegin="255.975139s" clipEnd="256.076329s" id="w0640"/>
+</par>
+<par id="p0007">
+<audio src="images/CG_ZOO.m4a" clipBegin="256.076329s" clipEnd="256.183844s" id="w0641"/>
+</par>
+<par id="p0008">
+<audio src="images/CG_ZOO.m4a" clipBegin="256.183844s" clipEnd="256.637934s" id="w0642"/>
+</par>
+<par id="p0009">
+<audio src="images/CG_ZOO.m4a" clipBegin="256.637934s" clipEnd="256.828930s" id="w0643"/>
+</par>
+<par id="p0010">
+<audio src="images/CG_ZOO.m4a" clipBegin="256.828930s" clipEnd="257.089494s" id="w0644"/>
+</par>
+<par id="p0011">
+<audio src="images/CG_ZOO.m4a" clipBegin="257.089494s" clipEnd="257.267841s" id="w0645"/>
+</par>
+<par id="p0012">
+<audio src="images/CG_ZOO.m4a" clipBegin="257.267841s" clipEnd="258.302508s" id="w0646"/>
+</par>
+<par id="p0013">
+<audio src="images/CG_ZOO.m4a" clipBegin="258.302508s" clipEnd="258.439115s" id="w0647"/>
+</par>
+<par id="p0014">
+<audio src="images/CG_ZOO.m4a" clipBegin="258.439115s" clipEnd="258.565602s" id="w0648"/>
+</par>
+<par id="p0015">
+<audio src="images/CG_ZOO.m4a" clipBegin="258.565602s" clipEnd="258.934945s" id="w0649"/>
+</par>
+<par id="p0016">
+<audio src="images/CG_ZOO.m4a" clipBegin="258.934945s" clipEnd="259.089260s" id="w0650"/>
+</par>
+<par id="p0017">
+<audio src="images/CG_ZOO.m4a" clipBegin="259.089260s" clipEnd="259.578921s" id="w0651"/>
+</par>
+</body>
+</smil>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<smil xmlns="http://www.w3.org/ns/SMIL" version="3.0" profile="http://www.idpf.org/epub/30/profile/content/">
+<body>
+  <par>
+    <audio clipBegin="416.711609" clipEnd="417.605863" aText="on the go" id="w000231"/>
+  </par>
+  <par>
+    <audio clipBegin="418.521536" clipEnd="419.581790" aText="icecream truck" id="w000232"/>
+  </par>
+  <par>
+    <audio clipBegin="420.133335" clipEnd="421.621974" aText="cars" id="w000233"/>
+  </par>
+  <par>
+    <audio clipBegin="421.771908" clipEnd="422.312745" aText="bus" id="w000234"/>
+  </par>
+  <par>
+    <audio clipBegin="423.040999" clipEnd="423.688932" aText="plane" id="w000235"/>
+  </par>
+  <par>
+    <audio clipBegin="424.460025" clipEnd="425.552407" aText="boats" id="w000236"/>
+  </par>
+  <par>
+    <audio clipBegin="425.579181" clipEnd="426.216404" aText="scooter" id="w000237"/>
+  </par>
+  <par>
+    <audio clipBegin="426.939304" clipEnd="428.310136" aText="train" id="w000238"/>
+  </par>
+  <par>
+    <audio clipBegin="428.310136" clipEnd="429.247229" aText="submarine" id="w000239"/>
+  </par>
+  <par>
+    <audio clipBegin="429.980838" clipEnd="431.367735" aText="bike" id="w000240"/>
+  </par>
+  <par>
+    <audio clipBegin="431.389154" clipEnd="432.369085" aText="hot arir balloon" id="w000241"/>
+  </par>
+  <par>
+    <audio clipBegin="432.990243" clipEnd="433.755982" aText="rocket" id="w000242"/>
+  </par>
+  <par>
+    <audio clipBegin="434.821590" clipEnd="435.598038" aText="tricycle" id="w000243"/>
+  </par>
+  <par>
+    <audio clipBegin="436.069261" clipEnd="437.241966" aText="roller skates" id="w000244"/>
+  </par>
+  <par>
+    <audio clipBegin="437.734608" clipEnd="438.473573" aText="wagon" id="w000245"/>
+  </par>
+  <par>
+    <audio clipBegin="438.987635" clipEnd="439.951501" aText="motor cycle" id="w000246"/>
+  </par>
+  <par>
+    <audio clipBegin="440.422725" clipEnd="441.236657" aText="trucks" id="w000247"/>
+  </par>
+  <par>
+    <audio clipBegin="441.681106" clipEnd="442.736004" aText="unicycle" id="w000248"/>
+  </par>
+  <par>
+    <audio clipBegin="443.191164" clipEnd="443.914063" aText="taxi" id="w000249"/>
+  </par>
+  <par>
+    <audio clipBegin="444.487029" clipEnd="445.531217" aText="baby carriage" id="w000250"/>
+  </par>
+  <par>
+    <audio clipBegin="445.938183" clipEnd="446.586116" aText="tractor" id="w000251"/>
+  </par>
+
+
+</body>
+</smil>

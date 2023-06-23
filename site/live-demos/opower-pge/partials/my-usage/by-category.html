@@ -1,0 +1,178 @@
+<div class="my-usage">
+  <div class="section-head">
+    <div class="row">
+      <div class="large-9 columns">
+        <h1 class="section-heading">My Usage</h1>
+      </div>
+    </div>
+  </div>
+  <div class="row has-side-nav">
+    <div class="large-3 columns side-nav-container">
+      <ul class="custom-side-nav">
+        <li class="over-time">
+          <a href="#/my-usage"><span class="geomicon-line-graph"></span>Over Time</a>
+        </li>
+        <li class="by-category active"><a href="#/my-usage/by-category"><span class="geomicon-pie-chart"></span>By Category</a>
+        </li>
+        <li class="bill-comparison"><a href=""><span class="geomicon-cash"></span>Bill Compare</a>
+        </li>
+      </ul>
+    </div>
+    <!--end of large-3-->
+    <div class="large-9 columns">
+      <div class="primary-content-container">
+
+        <!--business user-->
+        <div class="business-filters pie-filters" ng-show="userPrefs.isBusinessUser()">
+          <div class="row">
+            <div class="small-12 columns">
+              <h2 class="page-heading">Energy breakdown by category</h2>
+            </div>
+            <div class="small-4 columns">
+              <label class="pie-time">Meters
+                <select ng-model="location" ng-init="location = 'osha-2'">
+                  <option value="osha-2">Osha 2nd st - All meters</option>
+                  <option value="option-2">Osha 2nd st - Main building</option>
+                  <option value="option-3">Osha 2nd st - Back Patio</option>
+                  <option value="option-3">Osha Tenderloin</option>
+                  <option value="option-3">Osha Mission</option>
+                  <option value="option-3">Osha 3rd St</option>
+                  <option value="option-3">Osha Embarcadero</option>
+                  <option value="option-3">Osha Cow Hollow</option>
+                  <option value="option-3">Osha Glen Park</option>
+                </select>
+              </label>
+            </div>
+            <div class="small-4 columns">
+              <label class="pie-time">Timeframe
+                <select>
+                  <option value="use-last-year">Last bill period</option>
+                  <option value="june">Jun 15 - Jul 14</option>
+                  <option value="may">May 15 - Jun 14</option>
+                  <option value="april">Apr 15 - May 14</option>
+                  <option value="march">Mar 16 - Apr 14</option>
+                  <option value="feb">Feb 16 - Mar 15</option>
+                  <option value="jan">Jan 15 - Feb 15</option>
+                  <select>
+              </label>
+            </div>
+            <div class="small-3 columns end">
+              <label>View
+                <ul class="button-group chart-button-group">
+                  <li><a href="#/my-usage/by-category" class="button secondary active"><span class="geomicon geomicon-pie-chart"></span></a>
+                  </li>
+                  <li><a href="#/my-usage/by-category-list" class="button secondary"><span class="geomicon geomicon-view-list-alt"></span></a>
+                  </li>
+                </ul>
+              </label>
+            </div>
+
+          </div>
+        </div>
+
+        <!--residential user-->
+        <div class="business-filters pie-filters" ng-show="userPrefs.isResidentialUser()">
+          <div class="row">
+            <div class="small-12 columns">
+              <h2 class="page-heading">Energy breakdown by category</h2>
+            </div>
+            <div class="small-4 columns">
+              <label class="pie-time">Timeframe
+                <select>
+                  <option value="use-last-year">Last bill period</option>
+                  <option value="june">Jun 15 - Jul 14</option>
+                  <option value="may">May 15 - Jun 14</option>
+                  <option value="april">Apr 15 - May 14</option>
+                  <option value="march">Mar 16 - Apr 14</option>
+                  <option value="feb">Feb 16 - Mar 15</option>
+                  <option value="jan">Jan 15 - Feb 15</option>
+                  <select>
+              </label>
+            </div>
+            <div class="small-3 columns end">
+              <label>View
+                <ul class="button-group chart-button-group">
+                  <li><a href="#/my-usage/by-category" class="button secondary active"><span class="geomicon geomicon-pie-chart"></span></a>
+                  </li>
+                  <li><a href="#/my-usage/by-category-list" class="button secondary"><span class="geomicon geomicon-view-list-alt"></span></a>
+                  </li>
+                </ul>
+              </label>
+            </div>
+          </div>
+        </div>
+
+        <div class="row charts" ng-controller="chartsController">
+          <div class="small-6 columns">
+            <div class="chart pie">
+              <div class="relative-position-wrap">
+                <div ng-show="userPrefs.isResidentialUser()" data-ac-chart="'pie'" data-ac-data="resPrePieData" data-ac-config="resPrePieConfig" class="pieChart resPre"></div>
+                <div ng-show="userPrefs.isBusinessUser()" data-ac-chart="'pie'" data-ac-data="smbPrePieData" data-ac-config="smbPrePieConfig" class="pieChart smbPre"></div>
+                <div class="pie-center my-usage" ng-switch on="userPrefs.isResidentialUser()">
+                  <h4 ng-switch-when="true">${{resPrePieContent.amount}}</h4>
+                  <h4 ng-switch-when="false">${{smbPrePieContent.amount}}</h4>
+                </div>
+              </div>
+
+
+            </div>
+          </div>
+          <div class="small-6 columns" ng-switch on="userPrefs.isResidentialUser()">
+            <h5 ng-switch-when="true">What uses most in my home?</h5>
+            <h6 class="smb" ng-switch-when="true" ng-show="resPrePieContent.message">{{resPrePieContent.message}} use cost you ~${{resPrePieContent.amount}} last billing period</h6>
+            <h6 class="smb init" ng-switch-when="true" ng-show="!resPrePieContent.message">{{resPrePieContent.init}}</h6>
+            <!-- <p ng-switch-when="true" class="cost-alert"><span class="geomicon-alert"></span><em>{{resPrePieContent.sub}}</em> than similar homes</p> -->
+            <h5 ng-switch-when="false">What costs the most?</h5>
+            <h6 class="smb init" ng-switch-when="false" ng-show="!smbPrePieContent.message">{{smbPrePieContent.init}}</h6>
+            <h6 class="smb" ng-switch-when="false" ng-show="smbPrePieContent.message">{{smbPrePieContent.message}} use cost you ~${{smbPrePieContent.amount}} last billing period</h6>
+
+          </div>
+          <div ng-show="userPrefs.isResidentialUser()" class="small-12 columns">
+            <label>Based on your:</label>
+            <ul class="based-on">
+              <li data-ng-repeat="base in resPrePieContent.based"><span class="geomicon-circle-check"></span><a href="">{{ base }}</a>
+              </li>
+            </ul>
+          </div>
+          <div ng-show="userPrefs.isBusinessUser()" class="small-12 columns">
+            <label>Based on your:</label>
+            <ul >
+              <li data-ng-repeat="base in smbPrePieContent.based"><span class="geomicon-circle-check"></span><a href="">{{ base }}</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+
+        <!--Biz Footer -->
+        <div class="ways-to-save-section post-audit" ng-show="userPrefs.isBusinessUser()">
+          <div class="row">
+            <div class="small-7 columns">
+              <h2>Lower your bills with a personalized savings plan</h2>
+            </div>
+            <div class="small-5 columns">
+              <a class="button smb" href="#/ways-to-save" ng-click="resetAudit()">Tell us about your restaurant</a>
+            </div>
+          </div>
+        </div>
+
+        <!--Res Footer -->
+        <div class="ways-to-save-section post-audit" ng-show="userPrefs.isResidentialUser()">
+          <div class="row">
+            <div class="small-7 columns">
+              <h2>Get a personalized savings plan</h2>
+            </div>
+            <div class="small-5 columns">
+              <a class="button smb" href="#/ways-to-save/about-home-1of3" ng-click="resetAudit()">Tell us how you use energy</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--do we need these:-->
+<!-- <canvas ng-show="userPrefs.isResidentialUser()" tc-chartjs-doughnut chart-data="resPieData" chart-options="pieOptions"></canvas>
+<canvas ng-show="userPrefs.isBusinessUser()" tc-chartjs-doughnut chart-data="smbPieData" chart-options="pieOptions"></canvas> -->

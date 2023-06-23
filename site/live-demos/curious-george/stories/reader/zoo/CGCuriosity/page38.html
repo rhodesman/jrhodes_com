@@ -1,0 +1,501 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+ "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>
+    Untitled Document
+</title>
+<link href="skin/blue.monday/jplayer.blue.monday.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.jplayer.min.js"></script>
+<meta http-equiv="Content-Type" content="text/html;CHARSET=utf-8"/>
+<meta name="viewport" content="width=450,height=450" />
+
+<style type="text/css">
+ 
+    a:link {
+        color:blue;
+        text-decoration:underline;
+    }
+    a:active { color:red }
+    a:visited { color:purple }
+    
+  @font-face {
+  font-family: 'Adobe Garamond Semibold Italic';
+  src: url("font/AGARAMSI.TTF");
+  }
+@font-face {
+  font-family: 'CuriousGerogeheader-Medium';
+  src: url("font/CURIOUGM.TTF");
+  }
+@font-face {
+  font-family: 'New Century Schoolbook Italic';
+  src: url("font/NEWCENSI.TTF");
+  }
+@font-face {
+  font-family: 'New Century Schoolbook Roman';
+  src: url("font/NEWCENSR.TTF");
+  }
+@font-face {
+  font-family: 'OPTIMajerIrregular';
+  src: url("font/OPTIMAJI.TTF");
+  }
+
+body {
+   width: 450px;
+   height: 450px;
+   margin:0; 
+
+        background-color:white;
+        color:#393838;
+    }
+    .text58 {
+        font-family:'OPTIMajerIrregular';
+        font-size:25px;
+        text-decoration:none;
+        color:#CD383B;
+    }
+    .pHeadparagraph {
+        line-height:42px;
+        text-align:center;
+    }
+    .box1 {
+        background-color:white;
+        width:450px;
+        height:450px;
+    }
+    .box2 {
+        position:absolute;
+        left:0px;
+        top:1.15px;
+        background-color:#FFFCD1;
+        width:730.345px;
+        height:717.984px;
+    }
+    .box3 {
+        position:absolute;
+        left:0px;
+        top:0px;
+        background-color:white;
+        width:450px;
+        height:450px;
+    }
+    .box4 {
+        position:absolute;
+        left:218.004px;
+        top:346.75px;
+        width:56.948px;
+        height:20.104px;
+    }
+    .box5 {
+        position:absolute;
+        left:612.712px;
+        top:324.129px;
+        width:71.988px;
+        height:20.854px;
+    }
+    .box6 {
+        position:absolute;
+        left:515.804px;
+        top:76.839px;
+        width:157.696px;
+        height:20.854px;
+    }
+    .box7 {
+        position:absolute;
+        left:186.744px;
+        top:300.1px;
+        width:56.238px;
+        height:20.854px;
+    }
+    .box8 {
+        position:absolute;
+        left:439.587px;
+        top:207.726px;
+        width:55.395px;
+        height:44.854px;
+    }
+    .box9 {
+        position:absolute;
+        left:378.945px;
+        top:647.97px;
+        width:54.22px;
+        height:20.854px;
+    }
+    .box10 {
+        position:absolute;
+        left:296.104px;
+        top:109.986px;
+        width:54.061px;
+        height:20.854px;
+    }
+    .box11 {
+        position:absolute;
+        left:504.381px;
+        top:577.579px;
+        width:59.525px;
+        height:20.854px;
+    }
+    .box12 {
+        position:absolute;
+        left:501.982px;
+        top:597.729px;
+        width:71.25px;
+        height:17.52px;
+    }
+    .box13 {
+        position:absolute;
+        left:115.312px;
+        top:652px;
+        width:65.487px;
+        height:41.25px;
+    }
+    .box14 {
+        position:absolute;
+        left:227.714px;
+        top:667.071px;
+        width:84.061px;
+        height:19.682px;
+    }
+    .box15 {
+	position:absolute;
+	left:46px;
+	top:16px;
+	padding:0px;
+	width:253px;
+	height:56.418px;
+    }
+    .box16 {
+        position:absolute;
+        left:549.174px;
+        top:490.844px;
+        width:40.995px;
+        height:85.875px;
+    }
+    .box17 {
+        position:absolute;
+        left:560.684px;
+        top:505.519px;
+        width:45.64px;
+        height:91.628px;
+    }
+    .TextDiv
+	{
+		font-size:13px;
+	}
+
+	.games
+	{
+      left: 186.289px;
+    position: absolute;
+    top: 59.22px;
+	}
+	.candles
+	{
+	     left: 111.289px;
+    position: absolute;
+    top: 181.22px;
+	}
+	.cake
+	{
+	   left: 129.289px;
+    position: absolute;
+    top: 208.22px;
+	}.party
+	{
+  left: 262.289px;
+    position: absolute;
+    top: 119.22px;
+	}
+	.record
+	{
+   left: 71.289px;
+    position: absolute;
+    top: 398.22px;
+	}
+	.goodie
+	{
+	   left: 127.289px;
+    position: absolute;
+    top: 411.22px;
+	}
+	.confetti
+	{ 
+	 left: 212.289px;
+    position: absolute;
+    top: 397.22px;
+	}
+	.cookies
+	{
+  left: 290.289px;
+    position: absolute;
+    top: 351.22px;
+	}
+	.cupcakes
+	{
+	     left: 290.289px;
+    position: absolute;
+    top: 365.22px;
+	}
+	.balloons
+	{
+   left: 333.289px;
+    position: absolute;
+    top: 42.22px;
+	}
+	.presents
+	{
+	  left: 366.289px;
+    position: absolute;
+    top: 191.22px;
+	}
+	
+	  .rbox1 {
+        background-color:white;
+        width:450px;
+        height:450px;
+    }
+    .rbox2 {
+        position:absolute;
+        left:0px;
+        top:0px;
+        background-color:#C9E8FB;
+        width:450px;
+        height:450px;
+    }
+    .rbox3 {
+        position:absolute;
+        left:98.389px;
+        top:164.597px;
+        width:27.988px;
+        height:20.854px;
+    }
+    .rbox4 {
+        position:absolute;
+        left:205.5px;
+        top:147.344px;
+        width:50.061px;
+        height:20.854px;
+    }
+    .rbox5 {
+        position:absolute;
+        left:391.5px;
+        top:231.486px;
+        width:50.147px;
+        height:20.854px;
+    }
+    .rbox6 {
+        position:absolute;
+        left:548.835px;
+        top:141.094px;
+        width:49.915px;
+        height:20.854px;
+    }
+    .rbox7 {
+        position:absolute;
+        left:91.25px;
+        top:314.486px;
+        width:33.25px;
+        height:20.854px;
+    }
+    .rbox8 {
+        position:absolute;
+        left:369px;
+        top:359.839px;
+        width:49.915px;
+        height:20.854px;
+    }
+    .rbox9 {
+        position:absolute;
+        left:605.908px;
+        top:318.339px;
+        width:49.943px;
+        height:20.854px;
+    }
+    .rbox10 {
+        position:absolute;
+        left:111px;
+        top:463.5px;
+        width:50.175px;
+        height:20.854px;
+    }
+    .rbox11 {
+        position:absolute;
+        left:434.796px;
+        top:478.428px;
+        width:50.089px;
+        height:20.854px;
+    }
+    .rbox12 {
+        position:absolute;
+        left:540.908px;
+        top:560.339px;
+        width:35.731px;
+        height:20.854px;
+    }
+    .rbox13 {
+        position:absolute;
+        left:473.304px;
+        top:338.986px;
+        width:50.001px;
+        height:20.854px;
+    }
+    .rbox14 {
+        position:absolute;
+        left:132px;
+        top:23px;
+        padding:0px;
+        width:216.02px;
+        height:56.418px;
+    }
+	
+	
+	.red,.orange,.yellow,.green,.blue,.purple,.black,.brown,.white,.silver,.gold
+	{
+		position:absolute;
+		font-size:13px;
+	}
+	.red
+	{
+		left: 62px;
+    	top: 98px;
+	}
+	
+	.orange
+	{
+		left: 116px;
+    	top: 86px;
+	}
+	
+	.yellow
+	{
+		left: 226px;
+    	top: 140px;
+	}
+	
+	.green
+	{
+		left: 320px;
+    	top: 84px;
+	}
+	
+	.blue
+	{
+		left: 56px;
+    	top: 193px;
+	}
+	.purple
+	{
+		left: 219px;
+    	top: 215px;
+	}
+	.black
+	{
+		left: 282px;
+    	top: 206px;
+	}
+	.brown
+	{
+		left: 356px;
+    	top: 194px;
+	}
+	
+	
+	.white
+	{
+		left: 65px;
+    	top: 283px;
+	}
+	
+	.silver
+	{
+		left: 261px;
+    	top: 292px;
+	}
+	.gold
+	{
+		left: 321px;
+    	top: 340px;
+	}
+	
+	#Rside{
+		position:absolute;
+		left:425px;
+		top:0px;
+	}
+ 
+	 .text47 {
+        font-family:'OPTIMajerIrregular';
+        font-size:28px;
+        text-decoration:none;
+        color:#00AFED;
+    }
+</style>
+</head>
+
+<body>
+
+    
+        
+        <div class="box1">
+            <span id="t0249"><img src="images/36.jpg" alt="" width="425" height="445" 
+             /></span></div>
+        
+        
+     <div class="TextDiv">
+	   <div  class="games"><span  id="w000476">games</span></div>
+   	   <div  class="candles"><span id="w000477">candles</span></div>
+       <div class="cake"><span id="w000478">cake</span></div>
+       <div  class="party"><span  id="w000479">party<br />hats</span></div>
+       <div  class="record"><span id="w000482">record<br />player</span></div>
+       <div  class="goodie"><span id="w000483">goodie bags</span></div>
+       <div  class="confetti"><span id="w000484">confetti</span></div>
+       <div  class="cookies"><span id="w000485">cookies</span></div>
+       <div  class="cupcakes"><span id="w000486">cupcakes</span></div> 
+       <div  class="balloons"><span id="w000480">balloons</span></div>
+      
+       <div  class="presents"><span id="w000481">presents</span></div>
+       <div  class="presents"><span id="w000487">presents</span></div>
+ </div>
+    
+        
+        
+        
+
+<div class="box15">
+    <div class="pHeadparagraph">
+        <span class="text58"><span  id="w000475">Birthday Party</span> </span>
+    </div>
+</div>
+
+<div id="Rside">
+
+<div class="rbox1">
+<span id="t1250"><img src="images/37.jpg" alt="" width="425" height="445"/></span></div>
+<div class="red"><span id="w000490">red</span></div>
+<div class="orange"><span id="w000491">orange</span></div>
+<div class="yellow"><span id="w000492">yellow</span></div>
+<div class="green"><span id="w000493">green</span></div>
+<div class="blue"><span  id="w000497">blue</span></div>
+<div class="purple"><span  id="w000496">purple</span></div>
+<div class="black"><span id="w000495">black</span></div>
+<div class="brown"><span id="w000494">brown</span></div>
+<div class="white"><span  id="w000498">white</span></div>
+<div class="silver"><span id="w000499">silver</span></div>
+<div class="gold"><span id="w000500">gold</span></div>
+
+
+
+
+<div class="rbox14">
+    <div class="pHeadparagraph">
+        <span class="text47"><span  id="w000489">Colors</span> </span>
+    </div>
+</div>
+
+</div>
+
+<div id="chk"></div>
+<div id="timeValue"></div>
+</body>
+</html>

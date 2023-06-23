@@ -1,0 +1,17 @@
+<!DOCTYPE html>  
+<html lang="en">  
+  <head>  
+    <meta charset="utf-8">  
+    <title>Fishing</title>  
+    <link rel="stylesheet" href="assets/global.css">
+   <!--[if IE 9]>  <script>isIE9=true;</script> <![endif]-->
+  </head>  
+  <body>
+    <canvas id="gameCanvas" width="900" height="500">
+      Your browser does not support the canvas tag
+    </canvas>
+    <img id="loader-img" src="assets/images/loader.gif" alt="Loading..." />
+    <div title="Help" id="cgp-btn-help" onmouseover=" if(!isIOS) playSound(snd_help_over, 0, true);" onclick="replayHelp();"></div>
+    <script src="assets/cocos2d.js"></script>
+  </body>  
+</html>  

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<smil xmlns="http://www.w3.org/ns/SMIL" version="3.0" profile="http://www.idpf.org/epub/30/profile/content/">
+<body>
+  
+  <par>
+    <audio clipBegin="612.140894" clipEnd="613.051212" aText="opposites" id="w000356"/>
+  </par>
+  <par>
+    <audio clipBegin="614.791526" clipEnd="615.444814" aText="up" id="w000357"/>
+  </par>
+  <par>
+    <audio clipBegin="616.253391" clipEnd="617.040548" aText="down" id="w000358"/>
+  </par>
+  <par>
+    <audio clipBegin="618.106156" clipEnd="619.043249" aText="smile" id="w000359"/>
+  </par>
+  <par>
+    <audio clipBegin="619.498408" clipEnd="620.333759" aText="frown" id="w000360"/>
+  </par>
+  <par>
+    <audio clipBegin="621.345819" clipEnd="622.116912" aText="hot" id="w000361"/>
+  </par>
+  <par>
+    <audio clipBegin="622.770199" clipEnd="623.637679" aText="cold" id="w000362"/>
+  </par>
+  <par>
+    <audio clipBegin="624.398062" clipEnd="625.056705" aText="new" id="w000363"/>
+  </par>
+  <par>
+    <audio clipBegin="625.608250" clipEnd="626.175861" aText="old" id="w000364"/>
+  </par>
+  <par>
+    <audio clipBegin="627.161146" clipEnd="627.787660" aText="empty" id="w000365"/>
+  </par>
+  <par>
+    <audio clipBegin="628.419528" clipEnd="628.912170" aText="full" id="w000366"/>
+  </par>
+  <par>
+    <audio clipBegin="629.774295" clipEnd="630.395454" aText="push" id="w000367"/>
+  </par>
+  <par>
+    <audio clipBegin="630.898806" clipEnd="631.439643" aText="pull" id="w000368"/>
+  </par>
+  <par>
+    <audio clipBegin="632.532025" clipEnd="633.030022" aText="short" id="w000369"/>
+  </par>
+  <par>
+    <audio clipBegin="633.581568" clipEnd="634.545435" aText="tall" id="w000370"/>
+  </par>
+  <par>
+    <audio clipBegin="635.793106" clipEnd="636.451748" aText="big" id="w000371"/>
+  </par>
+  <par>
+    <audio clipBegin="636.992584" clipEnd="637.699420" aText="small" id="w000372"/>
+  </par>
+  <par>
+    <audio clipBegin="638.732899" clipEnd="639.412960" aText="stop" id="w000373"/>
+  </par>
+  <par>
+    <audio clipBegin="640.333988" clipEnd="640.815921" aText="go" id="w000374"/>
+  </par>
+  <par>
+    <audio clipBegin="641.635208" clipEnd="642.390237" aText="fast" id="w000375"/>
+  </par>
+  <par>
+    <audio clipBegin="642.738300" clipEnd="643.777134" aText="slow" id="w000376"/>
+  </par>
+  <par>
+    <audio clipBegin="644.805258" clipEnd="645.324675" aText="out" id="w000377"/>
+  </par>
+  <par>
+    <audio clipBegin="646.122542" clipEnd="646.561637" aText="in" id="w000378"/>
+  </par>
+  <par>
+    <audio clipBegin="647.632599" clipEnd="648.291242" aText="fat" id="w000379"/>
+  </par>
+  <par>
+    <audio clipBegin="649.062335" clipEnd="649.496075" aText="thin" id="w000380"/>
+  </par>
+  <par>
+    <audio clipBegin="650.690198" clipEnd="651.584452" aText="above" id="w000381"/>
+  </par>
+  <par>
+    <audio clipBegin="652.050321" clipEnd="652.832124" aText="below" id="w000382"/>
+  </par>
+  <par>
+    <audio clipBegin="653.635346" clipEnd="654.422503" aText="good bye" id="w000383"/>
+  </par>
+  <par>
+    <audio clipBegin="654.749147" clipEnd="655.498821" aText="hello" id="w000384"/>
+  </par>
+
+
+</body>
+</smil>

@@ -1,0 +1,34 @@
+<div class='rebate-modal'>
+  <div class="rebate-modal-header">
+    Claiming your rebate is easy!
+  </div>
+  <div class="modal-body">
+    <div class="rebate-body" ng-class="{'calculating' : sendingRebate, 'rebate-sent' : rebateSent }">
+      <div class="rebate-email-form">
+        <form>
+          <label for="email-field">Enter your email to get started.</label>
+          <input type="text" id="email-field"></input>
+          <div class="input-helper">
+            We will email you simple instructions instantly.
+          </div>
+        </form>
+      </div>
+      <div class="calculating-progress">
+        <div class="progress-message">We're sending your rebate right now. Hang tight!</div>
+        <div class="calculating-progress-bar"></div>
+      </div>
+      <div class="calculating-progress-sent">
+        <div class="progress-message">Rebate sent!</div>
+        <div class="progress-sub">Find your <strong>$50 instant rebate</strong> in your email inbox.</div>
+      </div>
+    </div>
+    <div class="modal-actions">
+      <button class="button" ng-click="sendRebate()" ng-class="{'button-state-sending' : sendingRebate, 'button-state-sent' : rebateSent}">
+        <span class="rebate-send">Send rebate</span>
+        <span class="rebate-sending">Sending...</span>
+        <span class="rebate-finish">Great!</span>
+      </button>
+    </div>
+  </div>
+  <a class="close-reveal-modal" ng-click="cancel()">&#215;</a>
+</div>

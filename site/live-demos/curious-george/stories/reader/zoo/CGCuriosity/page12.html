@@ -1,0 +1,669 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+ "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>
+    Untitled Document
+</title>
+<link href="skin/blue.monday/jplayer.blue.monday.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.jplayer.min.js"></script>
+<meta http-equiv="Content-Type" content="text/html;CHARSET=utf-8"/>
+<meta name="viewport" content="width=450,height=450" />
+
+<style type="text/css">
+ 
+    a:link {
+        color:blue;
+        text-decoration:underline;
+    }
+    a:active { color:red }
+    a:visited { color:purple }
+    
+  @font-face {
+  font-family: 'Adobe Garamond Semibold Italic';
+  src: url("font/AGARAMSI.TTF");
+  }
+@font-face {
+  font-family: 'CuriousGerogeheader-Medium';
+  src: url("font/CURIOUGM.TTF");
+  }
+@font-face {
+  font-family: 'New Century Schoolbook Italic';
+  src: url("font/NEWCENSI.TTF");
+  }
+@font-face {
+  font-family: 'New Century Schoolbook Roman';
+  src: url("font/NEWCENSR.TTF");
+  }
+@font-face {
+  font-family: 'OPTIMajerIrregular';
+  src: url("font/OPTIMAJI.TTF");
+  }
+
+body {
+   width: 850px;
+   height: 450px;
+   margin:0; 
+
+        background-color:white;
+        color:#393838;
+    }
+    .text59 {
+        font-family:'OPTIMajerIrregular';
+        font-size:28px;
+        text-decoration:none;
+        color:#335C93;
+    }
+    .pHeadparagraph {
+        line-height:42px;
+        text-align:center;
+    }
+    .rbox1 {
+        background-color:white;
+        width:450px;
+        height:450px;
+    }
+    .rbox2 {
+        position:absolute;
+        left:42.298px;
+        top:36.126px;
+        width:337.145px;
+        height:57.374px;
+    }
+    .rbox3 {
+        position:absolute;
+        left:492.823px;
+        top:367.834px;
+        width:64.056px;
+        height:20.854px;
+    }
+    .rbox4 {
+        position:absolute;
+        left:564.429px;
+        top:516px;
+        width:63.946px;
+        height:20.854px;
+    }
+    .rbox5 {
+        position:absolute;
+        left:117.089px;
+        top:544px;
+        width:44.244px;
+        height:20.854px;
+    }
+    .rbox6 {
+        position:absolute;
+        left:419.592px;
+        top:546.528px;
+        width:64.133px;
+        height:20.854px;
+    }
+    .rbox7 {
+        position:absolute;
+        left:202.975px;
+        top:687.771px;
+        width:73.894px;
+        height:20.854px;
+    }
+    .rbox8 {
+        position:absolute;
+        left:502.558px;
+        top:265.25px;
+        width:70.061px;
+        height:16.883px;
+    }
+    .rbox9 {
+        position:absolute;
+        left:256.594px;
+        top:429.068px;
+        width:76.133px;
+        height:15.762px;
+    }
+    .rbox10 {
+        position:absolute;
+        left:156.107px;
+        top:510.146px;
+        width:51.894px;
+        height:20.854px;
+    }
+    .rbox11 {
+        position:absolute;
+        left:357.15px;
+        top:671.5px;
+        width:88.18px;
+        height:20.854px;
+    }
+    .rbox12 {
+        position:absolute;
+        left:351.246px;
+        top:311.834px;
+        width:57.731px;
+        height:20.854px;
+    }
+    .rbox13 {
+        position:absolute;
+        left:470.025px;
+        top:422.034px;
+        width:73.621px;
+        height:20.854px;
+    }
+    .rbox14 {
+        position:absolute;
+        left:482.758px;
+        top:99.991px;
+        width:90.246px;
+        height:20.854px;
+    }
+    .rbox15 {
+        position:absolute;
+        left:589.945px;
+        top:53.435px;
+        width:50.055px;
+        height:20.854px;
+    }
+    .rbox16 {
+        position:absolute;
+        left:603.38px;
+        top:367.8px;
+        width:78.625px;
+        height:20.854px;
+    }
+    .rbox17 {
+        position:absolute;
+        left:550.929px;
+        top:390.474px;
+        width:62.642px;
+        height:40.5px;
+    }
+    .rbox18 {
+        position:absolute;
+        left:392.276px;
+        top:91.985px;
+        width:86.68px;
+        height:20.854px;
+    }
+    .rbox19 {
+        position:absolute;
+        left:624.204px;
+        top:26px;
+        width:51.278px;
+        height:20.854px;
+    }
+    .rbox20 {
+        position:absolute;
+        left:331.031px;
+        top:122.151px;
+        width:66.64px;
+        height:112.84px;
+    }
+    .rbox21 {
+        position:absolute;
+        left:435.636px;
+        top:106.767px;
+        width:4.909px;
+        height:71.274px;
+    }
+    .rbox22 {
+        position:absolute;
+        left:494.343px;
+        top:115.099px;
+        width:23.142px;
+        height:99.027px;
+    }
+    .rbox23 {
+        position:absolute;
+        left:617.197px;
+        top:68.047px;
+        width:20.946px;
+        height:52.017px;
+    }
+    .rbox24 {
+        position:absolute;
+        left:653.55px;
+        top:40.555px;
+        width:8.321px;
+        height:49.286px;
+    }
+    .rbox25 {
+        position:absolute;
+        left:582.063px;
+        top:319.886px;
+        width:15.807px;
+        height:68.606px;
+    }
+    .rbox26 {
+        position:absolute;
+        left:450.651px;
+        top:357.597px;
+        width:43.574px;
+        height:17.384px;
+    }
+    .rbox27 {
+        position:absolute;
+        left:423.508px;
+        top:373.332px;
+        width:81.385px;
+        height:48.209px;
+    }
+    .rbox28 {
+        position:absolute;
+        left:490.398px;
+        top:264.467px;
+        width:11.696px;
+        height:7.312px;
+    }
+    .rbox29 {
+        position:absolute;
+        left:375.277px;
+        top:537.815px;
+        width:47.957px;
+        height:15.483px;
+    }
+    .rbox30 {
+        position:absolute;
+        left:653.024px;
+        top:343.663px;
+        width:10.251px;
+        height:23.875px;
+    }
+    .rbox31 {
+        position:absolute;
+        left:97.357px;
+        top:545.93px;
+        width:23.656px;
+        height:5.331px;
+    }
+    .rbox32 {
+        position:absolute;
+        left:120.74px;
+        top:495.774px;
+        width:40.274px;
+        height:19.38px;
+    }
+    .rbox33 {
+        position:absolute;
+        left:231.478px;
+        top:675.342px;
+        width:3.935px;
+        height:8.907px;
+    }
+    .rbox34 {
+        position:absolute;
+        left:238.044px;
+        top:594.251px;
+        width:41.637px;
+        height:90.088px;
+    }
+    .rbox35 {
+        position:absolute;
+        left:301.384px;
+        top:660.176px;
+        width:59.502px;
+        height:18.421px;
+    }
+    .rbox36 {
+        position:absolute;
+        left:276.715px;
+        top:107.47px;
+        width:109.564px;
+        height:32.598px;
+    }
+    .rbox37 {
+        position:absolute;
+        left:0px;
+        top:0px;
+        width:450px;
+        height:450px;
+    }
+    .rbox38 {
+	position:absolute;
+	left:7px;
+	top:11px;
+	padding:0px;
+	width:246px;
+	height:38px;
+    }
+ .commondiv{
+ 	font-size:13px;
+	}
+ .neighbours{
+ 	 left: 120px;
+    position: absolute;
+    top: 418px;
+ 	}
+  .fire{
+ 	 left: 215px;
+    position: absolute;
+    top: 410px;
+ 	}
+  .hydrant{
+ 	 left: 235px;
+    position: absolute;
+    top: 410px;
+ 	}
+  .mailrbox{
+ 	 left: 252px;
+    position: absolute;
+    top: 332px;
+ 	}	
+  .trees{
+ 	 left: 73px;
+    position: absolute;
+    top: 331px;
+ 	}
+   .leaves{
+ 	left: 95px;
+    position: absolute;
+    top: 309px;
+ 	}			
+	 .sprinkler{
+ 	 left: 150px;
+    position: absolute;
+    top: 261px;
+ 	}	
+	 .bushes{
+ 	 left: 204px;
+    position: absolute;
+    top: 188px;
+ 	}			
+	.streetlights{
+ 	  left: 166px;
+    position: absolute;
+    top: 59px;
+ 	}	
+	.playground{
+ 	  left: 228px;
+    position: absolute;
+    top: 47px;
+ 	}	
+	.traffic{
+ 	   left: 290px;
+    position: absolute;
+    top: 57px;
+ 	}	
+	.light{
+ 	   left: 324px;
+    position: absolute;
+    top: 57px;
+ 	}	
+	.statue{
+ 	   left: 344px;
+    position: absolute;
+    top: 28px;
+ 	}
+	.school{
+ 	   left: 366px;
+    position: absolute;
+    top: 10px;
+ 	}		
+	.street{
+ 	   left: 296px;
+    position: absolute;
+    top: 157px;
+ 	}	
+	.sign{
+ 	   left: 305px;
+    position: absolute;
+    top: 165px;
+ 	}
+	.crosswalk{
+ 	 left: 355px;
+    position: absolute;
+    top: 222px;
+ 	}
+	.crossing{
+ 	left: 322px;
+    position: absolute;
+    top: 235px;
+ 	}	
+	.guard{
+ 	left: 329px;
+    position: absolute;
+    top: 247px;
+ 	}		
+	.sidewalk{
+ 	left: 292px;
+    position: absolute;
+    top: 222px;
+ 	}			
+	.lamppost{
+ 	left: 275px;
+    position: absolute;
+    top: 256px;
+ 	}	
+	.street_sign{
+ 	left: 333px;
+    position: absolute;
+    top: 309px;
+ 	}	
+	.street
+	{
+		left: 290px;
+    position: absolute;
+    top: 160px;
+	}
+		.Rside
+	{
+		position:absolute;
+		left:425px;
+		top:0px;
+		
+	}	
+	.box1 {
+        background-color:white;
+        width:450px;
+        height:450px;
+		position:absolute;
+    }
+    .box2 {
+        position:absolute;
+        left:228.666px;
+        top:581.896px;
+        width:64.133px;
+        height:20.854px;
+    }
+    .box4 {
+        position:absolute;
+        left:63.18px;
+        top:650.258px;
+        width:104.695px;
+        height:20.854px;
+    }
+    .box6 {
+        position:absolute;
+        left:261.55px;
+        top:459.324px;
+        width:70.625px;
+        height:20.551px;
+    }
+    .box7 {
+        position:absolute;
+        left:85.204px;
+        top:205.646px;
+        width:51.121px;
+        height:20.854px;
+    }
+    .box9 {
+        position:absolute;
+        left:121.452px;
+        top:44.333px;
+        width:58.811px;
+        height:48.632px;
+    }
+    .box10 {
+        position:absolute;
+        left:568.531px;
+        top:696.795px;
+        width:86.469px;
+        height:20.854px;
+    }
+    .box12 {
+        position:absolute;
+        left:149.348px;
+        top:73.851px;
+        width:39.571px;
+        height:169.852px;
+    }
+    .box13 {
+        position:absolute;
+        left:216.552px;
+        top:453.519px;
+        width:45.067px;
+        height:13.902px;
+    }
+    .box14 {
+        position:absolute;
+        left:587.439px;
+        top:663.904px;
+        width:15.834px;
+        height:32.039px;
+    }
+    .box16 {
+        position:absolute;
+        left:255.301px;
+        top:536.192px;
+        width:7.053px;
+        height:44.605px;
+    }
+    .box18 {
+        position:absolute;
+        left:640.271px;
+        top:102.875px;
+        width:53.672px;
+        height:18.606px;
+    }
+    .box19 {
+        position:absolute;
+        left:595.647px;
+        top:87.236px;
+        width:56.488px;
+        height:21.716px;
+    }
+ .commondiv{
+ 	font-size:13px;
+ }
+ .flag{
+ 	position:absolute;
+	left:387px;
+	top:45px;
+ }
+ .fire{
+ 	left: 346px;
+    position: absolute;
+    top: 412px;
+ }
+ .fire_hy
+ {
+	    left: 214px;
+    position: absolute;
+    top: 412px;
+ }
+ .truck{
+ 	left: 365px;
+    position: absolute;
+    top: 412px;
+ }
+ .flowers{
+ 	left: 134px;
+    position: absolute;
+    top: 341px;
+ }
+ .car{
+ 	 left: 61px;
+    position: absolute;
+    top: 377px;
+ }
+ .pay{
+ 	left: 156px;
+    position: absolute;
+    top: 268px;
+ }
+ .phone{
+ 	left: 179px;
+    position: absolute;
+    top: 268px;
+ }
+ .bus{
+ 	left: 55px;
+    position: absolute;
+    top: 108px;
+ }
+ .movie{
+ 	left: 74px;
+    position: absolute;
+    top: 3px;
+ }
+ .theater{
+ 	left: 72px;
+    position: absolute;
+    top: 15px;
+ }		
+</style>
+</head>
+
+<body>
+
+    
+        
+        <div class="rbox1">
+            <img src="images/10.jpg" alt="" width="425" height="445" 
+             /></div>
+        
+ 			<div class="commondiv">
+            	<div class="neighbours"><span>neighbors</span></div>
+                	<div class="fire_hy"><span id='w000106'>fire hydrant</span></div>
+                        	<div class="mailrbox"><span id='w000105'>mailbox</span></div>
+                            	<div class="trees"><span id='w00093'>trees</span></div>
+                                	<div class="leaves"><span id='w00094'>leaves</span></div>
+                                    	<div class="sprinkler"><span id='w00095'>sprinkler</span></div>
+                                        	<div class="bushes"><span id='w00096'>bushes</span></div>
+                                            	<div class="streetlights"><span id='w00097'>streetlights</span></div>
+                                                	<div class="playground"><span id='w00098'>playground</span></div>
+                                                    	<div class="traffic"><span id='w00099'>traffic light</span></div>
+                                                           	  <div class="statue"><span id='w000100'>statue</span></div>
+                                                             	<div class="school"><span id='w000101'>school</span></div>
+                                                               	 <div class="street"><span id='w000102'>street sign</span></div>
+                                                                    	 <div class="crosswalk"><span id='w000108'>crosswalk</span></div>
+                                                             				<div class="crossing"><span id='w000107'>crossing guard</span></div>
+                                                                                	<div class="sidewalk"><span id='w000103'>sidewalk</span></div>
+                                                                                    	<div class="lamppost"><span id='w000104'>lamppost</span></div>
+                                                                                        	<div class="street_sign"><span id='w000109'>street</span></div>
+            </div>	       
+    
+    
+        
+        
+        
+
+<div class="rbox38">
+    <div class="pHeadparagraph">
+        <span class="text59"><span id="w00091">Your</span> <span id="w00092">Neighborhood</span> </span>
+    </div>
+</div>
+<!--Right side--->
+<div class="Rside">
+  <div class="box1">
+          <span id="t0218"><img src="images/11.jpg" alt="" width="425" height="445" 
+             /></span></div>
+        <div class="commondiv">
+   		     <div class="flag"><span id='w000111'>flag</span></div>
+        		 <div class="fire"><span id='w000115'>fire truck</span></div>
+                    	<div class="flowers"><span id='w000113'>flowers</span></div>
+                        	<div class="car"><span id='w000114'>car</span></div>
+                            	<div class="pay"><span id='w000112'>pay phone</span></div>
+                                    	<div class="bus"><span id='w000110'>bus</span></div>
+                                        	<div class="movie"><span>movie</span></div>
+                                            	<div class="theater"><span>theater</span></div>
+        </div>
+        
+    
+    
+        
+        
+</div>
+
+<div id="chk"></div>
+<div id="timeValue"></div>
+</body>
+</html>

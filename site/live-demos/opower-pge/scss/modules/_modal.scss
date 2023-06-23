@@ -1,0 +1,54 @@
+.reveal-modal{
+  top:40%;
+}
+
+.energy-breakdown{
+  .reveal-modal{
+    padding: 50px 40px 20px 40px;
+  }
+  h1{
+    font-size:rem-calc(25);
+    font-weight:bold;
+    margin-bottom: 1.5rem;
+  }
+  p{
+    font-size:rem-calc(17);
+    color:$black;
+    line-height:1.5;
+  }
+  .button{
+    float:right;
+    &.cancel {
+      margin-right:15px;
+    }
+  }
+}
+
+.reveal-modal-bg {
+    @include reveal-bg;
+    @include transition(opacity $animation-speed);
+    opacity: 0;
+    position: fixed;
+    z-index: 9998;
+    &.in {
+      opacity: 1;
+    }
+}
+
+.reveal-modal {
+    @include transition-property(transform, opacity);
+    @include transition-duration(0.2s);
+    @include transition-timing-function(ease-in-out);
+    @include transform(scale(0.8));
+    border: $reveal-border-width $reveal-border-style $reveal-border-color;
+    border-radius: $global-radius;
+    opacity: 0;
+    outline: none;
+    padding: $reveal-modal-padding;
+    position: fixed;
+    z-index: 9999;
+    &.in {
+        @include transform(scale(1));
+        opacity: 1;
+    }
+  }

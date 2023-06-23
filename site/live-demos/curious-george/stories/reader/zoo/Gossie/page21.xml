@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<smil xmlns="http://www.w3.org/ns/SMIL" version="3.0" profile="http://www.idpf.org/epub/30/profile/content/">
+<body>
+
+
+<par id="p0099">
+<audio src="images/Gossie.m4a" clipBegin="
+89.522566s" clipEnd="90.049716s" id="w0264" />
+</par>
+
+<par id="p0100">
+<audio src="images/Gossie.m4a" clipBegin="
+90.049716s" clipEnd="91.662177s" id="w0265" />
+</par>
+
+
+</body>
+</smil>

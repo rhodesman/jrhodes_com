@@ -1,0 +1,1022 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+ "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>
+    Untitled Document
+</title>
+<link href="skin/blue.monday/jplayer.blue.monday.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.jplayer.min.js"></script>
+<meta http-equiv="Content-Type" content="text/html;CHARSET=utf-8"/>
+<meta name="viewport" content="width=450,height=450" />
+
+<style type="text/css">
+ 
+    a:link {
+        color:blue;
+        text-decoration:underline;
+    }
+    a:active { color:red }
+    a:visited { color:purple }
+    
+  @font-face {
+  font-family: 'Adobe Garamond Semibold Italic';
+  src: url("font/AGARAMSI.TTF");
+  }
+@font-face {
+  font-family: 'CuriousGerogeheader-Medium';
+  src: url("font/CURIOUGM.TTF");
+  }
+@font-face {
+  font-family: 'New Century Schoolbook Italic';
+  src: url("font/NEWCENSI.TTF");
+  }
+@font-face {
+  font-family: 'New Century Schoolbook Roman';
+  src: url("font/NEWCENSR.TTF");
+  }
+@font-face {
+  font-family: 'OPTIMajerIrregular';
+  src: url("font/OPTIMAJI.TTF");
+  }
+
+body {
+   width: 850px;
+   height: 450px;
+   margin:0; 
+
+        background-color:white;
+        color:#393838;
+    }
+    .text102 {
+        font-family:'OPTIMajerIrregular';
+        font-size:20px;
+        text-decoration:none;
+        color:#335C93;
+    }
+    .text20 {
+        font-family:'OPTIMajerIrregular';
+        font-size:20px;
+        text-decoration:none;
+        color:#DD8646;
+    }
+    .text16 {
+        font-family:'OPTIMajerIrregular';
+        font-size:28px;
+        text-decoration:none;
+        color:#40A75F;
+    }
+    .pSUBHEAD {
+        line-height:24px;
+        text-align:center;
+    }
+    .rbox1 {
+        background-color:white;
+        width:450px;
+        height:450px;
+    }
+    .rbox2 {
+        position:absolute;
+        left:601.366px;
+        top:550.997px;
+        width:94.145px;
+        height:142.445px;
+    }
+    .rbox3 {
+        position:absolute;
+        left:19.93px;
+        top:683.146px;
+        width:127.572px;
+        height:20.854px;
+    }
+    .rbox5 {
+        position:absolute;
+        left:35.017px;
+        top:565.152px;
+        width:86.873px;
+        height:113.119px;
+    }
+    .rbox6 {
+        position:absolute;
+        left:111.267px;
+        top:392.084px;
+        width:498.786px;
+        height:200.646px;
+    }
+    .rbox7 {
+        position:absolute;
+        left:64px;
+        top:287.5px;
+        width:57px;
+        height:20.854px;
+    }
+    .rbox9 {
+        position:absolute;
+        left:312.135px;
+        top:232px;
+        width:57.265px;
+        height:20.854px;
+    }
+    .rbox10 {
+        position:absolute;
+        left:577.687px;
+        top:150.734px;
+        width:93.728px;
+        height:39.905px;
+    }
+    .rbox12 {
+        position:absolute;
+        left:65.482px;
+        top:393.27px;
+        width:99px;
+        height:36.73px;
+    }
+    .rbox13 {
+        position:absolute;
+        left:163.875px;
+        top:599.646px;
+        width:111.055px;
+        height:20.854px;
+    }
+    .rbox14 {
+        position:absolute;
+        left:540.259px;
+        top:468.324px;
+        width:110.731px;
+        height:20.854px;
+    }
+    .rbox15 {
+        position:absolute;
+        left:52.895px;
+        top:519.266px;
+        width:54.765px;
+        height:20.854px;
+    }
+    .rbox17 {
+        position:absolute;
+        left:557.187px;
+        top:608.533px;
+        width:67.188px;
+        height:49.431px;
+    }
+    .rbox18 {
+        position:absolute;
+        left:341.092px;
+        top:206.871px;
+        width:0.5px;
+        height:22.175px;
+    }
+    .rbox19 {
+        position:absolute;
+        left:236.014px;
+        top:553.311px;
+        width:46.481px;
+        height:49.157px;
+    }
+    .rbox20 {
+        position:absolute;
+        left:555.1px;
+        top:482.272px;
+        width:26.061px;
+        height:31.482px;
+    }
+    .rbox21 {
+        position:absolute;
+        left:161.5px;
+        top:43px;
+        width:399.049px;
+        height:318.163px;
+    }
+    .rbox22 {
+        position:absolute;
+        left:406.859px;
+        top:46.497px;
+        width:151.141px;
+        height:46.256px;
+    }
+    .rbox23 {
+        position:absolute;
+        left:341.317px;
+        top:222.138px;
+        width:36.458px;
+        height:20.854px;
+    }
+    .rbox24 {
+        position:absolute;
+        left:249.484px;
+        top:102.183px;
+        width:60.025px;
+        height:24.636px;
+    }
+    .rbox25 {
+        position:absolute;
+        left:286.192px;
+        top:115.687px;
+        width:56.63px;
+        height:42.906px;
+    }
+    .rbox26 {
+        position:absolute;
+        left:345.94px;
+        top:194.158px;
+        width:13.667px;
+        height:28.572px;
+    }
+    .rbox27 {
+        position:absolute;
+        left:420.015px;
+        top:119.091px;
+        width:48.112px;
+        height:24.636px;
+    }
+    .rbox28 {
+        position:absolute;
+        left:437.691px;
+        top:132.899px;
+        width:5.075px;
+        height:15.638px;
+    }
+    .rbox31 {
+        position:absolute;
+        left:40.615px;
+        top:145.92px;
+        width:98.884px;
+        height:138.41px;
+    }
+    .rbox33 {
+        position:absolute;
+        left:568.776px;
+        top:54.653px;
+        width:115.694px;
+        height:90.117px;
+    }
+    .rbox35 {
+        position:absolute;
+        left:73.622px;
+        top:36px;
+        width:118.201px;
+        height:56.418px;
+    }
+    .rbox36 {
+        position:absolute;
+        left:565.669px;
+        top:228.625px;
+        width:137.323px;
+        height:72.83px;
+    }
+    .rbox37 {
+        position:absolute;
+        left:588.293px;
+        top:300.156px;
+        width:57.167px;
+        height:34.187px;
+    }
+    .rbox38 {
+        position:absolute;
+        left:408.757px;
+        top:609.997px;
+        width:81.122px;
+        height:80.165px;
+    }
+    .rbox39 {
+        position:absolute;
+        left:248.66px;
+        top:613.5px;
+        width:112.683px;
+        height:83.823px;
+    }
+    .rbox40 {
+        position:absolute;
+        left:46.917px;
+        top:443.463px;
+        width:69.303px;
+        height:72.443px;
+    }
+    .rbox41 {
+        position:absolute;
+        left:479px;
+        top:654.309px;
+        width:63.213px;
+        height:48.024px;
+    }
+    .rbox42 {
+        position:absolute;
+        left:204.454px;
+        top:646.646px;
+        width:51.551px;
+        height:20.854px;
+    }
+    .rbox68 {
+        position:absolute;
+        left:0px;
+        top:0px;
+        background-color:#D6D2E9;
+        width:450px;
+        height:450px;
+    }
+    .rbox112 {
+	position:absolute;
+	left:31px;
+	top:243px;
+	padding:0px;
+	width:80px;
+	height:36.73px;
+    }
+    .rbox119 {
+	position:absolute;
+	left:236px;
+	top:24px;
+	padding:0px;
+	width:112px;
+	height:34px;
+    }
+    .rbox126 {
+        position:absolute;
+        left:568.526px;
+        top:54.332px;
+        width:116.192px;
+        height:90.758px;
+    }
+    .rbox127 {
+	position:absolute;
+	left:44px;
+	top:23px;
+	padding:0px;
+	width:100px;
+	height:33px;
+    }
+ .commondiv{
+ 	font-size:13px;
+ }
+ .pancakes{
+ 	position:absolute;
+	left:134px;
+	top:56px;
+ }
+ .jelly{
+ 	position:absolute;
+	left:252px;
+	top:67px;
+ }
+ .eggs{
+	position:absolute;
+	left:336px;
+	top:87px;
+ }
+ .and{
+ 	position:absolute;
+	left:377px;
+	top:87px;
+ }
+ .bacon{
+ 	position:absolute;
+	left:358px;
+	top:103px;
+ }
+ .cereal{
+ 	position:absolute;
+	left:349px;
+	top:182px;
+ }
+ .juice{
+ 	position:absolute;
+	left:48px;
+	top:171px;
+ }
+ .toast{
+ 	position:absolute;
+	left:198px;
+	top:132px;
+ }
+  .apple{
+ 	position:absolute;
+	left:36px;
+	top:317px;
+ }
+ .veggies{
+ 	position:absolute;
+	left:333px;
+	top:283px;
+ }
+  .veggies2{
+ 	position:absolute;
+	left:333px;
+	top:283px;
+ }
+ .potato{
+	position:absolute;
+	left:302px;
+	top:369px;
+ }
+ .chips{
+ 	position:absolute;
+	left:328px;
+	top:383px;
+ }
+ .carrot{
+ 	position:absolute;
+	left:290px;
+	top:395px;
+ }
+ .sticks{
+ 	position:absolute;
+	left:290px;
+	top:405px;
+ }
+ .pizza{
+ 	position:absolute;
+	left:119px;
+	top:395px;
+ }
+ .sandwiches{
+ 	position:absolute;
+	left:26px;
+	top:419px;
+ }
+ .milk{
+ 	position:absolute;
+	left:118px;
+	top:369px;
+ }
+  .text100 {
+        font-family:'OPTIMajerIrregular';
+        font-size:20px;
+        text-decoration:none;
+        color:#61A155;
+    }
+    .text99 {
+        font-family:'OPTIMajerIrregular';
+        font-size:20px;
+        text-decoration:none;
+        color:#CD383B;
+    }
+    .text97 {
+        font-family:'OPTIMajerIrregular';
+        font-size:20px;
+        text-decoration:none;
+        color:#434494;
+    }
+    .pSUBHEAD {
+        line-height:24px;
+        text-align:center;
+    }
+    .box1 {
+        background-color:white;
+        width:450px;
+        height:450px;
+    }
+    .box2 {
+        position:absolute;
+        left:0px;
+        top:0px;
+        background-color:#D6D2E9;
+        width:450px;
+        height:450px;
+    }
+    .box3 {
+        position:absolute;
+        left:257px;
+        top:11px;
+        width:332px;
+        height:198px;
+    }
+    .box4 {
+        position:absolute;
+        left:391px;
+        top:29px;
+        width:50px;
+        height:21px;
+    }
+    .box5 {
+        position:absolute;
+        left:415.557px;
+        top:42.338px;
+        width:18.885px;
+        height:34.324px;
+    }
+    .box6 {
+        position:absolute;
+        left:298px;
+        top:201px;
+        width:111px;
+        height:21px;
+    }
+    .box7 {
+        position:absolute;
+        left:344px;
+        top:219px;
+        width:111px;
+        height:21px;
+    }
+    .box8 {
+        position:absolute;
+        left:596px;
+        top:445px;
+        width:99px;
+        height:23px;
+    }
+    .box12 {
+        position:absolute;
+        left:352.687px;
+        top:129.506px;
+        width:4.625px;
+        height:71.987px;
+    }
+    .box13 {
+        position:absolute;
+        left:400.798px;
+        top:128.149px;
+        width:23.403px;
+        height:90.702px;
+    }
+    .box14 {
+        position:absolute;
+        left:557.944px;
+        top:23.729px;
+        width:92.658px;
+        height:75.483px;
+    }
+    .box15 {
+        position:absolute;
+        left:542px;
+        top:244px;
+        width:152px;
+        height:61px;
+    }
+    .box19 {
+        position:absolute;
+        left:590px;
+        top:360px;
+        width:110px;
+        height:82px;
+    }
+    .box23 {
+        position:absolute;
+        left:53.673px;
+        top:53.329px;
+        width:137.325px;
+        height:99.891px;
+    }
+    .box24 {
+        position:absolute;
+        left:157px;
+        top:124px;
+        width:94px;
+        height:39px;
+    }
+    .box25 {
+	position:absolute;
+	left:136px;
+	top:408px;
+	padding:0px;
+	width:79px;
+	height:28px;
+    }
+    .box26 {
+        position:absolute;
+        left:466px;
+        top:320px;
+        width:117px;
+        height:70px;
+    }
+    .box27 {
+        position:absolute;
+        left:568px;
+        top:307px;
+        width:112px;
+        height:27px;
+    }
+    .box28 {
+        position:absolute;
+        left:473px;
+        top:394px;
+        width:105px;
+        height:50px;
+    }
+    .box32 {
+        position:absolute;
+        left:98px;
+        top:254px;
+        width:364px;
+        height:257px;
+    }
+    .box33 {
+        position:absolute;
+        left:315px;
+        top:269px;
+        width:73px;
+        height:21px;
+    }
+    .box34 {
+        position:absolute;
+        left:270px;
+        top:285px;
+        width:73px;
+        height:20px;
+    }
+    .box35 {
+        position:absolute;
+        left:180px;
+        top:405px;
+        width:74px;
+        height:21px;
+    }
+    .box36 {
+        position:absolute;
+        left:314px;
+        top:401px;
+        width:29px;
+        height:21px;
+    }
+    .box37 {
+        position:absolute;
+        left:327px;
+        top:413px;
+        width:62px;
+        height:20px;
+    }
+    .box38 {
+        position:absolute;
+        left:257px;
+        top:405px;
+        width:45px;
+        height:20px;
+    }
+    .box39 {
+        position:absolute;
+        left:326.542px;
+        top:383.8px;
+        width:8.916px;
+        height:17.401px;
+    }
+    .box40 {
+        position:absolute;
+        left:344.532px;
+        top:380.824px;
+        width:13.936px;
+        height:33.351px;
+    }
+    .box41 {
+        position:absolute;
+        left:279.411px;
+        top:374.077px;
+        width:6.179px;
+        height:30.846px;
+    }
+    .box42 {
+        position:absolute;
+        left:220.587px;
+        top:382.718px;
+        width:14.825px;
+        height:20.565px;
+    }
+    .box43 {
+        position:absolute;
+        left:297.563px;
+        top:299.031px;
+        width:5.874px;
+        height:60.938px;
+    }
+    .box44 {
+        position:absolute;
+        left:344.865px;
+        top:284.715px;
+        width:10.27px;
+        height:61.571px;
+    }
+    .box45 {
+        position:absolute;
+        left:43px;
+        top:503px;
+        width:155px;
+        height:89px;
+    }
+    .box46 {
+        position:absolute;
+        left:80px;
+        top:597px;
+        width:80px;
+        height:40px;
+    }
+    .box50 {
+        position:absolute;
+        left:28px;
+        top:255px;
+        width:107px;
+        height:68px;
+    }
+    .box51 {
+        position:absolute;
+        left:65px;
+        top:325px;
+        width:46px;
+        height:30px;
+    }
+    .box52 {
+        position:absolute;
+        left:121px;
+        top:252px;
+        width:112px;
+        height:48px;
+    }
+    .box53 {
+        position:absolute;
+        left:154px;
+        top:36px;
+        width:122px;
+        height:33px;
+    }
+    .box54 {
+        position:absolute;
+        left:611px;
+        top:86px;
+        width:61px;
+        height:31px;
+    }
+    .box55 {
+        position:absolute;
+        left:340.642px;
+        top:483.266px;
+        width:371.526px;
+        height:227.558px;
+    }
+    .box56 {
+        position:absolute;
+        left:292px;
+        top:603px;
+        width:76px;
+        height:21px;
+    }
+    .box151 {
+	position:absolute;
+	left:66px;
+	top:139px;
+	padding:0px;
+	width:80px;
+	height:27px;
+    }
+    .box152 {
+	position:absolute;
+	left:95px;
+	top:22px;
+	padding:0px;
+	width:72px;
+	height:27px;
+    }
+	.TextContent
+	{
+		 font-size: 13px;
+	}
+	.raisins
+	{
+	    left: 225.289px;
+		position: absolute;
+		top: 12.22px;
+	}
+	.cookies{
+		left: 354.289px;
+    	position: absolute;
+   		top: 58.22px;
+	}
+	.cheese{
+		left: 79.289px;
+		position: absolute;
+		top: 91.22px;
+	}
+	.and{
+		left: 117.289px;
+   		 position: absolute;
+    	top: 91.22px;
+	}
+	.crackers{
+		left: 88.289px;
+		position: absolute;
+		top: 102.22px;
+	}
+	.grapes{
+		left: 189.289px;
+		position: absolute;
+		top: 118.22px;
+	}
+	.applesauce{
+		left: 209.289px;
+		position: absolute;
+		top: 132.22px;
+	}
+	.veggies{
+		    left: 332.29px;
+    position: absolute;
+    top: 283.22px;
+	}
+	.veggies2{
+		  left: 182.289px;
+		position: absolute;
+		top: 156.22px;
+	}
+	.potatoes{
+		left: 161.289px;
+		position: absolute;
+		top: 169.22px;
+	}
+	.ham{
+		left: 44.289px;
+		position: absolute;
+		top: 196.22px;
+	}
+	.chicken{
+		left: 330.289px;
+    position: absolute;
+    top: 184.22px;
+	}
+	.fingers{
+		 left: 375.289px;
+    position: absolute;
+    top: 184.22px;
+	}
+	.rolls{
+		 left: 114.289px;
+    position: absolute;
+    top: 247.22px;
+	}
+	.fish{
+		left: 154.289px;
+    position: absolute;
+    top: 247.22px;
+	}
+	.salt{
+		 left: 181.289px;
+    position: absolute;
+    top: 243.22px;
+	}
+	.pepper{
+		left: 199.289px;
+    position: absolute;
+    top: 253.22px;
+	}
+	.spaghetti{
+		 left: 269.289px;
+    position: absolute;
+    top: 237.22px;
+	}
+	.and1{
+		 left: 319.289px;
+    position: absolute;
+    top: 237.22px;
+	}
+	.meatballs{
+		 left: 279.289px;
+    position: absolute;
+    top: 250.22px;
+	}
+	.salad{
+		 left: 368.289px;
+    position: absolute;
+    top: 269.22px;
+	}
+	.hamburger{
+		  left: 44.289px;
+    position: absolute;
+    top: 364.22px;
+	}
+	.and2{
+		 left: 48.289px;
+    position: absolute;
+    top: 377.22px;
+	}
+	.fries{
+		 left: 71.289px;
+    position: absolute;
+    top: 377.22px;
+	}
+	.ice{
+		 left: 169.289px;
+    position: absolute;
+    top: 361.22px;
+	}
+	.cream{
+		 left: 188.289px;
+    position: absolute;
+    top: 361.22px;
+	}
+		.Rside
+	{
+		position:absolute;
+		left:425px;
+		top:0px;
+		
+	}	
+</style>
+</head>
+
+<body>
+
+    
+        
+        <div class="rbox1">
+            <span id="t1224"><img src="images/18.jpg" alt="" width="425" height="445" 
+             /></span></div>
+        
+        <div class="commondiv">
+        	<div class="pancakes"><span id="w000192">pancakes</span></div>
+            	<div class="jelly"><span id="w000195">jelly</span></div>
+                	<div class="eggs"><span id="w000196">eggs and bacon</span></div>
+<div class="toast"><span id="w000194">toast</span></div>
+                                	<div class="juice"><span id="w000193">juice</span></div>
+				                    	<div class="cereal"><span id="w000197">cereal</span></div>
+                				        	<div class="apple"><span id="w000199">apple</span></div>
+                            					<div class="sandwiches"><span id="w000200">sandwiches</span></div>
+                                                	<div class="milk"><span id="w000201">milk</span></div>
+								                    	<div class="pizza"><span id="w000202">pizza</span></div>
+                								        	<div class="veggies"><span id="w000203">veggies</span></div>
+                            									<div class="carrot"><span id="w000205">carrot sticks</span></div>	
+			                								        	<div class="potato"><span id="w000204">potato chips</span></div>
+        
+        
+        </div>
+    
+    
+        
+        
+        
+
+<div class="rbox112">
+    <div class="pSUBHEAD">
+        <span class="text102"><span id="w000198">Lunch</span> </span>
+    </div>
+</div>
+<div class="rbox119">
+<div class="pSUBHEAD">
+        <span class="text20"><span id="w000191">Breakfast</span> </span>
+    </div>
+</div>
+<div class="rbox127">
+    <div class="pSUBHEAD">
+        <span class="text16"><span id="w000190">Meals</span> </span>
+    </div>
+</div>
+
+<!--right side-->
+<div class="Rside">
+	 <div class="box1">
+            <span id="t1227"><img src="images/19.jpg" alt="" width="425" height="445"/></span>
+            
+     </div>
+     
+     <div class="TextContent">
+        <div  class="raisins"><span id="w000209">raisins</span></div>
+           <div  class="cookies"><span id="w000212">cookies</span></div>
+            <div  class="cheese"><span id="w000207">cheese</span></div>
+             <div  class="and"><span id="w000208">and crackers</span></div>
+      <!-- <div  class="crackers"><span>crackers</span></div>-->
+             <div  class="grapes"><span id="w000210">grapes</span></div>
+              <div  class="applesauce"><span id="w000211">apple sauce</span></div>
+               <div  class="veggies2"><span id="w000216">veggies</span></div>
+                <div  class="potatoes"><span id="w000215">potatoes</span></div>
+                 <div  class="ham"><span id="w000214">ham</span></div>
+                  <div  class="chicken"><span id="w000224">chicken fingers</span></div>
+                 <!-- <div  class="fingers"><span id="">fingers</span></div>-->
+                   <div  class="rolls"><span id="w000217">rolls</span></div>
+                    <div  class="fish"><span id="w000218">fish</span></div>
+                     <div  class="salt"><span id="w000219">salt</span></div>
+                      <div  class="pepper"><span id="w000220">pepper</span></div>
+                       <div  class="spaghetti"><span id="w000221">spaghetti</span></div>
+                        <div  class="and1"><span id="w000222">and</span></div>
+                         <div  class="meatballs"><span id="w000223">meat balls</span></div>
+                  		<div  class="salad"><span id="w000225">salad</span></div>
+                     	 <div  class="hamburger"><span id="w000226">hamburger</span></div>
+                         <div  class="and2"><span id="w000227">and fries</span></div>
+                        <!-- <div  class="fries"><span id="">fries</span></div>-->
+                      	   <div  class="ice"><span id="w000229">icecream</span></div>
+                          <!-- <div  class="cream"><span id="">cream</span></div>-->
+                       
+        </div>
+        
+        
+    
+    
+        
+        
+        
+
+    <div class="box25">
+        <div class="pSUBHEAD">
+            <span class="text100"><span id="w000228">Dessert</span> </span>
+        </div>
+    </div>
+    <div class="box151">
+        <div class="pSUBHEAD">
+            <span class="text99"><span id="w000213">Dinner</span> </span>
+        </div>
+    </div>
+    <div class="box152">
+        <div class="pSUBHEAD">
+            <span class="text97"><span id="w000206">Snack</span> </span>
+        </div>
+    </div>
+</div>
+
+<div id="chk"></div>
+<div id="timeValue"></div>
+</body>
+</html>

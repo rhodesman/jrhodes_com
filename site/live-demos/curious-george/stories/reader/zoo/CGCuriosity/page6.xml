@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<smil xmlns="http://www.w3.org/ns/SMIL" version="3.0" profile="http://www.idpf.org/epub/30/profile/content/">
+<body>
+  <par>
+    <audio clipBegin="55.890869" clipEnd="56.463834" aText="parts" id="w00021"/>
+  </par>
+  <par>
+    <audio clipBegin="56.512027" clipEnd="56.838671" aText="of the" id="w00022"/>
+  </par>
+  <par>
+    <audio clipBegin="56.838671" clipEnd="57.299185" aText="body" id="w00023"/>
+  </par>
+  <par>
+    <audio clipBegin="58.683404" clipEnd="59.251015" aText="hair" id="w00024"/>
+  </par>
+  <par>
+    <audio clipBegin="59.791851" clipEnd="60.466557" aText="hand" id="w00025"/>
+  </par>
+  <par>
+    <audio clipBegin="61.093071" clipEnd="61.890938" aText="ears" id="w00026"/>
+  </par>
+  <par>
+    <audio clipBegin="62.442484" clipEnd="63.106481" aText="teeth" id="w00027"/>
+  </par>
+  <par>
+    <audio clipBegin="65.521502" clipEnd="66.292595" aText="arms" id="w00028"/>
+  </par>
+  <par>
+    <audio clipBegin="66.833431" clipEnd="67.813362" aText="fingers" id="w00029"/>
+  </par>
+  <par>
+    <audio clipBegin="68.482714" clipEnd="69.248452" aText="elbow" id="w00030"/>
+  </par>
+  <par>
+    <audio clipBegin="69.848191" clipEnd="70.619284" aText="hands" id="w00031"/>
+  </par>
+  <par>
+    <audio clipBegin="71.342184" clipEnd="72.049020" aText="legs" id="w00032"/>
+  </par>
+  <par>
+    <audio clipBegin="72.664823" clipEnd="73.505529" aText="tows" id="w00033"/>
+  </par>
+  <par>
+    <audio clipBegin="74.185590" clipEnd="74.822813" aText="pack" id="w00034"/>
+  </par>
+  <par>
+    <audio clipBegin="75.615326" clipEnd="76.231129" aText="bottom" id="w00035"/>
+  </par>
+  <par>
+    <audio clipBegin="77.077190" clipEnd="77.805444" aText="eyes" id="w00036"/>
+  </par>
+  <par>
+    <audio clipBegin="78.276668" clipEnd="79.947370" aText="nose" id="w00037"/>
+  </par>
+  <par>
+    <audio clipBegin="80.970139" clipEnd="81.837619" aText="mouth" id="w00038"/>
+  </par>
+  <par>
+    <audio clipBegin="82.340972" clipEnd="82.983549" aText="belly" id="w00039"/>
+  </par>
+  <par>
+    <audio clipBegin="83.556514" clipEnd="84.498962" aText="knees" id="w00040"/>
+  </par>
+  <par>
+    <audio clipBegin="84.889863" clipEnd="85.452119" aText="feet" id="w00041"/>
+  </par>
+    <par>
+    <audio clipBegin="87.203143" clipEnd="88.349073" aText="emotions" id="w00042"/>
+  </par>
+  <par>
+    <audio clipBegin="89.280810" clipEnd="90.330354" aText="sometimes" id="w00043"/>
+  </par>
+  <par>
+    <audio clipBegin="90.389257" clipEnd="91.187124" aText="i feel" id="w00044"/>
+  </par>
+  <par>
+    <audio clipBegin="91.594090" clipEnd="92.868536" aText="surprised" id="w00045"/>
+  </par>
+  <par>
+    <audio clipBegin="94.651689" clipEnd="95.904715" aText="scared" id="w00046"/>
+  </par>
+  <par>
+    <audio clipBegin="97.971673" clipEnd="99.058700" aText="sad" id="w00047"/>
+  </par>
+  <par>
+    <audio clipBegin="102.774941" clipEnd="104.076161" aText="sleepy" id="w00048"/>
+  </par>
+  <par>
+    <audio clipBegin="108.799107" clipEnd="110.084262" aText="angry" id="w00049"/>
+  </par>
+  <par>
+    <audio clipBegin="113.211473" clipEnd="114.314565" aText="happy" id="w00050"/>
+  </par>
+</body>
+</smil>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<smil xmlns="http://www.w3.org/ns/SMIL" version="3.0" profile="http://www.idpf.org/epub/30/profile/content/">
+<body>
+ <par>
+    <audio clipBegin="814.986595" clipEnd="816.186073" aText="birth party" id="w000475"/>
+  </par>
+  <par>
+    <audio clipBegin="816.769748" clipEnd="817.696131" aText="games" id="w000476"/>
+  </par>
+  <par>
+    <audio clipBegin="817.985291" clipEnd="818.772448" aText="candels" id="w000477"/>
+  </par>
+  <par>
+    <audio clipBegin="819.329349" clipEnd="819.688121" aText="cake" id="w000478"/>
+  </par>
+  <par>
+    <audio clipBegin="820.593085" clipEnd="821.487339" aText="party hats" id="w000479"/>
+  </par>
+  <par>
+    <audio clipBegin="821.953208" clipEnd="822.788559" aText="balloons" id="w000480"/>
+  </par>
+  <par>
+    <audio clipBegin="823.265137" clipEnd="824.159391" aText="presents" id="w000481"/>
+  </par>
+  <par>
+    <audio clipBegin="825.203580" clipEnd="826.312026" aText="record player" id="w000482"/>
+  </par>
+  <par>
+    <audio clipBegin="826.863572" clipEnd="827.886341" aText="goodie bags" id="w000483"/>
+  </par>
+  <par>
+    <audio clipBegin="828.689563" clipEnd="829.380334" aText="confetti" id="w000484"/>
+  </par>
+  <par>
+    <audio clipBegin="830.247814" clipEnd="830.911811" aText="cookies" id="w000485"/>
+  </par>
+  <par>
+    <audio clipBegin="831.372325" clipEnd="832.234450" aText="cup cakes" id="w000486"/>
+  </par>
+  <par>
+    <audio clipBegin="833.273284" clipEnd="834.028313" aText="presents" id="w000487"/>
+  </par>
+  
+  <par>
+    <audio clipBegin="836.861009" clipEnd="837.583909" aText="colors" id="w000489"/>
+  </par>
+  <par>
+    <audio clipBegin="838.081907" clipEnd="838.697710" aText="red" id="w000490"/>
+  </par>
+  <par>
+    <audio clipBegin="839.340288" clipEnd="840.089962" aText="orange" id="w000491"/>
+  </par>
+  <par>
+    <audio clipBegin="840.470154" clipEnd="841.080603" aText="yellow" id="w000492"/>
+  </par>
+  <par>
+    <audio clipBegin="841.610729" clipEnd="842.355048" aText="green" id="w000493"/>
+  </par>
+  <par>
+    <audio clipBegin="842.917304" clipEnd="843.549172" aText="brown" id="w000494"/>
+  </par>
+  <par>
+    <audio clipBegin="844.116782" clipEnd="844.732586" aText="black" id="w000495"/>
+  </par>
+  <par>
+    <audio clipBegin="845.294841" clipEnd="845.958838" aText="purple" id="w000496"/>
+  </par>
+  <par>
+    <audio clipBegin="846.456836" clipEnd="847.003027" aText="blue" id="w000497"/>
+  </par>
+  <par>
+    <audio clipBegin="847.517089" clipEnd="848.245343" aText="white" id="w000498"/>
+  </par>
+  <par>
+    <audio clipBegin="848.555923" clipEnd="849.401983" aText="silver" id="w000499"/>
+  </par>
+  <par>
+    <audio clipBegin="850.001722" clipEnd="850.724622" aText="gold" id="w000500"/>
+  </par>
+ 
+ 
+
+</body>
+</smil>

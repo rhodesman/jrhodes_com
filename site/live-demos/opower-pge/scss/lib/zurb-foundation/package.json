@@ -1,0 +1,32 @@
+{
+  "name": "zurb-foundation",
+  "version": "5.1.1",
+  "repository": {
+    "type": "git",
+    "url": "https://github.va.opower.it/x-web-dependencies/foundation"
+  },
+  "keywords": [
+    "foundation"
+  ],
+  "description": "This is a node module for Foundation (because Zurb is lame and doesn't publish to npm).",
+  "_id": "zurb-foundation@5.1.1",
+  "dist": {
+    "shasum": "6e0b4d26508e15e871fc9e6f873c8ad131eb9f36",
+    "tarball": "https://npm.aws.opower.it/zurb-foundation/-/zurb-foundation-5.1.1.tgz"
+  },
+  "_from": "zurb-foundation@~5.1.1",
+  "_npmVersion": "1.4.3",
+  "_npmUser": {
+    "name": "opower",
+    "email": "x-web-eng@opower.com"
+  },
+  "maintainers": [
+    {
+      "name": "elm232",
+      "email": "elm232@cornell.edu"
+    }
+  ],
+  "directories": {},
+  "_shasum": "6e0b4d26508e15e871fc9e6f873c8ad131eb9f36",
+  "_resolved": "https://npm.aws.opower.it/zurb-foundation/-/zurb-foundation-5.1.1.tgz"
+}

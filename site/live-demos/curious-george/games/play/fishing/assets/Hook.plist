@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>frames</key>
+	<dict>
+    <key>hook_worm</key>
+    <dict>
+      <key>frame</key>
+      <string>{{47,0},{47,58}}</string>
+      <key>offset</key>
+      <string>{-23.5,-29}</string>
+      <key>rotated</key>
+      <false/>
+      <key>sourceSize</key>
+      <string>{47,58}</string>
+    </dict>
+    <key>hook_noworm</key>
+    <dict>
+      <key>frame</key>
+      <string>{{0,0},{47,58}}</string>
+      <key>offset</key>
+      <string>{-23.5,-29}</string>
+      <key>rotated</key>
+      <false/>
+      <key>sourceSize</key>
+      <string>{47,58}</string>
+    </dict>
+	</dict>
+	<key>metadata</key>
+	<dict>
+		<key>format</key>
+		<integer>2</integer>
+		<key>realTextureFileName</key>
+		<string>s_hook.png</string>
+		<key>size</key>
+		<string>{128,128}</string>
+		<key>smartupdate</key>
+		<string>$TexturePacker:SmartUpdate:2bcac7507c33d8a432e28d7894574cb1$</string>
+		<key>textureFileName</key>
+		<string>s_hook.png</string>
+	</dict>
+</dict>
+</plist>

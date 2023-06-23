@@ -1,0 +1,59 @@
+<div class="completed-milestones-page" id="top">
+  <nav class="milestones">
+    <div class="row">
+      <div class="small-6 columns last">
+        <a>Completed Milestones</a>
+      </div>
+      <a class="close-milestones" href="flashcards">Back to Flashcards</a>
+    </div>
+  </nav>
+  <div class="row">
+    <div class="small-12 columns">
+      <ul class="grid-list-toggle" ng-init="toggle = 'grid'">
+        <li><a class="grid" ng-class="{'active': toggle  == 'grid'}" ng-click="toggle = 'grid'"></a></li>
+        <li><a class="list" ng-class="{'active': toggle == 'list'}" ng-click="toggle = 'list'"></a></li>
+      </ul>
+    </div>
+  </div>
+  <div id="cardfolio" class="row">
+    <ul ng-hide="pagedItems" class="small-block-grid-1 medium-block-grid-5">
+      <li class="media-card">
+          <div class="image" style="background-image: url('img/flashcards/no-photo.png');"></div>
+      </li>
+    </ul>
+    <ul class="grid-view small-block-grid-1 medium-block-grid-3 large-block-grid-5" ng-show="toggle == 'grid' && pagedItems">
+      <li class="media-card animate-repeat"
+        ng-class="{'completed': completed.isComplete === true}"
+        ng-repeat="completed in pagedItems">
+        <a data-reveal-id="milestone-modal" ng-class="completed.domain.name">
+          <div ng-hide="completed.image" class="image"></div>
+          <div ng-show="completed.image" class="image" style="background-image: url('{{completed.image}}');"></div>
+          <span>{{completed.brief}}</span>
+        </a>
+      </li>
+    </ul>
+    <ul class="list-view" ng-show="toggle == 'list' && pagedItems">
+      <li class="media-card animate-repeat"
+        ng-class="{'completed': completed.isComplete === true}"
+        ng-repeat="completed in pagedItems">
+          <div class="small-12 medium-2 large-1 columns">
+            <div class="card-domain" ng-class="completed.domain.name">
+              <img ng-src="img/learning-areas/domain-icons/{{completed.domain.name}}.svg" alt="">
+            </div>
+          </div>
+          <div class="small-12 medium-10 large-11 columns card-details">
+            <div class="card-details-status" ng-class="completed.domain.name">
+              <h4>{{completed.domain.name}} {{completed.cardNo}} of 100  |  Completed {{completed.timestamp}}</h4>
+              <span class="checked"></span>
+              <span ng-show="completed.image" class="media"></span>
+            </div>
+            <h2 data-reveal-id="milestone-modal">{{completed.brief}}</h2>
+            <p>{{completed.description}}</p>
+          </div>
+      </li>
+    </ul>
+    <button ng-show="pagedItems" ng-click="loadMore()" class="load-more button" ng-class="nextPageDisabledClass()" ng-disabled="nextPageDisabledClass()">Load More</button>
+  </div>
+</div>
+
+<div ng-include="'partials/modals/milestone-modal.html'"></div>

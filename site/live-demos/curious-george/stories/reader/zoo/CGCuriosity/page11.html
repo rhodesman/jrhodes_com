@@ -1,0 +1,452 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+ "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>
+    Untitled Document
+</title>
+<link href="skin/blue.monday/jplayer.blue.monday.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.jplayer.min.js"></script>
+<meta http-equiv="Content-Type" content="text/html;CHARSET=utf-8"/>
+<meta name="viewport" content="width=450,height=450" />
+
+<style type="text/css">
+ 
+    a:link {
+        color:blue;
+        text-decoration:underline;
+    }
+    a:active { color:red }
+    a:visited { color:purple }
+    
+  @font-face {
+  font-family: 'Adobe Garamond Semibold Italic';
+  src: url("font/AGARAMSI.TTF");
+  }
+@font-face {
+  font-family: 'CuriousGerogeheader-Medium';
+  src: url("font/CURIOUGM.TTF");
+  }
+@font-face {
+  font-family: 'New Century Schoolbook Italic';
+  src: url("font/NEWCENSI.TTF");
+  }
+@font-face {
+  font-family: 'New Century Schoolbook Roman';
+  src: url("font/NEWCENSR.TTF");
+  }
+@font-face {
+  font-family: 'OPTIMajerIrregular';
+  src: url("font/OPTIMAJI.TTF");
+  }
+
+body {
+   width: 450px;
+   height: 450px;
+   margin:0; 
+
+        background-color:white;
+        color:#393838;
+    }
+    .text34 {
+        font-family:'OPTIMajerIrregular';
+        font-size:28px;
+        text-decoration:none;
+        color:#CE4695;
+    }
+    .pHeadparagraph {
+        line-height:42px;
+        text-align:center;
+    }
+    .box1 {
+        background-color:white;
+        width:450px;
+        height:450px;
+    }
+    .box2 {
+        position:absolute;
+        left:0px;
+        top:0px;
+        width:450px;
+        height:450px;
+    }
+    .box3 {
+        position:absolute;
+        left:652.3px;
+        top:186.595px;
+        width:35.7px;
+        height:20.854px;
+    }
+    .box4 {
+        position:absolute;
+        left:348.627px;
+        top:557.817px;
+        width:48.62px;
+        height:20.854px;
+    }
+    .box5 {
+        position:absolute;
+        left:38.95px;
+        top:202.327px;
+        width:59.8px;
+        height:35.316px;
+    }
+    .box6 {
+        position:absolute;
+        left:248.915px;
+        top:351.348px;
+        width:56.503px;
+        height:20.854px;
+    }
+    .box7 {
+        position:absolute;
+        left:316.124px;
+        top:639px;
+        width:64.75px;
+        height:20.854px;
+    }
+    .box8 {
+        position:absolute;
+        left:293.52px;
+        top:522px;
+        width:45.013px;
+        height:20.854px;
+    }
+    .box9 {
+        position:absolute;
+        left:179.656px;
+        top:405.146px;
+        width:39.719px;
+        height:20.854px;
+    }
+    .box10 {
+        position:absolute;
+        left:304.482px;
+        top:366.5px;
+        width:56.017px;
+        height:20.854px;
+    }
+    .box11 {
+        position:absolute;
+        left:388px;
+        top:88.769px;
+        width:57.846px;
+        height:25.231px;
+    }
+    .box12 {
+        position:absolute;
+        left:523.269px;
+        top:497.5px;
+        width:55.606px;
+        height:20.854px;
+    }
+    .box13 {
+        position:absolute;
+        left:192.773px;
+        top:374.752px;
+        width:60.947px;
+        height:20.854px;
+    }
+    .box14 {
+        position:absolute;
+        left:179.375px;
+        top:592.361px;
+        width:48.618px;
+        height:20.854px;
+    }
+    .box15 {
+	position:absolute;
+	left:12px;
+	top:25px;
+	padding:0px;
+	width:139px;
+	height:56.418px;
+    }
+    .box16 {
+        position:absolute;
+        left:533.375px;
+        top:328.646px;
+        width:42.992px;
+        height:20.854px;
+    }
+    .box17 {
+        position:absolute;
+        left:628.242px;
+        top:598.319px;
+        width:54.751px;
+        height:20.854px;
+    }
+    .box18 {
+        position:absolute;
+        left:360px;
+        top:439.858px;
+        width:61.817px;
+        height:20.854px;
+    }
+    .box19 {
+        position:absolute;
+        left:134.65px;
+        top:159px;
+        width:32.375px;
+        height:20.854px;
+    }
+    .box20 {
+        position:absolute;
+        left:629.737px;
+        top:334.975px;
+        width:51.638px;
+        height:20.854px;
+    }
+    .box21 {
+        position:absolute;
+        left:69.984px;
+        top:231.264px;
+        width:10.5px;
+        height:34.857px;
+    }
+    .box22 {
+        position:absolute;
+        left:137.161px;
+        top:173.067px;
+        width:12.727px;
+        height:27.787px;
+    }
+    .box23 {
+        position:absolute;
+        left:281.713px;
+        top:334.156px;
+        width:7.75px;
+        height:15.49px;
+    }
+    .box24 {
+        position:absolute;
+        left:290.806px;
+        top:535.896px;
+        width:24.231px;
+        height:20.603px;
+    }
+    .box25 {
+        position:absolute;
+        left:185.672px;
+        top:580.124px;
+        width:13.638px;
+        height:12.234px;
+    }
+    .box26 {
+        position:absolute;
+        left:355.477px;
+        top:372.108px;
+        width:14.524px;
+        height:2.4px;
+    }
+    .box27 {
+        position:absolute;
+        left:535.823px;
+        top:342.595px;
+        width:18.31px;
+        height:30.808px;
+    }
+    .box28 {
+        position:absolute;
+        left:654.249px;
+        top:146.817px;
+        width:13.233px;
+        height:37.231px;
+    }
+    .box29 {
+        position:absolute;
+        left:632.9px;
+        top:348.704px;
+        width:21.918px;
+        height:28.715px;
+    }
+    .box30 {
+        position:absolute;
+        left:539.511px;
+        top:446.814px;
+        width:11.978px;
+        height:49.288px;
+    }
+    .box31 {
+        position:absolute;
+        left:634.815px;
+        top:612.78px;
+        width:18.884px;
+        height:31.96px;
+    }
+    .box32 {
+        position:absolute;
+        left:356.553px;
+        top:454.209px;
+        width:27.494px;
+        height:20.596px;
+    }
+    .box33 {
+        position:absolute;
+        left:380.507px;
+        top:572.661px;
+        width:19.558px;
+        height:21.036px;
+    }
+    .box34 {
+        position:absolute;
+        left:187.563px;
+        top:338.931px;
+        width:29.213px;
+        height:32.623px;
+    }
+    .box35 {
+        position:absolute;
+        left:165.89px;
+        top:413.04px;
+        width:15.634px;
+        height:7.964px;
+    }
+ .commondiv{
+	 font-size:13px;
+	}
+ .puppets{
+	left: 227px;
+    position: absolute;
+    top: 48px;
+ }
+ .ball{
+	left: 384px;
+    position: absolute;
+    top: 108px;
+ }
+ .cards{
+	left: 312px;
+    position: absolute;
+    top: 198px;
+ }
+ .paints{
+	left: 370px;
+    position: absolute;
+    top: 201px;
+ }
+  .crayons{
+	left: 306px;
+    position: absolute;
+    top: 303px;
+ }
+ .robots{
+	left: 371px;
+    position: absolute;
+    top: 363px;
+ }
+ .marbles{
+	left: 183px;
+    position: absolute;
+    top: 391px;
+ }
+ .yo-yo{
+	left: 202px;
+    position: absolute;
+    top: 335px;
+ }
+ .yo-yo{
+	left: 202px;
+    position: absolute;
+    top: 335px;
+ }
+ .trainset{
+	left: 208px;
+    position: absolute;
+    top: 265px;
+ }
+  .blocks{
+	left: 173px;
+    position: absolute;
+    top: 221px;
+ }
+ .tool{
+	left: 136px;
+    position: absolute;
+    top: 211px;
+ }
+ .set{
+ 	left: 159px;
+    position: absolute;
+    top: 211px;
+ }
+ .bubbles{
+ 	left: 113px;
+    position: absolute;
+    top: 228px;
+ }
+ .dolls{
+ 	left: 107px;
+    position: absolute;
+    top: 243px;
+ }
+ .puzzle{
+ 	left: 104px;
+    position: absolute;
+    top: 360px;
+ }
+ .clay{
+ 	left: 175px;
+    position: absolute;
+    top: 315px;
+ }
+ .rocking{
+ 	left: 21px;
+    position: absolute;
+    top: 117px;
+ }
+ .horse{
+ 	left: 28px;
+    position: absolute;
+    top: 127px;
+ }
+ .kite{
+ 	left: 80px;
+    position: absolute;
+    top: 92px;
+ }
+</style>
+</head>
+
+<body>
+
+    
+        
+        <div class="box1">
+          <img src="images/9.jpg" alt="" width="425" height="445" 
+             /></div>
+         <div class="commondiv">
+        	 <div class="puppets"><span id='w00076'>puppets</span></div>
+            	 <div class="ball"><span id='w00077'>ball</span></div>
+           		  <div class="cards"><span id='w00082'>cards</span></div>
+          		   <div class="paints"><span id='w00083'>paints</span></div>
+           			 <div class="crayons"><span id='w00087'>crayons</span></div>
+    	     			<div class="robots"><span id='w00088'>robots</span></div>
+                        	<div class="marbles"><span id='w00086'>marbles</span></div>
+                            	<div class="yo-yo"><span id='w00085'>yo-yo</span></div>
+                                	<div class="trainset"><span id='w00084'>trainset</span></div>
+                                    	<div class="blocks"><span id='w00081'>blocks</span></div>
+                                        	<div class="tool"><span id='w00080'>tool set</span></div>
+  	                                              <div class="bubbles"><span id='w00079'>bubbles</span></div>
+                                                	<div class="dolls"><span id='w00078'>dolls</span></div>
+                                                    	<div class="puzzle"><span id='w00089'>puzzle</span></div>
+                                                        	<div class="clay"><span id='w00090'>clay</span></div>
+                                                            	<div class="rocking"><span id='w00075'>rocking horse</span></div>
+                                                                    	<div class="kite"><span id='w00074'>kite</span></div>
+        </div>
+    
+    
+        
+        
+        
+
+<div class="box15">
+    <div class="pHeadparagraph">
+        <span class="text34"><span id="w00073">Toys</span> </span><span id="t0315"></span>
+    </div>
+</div>
+<div id="chk"></div>
+<div id="timeValue"></div>
+</body>
+</html>

@@ -1,0 +1,78 @@
+<div class="section-head">
+  <div class="row">
+    <div class="large-9 columns">
+      <h1 class="section-heading">About my home</h1>
+    </div>
+    <div class="large-3 columns">
+      <a href="#/my-usage/by-category" class="save-close">Save & Close</a>
+    </div>
+  </div>
+</div>
+<div class="ways-to-save">
+  <div class="row">
+    <div class="large-3 columns sidebar">
+        <div class="panel savings-total">
+          <p>Reward Balance <strong><span count-to="600" value="580" duration="0.5"></span><sub>pts</sub></strong></p>
+          <a href="">View My Savings Plan</a>
+        </div>
+        <div class="ways-save-progress-container">
+        <span class="meter-2"></span>
+        <h3>12 questions left</h3>
+      </div>
+        <ul class="prog-position">
+          <li class="active"><a href="">Home Information</a></li>
+          <li><a href="">Heating & Cooling</a></li>
+          <li><a href="">Water Heating</a></li>
+          <li><a href="">Cooking & Refrigeration</a></li>
+          <li><a href="">Lighting</a></li>
+          <li><a href="">Other</a></li>
+        </ul>
+    </div>
+    <div class="large-9 columns info-details">
+      <h3>Home Information 2 of 3</h3>
+      <form>
+        <div class="row select">
+          <div class="large-10 columns">
+            <h4>How large is your home?</h4>
+            <h5>Heated and air conditioned space only.</h5>
+            <div class="row">
+              <div class="large-4 columns">
+                <select id="house-size">
+                  <option value="1 Bedrooms">1 Bedrooms</option>
+                  <option value="2 Bedrooms">2 Bedrooms</option>
+                  <option value="3 Bedrooms" selected>3 Bedrooms</option>
+                  <option value="4 Bedrooms">4 Bedrooms</option>
+                  <option value="5 Bedrooms">5 Bedrooms</option>
+                  <option value="Over 5 Bedrooms">Over 5 Bedrooms</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row text-field">
+          <div class="large-10 columns">
+            <h5>or</h5>
+            <div class="row">
+              <div class="large-2 columns">
+                <input type="text" id="house-size-measured" placeholder="1550">
+              </div>
+              <div class="small-3 columns end">
+                <label for="house-size-measured" class="left inline">Sq ft <sub>(Approx)</sub></label>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="form-buttons">
+          <a ng-class="{ 'is-active': $root.pageTitle === 'Ways to Save' }" href="#/ways-to-save/about-home-3of3" class="button has-points-value">
+            Next
+            <span class="points-value">
+              <span class="points-amount"><strong>30</strong> points!</span>
+            </span>
+          </a>
+          <a href="#/ways-to-save/about-home-1of3" class="button secondary">Previous</a>
+          <a href="" class="skip-quest">Skip Question</a>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

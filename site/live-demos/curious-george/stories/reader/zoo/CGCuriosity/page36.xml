@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<smil xmlns="http://www.w3.org/ns/SMIL" version="3.0" profile="http://www.idpf.org/epub/30/profile/content/">
+<body>
+ <par>
+    <audio clipBegin="795.152365" clipEnd="795.794942" aText="weather" id="w000465"/>
+  </par>
+  <par>
+    <audio clipBegin="798.370608" clipEnd="799.023895" aText="sun" id="w000466"/>
+  </par>
+  <par>
+    <audio clipBegin="799.575441" clipEnd="800.244793" aText="rain" id="w000467"/>
+  </par>
+  <par>
+    <audio clipBegin="800.882015" clipEnd="801.492464" aText="snow" id="w000468"/>
+  </par>
+  <par>
+    <audio clipBegin="802.386718" clipEnd="805.165866" aText="thunder and lightning" id="w000469"/>
+  </par>
+  <par>
+  <audio clipBegin="805.503220" clipEnd="806.868697" aText="wind" id="w000470"/>
+  </par>
+  <par>
+    <audio clipBegin="806.868697" clipEnd="807.875402" aText="fog" id="w000471"/>
+  </par>
+  <par>
+    <audio clipBegin="808.325207" clipEnd="809.149848" aText="rainbow" id="w000472"/>
+  </par>
+  <par>
+    <audio clipBegin="810.220811" clipEnd="811.061516" aText="clouds" id="w000473"/>
+  </par>
+
+ 
+
+</body>
+</smil>

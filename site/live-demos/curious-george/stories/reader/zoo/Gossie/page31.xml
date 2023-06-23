@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<smil xmlns="http://www.w3.org/ns/SMIL" version="3.0" profile="http://www.idpf.org/epub/30/profile/content/">
+<body>
+
+
+<par id="p0148">
+<audio src="images/Gossie.m4a" clipBegin="
+138.191908s" clipEnd="138.450734s" id="w0313" />
+</par>
+
+<par id="p0149">
+<audio src="images/Gossie.m4a" clipBegin="
+138.450734s" clipEnd="139.137415s" id="w0314" />
+</par>
+
+<par id="p0150">
+<audio src="images/Gossie.m4a" clipBegin="
+139.137415s" clipEnd="139.633938s" id="w0315" />
+</par>
+
+<par id="p0151">
+<audio src="images/Gossie.m4a" clipBegin="
+139.633938s" clipEnd="141.371769s" id="w0316" />
+</par>
+
+
+</body>
+</smil>

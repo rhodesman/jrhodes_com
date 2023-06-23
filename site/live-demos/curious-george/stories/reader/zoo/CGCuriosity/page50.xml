@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<smil xmlns="http://www.w3.org/ns/SMIL" version="3.0" profile="http://www.idpf.org/epub/30/profile/content/">
+<body>
+ <par>
+    <audio clipBegin="999.074384" clipEnd="999.668768" aText="goodnight" id="w000589"/>
+  </par>
+  <par>
+    <audio clipBegin="999.668768" clipEnd="1000.359539" aText="george" id="w000590"/>
+  </par>
+  <par>
+    <audio clipBegin="1003.026236" clipEnd="1004.129328" aText="the end" id="w000591"/>
+  </par>
+
+</body>
+</smil>

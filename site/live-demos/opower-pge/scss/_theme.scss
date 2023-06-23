@@ -1,0 +1,52 @@
+//PGE basic brand styles
+$primary-color: #00A3DC;
+$body-font-family: Arial, Helvetica, sans-serif;
+$widget-header-font-size: 1.563rem;
+$widget-header-font-color: $primary-color;
+$widget-shadow: none;
+$row-width: 1000px !default;
+
+$extra-lt-gray: #eee;
+$light-gray:#e6e7e7;
+$medium-gray:#d6d7d7;
+$normal-gray:#c6c7c7;
+$shade-gray:#d5d6d2;
+$dark-gray:#888;
+$deep-gray:#adafaf;
+$line-gray: #ccc;
+$almost-black:#222;
+
+$light-blue:#69c8fa;
+$dark-blue:#00a3dc;
+$deep-blue:#1086c8;
+
+$white:#fff;
+
+$orange:#ff961d;
+$light-orange:#feca94;
+$faint-orange:#ff8800;
+
+$green:#99cc33;
+$light-green:#BAD55B;
+$dark-green: darken(#88BB44, 5);
+$black: #1a1a1a;
+$red: #f15a24;
+
+select{
+  background: #fff url('../img/custom-select.png') no-repeat !important;
+  background-position-x: 101%!important;
+  background-position-y: -2%!important;
+  height: 34px!important;
+  border-radius: 4px!important;
+  padding-right: 32px!important;
+}
+
+$border-style: 1px solid $line-gray;
+
+$button-med: 0.65rem;
+button, .button {
+  &.button, &.primary, &.secondary, &.disabled, &.success, &.alert {
+    padding-left: $button-med*3;
+    padding-right: $button-med*3;
+  }
+}

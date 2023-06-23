@@ -1,0 +1,168 @@
+<!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.0 Transitional//EN' 'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'>
+
+
+
+<html >
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>E - Book</title>
+<link rel="stylesheet" href="css/style.css" />
+<script src="script/ebookActions.js" type="text/javascript"></script>
+
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
+    <script type="text/javascript" src="js1/jquery.jplayer.min.js"></script>
+    <script type="text/javascript" src="script/action2.js"></script>
+  
+</head>
+
+<body onload="init()">
+<!--Main div start -->
+ <div id='progressCont'>
+     <div id='progBar'></div>
+      <div id='progLabel'>Loading Audio</div>
+  </div>  
+<div id="mainDiv">
+
+      
+ <!----------------------------centerMoveDiv menu div-------------------------------->    
+ 		 <div id="centerTitleDiv" style="display:none"></div>
+         
+         
+         <div id="searchDiv" >
+           <input type="button" id="close_button" onclick="closeSearchDiv();"/>
+           <div id="searchInnerDiv" >
+            </div>
+            </div>
+  <!----------------------------Left menu div----------------------------------------->    
+ 		 <div id="leftMenuDiv" style="display:none">
+         	
+         	<div id="left_nav"></div>
+            <div id="left_nav_content">
+            <div id='left_img_book'></div>
+            <div id='reference' onclick="tabSelect(null)" ></div>
+			<div id='activity' onclick="tabSelect(null)"></div>			
+                   
+            <!--end bookmark---------------->
+            </div> 
+            <div id="left_nav_footer"></div>     
+  		</div>
+         
+         
+ <!----------------------------centerMoveDiv menu div-------------------------------->   
+ 		
+ 		 <div id="centerContentDiv"><div id="cente_Menu" style="display:none"><div id="Book_pages" onclick="menuChange(this)" style='margin-top:-40px'></div><div id="Book_pages1" style='margin-top:-40px' onclick="menuChange(this)"></div><div id="images" style='margin-top:-40px' onclick="menuChange(this) "></div><div id="images1"  style='margin-top:-40px' onclick="menuChange(this)"></div>
+         
+        
+         <div id="tb_chapter_1">
+             <img src="images/sec_dropdown.png"   />
+             <div id="chapterno_1"><input type="text" id="section" name="chapter" readonly="readonly"/></div>
+            <a href="javascript:showTopics();"><img id='updown' src="images/arrw_dropdown.png" /></a> 
+          
+        </div>
+        
+       
+         </div>
+        <div class="leftArrow" onclick="previousChapter();"><img src="images/btn_02.png" width="35" height="35" /></div>
+      <div class="rightArrow" onclick="nextChapter();"><img src="images/btn_01.png" width="35" height="35" /></div>
+      
+      
+      <div id="outerLine">
+      
+         <div id="Frame_tool"><iframe id="pageLeft"  onload="javascript:onPageLoad1();"  frameborder="0" style="overflow:hidden;width:850px;height:445px; margin-top:15px; border:none; margin-left:22px;" scrolling="no"  ></iframe>
+<iframe id="pageRight" onload="javascript:onPageLoad2();" frameborder="0"  style="overflow:hidden;width:0px;height:445px;margin-left:-8px;border:none;  margin-top:15px;" scrolling="no"></iframe></div>
+
+</div>
+
+<div id="centerMoveDiv">
+         		<!--<div id="tb_left" style="display:none"></div>
+         		<div id="toolbox">
+                   <div id="tb_chapter" onclick="TocDisabled()" style="visibility:hidden">
+                		<div id="chapterno"><input type="text" id="chapter" name="chapter" readonly="readonly" /></div>
+                    	<a href="javascript:fillChapter();"><img id="arr_imge" src="Images/arrw_dropdown.png" style='border:none'  /></a>
+                   		<select id="chapter_drop"><option>select a chapter ....</option></select>-->
+                	<!-- 	</div>-->
+                        
+                	<div class="previous" onclick="previousChapter();" style="display:none"></div>
+                    <div id="tb_jump" style="display:none">
+                        <div id="pgno">
+                            <input type="text" id="pg" name="pg" maxlength="3"  onkeypress="return gotopage_key(event)"/>
+                        </div>
+                        <a href="javascript:goTargetPage();"><img id="go_imge" src="Images/go.png" style='border:none' /></a>
+   	  </div>
+                    <div class="next" onclick="nextChapter();" style="display:none"></div>
+                        
+                           
+                          <div id='audioPanel'>
+                          <div onclick="playAudio(this)" id='playBtn'></div>
+                         <div onclick="stopAudio(this)"  id='stopBtn'></div>
+                </div>
+                
+             
+                         
+           </div>
+                
+               
+                 
+                <div id="tb_right" style="display:none"></div> 
+                  <div id='chapterList'></div> 	
+       
+         </div>
+
+
+
+         
+         </div>
+            	 <div id="image_gallery">
+    </div>
+ 
+
+<!----------------------------events-------------------------------------------- -->   
+
+		<!--	<div id="notepad">
+            <div id='notepad_close'></div>
+            <div id='notepad_delete'></div>
+           <div id='notepad_save'></div>
+           <textarea rows="10" cols="50" id='notepad_txt'></textarea> 
+       		</div>-->
+    
+    		
+            
+            <div id="BodyContent">
+		       
+		</div>
+       
+    
+   <!-- <div id ='sectionList'></div>-->
+        <div id='swf_mask'>
+    </div>
+    <div id = 'higPallate'>
+       <div id='red_btn'></div>
+       <div id='green_btn'></div>
+       <div id='blue_btn'></div>
+       <div id='orange_btn'></div>
+       <div id='delete_btn'></div>
+       <div id='close_btn'></div>
+    </div>
+    <div id="loadingDiv">
+       </div>
+       
+
+    
+</div>
+<!--Main div end -->
+
+
+<div id="jquery_jplayer_1"></div>
+
+
+<div class="jp-single-player">
+	
+</div>
+       
+        
+        <div id="timeValue" style="display:none"></div><div id="lastTimeValue" style="display:none"  ></div>
+       </div>
+
+
+</body>
+</html>

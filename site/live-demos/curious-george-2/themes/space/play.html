@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<base href="http://dev.wbstudios.co/sites/cg-themes/spacetheme/">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<meta name="description" content="Come learn with everyone’s favorite monkey, Curious George, through reading, games, and activities. Learn about Houghton Mifflin Harcourt books and other great characters!" />
+	<meta name="keywords" content="fun childrens games, free childrens books" />
+	
+	<script type="text/javascript">
+		//workaround for IE7/8/9 javascript errors caused by absense of a "console" object
+		if (typeof window.console == 'undefined') { window.console = { log: function () { } }; } 
+	</script>
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+	<!--[if lt IE 9]><script src="Sites/CG/Javascript/html5.js"></script><![endif]-->
+	<script src="Sites/CG/Javascript/filmotype.js" type="text/javascript"></script>
+	<link rel="stylesheet" href="css/style.css" type="text/css" />
+	<link rel="stylesheet" href="css/override.css" type="text/css" />
+	<script src="Sites/CG/Javascript/modernizr.custom.40745.js" type="text/javascript"></script>
+	<script src="Sites/CG/Javascript/jquery-1.7.2.min.js" type="text/javascript"></script>
+	<script src="Sites/CG/Javascript/jquery.cookie.js" type="text/javascript"></script>
+	<script src="Sites/CG/Javascript/jquery.history.js" type="text/javascript"></script>
+	<script src="Sites/CG/Javascript/bootstrap.min.js" type="text/javascript"></script>
+	<script src="Sites/CG/Javascript/basic-jquery-slider.min.js" type="text/javascript"></script>
+	<script src="Sites/CG/Javascript/soundmanager2-nodebug-jsmin.js" type="text/javascript"></script>
+    <script src="Sites/CG/Javascript/jquery.hoverIntent.min.js" type="text/javascript"></script>
+	<script src="Sites/CG/Javascript/main.js" type="text/javascript"></script>
+	<script src="Sites/CG/Javascript/registration.js" type="text/javascript"></script>
+	<script src="Sites/CG/Javascript/override.js" type="text/javascript"></script>
+    <script src="Sites/CG/Javascript/flashobject_source.js" type="text/javascript"></script>
+    <!--[if lt IE 9]><link rel="stylesheet" href="css/ie_fixes.css" type="text/css"><![endif]-->
+    <!--[if IE 8]><link rel="stylesheet" href="css/ie_8.css" type="text/css"><![endif]-->
+    <!--[if IE 7]><link rel="stylesheet" href="css/ie_7.css" type="text/css"><![endif]-->
+</head>
+<body>
+	
+	<form id="MainForm" runat="server">
+	
+    <div id="main">
+		<header>
+			<nav>
+				<h1><a href="/" title="Home">Curious George</a></h1>
+				<ul>
+					<li><a class="nav-games" href="/kids-games" title="Games">Games</a></li>
+					<li><a class="nav-stories" href="/kids-stories-books" title="Stories">Stories</a></li>
+					<li><a class="nav-create" href="/kids-activities" title="Create">Create</a></li>
+					<li><a class="nav-curious" href="/kids-activities/fun-themes" title="Curious?">Curious About</a></li>
+				</ul>
+				<a id="mobile-app" href="http://www.hmhbooks.com/curiousgeorgecontest" title="Win a Family Trip to Hollywood!"><strong>Win a Family Trip to Hollywood</strong> and much more!</a>
+				
+			</nav>
+            <a id="mute">Mute</a>
+		</header>
+
+		<!-- body of window -->
+		<section id="content">
+      <style>
+      .game-player#themes-play #more-games .more-theme span { background-image:url(imgs/themes/space/bar.png) }
+      </style>
+			<div id="themes-play" class="game-player" data-transition="slide">
+				<div id="game">
+					<div class="game"></div>
+					<div class="share"></div>
+				</div>
+				<div id="more-games">
+					<div class="man">
+						<div class="sprite"></div>
+					</div>
+					<a href="themes/space/choose.html" class="more-theme" title="Curious?" data-voiceover="Sites/CG/Sounds/voice/woman/CG-Heather_ThemeTopics_LanguageToggle_Space"><span>Curious?</span></a>
+				</div>
+			</div>
+			
+			
+		</section>
+
+	<footer>
+		<div id="hmh">
+			<a href="http://www.hmhco.com/" target="_blank">Houghton Mifflin Harcourt</a>
+			<address>
+				222 Berkeley Street | Boston, MA 02116 | 617-351-5000
+			</address>
+		</div>
+		<div id="blurb">
+			<p id="legal"><a href="/Terms-of-Use.aspx">NEW Terms of Use</a> <a href="/privacy-policy.aspx">NEW Privacy Policy</a> <a href="/FAQ">FAQ</a> <span> &copy; 2012 Houghton Mifflin Harcourt. All rights reserved.</span></p>
+		</div>
+		
+	</footer>
+
+		<!-- modal boxes -->
+		<div class="modal cgModal hide fade" id="cgThankYouModal">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal">x</button>
+				<h3 class="FilmotypeMajor" style="width:90%">Welcome to the family!</h3> 
+			</div>
+			<div class="modal-body">
+				<div class="row cg_register">
+					<div class="span6">
+						<p>Your account has been successfully activated! Let's go have fun!</p>
+					</div>
+					<div class="span6">
+						<a href="#" class="btn btn-primary" data-dismiss="modal">Close</a>
+					</div>
+				</div>
+			</div>
+			<div class="modal-footer">
+			</div>
+		</div>
+		<div class="modal cgModal hide fade" id="cgPromptModal">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal">x</button>
+				<h3 class="FilmotypeMajor">
+					Sorry. You must log in to access this content.</h3>
+			</div>
+			<div class="modal-body">
+				<div class="span3">
+					<label>
+						Email Address</label>
+					<input type="text" class="span3" placeholder="">
+					<label>
+						Password</label>
+					<input type="password" class="span3" placeholder="">
+				</div>
+				<div class="span3">
+					<label class="not_reg">
+						Not signed up yet? Registration is free!</label>
+				</div>
+				<div class="span3">
+					<button type="submit" class="btn btn-primary">
+						Log in</button>
+				</div>
+				<div class="span3">
+					<button type="submit" class="btn btn-primary reg_btn">
+						Register</button>
+				</div>
+				<div class="span6 forgot_pw">
+					<a href="#">Forgot your password?</a>
+				</div>
+			</div>
+			<div class="modal-footer">
+			</div>
+		</div>
+		
+		<div class="modal cgModal hide fade" id="cgLoginModal">
+			<mpy:LoginControl id="loginControl" runat="server" />
+		</div>
+		<div class="modal cgModal hide fade" id="cgRegModal">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal">x</button>
+				<h3 class="FilmotypeMajor">
+					Register</h3>
+			</div>
+			<div class="modal-body">
+
+				<mpy:RegisterControl id="registerControl" runat="server" />
+			
+			</div>
+			<div class="modal-footer">
+			</div>
+		</div>
+		<div id="loading">
+		</div>
+	</div>
+	</form>
+
+</body>
+</html>

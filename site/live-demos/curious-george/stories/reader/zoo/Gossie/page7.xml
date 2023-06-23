@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<smil xmlns="http://www.w3.org/ns/SMIL" version="3.0" profile="http://www.idpf.org/epub/30/profile/content/">
+<body>
+<par id="p0024">
+<audio src="images/Gossie.m4a" clipBegin="
+26.119147s" clipEnd="26.985457s" id="w0189" />
+</par>
+
+<par id="p0025">
+<audio src="images/Gossie.m4a" clipBegin="
+26.985457s" clipEnd="28.884749s" id="w0190" />
+</par>
+
+</body>
+</smil>

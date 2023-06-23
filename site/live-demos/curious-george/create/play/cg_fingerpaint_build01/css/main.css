@@ -1,0 +1,514 @@
+.clear {
+  clear: both;
+}
+
+#cgp {
+  width: 900px;
+  height: 500px;
+  background: transparent url(../images/body-bg.jpg) no-repeat scroll left top;
+  position: relative;
+  overflow: hidden;
+}
+
+#cgp-loader {
+  position: absolute;
+  background: #009fc8;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 9999;
+}
+  #cgp-loader img {
+    margin: 106px 0 0 370px;
+  }
+
+#recording-replay-overlay {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 9999;
+  display: none;
+  cursor: not-allowed;
+}
+
+#cgp-intro-screen {
+  position: absolute;
+  background: transparent url(../images/intro-screen-bg.jpg) no-repeat scroll left top;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 9998;
+}
+  #cgp-intro-screen img {
+    float: left;
+    margin: 51px 0 0 97px;
+  }
+  #cgp-btn-play {
+    float: right;
+    background: transparent url(../images/btn-play-activity.png) no-repeat scroll left top;
+    width: 187px;
+    height: 123px;
+    margin: 359px 17px 0 0;
+    cursor: pointer;
+  }
+  #cgp-btn-play:hover {background-position: left bottom}
+
+#cgp-preloader {
+  position: absolute;
+  left: -9999px;
+  top: -9999px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+#cgp-print-image-frame, #cgp-download-image-frame, #cgp-download-image-form {
+  display:none;
+}
+@media print{
+  body * {
+    display: none;
+  }
+  #cgp-print-image-frame {
+    display: block;
+    width: 100%;
+    min-width: 600px;
+    height: 500px;
+  }
+}
+
+#cgp-tools-drawer {
+  width: 200px;
+  position: absolute;
+  left: -200px;
+  top: 0;
+}
+  #cgp-tools {
+    width: 182px;
+    margin: 24px 0 0 20px;
+  }
+    #cgp-tools li {
+      cursor: pointer;
+      background: transparent url(../images/tools.png) no-repeat scroll;
+      width: 91px;
+      height: 92px;
+      float: left;
+      margin: -12px 0 0 -11px;
+    }
+      #cgp-tools li#cgp-tool-brush {background-position: 0 -92px}
+      #cgp-tools li#cgp-tool-brush:hover {background-position: -91px -92px}
+      #cgp-tools li#cgp-tool-brush.active {background-position: -182px -92px}
+
+      #cgp-tools li#cgp-tool-eraser {background-position: 0 0}
+      #cgp-tools li#cgp-tool-eraser:hover {background-position: -91px 0}
+      #cgp-tools li#cgp-tool-eraser.active {background-position: -182px 0}
+
+      #cgp-tools li#cgp-tool-foot {background-position: 0 -184px}
+      #cgp-tools li#cgp-tool-foot:hover {background-position: -91px -184px}
+      #cgp-tools li#cgp-tool-foot.active {background-position: -182px -184px}
+
+      #cgp-tools li#cgp-tool-hand {background-position: 0 -276px}
+      #cgp-tools li#cgp-tool-hand:hover {background-position: -91px -276px}
+      #cgp-tools li#cgp-tool-hand.active {background-position: -182px -276px}
+
+  #cgp-size-drawer {
+    float: left;
+    width: 181px;
+    height: 85px;
+    margin: -15px 0 0 9px;
+    background: transparent url(../images/size-drawer.png) no-repeat scroll left top;
+  }
+    #cgp-size-drawer li {
+      background: transparent url(../images/size.png) no-repeat scroll;
+      height: 60px;
+      float: left;
+      cursor: pointer;
+      margin-top: 12px;
+    }
+      #cgp-size-drawer li#cgp-size-small {width: 43px; background-position: 0 0; margin-left: 13px;}
+      #cgp-size-drawer li#cgp-size-small:hover {background-position: 0 -60px}
+      #cgp-size-drawer li#cgp-size-small.active {background-position: 0 -120px}
+    
+      #cgp-size-drawer li#cgp-size-medium {width: 51px; background-position: -43px 0}
+      #cgp-size-drawer li#cgp-size-medium:hover {background-position: -43px -60px}
+      #cgp-size-drawer li#cgp-size-medium.active {background-position: -43px -120px}
+
+      #cgp-size-drawer li#cgp-size-large {width: 60px; background-position: -94px 0}
+      #cgp-size-drawer li#cgp-size-large:hover {background-position: -94px -60px}
+      #cgp-size-drawer li#cgp-size-large.active {background-position: -94px -120px}
+
+      #cgp-size-drawer li canvas {
+        visibility: hidden;
+      }
+      #cgp-size-drawer li.active canvas {
+        visibility: visible;
+      }
+
+  #cgp-daub-drawer {
+    width: 171px;
+    height: 229px;
+    margin: -1px 0 0 9px;
+    padding: 24px 0 0 16px;
+    background: transparent url(../images/daubs-drawer.png) no-repeat scroll left top;
+    float: left;
+  }
+    #cgp-daub-drawer li {
+      background: transparent url(../images/daubs.png) no-repeat scroll left top;
+      width: 57px;
+      height: 57px;
+      cursor: pointer;
+      float: left;
+      margin: -15px 0 0 -6px;
+    }
+    #cgp-daub-drawer li#cgp-daub-0 {background-position: left -0px}
+    #cgp-daub-drawer li#cgp-daub-0:hover {background-position: center -0px}
+    #cgp-daub-drawer li#cgp-daub-0.active {background-position: right -0px}
+
+    #cgp-daub-drawer li#cgp-daub-1 {background-position: left -57px}
+    #cgp-daub-drawer li#cgp-daub-1:hover {background-position: center -57px}
+    #cgp-daub-drawer li#cgp-daub-1.active {background-position: right -57px}
+
+    #cgp-daub-drawer li#cgp-daub-2 {background-position: left -114px}
+    #cgp-daub-drawer li#cgp-daub-2:hover {background-position: center -114px}
+    #cgp-daub-drawer li#cgp-daub-2.active {background-position: right -114px}
+
+    #cgp-daub-drawer li#cgp-daub-3 {background-position: left -171px}
+    #cgp-daub-drawer li#cgp-daub-3:hover {background-position: center -171px}
+    #cgp-daub-drawer li#cgp-daub-3.active {background-position: right -171px}
+
+    #cgp-daub-drawer li#cgp-daub-4 {background-position: left -228px}
+    #cgp-daub-drawer li#cgp-daub-4:hover {background-position: center -228px}
+    #cgp-daub-drawer li#cgp-daub-4.active {background-position: right -228px}
+
+    #cgp-daub-drawer li#cgp-daub-5 {background-position: left -285px}
+    #cgp-daub-drawer li#cgp-daub-5:hover {background-position: center -285px}
+    #cgp-daub-drawer li#cgp-daub-5.active {background-position: right -285px}
+
+    #cgp-daub-drawer li#cgp-daub-6 {background-position: left -342px}
+    #cgp-daub-drawer li#cgp-daub-6:hover {background-position: center -342px}
+    #cgp-daub-drawer li#cgp-daub-6.active {background-position: right -342px}
+
+    #cgp-daub-drawer li#cgp-daub-7 {background-position: left -399px}
+    #cgp-daub-drawer li#cgp-daub-7:hover {background-position: center -399px}
+    #cgp-daub-drawer li#cgp-daub-7.active {background-position: right -399px}
+
+    #cgp-daub-drawer li#cgp-daub-8 {background-position: left -456px}
+    #cgp-daub-drawer li#cgp-daub-8:hover {background-position: center -456px}
+    #cgp-daub-drawer li#cgp-daub-8.active {background-position: right -456px}
+
+    #cgp-daub-drawer li#cgp-daub-9 {background-position: left -513px}
+    #cgp-daub-drawer li#cgp-daub-9:hover {background-position: center -513px}
+    #cgp-daub-drawer li#cgp-daub-9.active {background-position: right -513px}
+
+    #cgp-daub-drawer li#cgp-daub-10 {background-position: left -570px}
+    #cgp-daub-drawer li#cgp-daub-10:hover {background-position: center -570px}
+    #cgp-daub-drawer li#cgp-daub-10.active {background-position: right -570px}
+
+    #cgp-daub-drawer li#cgp-daub-11 {background-position: left -627px}
+    #cgp-daub-drawer li#cgp-daub-11:hover {background-position: center -627px}
+    #cgp-daub-drawer li#cgp-daub-11.active {background-position: right -627px}
+
+    #cgp-daub-drawer li#cgp-daub-12 {background-position: left -684px}
+    #cgp-daub-drawer li#cgp-daub-12:hover {background-position: center -684px}
+    #cgp-daub-drawer li#cgp-daub-12.active {background-position: right -684px}
+
+    #cgp-daub-drawer li#cgp-daub-13 {background-position: left -741px}
+    #cgp-daub-drawer li#cgp-daub-13:hover {background-position: center -741px}
+    #cgp-daub-drawer li#cgp-daub-13.active {background-position: right -741px}
+
+    #cgp-daub-drawer li#cgp-daub-14 {background-position: left -798px}
+    #cgp-daub-drawer li#cgp-daub-14:hover {background-position: center -798px}
+    #cgp-daub-drawer li#cgp-daub-14.active {background-position: right -798px}
+
+#cgp-georges-turn-drawer {
+  position: absolute;
+  width: 202px;
+  height: 266px;
+  left: -202px/*0px*/;
+  bottom: 0px;
+  background: transparent url(../images/dance-sprite.png) no-repeat scroll left top;
+}
+
+#cgp-background-drawer {
+  background: transparent url(../images/background-drawer.png) no-repeat scroll left top;
+  position: absolute;
+  left: 900px/*785px*/;
+  top: 109px;
+  width: 112px;
+  height: 272px;
+  z-index: 1;
+}
+  #cgp-btn-background-frame {
+    background: transparent url(../images/tool-background.png) no-repeat scroll left top;
+    width: 100px;
+    height: 72px;
+    margin-top: 13px;
+    cursor: pointer;
+  }
+  #cgp-btn-background-frame:hover {background-position: -100px top}
+
+  #cgp-background-options {
+    margin: 50px 0 0 5px;
+  }
+    #cgp-background-options li {
+      display: block;
+      background: transparent url(../images/tool-background.png) no-repeat scroll left top;
+      width: 100px;
+      margin-top: -35px;
+      position: relative;
+      cursor: pointer;
+    }
+
+    #cgp-background-options li#cgp-btn-background-0 {background-position: 0 -1px; height: 70px; z-index: 5}
+    #cgp-background-options li#cgp-btn-background-1 {background-position: 0 -73px; height: 74px; z-index: 4}
+    #cgp-background-options li#cgp-btn-background-2 {background-position: 0 -151px; height: 77px; z-index: 3}
+    #cgp-background-options li#cgp-btn-background-3 {background-position: 0 -232px; height: 78px; z-index: 2}
+    #cgp-background-options li#cgp-btn-background-4 {background-position: 0 -315px; height: 76px; z-index: 1}
+
+    #cgp-background-options li#cgp-btn-background-0:hover {background-position: -100px -1px}
+    #cgp-background-options li#cgp-btn-background-1:hover {background-position: -100px -73px}
+    #cgp-background-options li#cgp-btn-background-2:hover {background-position: -100px -151px}
+    #cgp-background-options li#cgp-btn-background-3:hover {background-position: -100px -232px}
+    #cgp-background-options li#cgp-btn-background-4:hover {background-position: -100px -315px}
+
+    #cgp-background-options li#cgp-btn-background-0.active {background-position: -200px -1px}
+    #cgp-background-options li#cgp-btn-background-1.active {background-position: -200px -73px}
+    #cgp-background-options li#cgp-btn-background-2.active {background-position: -200px -151px}
+    #cgp-background-options li#cgp-btn-background-3.active {background-position: -200px -232px}
+    #cgp-background-options li#cgp-btn-background-4.active {background-position: -200px -315px}
+
+#cgp-canvas-wrapper {
+  background: transparent url(../images/canvas-bg.png) no-repeat scroll left top;
+  position: absolute;
+  left: 188px;
+  top: 19px;
+  width: 600px;
+  height: 465px;
+  z-index: 1;
+}
+  #cgp-canvas-wrap {
+    position: relative;
+  }
+    #cgp-canvas-frame {
+      position: absolute;
+      left: 11px;
+      top: 14px;
+      width: 578px;
+      height: 434px;
+      z-index: 0;
+    }
+    #cgp-canvas {
+      position: absolute;
+      z-index: 1;
+      left: 15px;
+      top: 16px;
+    }
+
+#cgp-btn-help {
+  background: transparent url(../images/btn-help.png) no-repeat scroll left top;
+  position: absolute;
+  left: 823px;
+  top: 0px;
+  width: 77px;
+  height: 76px;
+  cursor: pointer;
+  z-index: 2;
+}
+#cgp-btn-help:hover { background-position: left bottom}
+
+#cgp-btn-done {
+  background: transparent url(../images/btn-done.png) no-repeat scroll left top;
+  position: absolute;
+  left: 794px;
+  top: 395px;
+  width: 109px;
+  height: 95px;
+  cursor: pointer;
+  border-radius: 5px;
+  z-index: 2;
+}
+#cgp-btn-done:hover { background-position: left bottom}
+
+#cgp-btn-record {
+  background: #eee url(../images/record.png) no-repeat scroll center top;
+  position: absolute;
+  left: 804px;
+  top: 413px;
+  width: 72px;
+  height: 30px;
+  cursor: pointer;
+  border-radius: 5px;
+  border: 1px solid #fff;
+  z-index: 2;
+  box-shadow: 2px 2px 8px 1px #000;
+  display: none;
+}
+#cgp-btn-record:hover {
+  box-shadow: 2px 2px 8px 1px #c00;
+}
+#cgp-btn-record.recording {
+  background-position: center bottom;
+}
+
+#cgp-video-help {
+  display: none;
+}
+#cgp-video-help-overlay {
+  position: absolute;
+  z-index: 9990;
+  background: #000;
+  opacity: 0.75;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0
+}
+#cgp-video-container {
+  position: absolute;
+  z-index: 9991;
+  left: 0;
+  top: -500px /*0*/;
+}
+#cgp-video-wrapper {
+  position: relative;
+}
+#cgp-video {
+  position: absolute;
+  left: 25px;
+  top: 24px;
+  width: 640px;
+  height: 360px;
+  padding: 15px 13px;
+  background: #fff;
+  border-radius: 15px;
+  overflow: hidden;
+}
+#cgp-btn-skip-video {
+  position: absolute;
+  left: 696px;
+  top: 358px;
+  width: 187px;
+  height: 124px;
+  background: transparent url(../images/btn-skip-video.png) no-repeat scroll left top;
+  cursor: pointer;
+}
+#cgp-btn-skip-video:hover {background-position: left bottom}
+
+#cgp-donedlg {
+  display: none;
+}
+
+#cgp-donedlg-overlay {
+  position: absolute;
+  z-index: 9990;
+  background: #000;
+  opacity: 0.75;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  display: none;
+}
+
+#cgp-donedlg-container {
+  position: absolute;
+  z-index: 9991;
+  left: 252px;
+  top: -380px /*39px*/;
+  width: 386px;
+  height: 380px;
+  background: transparent url(../images/donedlg-bg.png) no-repeat scroll left top;
+}
+#cgp-donedlg-btns-wrapper {
+  position: relative;
+}
+
+#cgp-donedlg-btn-close {
+  position: absolute;
+  left: 353px;
+  top: 53px;
+  width: 25px;
+  height: 23px;
+  background: transparent url(../images/donedlg-close.png) no-repeat scroll left top;
+  cursor: pointer;
+}
+#cgp-donedlg-btn-close:hover {background-position: left bottom}
+
+#cgp-donedlg-btn-print {
+  position: absolute;
+  left: 8px;
+  top: 229px;
+  width: 193px;
+  height: 83px;
+  background: transparent url(../images/donedlg-print.png) no-repeat scroll left top;
+  cursor: pointer;
+}
+#cgp-donedlg-btn-print:hover {background-position: left bottom}
+
+#cgp-donedlg-btn-download {
+  position: absolute;
+  left: 185px;
+  top: 229px;
+  width: 193px;
+  height: 83px;
+  background: transparent url(../images/donedlg-download.png) no-repeat scroll left top;
+  cursor: pointer;
+}
+#cgp-donedlg-btn-download:hover {background-position: left bottom}
+
+#cgp-donedlg-btn-keeppainting {
+  position: absolute;
+  left: -3px;
+  top: 309px;
+  width: 206px;
+  height: 75px;
+  background: transparent url(../images/donedlg-keeppainting.png) no-repeat scroll left top;
+  cursor: pointer;
+}
+#cgp-donedlg-btn-keeppainting:hover {background-position: left bottom}
+
+#cgp-donedlg-btn-startover {
+  position: absolute;
+  left: 184px;
+  top: 309px;
+  width: 206px;
+  height: 75px;
+  background: transparent url(../images/donedlg-startover.png) no-repeat scroll left top;
+  cursor: pointer;
+}
+#cgp-donedlg-btn-startover:hover {background-position: left bottom}
+
+#recording-results-wrapper {
+  position: absolute;
+  z-index: 9990;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: #efefef;
+  padding: 10px;
+  display: none;
+}
+#recording-results-wrapper p {
+  font-style: italic;
+  color: #333;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  line-height: 20px;
+}
+#recording-results-wrapper p a {
+  
+}
+#recording-results-wrapper textarea {
+  border: none;
+  width: 100%;
+  height: 450px;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 11px;
+  background: #fff;
+  color: #009fc8
+}

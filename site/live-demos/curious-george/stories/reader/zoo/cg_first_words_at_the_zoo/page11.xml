@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<smil xmlns="http://www.w3.org/ns/SMIL" VERSION="3.0" PROFILE="http://www.idpf.org/epub/30/profile/content/">
+<body>
+<par id="p0001">
+
+<audio src="images/CG_Zoo.m4a" clipBegin="113.531740s" clipEnd="117.781066s" id="w0022"/>
+</par>
+<par id="p0002">
+
+<audio src="images/CG_Zoo.m4a" clipBegin="117.781066s" clipEnd="132.916067s" id="w0023"/>
+</par>
+</body>
+</smil>

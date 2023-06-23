@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<smil xmlns="http://www.w3.org/ns/SMIL" version="3.0" profile="http://www.idpf.org/epub/30/profile/content/">
+<body>
+<par id="p0001">
+
+<audio src="images/CG_Zoo.m4a" clipBegin="34.148485s" clipEnd="38.829413s" id="w0002"/>
+</par>
+<par id="p0002">
+
+<audio src="images/CG_Zoo.m4a" clipBegin="38.829413s" clipEnd="41.537664s" id="w0001"/>
+</par>
+<par id="p0003">
+
+<audio src="images/CG_Zoo.m4a" clipBegin="41.537664s" clipEnd="43.811258s" id="w0003"/>
+</par>
+</body>
+</smil>

@@ -1,0 +1,8 @@
+.bjqs .page ul li a.coming-soon strong {
+	display: block;
+	margin-top: -139px;
+	padding-top: 140px;
+	position: relative;
+	background: url(../imgs/game_icons/ComingSoonBanner.png) no-repeat 10px 0;
+}
+

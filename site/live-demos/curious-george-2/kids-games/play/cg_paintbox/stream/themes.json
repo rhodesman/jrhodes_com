@@ -1,0 +1,39 @@
+{
+  "current_theme": "default",
+  "themes": {
+    "default": {
+      "name": "Curious<br />George",
+      "stamps": [
+        {"imagepath": "stream/default/stamps/grasses.png", "thumb_imagepath": "stream/default/stamps/grasses_thumb.png", "width": 100, "height": 100, "min_distance": 25, "choose_next_mode": "random"},
+        {"imagepath": "stream/default/stamps/clouds.png", "thumb_imagepath": "stream/default/stamps/clouds_thumb.png", "width": 100, "height": 100, "min_distance": 50, "choose_next_mode": "liniar"},
+        {"imagepath": "stream/default/stamps/banana.png", "thumb_imagepath": "stream/default/stamps/banana_thumb.png", "width": 100, "height": 100, "min_distance": 30, "choose_next_mode": "liniar"},
+        {"imagepath": "stream/default/stamps/beachball.png", "thumb_imagepath": "stream/default/stamps/beachball_thumb.png", "width": 100, "height": 100, "min_distance": 90, "choose_next_mode": "liniar"}
+      ],
+      "clipart": [
+        {"imagepath": "stream/default/clipart/yellowhatman.png", "thumb_imagepath": "stream/default/clipart/yellowhatman_thumb.png", "initial_scale": 50},
+        {"imagepath": "stream/default/clipart/george.png", "thumb_imagepath": "stream/default/clipart/george_thumb.png", "initial_scale": 50},
+        {"imagepath": "stream/default/clipart/yellowhat.png", "thumb_imagepath": "stream/default/clipart/yellowhat_thumb.png", "initial_scale": 50},
+        {"imagepath": "stream/default/clipart/tree.png", "thumb_imagepath": "stream/default/clipart/tree_thumb.png", "initial_scale": 50}
+      ],
+      "frame": "stream/default/frame.png",
+      "intro_canvas_art": "stream/default/intro.png"
+    },
+    "zoo-animals": {
+      "name": "Zoo<br />Animals",
+      "stamps": [
+        {"imagepath": "stream/zoo_animals/stamps/paw.png", "thumb_imagepath": "stream/zoo_animals/stamps/paw_thumb.png", "width": 100, "height": 100, "min_distance": 100, "choose_next_mode": "liniar"},
+        {"imagepath": "stream/zoo_animals/stamps/duck.png", "thumb_imagepath": "stream/zoo_animals/stamps/duck_thumb.png", "width": 100, "height": 100, "min_distance": 100, "choose_next_mode": "liniar"},
+        {"imagepath": "stream/zoo_animals/stamps/butterfly.png", "thumb_imagepath": "stream/zoo_animals/stamps/butterfly_thumb.png", "width": 100, "height": 100, "min_distance": 75, "choose_next_mode": "liniar"},
+        {"imagepath": "stream/zoo_animals/stamps/flowers.png", "thumb_imagepath": "stream/zoo_animals/stamps/flowers_thumb.png", "width": 100, "height": 100, "min_distance": 50, "choose_next_mode": "random"}
+      ],
+      "clipart": [
+        {"imagepath": "stream/zoo_animals/clipart/lion.png", "thumb_imagepath": "stream/zoo_animals/clipart/lion_thumb.png", "initial_scale": 50},
+        {"imagepath": "stream/zoo_animals/clipart/parrot.png", "thumb_imagepath": "stream/zoo_animals/clipart/parrot_thumb.png", "initial_scale": 50},
+        {"imagepath": "stream/zoo_animals/clipart/hippo.png", "thumb_imagepath": "stream/zoo_animals/clipart/hippo_thumb.png", "initial_scale": 50},
+        {"imagepath": "stream/zoo_animals/clipart/elephant.png", "thumb_imagepath": "stream/zoo_animals/clipart/elephant_thumb.png", "initial_scale": 50}
+      ],
+      "frame": "stream/zoo_animals/frame.png",
+      "intro_canvas_art": "stream/zoo_animals/intro.png"
+    }
+  }
+}

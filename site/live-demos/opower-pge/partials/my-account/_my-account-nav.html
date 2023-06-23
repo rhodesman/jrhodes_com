@@ -1,0 +1,24 @@
+<div ng-switch="userPrefs.isResidentialUser()">
+  <ul class="account-side-nav" ng-switch-when="true">
+    <li ng-class="{ 'active': pageSection === 'general' }"><a href="#/my-account/general">General</a></li>
+    <li ng-class="{ 'active': pageSection === 'alerts' }"><a href="#/my-account/alerts">Alerts</a></li>
+    <li ng-class="{ 'active': pageSection === 'devices' }"><a href="#/my-account/devices">Devices</a></li>
+    <li><a href="">Heating</a></li>
+    <li><a href="">Cooling</a></li>
+    <li><a href="">Hot water</a></li>
+    <li><a href="">Appliances</a></li>
+    <li><a href="">Lighting</a></li>
+    <li><a href="">Other</a></li>
+  </ul>
+  <ul class="account-side-nav" ng-switch-when="false">
+    <li ng-class="{ 'active': pageSection === 'general' }"><a href="#/my-account/general">My Meters</a></li>
+    <li ng-class="{ 'active': pageSection === 'devices' }"><a href="#/my-account/devices">Business Info</a></li>
+    <li><a href="">Heating</a></li>
+    <li><a href="">Cooling</a></li>
+    <li><a href="">Hot water</a></li>
+    <li><a href="">Cooking</a></li>
+    <li><a href="">Refrigeration</a></li>
+    <li><a href="">Lighting</a></li>
+    <li><a href="">Other</a></li>
+  </ul>
+</div>

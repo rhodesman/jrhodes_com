@@ -1,0 +1,573 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+ "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>
+    Untitled Document
+</title>
+<link href="skin/blue.monday/jplayer.blue.monday.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.jplayer.min.js"></script>
+<meta http-equiv="Content-Type" content="text/html;CHARSET=utf-8"/>
+<meta name="viewport" content="width=450,height=450" />
+
+<style type="text/css">
+ 
+    a:link {
+        color:blue;
+        text-decoration:underline;
+    }
+    a:active { color:red }
+    a:visited { color:purple }
+    
+  @font-face {
+  font-family: 'Adobe Garamond Semibold Italic';
+  src: url("font/AGARAMSI.TTF");
+  }
+@font-face {
+  font-family: 'CuriousGerogeheader-Medium';
+  src: url("font/CURIOUGM.TTF");
+  }
+@font-face {
+  font-family: 'New Century Schoolbook Italic';
+  src: url("font/NEWCENSI.TTF");
+  }
+@font-face {
+  font-family: 'New Century Schoolbook Roman';
+  src: url("font/NEWCENSR.TTF");
+  }
+@font-face {
+  font-family: 'OPTIMajerIrregular';
+  src: url("font/OPTIMAJI.TTF");
+  }
+
+body {
+   width: 850px;
+   height: 450px;
+   margin:0; 
+
+        background-color:white;
+        color:#393838;
+    }
+    .text59 {
+        font-family:'OPTIMajerIrregular';
+        font-size:28px;
+        text-decoration:none;
+        color:#335C93;
+    }
+    .pHeadparagraph {
+        line-height:42px;
+        text-align:center;
+    }
+    .rbox1 {
+        background-color:white;
+        width:450px;
+        height:450px;
+    }
+    .rbox2 {
+        position:absolute;
+        left:190px;
+        top:329.057px;
+        width:332.992px;
+        height:240.706px;
+    }
+    .rbox3 {
+        position:absolute;
+        left:234px;
+        top:378.704px;
+        width:62.373px;
+        height:16.854px;
+    }
+    .rbox4 {
+        position:absolute;
+        left:19.366px;
+        top:378.801px;
+        width:121.119px;
+        height:154.601px;
+    }
+    .rbox5 {
+        position:absolute;
+        left:24.336px;
+        top:529.962px;
+        width:182.314px;
+        height:160.763px;
+    }
+    .rbox6 {
+        position:absolute;
+        left:240.629px;
+        top:573.372px;
+        width:210.079px;
+        height:97.346px;
+    }
+    .rbox7 {
+        position:absolute;
+        left:538.108px;
+        top:438.92px;
+        width:153.025px;
+        height:245.863px;
+    }
+    .rbox8 {
+        position:absolute;
+        left:524px;
+        top:604.885px;
+        width:60.884px;
+        height:44.604px;
+    }
+    .rbox9 {
+        position:absolute;
+        left:93.875px;
+        top:451.5px;
+        width:87.77px;
+        height:20.854px;
+    }
+    .rbox10 {
+        position:absolute;
+        left:57.373px;
+        top:675.146px;
+        width:110.731px;
+        height:20.854px;
+    }
+    .rbox11 {
+        position:absolute;
+        left:311.159px;
+        top:663.586px;
+        width:111.246px;
+        height:20.854px;
+    }
+    .rbox12 {
+        position:absolute;
+        left:72.899px;
+        top:45.424px;
+        width:655.265px;
+        height:267.133px;
+    }
+    .rbox13 {
+        position:absolute;
+        left:297.959px;
+        top:199.249px;
+        width:50.922px;
+        height:20.854px;
+    }
+    .rbox14 {
+        position:absolute;
+        left:572.834px;
+        top:77.145px;
+        width:64.996px;
+        height:20.854px;
+    }
+    .rbox15 {
+        position:absolute;
+        left:44px;
+        top:36px;
+        width:175.527px;
+        height:83.098px;
+    }
+    .rbox16 {
+        position:absolute;
+        left:34.602px;
+        top:104.573px;
+        width:112.398px;
+        height:20.854px;
+    }
+    .rbox17 {
+        position:absolute;
+        left:21.26px;
+        top:224.466px;
+        width:188.504px;
+        height:125.613px;
+    }
+    .rbox18 {
+        position:absolute;
+        left:56.566px;
+        top:345.839px;
+        width:94.809px;
+        height:18.661px;
+    }
+    .rbox19 {
+        position:absolute;
+        left:285.517px;
+        top:254.276px;
+        width:388.544px;
+        height:158.054px;
+    }
+    .rbox20 {
+        position:absolute;
+        left:488.615px;
+        top:376.859px;
+        width:50.021px;
+        height:20.854px;
+    }
+    .rbox21 {
+        position:absolute;
+        left:0px;
+        top:0px;
+        background-color:#C9E8FB;
+        width:450px;
+        height:450px;
+    }
+    .rbox35 {
+	position:absolute;
+	left:5px;
+	top:15px;
+	padding:0px;
+	width:132px;
+	height:32px;
+    }
+	
+	.TextContent
+	{
+		 font-size: 13px;
+	}
+	
+	.ice{
+		 left: 17.289px;
+    position: absolute;
+    top: 53.22px;
+	
+	}
+	.cream{
+		 left: 38.289px;
+    position: absolute;
+    top: 53.22px;
+	}
+	.truck{
+		 left: 74.289px;
+    position: absolute;
+    top: 53.22px;
+	}
+	.bus{
+		 left: 354.289px;
+    position: absolute;
+    top: 42.22px;
+	}
+	.cars{
+		 left: 174.289px;
+    position: absolute;
+    top: 119.22px;
+	}
+		
+	.plane{
+		 left: 51.289px;
+    position: absolute;
+    top: 206.22px;
+		}
+	.boats{
+		 left: 137.289px;
+    position: absolute;
+    top: 230.22px;
+	}
+	.train{
+		left: 287.289px;
+    position: absolute;
+    top: 226.22px;
+	}
+	.scooter{
+		 left: 62.289px;
+    position: absolute;
+    top: 257.22px;
+	}
+	.bike{
+		 left: 62.289px;
+    position: absolute;
+    top: 409.22px;
+	}
+	.submarine{
+		 left: 182.289px;
+    position: absolute;
+    top: 408.22px;
+	}
+	.hot{
+		 left: 292.289px;
+    position: absolute;
+    top: 364.22px;
+	}
+	.air{
+		 left: 313.289px;
+    position: absolute;
+    top: 364.22px;
+	}
+	.balloon{
+		 left: 290.289px;
+    position: absolute;
+    top: 377.22px;
+	}
+ .box1 {
+        background-color:white;
+        width:450px;
+        height:450px;
+    }
+    .box2 {
+        position:absolute;
+        left:85.48px;
+        top:224.818px;
+        width:531.141px;
+        height:307.403px;
+    }
+    .box3 {
+        position:absolute;
+        left:393.342px;
+        top:363.215px;
+        width:101.658px;
+        height:25.854px;
+    }
+    .box4 {
+        position:absolute;
+        left:28.244px;
+        top:25.662px;
+        width:178.942px;
+        height:272.459px;
+    }
+    .box5 {
+        position:absolute;
+        left:69.091px;
+        top:60.415px;
+        width:70.409px;
+        height:30.57px;
+    }
+    .box6 {
+        position:absolute;
+        left:234.677px;
+        top:31.181px;
+        width:290.78px;
+        height:193.726px;
+    }
+    .box7 {
+        position:absolute;
+        left:308.467px;
+        top:181.735px;
+        width:103.665px;
+        height:20.854px;
+    }
+    .box8 {
+        position:absolute;
+        left:76.519px;
+        top:678.54px;
+        width:100.246px;
+        height:20.854px;
+    }
+    .box10 {
+        position:absolute;
+        left:572.5px;
+        top:241.5px;
+        width:87.842px;
+        height:30.839px;
+    }
+    .box11 {
+        position:absolute;
+        left:225px;
+        top:77.926px;
+        width:66.246px;
+        height:20.854px;
+    }
+    .box12 {
+        position:absolute;
+        left:632.959px;
+        top:302.918px;
+        width:65.092px;
+        height:178.507px;
+    }
+    .box13 {
+        position:absolute;
+        left:61.834px;
+        top:529.233px;
+        width:130.113px;
+        height:141.721px;
+    }
+    .box14 {
+        position:absolute;
+        left:229.042px;
+        top:561.553px;
+        width:231.797px;
+        height:125.016px;
+    }
+    .box15 {
+        position:absolute;
+        left:488.888px;
+        top:516.431px;
+        width:185.758px;
+        height:167.392px;
+    }
+    .box16 {
+        position:absolute;
+        left:585.914px;
+        top:333.145px;
+        width:85.255px;
+        height:20.854px;
+    }
+    .box17 {
+        position:absolute;
+        left:297.596px;
+        top:678.497px;
+        width:111.246px;
+        height:20.854px;
+    }
+    .box18 {
+        position:absolute;
+        left:591.592px;
+        top:678.522px;
+        width:74.408px;
+        height:20.854px;
+    }
+    .box22 {
+        position:absolute;
+        left:516px;
+        top:73.464px;
+        width:204.678px;
+        height:164.646px;
+    }
+    .box23 {
+        position:absolute;
+        left:456.269px;
+        top:110.338px;
+        width:88.231px;
+        height:19.854px;
+    }
+ 	.TextContent{
+		 font-size: 13px;
+	}
+ 
+ 
+.rocket{
+	    left: 32.289px;
+    position: absolute;
+    top: 50.22px;
+}
+.tricycle{
+	     left: 125.289px;
+    position: absolute;
+    top: 46.22px;
+}
+.wagon{
+	   left: 284.289px;
+    position: absolute;
+    top: 59.22px;
+}
+
+.roller{
+	     left: 172.289px;
+    position: absolute;
+    top: 109.22px;
+}
+.skates{
+	left: 204.289px;
+    position: absolute;
+    top: 109.22px;
+}
+.plane{
+	    left: 46.289px;
+    position: absolute;
+    top: 204.22px;
+}
+.motorcycle{
+	 left: 342.289px;
+    position: absolute;
+    top: 147.22px;
+}
+.unicycle{
+	 left: 372.289px;
+    position: absolute;
+    top: 295.22px;
+}
+.trucks{
+	 left: 238.289px;
+    position: absolute;
+    top: 219.22px;
+}
+.baby{
+	    left: 38.289px;
+    position: absolute;
+    top: 417.22px;
+}
+.cairrage{
+	 left: 69.289px;
+      position: absolute;
+      top: 417.22px;
+}
+.taxi{
+	     left: 194.289px;
+    position: absolute;
+    top: 417.22px;
+}
+.tractor{
+	    left: 341.289px;
+    position: absolute;
+    top: 418.22px;
+}
+ 	.Rside
+	{
+		position:absolute;
+		left:425px;
+		top:0px;
+		
+	}	
+</style>
+</head>
+
+<body>
+
+    
+        
+        <div class="rbox1">
+            <span id="t1232"><img src="images/20.jpg" alt="" width="425" height="445"/></span>
+         </div>
+          <div class="TextContent">
+        	<div  class="ice"><span id="w000232">icecream truck</span></div>
+            <!--<div  class="cream"><span id="w000232">truck</span></div>
+           <div  class="truck"><span id="">truck</span></div>-->
+             <div  class="bus"><span id="w000234">bus</span></div>
+              <div  class="cars"><span id="w000233">cars</span></div>
+             <div  class="plane"><span id="w000235">plane</span></div>
+              <div  class="boats"><span id="w000236">boats</span></div>
+               <div  class="train"><span id="w000238">train</span></div>
+                <div  class="scooter"><span id="w000237">scooter</span></div>
+                 <div  class="bike"><span id="w000240">bike</span></div>
+                  <div  class="submarine"><span id="w000239">submarine</span></div>
+                  <div  class="hot"><span id="w000241">hot air balloon</span></div>     
+                   <!--<div  class="air"><span id="">air</span></div>  
+                    <div  class="balloon"><span id="">balloon</span></div>   --> 
+                       
+        </div>
+        
+        
+    
+    
+        
+        
+        
+
+<div class="rbox35">
+    <div class="pHeadparagraph">
+        <span class="text59"><span id="w000231">On the Go</span> </span>
+    </div>
+</div>
+
+
+<!--right side-->
+<div class="Rside">
+ <div class="box1">
+            <span id="t2233"><img src="images/21.jpg" alt="" width="425" height="445"/></span></div>
+            
+            
+         <div class="TextContent">
+       	   <div  class="rocket"><span id="w000242">rocket</span></div>
+           <div  class="tricycle"><span id="w000243">tricycle</span></div>
+            <div  class="wagon"><span id="w000245">wagon</span></div>
+             <div  class="roller"><span id="w000244">roller skates</span></div>
+              <!--<div  class="skates"><span id="">skates</span></div>-->
+             <div  class="trucks"><span id="w000247">trucks</span></div>
+              <div  class="motorcycle"><span id="w000246">motor cycle</span></div>
+               <div  class="unicycle"><span id="w000248">unicycle</span></div>                
+                 <div  class="baby"><span id="w000250">baby carriage</span></div>
+                 <!-- <div  class="cairrage"><span id="">cairrage</span></div>-->
+                  <div  class="taxi"><span id="w000249">taxi</span></div>    
+                   <div  class="tractor"><span id="w000251">tractor</span></div>
+                  
+        </div>
+        
+        
+</div>
+
+<div id="chk"></div>
+<div id="timeValue"></div>
+</body>
+</html>

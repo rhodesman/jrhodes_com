@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Workbooks - Curious George</title>
+<base href="http://dev.wonderbeanstudios.com/sites/CGPhase1/">
+<!--[if lt IE 9]><script src="js/html5.js"></script><![endif]-->
+<script src="js/filmotype.js" type="text/javascript"></script>
+<link rel="stylesheet" href="css/style.css" type="text/css">
+<script src="js/modernizr.custom.40745.js"></script>
+<script src="js/jquery-1.7.2.min.js" type="text/javascript"></script>
+<script src="js/jquery.history.js" type="text/javascript"></script>
+<!--<script src="js/less-1.3.0.min.js"></script>-->
+<script src="js/bootstrap.min.js" type="text/javascript"></script>
+<script src="js/basic-jquery-slider.min.js" type="text/javascript"></script>
+<script src="js/soundmanager2-nodebug-jsmin.js" type="text/javascript"></script>
+<script src="js/main.js" type="text/javascript"></script>
+<!--[if lt IE 9]>
+<script src="js/IE9.js"></script>
+<link rel="stylesheet" href="css/ie_fixes.css" type="text/css">
+<![endif]-->
+<script type="text/javascript">
+$(function() {
+  $.get('products/cg-workbooks.xml', function(data) {
+    // Add products to HTML
+    $(data).find('product').each(function() {
+      var $product  = $(this),
+        title       = $product.find('title'),
+        description = $product.find('description'),
+        imgurl      = $product.find('prodimage'),
+        produrl     = $product.find('prodlink'),
+        newProduct  = $("<div>", { "class": "product-detail" }).appendTo($('.results-list'));
+
+        newProduct
+          .append($("<img>", { src: imgurl.text() }))
+          .append($("<h4>", { text: title.text() }))
+          .append(description)
+          .append($("<a>", { href: produrl.text(), "class": "btn buy-btn", text: "Buy" }));
+    });
+
+    // Replace <text> elements with <p>
+    $("text").each(function() {
+      $(this).replaceWith($("<p>").html($(this).text()));
+    });
+
+    // Replace <list> elements with <ul> and <listitem> elements with <li>
+    $("list").each(function() {
+      var newList = $("<ul>").insertBefore(this);
+      $("listitem", this).each(function() { newList.append($("<li>").html($(this).text())) });
+      $(this).remove();
+    });
+
+    // Remove <description> elements
+    $("description").each(function() {
+      $(this).children().insertBefore(this);
+      $(this).remove();
+    });
+  });
+});
+</script>
+</head>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<body class="products-workbooks">
+    <div id="main">
+        <header>
+            <nav>
+                <h1><a href="" title="Home">Curious George</a></h1>
+                <ul>
+                    <li><a class="nav-games" href="games" title="Games">Games</a></li>
+                    <li><a class="nav-stories" href="stories" title="Stories">Stories</a></li>
+                    <li><a class="nav-create" href="create" title="Create">Create</a></li>
+                    <li><a class="nav-curious" href="themes" title="Curious?">Curious About</a></li>
+                </ul>
+        		<a id="mobile-app" href="mobile-app" title="Get our mobile app!"><strong>Curious George at the Zoo</strong> Free on iPhone and iPad</a>
+				<a id="playhouse" href="playhouse.html" title="Visit Curious George's Playhouse">Visit George's Playhouse</a>
+        		
+            </nav>
+        </header>
+        <section id="content">
+            <article id="products-workbooks" class="full-page">
+                <h1><a href="products" title="Products">Products</a></h1>
+                <div class="share">
+                    <strong>Join Us Online</strong>
+                	<a href="http://www.facebook.com/curiousgeorge" class="facebook" title="Facebook">Facebook</a>
+                	<a href="https://twitter.com/intent/user?screen_name=gocuriousgeorge" class="twitter" title="Twitter">Twitter</a>
+                	<a href="http://pinterest.com/search/?q=curious+george" class="youtube" title="Pinterest">Pinterest</a>
+                	<div class="fb-like" data-href="http://www.facebook.com/curiousgeorge" data-send="false" data-layout="button_count" data-width="100" data-show-faces="false" data-font="arial"></div>
+                	<a href="https://twitter.com/share" class="twitter-share-button" data-related="gocuriousgeorge">Tweet</a>
+                	<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="products/books.html" title="Books">Books</a></li>
+                        <li><a href="products/e-books.html" title="eBooks">eBooks</a></li>
+                        <li><a href="products/apps.html" title="Apps">Apps</a></li>
+                        <li><a href="products/workbooks.html" class="active" title="Workbooks">Workbooks</a></li>
+                        <li><a href="products/merchandise.html" title="Merchandise">Merchandise</a></li>
+                    </ul>
+                    <div class="account">
+						<a href="login" title="Log in" class="login btn no-ajax" data-target="#cgLoginModal">Log in</a>
+						<a href="register" title="Register" class="register btn no-ajax" data-target="#cgRegModal">Register</a>
+					</div>
+                </nav>
+                <section class="important-wrapper merchandise">
+                    <h2>Workbooks</h2>
+                    <div class="merchandise-body">
+                        <div class="selectors">
+                            <div class="selections filter-lists">
+                            	<label><a href="printables/LearningCoSampleWorkbook.pdf">Download a Sample</a></label>
+                                <!--<label for="age">Age</label>
+                                <ul id="age">
+                                    <li><a href="#">0-2 Years</a></li>
+                                    <li><a href="#">2-4 Years</a></li>
+                                    <li><a href="#">4-6 Years</a></li>
+                                    <li><a href="#">Over 6 Years</a></li>
+                                    <li><a href="#">All</a></li>
+                                </ul>
+                                <label for="Subject">Subject</label>
+                                <ul id="Subject">
+                                    <li><a href="#">Adventure</a></li>
+                                    <li><a href="#">Animals</a></li>
+                                    <li><a href="#">Art</a></li>
+                                    <li><a href="#">Colors</a></li>
+                                    <li><a href="#">Earth Science</a></li>
+                                    <li><a href="#">Emotions</a></li>
+                                </ul>-->
+                            </div>
+                        </div>
+                        <div class="results-list">
+                            
+                        </div>
+                    </div>
+                </section>
+            </article>
+        </section>
+    </div>
+    <footer>
+        <div id="hmh">
+            <a href="http://www.hmhco.com/">Houghton Mifflin Harcourt</a>
+            <address>
+                222 Berkeley Street | Boston, MA 02116
+            </address>
+        </div>
+        <div id="blurb">
+        	<p>Changing people's lives by fostering passionate, curious learners.</p>
+        </div>
+        <p id="legal"><a href="http://www.hmhco.com/terms-and-conditions.html">Terms &amp; Conditions of Use</a> <a href="http://www.hmhco.com/privacy-policy.html">Privacy Policy</a> <a href="http://www.hmhco.com/privacy-policy.html#childrensPrivacyPolicy">Children's Privacy Policy</a> <span> &copy; 2012 Houghton Mifflin Harcourt. All rights reserved.</span></p>
+    </footer>
+    <div class="modal cgModal hide fade" id="cgThankYouModal">
+        <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">x</button>
+            <h3 class="FilmotypeMajor">Thank you for Registering!</h3>
+        </div>
+        <div class="modal-body">
+            <div class="row cg_register">
+                <div class="span4">
+                    <p>You now have access to additional games, stories and content on curiousgeorge.com</p>
+                </div>
+                <div class="span6">
+                    <a href="#" class="btn btn-primary" data-dismiss="modal">Close</a>
+                </div>
+            </div>
+        </div>
+        <div class="modal-footer"></div>
+    </div>
+    <div class="modal cgModal hide fade" id="cgPromptModal">
+        <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">x</button>
+            <h3 class="FilmotypeMajor">Sorry. You must log in to access this content.</h3>
+        </div>
+        <div class="modal-body">
+            <form class="row cg_register">
+                <div class="span3">
+                    <label>Email Address</label> <input type="text" class="span3" placeholder=""> <label>Password</label> <input type="password" class="span3" placeholder="">
+                </div>
+                <div class="span3">
+                    <label class="not_reg">Not signed up yet? Registration is free!</label>
+                </div>
+                <div class="span3">
+                    <button type="submit" class="btn btn-primary">Login</button>
+                </div>
+                <div class="span3">
+                    <button type="submit" class="btn btn-primary reg_btn">Register</button>
+                </div>
+                <div class="span6 forgot_pw">
+                    <a href="#">Forgot your password?</a>
+                </div>
+            </form>
+        </div>
+        <div class="modal-footer"></div>
+    </div>
+    <div class="modal cgModal hide fade" id="cgLoginModal">
+        <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">x</button>
+            <h3 class="FilmotypeMajor">Login</h3>
+        </div>
+        <div class="modal-body">
+            <form class="row cg_register">
+                <div class="span3">
+                    <label>Email Address</label> <input type="text" class="span3" placeholder=""> <label>Password</label> <input type="password" class="span3" placeholder="">
+                </div>
+                <div class="span6">
+                    <button type="submit" class="btn btn-primary">Login</button>
+                </div>
+                <div class="span6 forgot_pw">
+                    <a href="#">Forgot your password?</a>
+                </div>
+            </form>
+        </div>
+        <div class="modal-footer"></div>
+    </div>
+    <div class="modal cgModal hide fade" id="cgRegModal">
+        <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">x</button>
+            <h3 class="FilmotypeMajor">Register</h3>
+        </div>
+        <div class="modal-body">
+            <form class="row cg_register">
+                <div class="span3">
+                    <label>First Name</label> <input type="text" class="span3" placeholder=""> 
+                    <label>Email Address</label> <input type="text" class="span3" placeholder=""> 
+                    <label>Password</label> <input type="password" class="span3" placeholder="">
+                    <label class="age-verify">Please enter the year you were born</label> <input type="text" class="span3" placeholder="mm/dd/yyyy">
+                </div>
+                <div class="span3">
+                    <label>Last Name</label> <input type="text" class="span3" placeholder="">
+                    <label>Zipcode</label> <input type="text" class="span3" placeholder=""> 
+                    <label>Verify Password</label> <input type="password" class="span3" placeholder="">
+                </div>
+                <div class="span6">
+                	
+                    <label class="checkbox"><input type="checkbox" checked="checked"> Send me special offers and promotions.</label> 
+                                        
+                    <button type="submit" class="btn btn-primary">Register</button>
+                </div>
+            </form>
+        </div>
+        <div class="modal-footer"></div>
+    </div>
+    <div id="loading"></div>
+</body>
+</html>

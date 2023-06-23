@@ -1,0 +1,519 @@
+$border-color: #CCCCCC;
+$p-font-size: 0.875rem;
+
+/*
+@media #{$small-up} {
+
+}
+
+@media #{$medium-up}{
+
+}
+
+@media #{$large-up}{
+
+}
+*/
+
+.overview-title {
+
+  @media #{$small-only} {
+    h1{
+      line-height:1;
+      margin-top:2px;
+    }
+    a {
+      font-size:rem-calc(12);
+      margin-top:2px;
+      text-align:center;
+      white-space:nowrap;
+
+      + a{
+        text-align:center
+      }
+    }
+    .home-profile{
+      text-align:center;
+    }
+  }
+
+  .header-text {
+    @media #{$small-only}{
+      margin-top:8px;
+    }
+    p {
+      font-size: 0.7rem;
+      color: #888888;
+      margin-bottom: 0;
+    }
+  }
+}
+.home-avatar {
+  height: 50px;
+  width: 50px;
+  @media #{$small-only}{
+    margin-top:5px;
+  }
+}
+.osha-logo a {
+  display:block;
+  width:100%;
+  text-align:center;
+  font-size:rem-calc(10);
+  text-decoration:underline;
+}
+
+.overview {
+
+  @media #{$small-only}{
+    &.primary-content-container{
+      padding:20px;
+    }
+  }
+
+  .section-title{
+    margin-top: 50%;
+    -webkit-transform: translateY(-50%);
+  }
+
+  .pie-center strong {
+    font-size: 4rem;
+    color: #888888;
+  }
+
+  .padding-left-20 {
+    padding-left: 20px;
+  }
+
+  .text-centered {
+    text-align: center;
+  }
+  .no-margin {
+    margin: 0;
+  }
+  .no-padding {
+    padding: 0;
+  }
+  h4 {
+    color: #888888;
+    font-size: 0.89rem;
+  }
+
+  p {
+    color: $black;
+    font-size: $p-font-size;
+    line-height: 1.4;
+    padding: 20px 0;
+    margin: 0;
+    @media #{$small-only}{
+      padding: 20px 0 5px 0;
+    }
+  }
+
+  .bill-summary-bits {
+    @media #{$small-only}{
+      .summary-bit{
+        border-right:1px solid #ccc;
+      }
+      text-align:center;
+      h2{
+        text-align:left;
+      }
+      strong{
+        font-size:rem-calc(15);
+      }
+    }
+    border-bottom: 1px solid $border-color;
+    margin-bottom: $spacing*2;
+    padding-bottom: $spacing;
+    .view-and-pay {
+      text-align: center;
+      @media #{$small-only}{
+        .button{
+          margin-top:20px;
+          padding-right: 0;
+          padding-left: 0;
+          width: 100%;
+          + .button{
+            margin-top:15px;
+          }
+        }
+      }
+    }
+    .view-bill {
+      display: block;
+      margin-top: $spacing;
+    }
+  }
+  .projected-bill {
+    border-right: 1px solid $divider-color;
+    padding-right: $spacing*3;
+    @media #{$small-only}{
+      padding-right: 0px;
+      border-right:none;
+    }
+    .circle-alert {
+      position: absolute;
+      top: 5px;
+      left: 130px;
+    }
+    .bill-projection-leader {
+      color: $txt-color;
+      font-size: $font-size-small;
+      margin-bottom: $halfSpacing;
+    }
+    .bill-projection-amount-container {
+
+      @include transition(background-color 0.2s);
+      background-color: $warning-color-lighter;
+      cursor: pointer;
+      text-align: center;
+      &:hover {
+        background-color: $warning-color-light;
+      }
+      .geomicon-insight-warn {
+        display: inline-block;
+      }
+      .bill-projection-amount {
+        font-size: $font-size-large;
+        padding: $spacing;
+        strong {
+          font-size: 2rem;
+        }
+      }
+    }
+    .projection-lower-my-bill {
+      font-size: $font-size-small;
+      margin-top: +-$halfSpacing;
+      @media #{$small-only}{
+        margin-top:0px;
+        margin-bottom:40px;
+      }
+    }
+  }
+
+  .top-ways {
+
+    .image-top-ways {
+      width: 100px;
+      @media #{$small-only}{
+        margin-top:38px;
+      }
+    }
+    h2 {
+      color: $txt-color;
+      margin-bottom: 6px;
+      padding-top: $spacing;
+    }
+    p {
+      color: $dark-gray;
+      padding: 0;
+    }
+    .personalized {
+      padding-top: $spacing*1.5;
+      .button {
+        padding-left:15px;
+        padding-right:15px;
+        font-size:rem-calc(16);
+        @media #{$small-only}{
+          width:100%;
+        }
+      }
+    }
+  }
+}
+
+.business-location {
+  .row {
+    padding-top: $spacing;
+    font-size: $font-size-small;
+  }
+  .location-heading {
+    border-bottom: 1px solid $divider-color;
+    color: $txt-color;
+    font-weight: bold;
+    padding-bottom: $spacing;
+    margin-bottom: 0;
+  }
+  .location-amount {
+    font-weight: bold;
+  }
+  .last-payment {
+    color: $medium-gray;
+  }
+  .view-and-pay {
+    font-size: $font-size-medium;
+    padding: 6px 30px;
+  }
+  .view-bill {
+    display: block;
+    padding-top: 8px;
+  }
+  .location-projections {
+    background-color: $extra-lt-gray;
+    clear: both;
+    margin: 0 +-$spacing;
+    padding: 0 $spacing $spacing;
+  }
+  .geomicon-info {
+    color: $dark-gray;
+    font-size: 1.25em;
+    height: 0;
+    margin-left: 4px;
+    position: relative;
+    top: 3px;
+  }
+  .location-projection-alert {
+    font-size: $font-size-tiny;
+    margin: $spacing*2 0 $spacing;
+    .geomicon {
+      display: inline-block;
+      margin-right: 6px;
+      top: 8px;
+    }
+  }
+}
+.show-all-accounts {
+  font-size: $font-size-small;
+  margin-top: $spacing;
+  position: relative;
+  a {
+    padding-left: 1em;
+    &:after {
+      @include position(absolute, 2px 0 0 0px);
+      border: 0.4em solid transparent;
+      border-left-color: $primary-color;
+      content: " ";
+      display: block;
+    }
+  }
+}
+
+.fake-geomicon-dollars {
+  @include position(absolute, 10px 30% 0 0);
+  @include colorize-icon($green);
+  border: 2px  solid #598500;
+  box-shadow: none;
+  color: #598500;
+  display: block;
+  font-size: 1em;
+  font-weight: bold;
+  height: 1.6em;
+  line-height: 1;
+  width: 1.6em;
+  padding: 0.12em;
+  text-align: center;
+}
+
+.page-section-break {
+  border-top: 1px solid $divider-color;
+  margin-top: $spacing*1.5;
+  padding-top: $spacing*1.5;
+  @media #{$small-only}{
+    margin-top:0px;
+    padding-top:0px;
+  }
+}
+
+.top-ways-to-reduce {
+  .top-ways-tip {
+    @include clearfix;
+    border-bottom: 1px solid $divider-color;
+    padding-top: $spacing+10;
+    padding-bottom: $spacing+10;
+    .image-top-ways {
+      height:45px;
+      display:block;
+      margin:auto;
+    }
+    .button {
+      margin:0;
+    }
+  }
+  .row:last-child .top-ways-tip {
+    border-bottom: none;
+  }
+  .top-ways-tip-detail {
+    color: $txt-color;
+    font-weight: bold;
+    line-height: 1.3;
+    padding-top: 3px;
+  }
+  .button {
+    font-size: $font-size-medium;
+    width: 100%;
+  }
+  .image-savings {
+    margin-left: 45px;
+    margin-top: -10px;
+    width: 40px;
+  }
+  .image-dissag {
+    margin-left: 40px;
+    margin-top: -10px;
+    width: 60px;
+  }
+  .image-honeywell {
+    margin-left: 16px;
+    margin-top: -10px;
+    width: 110px;
+  }
+}
+
+.reveal-modal.projection {
+  top: 10%;
+}
+.reveal-modal {
+  .projection-bar {
+    @include transition(height 0.75s);
+    height: 10px;
+  }
+  .ready-to-animate {
+    .projection-bar {
+      &.to-date {
+        height: 90px;
+      }
+      &.projection {
+        @include transition-delay(0.6s);
+        height: 180px;
+      }
+    }
+  }
+}
+.projection-modal {
+  .modal-head {
+    h3 {
+      font-size: $font-size-large;
+      font-weight: bold;
+      margin-bottom: 0;
+    }
+  }
+  .projection-warn {
+    font-weight: bold;
+    line-height: 1.3;
+    margin: $spacing*2 0;
+    padding-left: $spacing*3;
+    position: relative;
+    .geomicon-insight-warn {
+      @include position(absolute, 50% 0 0 $spacing);
+      margin-top: -0.5em;
+    }
+  }
+  .projection-modal-graph {
+    position: relative;
+    margin-bottom: $spacing*5;
+  }
+  .tiers {
+    width: 100%;
+    .tier {
+      border-left: 8px solid #000;
+      margin: 0 $spacing*4 0 $spacing*3;
+      position: relative;
+      &:after,
+      &:last-child:before {
+        @include position(absolute, 0px 0 0 0px);
+        border-top: 1px solid $divider-color;
+        content: " ";
+        display: block;
+        height: 1px;
+        width: 100%;
+      }
+      &:last-child:before {
+        top: auto;
+        bottom: 0px;
+      }
+      .tier-description {
+        @include position(absolute, 50% 0 0 0+-$spacing*3);
+        color: $dark-gray;
+        font-size: $font-size-tiny;
+        width: $spacing*3;
+        margin-top: -12px;
+        padding-right: $spacing;
+        text-align: right;
+      }
+      .tier-kwh {
+        @include position(absolute, -0.5em 0+-$spacing*3 0 0);
+        color: $dark-gray;
+        font-size: $font-size-tiny;
+        padding-left: $halfSpacing;
+        width: $spacing*3;
+      }
+    }
+    .tier:nth-child(1) {
+      border-color: #ee5500;
+      height: 70px;
+    }
+    .tier:nth-child(2) {
+      border-color: #ff8800;
+      height: 40px;
+    }
+    .tier:nth-child(3) {
+      border-color: #ffcc00;
+      height: 25px;
+    }
+    .tier:nth-child(4) {
+      border-color: #ffee44;
+      height: 70px;
+    }
+  }
+  .projection-bars {
+    @include position(absolute, 0 0 1px 0px);
+    width: 100%;
+  }
+  .projection-bar {
+    @include position(absolute, 0 0 0px 50%);
+    width: 50px;
+    &.to-date {
+      background-color: $primary-color;
+      margin-left: -80px;
+      .projection-bar-label {
+        left: -15px;
+      }
+    }
+    &.projection {
+      background-color: #eee;
+      border: 1px dashed $dark-gray;
+      border-bottom: none;
+      margin-left: 40px;
+      .projection-bar-label {
+        color: $dark-gray;
+      }
+    }
+  }
+  .projection-bar-label {
+    @include position(absolute, 0 0 0px -25px);
+    text-align: center;
+    height: 50px;
+    padding-top: 70px;
+    width: 100px;
+    .label-title {
+      font-size: $font-size-small;
+      font-weight: bold;
+      padding-top: 10px;
+    }
+    .label-datespan {
+      font-size: $font-size-tiny;
+      padding-top: 4px;
+    }
+    .label-cost {
+      font-size: $font-size-medium;
+      font-weight: bold;
+      padding-top: $halfSpacing;
+    }
+  }
+  .projection-description p {
+    color: $txt-color;
+    font-size: $font-size-small;
+    &.aside {
+      color: $dark-gray;
+      font-size: $font-size-tiny;
+      font-style: italic;
+    }
+  }
+  .modal-actions {
+    text-align: right;
+    .button {
+      margin-bottom: 0;
+    }
+  }
+}

@@ -1,0 +1,54 @@
+
+// _pagination.scss
+// Author:  justin.secor@opower.com
+
+// Import foundation defaults
+@import "../../zurb-foundation/scss/foundation/components/pagination";
+
+
+// Pagination
+//
+// Paginate long lists of items over pages.
+//
+// Markup:  
+// <ul class="pagination">
+//     <li class="arrow unavailable"><a href="" class="back">Go back</a></li>
+//     <li class="current"><a href="">1</a></li>
+//     <li><a href="">2</a></li>
+//     <li><a href="">3</a></li>
+//     <li><a href="">4</a></li>
+//     <li class="unavailable"><a href="">&hellip;</a></li>
+//     <li><a href="">12</a></li>
+//     <li><a href="">13</a></li>
+//     <li class="arrow"><a href="" class="forward">Go forward</a></li>
+// </ul>
+//
+// Styleguide 4.2
+
+
+ul.pagination {
+    height: 2em;
+    li {
+        height: 2em;
+        margin-left: 0;
+        a {
+            color:  $paragraph-aside-font-color;
+            padding: 0.25em 1em;
+        }
+    }
+    .back, .forward {
+        width: 1em;
+        position: relative;
+        text-indent: -9999px;
+        &:before {
+            font-size: 1.2em;
+            text-indent: 0;
+        }
+    }
+    .back {
+        @include geomicon("\e604", 0.35em 0 0 0.6em);
+    }
+    .forward {
+        @include geomicon("\e602", 0.35em 0 0 0.6em);
+    }
+}

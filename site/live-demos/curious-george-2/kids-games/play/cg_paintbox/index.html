@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Curious George Drawing Engine</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+  <script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+  <script type="text/javascript" src="js/jquery.ui.touch-punch.min.js"></script>
+  <script type="text/javascript" src="js/jquery.event.move.js"></script>
+  <script type="text/javascript" src="js/paper-0.22.js"></script>
+  <script type="text/paperscript" src="js/cdraw.js" canvas="cgp-canvas"></script>
+  <script type="text/javascript" src="js/main.js"></script>
+
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/main.css" />
+
+</head>
+<body>
+  <div id="cgp">
+    <div id="cgp-loader">
+      <img src="images/loader.gif" width="159" height="288" alt="Loading" />
+    </div>
+
+    <div id="cgp-intro-screen">
+      <div id="cgp-btn-play" title="play"></div>
+    </div>
+
+    <div id="cgp-tools-drawer">
+      <div id="cgp-tools-drawer-wrapper">
+        <div id="cgp-tool-brush" class="active">
+          <img src="images/tool-brush-head.png" width="39" height="26" alt="" />
+        </div>
+        <div id="cgp-tool-eraser"></div>
+        <div id="cgp-btn-theme-browser"><div id="cgp-btn-theme-browser-caption"></div></div>
+        <div id="cgp-tool-clipart"><img src="images/tool-clipart-icon.png" /></div>
+        <ul id="cgp-tool-stamp"></ul>
+      </div>
+    </div>
+
+    <div id="cgp-tools-drawer-options">
+      <div id="cgp-tools-drawer-options-wrapper">
+        <div id="cgp-tools-brush-drawer-options">
+          <div id="cgp-colorpicker-wrapper">
+            <ul id="cgp-colorpicker"></ul>
+          </div>
+        </div>
+
+        <div id="cgp-tools-eraser-drawer-options"></div>
+
+        <div id="cgp-tools-clipart-drawer-options">
+          <ul id="cgp-clipart"></ul>
+        </div>
+
+        <div id="cgp-tools-stamps-drawer-options"></div>
+      </div>
+    </div>
+
+    <div id="cgp-background-drawer">
+      <div id="cgp-btn-background-frame"></div>
+      <ul id="cgp-background-options">
+        <li id="cgp-btn-background-0"></li>
+        <li id="cgp-btn-background-1"></li>
+        <li id="cgp-btn-background-2"></li>
+        <li id="cgp-btn-background-3"></li>
+        <li id="cgp-btn-background-4"></li>
+      </ul>
+    </div>
+
+    <div id="cgp-canvas-wrapper">
+      <div id="cgp-canvas-wrap">
+        <canvas id="cgp-canvas" width="570" height="428"></canvas>
+      </div>
+    </div>
+
+
+    <div id="cgp-btn-help" title="Help"></div>
+    <div id="cgp-btn-done" title="Done"></div>
+
+    <div id="cgp-preloader">
+      <img id="cgp-canvas-bg" src="images/canvas-bg.png" alt="" />
+      <img src="images/clipart-tool-hover-bg.png" alt="" />
+      <img id="clipart-tool-controls" src="images/clipat-tool-controls.png" alt="" />
+    </div>
+  </div>
+</body>
+</html>

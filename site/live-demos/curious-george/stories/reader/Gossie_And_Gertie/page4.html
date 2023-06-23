@@ -1,0 +1,137 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+ "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Gossie & Gertie</title>
+<link href="skin/blue.monday/jplayer.blue.monday.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.jplayer.min.js"></script>
+<meta http-equiv="Content-Type" content="text/html;CHARSET=utf-8"/>
+<meta name="viewport" content="width=576,height=576" />
+<style type="text/css">
+@charset "utf-8";
+@font-face {
+font-family: 'Adobe Garamond Pro';
+src: url("font/AGARAMPR.TTF");
+}
+@font-face {
+font-family: 'Adobe Garamond Pro Italic';
+src: url("font/AGARAMPI.TTF");
+}
+@font-face {
+font-family: 'MShannon-Regular';
+src: url("font/MSHANNOR.TTF");
+}
+a:link {
+	color:blue;
+	text-decoration:underline;
+}
+a:active { color:red }
+a:visited { color:purple }
+body {
+	width: 850px;
+	height: 450px;
+	margin:0; 
+	background-color: #fff;
+	margin: 0;
+	padding: 0;
+	border-style:solid;
+	border-width:0px;
+	font-size:16px;
+}
+#box1 {
+	background-color:#F47928;
+	width:425px;
+	height:445px;
+}
+.Lside{
+	position:absolute;
+	left:0px;
+	top:0px;
+}	
+.Rside{
+	position:absolute;
+	left:425px;
+	top:0px;
+}
+p {
+	margin-bottom: 1.1em;
+	margin-top: 0;
+}
+#box1 p.lastNode {
+	margin-bottom: 0;
+}
+
+#box2 p.lastNode {
+	margin-bottom: 0;
+}
+div.clearFloat {
+	clear: both;
+	font-size: 0;
+	height: 0;
+	line-height: 0px;
+}
+#box2 {
+	margin: 0 auto 0 0;
+	width: 425px;
+}
+#img_2 {
+	margin-left: 0px;
+	margin-top: 0px;
+	display: inline;
+	float: left;
+	height: 445px;
+	margin-bottom: 0;
+	width: 425px;
+}
+#img_3 {
+	margin-left: 0px;
+	margin-top: 0px;
+	display: inline;
+	float: left;
+	height: 445px;
+	margin-bottom: 0;
+	width: 425px;
+}
+
+.Txt_This {
+	text-align: left;
+	color: #000;
+	line-height: 112.5%;
+	padding-bottom: 2px;
+	padding-top: 1px;
+	left: 170px;
+	top: 380px;
+	position:absolute;
+	display: inline;
+	float: left;
+	margin-bottom: 0;
+}
+</style>
+</head>
+<body>
+<!-- #Left Div -->
+<div class="Lside">
+    <div id="box1">
+    <img src="images/img_2.jpg" id="img_2" alt="" />
+    <div class="Txt_This">
+    	<p class="lastNode"><span id="w0009">This </span><span id="w00010">is </span><span id="w00011">Gossie.</span></p>
+    </div>
+    </div>
+</div>
+
+<!-- #Right Div -->
+<div class="Rside">
+    <div id="box2">
+    <img src="images/img_3.jpg" id="img_3" alt="" />
+    <div class="Txt_This">
+    	<p class="lastNode"><span id="w00012">This </span><span id="w00013">is </span><span id="w00014">Gertie.</span></p>
+    </div>
+    </div>
+</div>
+
+
+<div id="chk"></div>
+<div id="timeValue"></div>
+</body>
+</html>

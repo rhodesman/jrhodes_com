@@ -1,0 +1,132 @@
+/**
+ * games.less
+ * @description Styles for games listings
+ * @author Sean Smith
+ */
+
+//@import "global.less";
+
+#main .game-listing {
+	position: relative;
+	padding: 117px 8px 50px;
+	background: url(../imgs/page.png);
+	.centered;
+	.rounded-wrapper;
+	h1 {
+		position: absolute;
+		width: 100%;
+		height: 200px;
+		z-index: 2;
+		.hidden-text;
+	}
+	#man {
+		position: absolute;
+		top: -6px;
+		right: 70px;
+		width: 86px;
+		height: 123px;
+		/*bottom: 0;
+		left: 16px;
+		width: 128px;
+		height: 125px;*/
+		background: transparent url(../imgs/man2.png) scroll no-repeat 50% 50%;
+	}
+	.games-container {
+		position: relative;
+		padding: 20px 0;
+		background: @yellow;
+		.border-radius(16px);
+		ul.bjqs {
+			padding: 20px 0;
+			height: 420px;
+			background: @white;
+			ul {
+				margin: 0 auto;
+				width: 660px;
+				text-align: left;
+				li {
+					display: inline-block;
+					margin-right: 22px;
+					width: 140px;
+					height: 190px;
+					text-align: center;
+					font-weight: bold;
+					font-size: 1.5em;
+					a {
+						display: block;
+						height: 100%;
+						color: @blue;
+						span {
+							display: block;
+							margin-bottom: 8px;
+							width: 120px;
+							height: 120px;
+							.image-box;
+							img {
+								display: block;
+								position: relative;
+								top: -8px;
+								left: -8px;
+								width: 136px;//100%;
+								height: 136px;//100%;
+								max-width: none;
+								border: none;
+								//background: @grey;
+							}
+						}
+					}
+				}
+			}
+		}
+		.bjqs-controls a {
+			top: 50%;
+			padding: 0;
+			margin-top: -57px;
+			width: 114px;
+			height: 114px;
+			.hidden-text;
+			background: transparent none scroll no-repeat 50% 50%;
+			&.bjqs-next {
+				right: -30px;
+				background-image: url(../imgs/buttons/rgt_arrow.png);
+				&:hover { background-image: url(../imgs/buttons/rgt_arrow_hover.png) }
+				&:active { background-image: url(../imgs/buttons/rgt_arrow_hover_press.png) }
+			}
+			&.bjqs-prev {
+				left: -30px;
+				background-image: url(../imgs/buttons/lft_arrow.png);
+				&:hover { background-image: url(../imgs/buttons/lft_arrow_hover.png) }
+				&:active { background-image: url(../imgs/buttons/lft_arrow_hover_press.png) }
+			}
+		}
+	}
+	&#games { background-color: @red;
+		h1 {
+			top: -10px;
+			left: -8px;
+			background: transparent url(../imgs/games-icon.png) scroll no-repeat 16px 7px;
+		}
+	}
+	&#stories { background-color: @green;
+		h1 {
+			top: -10px;
+			left: -8px;
+			background: transparent url(../imgs/stories-icon.png) scroll no-repeat 4px 0;
+		}
+	}
+	&#create { background-color: @blue;
+		h1 {
+			top: -10px;
+			left: -8px;
+			background: transparent url(../imgs/create-icon.png) scroll no-repeat 8px 16px;
+			z-index: 0;
+		}
+	}
+	&#themes { background-color: @light-blue;
+		h1 {
+			top: -5px;
+			left: -8px;
+			background: transparent url(../imgs/curious-icon.png) scroll no-repeat 16px 0;
+		}
+	}
+}

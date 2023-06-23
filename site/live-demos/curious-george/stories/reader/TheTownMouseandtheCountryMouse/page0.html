@@ -1,0 +1,861 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+ "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>The Town Mouse and the Country Mouse</title>
+<meta http-equiv="Content-Type" content="text/html;CHARSET=utf-8"/>
+<meta name="viewport" content="width=576,height=576" />
+<link href="skin/blue.monday/jplayer.blue.monday.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.jplayer.min.js"></script>
+<style type="text/css">
+
+@charset "utf-8";
+@font-face {
+    font-family: "AGaramondPro-Italic";
+    src: url("font/AGARAMPI.TTF");
+}
+@font-face {
+    font-family: "AGaramondPro-Regular";
+    src: url("font/AGARAMPR.TTF");
+}
+@font-face {
+    font-family: "Adobe Garamond Semibold";
+    src: url("font/AGARAMOS.TTF");
+}
+@font-face {
+    font-family: "Billy Bold";
+    src: url("font/BILLY-BO.TTF");
+}
+body {
+    background-color: #FFFFFF;
+    border-style: solid;
+    border-width: 0;
+    font-size: 13px;
+    height: 450px;
+    margin: 0;
+    padding: 0;
+    width: 850px;
+}
+a:active {
+    color: red;
+}
+a:visited {
+    color: purple;
+}
+a:link img, a:visited img {
+    border: medium none;
+}
+#box1 {
+    height: 445px;
+    width: 425px;
+}
+#box2 {
+    height: 445px;
+    margin: 0 auto 0 0;
+    width: 425px;
+}
+.Lside {
+    left: 0;
+    position: absolute;
+    top: 0;
+}
+.Rside {
+    left: 425px;
+    position: absolute;
+    top: 0;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-weight: normal;
+}
+p {
+    margin-bottom: 1.1em;
+    margin-top: 0;
+}
+#box1 p.lastNode {
+    margin-bottom: 0;
+}
+#box2 p.lastNode {
+    margin-bottom: 0;
+}
+div.clearFloat {
+    clear: both;
+    font-size: 0;
+    height: 0;
+    line-height: 0;
+}
+#id_Text_6_image {
+    display: inline;
+    float: left;
+    height: 445px;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-top: 0;
+    width: 425px;
+}
+.Txt_To {
+    color: #000000;
+    font-size: 10px;
+    font-style: italic;
+    left: 75px;
+    line-height: 337.5%;
+    margin-bottom: 0;
+    padding-bottom: 2px;
+    padding-top: 1px;
+    position: absolute;
+    text-align: left;
+    top: 35px;
+}
+.Txt_The {
+    color: #000000;
+    font-size: 10px;
+    left: 75px;
+    line-height: 337.5%;
+    margin-bottom: 0;
+    padding-bottom: 2px;
+    padding-top: 1px;
+    position: absolute;
+    text-align: left;
+    top: 109px;
+}
+.and {
+    color: #000000;
+    font-size: 10px;
+    font-style: italic;
+    text-align: left;
+    text-decoration: none;
+}
+.Txt_sion {
+    color: #000000;
+    font-size: 10px;
+    left: 134px;
+    line-height: 337.5%;
+    margin-bottom: 0;
+    padding-bottom: 2px;
+    padding-top: 1px;
+    position: absolute;
+    text-align: left;
+    top: 109px;
+}
+.Txt_Select {
+    color: #000000;
+    font-size: 10px;
+    font-style: italic;
+    left: 304px;
+    line-height: 337.5%;
+    margin-bottom: 0;
+    padding-bottom: 2px;
+    padding-top: 1px;
+    position: absolute;
+    text-align: left;
+    top: 109px;
+}
+.Txt_ables {
+    color: #000000;
+    font-size: 10px;
+    font-style: italic;
+    left: 329px;
+    line-height: 337.5%;
+    margin-bottom: 0;
+    padding-bottom: 2px;
+    padding-top: 1px;
+    position: absolute;
+    text-align: left;
+    top: 109px;
+}
+.Txt_and {
+    color: #000000;
+    font-size: 10px;
+    left: 75px;
+    line-height: 337.5%;
+    margin-bottom: 0;
+    padding-bottom: 2px;
+    padding-top: 1px;
+    position: absolute;
+    text-align: left;
+    top: 120px;
+}
+.Txt_abulists {
+    color: #000000;
+    font-size: 10px;
+    font-style: italic;
+    left: 147px;
+    line-height: 337.5%;
+    margin-bottom: 0;
+    padding-bottom: 2px;
+    padding-top: 1px;
+    position: absolute;
+    text-align: left;
+    top: 120px;
+}
+.h {
+    color: #000000;
+    font-size: 10px;
+    font-style: italic;
+    left: 172px;
+    line-height: 337.5%;
+    margin-bottom: 0;
+    padding-bottom: 2px;
+    padding-top: 1px;
+    position: absolute;
+    text-align: left;
+    top: 120px;
+}
+.Txt_published {
+    color: #000000;
+    font-size: 10px;
+    left: 75px;
+    line-height: 337.5%;
+    margin-bottom: 0;
+    padding-bottom: 2px;
+    padding-top: 1px;
+    position: absolute;
+    text-align: left;
+    top: 120px;
+}
+.Txt_ {
+    color: #000000;
+    font-size: 10px;
+    left: 227px;
+    line-height: 337.5%;
+    margin-bottom: 0;
+    padding-bottom: 2px;
+    padding-top: 1px;
+    position: absolute;
+    text-align: left;
+    top: 120px;
+}
+.k {
+    color: #000000;
+    font-size: 10px;
+    left: 240px;
+    line-height: 337.5%;
+    margin-bottom: 0;
+    padding-bottom: 2px;
+    padding-top: 1px;
+    position: absolute;
+    text-align: left;
+    top: 120px;
+}
+.Txt_Dodsley {
+    color: #000000;
+    font-size: 10px;
+    left: 242px;
+    line-height: 337.5%;
+    margin-bottom: 0;
+    padding-bottom: 2px;
+    padding-top: 1px;
+    position: absolute;
+    text-align: left;
+    top: 120px;
+}
+.o {
+    color: #000000;
+    font-size: 10px;
+    left: 270px;
+    line-height: 337.5%;
+    margin-bottom: 0;
+    padding-bottom: 2px;
+    padding-top: 1px;
+    position: absolute;
+    text-align: left;
+    top: 120px;
+}
+.Txt_Birmingham {
+    color: #000000;
+    font-size: 10px;
+    left: 272px;
+    line-height: 337.5%;
+    margin-bottom: 0;
+    padding-bottom: 2px;
+    padding-top: 1px;
+    position: absolute;
+    text-align: left;
+    top: 120px;
+}
+.Txt_England {
+    color: #000000;
+    font-size: 10px;
+    left: 318px;
+    line-height: 337.5%;
+    margin-bottom: 0;
+    padding-bottom: 2px;
+    padding-top: 1px;
+    position: absolute;
+    text-align: left;
+    top: 120px;
+}
+.Txt_1764 {
+    color: #000000;
+    font-size: 10px;
+    left: 349px;
+    line-height: 337.5%;
+    margin-bottom: 0;
+    padding-bottom: 2px;
+    padding-top: 1px;
+    position: absolute;
+    text-align: left;
+    top: 120px;
+}
+.Txt_Copyright {
+    color: #000000;
+    font-size: 10px;
+    left: 75px;
+    line-height: 337.5%;
+    margin-bottom: 0;
+    padding-bottom: 2px;
+    padding-top: 1px;
+    position: absolute;
+    text-align: left;
+    top: 142px;
+}
+.Txt_aul {
+    color: #000000;
+    font-size: 10px;
+    left: 186px;
+    line-height: 337.5%;
+    margin-bottom: 0;
+    padding-bottom: 2px;
+    padding-top: 1px;
+    position: absolute;
+    text-align: left;
+    top: 142px;
+}
+.Txt_All {
+    color: #000000;
+    font-size: 10px;
+    left: 75px;
+    line-height: 337.5%;
+    margin-bottom: 0;
+    padding-bottom: 2px;
+    padding-top: 1px;
+    position: absolute;
+    text-align: left;
+    top: 164px;
+}
+.Txt_Published {
+    color: #000000;
+    font-size: 10px;
+    left: 172px;
+    line-height: 337.5%;
+    margin-bottom: 0;
+    padding-bottom: 2px;
+    padding-top: 1px;
+    position: absolute;
+    text-align: left;
+    top: 164px;
+}
+.b {
+    color: #000000;
+    font-size: 10px;
+    left: 329px;
+    line-height: 337.5%;
+    margin-bottom: 0;
+    padding-bottom: 2px;
+    padding-top: 1px;
+    position: absolute;
+    text-align: left;
+    top: 164px;
+}
+.Txt_an {
+    color: #000000;
+    font-size: 10px;
+    left: 331px;
+    line-height: 337.5%;
+    margin-bottom: 0;
+    padding-bottom: 2px;
+    padding-top: 1px;
+    position: absolute;
+    text-align: left;
+    top: 164px;
+}
+.Txt_of {
+    color: #000000;
+    font-size: 10px;
+    left: 75px;
+    line-height: 337.5%;
+    margin-bottom: 0;
+    padding-bottom: 2px;
+    padding-top: 1px;
+    position: absolute;
+    text-align: left;
+    top: 175px;
+}
+.Txt_in {
+    color: #000000;
+    font-size: 10px;
+    left: 171px;
+    line-height: 337.5%;
+    margin-bottom: 0;
+    padding-bottom: 2px;
+    padding-top: 1px;
+    position: absolute;
+    text-align: left;
+    top: 175px;
+}
+.t {
+    color: #000000;
+    font-size: 10px;
+    left: 281px;
+    line-height: 337.5%;
+    margin-bottom: 0;
+    padding-bottom: 2px;
+    padding-top: 1px;
+    position: absolute;
+    text-align: left;
+    top: 175px;
+}
+.Txt_Originally {
+    color: #000000;
+    font-size: 10px;
+    left: 282px;
+    line-height: 337.5%;
+    margin-bottom: 0;
+    padding-bottom: 2px;
+    padding-top: 1px;
+    position: absolute;
+    text-align: left;
+    top: 175px;
+}
+.Txt_1971 {
+    color: #000000;
+    font-size: 10px;
+    left: 320px;
+    line-height: 337.5%;
+    margin-bottom: 0;
+    padding-bottom: 2px;
+    padding-top: 1px;
+    position: absolute;
+    text-align: left;
+    top: 186px;
+}
+.z {
+    color: #000000;
+    font-size: 10px;
+    left: 318px;
+    line-height: 337.5%;
+    margin-bottom: 0;
+    padding-bottom: 2px;
+    padding-top: 1px;
+    position: absolute;
+    text-align: left;
+    top: 186px;
+}
+.Txt_w-Hill {
+    color: #000000;
+    font-size: 10px;
+    left: 258px;
+    line-height: 337.5%;
+    margin-bottom: 0;
+    padding-bottom: 2px;
+    padding-top: 1px;
+    position: absolute;
+    text-align: left;
+    top: 186px;
+}
+.Txt_hardcover {
+    color: #000000;
+    font-size: 10px;
+    left: 75px;
+    line-height: 337.5%;
+    margin-bottom: 0;
+    padding-bottom: 2px;
+    padding-top: 1px;
+    position: absolute;
+    text-align: left;
+    top: 186px;
+}
+.Txt_F {
+    color: #000000;
+    font-size: 10px;
+    left: 75px;
+    line-height: 337.5%;
+    margin-bottom: 0;
+    padding-bottom: 2px;
+    padding-top: 1px;
+    position: absolute;
+    text-align: left;
+    top: 208px;
+}
+.Txt_or {
+    color: #000000;
+    font-size: 10px;
+    left: 113px;
+    line-height: 337.5%;
+    margin-bottom: 0;
+    padding-bottom: 2px;
+    padding-top: 1px;
+    position: absolute;
+    text-align: left;
+    top: 208px;
+}
+.Txt_write {
+    color: #000000;
+    font-size: 10px;
+    left: 75px;
+    line-height: 337.5%;
+    margin-bottom: 0;
+    padding-bottom: 2px;
+    padding-top: 1px;
+    position: absolute;
+    text-align: left;
+    top: 219px;
+}
+.Txt_ermissions {
+    color: #000000;
+    font-size: 10px;
+    left: 141px;
+    line-height: 337.5%;
+    margin-bottom: 0;
+    padding-bottom: 2px;
+    padding-top: 1px;
+    position: absolute;
+    text-align: left;
+    top: 219px;
+}
+.put {
+    color: #000000;
+    font-size: 10px;
+    left: 176px;
+    line-height: 337.5%;
+    margin-bottom: 0;
+    padding-bottom: 2px;
+    padding-top: 1px;
+    position: absolute;
+    text-align: left;
+    top: 219px;
+}
+.Txt_in2 {
+    color: #000000;
+    font-size: 10px;
+    left: 233px;
+    line-height: 337.5%;
+    margin-bottom: 0;
+    padding-bottom: 2px;
+    padding-top: 1px;
+    position: absolute;
+    text-align: left;
+    top: 219px;
+}
+.that {
+    color: #000000;
+    font-size: 10px;
+    left: 343px;
+    line-height: 337.5%;
+    margin-bottom: 0;
+    padding-bottom: 2px;
+    padding-top: 1px;
+    position: absolute;
+    text-align: left;
+    top: 219px;
+}
+.Txt_215 {
+    color: #000000;
+    font-size: 10px;
+    left: 75px;
+    line-height: 337.5%;
+    margin-bottom: 0;
+    padding-bottom: 2px;
+    padding-top: 1px;
+    position: absolute;
+    text-align: left;
+    top: 230px;
+}
+.Txt_ark {
+    color: #000000;
+    font-size: 10px;
+    left: 127px;
+    line-height: 337.5%;
+    margin-bottom: 0;
+    padding-bottom: 2px;
+    padding-top: 1px;
+    position: absolute;
+    text-align: left;
+    top: 230px;
+}
+.Txt_A {
+    color: #000000;
+    font-size: 10px;
+    left: 140px;
+    line-height: 337.5%;
+    margin-bottom: 0;
+    padding-bottom: 2px;
+    padding-top: 1px;
+    position: absolute;
+    text-align: left;
+    top: 230px;
+}
+.Txt_venue {
+    color: #000000;
+    font-size: 10px;
+    left: 145px;
+    line-height: 337.5%;
+    margin-bottom: 0;
+    padding-bottom: 2px;
+    padding-top: 1px;
+    position: absolute;
+    text-align: left;
+    top: 230px;
+}
+.Txt_New {
+    color: #000000;
+    font-size: 10px;
+    left: 189px;
+    line-height: 337.5%;
+    margin-bottom: 0;
+    padding-bottom: 2px;
+    padding-top: 1px;
+    position: absolute;
+    text-align: left;
+    top: 230px;
+}
+.Txt_Y {
+    color: #000000;
+    font-size: 10px;
+    left: 208px;
+    line-height: 337.5%;
+    margin-bottom: 0;
+    padding-bottom: 2px;
+    padding-top: 1px;
+    position: absolute;
+    text-align: left;
+    top: 230px;
+}
+.Txt_ork {
+    color: #000000;
+    font-size: 10px;
+    left: 213px;
+    line-height: 337.5%;
+    margin-bottom: 0;
+    padding-bottom: 2px;
+    padding-top: 1px;
+    position: absolute;
+    text-align: left;
+    top: 230px;
+}
+.Txt_New2 {
+    color: #000000;
+    font-size: 10px;
+    left: 225px;
+    line-height: 337.5%;
+    margin-bottom: 0;
+    padding-bottom: 2px;
+    padding-top: 1px;
+    position: absolute;
+    text-align: left;
+    top: 230px;
+}
+.Txt_Y2 {
+    color: #000000;
+    font-size: 10px;
+    left: 245px;
+    line-height: 337.5%;
+    margin-bottom: 0;
+    padding-bottom: 2px;
+    padding-top: 1px;
+    position: absolute;
+    text-align: left;
+    top: 230px;
+}
+.Txt_ork2 {
+    color: #000000;
+    font-size: 10px;
+    left: 249px;
+    line-height: 337.5%;
+    margin-bottom: 0;
+    padding-bottom: 2px;
+    padding-top: 1px;
+    position: absolute;
+    text-align: left;
+    top: 230px;
+}
+.Txt_www {
+    color: #000000;
+    font-size: 10px;
+    left: 75px;
+    line-height: 337.5%;
+    margin-bottom: 0;
+    padding-bottom: 2px;
+    padding-top: 1px;
+    position: absolute;
+    text-align: left;
+    top: 252px;
+}
+.Txt_hmhbooks {
+    color: #000000;
+    font-size: 10px;
+    left: 125px;
+    line-height: 337.5%;
+    margin-bottom: 0;
+    padding-bottom: 2px;
+    padding-top: 1px;
+    position: absolute;
+    text-align: left;
+    top: 252px;
+}
+.Txt_com {
+    color: #000000;
+    font-size: 10px;
+    left: 162px;
+    line-height: 337.5%;
+    margin-bottom: 0;
+    padding-bottom: 2px;
+    padding-top: 1px;
+    position: absolute;
+    text-align: left;
+    top: 252px;
+}
+.Txt_Library {
+    color: #000000;
+    font-size: 10px;
+    left: 75px;
+    line-height: 337.5%;
+    margin-bottom: 0;
+    padding-bottom: 2px;
+    padding-top: 1px;
+    position: absolute;
+    text-align: left;
+    top: 285px;
+}
+.Txt_ISBN {
+    color: #000000;
+    font-size: 10px;
+    left: 75px;
+    line-height: 337.5%;
+    margin-bottom: 0;
+    padding-bottom: 2px;
+    padding-top: 1px;
+    position: absolute;
+    text-align: left;
+    top: 307px;
+}
+.Txt_978-0-547-66854-3 {
+    color: #000000;
+    font-size: 10px;
+    left: 129px;
+    line-height: 337.5%;
+    margin-bottom: 0;
+    padding-bottom: 2px;
+    padding-top: 1px;
+    position: absolute;
+    text-align: left;
+    top: 307px;
+}
+.Txt_E-ISBN {
+    color: #000000;
+    font-size: 10px;
+    left: 75px;
+    line-height: 337.5%;
+    margin-bottom: 0;
+    padding-bottom: 2px;
+    padding-top: 1px;
+    position: absolute;
+    text-align: left;
+    top: 318px;
+}
+#id_Text_7_image {
+    display: inline;
+    float: left;
+    height: 445px;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-top: 0;
+    width: 425px;
+}
+.Txt_Houghton {
+    color: #000000;
+    left: 140px;
+    line-height: 192.86%;
+    margin-bottom: 0;
+    padding-bottom: 2px;
+    padding-top: 1px;
+    position: absolute;
+    text-align: left;
+    top: 395px;
+}
+.Txt_Boston {
+    color: #000000;
+    left: 142px;
+    line-height: 225%;
+    margin-bottom: 0;
+    padding-bottom: 2px;
+    padding-top: 1px;
+    position: absolute;
+    text-align: left;
+    top: 410px;
+}
+
+</style>
+</head>
+<body>
+<!-- #Left Div -->
+<div class="Lside">
+    <div id="box1">
+        <img src="images/Text_6_image.jpg" id="id_Text_6_image" alt="" />
+		<div class="clearFloat"></div>
+        <div class="Txt_To">
+                <p class="lastNode"><span id='w00011'> To</span> <span id='w00012'> Carol </span> <span id='w00013'> and </span> <span id='w00014'>Marianne</span></p>
+        </div>
+         <div class="Txt_The">
+                <p class="lastNode">The version used in this book is based on the one found in <span style="font-style:italic">Select Fables of Esop</span></p>
+        </div>
+        <div class="Txt_and">
+                <p class="lastNode"><span style="font-style:italic">and other Fabulists</span>, published by R. &amp; J. Dodsley, Birmingham, England, 1764.</p>
+        </div>
+        <div class="Txt_Copyright">
+                <p class="lastNode">Copyright &copy; 1971 by Paul Galdone</p>
+        </div>
+        <div class="Txt_All">
+                <p class="lastNode">All rights reserved. Published in the United States by HMH Books, an imprint</p>
+        </div>
+        <div class="Txt_of">
+                <p class="lastNode">of Houghton Mifflin Harcourt Publishing Company. Originally published in</p>
+        </div>
+        <div class="Txt_hardcover">
+                <p class="lastNode">hardcover in the United States by the McGraw-Hill Companies, 1971.</p>
+        </div>
+        <div class="Txt_F">
+                <p class="lastNode">For information about permission to reproduce selections from this book,</p>
+        </div>
+        <div class="Txt_write">
+                <p class="lastNode">write to Permissions, Houghton Mifflin Harcourt Publishing Company,</p>
+        </div>
+        <div class="Txt_215">
+                <p class="lastNode">215 Park Avenue South, New York, New York 10003.</p>
+        </div>
+        <div class="Txt_www">
+                <p class="lastNode">www.hmhbooks.com</p>
+        </div>
+        <div class="Txt_Library">
+                <p class="lastNode">Library of Congress Cataloging-in-Publication Control Number 75-141296</p>
+        </div>
+        <div class="Txt_ISBN">
+                <p class="lastNode">ISBN: 978-0-547-66854-3 paper over board</p>
+        </div>
+        <div class="Txt_E-ISBN">
+                <p class="lastNode">E-ISBN 978-0-547-66893-2 </p>
+        </div>
+    </div>
+</div>
+
+<!-- #Right Div -->
+<div class="Rside">
+    <div id="box2">
+       <img src="images/Text_7_image.jpg" id="id_Text_7_image" alt="" />
+        <div class="clearFloat"></div>
+        <span id='w0001'></span><span id='w0002'></span><span id='w0003'></span><span id='w0004'></span><span id='w0005'></span><span id='w0006'></span><span id='w0007'></span><span id='w0008'></span>
+        <span id='w0009'></span><span id='w00010'></span>
+    	<div class="Txt_Houghton">
+			<p class="lastNode">Houghton Mifflin Harcourt</p>
+		</div>
+        <div class="Txt_Boston">
+             <p class="lastNode">Boston&thinsp;&thinsp;&thinsp; New York&thinsp;&thinsp;&thinsp; 2012 </p>
+        </div>
+    </div>
+</div>
+
+
+<div id="chk"></div>
+<div id="timeValue"></div>
+</body>
+</html>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<smil xmlns="http://www.w3.org/ns/SMIL" version="3.0" profile="http://www.idpf.org/epub/30/profile/content/">
+<body>
+<par id="p0001">
+
+<audio src="images/CG_Zoo.m4a" clipBegin="93.615505s" clipEnd="96.318723s" id="w0018"/>
+</par>
+<par id="p0002">
+
+<audio src="images/CG_Zoo.m4a" clipBegin="97.318723s" clipEnd="100.004684s" id="w0017"/>
+</par></body>
+</smil>

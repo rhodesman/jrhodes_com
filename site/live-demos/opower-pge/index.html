@@ -1,0 +1,71 @@
+<!doctype html>
+<html class="no-js" lang="en" ng-app="app">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Energy</title>
+    <!--<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.21/angular.min.js"></script>-->
+   <script src="js/vendor/angular.min.js"></script>
+    <link rel="stylesheet" href="css/app.css" />
+    <link rel="shortcut icon" href="favicon.ico">
+  </head>
+  <body>
+
+    <div class="row outside-wrapper">
+      <div class="small-12 columns">
+        <nav>
+          <ul id="account-nav">
+            <li ng-show="userPrefs.isResidentialUser()" ng-click="userPrefs.setUserTypeBusiness()">Welcome, Jonathan</li>
+            <li ng-show="userPrefs.isBusinessUser()" ng-click="userPrefs.setUserTypeResidential()">Welcome, Laita</li>
+            <li><a href="#">Sign Out</a></li>
+          </ul>
+          <section class="heading">
+            <img src="img/pge-logo.png"/>
+            <span>My Energy</span>
+          </section>
+          <ul id="main-nav">
+            <li><a ng-class="{ 'is-active': $root.pageTitle === 'Overview'  || $root.pageTab === 'overview'}" href="#">Overview</a></li>
+            <li><a ng-class="{ 'is-active': $root.pageTitle === 'Pay & Manage' } || $root.pageTab === 'pay-and-manage'" href="#/pay-and-manage">Pay & Manage</a></li>
+            <li><a ng-class="{ 'is-active': $root.pageTitle === 'My Usage'  || $root.pageTab === 'my-usage'}" href="#/my-usage">My Usage</a></li>
+            <li><a ng-class="{ 'is-active': $root.pageTitle === 'Ways to Save' || $root.pageTab === 'ways-to-save'}" href="#/ways-to-save/smart-purchases">Ways to Save</a></li>
+            <li><a ng-class="{ 'is-active': $root.pageTitle === 'Community'  || $root.pageTab === 'community'}" href="#/community">Community</a></li>
+          </ul>
+        </nav>
+        <div class="inside-wrapper">
+          <div ng-view></div>
+        </div>
+        <footer>
+          <ul>
+            <li><a href="#">For My Home</a></li>
+            <li><a href="#">For My Business</a></li>
+            <li><a href="#">About PG&E</a></li>
+            <li><a href="#">Privacy</a></li>
+            <li><a href="#">Disclosure Last Updated December 2013</a></li>
+            <li><a href="#">Help</a></li>
+            <li><a href="#">Site Map</a></li>
+            <li><a href="#">RSS</a></li>
+          </ul>
+          <span>"PG&E" refers to Pacific Gas and Electric Company, a subsidiary of PG&E Corporation. &copy;2014 Pacific Gas and Electric Company. All rights reserved.</span>
+        </footer>
+      </div>
+    </div>
+
+    <!--<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>-->
+    <script src="js/vendor/jquery.min.js"></script>
+    <script src="js/vendor/angularjs-slider/rzslider.js"></script>
+    <script src="scss/lib/zurb-foundation/js/foundation/foundation.js"></script>
+    <script src="js/vendor/angular-route-min.js"></script>
+    <script src="js/vendor/mm-foundation-tpls-0.3.0.min.js"></script>
+    <script src="js/vendor/angular-animate.min.js"></script>
+    <script src="js/vendor/lodash.js"></script>
+    <script src="js/vendor/angularjs-dropdown-multiselect.js"></script>
+    <script src="js/vendor/Chart.min.js"></script>
+    <script src="js/vendor/tc-angular-chartjs.min.js"></script>
+    <script src="js/vendor/raphael.js"></script>
+    <script src="js/vendor/elroi.js"></script>
+    <script src="js/vendor/d3.min.js"></script>
+    <script src="js/vendor/angular-charts.js"></script>
+    <script src="js/vendor/angular-count-to.min.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>

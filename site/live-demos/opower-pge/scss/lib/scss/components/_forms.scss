@@ -1,0 +1,457 @@
+
+// _forms.scss
+// Author: justin.secor@opower.com
+
+// Import foundation defaults
+@import
+  "../../zurb-foundation/scss/foundation/components/forms",
+  "../../zurb-foundation/scss/foundation/components/dropdown";
+
+
+// Forms
+//
+// Styleguide 5.0
+
+
+// Text inputs
+//
+// A good text input consists of a label, the text field, and helper text (which can contain instructions, example text, or anything else to guide users). Position the labels above the inputs wherever possible.
+//
+// Markup:
+// <form>
+//     <fieldset>
+//         <legend>Fieldset label</legend>
+//         <div class="{$modifiers}">
+//             <label for="textinput">Label</label>
+//             <input type="text" id="textinput" {$modifiers}/>
+//             <div class="input-helper">Helper text</div>
+//             <div class="alert-message">Alert message</div>
+//             <div class="success-message">Success message</div>
+//             <div class="disabled-message">Disabled message</div>
+//         </div>
+//     </fieldset>
+// </form>
+//
+// .alert - Use error highlighting to show a validation error. Apply the class to the containing element, not the input.
+// .success - Success highlighting is useful for marking a resolved error or inline validation.
+// .disabled - Disable inputs that are locked or irrelevant. Add the disabled attribute to the input to functionally disable the input.
+//
+// Styleguide 5.1
+
+
+form {
+    fieldset {
+        border: none;
+        padding: $spacing/2 0;
+        > div {
+            @include radius($input-radius);
+            padding: $spacing;
+        }
+    }
+	label {
+        color: $body-font-color;
+        font-size: 1em;
+        &.disabled {
+            color: lighten($body-font-color,50%);
+        }
+	}
+	input[type="text"], input[type="password"], input[type="date"], input[type="datetime"], input[type="email"], input[type="number"], input[type="search"], input[type="tel"], input[type="time"], input[type="url"], textarea {
+        @include radius($input-radius);
+        @include block-glowing-effect(focus, $glowing-effect-fade-time, $primary-color);
+        font-size: 1em;
+        height: 3em;
+        margin-bottom: $form-label-bottom-margin;
+        padding: 0 $spacing;
+        &:focus {
+			border-color: $primary-color;
+		}
+	}
+    input[type="search"]::-webkit-search-decoration,
+    input[type="search"]::-webkit-search-cancel-button,
+    input[type="search"]::-webkit-search-results-button,
+    input[type="search"]::-webkit-search-results-decoration {
+        display: none;
+    }
+    .input-helper {
+        font-size: $font-size-tiny;
+    }
+    .alert input, .success input {
+        border-width: $input-border-width+1;
+    }
+    .alert {
+        background-color: lighten($alert-color, 40%);
+        input {
+            @include block-glowing-effect(focus, $glowing-effect-fade-time, $alert-color);
+            border-color: $alert-color;
+            &:focus {
+                border-color: $alert-color;
+            }
+        }
+        .alert-message {
+            color: $alert-color;
+            @include geomicon("\50");
+        }
+    }
+    .success {
+        input {
+            @include block-glowing-effect(focus, $glowing-effect-fade-time, $success-color);
+            border-color: $success-color;
+            &:focus {
+                border-color: $success-color;
+            }
+        }
+        .success-message {
+            color: $success-color;
+            @include geomicon("\69");
+        }
+    }
+    .disabled {
+        input {
+            @include block-glowing-effect(focus, $glowing-effect-fade-time, $white);
+            background-color: lighten($divider-color, 15%);
+            border-color: $divider-color;
+            cursor: not-allowed;
+            &:focus {
+                background-color: lighten($divider-color, 15%);
+                border-color: $divider-color;
+            }
+        }
+        .disabled-message {
+            color: $graph-label-font-color;
+            @include geomicon("\74");
+        }
+    }
+}
+
+
+// Search fields
+//
+// Search fields should get a fun little icon and a placeholder.
+//
+// Markup:
+// <form>
+//     <div class="search-label">
+//         <input type="search" results="5" id="textinput" class="search" placeholder="search" />
+//     </div>
+// </form>
+//
+// Styleguide 5.2
+
+
+form {
+    .search-label {
+        @include geomicon("\2a", 50% auto auto 0.5em, $input-border-color);
+        display: inline-block;
+        margin-bottom: $spacing;
+        padding-left: 0;
+        &:before {
+            font-size: 1.25em;
+            margin-top: -0.5em;
+            z-index: 10;
+        }
+        input[type="search"] {
+            margin-bottom: 0;
+            padding-left: 2.25em;
+        }
+    }
+}
+
+
+// Select inputs
+//
+// Select elements (dropdowns) are a pain in the ass to style. So we remove all default styling, and apply the styling to a .custom-select container. If you need a form label, put it outside that container!
+//
+// Markup:
+// <form>
+//     <div class="custom-select {$modifiers}" {$modifiers}>
+//         <select class="medium">
+//             <option selected>Option 1</option>
+//             <option>Option 2</option>
+//             <option>Option 3</option>
+//         </select>
+//     </div>
+// </form>
+//
+// .alert - Use error highlighting to show a validation error. Apply the class to the .custom-select container, not the select element.
+// .disabled - Disable inputs that are locked or irrelevant. Apply the class to the .custom-select container, not the select element, but do add the disabled attribute to the select element.
+//
+// Styleguide 5.3
+
+
+
+.custom-select, .custom-select.alert {
+    @include geomicon("\e603", 50% 0.35em 0 0, $dark-gray);
+    @include linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0.15));
+    @include radius($input-radius);
+    @include single-transition(background-color);
+    background-color: $secondary-button-color;
+    border: 1px solid darken($secondary-button-color, $button-function-factor*2);
+    box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+    cursor: pointer;
+    display: block;
+    margin-bottom: $spacing;
+    overflow: hidden;
+    padding-left: 0;
+    &:before {
+        border: none;
+        font-size: 1.35em;
+        margin-top: -0.5em;
+        z-index: 1;
+    }
+    &:after {
+        @include linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0.15));
+        @include position(absolute, 1px 1px 1px 0);
+        @include radius(0 $input-radius $input-radius 0);
+        @include single-transition(background-color);
+        background-color: $secondary-button-color;
+        border-left: 1px solid darken($secondary-button-color, $button-function-factor*2);
+        content: "";
+        display: block;
+        width: 2.35em;
+        z-index: 0;
+    }
+    select {
+        @include appearance(none);
+        background: none;
+        border: none;
+        cursor: pointer;
+        margin-bottom: 0;
+        padding: 0.5em 2.5em 0.5em 1em;
+        position: relative;
+        z-index: 2;
+        // hacks to remove default styling
+        text-indent: 0.01px;
+        text-overflow: '';
+        &::-moz-focus-inner {
+            border: 0;
+            outline: none;
+        }
+        &::-ms-expand {
+            display: none;
+        }
+        &:hover, &:focus {
+            outline: none;
+        }
+    }
+    &:hover, &:focus {
+        @include linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0.15));
+        background-color: darken($secondary-button-color, $button-function-factor);
+        background-position-x: auto;
+        background-position-y: auto;
+        border-color: darken($secondary-button-color, $button-function-factor*3);
+        outline: none;
+        &:after {
+            background-color: darken($secondary-button-color, $button-function-factor);
+            border-color: darken($secondary-button-color, $button-function-factor*3);
+        }
+    }
+    select:-moz-focusring {
+        color: transparent;
+        text-shadow: 0 0 0 $txt-color;
+    }
+    &.alert {
+        border: 2px solid $alert-color;
+    }
+    &.disabled {
+        @include linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0.05));
+        background-color: $secondary-button-color;
+        cursor: not-allowed;
+        &:before {
+            color: $medium-gray;
+        }
+        &:after {
+            @include linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0.05));
+            background-color: $secondary-button-color;
+            border-left: 1px solid darken($secondary-button-color, $button-function-factor);
+        }
+        select {
+            color: $medium-gray;
+            cursor: not-allowed;
+        }
+    }
+}
+// hack to hide double arrows in firefox
+@-moz-document url-prefix() {
+    .custom-select {
+        &:before {
+            pointer-events: none;
+            z-index: 2;
+        }
+        &:after {
+            @include position(absolute, 0px 0px 0px 0);
+            pointer-events: none;
+            z-index: 1;
+        }
+        select {
+            @include radius($global-radius $global-radius*2 $global-radius*2 $global-radius);
+            z-index: 0;
+        }
+    }
+}
+
+html.ie9 .custom-select {
+    &:after, &:before {
+        display: none;
+    }
+    select {
+        @include radius($input-radius);
+        background-color: $secondary-button-color;
+        border: 1px solid darken($secondary-button-color, $button-function-factor*2);
+        height: 36px;
+        padding: 0;
+        &:hover {
+            background-color: darken($secondary-button-color, $button-function-factor);
+            border-color: darken($secondary-button-color, $button-function-factor*3);
+        }
+    }
+}
+
+// Radio buttons
+//
+// Radio buttons are a pain in the ass to style. So we remove all default styling, and apply the styling to a .custom-radio container, and apply the styling to the radio labels.
+//
+// Markup:
+// <form>
+//    <div class="custom-radio">
+//        <input name="radio" type="radio" id="radio1" checked>
+//        <label for="radio1" class="custom radio">Radio Button</label>
+//    </div>
+//    <div class="custom-radio">
+//        <input name="radio" type="radio" id="radio2">
+//        <label for="radio2" class="custom radio">Radio Button</label>
+//    </div>
+//    <div class="custom-radio">
+//        <input name="radio" type="radio" id="radio3">
+//        <label for="radio3" class="custom radio">Radio Button</label>
+//    </div>
+//    <div class="custom-radio">
+//        <input name="radio" type="radio" id="radio4" disabled>
+//        <label for="radio4" class="custom radio">Radio Button (disabled)</label>
+//    </div>
+// </form>
+//
+// Styleguide 5.3
+
+
+// Checkboxes
+//
+// Checkboxes are also a pain in the ass to style. So we remove all default styling, and apply the styling to a .custom-checkbox container, and apply the styling to the checkbox labels.
+//
+// Markup:
+// <form>
+//    <div class="custom-checkbox">
+//        <input name="checkbox" type="checkbox" id="checkbox1" checked>
+//        <label for="checkbox1" class="custom checkbox">Checkbox</label>
+//    </div>
+//    <div class="custom-checkbox">
+//        <input name="checkbox" type="checkbox" id="checkbox2">
+//        <label for="checkbox2" class="custom checkbox">Checkbox</label>
+//    </div>
+//    <div class="custom-checkbox">
+//        <input name="checkbox" type="checkbox" id="checkbox3">
+//        <label for="checkbox3" class="custom checkbox">Checkbox</label>
+//    </div>
+//    <div class="custom-checkbox">
+//        <input name="checkbox" type="checkbox" id="checkbox4" disabled>
+//        <label for="checkbox4" class="custom checkbox">Checkbox (disabled)</label>
+//    </div>
+// </form>
+//
+// Styleguide 5.4
+
+
+/*.custom-radio {
+    input[type="radio"] {
+        display: none;
+    }
+}*/
+
+/*.custom-checkbox {
+    input[type="checkbox"] {
+        display: none;
+    }
+}
+
+.custom-radio, .custom-checkbox {
+    label {
+        font-size: $font-size-small;
+        padding: 0.5em 0.5em 0.5em 2em;
+    }
+    input[type="radio"] + label,
+    input[type="checkbox"] + label {
+        margin-left: 0;
+        padding-left: 2em;
+        position: relative;
+        &:after {
+            @include position(absolute, 0px 0 0 0px);
+            @include transition(border-color 0.2s);
+            background-color: $light-gray;
+            border: 1px solid $medium-gray;
+            content: " ";
+            display: block;
+            height: 1.2em;
+            margin-top: -0.6em;
+            top: 50%;
+            width: 1.2em;
+            z-index: 0;
+        }
+        &:hover:after {
+            border-color: $dark-gray;
+        }
+        &:before {
+            @include transition(opacity 0.2s);
+            opacity: 0;
+            z-index: 1;
+        }
+    }
+    input[type="checkbox"] + label {
+        @include geomicon("\e0e3", 50% 0 0 -0.2em, $dark-gray);
+        padding-left: 2em;
+        &:after {
+            @include radius($global-radius);
+        }
+        &:before {
+            font-size: 2.75em;
+            margin-top: -0.625em;
+            opacity: 0;
+            z-index: 1;
+        }
+    }
+    input[type="radio"] + label {
+        &:after {
+            @include radius(1em);
+        }
+        &:before {
+            @include radius(1em);
+            @include position(absolute, 50% 0 0 0px);
+            background-color: $dark-gray;
+            content: " ";
+            display: block;
+            height: 0.8em;
+            margin-left: 0.2em;
+            margin-top: -0.4em;
+            width: 0.8em;
+        }
+    }
+    input[type="radio"]:checked + label,
+    input[type="checkbox"]:checked + label {
+        &:before {
+            opacity: 1;
+        }
+        &:after {
+            border-color: $darker-gray;
+        }
+    }
+    input[type="radio"]:disabled + label,
+    input[type="checkbox"]:disabled + label {
+        color: $medium-gray;
+        cursor: not-allowed;
+        &:before {
+            opacity: 0;
+        }
+        &:after {
+            background-color: $white;
+            border-color: $medium-gray;
+        }
+    }
+}*/

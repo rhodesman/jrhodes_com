@@ -1,0 +1,69 @@
+<div class="section-head">
+  <div class="row">
+    <div class="large-9 columns">
+      <h1 class="section-heading">About my home</h1>
+    </div>
+    <div class="large-3 columns">
+      <a href="#/my-usage/by-category" class="save-close">Save & Close</a>
+    </div>
+  </div>
+</div>
+<div class="ways-to-save">
+  <div class="row">
+    <div class="large-3 columns sidebar">
+        <div class="panel savings-total">
+          <p>Reward Balance <strong><span count-to="580" value="580" duration="0.5"></span><sub>pts</sub></strong></p>
+          <a href="">View My Savings Plan</a>
+        </div>
+        <div class="ways-save-progress-container">
+        <span class="meter-1"></span>
+        <h3>14 questions left</h3>
+      </div>
+        <ul class="prog-position">
+          <li class="active"><a href="">Home Information</a></li>
+          <li><a href="">Heating & Cooling</a></li>
+          <li><a href="">Water Heating</a></li>
+          <li><a href="">Cooking & Refrigeration</a></li>
+          <li><a href="">Lighting</a></li>
+          <li><a href="">Other</a></li>
+        </ul>
+    </div>
+    <div class="large-9 columns info-details">
+      <h3>Home Information 1 of 3</h3>
+      <form>
+        <div class="row radio-buttons">
+          <div class="large-10 columns">
+            <h4>What type of home do you live in?</h4>
+            <div class="row">
+              <input type="radio" checked="checked" name="homeType" value="SingleHome" id="homeTypeSingle"><label for="homeTypeSingle">Single family home</label>
+            </div>
+            <div class="row">
+              <input type="radio"  name="homeType" value="AptCondo" id="homeTypeApt"><label for="homeTypeApt">Apartment / condo</label>
+            </div>
+          </div>
+        </div>
+        <div class="row radio-buttons">
+          <div class="large-10 columns">
+            <h4>Do you own or rent your home?</h4>
+            <div class="row">
+              <input type="radio" name="rent-to-own" value="Own" id="owntheRent"><label for="owntheRent">Own</label>
+            </div>
+            <div class="row">
+              <input type="radio" checked="checked" name="rent-to-own" value="Rent" id="renttheOwn"><label for="renttheOwn">Rent</label>
+            </div>
+          </div>
+        </div>
+
+        <div class="form-buttons">
+          <a ng-class="{ 'is-active': $root.pageTitle === 'Ways to Save' }" href="#/ways-to-save/about-home-2of3" class="button has-points-value">
+            Next
+            <span class="points-value">
+              <span class="points-amount"><strong>20</strong> points!</span>
+            </span>
+          </a>
+          <a href="" class="skip-quest">Skip Question</a>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

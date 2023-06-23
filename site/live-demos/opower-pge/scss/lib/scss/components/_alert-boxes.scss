@@ -1,0 +1,100 @@
+
+// _alert-boxes.scss
+// Author: justin.secor@opower.com
+
+// Import foundation defaults
+@import "../../zurb-foundation/scss/foundation/components/alert-boxes";
+
+
+// Alerts
+//
+// Styleguide 7.0
+
+
+// Inline alerts
+//
+// Widgets should have their own associated alerts that are relevant only (or mostly) to that specific widget. Alerts come in a few varieties, and signify different levels of importance. They can be user-dismissable, but if you want them to persist, remove the close button.
+//
+// Markup: <div class="alert-box {$modifiers}">Alert! Shields up!<a href="#" class="close"></a></div>
+//
+// .success - Only use success alerts in the context of a user's energy usage. These alerts will suggest that a user's progress or status is "good," shows improvement, etc. Do not use for successful UI operations (like a "successfully logged in!" message); use the .info alert for this.
+// .warning - Use warning alerts in the context of a a user's energy usage (to suggest that their use is high, unusual, or needs attention), OR as a soft error message (example: a message saying that we don't have enough of their data to create a meaningful graph).
+// .error - This is for hard error messages, which require immedidate user attention, so they should be used sparingly (example: user types an invalid response in a form).
+// .info - Info alerts should grab user attention, but they don't require user action. They can be related to energe usage, but should not imply any judgement or comparison (example: "Your neighbor rank changed!")
+// .secondary - Good for alerts that don't require user attention, and intended to be dismissed with no extra user action (example: "Your next neighbor comparison will be calculated in 2 days").
+//
+// Styleguide 7.1
+
+
+.alert-box {
+    @include alert-style($info-color);
+    @include radius($global-radius);
+    padding-right: 2em;
+    &.slab {
+        padding: $spacing;
+    }
+    .widget-header {
+        color: $alert-box-header-font-color;
+        font-size: $font-size-large;
+        font-weight: normal;
+        margin-bottom: $spacing/2;
+    }
+    .error-message {
+        font-size: $font-size-large;
+        color: $dark-gray;
+        margin: $spacing/2 auto;
+    }
+    .error-subtext {
+        font-size: $font-size-medium;
+        margin: $spacing/2 auto;
+    }
+    h3, h5 {
+        font-weight: normal;
+    }
+    a {
+        color: $alert-box-link-font-color;
+    }
+    .close {
+        display: block;
+        font-size: 14px;
+        height: 1.5em;
+        right: 0.5em;
+        overflow: hidden;
+        padding: 0.25em;
+        text-indent: -100%;
+        width: 1.5em;
+        &:after {
+            @include position(absolute, 0.25em auto auto 0.25em);
+            content: "\7e";
+            display: block;
+            font-family: "Geomicons";
+            height: 1em; width: 1em;
+            line-height: 1em;
+            text-indent: 0;
+        }
+    }
+    &.success   { @include alert-style($success-color-lighter);}
+    &.warning   { @include alert-style($warning-color-lighter);}
+    &.error     { @include alert-style($error-color-lighter);}
+    &.info      { @include alert-style($info-color);}
+    &.secondary { @include alert-style($secondary-color);}
+}
+
+
+// Top-level alerts
+//
+// If alerts are complex or aren't associated with a single widget, set them apart in their own slab element and create an information hierarchy with headings.
+//
+// Markup: 
+// <div class="widget">
+//     <div class="alert-box warning slab">
+//         <h2 class="widget-header">Tomorrow is a peak day!</h2>
+//         <p class="alert-detail">The weather tomorrow is projected to be hotter than usual. Check out some <a href="#">ways to save</a>, maybe.</p>
+//         <a href="#" class="close"></a>
+//     </div>
+// </div>
+//
+// Styleguide 7.2
+
+
+

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Curious George Paintbox</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+  <script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+  <script type="text/javascript" src="js/jquery.cookies.2.2.0.min.js"></script>
+  <script type="text/javascript" src="js/jquery.ui.touch-punch.min.js"></script>
+  <script type="text/javascript" src="js/jquery.event.move.js"></script>
+  <script type="text/javascript" src="js/paper-0.22.js"></script>
+  <script type="text/paperscript" src="js/cdraw.js" canvas="cgp-canvas"></script>
+  <script type="text/javascript" src="js/main.js"></script>
+
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/main.css" />
+
+</head>
+<body>
+  <div id="cgp">
+    <div id="cgp-loader">
+      <img src="images/loader.gif" width="159" height="288" alt="Loading" />
+    </div>
+
+    <div id="cgp-intro-screen">
+      <div id="cgp-btn-play" title="Play"></div>
+    </div>
+
+    <div id="cgp-video-help">
+      <div id="cgp-video-help-overlay"></div>
+      <div id="cgp-video-container">
+        <div id="cgp-video-wrapper">
+          <div id="cgp-video">
+            <video width="640" height="360">
+              <source src="CGPaint_howto.m4v" type="video/x-m4v" />
+              <source src="CGPaint_howto.ogv" type="video/ogg" />
+            </video>
+          </div>
+          <div id="cgp-btn-skip-video" title="Skip"></div>
+        </div>
+      </div>
+    </div>
+
+    <div id="cgp-donedlg">
+      <div id="cgp-donedlg-overlay"></div>
+      <div id="cgp-donedlg-container">
+        <div id="cgp-donedlg-btns-wrapper">
+          <div id="cgp-donedlg-btn-close"></div>
+          <div id="cgp-donedlg-btn-print"></div>
+          <div id="cgp-donedlg-btn-download" class="saveCanvasImage"></div>
+          <div id="cgp-donedlg-btn-keeppainting"></div>
+          <div id="cgp-donedlg-btn-startover"></div>
+        </div>
+      </div>
+    </div>
+
+    <div id="cgp-tools-drawer">
+      <div id="cgp-tools-drawer-wrapper">
+        <div id="cgp-tool-brush" class="active">
+          <img src="images/tool-brush-head.png" width="39" height="26" alt="" />
+        </div>
+        <div id="cgp-tool-eraser"></div>
+        <div id="cgp-btn-theme-browser"><div id="cgp-btn-theme-browser-caption"></div></div>
+        <div id="cgp-tool-clipart"><img src="images/tool-clipart-icon.png" /></div>
+        <ul id="cgp-tool-stamp"></ul>
+      </div>
+    </div>
+
+    <div id="cgp-tools-drawer-options">
+      <div id="cgp-tools-drawer-options-wrapper">
+        <div id="cgp-tools-brush-drawer-options">
+          <div id="cgp-colorpicker-wrapper">
+            <ul id="cgp-colorpicker"></ul>
+          </div>
+        </div>
+
+        <div id="cgp-tools-eraser-drawer-options">
+          <div id="cgp-eraser-btn-undo" title="Undo"></div>
+        </div>
+
+        <div id="cgp-tools-clipart-drawer-options">
+          <ul id="cgp-clipart"></ul>
+        </div>
+
+        <div id="cgp-tools-stamps-drawer-options"></div>
+      </div>
+    </div>
+
+    <div id="cgp-background-drawer">
+      <div id="cgp-btn-background-frame"></div>
+      <ul id="cgp-background-options">
+        <li id="cgp-btn-background-0"></li>
+        <li id="cgp-btn-background-1"></li>
+        <li id="cgp-btn-background-2"></li>
+        <li id="cgp-btn-background-3"></li>
+        <li id="cgp-btn-background-4"></li>
+      </ul>
+    </div>
+
+    <div id="cgp-canvas-wrapper">
+      <div id="cgp-canvas-wrap">
+        <canvas id="cgp-canvas" width="570" height="428"></canvas>
+      </div>
+    </div>
+
+
+    <div id="cgp-btn-help" title="Help"></div>
+    <div id="cgp-btn-done" title="Done"></div>
+
+    <div id="cgp-preloader">
+      <img id="cgp-canvas-bg" src="images/canvas-bg.png" alt="" />
+      <img src="images/clipart-tool-hover-bg.png" alt="" />
+      <img id="clipart-tool-controls" src="images/clipat-tool-controls.png" alt="" />
+      <img src="images/btn-skip-video.png" alt="" />
+      <img src="images/donedlg-bg.png" alt="" />
+      <img src="images/donedlg-close.png" alt="" />
+      <img src="images/donedlg-download.png" alt="" />
+      <img src="images/donedlg-keeppainting.png" alt="" />
+      <img src="images/donedlg-print.png" alt="" />
+      <img src="images/donedlg-startover.png" alt="" />
+
+      <img id="watermark" src="images/watermark.png" width="236" height="19" alt="www.curiousgeorge.com" />
+
+      <img id="background-frame-1" src="images/frames/drawing_activity_frame_01.png" alt="" />
+      <img id="background-frame-2" src="images/frames/drawing_activity_frame_02.png" alt="" />
+      <img id="background-frame-3" src="images/frames/drawing_activity_frame_03.png" alt="" />
+      <img id="background-frame-4" src="images/frames/drawing_activity_frame_04.png" alt="" />
+      <img id="background-frame-5" src="images/frames/drawing_activity_frame_05.png" alt="" />
+      <img id="background-frame-6" src="images/frames/drawing_activity_frame_06.png" alt="" />
+      <img id="bacground-frame-7" src="images/frames/drawing_activity_frame_07.png" alt="" />
+    </div>
+
+    <iframe id="cgp-print-image-frame" src="print.html"></iframe>
+    <iframe id="cgp-download-image-frame" name="cgp-download-image-frame"></iframe>
+  </div>
+</body>
+</html>

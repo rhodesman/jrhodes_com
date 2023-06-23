@@ -1,0 +1,26 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>EBook</title>
+<script>
+   function init(){
+      var isIpad = getDeviceInfo();
+      if(isIpad){
+      	window.open('index_ipad.html','_self');
+      }
+      else{
+      	window.open('index_browser.html','_self');
+      }
+   }
+   function getDeviceInfo(){
+	var ua = navigator.userAgent;
+	
+	return /iPad/i.test(ua) || /iPhone OS 3_1_2/i.test(ua) || /iPhone OS 3_2_2/i.test(ua);
+  }  
+</script>
+</head>
+
+<body onload="init();">
+</body>
+</html>

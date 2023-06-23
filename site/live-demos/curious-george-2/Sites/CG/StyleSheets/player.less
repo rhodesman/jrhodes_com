@@ -1,0 +1,197 @@
+/**
+ * player.less
+ * @description Styles for game players
+ * @author Sean Smith
+ */
+
+.game-player { .centered;
+	#game {
+		padding-top: 14px;
+		background: @yellow;
+		.rounded-wrapper;
+		.game {
+			height: 420px;
+			background: @white;
+		}
+		.share {
+			position: relative;
+			height: 22px;
+			background: @light-blue;
+			.border-radius(0 0 12px 12px);
+			a {
+				position: absolute;
+				bottom: -12px;
+				right: 16px;
+				display: block;
+				width: 141px;
+				height: 46px;
+				background: transparent url(../imgs/like.png) scroll no-repeat 50% 50%;
+				.hidden-text;
+			}
+		}
+	}
+	#more-games {
+		margin-top: 14px;
+		.man {
+			position: relative;
+			float: left;
+			width: 141px;
+			height: 75px;
+			background: @green;
+			.rounded-wrapper;
+			.sprite {
+				position: absolute;
+				bottom: 0;
+				left: 0;
+				width: 100%;
+				height: 125px;
+				background: transparent url(../imgs/man3.png) scroll no-repeat 16px 100%;
+			}
+		}
+		.games-container {
+			position: relative;
+			margin-left: 168px;
+			padding-left: 186px;
+			width: 498px;
+			height: 75px;
+			.rounded-wrapper;
+			border-right-width: 52px;
+			strong {
+				position: absolute;
+				top: 0;
+				left: 0;
+				display: block;
+				width: 184px;
+				height: 100%;
+				background: transparent url(../imgs/player-point.png) scroll no-repeat 100% 50%;
+				.border-radius(12px 0 0 12px);
+				span {
+					display: block;
+					position: absolute;
+					width: 150px;
+					height: 90px;
+					.hidden-text;
+				}
+			}
+			.bjqs-wrapper {
+				padding: 8px 0;
+				top: -8px;
+			}
+			ul.bjqs {
+				padding: 0 90px 0 85px;
+				width: 350px;
+				height: 100%;
+				background: transparent url(../imgs/player-point.png) scroll no-repeat 100% 50%;
+				overflow: visible !important;
+				.border-radius(12px 0 0 12px);
+				ul { max-height: 75px;
+					li {
+						display: inline-block;
+						margin-right: 8px;
+						a {
+							display: block;
+							width: 60px;
+							height: 60px;
+							.rounded-wrapper;
+							.border-radius(8px);
+							.hidden-text;
+							img {
+								display: block;
+								position: relative;
+								top: -8px;
+								left: -8px;
+								width: 76px;//100%;
+								height: 76px;//100%;
+								max-width: none;
+								border: none;
+								//background: @grey;
+							}
+						}
+					}
+				}
+			}
+			.bjqs-controls a {
+				top: 50%;
+				padding: 0;
+				margin-top: -57px;
+				width: 114px;
+				height: 114px;
+				.hidden-text;
+				background: transparent none scroll no-repeat 50% 50%;
+				&.bjqs-next {
+					right: -50px;
+					background-image: url(../imgs/buttons/rgt_arrow.png);
+					&:hover { background-image: url(../imgs/buttons/rgt_arrow_hover.png) }
+					&:active { background-image: url(../imgs/buttons/rgt_arrow_hover_press.png) }
+				}
+				&.bjqs-prev {
+					left: 150px;
+					background-image: url(../imgs/buttons/lft_arrow.png);
+					&:hover { background-image: url(../imgs/buttons/lft_arrow_hover.png) }
+					&:active { background-image: url(../imgs/buttons/lft_arrow_hover_press.png) }
+				}
+			}
+		}
+	}
+	p {
+		padding: 3em 0;
+		text-align: center;
+		font: 4em TradeGothic;
+	}
+	&#games-play #more-games {
+		strong { background-color: @red;
+			span {
+				top: -8px;
+				left: 0;
+				background: transparent url(../imgs/games-mini.png) scroll no-repeat 50% 50%;
+			}
+		}
+		ul { background-color: @blue }
+	}
+	&#stories-read #more-games {
+		strong { background-color: @green;
+			span {
+				top: -8px;
+				left: 0;
+				background: transparent url(../imgs/stories-mini.png) scroll no-repeat 50% 50%;
+			}
+		}
+		ul { background-color: @light-blue }
+	}
+	&#create-make #more-games {
+		strong { background-color: @blue;
+			span {
+				height: 77px;
+				bottom: 0;
+				left: 0;
+				background: transparent url(../imgs/create-mini.png) scroll no-repeat 50% 0%;
+			}
+		}
+		ul { background-color: @light-blue }
+	}
+	&#themes-play #more-games {
+		position: relative;
+		height: 75px;
+		margin-left: 149px;
+		.rounded-wrapper;
+		.man {
+			position: absolute;
+			width: 117px;
+			left: -157px;
+			top: -8px;
+		}
+		.games {
+			display: block;
+			position: absolute;
+			right: 0;
+			top: -10px;
+			padding: 0;
+			width: 752px;
+			height: 98px;
+			background: transparent url(../imgs/space/theme-bar.png) scroll no-repeat 50% 50%;
+			border: none;
+			.border-radius(0);
+			.box-shadow(none);
+		}
+	}
+}

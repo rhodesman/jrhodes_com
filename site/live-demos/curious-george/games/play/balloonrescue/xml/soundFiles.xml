@@ -1,0 +1,311 @@
+<data dir="mp3/">
+	<music channel="music" volume="50">
+		<sound file="titleMusic" volume="40" loops="1" inLibrary="true" />
+		<sound file="music1" volume="60" inLibrary="true" />
+		<sound file="music2" volume="50" inLibrary="true" />
+		<sound file="music3" volume="50" inLibrary="true" />
+		<sound file="music3Sting" volume="50" loops="1" inLibrary="true" />
+	</music>
+	
+	<sfx channel="sfx" volume="50">
+		<sound file="click1" volume="20" inLibrary="true" />
+		<sound file="click2" volume="20" inLibrary="true" />
+		<sound file="click3" volume="20" inLibrary="true" />
+		<sound file="click4" volume="20" inLibrary="true" />
+		<sound file="click5" volume="20" inLibrary="true" />
+		<sound file="ro1" volume="30" inLibrary="true" />
+		<sound file="ro2" volume="20" inLibrary="true" />
+		<sound file="ro3" volume="20" inLibrary="true" />
+		<sound file="ro4" volume="20" inLibrary="true" />
+		<sound file="ro5" volume="20" inLibrary="true" />
+
+		<sound file="bird1" volume="30" inLibrary="true" />
+		<sound file="bird2" volume="30" inLibrary="true" />
+		<sound file="bird3" volume="30" inLibrary="true" />
+		<sound file="bird4" volume="30" inLibrary="true" />
+		<sound file="catch1Um" volume="50" inLibrary="true" />
+		<sound file="catch2Um" volume="50" inLibrary="true" />
+		<sound file="catch3Um" volume="50" inLibrary="true" />
+		<sound file="flap" volume="50" inLibrary="true" />
+		<sound file="jumpLevel1" volume="50" inLibrary="true" />
+		<sound file="jumpLevel3" volume="50" inLibrary="true" />
+		<sound file="jumpTrans1Level3" volume="50" inLibrary="true" />
+		<sound file="jumpTrans2Level3" volume="50" inLibrary="true" />
+		<sound file="level1CA1" volume="50" inLibrary="true" />
+		<sound file="level1CA2" volume="50" inLibrary="true" />
+		<sound file="level1CA3" volume="50" inLibrary="true" />
+		<sound file="level1WA" volume="50" inLibrary="true" />
+		<sound file="rainHard" volume="15" loops="99999" inLibrary="true" />
+		<sound file="rainLight" volume="20" loops="99999" inLibrary="true" />
+		<sound file="splash" volume="70" inLibrary="true" />
+		<sound file="step1Boot" volume="10" inLibrary="true" />
+		<sound file="step2Boot" volume="10" inLibrary="true" />
+		<sound file="step1Grass" volume="10" inLibrary="true" />
+		<sound file="step2Grass" volume="10" inLibrary="true" />
+		<sound file="step1Pavement" volume="6" inLibrary="true" />
+		<sound file="step2Pavement" volume="6" inLibrary="true" />
+		<sound file="step1Wet" volume="6" inLibrary="true" />
+		<sound file="step2Wet" volume="6" inLibrary="true" />
+		<sound file="windLevel1" volume="15" loops="99999" inLibrary="true" />
+		<sound file="tireSwingRight" volume="70" inLibrary="true" />
+		<sound file="tireSwingLeft" volume="60" inLibrary="true" />
+		<sound file="bar1" volume="80" inLibrary="true" />
+		<sound file="bar2" volume="80" inLibrary="true" />
+		<sound file="bar3" volume="80" inLibrary="true" />
+		<sound file="bar4" volume="60" inLibrary="true" />
+		<sound file="bar5" volume="70" inLibrary="true" />
+		<sound file="bar6" volume="80" inLibrary="true" />
+		<sound file="bar7" volume="80" inLibrary="true" />
+		<sound file="landInBoots" volume="40" inLibrary="true" />
+
+		<sound file="pickBalloon1" volume="50" inLibrary="true" />
+		<sound file="pickBalloon2" volume="50" inLibrary="true" />
+		<sound file="pickBalloon3" volume="50" inLibrary="true" />
+		<sound file="pickBalloon4" volume="50" inLibrary="true" />
+		<sound file="pickBalloon5" volume="50" inLibrary="true" />
+		<sound file="pickBalloon6" volume="50" inLibrary="true" />
+		<sound file="pickBalloon7" volume="50" inLibrary="true" />
+		<sound file="pickBalloon8" volume="50" inLibrary="true" />
+		<sound file="pickBalloon9" volume="50" inLibrary="true" />
+		<sound file="pickBalloon10" volume="50" inLibrary="true" />
+		<sound file="popBalloon1" volume="50" inLibrary="true" />
+		<sound file="popBalloon2" volume="50" inLibrary="true" />
+		<sound file="popBalloon3" volume="50" inLibrary="true" />
+		<sound file="popBalloon4" volume="50" inLibrary="true" />
+		<sound file="popBalloon5" volume="50" inLibrary="true" />
+		<sound file="popBalloon6" volume="50" inLibrary="true" />
+		<sound file="popBalloon7" volume="50" inLibrary="true" />
+		<sound file="popBalloon8" volume="50" inLibrary="true" />
+		<sound file="popBalloon9" volume="50" inLibrary="true" />
+		<sound file="popBalloon10" volume="50" inLibrary="true" />
+		<sound file="georgeLands" volume="50" inLibrary="true" />
+
+		<sound volume="100" inLibrary="false" file="Amazed2.mp3" id="Amazed2" />
+		<sound volume="100" inLibrary="false" file="interested4.mp3" id="interested4" />
+		<sound volume="100" inLibrary="false" file="interested5.mp3" id="interested5" />
+		<sound volume="100" inLibrary="false" file="interested1.mp3" id="interested1" />
+		<sound volume="100" inLibrary="false" file="interested2.mp3" id="interested2" />
+		<sound volume="100" inLibrary="false" file="interested3.mp3" id="interested3" />
+		
+		<sound volume="100" inLibrary="false" file="Questioning.mp3" id="" />
+
+	</sfx>
+	
+	<vo channel="vo" volume="50">
+		<!--<sound volume="100" inLibrary="false" file="CGB_1.mp3" id="" />
+		<sound volume="100" inLibrary="false" file="CGB_2.mp3" id="" />
+		<sound volume="100" inLibrary="false" file="CGB_3.mp3" id="" />
+		<sound volume="100" inLibrary="false" file="CGB_4.mp3" id="" />
+		<sound volume="100" inLibrary="false" file="CGB_5.mp3" id="" />
+		<sound volume="100" inLibrary="false" file="CGB_6.mp3" id="" />
+		<sound volume="100" inLibrary="false" file="CGB_7.mp3" id="" />
+		<sound volume="100" inLibrary="false" file="CGB_8.mp3" id="" />
+		<sound volume="100" inLibrary="false" file="CGB_9.mp3" id="" />
+		<sound volume="100" inLibrary="false" file="CGB_10.mp3" id="" />
+		<sound volume="100" inLibrary="false" file="CGB_11.mp3" id="" />-->
+		<sound volume="100" inLibrary="false" file="CGB_12.mp3" id="" />
+		<sound volume="100" inLibrary="false" file="CGB_13.mp3" id="t3" />
+		<sound volume="100" inLibrary="false" file="CGB_14.mp3" id="t2" />
+		<sound volume="100" inLibrary="false" file="CGB_15.mp3" id="t6" />
+		<sound volume="100" inLibrary="false" file="CGB_16.mp3" id="t4" />
+		<sound volume="100" inLibrary="false" file="CGB_17.mp3" id="t5" />
+		<sound volume="100" inLibrary="false" file="CGB_18.mp3" id="t1" />
+		<sound volume="100" inLibrary="false" file="CGB_19.mp3" id="" />
+		<sound volume="100" inLibrary="false" file="CGB_20.mp3" id="" />
+		<sound volume="100" inLibrary="false" file="CGB_21.mp3" id="" />
+		<sound volume="100" inLibrary="false" file="CGB_22.mp3" id="" />
+		<sound volume="100" inLibrary="false" file="CGB_23.mp3" id="" />
+		<sound volume="100" inLibrary="false" file="CGB_24.mp3" id="" />
+		<sound volume="100" inLibrary="false" file="CGB_25.mp3" id="" />
+		<sound volume="100" inLibrary="false" file="CGB_26.mp3" id="" />
+		<sound volume="100" inLibrary="false" file="CGB_27.mp3" id="" />
+		<sound volume="100" inLibrary="false" file="CGB_28.mp3" id="" />
+		<sound volume="100" inLibrary="false" file="CGB_29.mp3" id="" />
+		<sound volume="100" inLibrary="false" file="CGB_30.mp3" id="" />
+		<sound volume="100" inLibrary="false" file="CGB_31.mp3" id="" />
+		<sound volume="100" inLibrary="false" file="CGB_32.mp3" id="" />
+		<sound volume="100" inLibrary="false" file="CGB_33.mp3" id="" />
+		<sound volume="100" inLibrary="false" file="CGB_34.mp3" id="" />
+		<sound volume="100" inLibrary="false" file="CGB_35.mp3" id="" />
+		<sound volume="100" inLibrary="false" file="CGB_36.mp3" id="" />
+		<sound volume="100" inLibrary="false" file="CGB_37.mp3" id="" />
+<!--		<sound volume="100" inLibrary="false" file="CGB_38.mp3" id="" />-->
+		<sound volume="100" inLibrary="false" file="CGB_39.mp3" id="" />
+		<sound volume="100" inLibrary="false" file="CGB_40.mp3" id="" />
+		<sound volume="100" inLibrary="false" file="CGB_41.mp3" id="t14" />
+		<sound volume="100" inLibrary="false" file="CGB_42.mp3" id="" />
+		<sound volume="100" inLibrary="false" file="CGB_43.mp3" id="" />
+		<sound volume="100" inLibrary="false" file="CGB_44.mp3" id="" />
+		<sound volume="100" inLibrary="false" file="CGB_45.mp3" id="" />
+		<sound volume="100" inLibrary="false" file="CGB_46.mp3" id="" />
+<!--		<sound volume="100" inLibrary="false" file="CGB_47.mp3" id="" />
+		<sound volume="100" inLibrary="false" file="CGB_48.mp3" id="" />-->
+		<sound volume="100" inLibrary="false" file="CGB_49.mp3" id="" />
+		<sound volume="100" inLibrary="false" file="CGB_50.mp3" id="" />
+		<sound volume="100" inLibrary="false" file="CGB_51.mp3" id="" />
+		<sound volume="100" inLibrary="false" file="CGB_52.mp3" id="" />
+		<sound volume="100" inLibrary="false" file="CGB_53.mp3" id="" />
+		<sound volume="100" inLibrary="false" file="CGB_54.mp3" id="t11" />
+		<sound volume="100" inLibrary="false" file="CGB_55.mp3" id="t13" />
+		<sound volume="100" inLibrary="false" file="CGB_56.mp3" id="t7" />
+		<sound volume="100" inLibrary="false" file="CGB_57.mp3" id="t10" />
+		<sound volume="100" inLibrary="false" file="CGB_58.mp3" id="t8" />
+		<sound volume="100" inLibrary="false" file="CGB_59.mp3" id="t12" />
+		<sound volume="100" inLibrary="false" file="CGB_60.mp3" id="t9" />
+		<sound volume="100" inLibrary="false" file="CGB_146.mp3" id="" />
+		<sound volume="100" inLibrary="false" file="CGB_146b.mp3" id="skipro" />
+		<sound volume="100" inLibrary="false" file="CGB_61.mp3" id="" />
+		<sound volume="100" inLibrary="false" file="CGB_62.mp3" id="" />
+		<sound volume="100" inLibrary="false" file="CGB_63.mp3" id="" />
+		<sound volume="100" inLibrary="false" file="CGB_64.mp3" id="" />
+		<sound volume="100" inLibrary="false" file="CGB_65.mp3" id="" />
+		<sound volume="100" inLibrary="false" file="CGB_66.mp3" id="" />
+		<sound volume="100" inLibrary="false" file="CGB_67.mp3" id="t11desc" />
+		<sound volume="100" inLibrary="false" file="CGB_68.mp3" id="t13desc" />
+		<sound volume="100" inLibrary="false" file="CGB_69.mp3" id="t10desc" />
+		<sound volume="100" inLibrary="false" file="CGB_70.mp3" id="t7desc" />
+		<sound volume="100" inLibrary="false" file="CGB_71.mp3" id="" />
+		<sound volume="100" inLibrary="false" file="CGB_72.mp3" id="t9desc" />
+		<sound volume="100" inLibrary="false" file="CGB_152.mp3" id="t12desc" />
+	<!--	<sound volume="100" inLibrary="false" file="CGB_160.mp3" id="t8desc" />-->
+		<sound volume="100" inLibrary="false" file="CGB_73.mp3" id="" />
+		<sound volume="100" inLibrary="false" file="CGB_74.mp3" id="" />
+		<sound volume="100" inLibrary="false" file="CGB_75.mp3" id="" />
+		<sound volume="100" inLibrary="false" file="CGB_76.mp3" id="" />
+		<sound volume="100" inLibrary="false" file="CGB_77.mp3" id="" />
+		<sound volume="100" inLibrary="false" file="CGB_78.mp3" id="" />
+		<sound volume="100" inLibrary="false" file="CGB_79.mp3" id="" />
+		<sound volume="100" inLibrary="false" file="CGB_80.mp3" id="" />
+		<sound volume="100" inLibrary="false" file="CGB_81.mp3" id="t14m" />
+		<sound volume="100" inLibrary="false" file="CGB_82.mp3" id="t3m" />
+		<sound volume="100" inLibrary="false" file="CGB_83.mp3" id="t2m" />
+		<sound volume="100" inLibrary="false" file="CGB_84.mp3" id="t4m" />
+		<sound volume="100" inLibrary="false" file="CGB_85.mp3" id="t5m" />
+		<sound volume="100" inLibrary="false" file="CGB_86.mp3" id="t6m" />
+		<sound volume="100" inLibrary="false" file="CGB_87.mp3" id="t1m" />
+		<sound volume="100" inLibrary="false" file="CGB_88.mp3" id="t11e" />
+		<sound volume="100" inLibrary="false" file="CGB_89.mp3" id="" />
+		<sound volume="100" inLibrary="false" file="CGB_90.mp3" id="t13e" />
+		<sound volume="100" inLibrary="false" file="CGB_91.mp3" id="t10e" />
+		<sound volume="100" inLibrary="false" file="CGB_92.mp3" id="t8e" />
+		<sound volume="100" inLibrary="false" file="CGB_93.mp3" id="t7e" />
+		<sound volume="100" inLibrary="false" file="CGB_94.mp3" id="" />
+		<sound volume="100" inLibrary="false" file="CGB_95.mp3" id="t9e" />
+		<sound volume="100" inLibrary="false" file="CGB_149.mp3" id="t12e" />
+		
+		<sound volume="100" inLibrary="false" file="CGB_96.mp3" id="" />
+		<sound volume="100" inLibrary="false" file="CGB_97.mp3" id="" />
+		<sound volume="100" inLibrary="false" file="CGB_98.mp3" id="" />
+		<sound volume="100" inLibrary="false" file="CGB_99.mp3" id="" />
+		<sound volume="100" inLibrary="false" file="CGB_100.mp3" id="" />
+		<sound volume="100" inLibrary="false" file="CGB_101.mp3" id="" />
+		<sound volume="100" inLibrary="false" file="CGB_102.mp3" id="" />
+		<sound volume="100" inLibrary="false" file="CGB_103.mp3" id="" />
+		<sound volume="100" inLibrary="false" file="CGB_104.mp3" id="" />
+		<sound volume="100" inLibrary="false" file="CGB_105.mp3" id="" />
+		<sound volume="100" inLibrary="false" file="CGB_106.mp3" id="" />
+		<sound volume="100" inLibrary="false" file="CGB_107.mp3" id="" />
+		<sound volume="100" inLibrary="false" file="CGB_108.mp3" id="" />
+		<sound volume="100" inLibrary="false" file="CGB_109.mp3" id="" />
+		<sound volume="100" inLibrary="false" file="CGB_110.mp3" id="" />
+		<sound volume="100" inLibrary="false" file="CGB_111.mp3" id="" />
+		<sound volume="100" inLibrary="false" file="CGB_112.mp3" id="" />
+		<sound volume="100" inLibrary="false" file="CGB_113.mp3" id="" />
+		<sound volume="100" inLibrary="false" file="CGB_114.mp3" id="" />
+		<sound volume="100" inLibrary="false" file="CGB_115.mp3" id="" />
+		<sound volume="100" inLibrary="false" file="CGB_116.mp3" id="" />
+		<sound volume="100" inLibrary="false" file="CGB_117.mp3" id="" />
+		<sound volume="100" inLibrary="false" file="CGB_118.mp3" id="" />
+		<sound volume="100" inLibrary="false" file="CGB_119.mp3" id="" />
+		<sound volume="100" inLibrary="false" file="CGB_120.mp3" id="" />
+		<sound volume="100" inLibrary="false" file="CGB_121.mp3" id="" />
+		<sound volume="100" inLibrary="false" file="CGB_122.mp3" id="" />
+		<sound volume="100" inLibrary="false" file="CGB_123.mp3" id="" />
+		<sound volume="100" inLibrary="false" file="CGB_124.mp3" id="" />
+		<sound volume="100" inLibrary="false" file="CGB_125.mp3" id="" />
+		<sound volume="100" inLibrary="false" file="CGB_126.mp3" id="" />
+		<sound volume="100" inLibrary="false" file="CGB_127.mp3" id="" />
+		<sound volume="100" inLibrary="false" file="CGB_128.mp3" id="" />
+		<sound volume="100" inLibrary="false" file="CGB_129.mp3" id="" />
+		<sound volume="100" inLibrary="false" file="CGB_130.mp3" id="" />
+		<sound volume="100" inLibrary="false" file="CGB_131.mp3" id="" />
+		<sound volume="100" inLibrary="false" file="CGB_132.mp3" id="" />
+		<sound volume="100" inLibrary="false" file="CGB_133.mp3" id="" />
+		<sound volume="100" inLibrary="false" file="CGB_134.mp3" id="" />
+		<sound volume="100" inLibrary="false" file="CGB_135.mp3" id="" />
+		<sound volume="100" inLibrary="false" file="CGB_136.mp3" id="" />
+		<sound volume="100" inLibrary="false" file="CGB_137.mp3" id="" />
+		<sound volume="100" inLibrary="false" file="CGB_138.mp3" id="" />
+		<sound volume="100" inLibrary="false" file="CGB_139.mp3" id="" />
+		
+		<sound volume="100" inLibrary="false" file="CGB_142.mp3" id="" />
+		<sound volume="100" inLibrary="false" file="CGB_143.mp3" id="" />
+		<sound volume="100" inLibrary="false" file="CGB_144.mp3" id="" />
+		<sound volume="100" inLibrary="false" file="CGB_147.mp3" id="" />
+		
+		<sound volume="100" inLibrary="false" file="CGB_161.mp3" id="" />
+		
+<!--		<sound volume="100" inLibrary="false" file="CGB_140.mp3" id="" />
+		<sound volume="100" inLibrary="false" file="CGB_141.mp3" id="" />
+		<sound volume="100" inLibrary="false" file="CGB_144.mp3" id="" />
+		<sound volume="100" inLibrary="false" file="CGB_145.mp3" id="" />
+		
+		<sound volume="100" inLibrary="false" file="CGB_148.mp3" id="" />
+		<sound volume="100" inLibrary="false" file="CGB_149.mp3" id="" />
+		<sound volume="100" inLibrary="false" file="CGB_150.mp3" id="" />
+		<sound volume="100" inLibrary="false" file="CGB_151.mp3" id="" />
+		<sound volume="100" inLibrary="false" file="CGB_153.mp3" id="" />
+		<sound volume="100" inLibrary="false" file="CGB_154.mp3" id="" />-->
+		<sound volume="100" inLibrary="false" file="CGB_155.mp3" id="" />
+		<sound volume="100" inLibrary="false" file="CGB_156.mp3" id="" />
+		<sound volume="100" inLibrary="false" file="CGB_157.mp3" id="" />
+		<!--<sound volume="100" inLibrary="false" file="CGB_158.mp3" id="" />
+		<sound volume="100" inLibrary="false" file="CGB_159.mp3" id="" />
+		<sound volume="100" inLibrary="false" file="CGB_160.mp3" id="" />
+		<sound volume="100" inLibrary="false" file="CGB_161.mp3" id="" />
+		<sound volume="100" inLibrary="false" file="CGB_162.mp3" id="" />
+		<sound volume="100" inLibrary="false" file="CGB_163.mp3" id="" />
+		<sound volume="100" inLibrary="false" file="CGB_164.mp3" id="" />
+		<sound volume="100" inLibrary="false" file="CGB_165.mp3" id="" />
+		<sound volume="100" inLibrary="false" file="CGB_166.mp3" id="" />
+		<sound volume="100" inLibrary="false" file="CGB_167.mp3" id="" />
+		<sound volume="100" inLibrary="false" file="CGB_168.mp3" id="" />
+		<sound volume="100" inLibrary="false" file="CGB_169.mp3" id="" />
+		<sound volume="100" inLibrary="false" file="CGB_170.mp3" id="" />
+		<sound volume="100" inLibrary="false" file="CGB_171.mp3" id="" />
+		<sound volume="100" inLibrary="false" file="CGB_172.mp3" id="" />
+		<sound volume="100" inLibrary="false" file="CGB_173.mp3" id="" />
+		<sound volume="100" inLibrary="false" file="CGB_174.mp3" id="" />
+		<sound volume="100" inLibrary="false" file="CGB_175.mp3" id="" />
+		<sound volume="100" inLibrary="false" file="CGB_176.mp3" id="" />
+		<sound volume="100" inLibrary="false" file="CGB_177.mp3" id="" />
+		<sound volume="100" inLibrary="false" file="CGB_178.mp3" id="" />
+		<sound volume="100" inLibrary="false" file="CGB_179.mp3" id="" />
+		<sound volume="100" inLibrary="false" file="CGB_180.mp3" id="" />
+		<sound volume="100" inLibrary="false" file="CGB_181.mp3" id="" />
+		<sound volume="100" inLibrary="false" file="CGB_182.mp3" id="" />
+		<sound volume="100" inLibrary="false" file="CGB_183.mp3" id="" />
+		<sound volume="100" inLibrary="false" file="CGB_184.mp3" id="" />
+		<sound volume="100" inLibrary="false" file="CGB_185.mp3" id="" />
+		<sound volume="100" inLibrary="false" file="CGB_186.mp3" id="" />
+		<sound volume="100" inLibrary="false" file="CGB_187.mp3" id="" />
+		<sound volume="100" inLibrary="false" file="CGB_188.mp3" id="" />
+		<sound volume="100" inLibrary="false" file="CGB_189.mp3" id="" />
+		<sound volume="100" inLibrary="false" file="CGB_190.mp3" id="" />
+		<sound volume="100" inLibrary="false" file="CGB_191.mp3" id="" />
+		<sound volume="100" inLibrary="false" file="CGB_192.mp3" id="" />
+		<sound volume="100" inLibrary="false" file="CGB_193.mp3" id="" />
+		<sound volume="100" inLibrary="false" file="CGB_194.mp3" id="" />
+		<sound volume="100" inLibrary="false" file="CGB_195.mp3" id="" />
+		<sound volume="100" inLibrary="false" file="CGB_196.mp3" id="" />
+		<sound volume="100" inLibrary="false" file="CGB_197.mp3" id="" />
+		<sound volume="100" inLibrary="false" file="CGB_198.mp3" id="" />
+		<sound volume="100" inLibrary="false" file="CGB_199.mp3" id="" />
+
+		
+
+
+
+-->
+	</vo>
+</data>

@@ -1,0 +1,634 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+ "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>
+    Untitled Document
+</title>
+<link href="skin/blue.monday/jplayer.blue.monday.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.jplayer.min.js"></script>
+<meta http-equiv="Content-Type" content="text/html;CHARSET=utf-8"/>
+<meta name="viewport" content="width=450,height=450" />
+
+<style type="text/css">
+ 
+    a:link {
+        color:blue;
+        text-decoration:underline;
+    }
+    a:active { color:red }
+    a:visited { color:purple }
+    
+  @font-face {
+  font-family: 'Adobe Garamond Semibold Italic';
+  src: url("font/AGARAMSI.TTF");
+  }
+@font-face {
+  font-family: 'CuriousGerogeheader-Medium';
+  src: url("font/CURIOUGM.TTF");
+  }
+@font-face {
+  font-family: 'New Century Schoolbook Italic';
+  src: url("font/NEWCENSI.TTF");
+  }
+@font-face {
+  font-family: 'New Century Schoolbook Roman';
+  src: url("font/NEWCENSR.TTF");
+  }
+@font-face {
+  font-family: 'OPTIMajerIrregular';
+  src: url("font/OPTIMAJI.TTF");
+  }
+
+body {
+   width: 450px;
+   height: 450px;
+   margin:0; 
+
+        background-color:white;
+        color:#393838;
+    }
+    .text47 {
+        font-family:'OPTIMajerIrregular';
+        font-size:28px;
+        text-decoration:none;
+        color:#00AFED;
+    }
+    .pHeadparagraph {
+        line-height:42px;
+        text-align:center;
+    }
+    .box1 {
+        background-color:white;
+        width:450px;
+        height:450px;
+    }
+    .box2 {
+        position:absolute;
+        left:0px;
+        top:0px;
+        width:450px;
+        height:450px;
+    }
+    .box3 {
+        position:absolute;
+        left:542.444px;
+        top:351px;
+        width:47.037px;
+        height:20.854px;
+    }
+    .box4 {
+        position:absolute;
+        left:150.214px;
+        top:569.222px;
+        width:40.094px;
+        height:20.278px;
+    }
+    .box5 {
+        position:absolute;
+        left:245.232px;
+        top:208.737px;
+        width:101.663px;
+        height:20.854px;
+    }
+    .box6 {
+        position:absolute;
+        left:215.761px;
+        top:339.175px;
+        width:43.902px;
+        height:20.854px;
+    }
+    .box7 {
+        position:absolute;
+        left:187.973px;
+        top:372.339px;
+        width:48.582px;
+        height:45.886px;
+    }
+    .box8 {
+        position:absolute;
+        left:451.052px;
+        top:349.679px;
+        width:67.402px;
+        height:20.854px;
+    }
+    .box9 {
+        position:absolute;
+        left:336.003px;
+        top:419.164px;
+        width:67.716px;
+        height:20.854px;
+    }
+    .box10 {
+        position:absolute;
+        left:88.871px;
+        top:345.38px;
+        width:67.6px;
+        height:20.854px;
+    }
+    .box11 {
+        position:absolute;
+        left:520.402px;
+        top:285.33px;
+        width:77.217px;
+        height:20.854px;
+    }
+    .box12 {
+        position:absolute;
+        left:475.522px;
+        top:271.486px;
+        width:78.978px;
+        height:20.854px;
+    }
+    .box13 {
+	position:absolute;
+	left:20px;
+	top:31px;
+	padding:0px;
+	width:174px;
+	height:42px;
+    }
+    .box14 {
+        position:absolute;
+        left:616.482px;
+        top:88.208px;
+        width:67.402px;
+        height:20.854px;
+    }
+    .box15 {
+        position:absolute;
+        left:553.905px;
+        top:438.874px;
+        width:63.965px;
+        height:20.854px;
+    }
+    .box16 {
+        position:absolute;
+        left:551.106px;
+        top:409.5px;
+        width:59.091px;
+        height:20.854px;
+    }
+    .box17 {
+        position:absolute;
+        left:530.982px;
+        top:616.646px;
+        width:67.716px;
+        height:20.854px;
+    }
+    .box18 {
+        position:absolute;
+        left:597.39px;
+        top:379.567px;
+        width:17.504px;
+        height:30.68px;
+    }
+    .box19 {
+        position:absolute;
+        left:621px;
+        top:445px;
+        width:28.898px;
+        height:2px;
+    }
+    .box20 {
+        position:absolute;
+        left:94.174px;
+        top:326.844px;
+        width:22.863px;
+        height:18.848px;
+    }
+    .box21 {
+        position:absolute;
+        left:237.378px;
+        top:394.574px;
+        width:23.095px;
+        height:10.47px;
+    }
+    .box22 {
+        position:absolute;
+        left:510.631px;
+        top:285.266px;
+        width:6.473px;
+        height:21.589px;
+    }
+    .box23 {
+        position:absolute;
+        left:549.194px;
+        top:299.415px;
+        width:7.039px;
+        height:11.447px;
+    }
+    .box24 {
+        position:absolute;
+        left:134.7px;
+        top:669.396px;
+        width:67.6px;
+        height:43.854px;
+    }
+    .box25 {
+        position:absolute;
+        left:116.107px;
+        top:663.197px;
+        width:26.663px;
+        height:13.521px;
+    }
+ .TextDiv
+	{
+		font-size:13px;
+	}
+	
+	.towel
+	{
+	    left: 156.289px;
+    position: absolute;
+    top: 131.22px;
+	}
+	.shampoo
+	{
+	   left: 53.289px;
+    position: absolute;
+    top: 208.22px;
+	}
+	.soap
+	{
+	    left: 127.289px;
+    position: absolute;
+    top: 205.22px;
+	}
+	.rubber
+	{
+	    left: 103.289px;
+    position: absolute;
+    top: 233.22px;
+	}
+	.tub
+	{
+	       left: 94.289px;
+    position: absolute;
+    top: 344.22px;
+	}
+	.clothes
+	{
+	    left: 84.289px;
+    position: absolute;
+    top: 406.22px;
+	}
+	.slippers
+	{
+	     left: 196.289px;
+    position: absolute;
+    top: 254.22px;
+	}.mirror
+	{
+	      left: 372.289px;
+    position: absolute;
+    top: 51.22px;
+	}
+	.toothbrush
+	{
+	  left: 266.289px;
+    position: absolute;
+    top: 163.22px;
+	}
+	.toothpaste
+	{
+	     left: 314.289px;
+    position: absolute;
+    top: 171.22px;
+	}
+	.bathrope
+	{ 
+	    left: 266.289px;
+    position: absolute;
+    top: 208.22px;
+	}
+	.sink
+	{
+	        left: 324.289px;
+    position: absolute;
+    top: 211.22px;
+	}
+	.comb
+	{
+	      left: 329.289px;
+    position: absolute;
+    top: 247.22px;
+	}
+	.hairbrush
+	{
+	        left: 327.289px;
+    position: absolute;
+    top: 265.22px;
+	}
+	.toilet
+	{
+	        left: 313.289px;
+    position: absolute;
+    top: 373.22px;
+	}
+	
+	  .rbox1 {
+        background-color:white;
+        width:450px;
+        height:450px;
+    }
+    .rbox2 {
+        position:absolute;
+        left:0px;
+        top:0px;
+        background-color:white;
+        width:450px;
+        height:450px;
+    }
+    .rbox3 {
+        position:absolute;
+        left:315.222px;
+        top:167.486px;
+        width:37.365px;
+        height:20.854px;
+    }
+    .rbox4 {
+        position:absolute;
+        left:153.531px;
+        top:314.986px;
+        width:66.618px;
+        height:20.854px;
+    }
+    .rbox5 {
+        position:absolute;
+        left:377.982px;
+        top:351.839px;
+        width:43.537px;
+        height:40.5px;
+    }
+    .rbox6 {
+        position:absolute;
+        left:124px;
+        top:528.839px;
+        width:68.019px;
+        height:20.854px;
+    }
+    .rbox7 {
+        position:absolute;
+        left:585.059px;
+        top:204.367px;
+        width:80.941px;
+        height:20.854px;
+    }
+    .rbox8 {
+        position:absolute;
+        left:252.5px;
+        top:215.339px;
+        width:61.704px;
+        height:20.854px;
+    }
+    .rbox9 {
+        position:absolute;
+        left:405.798px;
+        top:436.65px;
+        width:55.632px;
+        height:47.813px;
+    }
+    .rbox10 {
+        position:absolute;
+        left:353px;
+        top:684.339px;
+        width:45px;
+        height:20.854px;
+    }
+    .rbox11 {
+        position:absolute;
+        left:283.482px;
+        top:544.5px;
+        width:52.813px;
+        height:20.854px;
+    }
+    .rbox12 {
+        position:absolute;
+        left:653.982px;
+        top:124.646px;
+        width:40.518px;
+        height:24.854px;
+    }
+    .rbox13 {
+        position:absolute;
+        left:532.411px;
+        top:156.939px;
+        width:43.607px;
+        height:20.854px;
+    }
+    .rbox14 {
+	position:absolute;
+	left:139px;
+	top:10px;
+	padding:0px;
+	width:99px;
+	height:44px;
+    }
+    .rbox15 {
+        position:absolute;
+        left:247.482px;
+        top:117px;
+        width:61.813px;
+        height:20.854px;
+    }
+    .rbox16 {
+        position:absolute;
+        left:410.169px;
+        top:36.646px;
+        width:82.813px;
+        height:20.854px;
+    }
+    .rbox17 {
+        position:absolute;
+        left:619.983px;
+        top:218.474px;
+        width:5.515px;
+        height:45.564px;
+    }
+    .rbox18 {
+        position:absolute;
+        left:387.511px;
+        top:314.902px;
+        width:8.699px;
+        height:34.595px;
+    }
+    .rbox19 {
+        position:absolute;
+        left:238.26px;
+        top:131.083px;
+        width:32.423px;
+        height:17.364px;
+    }
+  .TextDiv
+	{
+		font-size:13px;
+	}
+	
+
+	.curtains
+	{
+	     left: 144.289px;
+    position: absolute;
+    top: 67.22px;
+	}
+	.bed
+	{
+    left: 184.289px;
+    position: absolute;
+    top: 97.22px;
+	}
+	.pajamas
+	{
+    left: 145.289px;
+    position: absolute;
+    top: 128.22px;
+	}
+	.blanket
+	{
+	    left: 93.289px;
+    position: absolute;
+    top: 187.22px;
+	}
+	.teddy
+	{
+	    left: 225.289px;
+    position: absolute;
+    top: 206.22px;
+	}.bedtime
+	{
+	    left: 241.289px;
+    position: absolute;
+    top: 266.22px;
+	}
+	.friends
+	{
+    left: 78.289px;
+    position: absolute;
+    top: 317.22px;
+	}
+	.blocks
+	{
+	      left: 163.289px;
+    position: absolute;
+    top: 333.22px;
+	}
+	.toys
+	{ 
+	    left: 211.289px;
+    position: absolute;
+    top: 418.22px;
+	}
+	.poster
+	{
+	    left: 258.289px;
+    position: absolute;
+    top: 17.22px;
+	}
+	.lamp
+	{
+	     left: 315.289px;
+    position: absolute;
+    top: 88.22px;
+	}
+	.night
+	{
+	       left: 343.289px;
+    position: absolute;
+    top: 120.22px;
+	}
+	.clock
+	{
+	     left: 382.289px;
+    position: absolute;
+    top: 70.22px;
+	}
+	#Rside{
+	position: absolute;
+	left:425px;
+	top:0px;	
+	
+	}
+	.text16 {
+        font-family:'OPTIMajerIrregular';
+        font-size:25px;
+        text-decoration:none;
+        color:#40A75F;
+    }
+</style>
+</head>
+
+<body>
+
+    
+        
+        <div class="box1">
+          <span id="t0258"><img src="images/46.jpg" alt="" width="425" height="445" 
+             /></span></div>
+        
+              
+<div class="TextDiv">
+ 			<div  class="towel"><span  id="w000559">towel</span></div>
+        	<div  class="shampoo"><span  id="w000560">shampoo</span></div>
+            <div class="soap"><span  id="w000561">soap</span></div>
+            <div  class="rubber"><span  id="w000562">rubber <br />duckie</span></div>
+             <div  class="tub"><span  id="w000563">tub</span></div>
+              <div  class="clothes"><span  id="w000564">clothes<br />hamper</span></div>
+              <div  class="slippers"><span  id="w000567">slippers</span></div>
+               <div  class="mirror"><span  id="w000572">mirror</span></div>
+               <div  class="toothbrush"><span  id="w000565">toothbrush</span></div> 
+                  <div  class="toothpaste"><span  id="w000566">toothpaste</span></div> 
+                     <div  class="bathrope"><span  id="w000568">bathrobe</span></div> 
+                       <div  class="sink"><span  id="w000573">sink</span></div>     
+                        <div  class="comb"><span  id="w000569">comb</span></div> 
+                         <div  class="hairbrush"><span  id="w000570">hairbrush</span></div>     
+                          <div  class="toilet"><span  id="w000571">toilet</span></div>              
+              
+        </div>
+        
+    
+    
+        
+        
+        
+
+<div class="box13">
+    <div class="pHeadparagraph">
+        <span class="text47"><span  id="w000558">Bath Time</span> </span>
+    </div>
+</div>
+
+<div id="Rside">    
+
+<div class="rbox1">
+<span id="t0259"><img src="images/47.jpg" alt="" width="425" height="445" /></span></div>
+<div class="TextDiv">
+<div  class="curtains"><span  id="w000575">curtains</span></div>
+<div  class="bed"><span  id="w000576">bed</span></div>
+<div class="pajamas"><span  id="w000577">pajamas</span></div>
+<div  class="blanket"><span  id="w000578">blanket</span></div>
+<div  class="teddy"><span  id="w000583">teddy <br />bear</span></div>
+<div  class="bedtime"><span  id="w000582">bedtime<br />story</span></div>
+<div  class="friends"><span  id="w000579">friends</span></div>
+<div  class="blocks"><span  id="w000580">blocks</span></div>
+<div  class="toys"><span  id="w000581">toys</span></div> 
+<div  class="poster"><span  id="w000585">poster</span></div> 
+<div  class="lamp"><span  id="w000584">lamp</span></div> 
+<div  class="night"><span  id="w000587">night-light</span></div>     
+<div  class="clock"><span  id="w000586">clock</span></div> 
+</div>
+<div class="rbox14">
+<div class="pHeadparagraph">
+<span class="text16"><span id="w000574">Bedtime</span> </span>
+</div>
+</div>
+
+</div>
+
+
+
+<div id="chk"></div>
+<div id="timeValue"></div>
+</body>
+</html>

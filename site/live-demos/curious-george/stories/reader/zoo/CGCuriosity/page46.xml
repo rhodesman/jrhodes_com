@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<smil xmlns="http://www.w3.org/ns/SMIL" version="3.0" profile="http://www.idpf.org/epub/30/profile/content/">
+<body>
+  <par>
+    <audio clipBegin="927.924973" clipEnd="929.536772" aText="your world" id="w000545"/>
+  </par>
+  <par>
+    <audio clipBegin="930.977217" clipEnd="931.721536" aText="sun" id="w000546"/>
+  </par>
+  <par>
+    <audio clipBegin="932.235598" clipEnd="933.145916" aText="mountains" id="w000547"/>
+  </par>
+  <par>
+    <audio clipBegin="933.467205" clipEnd="934.382878" aText="volcano" id="w000548"/>
+  </par>
+  <par>
+    <audio clipBegin="934.870166" clipEnd="935.534163" aText="valley" id="w000549"/>
+  </par>
+  <par>
+    <audio clipBegin="936.080354" clipEnd="936.722932" aText="river" id="w000550"/>
+  </par>
+  <par>
+    <audio clipBegin="937.338735" clipEnd="937.938474" aText="lake" id="w000551"/>
+  </par>
+  <par>
+    <audio clipBegin="939.009437" clipEnd="939.748402" aText="forest" id="w000552"/>
+  </par>
+  <par>
+    <audio clipBegin="940.990718" clipEnd="941.531555" aText="desert" id="w000553"/>
+  </par>
+  <par>
+    <audio clipBegin="942.254454" clipEnd="942.907742" aText="ocean" id="w000554"/>
+  </par>
+  <par>
+    <audio clipBegin="943.459287" clipEnd="945.012183" aText="stars" id="w000555"/>
+  </par>
+  <par>
+    <audio clipBegin="945.445923" clipEnd="946.056372" aText="moon" id="w000556"/>
+  </par>
+    
+
+</body>
+</smil>

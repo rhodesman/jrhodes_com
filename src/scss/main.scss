@@ -1,0 +1,117 @@
+@import 'inc/fonts';
+
+//colors
+$pageBG: #f1f1f1;
+$sectBG: #ffffff;
+$jrblack: #231f20;
+
+$minheight: 400px;
+
+
+.toAnimate {
+  transition: all 0.5s ease-in-out;
+}
+
+html, body {
+  min-height: 100vh;
+  //height: 100%;
+  //min-width:780px;
+}
+body {
+  background: $pageBG;
+  .container {
+    //min-height: 100%;
+    //position:relative;
+    align-items: center;
+    //min-width: 780px;
+    section {
+      position: absolute;
+      width: 100%;
+      min-height: 400px;
+      max-width: 800px;
+      top: 50%;
+      left:50%;
+      //transform: translateY(-50%);
+      background: $sectBG;
+      box-shadow: 0 9px 15px 0 rgba(0,0,0,.1);
+      @extend .toAnimate;
+      perspective: 1000px;
+      backface-visibility: hidden;
+      transform: translateY(-50%) translateX(-50%) rotateX(0deg);
+      &.flip, &.hidden {
+        z-index:-100;
+        transform: translateY(-50%) translateX(-50%) rotateX(180deg);
+      }
+      &:hover {
+        cursor: pointer;
+        box-shadow: 0 9px 25px 0 rgba(0,0,0,.4);
+      }
+    }
+    .back-btn {
+      position: absolute;
+      left:50%;
+      top:50%;
+      margin-top: ($minheight / 2) + 15;
+      border:none;
+      background: transparent;
+      opacity: 1;
+      @extend .toAnimate;
+      i {
+        font-size: 40px;
+        color:rgba(0,0,0,0.2);
+        @extend .toAnimate;
+      }
+      &:hover {
+        i {
+          color:rgba(0,0,0,1);
+        }
+      }
+      &.hidden {
+        opacity: 0;
+      }
+    }
+  }
+}
+.rotate-page {
+  display:none;
+  position: fixed;
+  z-index:9999;
+  left:0;
+  top:0;
+  right:0;
+  bottom:0;
+  background:rgba(238,238,238,1);
+  section {
+    position: relative;
+    top: 25%;
+    margin: auto;
+    min-width: 100px;
+    min-height: 208px;
+    width:50vw;
+    background: url('/img/1x/phoneIcon.png');
+    background: url('/img/SVG/phoneIcon.svg'),
+      linear-gradient(transparent, transparent);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+  }
+  &.pleaseRotate {
+    display:block;
+    section {
+      animation: 2.5s ease-in-out infinite rotatePhone;
+    }
+  }
+}
+@keyframes rotatePhone {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(90deg);
+  }
+}
+
+
+@import 'inc/cards';
+@import 'inc/portfolio';

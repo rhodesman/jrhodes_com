@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+	
+	<general>
+		<printablePdfUrl>pdf/umi.pdf</printablePdfUrl>
+	</general>
+	
+	<race>
+		<ticRate>50</ticRate>
+		<startSpeed>8</startSpeed>
+		<minSpeed>5</minSpeed>
+		<maxSpeed>13</maxSpeed>
+	
+	</race>
+	
+	<level1>
+		<endX>10500</endX>
+
+	</level1>
+	
+	<level2>
+		<endX>10500</endX>
+		
+	</level2>
+	
+	
+	<level3>
+		<endX>10500</endX>
+		
+	</level3>
+	
+	
+	<level4>
+		<endX>10500</endX>
+		
+	</level4>
+</data>

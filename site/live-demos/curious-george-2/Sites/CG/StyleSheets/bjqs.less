@@ -1,0 +1,31 @@
+ul.bjqs, ul.bjqs-controls, ol.bjqs-markers {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+ul.bjqs {
+	display: none;
+	position: relative;
+	overflow: hidden;
+}
+li.bjqs-slide {
+	display: none;
+	position: absolute;
+}
+ul.bjqs-controls { z-index: 9999;
+	li a {
+		display: block;
+		position: absolute;
+	}
+}
+ol.bjqs-markers { z-index: 9999;
+	li { float: left }
+}
+p.bjqs-caption {
+	display: block;
+	width: 96%;
+	margin: 0;
+	padding: 2%;
+	position: absolute;
+	bottom: 0;
+}

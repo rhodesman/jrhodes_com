@@ -1,0 +1,713 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+ "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>
+    Untitled Document
+</title>
+<link href="skin/blue.monday/jplayer.blue.monday.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.jplayer.min.js"></script>
+<meta http-equiv="Content-Type" content="text/html;CHARSET=utf-8"/>
+<meta name="viewport" content="width=450,height=450" />
+
+<style type="text/css">
+ 
+    a:link {
+        color:blue;
+        text-decoration:underline;
+    }
+    a:active { color:red }
+    a:visited { color:purple }
+    
+  @font-face {
+  font-family: 'Adobe Garamond Semibold Italic';
+  src: url("font/AGARAMSI.TTF");
+  }
+@font-face {
+  font-family: 'CuriousGerogeheader-Medium';
+  src: url("font/CURIOUGM.TTF");
+  }
+@font-face {
+  font-family: 'New Century Schoolbook Italic';
+  src: url("font/NEWCENSI.TTF");
+  }
+@font-face {
+  font-family: 'New Century Schoolbook Roman';
+  src: url("font/NEWCENSR.TTF");
+  }
+@font-face {
+  font-family: 'OPTIMajerIrregular';
+  src: url("font/OPTIMAJI.TTF");
+  }
+
+body {
+   width: 450px;
+   height: 450px;
+   margin:0; 
+
+        background-color:white;
+        color:#393838;
+    }
+    .text16 {
+        font-family:'OPTIMajerIrregular';
+        font-size:25px;
+        text-decoration:none;
+        color:#40A75F;
+    }
+    .pHeadparagraph {
+        line-height:42px;
+        text-align:center;
+    }
+    .box1 {
+        background-color:white;
+        width:450px;
+        height:450px;
+    }
+    .box2 {
+        position:absolute;
+        left:0px;
+        top:0px;
+        background-color:#C2BADB;
+        width:450px;
+        height:450px;
+    }
+    .box3 {
+        position:absolute;
+        left:56.693px;
+        top:34.016px;
+        width:583.109px;
+        height:646.299px;
+    }
+    .box4 {
+        position:absolute;
+        left:150px;
+        top:71.399px;
+        width:36.186px;
+        height:20.854px;
+    }
+    .box5 {
+        position:absolute;
+        left:363.15px;
+        top:95.461px;
+        width:31.75px;
+        height:20.854px;
+    }
+    .box6 {
+        position:absolute;
+        left:360.148px;
+        top:149px;
+        width:39.958px;
+        height:20.854px;
+    }
+    .box7 {
+        position:absolute;
+        left:397.641px;
+        top:488.646px;
+        width:38.67px;
+        height:20.854px;
+    }
+    .box8 {
+        position:absolute;
+        left:94.111px;
+        top:319.5px;
+        width:52.889px;
+        height:20.854px;
+    }
+    .box9 {
+        position:absolute;
+        left:116.679px;
+        top:436.369px;
+        width:39.693px;
+        height:20.854px;
+    }
+    .box10 {
+        position:absolute;
+        left:405.051px;
+        top:295.372px;
+        width:44.28px;
+        height:17.493px;
+    }
+    .box11 {
+        position:absolute;
+        left:578.028px;
+        top:400.76px;
+        width:35.222px;
+        height:20.854px;
+    }
+    .box12 {
+        position:absolute;
+        left:584.171px;
+        top:420px;
+        width:35.864px;
+        height:17.493px;
+    }
+    .box13 {
+        position:absolute;
+        left:582.152px;
+        top:439px;
+        width:52.615px;
+        height:20.854px;
+    }
+    .box14 {
+        position:absolute;
+        left:139.472px;
+        top:130.006px;
+        width:36.92px;
+        height:18.927px;
+    }
+    .box15 {
+        position:absolute;
+        left:562.839px;
+        top:642.5px;
+        width:37.147px;
+        height:20.854px;
+    }
+    .box16 {
+        position:absolute;
+        left:382.321px;
+        top:242.549px;
+        width:34.015px;
+        height:20.854px;
+    }
+    .box17 {
+        position:absolute;
+        left:374.552px;
+        top:535.646px;
+        width:63.448px;
+        height:20.854px;
+    }
+    .box18 {
+        position:absolute;
+        left:448.3px;
+        top:344.646px;
+        width:48.693px;
+        height:20.854px;
+    }
+    .box19 {
+        position:absolute;
+        left:183.907px;
+        top:78.509px;
+        width:38.321px;
+        height:8.974px;
+    }
+    .box20 {
+        position:absolute;
+        left:320.97px;
+        top:102.501px;
+        width:39.819px;
+        height:4.994px;
+    }
+    .box21 {
+        position:absolute;
+        left:298.063px;
+        top:145.757px;
+        width:62.758px;
+        height:10.738px;
+    }
+    .box22 {
+        position:absolute;
+        left:141.616px;
+        top:317.951px;
+        width:42.423px;
+        height:9.791px;
+    }
+    .box23 {
+        position:absolute;
+        left:152.292px;
+        top:443.165px;
+        width:45.68px;
+        height:16.232px;
+    }
+    .box24 {
+        position:absolute;
+        left:432.617px;
+        top:543.122px;
+        width:28.499px;
+        height:8.793px;
+    }
+    .box25 {
+        position:absolute;
+        left:346.593px;
+        top:250.29px;
+        width:33.385px;
+        height:12.19px;
+    }
+    .box26 {
+        position:absolute;
+        left:341.056px;
+        top:301.002px;
+        width:61.512px;
+        height:2.641px;
+    }
+    .box27 {
+        position:absolute;
+        left:414.621px;
+        top:351.848px;
+        width:36.64px;
+        height:23.818px;
+    }
+    .box28 {
+        position:absolute;
+        left:174.964px;
+        top:133.501px;
+        width:54.063px;
+        height:4.996px;
+    }
+    .box29 {
+        position:absolute;
+        left:435.265px;
+        top:496.533px;
+        width:32.925px;
+        height:12.967px;
+    }
+    .box30 {
+        position:absolute;
+        left:545.323px;
+        top:410.073px;
+        width:34.457px;
+        height:21.545px;
+    }
+    .box31 {
+        position:absolute;
+        left:537.793px;
+        top:427.767px;
+        width:47.293px;
+        height:22.187px;
+    }
+    .box32 {
+        position:absolute;
+        left:537.828px;
+        top:446.981px;
+        width:47.85px;
+        height:19.485px;
+    }
+    .box33 {
+        position:absolute;
+        left:508.941px;
+        top:641.504px;
+        width:57.173px;
+        height:8.698px;
+    }
+    .box34 {
+        position:absolute;
+        left:550.439px;
+        top:611.51px;
+        width:17.326px;
+        height:32.986px;
+    }
+    .box35 {
+	position:absolute;
+	left:303px;
+	top:18px;
+	padding:0px;
+	width:118px;
+	height:60px;
+    }
+    .box36 {
+        position:absolute;
+        left:594.718px;
+        top:536.469px;
+        width:49.707px;
+        height:23.531px;
+    }
+    .box37 {
+        position:absolute;
+        left:600.191px;
+        top:559.573px;
+        width:49.335px;
+        height:20.854px;
+    }
+    .box38 {
+        position:absolute;
+        left:53.464px;
+        top:580.146px;
+        width:33.911px;
+        height:20.854px;
+    }
+    .box39 {
+        position:absolute;
+        left:69.502px;
+        top:593.957px;
+        width:4.994px;
+        height:35.66px;
+    }
+    .box40 {
+        position:absolute;
+        left:522.987px;
+        top:533.039px;
+        width:78.561px;
+        height:11.212px;
+    }
+    .box41 {
+        position:absolute;
+        left:558.289px;
+        top:548.22px;
+        width:45.368px;
+        height:18.728px;
+    }
+	.LeftSide
+	{
+		 font-size: 13px;
+	}
+ 	.Lhair
+	{
+	
+    left: 86.289px;
+    position: absolute;
+    top: 37.22px;
+        
+	}
+	.Lears
+	{
+	left: 80.289px;
+    position: absolute;
+    top: 74.22px;
+        
+	}
+	.Lelbow
+	{
+	left: 45.289px;
+    position: absolute;
+    top: 192.22px;
+        
+	}
+	.Llegs
+	{
+	  left: 63.289px;
+    position: absolute;
+    top: 265.22px;
+        
+	}
+	.Ltoes
+	{
+	   left: 31.289px;
+    position: absolute;
+    top: 355.22px;
+        
+	}
+	.RightSide
+	{
+		 font-size: 13px;
+	}
+	.Rhead
+	{
+	    left: 214.289px;
+    position: absolute;
+    top: 53.22px;
+	}
+	.Rteeth
+	{
+	   left: 214.289px;
+    position: absolute;
+    top: 86.22px;
+	}
+	.Rarms
+	{
+	  left: 225.289px;
+    position: absolute;
+    top: 143.22px;
+	}
+	.Rfingers
+	{
+	     left: 236.289px;
+    position: absolute;
+    top: 177.22px;	
+	}
+	.Rhands
+	{
+	  left: 260.289px;
+    position: absolute;
+    top: 203.22px;
+	}
+	.Reyes
+	{
+	      left: 342.289px;
+    position: absolute;
+    top: 242.22px;
+	}
+	.Rnose
+	{
+	   left: 343.289px;
+    position: absolute;
+    top: 254.22px;	
+	}
+	.Rmouth
+	{
+	 left: 346.289px;
+    position: absolute;
+    top: 266.22px;
+	}
+	.Rbelly
+	{
+	    left: 354.289px;
+    position: absolute;
+    top: 324.22px;
+	}
+	.Rknees
+	{
+	  left: 356.289px;
+    position: absolute;
+    top: 340.22px;	
+	}
+	.Rfeet
+	{
+	   left: 333.289px;
+    position: absolute;
+    top: 391.22px;
+	}
+	.Rback
+	{
+	    left: 234.289px;
+    position: absolute;
+    top: 299.22px;
+	}
+	.Rbottom
+	{
+	left: 222px;
+	position: absolute;
+	top: 326.22px;
+	}
+	
+	    .rbox1 {
+        background-color:white;
+        width:450px;
+        height:450px;
+    }
+    .rbox2 {
+        position:absolute;
+        left:0px;
+        top:0px;
+        background-color:#D0D8A8;
+        width:450px;
+        height:450px;
+    }
+    .rbox3 {
+	position:absolute;
+	left:65px;
+	top:157px;
+	padding:0px;
+	width:116px;
+	height:21px;
+	text-align: center;
+    }
+    .rbox4 {
+	position:absolute;
+	left:247px;
+	top:158px;
+	width:112px;
+	height:17px;
+	text-align: center;
+    }
+    .rbox5 {
+        position:absolute;
+        left:415px;
+        top:294px;
+        background-color:#FFF9AB;
+        width:194px;
+        height:152px;
+    }
+    .rbox6 {
+	position:absolute;
+	left:244px;
+	top:279px;
+	padding:0px;
+	width:116px;
+	height:21px;
+	text-align: center;
+    }
+    .rbox7 {
+	position:absolute;
+	left:65px;
+	top:279px;
+	padding:0px;
+	width:116px;
+	height:21px;
+	text-align: center;
+    }
+    .rbox8 {
+	position:absolute;
+	left:66px;
+	top:404px;
+	padding:0px;
+	width:114px;
+	height:21px;
+	text-align: center;
+    }
+    .rbox9 {
+	position:absolute;
+	left:57px;
+	top:21px;
+	padding:0px;
+	width:164px;
+	height:34px;
+    }
+    .rbox10 {
+	position:absolute;
+	left:187px;
+	top:24px;
+	padding:0px;
+	width:199px;
+	height:31px;
+    }
+    .rbox11 {
+        position:absolute;
+        left:112px;
+        top:95px;
+        background-color:#F3D4B9;
+        width:193px;
+        height:152px;
+    }
+    .rbox12 {
+        position:absolute;
+        left:415px;
+        top:95px;
+        background-color:#C2BADB;
+        width:194px;
+        height:152px;
+    }
+    .rbox13 {
+        position:absolute;
+        left:112px;
+        top:294px;
+        background-color:#9FD5F7;
+        width:193px;
+        height:152px;
+    }
+	.rbox0 {
+	position:absolute;
+	left:245px;
+	top:402px;
+	padding:0px;
+	width:116px;
+	height:25px;
+	text-align: center;
+    }
+    .rbox14 {
+        position:absolute;
+        left:112px;
+        top:493px;
+        background-color:#D6D2E9;
+        width:193px;
+        height:152px;
+    }
+	
+	
+	#rpage{
+		position:absolute;
+		left:430px;	
+		top:-5px;
+	}
+	.text96 {
+        font-family:'OPTIMajerIrregular';
+        font-size:28px;
+        text-decoration:none;
+        color:#335C93;
+    }
+	  .text110 {
+        font-family:'New Century Schoolbook Roman';
+        font-size:17px;
+        text-decoration:none;
+        color:#393838;
+    }
+</style>
+</head>
+
+<body>
+
+    
+        
+        <div class="box1">
+   <span id="t0200"><img src="images/4.jpg" alt="" width="850" height="445" 
+             /></span></div>
+        
+        <div class="LeftSide">
+        	<div  class="Lhair"><span id="w00024">hair</span></div>
+            <div class="Lears"><span id="w00026">ears</span></div>
+            <div  class="Lelbow"><span id="w00030">elbow</span></div>
+             <div  class="Llegs"><span id="w00032">legs</span></div>
+              <div  class="Ltoes"><span id="w00033">toes</span></div>
+        </div>
+    
+     <div class="RightSide">
+        <div  class="Rhead"><span id="w00025">head</span></div>
+           <div  class="Rteeth"><span id="w00027">teeth</span></div>
+            <div  class="Rarms"><span id="w00028">arms</span></div>
+             <div  class="Rfingers"><span id="w00029">fingers</span></div>
+              <div  class="Rhands"><span id="w00031">hands</span></div>
+               <div  class="Reyes"><span id="w00036">eyes</span></div>
+                <div  class="Rnose"><span id="w00037">nose</span></div>
+                 <div  class="Rmouth"><span id="w00038">mouth</span></div>
+                  <div  class="Rbelly"><span id="w00039">belly</span></div>
+                   <div  class="Rknees"><span id="w00040">knees</span></div>
+                    <div  class="Rfeet"><span id="w00041">feet</span></div>
+                     <div  class="Rback"><span id="w00034">back</span></div>
+                    <div  class="Rbottom"><span id="w00035">bottom</span></div>
+                       
+        </div>
+        
+        
+        
+
+<div class="box35">
+    <div class="pHeadparagraph">
+        <span class="text16"><span id="w00021">Parts</span> <span id="w00022">of the</span>  </span>
+    </div>
+    <div class="pHeadparagraph">
+        <span class="text16"><span id="w00023">Body</span>  </span>
+    </div>
+</div>
+
+<!--rpage-->
+
+<div id="rpage">
+
+<div class="rbox3">
+    <div class="pCAPTION1">
+        <span class="tcaptioncharacter1"><span id="w00045">surprised</span> </span>
+    </div>
+</div>
+<div class="rbox4">
+<div class="pCAPTION1">
+        <span class="tcaptioncharacter1"><span id="w00046">scared</span> </span>
+    </div>
+</div>
+<div class="rbox6">
+<div class="pCAPTION1">
+        <span class="tcaptioncharacter1"><span id="w00048">sleepy</span> </span>
+    </div>
+</div>
+<div class="rbox7">
+    <div class="pCAPTION1">
+        <span class="tcaptioncharacter1"><span id="w00047">sad</span> </span>
+    </div>
+</div>
+<div class="rbox0">
+<div class="pCAPTION1">
+        <span class="tcaptioncharacter1"><span id="w00050">happy</span> </span>
+    </div>
+</div>
+<div class="rbox8">
+    <div class="pCAPTION1">
+        <span class="tcaptioncharacter1"><span id="w00049">angry</span> </span>
+    </div>
+</div>
+<div class="rbox9">
+  <div class="para3">
+        <span class="text96"><span id="w00042">Emotions</span>  </span>
+    </div>
+</div>
+<div class="rbox10">
+<div class="para3">
+        <span class="text110"><span id="w00043">Sometimes</span> <span id="w00044">I feel ...</span>  </span>
+    </div>
+</div>
+</div>
+
+<!--end-->
+
+
+<div id="chk"></div>
+<div id="timeValue"></div>
+</body>
+</html>

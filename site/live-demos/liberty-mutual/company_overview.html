@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Liberty Mutual - Response Ability</title>
+	<meta name="author" content="Wonderbean Studios - Jason Rhodes">
+	
+	<!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+	
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/sub_page.css">
+	
+	<script src="js/jquery-1.7.2.min.js" type="text/javascript"></script>
+	<script src="js/bootstrap.js" type="text/javascript"></script>
+	<script src="mediaelem/mediaelement-and-player.min.js"></script>
+	<link rel="stylesheet" href="mediaelem/mediaelementplayer.min.css" />
+	
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('.nav-tabs li').hover(function(){
+				$('ul', this).fadeOut(0).stop(true, true).fadeIn(400);
+			},
+			function(){
+				$('ul', this).css("display", "block").stop(true, true).delay(150).fadeOut(200);
+			});
+		});
+	</script>
+</head>
+<body>
+<div class="container home">
+	<header class="row">
+		<div class="span4">
+			<a href="index.html"><img src="img/liberty_mutual_logo.gif" alt="Liberty Mutual Insurance" class="LM_logo"></a>
+		</div>
+		<div class="span6">
+			<nav>
+				<ul class="nav nav-tabs">
+					<li class="dropdown">
+				  		<a class="dropdown-toggle" data-toggle="dropdown" href="#">To Our Stakeholders</a>
+				    	<ul class="dropdown-menu">
+				    		<li><a href="message_from_our_chairman.html">A Message from Our Chairman</a></li>
+				    		<li><a href="message_from_our_president.html">A Message from Our President and CEO</a></li>
+				    	</ul>
+					</li>
+					<li class="dropdown">
+						<a class="dropdown-toggle" data-toggle="dropdown" href="#">2011 in Review</a>
+						<ul class="dropdown-menu">
+							<li><a href="personal_markets.html">Personal Markets</a></li>
+							<li><a href="Liberty_Mutual_Agency_Corporation.html">Liberty Mutual Agency Corporation</a></li>
+							<li><a href="commercial_markets.html">Commercial Markets</a></li>
+							<li><a href="liberty_international.html">Liberty International</a></li>
+						</ul>
+					</li>
+					<li class="dropdown">
+						<a class="dropdown-toggle" data-toggle="dropdown" href="#">Overview</a>
+						<ul class="dropdown-menu">
+							<li><a class="dropdown-toggle" data-toggle="dropdown" href="company_overview.html">Company Overview</a></li>
+							<li><a href="global_presence.html">Global Presence</a></li>
+							<li><a href="board_of_directors.html">Board of Directors</a></li>
+							<li><a href="corporate_officers.html">Corporate Officers</a></li>
+							<li><a href="operating_management.html">Operating Management</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="financials.html">Financials</a>
+					</li>
+				</ul>
+			</nav>
+			
+		</div>
+	</header>
+	<div class="row sub_page_content">
+		<div class="span6 main_content">
+			<hgroup class="sub_head">
+				<h1>Company Overview</h1>
+			</hgroup>
+			<article class="row-fluid page_body">
+				<section class="span10">
+					<p class="callout">Boston-based Liberty Mutual Insurance Group is a diversified global insurer and the third-largest property and casualty insurer in the U.S. based on A.M. Best Company’s report of 2010 direct written premium. The Company also ranks 82nd on the Fortune 500 list of largest corporations in the U.S. based on 2010 revenue.</p>
+					
+					<p class="callout">As of December 31, 2011, the Company had $117.1 billion in consolidated assets, $99.3 billion in consolidated liabilities and $34.7 billion in annual consolidated revenues.</p>
+					
+					<p class="callout">Liberty Mutual Insurance Group employs more than 45,000 people in more than 900 offices throughout the world.</p>
+					<p>Liberty Mutual Insurance Group offers a wide range of insurance products and services, including personal automobile, workers compensation, homeowners, commercial multiple peril, commercial automobile, general liability, global specialty, group disability, assumed reinsurance, fire and surety through four strategic business units:</p>
+					
+					<ul class="copy_bullets">
+						<li>Personal Markets</li>
+						<li>Liberty Mutual Agency Corporation</li>
+						<li>Commercial Markets</li>		
+						<li>International</li>
+					</ul>
+					<p class="chart_discription">Each business unit operates independently of the others and has dedicated sales, underwriting, claims, actuarial, financial and certain information technology resources.</p>
+					<img src="img/revenue_chart_full.png" alt="revenue chart">
+					
+					
+					<img src="img/pie_charts.png" alt="lots of pie charts, they look nice" style="margin-bottom:10px;">
+					
+				</section>
+			</article>
+		</div>
+	</div>
+	<footer class="row">
+		<div class="span9 address">
+			<h1>2011 Annual Review </h1>
+			<h2>Liberty Mutual Insurance Group  |  175 Berkeley Street, Boston, MA 02117  |  <a href="www.libertymutualgroup.com">www.libertymutualgroup.com</a></h2>
+		</div>
+	</footer>
+</div>
+<script src="js/text-shrink.js" type="text/javascript"></script>
+</body>
+</html>

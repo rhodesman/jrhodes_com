@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<smil xmlns="http://www.w3.org/ns/SMIL" version="3.0" profile="http://www.idpf.org/epub/30/profile/content/">
+<body>
+ <par>
+    <audio clipBegin="704.008079" clipEnd="704.880914" aText="seasons" id="w000412"/>
+  </par>
+  <par>
+    <audio clipBegin="705.967941" clipEnd="706.546261" aText="winter" id="w000413"/>
+  </par>
+  <par>
+    <audio clipBegin="707.510127" clipEnd="708.324059" aText="icicles" id="w000414"/>
+  </par>
+  <par>
+    <audio clipBegin="708.966637" clipEnd="709.930503" aText="snowflakes" id="w000415"/>
+  </par>
+  <par>
+    <audio clipBegin="710.551662" clipEnd="711.221013" aText="scarf" id="w000416"/>
+  </par>
+  <par>
+    <audio clipBegin="711.927849" clipEnd="712.773909" aText="snowman" id="w000417"/>
+  </par>
+  <par>
+    <audio clipBegin="713.571777" clipEnd="714.364289" aText="mittens" id="w000418"/>
+  </par>
+  <par>
+    <audio clipBegin="714.642739" clipEnd="715.756541" aText="snowshoes" id="w000419"/>
+  </par>
+  <par>
+    <audio clipBegin="716.083184" clipEnd="717.041696" aText="snowsuit" id="w000420"/>
+  </par>
+  <par>
+    <audio clipBegin="718.225110" clipEnd="719.221105" aText="hotchoclate" id="w000421"/>
+  </par>
+  <par>
+    <audio clipBegin="719.767296" clipEnd="721.004258" aText="sled" id="w000422"/>
+  </par>
+  <par>
+    <audio clipBegin="721.100645" clipEnd="722.021673" aText="ice skates" id="w000423"/>
+  </par>
+  <par>
+    <audio clipBegin="722.444703" clipEnd="723.055152" aText="hat" id="w000424"/>
+  </par>
+  <par>
+    <audio clipBegin="724.388500" clipEnd="725.020368" aText="snow" id="w000425"/>
+  </par>
+  <par>
+    <audio clipBegin="725.609398" clipEnd="728.377837" aText="skis" id="w000426"/>
+  </par>
+  <par>
+    <audio clipBegin="728.581320" clipEnd="729.336348" aText="spring" id="w000427"/>
+  </par>
+  <par>
+    <audio clipBegin="730.332344" clipEnd="731.108792" aText="raincoat" id="w000428"/>
+  </par>
+  <par>
+    <audio clipBegin="731.713886" clipEnd="732.602785" aText="galoshes" id="w000429"/>
+  </par>
+  <par>
+    <audio clipBegin="733.325685" clipEnd="734.011101" aText="birds" id="w000430"/>
+  </par>
+  <par>
+    <audio clipBegin="734.605485" clipEnd="735.333740" aText="umbrella" id="w000431"/>
+  </par>
+  <par>
+    <audio clipBegin="736.003091" clipEnd="736.800959" aText="grass" id="w000432"/>
+  </par>
+  <par>
+    <audio clipBegin="737.636310" clipEnd="739.489075" aText="rain" id="w000433"/>
+  </par>
+  <par>
+    <audio clipBegin="739.489075" clipEnd="740.415458" aText="mud" id="w000434"/>
+  </par>
+  <par>
+    <audio clipBegin="740.742102" clipEnd="741.572098" aText="sproutes" id="w000435"/>
+  </par>
+  <par>
+    <audio clipBegin="742.214676" clipEnd="743.044672" aText="seeds" id="w000436"/>
+  </par>
+  <par>
+    <audio clipBegin="743.944280" clipEnd="745.347242" aText="spring flowers" id="w000437"/>
+  </par>
+  <par>
+    <audio clipBegin="746.691300" clipEnd="747.398135" aText="summer" id="w000438"/>
+  </par>
+  <par>
+    <audio clipBegin="749.577544" clipEnd="750.739539" aText="sun umbrella" id="w000439"/>
+  </par>
+  <par>
+    <audio clipBegin="751.885469" clipEnd="752.908239" aText="sunglasses" id="w000440"/>
+  </par>
+  <par>
+    <audio clipBegin="753.336624" clipEnd="754.311200" aText="swimsuit" id="w000441"/>
+  </par>
+  <par>
+    <audio clipBegin="755.157260" clipEnd="756.008676" aText="beach chair" id="w000442"/>
+  </par>
+  <par>
+    <audio clipBegin="756.924349" clipEnd="758.064924" aText="water wings" id="w000443"/>
+  </par>
+  <par>
+    <audio clipBegin="759.291177" clipEnd="760.276462" aText="seashells" id="w000444"/>
+  </par>
+  <par>
+    <audio clipBegin="760.645945" clipEnd="761.470586" aText="seaweed" id="w000445"/>
+  </par>
+  <par>
+    <audio clipBegin="762.038196" clipEnd="762.953869" aText="sun screen" id="w000446"/>
+  </par>
+  <par>
+    <audio clipBegin="763.842768" clipEnd="764.903022" aText="sand castle" id="w000447"/>
+  </par>
+  <par>
+    <audio clipBegin="766.257789" clipEnd="766.878948" aText="shovel" id="w000448"/>
+  </par>
+  <par>
+    <audio clipBegin="767.559009" clipEnd="768.046297" aText="pail" id="w000449"/>
+  </par>
+  <par>
+    <audio clipBegin="768.699585" clipEnd="769.299324" aText="crab" id="w000450"/>
+  </par>
+  <par>
+    <audio clipBegin="770.102546" clipEnd="771.409120" aText="seagulls" id="w000451"/>
+  </par>
+  <par>
+    <audio clipBegin="771.435894" clipEnd="772.330148" aText="sand" id="w000452"/>
+  </par>
+  <par>
+    <audio clipBegin="773.010210" clipEnd="773.636723" aText="ocean" id="w000453"/>
+  </par>
+  <par>
+    <audio clipBegin="775.891099" clipEnd="777.111997" aText="flipflops" id="w000454"/>
+  </par>
+  <par>
+    <audio clipBegin="778.466765" clipEnd="779.216439" aText="fall" id="w000455"/>
+  </par>
+  <par>
+    <audio clipBegin="780.431982" clipEnd="781.170946" aText="apples" id="w000456"/>
+  </par>
+  <par>
+    <audio clipBegin="781.776040" clipEnd="782.697068" aText="scare crow" id="w000457"/>
+  </par>
+  <par>
+    <audio clipBegin="783.318226" clipEnd="784.105384" aText="cider" id="w000458"/>
+  </par>
+  <par>
+    <audio clipBegin="784.780090" clipEnd="785.535119" aText="leaves" id="w000459"/>
+  </par>
+  <par>
+    <audio clipBegin="786.145568" clipEnd="787.088015" aText="pumkins" id="w000460"/>
+  </par>
+  <par>
+    <audio clipBegin="787.548529" clipEnd="788.276784" aText="sweater" id="w000461"/>
+  </par>
+  <par>
+    <audio clipBegin="788.844394" clipEnd="789.476262" aText="shed" id="w000462"/>
+  </par>
+  <par>
+    <audio clipBegin="790.386580" clipEnd="790.997029" aText="rake" id="w000463"/>
+  </par>
+ 
+
+</body>
+</smil>

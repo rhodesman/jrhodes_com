@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Curious George Paintbox</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <script type="text/javascript" src="Sites/CG/Javascript/jquery-1.7.2.min.js"></script>
+  <link rel="stylesheet" href="css/reset.css" />
+  <script type="text/javascript">
+    $(document).ready(function(){
+      $('#print-image').load(function() {
+        window.print();
+      });
+    });
+
+    function printImage(image) {
+      $('#print-image').attr('src', image);
+    }
+  </script>
+  <style type="text/css">
+    body {
+      background: #fff;
+      text-align: center;
+    }
+    #watermark {
+      margin-top: 6px;
+    }
+  </style>
+</head>
+<body>
+  <img id="print-image" alt="" />
+  <img id="watermark" src="images/watermark.png" width="236" height="19" alt="www.curiousgeorge.com" />
+</body>
+</html>

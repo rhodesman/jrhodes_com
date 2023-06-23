@@ -1,0 +1,776 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="viewport" content="width=450,height=450" />
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<link href="skin/blue.monday/jplayer.blue.monday.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.jplayer.min.js"></script>
+
+
+	<title></title>
+	<style type="text/css">
+@charset "utf-8";
+
+
+  @font-face {
+  font-family: 'Adobe Garamond Italic';
+  src: url("font/AGARAMOI.TTF");
+  }
+@font-face {
+  font-family: 'Adobe Garamond Regular';
+  src: url("font/AGARAMOR.TTF");
+  }
+@font-face {
+  font-family: 'OPTIMajerIrregular';
+  src: url("font/OPTIMAJI.TTF");
+  }
+
+body {
+   width: 450px;
+   height: 450px;
+   margin:0; 
+
+	background-color: #fff;
+	
+	margin: 0;
+	padding: 0;
+	border-width:0px;
+	border-style:solid;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-weight: normal;
+}
+p {
+	margin-bottom: 1.1em;
+	margin-top: 0;
+}
+#id_main p.lastNode {
+	margin-bottom: 0;
+}
+a:link img, a:visited img {
+	border: none;
+}
+div.clearFloat {
+	clear: both;
+	font-size: 0;
+	height: 0;
+	line-height: 0px;
+}
+li.clearFloat {
+	clear: both;
+}
+ul.symbolList {
+	display: inline;
+	float: left;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+.AbsWrap {
+	position: relative;
+	width: 100%;
+}
+.rowWrap {
+	width: 100%;
+}
+#id_main {
+	margin: 0 auto 0 0;
+	width: 450px;
+}
+#id_Interior_25 {
+	margin-left: 0px;
+	margin-top: 0px;
+	display: inline;
+	float: left;
+	height: 450px;
+	margin-bottom: 0;
+	width: 450px;
+}
+.Txt_ARE {
+	font-family: 'OPTIMajerIrregular', Arial, Helvetica, sans-serif;
+	font-size: 24px;
+	text-align: left;
+	color: #000;
+	line-height: 112.5%;
+	padding-bottom: 2px;
+	padding-top: 1px;
+	left: 49px;
+	position: absolute;
+	top: 43px;
+	margin-bottom: 0;
+}
+.Txt_OU {
+	font-family: 'OPTIMajerIrregular', Arial, Helvetica, sans-serif;
+	font-size: 24px;
+	text-align: left;
+	color: #000;
+	line-height: 112.5%;
+	padding-bottom: 2px;
+	padding-top: 1px;
+	left: 108px;
+	position: absolute;
+	top: 43px;
+	margin-bottom: 0;
+}
+.Txt_though {
+	
+	font-size: 10px;
+	text-align: left;
+	color: #000;
+	line-height: 225%;
+	padding-bottom: 2px;
+	padding-top: 1px;
+	left: 375px;
+	position: absolute;
+	top: 93px;
+	margin-bottom: 0;
+}
+.Txt_ippopotamuses {
+	
+	font-size: 10px;
+	text-align: left;
+	color: #000;
+	line-height: 225%;
+	padding-bottom: 2px;
+	padding-top: 1px;
+	left: 58px;
+	position: absolute;
+	top: 93px;
+	margin-bottom: 0;
+}
+.Txt_H {
+	
+	font-size: 10px;
+	text-align: left;
+	color: #000;
+	line-height: 225%;
+	padding-bottom: 2px;
+	padding-top: 1px;
+	left: 49px;
+	position: absolute;
+	top: 93px;
+	margin-bottom: 0;
+}
+.Txt_they {
+	
+	font-size: 10px;
+	text-align: left;
+	color: #000;
+	line-height: 225%;
+	padding-bottom: 2px;
+	padding-top: 1px;
+	left: 49px;
+	position: absolute;
+	top: 107px;
+	margin-bottom: 0;
+}
+.FW_2 {
+	
+	font-size: 10px;
+	text-align: left;
+	color: #000;
+	line-height: 225%;
+	padding-bottom: 2px;
+	padding-top: 1px;
+	left: 297px;
+	position: absolute;
+	top: 107px;
+	margin-bottom: 0;
+}
+.Txt_F {
+	
+	font-size: 10px;
+	text-align: left;
+	color: #000;
+	line-height: 225%;
+	padding-bottom: 2px;
+	padding-top: 1px;
+	left: 49px;
+	position: absolute;
+	top: 136px;
+	margin-bottom: 0;
+}
+.Txt_lamingos {
+	
+	font-size: 10px;
+	text-align: left;
+	color: #000;
+	line-height: 225%;
+	padding-bottom: 2px;
+	padding-top: 1px;
+	left: 55px;
+	position: absolute;
+	top: 136px;
+	margin-bottom: 0;
+}
+.Txt_kno {
+	
+	font-size: 10px;
+	text-align: left;
+	color: #000;
+	line-height: 225%;
+	padding-bottom: 2px;
+	padding-top: 1px;
+	left: 49px;
+	position: absolute;
+	top: 150px;
+	margin-bottom: 0;
+}
+.Txt_ws {
+	
+	font-size: 10px;
+	text-align: left;
+	color: #000;
+	line-height: 225%;
+	padding-bottom: 2px;
+	padding-top: 1px;
+	left: 66px;
+	position: absolute;
+	top: 150px;
+	margin-bottom: 0;
+}
+.Txt_G {
+	
+	font-size: 10px;
+	text-align: left;
+	color: #000;
+	line-height: 225%;
+	padding-bottom: 2px;
+	padding-top: 1px;
+	left: 49px;
+	position: absolute;
+	top: 179px;
+	margin-bottom: 0;
+}
+.Txt_iraffes {
+	
+	font-size: 10px;
+	text-align: left;
+	color: #000;
+	line-height: 225%;
+	padding-bottom: 2px;
+	padding-top: 1px;
+	left: 58px;
+	position: absolute;
+	top: 179px;
+	margin-bottom: 0;
+}
+.Txt_Their {
+	
+	font-size: 10px;
+	text-align: left;
+	color: #000;
+	line-height: 225%;
+	padding-bottom: 2px;
+	padding-top: 1px;
+	left: 242px;
+	position: absolute;
+	top: 179px;
+	margin-bottom: 0;
+}
+.Txt_grab {
+	
+	font-size: 10px;
+	text-align: left;
+	color: #000;
+	line-height: 225%;
+	padding-bottom: 2px;
+	padding-top: 1px;
+	left: 49px;
+	position: absolute;
+	top: 194px;
+	margin-bottom: 0;
+}
+.Txt_Lions {
+	
+	font-size: 10px;
+	text-align: left;
+	color: #000;
+	line-height: 225%;
+	padding-bottom: 2px;
+	padding-top: 1px;
+	left: 49px;
+	position: absolute;
+	top: 222px;
+	margin-bottom: 0;
+}
+.Txt_They {
+	
+	font-size: 10px;
+	text-align: left;
+	color: #000;
+	line-height: 225%;
+	padding-bottom: 2px;
+	padding-top: 1px;
+	left: 235px;
+	position: absolute;
+	top: 222px;
+	margin-bottom: 0;
+}
+.Txt_ﬁ {
+	
+	font-size: 10px;
+	text-align: left;
+	color: #000;
+	line-height: 225%;
+	padding-bottom: 2px;
+	padding-top: 1px;
+	left: 279px;
+	position: absolute;
+	top: 222px;
+	margin-bottom: 0;
+}
+.Txt_erce {
+	
+	font-size: 10px;
+	text-align: left;
+	color: #000;
+	line-height: 225%;
+	padding-bottom: 2px;
+	padding-top: 1px;
+	left: 285px;
+	position: absolute;
+	top: 222px;
+	margin-bottom: 0;
+}
+.Txt_teeth {
+	
+	font-size: 10px;
+	text-align: left;
+	color: #000;
+	line-height: 225%;
+	padding-bottom: 2px;
+	padding-top: 1px;
+	left: 49px;
+	position: absolute;
+	top: 237px;
+	margin-bottom: 0;
+}
+.Txt_Though {
+	
+	font-size: 10px;
+	text-align: left;
+	color: #000;
+	line-height: 225%;
+	padding-bottom: 2px;
+	padding-top: 1px;
+	left: 277px;
+	position: absolute;
+	top: 266px;
+	margin-bottom: 0;
+}
+.Txt_d {
+	
+	font-size: 10px;
+	text-align: left;
+	color: #000;
+	line-height: 225%;
+	padding-bottom: 2px;
+	padding-top: 1px;
+	left: 231px;
+	position: absolute;
+	top: 266px;
+	margin-bottom: 0;
+}
+.Txt_Ostriches {
+	
+	font-size: 10px;
+	text-align: left;
+	color: #000;
+	line-height: 225%;
+	padding-bottom: 2px;
+	padding-top: 1px;
+	left: 49px;
+	position: absolute;
+	top: 266px;
+	margin-bottom: 0;
+}
+.Txt_'t {
+	
+	font-size: 10px;
+	text-align: left;
+	color: #000;
+	line-height: 225%;
+	padding-bottom: 2px;
+	padding-top: 1px;
+	left: 355px;
+	position: absolute;
+	top: 266px;
+	margin-bottom: 0;
+}
+.Txt_ﬂ {
+	
+	font-size: 10px;
+	text-align: left;
+	color: #000;
+	line-height: 225%;
+	padding-bottom: 2px;
+	padding-top: 1px;
+	left: 364px;
+	position: absolute;
+	top: 266px;
+	margin-bottom: 0;
+}
+.Txt_y {
+	
+	font-size: 10px;
+	text-align: left;
+	color: #000;
+	line-height: 225%;
+	padding-bottom: 2px;
+	padding-top: 1px;
+	left: 370px;
+	position: absolute;
+	top: 266px;
+	margin-bottom: 0;
+}
+.Txt_they2 {
+	
+	font-size: 10px;
+	text-align: left;
+	color: #000;
+	line-height: 225%;
+	padding-bottom: 2px;
+	padding-top: 1px;
+	left: 377px;
+	position: absolute;
+	top: 266px;
+	margin-bottom: 0;
+}
+.Txt_ve {
+	
+	font-size: 10px;
+	text-align: left;
+	color: #000;
+	line-height: 225%;
+	padding-bottom: 2px;
+	padding-top: 1px;
+	left: 49px;
+	position: absolute;
+	top: 280px;
+	margin-bottom: 0;
+}
+.Txt_ry {
+	
+	font-size: 10px;
+	text-align: left;
+	color: #000;
+	line-height: 225%;
+	padding-bottom: 2px;
+	padding-top: 1px;
+	left: 59px;
+	position: absolute;
+	top: 280px;
+	margin-bottom: 0;
+}
+.Txt_fast {
+	
+	font-size: 10px;
+	text-align: left;
+	color: #000;
+	line-height: 225%;
+	padding-bottom: 2px;
+	padding-top: 1px;
+	left: 68px;
+	position: absolute;
+	top: 280px;
+	margin-bottom: 0;
+}
+.Txt_ve2 {
+	
+	font-size: 10px;
+	text-align: left;
+	color: #000;
+	line-height: 225%;
+	padding-bottom: 2px;
+	padding-top: 1px;
+	left: 277px;
+	position: absolute;
+	top: 280px;
+	margin-bottom: 0;
+}
+.FW_1 {
+	
+	font-size: 10px;
+	text-align: left;
+	color: #000;
+	line-height: 225%;
+	padding-bottom: 2px;
+	padding-top: 1px;
+	left: 356px;
+	position: absolute;
+	top: 280px;
+	margin-bottom: 0;
+}
+.Txt_Rhinoceroses {
+	
+	font-size: 10px;
+	text-align: left;
+	color: #000;
+	line-height: 225%;
+	padding-bottom: 2px;
+	padding-top: 1px;
+	left: 49px;
+	position: absolute;
+	top: 309px;
+	margin-bottom: 0;
+}
+.Txt_ry2 {
+	
+	font-size: 10px;
+	text-align: left;
+	color: #000;
+	line-height: 225%;
+	padding-bottom: 2px;
+	padding-top: 1px;
+	left: 284px;
+	position: absolute;
+	top: 309px;
+	margin-bottom: 0;
+}
+.Txt_po {
+	
+	font-size: 10px;
+	text-align: left;
+	color: #000;
+	line-height: 225%;
+	padding-bottom: 2px;
+	padding-top: 1px;
+	left: 293px;
+	position: absolute;
+	top: 309px;
+	margin-bottom: 0;
+}
+.Txt_wer {
+	
+	font-size: 10px;
+	text-align: left;
+	color: #000;
+	line-height: 225%;
+	padding-bottom: 2px;
+	padding-top: 1px;
+	left: 308px;
+	position: absolute;
+	top: 309px;
+	margin-bottom: 0;
+}
+.Txt_ful {
+	
+	font-size: 10px;
+	text-align: left;
+	color: #000;
+	line-height: 225%;
+	padding-bottom: 2px;
+	padding-top: 1px;
+	left: 325px;
+	position: absolute;
+	top: 309px;
+	margin-bottom: 0;
+}
+.Txt_The {
+	
+	font-size: 10px;
+	text-align: left;
+	color: #000;
+	line-height: 225%;
+	padding-bottom: 2px;
+	padding-top: 1px;
+	left: 343px;
+	position: absolute;
+	top: 309px;
+	margin-bottom: 0;
+}
+.Txt_made {
+	
+	font-size: 10px;
+	text-align: left;
+	color: #000;
+	line-height: 225%;
+	padding-bottom: 2px;
+	padding-top: 1px;
+	left: 49px;
+	position: absolute;
+	top: 323px;
+	margin-bottom: 0;
+}
+.Txt_ngernails {
+	
+	font-size: 10px;
+	text-align: left;
+	color: #000;
+	line-height: 225%;
+	padding-bottom: 2px;
+	padding-top: 1px;
+	left: 299px;
+	position: absolute;
+	top: 323px;
+	margin-bottom: 0;
+}
+.Txt_ﬁ2 {
+	
+	font-size: 10px;
+	text-align: left;
+	color: #000;
+	line-height: 225%;
+	padding-bottom: 2px;
+	padding-top: 1px;
+	left: 293px;
+	position: absolute;
+	top: 323px;
+	margin-bottom: 0;
+}
+.Txt_ngernails2 {
+	
+	font-size: 10px;
+	text-align: left;
+	color: #000;
+	line-height: 225%;
+	padding-bottom: 2px;
+	padding-top: 1px;
+	left: 183px;
+	position: absolute;
+	top: 323px;
+	margin-bottom: 0;
+}
+.Txt_ﬁ3 {
+	
+	font-size: 10px;
+	text-align: left;
+	color: #000;
+	line-height: 225%;
+	padding-bottom: 2px;
+	padding-top: 1px;
+	left: 177px;
+	position: absolute;
+	top: 323px;
+	margin-bottom: 0;
+}
+.Txt_gr {
+	
+	font-size: 10px;
+	text-align: left;
+	color: #000;
+	line-height: 225%;
+	padding-bottom: 2px;
+	padding-top: 1px;
+	left: 49px;
+	position: absolute;
+	top: 338px;
+	margin-bottom: 0;
+}
+.Txt_ow {
+	
+	font-size: 10px;
+	text-align: left;
+	color: #000;
+	line-height: 225%;
+	padding-bottom: 2px;
+	padding-top: 1px;
+	left: 58px;
+	position: absolute;
+	top: 338px;
+	margin-bottom: 0;
+}
+.Txt_back {
+	
+	font-size: 10px;
+	text-align: left;
+	color: #000;
+	line-height: 225%;
+	padding-bottom: 2px;
+	padding-top: 1px;
+	left: 72px;
+	position: absolute;
+	top: 338px;
+	margin-bottom: 0;
+}
+
+</style>
+
+	<!--[if IE]>
+	<style type="text/css" media="all">.borderitem {border-style: solid;}</style>
+	<![endif]-->
+</head>
+
+<body>
+
+<div id="id_main">
+	<img src="images/Interior_25.jpg" id="id_Interior_25" alt="" />
+  <div class="clearFloat"></div>
+        <div class="Txt_ARE">
+	
+		<p class="lastNode"><span id="w0981">ARE</span> <span id="w0982">YOU</span> <span id="w0983">CURIOUS</span> <span id="w0984">ABOUT</span> <span id="w0985">ANIMALS?</span>
+	</p>
+</div>
+<div class="Txt_H">
+	
+		<p class="lastNode"><span id="w0986">Hippopotamuses</span> <span id="w0987">can</span> <span id="w0988">live</span> <span id="w0989">in</span> <span id="w0990">the</span> <span id="w0991">water</span> <span id="w0992">or</span> <span id="w0993">on</span> <span id="w0994">land.</span> <span id="w0995">On</span> <span id="w0996">a</span> <span id="w0997">hot,</span> <span id="w0998">sunny</span> <span id="w0999">day,</span> <span id="w1000">though,</span>
+	</p>
+</div>
+<div class="Txt_they">
+	
+		<p class="lastNode"><span id="w1001">they</span> <span id="w1002">prefer</span> <span id="w1003">to</span> <span id="w1004">use</span> <span id="w1005">water</span> <span id="w1006">or</span> <span id="w1007">mud</span> <span id="w1008">to</span> <span id="w1009">cool</span> <span id="w1010">themselves</span> <span id="w1011">off.</span>
+	</p>
+</div>
+<div class="Txt_F">
+	
+		<p class="lastNode"><span id="w1012">Flamingos</span> <span id="w1013">often</span> <span id="w1014">stand</span> <span id="w1015">on</span> <span id="w1016">just</span> <span id="w1017">one</span> <span id="w1018">foot</span> <span id="w1019">for</span> <span id="w1020">long</span> <span id="w1021">periods</span> <span id="w1022">of</span> <span id="w1023">time,</span> <span id="w1024">though</span> <span id="w1025">no</span> <span id="w1026">one</span>
+	</p>
+</div>
+<div class="Txt_kno">
+	
+		<p class="lastNode"><span id="w1027">knows</span> <span id="w1028">quite</span> <span id="w1029">why</span> <span id="w1030">they</span> <span id="w1031">do</span> <span id="w1032">it!</span>
+	</p>
+</div>
+<div class="Txt_G">
+	
+		<p class="lastNode"><span id="w1033">Giraffes</span> <span id="w1034">are</span> <span id="w1035">the</span> <span id="w1036">tallest</span> <span id="w1037">of</span> <span id="w1038">all</span> <span id="w1039">land</span> <span id="w1040">animals.</span> <span id="w1041">Their</span> <span id="w1042">long</span> <span id="w1043">legs</span> <span id="w1044">and</span> <span id="w1045">necks</span> <span id="w1046">help</span> <span id="w1047">them</span>
+	</p>
+</div>
+<div class="Txt_grab">
+	
+		<p class="lastNode"><span id="w1048">grab</span> <span id="w1049">and</span> <span id="w1050">eat</span> <span id="w1051">leaves</span> <span id="w1052">from</span> <span id="w1053">high</span> <span id="w1054">up</span> <span id="w1055">in</span> <span id="w1056">the</span> <span id="w1057">trees.</span>
+	</p>
+</div>
+<div class="Txt_Lions">
+	
+		<p class="lastNode"><span id="w1058">Lions</span> <span id="w1059">live</span> <span id="w1060">in</span> <span id="w1061">large</span> <span id="w1062">families</span> <span id="w1063">called</span> <span id="w1064">prides.</span> <span id="w1065">They</span> <span id="w1066">are</span> <span id="w1067">fierce</span> <span id="w1068">predators,</span> <span id="w1069">with</span> <span id="w1070">canine</span> 
+	</p>
+</div>
+<div class="Txt_teeth">
+	
+		<p class="lastNode"><span id="w1071">teeth</span> <span id="w1072">more</span> <span id="w1073">than</span> <span id="w1074">three</span> <span id="w1075">inches</span> <span id="w1076">long!</span>
+	</p>
+</div>
+<div class="Txt_Ostriches">
+	
+		<p class="lastNode"><span id="w1077">Ostriches</span> <span id="w1078">are</span> <span id="w1079">the</span> <span id="w1080">largest</span> <span id="w1081">of</span> <span id="w1082">all</span> <span id="w1083">of</span> <span id="w1084">the</span> <span id="w1085">bird</span> <span id="w1086">species.</span> <span id="w1087">Though</span> <span id="w1088">they</span> <span id="w1089">can&rsquo;t</span> <span id="w1090">fly,</span> <span id="w1091">they</span> <span id="w1092">are</span>
+	</p>
+</div>
+<div class="Txt_ve">
+	
+		<p class="lastNode"><span id="w1093">very</span> <span id="w1094">fast</span> <span id="w1095">runners</span>&mdash;<span id="w1096">hitting</span> <span id="w1097">speeds</span> <span id="w1098">of</span> <span id="w1099">up</span> <span id="w1100">to</span> <span id="w1101">forty-five</span> <span id="w1102">miles</span> <span id="w1103">per</span> <span id="w1104">hour.</span>
+	</p>
+</div>
+<div class="Txt_Rhinoceroses">
+	
+		<p class="lastNode"><span id="w1105">Rhinoceroses</span> <span id="w1106">have</span> <span id="w1107">horns</span> <span id="w1108">on</span> <span id="w1109">their</span> <span id="w1110">nose</span> <span id="w1111">that</span> <span id="w1112">look</span> <span id="w1113">very</span> <span id="w1114">powerful.</span> <span id="w1115">The</span> <span id="w1116">horns</span> <span id="w1117">are</span>
+	</p>
+</div>
+<div class="Txt_made">
+	
+		<p class="lastNode"><span id="w1118">made</span> <span id="w1119">of</span> <span id="w1120">material</span> <span id="w1121">similar</span> <span id="w1122">to</span> <span id="w1123">fingernails,</span> <span id="w1124">though.</span> <span id="w1125">Like</span> <span id="w1126">fingernails,</span> <span id="w1127">they</span> <span id="w1128">can</span>
+	</p>
+</div>
+<div class="Txt_gr">
+	
+		<p class="lastNode"><span id="w1129">grow</span> <span id="w1130">back</span> <span id="w1131">if</span> <span id="w1132">cut!</span>
+	</p>
+</div>
+</div>
+ <div id="timeValue"></div>
+ <div id="chk"></div>
+</body>
+</html>

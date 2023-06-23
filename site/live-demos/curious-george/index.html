@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Home - Curious George</title>
+<base href="https://jasonrhodes.me/live-demos/curious-george/">
+<link rel="shortcut icon" href="https://jasonrhodes.me/wordpress/wp-content/uploads/2015/02/JR-favicon.png" type="image/vnd.microsoft.icon">
+<link rel="icon" href="https://jasonrhodes.me/wordpress/wp-content/uploads/2015/02/JR-favicon.png" type="image/x-ico">
+<!--[if lt IE 9]><script src="js/html5.js"></script><![endif]-->
+<script src="js/filmotype.js" type="text/javascript"></script>
+<link rel="stylesheet" href="css/style.css" type="text/css">
+<script src="js/modernizr.custom.40745.js"></script>
+<script src="js/jquery-1.7.2.min.js" type="text/javascript"></script>
+<script src="js/jquery.history.js" type="text/javascript"></script>
+<script src="js/jquery.hoverIntent.js" type="text/javascript"></script>
+<!--<script src="js/less-1.3.0.min.js"></script>-->
+<script src="js/bootstrap.min.js" type="text/javascript"></script>
+<script src="js/basic-jquery-slider.min.js" type="text/javascript"></script>
+<script src="js/soundmanager2-nodebug-jsmin.js" type="text/javascript"></script>
+<script src="js/main.js" type="text/javascript"></script>
+</head>
+<body class="home">
+	<div id="main">
+		<header>
+            <nav>
+                <h1><a href="" title="Home">Curious George</a></h1>
+				<ul>
+                    <li><a class="nav-games" href="games" title="Games">Games</a></li>
+                    <li><a class="nav-stories" href="stories" title="Stories">Stories</a></li>
+                    <li><a class="nav-create" href="create" title="Create">Create</a></li>
+                    <li><a class="nav-curious" href="themes" title="Curious?">Curious About</a></li>
+                </ul>
+				<a id="mobile-app" href="http://itunes.apple.com/us/app/curious-george-at-halloween-for/id513304499?mt=8" title="Get our mobile app!" target="_blank"><strong>Curious George at the Zoo</strong> Free on iPhone and iPad</a>
+				<a id="playhouse" href="playhouse.html" title="Visit Curious George's Playhouse">Visit George's Playhouse</a>
+            </nav>
+			<a id="mute">Mute</a>
+        </header>
+		<section id="content">
+            <ul id="home-navigation" data-transition="slide">
+                <li class="curious">
+                    <div>
+<!-- START theme box -->
+<script>
+;(function($) {
+	$(function() {
+		$.fn.bgPos = function(x, y) {
+			return this.each(function() {
+				var $this = $(this),
+					pos = $this.css("background-position").split(" ");
+
+				$this.css("background-position", (x === null ? pos[0] : x) + " " + (y === null ? pos[1] : y));
+			});
+		};
+
+		// Prepare variables
+		var History = window.History,
+			isMobile = navigator.userAgent.match(/(iPhone|iPod|iPad|Android|BlackBerry)/),
+			audioExt = Modernizr.audio.mp3 ? '.mp3' : '.wav',
+			baseUrl = History.getBaseHref(),
+			container = $(".dinosaurs-theme");
+
+		container.children().each(function() {
+			// Prepare variables
+			var $this = $(this),
+				animation = $this.data("animation"),
+					voiceOver = $this.data("voiceover") || null;
+
+				// Build voice-over
+				if (voiceOver) {
+					$this.voiceOver({
+						data: { noise: baseUrl + voiceOver + audioExt },
+						startAnim: function() { $this.addClass("active") },
+						stopAnim: function() { $this.removeClass("active") },
+						overlapVolume: 1,
+						isTracked: false
+					})
+					.css("cursor", "pointer")
+					.click(function() { $this.voiceOver("play", "noise") });
+				}
+
+			if (animation == "filmstrip") {
+				// Build filmstrip action
+				var isAnimating = false,
+					frame = 0,
+					height = $this.height(),
+					width = $this.width(),
+					frames = $this.data("frames") || 1,
+					speed = 83,
+					delay = 800,
+					hasMouseover = $this.data("mouseover") || false;
+
+				if (hasMouseover) {
+					$this.bgPos("0px", null);
+
+					$this.hover(
+						function() { $this.bgPos(-width + "px", null) },
+						function() { $this.bgPos("0px", null) }
+					);
+				}
+
+				$this
+					.css("cursor", "pointer")
+					.click(function() {
+						// Prevent overlap
+						if (isAnimating) return;
+
+						// Prepare variables
+						height = $this.height();
+						width = $this.width(),
+						isAnimating = true;
+						frame = 0;
+
+						// Animate
+						var interval = setInterval(function() {
+							if (frame >= frames) {
+								clearInterval(interval);
+								setTimeout(function() {
+									interval = setInterval(function() {
+										if (frame <= 0) {
+											clearInterval(interval);
+											isAnimating = false;
+										} else {
+											$this.bgPos(null, (--frame * -height) + "px");
+										}
+									}, speed);
+								}, delay);
+							} else {
+								$this.bgPos(null, (frame++ * -height) + "px");
+							}
+						}, speed);
+					});
+			} else if (animation == "constant") {
+				// Build fade action
+				var isFading = false,
+					delay = 800;
+
+				$this.filmstrip({
+					step: $this.height(),
+					steps: $this.data("frames") || 1,
+					speed: 83 * 2
+				}).filmstrip("start");
+			}
+		});
+	});
+})(jQuery);
+</script>
+<style>
+.dinosaurs-theme { background-image: url(imgs/themes/dinosaurs/home/bg.jpg) }
+.dinosaurs-theme > * { position: absolute; }
+.dinosaurs-theme .curious-about {
+  top: 0;
+  left: 0;
+  width: 554px;
+  height: 187px;
+  background: transparent url(imgs/themes/dinosaurs/banner.png) scroll no-repeat 0 0;
+  z-index: 1;
+}
+.dinosaurs-theme .foreground {
+  bottom: 0;
+  left: 0;
+  width: 377px;
+  height: 343px;
+  background: transparent url(imgs/themes/dinosaurs/home/bg.png) scroll no-repeat 0 0;
+  z-index: 4;
+  pointer-events: none;
+}
+.dinosaurs-theme .anglosaur {
+  left: 0px;
+  bottom: 21px;
+  width: 430px;
+  height: 319px;
+  background: transparent url(imgs/themes/dinosaurs/home/anglosaur.png) scroll no-repeat 0 0;
+  z-index: 2;
+}
+.dinosaurs-theme .george {
+  left: 110px;
+  bottom: -6px;
+  width: 217px;
+  height: 239px;
+  background: transparent url(imgs/themes/dinosaurs/home/george.png) scroll no-repeat 0 0;
+  z-index: 3;
+}
+.dinosaurs-theme .egg {
+  left: 326px;
+  bottom: -9px;
+  width: 145px;
+  height: 129px;
+  background: transparent url(imgs/themes/dinosaurs/home/egg.png) scroll no-repeat 0 0;
+  z-index: 3;
+}
+.dinosaurs-theme .t-rex {
+  right: 18px;
+  top: 68px;
+  width: 306px;
+  height: 194px;
+  background: transparent url(imgs/themes/dinosaurs/home/t-rex.png) scroll no-repeat 0 0;
+  z-index: 3;
+}
+.dinosaurs-theme .pterodactyl {
+  right: 254px;
+  top: 35px;
+  width: 99px;
+  height: 52px;
+  background: transparent url(imgs/themes/dinosaurs/home/pterodactyl.png) scroll no-repeat 0 0;
+  z-index: 3;
+}
+@media (max-width: 999px) {
+  li.curious > div { overflow: hidden;  }
+  .dinosaurs-theme { background-image: url(imgs/themes/dinosaurs/home/mobile/bg.jpg) }
+  .dinosaurs-theme .anglosaur {
+    width: 468px;
+	height: 229px;
+	background-image: url(imgs/themes/dinosaurs/home/mobile/anglosaur.png);
+  }
+  .dinosaurs-theme .george {
+    left: 188px;
+	bottom: -10px;
+	width: 168px;
+	height: 184px;
+	background-image: url(imgs/themes/dinosaurs/home/mobile/george.png);
+  }
+  .dinosaurs-theme .egg {
+	width: 123px;
+	height: 109px;
+	background-image: url(imgs/themes/dinosaurs/home/mobile/egg.png);
+  }
+  .dinosaurs-theme .t-rex {
+    right: 65px;
+	top: 55px;
+	width: 253px;
+	height: 162px;
+	background-image: url(imgs/themes/dinosaurs/home/mobile/t-rex.png);
+  }
+}
+</style>
+<div class="dinosaurs-theme" data-voiceover='["snds/voice/woman/CG-Heather_GeorgeIsCuriousAbout_GeorgeIsCuriousAbout_Dinosaurs:2000","snds/voice/woman/Site_Nav-H_001:3000"]'>
+	<span class="curious-about" data-voiceover="snds/voice/woman/CG-Heather_ThemeTopics_LanguageToggle_Dinosaurs"><b>Curious About</b> <strong>The Neighborhood</strong></span>
+	<a class="go" href="themes/play/dinosaurs/dinosaur-video.html" title="Curious?">Go</a>
+	<div class="foreground"></div>
+	<div class="pterodactyl"></div>
+	<div class="anglosaur" data-voiceover="snds/sfx/Dinosaurs/trex_roar_02" data-animation="filmstrip" data-frames="2" data-mouseover="true"></div>
+	<div class="george" data-voiceover="snds/sfx/Dinosaurs/george-ooh" data-animation="filmstrip" data-frames="2" data-mouseover="true"></div>
+	<div class="t-rex" data-voiceover="snds/sfx/Dinosaurs/trex_roar_01"data-animation="filmstrip" data-frames="2" data-mouseover="true"></div>
+	<div class="egg" data-voiceover="snds/sfx/Dinosaurs/baby_dino_hatch01"data-animation="filmstrip" data-frames="3" data-mouseover="true"></div>
+</div>
+<!-- END theme box -->
+					</div>
+                </li>
+                <li class="games"><a href="games" title="Games">Games</a></li>
+                <li class="stories"><a href="stories" title="Stories">Stories</a></li>
+                <li class="create"><a href="create" title="Create">Create</a></li>
+            </ul>
+            <div id="language">
+                <p>Select Language: <b>English</b> | <i>Espa&ntilde;ol</i></p>
+            </div>
+            <div id="home-content" data-transition="fade">
+                <section class="parents">
+                    <h1><a href="#" title="Parents" class="no-ajax"><strong>Parents</strong> <span>Find tools and activities to develop your Curious Learner at home.</span></a></h1>
+                    <div>
+                        <article>
+                            <nav>
+                                <ul>
+                                    <li><a href="parents/activities.html" title="Activities">Activities</a></li>
+                                    <li><a href="products/workbooks.html" title="Workbooks">Workbooks</a></li>
+                                    <li><a href="products" title="Products">Products</a></li>
+                                    <li><a href="parents/friends.html" title="Friends">Other HMH Characters</a></li>
+                                </ul>
+                                <div class="account">
+									<a href="login" title="Log in" class="login btn no-ajax" data-target="#cgLoginModal">Log in</a>
+									<a href="register" title="Register" class="register btn no-ajax" data-target="#cgRegModal">Register</a>
+								</div>
+                            </nav>
+                            <a href="http://itunes.apple.com/us/app/curious-george-at-halloween-for/id513304499?mt=8" class="top app" target="_blank">
+                                <span>Is your child curious about animals? Curious George is!</span>
+                            </a>
+                            <div class="content">
+                                <div>
+                                    <h2>Nurture Your Own Curious<br>
+                                    Learner at Home!</h2>
+                                    <p><b>Welcome to curiousgeorge.com</b>&mdash; a fun, educational, and engaging destination for you and your Curious Learner. Our games and activities are designed not only to entertain but to build a foundation of early literacy, early math, early science, and creativity skills. Your child will love the interactive games and activities &mdash; and you'll love the early educational concepts they reinforce.</p>
+
+                                    <p>Twice a month, George will introduce your children (ages preschool to kindergarten) to a new "Curious About" theme for them to explore. Through our award-winning Curious George books, audio ebooks, learning apps, and other great books and products, as well as themed activities you can do at home with your child, you will learn how you can transform your child's love of Curious George into a love of learning.</p>
+                                </div>
+                                <div>
+                                    <strong class="large">Find tools and activities to develop <b>your</b> Curious Learner at Home</strong>
+                                    <a href="parents" class="learn-more" title="Learn More" target="_top">Learn More</a>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </section>
+                <section class="teachers">
+                    <h1><a href="#" title="Teachers" class="no-ajax"><strong>Teachers</strong> <span>Discover resources for making early learning fun with Curious George.</span></a></h1>
+                    <div>
+                        <article>
+                            <nav>
+                                <ul>
+                                    <li><a href="teachers/resources.html" title="Classroom Resources">Classroom Resources</a></li>
+                                    <li><a href="products/books.html" title="Books">Books</a></li>
+                                    <li><a href="products/workbooks.html" title="Workbooks">Workbooks</a></li>
+                                    <li><a href="teachers/pre-k.html" title="Splash into Pre-K">Splash into Pre-K</a></li>
+                                </ul>
+                                <div class="account">
+									<a href="login" title="Log in" class="login btn no-ajax" data-target="#cgLoginModal">Log in</a>
+									<a href="register" title="Register" class="register btn no-ajax" data-target="#cgRegModal">Register</a>
+								</div>
+                            </nav>
+                            <div class="top pre-k">
+                                <p><strong>Houghton Mifflin Harcourt is pleased to introduce Splash into Pre-K</strong> an early learning program designed to ensure success for today's Pre-K and 3-4 year-old learners through the latest research and interactive learning philosophies.</p>
+                            </div>
+                            <div class="content">
+                                <div>
+                                    <h2>Make Early Learning Fun<br>
+                                    with Curious George!</h2>
+                                    <p><b>Welcome early educators!</b> With kindergarten readiness more important than ever, the job you do is critical to the long-term success of our nation's children. Let Curious George be your guide to targeted resources you can bring to your classrooms to help make early learning fun and engaging for your preschool or kindergarten students.</p>
+                                    <p>Every two weeks on this site, you'll find a new theme that George is "Curious About." To complement your theme-based learning programs, on our Teacher Pages you'll find fun theme-based activities and resources you can use in the classroom to reinforce key early learning concepts and skills.&nbsp;For broader educational solutions and products, explore Houghton Mifflin Harcourt's early education and children's publishing products to discover why we're the leader in lifelong learning solutions.</p>
+                                </div>
+                                <div>
+                                    <strong class="large">Bring George and Friends to <b>your</b> Classroom</strong>
+                                    <a href="teachers" class="learn-more" title="Learn More">Learn More</a>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </section>
+                <section class="products">
+                    <h1><a href="#" title="Products" class="no-ajax"><strong>Products</strong> <span>Explore Curious George books, ebooks, DVDs, toys, and more!</span></a></h1>
+                    <div>
+                        <article>
+                            <nav>
+                                <ul>
+                                    <li><a href="products/books.html" title="Books">Books</a></li>
+                                    <li><a href="products/e-books.html" title="eBooks">eBooks</a></li>
+                                    <li><a href="products/apps.html" title="Apps">Apps</a></li>
+                                    <li><a href="products/workbooks.html" title="Workbooks">Workbooks</a></li>
+                                    <li><a href="products/merchandise.html" title="Merchandise">Merchandise</a></li>
+                                </ul>
+                               <div class="account">
+									<a href="login" title="Log in" class="login btn no-ajax" data-target="#cgLoginModal">Log in</a>
+									<a href="register" title="Register" class="register btn no-ajax" data-target="#cgRegModal">Register</a>
+								</div>
+                            </nav>
+                            <div class="top main-product">
+                                <img src="imgs/products/1.png" alt="Curious George">
+                                <p><strong>Curious George</strong> Own the Classic! In this, the original book about the curious monkey, George is taken from the jungle by the man with the yellow hat.</p>
+                            </div>
+                            <div class="content">
+                                <div>
+                                    <h2>About Products</h2>
+                                    <p>Resellers &mdash; Please contact the HMH Sales Department for additional information about purchasing Curious George Products. Please call 800-343-1316 or email at <a href="mailto:trade.sales@hmhpub.com">trade.sales@hmhpub.com</a>. You may also visit www.hmhbooks.com for information.</p>
+                                </div>
+                                <div id="product-callout">
+                                    <h2>Products</h2>
+                                    <a href="products" class="learn-more" title="Learn More">Learn More</a>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </section>
+				<section class="tv-show">
+                    <h1><a href="#" title="TV Show" class="no-ajax"><strong>TV Show</strong> <span>Watch episodes of the Emmy award winning Curious George TV show on PBS</span></a></h1>
+                    <div>
+                        <article>
+                            <div class="top pbskids">
+                                <p>Children who watched the Curious George episodes and read the Curious George books scored significantly higher on science and math concepts.*</p>
+                            </div>
+                            <div class="content">
+                                <div>
+                                    <h2>Curious George allows kids to learn  without realizing they're learning</h2>
+									<p>Curious George books and the Curious George episodes each had a positive and significant impact on learning, and reading the books and the episodes together reinforced those learning impacts.</p>
+									<p><a href="printables/CEG_Research_Study_Release.pdf">Learn more about the positive impacts Curious George has on young learners.</a></p>
+                                    <p><small>*Concord Evaluation Group, Evaluation of Curious George, May 2012</small></p>
+                                </div>
+                                <div>
+                                    <strong class="large">Visit Curious George on <b>PBSKIDS</b>!</strong>
+                                    <a href="http://pbskids.org/curiousgeorge/" target="_blank" title="Visit PBSKids">Visit PBSKIDS</a>
+                                </div>
+                            </div>
+						</article>
+                    </div>
+                </section>
+                <section class="hmh">
+                    <h1><a href="#" title="Houghton Mifflin Harcourt" class="no-ajax"><strong>Houghton Mifflin Harcourt</strong> <span>Changing lives by fostering passionate, curious learners.</span></a></h1>
+                    <div>
+                        <article>
+                        	<h2>Houghton Mifflin Harcourt</h2>
+                            <p>HMH aims to spark a lifelong love of learning in every individual we
+                            touch. Our challenge and our passion is to combine cutting-edge
+                            research, editorial excellence and technological innovation to improve
+                            teaching and learning environments and solve complex literacy and
+                            education challenges. We are among the world's largest providers of
+                            pre-K-12 education solutions and one of its longest-established
+                            publishing houses. Our distinguished author list, which features
+                            individuals from Ralph Waldo Emerson to Jonathan Safran Foer and
+                            brands from Curious George to Lord of the Rings, includes eight Nobel
+                            Prize winners, 47 Pulitzer Prize winners, 13 National Book Award
+                            winners, and more than 100 Caldecott, Newbery, Printz, and Sibert
+                            Medal and Honor recipients.</p>
+
+                            <p>To learn more about Houghton Mifflin Harcourt please visit <a href="www.hmhco.com" target="_blank">www.hmhco.com</a> or <a href="www.hmhbooks.com" target="_blank">www.hmhbooks.com</a>.</p>
+                        </article>
+                    </div>
+                </section>
+            </div>
+        </section>
+    </div>
+    <footer>
+        <div id="hmh">
+            <a href="http://www.hmhco.com/">Houghton Mifflin Harcourt</a>
+            <address>
+                222 Berkeley Street | Boston, MA 02116
+            </address>
+        </div>
+        <div id="blurb">
+            <p id="legal"><a href="terms_conditions.html">Terms &amp; Conditions of Use</a> <a href="privacy.html">Privacy Policy</a> <a href="privacy.html#childrensPrivacyPolicy">Children's Privacy Policy</a> <span> &copy; 2012 Houghton Mifflin Harcourt. All rights reserved.</span></p>
+        </div>
+
+    </footer>
+    <div class="modal cgModal hide fade" id="cgThankYouModal">
+        <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">x</button>
+            <h3 class="FilmotypeMajor">Thank you for Registering!</h3>
+        </div>
+        <div class="modal-body">
+            <div class="row cg_register">
+                <div class="span4">
+                    <p>You now have access to additional games, stories and content on curiousgeorge.com</p>
+                </div>
+                <div class="span6">
+                    <a href="#" class="btn btn-primary" data-dismiss="modal">Close</a>
+                </div>
+            </div>
+        </div>
+        <div class="modal-footer"></div>
+    </div>
+    <div class="modal cgModal hide fade" id="cgPromptModal">
+        <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">x</button>
+            <h3 class="FilmotypeMajor">Sorry. You must log in to access this content.</h3>
+        </div>
+        <div class="modal-body">
+            <form class="row cg_register">
+                <div class="span3">
+                    <label>Email Address</label> <input type="text" class="span3" placeholder=""> <label>Password</label> <input type="password" class="span3" placeholder="">
+                </div>
+                <div class="span3">
+                    <label class="not_reg">Not signed up yet? Registration is free!</label>
+                </div>
+                <div class="span3">
+                    <button type="submit" class="btn btn-primary">Login</button>
+                </div>
+                <div class="span3">
+                    <button type="submit" class="btn btn-primary reg_btn">Register</button>
+                </div>
+                <div class="span6 forgot_pw">
+                    <a href="#">Forgot your password?</a>
+                </div>
+            </form>
+        </div>
+        <div class="modal-footer"></div>
+    </div>
+    <div class="modal cgModal hide fade" id="cgLoginModal">
+        <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">x</button>
+            <h3 class="FilmotypeMajor">Restricted Content</h3>
+        </div>
+        <div class="modal-body">
+			<p>You need to be logged in to access this content. <br> Registering is free and easy.</p>
+			<div class="account">
+				<a href="login.html" title="Log in" class="login btn no-ajax">Log in</a>
+				<a href="register" title="Register" class="register btn no-ajax" data-target="#cgRegModal">Register</a>
+			</div>
+        </div>
+        <div class="modal-footer"></div>
+    </div>
+    <div class="modal cgModal hide fade" id="cgRegModal">
+        <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">x</button>
+            <h3 class="FilmotypeMajor">Register</h3>
+        </div>
+        <div class="modal-body">
+            <form class="row cg_register">
+                <div class="span3">
+                    <label>First Name</label> <input type="text" class="span3" placeholder="">
+                    <label>Email Address</label> <input type="text" class="span3" placeholder="">
+                    <label>Password</label> <input type="password" class="span3" placeholder="">
+                    <label class="age-verify">Please enter the year you were born</label> <input type="text" class="span3" placeholder="mm/dd/yyyy">
+                </div>
+                <div class="span3">
+                    <label>Last Name</label> <input type="text" class="span3" placeholder="">
+                    <label>Zipcode</label> <input type="text" class="span3" placeholder="">
+                    <label>Verify Password</label> <input type="password" class="span3" placeholder="">
+                </div>
+                <div class="span6">
+
+                    <label class="checkbox"><input type="checkbox" checked="checked"> Send me special offers and promotions.</label>
+
+                    <button type="submit" class="btn btn-primary">Register</button>
+                </div>
+            </form>
+        </div>
+        <div class="modal-footer"></div>
+    </div>
+    <div id="loading"></div>
+</body>
+</html>

@@ -1,0 +1,64 @@
+
+// _tooltips.scss
+// Author: justin.secor@opower.com
+
+// Tooltips
+//
+// Styleguide 10.0
+
+
+// Info tooltips
+//
+// Info tooltips provide additional context or information, but do not supply calls to action; explained a different way, info tooltips should not take a user out of a flow. They should be limited to text and links, and a heading (when appropriate).
+//
+// Markup:
+// <p>
+//     Hover or focus over <span class="has-tooltip">this<span class="tooltip">Tooltip! <a href="#">Link</a></span></span> for a tooltip!
+// </p>
+//
+// Styleguide 10.1
+
+
+.has-tooltip {
+    color: #000;
+    cursor: $has-tip-cursor-type;
+    font-weight: bold;
+    position: relative;
+    text-align: center;
+    z-index: 2;
+    &:before {
+        @include position(absolute, -1em -0.5em -0.5em -0.5em);
+        content: ' ';
+        display: block;
+    }
+    .tooltip {
+        background-color: $tooltip-bg-color;
+        border-radius: $global-radius;
+        box-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+        color: $tooltip-font-color;
+        height: 0;
+        width: 0;
+        font-weight: normal;
+        opacity: 0;
+        position: absolute; bottom: 1em; left: -($into-tooltip-width+-2em)/2;
+        text-align: center;
+        visibility: hidden;
+        z-index: 1;
+        -webkit-font-smoothing: auto;
+    }
+    &:hover .tooltip {
+        @include transition (opacity 0.2s, bottom 0.2s);
+        width: $into-tooltip-width; // come back to this. There must be a way to keep the width variable.
+        height: auto; bottom: 2em;
+        opacity: 1;
+        padding: 1em 2em;
+        visibility: visible;
+        &:after {
+            @include triangle(20px, $tooltip-bg-color, down);
+            @include position(absolute, 0 0 -20px 50%);
+            content: " ";
+            margin-left: -10px;
+            z-index: 2;
+        }
+    }
+}

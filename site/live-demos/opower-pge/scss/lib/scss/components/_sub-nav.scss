@@ -1,0 +1,29 @@
+
+// _sub-nav.scss
+// Author: justin.secor@opower.com
+
+// Import foundation defaults
+@import "../../zurb-foundation/scss/foundation/components/sub-nav";
+
+
+// Sub nav
+//
+// This navigation pattern is useful for navigating around different parts of the same page, or filtering a set of items.
+//
+// Markup:  
+// <dl class="sub-nav">
+//     <dt>Show tips:</dt>
+//     <dd class="active"><a href="#">All</a></dd>
+//     <dd><a href="#">Heating</a></dd>
+//     <dd><a href="#">Cooling</a></dd>
+//     <dd><a href="#">Great investments</a></dd>
+// </dl>
+//
+// Styleguide 4.3
+
+
+.sub-nav {
+    dt {
+        text-transform: none;
+    }
+}

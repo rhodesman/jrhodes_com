@@ -1,0 +1,382 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+ "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>
+    Untitled Document
+</title>
+<link href="skin/blue.monday/jplayer.blue.monday.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.jplayer.min.js"></script>
+<meta http-equiv="Content-Type" content="text/html;CHARSET=utf-8"/>
+<meta name="viewport" content="width=450,height=450" />
+
+<style type="text/css">
+ 
+    a:link {
+        color:blue;
+        text-decoration:underline;
+    }
+    a:active { color:red }
+    a:visited { color:purple }
+    
+  @font-face {
+  font-family: 'Adobe Garamond Semibold Italic';
+  src: url("font/AGARAMSI.TTF");
+  }
+@font-face {
+  font-family: 'CuriousGerogeheader-Medium';
+  src: url("font/CURIOUGM.TTF");
+  }
+@font-face {
+  font-family: 'New Century Schoolbook Italic';
+  src: url("font/NEWCENSI.TTF");
+  }
+@font-face {
+  font-family: 'New Century Schoolbook Roman';
+  src: url("font/NEWCENSR.TTF");
+  }
+@font-face {
+  font-family: 'OPTIMajerIrregular';
+  src: url("font/OPTIMAJI.TTF");
+  }
+
+body {
+   width: 450px;
+   height: 450px;
+   margin:0; 
+
+        background-color:white;
+        color:#393838;
+    }
+	.text16 {
+        font-family:'OPTIMajerIrregular';
+        font-size:28px;
+        text-decoration:none;
+        color:#40A75F;
+    }
+    .box1 {
+        background-color:white;
+        width:450px;
+        height:450px;
+    }
+    .box2 {
+        position:absolute;
+        left:190.575px;
+        top:120.839px;
+        width:93.155px;
+        height:20.854px;
+    }
+    .box3 {
+        position:absolute;
+        left:151.297px;
+        top:679.839px;
+        width:76.712px;
+        height:20px;
+    }
+    .box4 {
+        position:absolute;
+        left:164.224px;
+        top:598.836px;
+        width:77.44px;
+        height:35.019px;
+    }
+    .box5 {
+        position:absolute;
+        left:513px;
+        top:551.486px;
+        width:63.379px;
+        height:41.354px;
+    }
+    .box6 {
+        position:absolute;
+        left:485.702px;
+        top:338px;
+        width:69.28px;
+        height:20.854px;
+    }
+    .box7 {
+        position:absolute;
+        left:181.209px;
+        top:395.486px;
+        width:123.936px;
+        height:20.854px;
+    }
+    .box8 {
+        position:absolute;
+        left:145.073px;
+        top:324.081px;
+        width:38.578px;
+        height:20.854px;
+    }
+    .box9 {
+        position:absolute;
+        left:441.586px;
+        top:106.339px;
+        width:109.914px;
+        height:20.854px;
+    }
+    .box10 {
+        position:absolute;
+        left:529.81px;
+        top:501.927px;
+        width:12.286px;
+        height:46.306px;
+    }
+    .box11 {
+        position:absolute;
+        left:0px;
+        top:0px;
+        width:450px;
+        height:450px;
+    }
+  .TextDiv
+	{
+		font-size:13px;
+	}
+	.swings
+	{
+	         left: 123.289px;
+    position: absolute;
+    top: 68.22px;
+	}
+	.monkey
+	{
+	       left: 261.289px;
+    position: absolute;
+    top: 60.22px;
+	}
+	.kite
+	{
+	       left: 98.289px;
+    position: absolute;
+    top: 193.22px;
+	}
+	.kickball
+	{
+	       left: 279.289px;
+    position: absolute;
+    top: 202.22px;
+	}
+	.merry
+	{
+	       left: 90.289px;
+    position: absolute;
+    top: 235.22px;
+	}
+	.bat
+	{
+	         left: 299.289px;
+    position: absolute;
+    top: 335.22px;
+	}
+	.glove
+	{
+	       left: 104.289px;
+    position: absolute;
+    top: 360.22px;
+	}
+	.baseball
+	{
+	       left: 89.289px;
+    position: absolute;
+    top: 413.22px;
+	}
+	
+	  .rbox1 {
+        background-color:white;
+        width:450px;
+        height:450px;
+    }
+    .rbox2 {
+        position:absolute;
+        left:0px;
+        top:0px;
+        width:450px;
+        height:450px;
+    }
+    .rbox3 {
+        position:absolute;
+        left:364.5px;
+        top:161.986px;
+        width:44.134px;
+        height:20.854px;
+    }
+    .rbox5 {
+        position:absolute;
+        left:418.087px;
+        top:539.93px;
+        width:44.358px;
+        height:46.409px;
+    }
+    .rbox7 {
+        position:absolute;
+        left:424.036px;
+        top:232.728px;
+        width:45.245px;
+        height:48.632px;
+    }
+    .rbox9 {
+        position:absolute;
+        left:70.867px;
+        top:99.339px;
+        width:91.32px;
+        height:20.854px;
+    }
+    .rbox11 {
+	position:absolute;
+	left:28px;
+	top:12px;
+	padding:0px;
+	width:180px;
+	height:27px;
+    }
+    .rbox12 {
+        position:absolute;
+        left:483.5px;
+        top:343.339px;
+        width:67.691px;
+        height:20.854px;
+    }
+    .rbox14 {
+        position:absolute;
+        left:163.384px;
+        top:683.486px;
+        width:76.712px;
+        height:20.854px;
+    }
+    .rbox16 {
+        position:absolute;
+        left:609.482px;
+        top:645.986px;
+        width:56.712px;
+        height:20.854px;
+    }
+    .rbox18 {
+        position:absolute;
+        left:178.606px;
+        top:335.424px;
+        width:57.691px;
+        height:20.854px;
+    }
+ .TextDiv
+	{
+		font-size:13px;
+	}
+	.jungle
+	{
+	           left: 38.289px;
+    position: absolute;
+    top: 54.22px;
+	}
+	.slide
+	{
+	         left: 221.289px;
+    position: absolute;
+    top: 105.22px;
+	}
+	.tire
+	{
+	         left: 250.289px;
+    position: absolute;
+    top: 136.22px;
+	}
+	.seesaw
+	{   
+	 left: 103.289px;
+    position: absolute;
+    top: 198.22px;
+	}
+	.sandrbox
+	{
+	        left: 283.289px;
+    position: absolute;
+    top: 206.22px;
+	}
+	.jump
+	{
+	      left: 246.289px;
+    position: absolute;
+    top: 324.22px;
+	}
+	.tricycle
+	{
+	       left: 363.289px;
+    position: absolute;
+    top: 393.22px;
+	}
+	.hopscotch
+	{
+	       left: 89.289px;
+    position: absolute;
+    top: 418.22px;
+	}
+	
+	#Rside{
+		position:absolute;
+		left:425px;
+		top:0px;
+	}
+	
+</style>
+</head>
+
+<body>
+
+    
+        
+        <div class="box1">
+            <span id="t0451"><img src="images/40.jpg" alt="" width="425" height="445" 
+             /></span></div>
+        
+                
+       <div class="TextDiv">
+        	<div  class="swings"><span id="w000516">swings</span></div>
+            <div class="monkey"><span id="w000517">monkey bars</span></div>
+            <div  class="kite"><span id="w000520">kite</span></div>
+             <div  class="kickball"><span  id="w000518">kickball</span></div>
+              <div  class="merry"><span id="w000519">merry-go-round</span></div>
+               <div  class="bat"><span id="w000523">baseball </br>&nbsp;&nbsp;bat</span></div>
+               <div  class="glove"><span  id="w000521">baseball </br>&nbsp;&nbsp;glove</span></div>
+               <div  class="baseball"><span id="w000522">baseball</span></div>
+              
+        </div>
+    
+    
+    
+        
+      <div id="Rside">        
+<div class="rbox1">
+<span id="t0252"><img src="images/41.jpg" alt="" width="425" height="445"/></span></div>
+    
+    
+<div class="TextDiv">
+<div  class="jungle"><span id="w000524">jungle gym</span></div>
+<div class="slide"><span id="w000527">slide </span></div>
+<div  class="tire"><span  id="w000528">tire </br>swing</span></div>
+<div  class="seesaw"><span id="w000525">seesaw</span></div>
+<div  class="sandrbox"><span  id="w000529">sandbox</span></div>
+<div  class="jump"><span  id="w000530">jump </br>rope</span></div>
+<div  class="tricycle"><span id="w000531">tricycle </span></div>
+<div  class="hopscotch"><span id="w000526">hopscotch</span></div>
+  
+</div>
+
+
+
+
+
+<div class="rbox11">
+<div class="pHeadparagraph">
+<span class="text16"><span  id="w000515">Playground</span> </span>
+</div>
+</div>
+
+
+</div>  
+        
+
+<div id="chk"></div>
+<div id="timeValue"></div>
+</body>
+</html>

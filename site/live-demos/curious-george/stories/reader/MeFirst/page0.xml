@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<body>
+  <par>
+    <audio clipBegin="0.269644" clipEnd="0.563256" aText="Me" id="w0001"/>
+  </par>
+  <par>
+    <audio clipBegin="0.567250" clipEnd="1.268989" aText="First" id="w0002"/>
+  </par>
+  <par>
+    <audio clipBegin="2.171796" clipEnd="2.408816" aText="by" id="w0003"/>
+  </par>
+  <par>
+    <audio clipBegin="2.410148" clipEnd="2.788315" aText="HELEN" id="w0004"/>
+  </par>
+  <par>
+    <audio clipBegin="2.789646" clipEnd="3.286989" aText="LESTER" id="w0005"/>
+  </par>
+  <par>
+    <audio clipBegin="4.141193" clipEnd="4.933480" aText="illustrated" id="w0006"/>
+  </par>
+  <par>
+    <audio clipBegin="4.936143" clipEnd="5.138542" aText="by" id="w0007"/>
+  </par>
+  <par>
+    <audio clipBegin="5.141205" clipEnd="5.572635" aText="LYNN" id="w0008"/>
+  </par>
+  <par>
+    <audio clipBegin="5.576630" clipEnd="6.198474" aText="MUNSINGER" id="w0009"/>
+  </par>
+  
+</body>

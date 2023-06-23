@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Pacific Gas and Electric Company</title>
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="-1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no">
+  <link href="../css/app.css" rel="stylesheet">
+</head>
+
+<body id="mobile">
+
+      <div class="inside-wrapper" >
+        <!-- ngView:  -->
+        <div ng-view="" class="ng-scope">
+          <div class="savings-plan ng-scope">
+            <div class="section-head">
+              <div class="row">
+                <div class="large-9 columns">
+                  <h1 class="section-heading">Ways to Save</h1>
+                </div>
+              </div>
+            </div>
+            <div class="row has-side-nav">
+              <!-- ngInclude: 'partials/ways-to-save/_sidebar.html' -->
+              <div class="large-9 columns">
+                <div class="primary-content-container">
+                  <div class="row">
+                    <div class="large-12 columns">
+                      <div class="row">
+                        <div class="large-12 columns">
+                          <h2 class="page-heading title-case">My savings plan: Smart purchases</h2>
+                        </div>
+                      </div>
+                      <!-- ngInclude: 'partials/ways-to-save/_tip-targeting.html' -->
+                      <div class="tip-targeting ng-scope" ng-include="'partials/ways-to-save/_tip-targeting.html'">
+                        <div class="ng-scope" ng-show="userPrefs.isResidentialUser">
+                          <!-- RESIDENTIAL -->
+                          <strong>Based on:</strong><span>647 Spruce Street · 1,249 sq ft · Rent · Natural gas heating</span>
+                          <br>
+                          <a href="" class="view-targeting-profile">View Full Profile (85% complete)</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="border-bottom">
+                    <div class="row">
+                      <div class="large-6 columns">
+                        <!-- ngInclude: 'partials/ways-to-save/_tip-filtering.html' -->
+                        <div class="tip-filtering no-border ng-scope" ng-include="'partials/ways-to-save/_tip-filtering.html'">
+                          <div class="ng-scope" ng-show="userPrefs.isResidentialUser">
+                            <!--<label class="large-2 tip-filtering-cost"  for="tip-filtering-cost">
+    Cost
+    <select id="tip-filtering-cost">
+      <option value="alltips" selected>All tips</option>
+      <option value="free">Free</option>
+    </select>
+  </label>-->
+                            <!--<label class="large-2 tip-filtering-cost"  for="tip-filtering-cost">
+    Cost
+    <select id="tip-filtering-cost">
+      <option value="alltips" selected>All tips</option>
+      <option value="free">Free</option>
+    </select>
+  </label>-->
+                          </div>
+                        </div>
+                      </div>
+                      <div class="large-6 columns">
+                        <!-- ngInclude: '/partials/_page-actions.html' -->
+                        <div class="page-actions align-with-dropdown ng-scope" ng-include="'/partials/_page-actions.html'">
+                          <div class="ng-scope">
+                            <a href="">Print</a>
+                            <a href="">Share</a>
+                            <a href="">Download</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- THERMOSTATS SECTION -->
+                  <section ng-show="!userPrefs.isResidentialUser" class="ng-hide">
+                    <div class="row top-margin-20 product-heading">
+                      <div class="small-2 large-1 columns no-padding">
+                        <div class="custom-checkbox">
+                          <input name="checkbox" type="checkbox" id="checkbox1">
+                          <label for="checkbox1" class="custom checkbox"></label>
+                        </div>
+                      </div>
+                      <div class="small-10 large-8 columns product-title">
+                        <h4>Install a programable Thermostat</h4>
+                        <p ng-show="userPrefs.isResidentialUser" class="">
+                          <img src="img/smart-purchases/tiny-person.png" height="18" width="18">26,158 people do this</p>
+                        <p ng-show="!userPrefs.isResidentialUser" class="ng-hide">Your estimated payback period: 2 years</p>
+                      </div>
+                      <div class="large-3 columns">
+                        <a class="button is-active">Learn More</a>
+                        <br>
+                        <a class="show-for-medium-up">Remove from plan</a>
+                        <a class="show-for-small-only button secondary">Remove from plan</a>
+                      </div>
+                    </div>
+
+                    <div class="row top-margin-20">
+                      <div class="small-6 large-4 columns">
+                        <div class="product">
+                          <div class="thermostat">
+                            <img src="img/smart-purchases/thumb-honeywell1.png">
+                          </div>
+                          <div class="text-center">
+                            <p class="text-black">Honeywell WiFi
+                              <br>Thermostat</p>
+                            <a class="green-button">Free after rebate</a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="small-6 large-4 columns">
+                        <div class="product">
+                          <div class="thermostat">
+                            <img src="img/smart-purchases/thumb-lyric.png">
+                          </div>
+                          <div class="text-center">
+                            <p class="text-black">Honeywell Lyric
+                              <br>Thermostat</p>
+                            <a class="green-button">$149 after rebate</a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="small-6 large-4 columns end">
+                        <a class="product" href="#/ways-to-save/marketplace/nest">
+                          <div class="thermostat">
+                            <img src="img/smart-purchases/thumb-nest.png">
+                          </div>
+                          <div class="text-center">
+                            <p class="text-black">Nest Learning
+                              <br>Thermostat</p>
+                            <span class="green-button">$199 after rebate</span>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+
+                    <div class="row top-margin-20">
+                      <div class="large-5 large-centered columns text-center">
+                        <a href="#/ways-to-save/marketplace">View All Thermostats</a>
+                      </div>
+                    </div>
+                  </section>
+                  <!-- END THERMOSTAT SECTION -->
+
+
+                  <!-- BULB SECTION -->
+                  <section ng-show="userPrefs.isResidentialUser" class="ng-hide">
+                    <div class="row top-margin-20 product-heading">
+                      <div class="small-2 large-1 columns no-padding">
+                        <div class="custom-checkbox">
+                          <input name="checkbox" type="checkbox" id="checkbox1">
+                          <label for="checkbox1" class="custom checkbox"></label>
+                        </div>
+                      </div>
+                      <div class="small-10 large-8 columns product-title">
+                        <h4>Replace inefficient lights with LED lightbulbs</h4>
+                        <p><img src="img/smart-purchases/tiny-person.png" height="18" width="18">12,893 people do this</p>
+                      </div>
+                      <div class="large-3 columns">
+                        <a class="button is-active">Learn More</a>
+                        <br>
+                        <a class="show-for-medium-up">Remove from plan</a>
+                        <a class="show-for-small-only button secondary">Remove from plan</a>
+                      </div>
+                    </div>
+
+                    <div class="row top-margin-20">
+                      <div class="small-6 large-4 columns">
+                        <a class="product">
+                          <div class="text-center">
+                            <img src="img/smart-purchases/bulb1.png" height="150" width="100">
+                          </div>
+                          <div class="text-center">
+                            <p class="text-black">Phillips SlimStyle 60W
+                              <br>equivalent LED light bulb
+                              <br>$8.97</p>
+                          </div>
+                        </a>
+                      </div>
+                      <div class="small-6 large-4 columns">
+                        <a class="product">
+                          <div class="text-center">
+                            <img src="img/smart-purchases/bulb2.png" height="150" width="100">
+                          </div>
+                          <div class="text-center">
+                            <p class="text-black">Cree 60W equivalent
+                              <br>LED light bulb
+                              <br>$9.97<br>&nbsp;</p>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+
+                    <div class="row top-margin-20">
+                      <div class="large-3 large-centered columns text-center">
+                        <a>View All Lightbulbs</a>
+                      </div>
+                    </div>
+                  </section>
+                  <!-- END BULB SECTION -->
+
+                  <!-- POWER STRIPS SECTION -->
+                  <section ng-show="userPrefs.isResidentialUser" class="ng-hide">
+                    <div class="row top-margin-20 product-heading">
+                      <div class="small-2 large-1 columns no-padding">
+                        <div class="custom-checkbox">
+                          <input name="checkbox" type="checkbox" id="checkbox1">
+                          <label for="checkbox1" class="custom checkbox"></label>
+                        </div>
+                      </div>
+                      <div class="small-10 large-8 columns product-title">
+                        <h4>Install power strips</h4>
+                        <p>
+                          <img src="img/smart-purchases/tiny-person.png" height="18" width="18">8,352 people do this</p>
+                      </div>
+                      <div class="large-3 columns">
+                        <a class="button is-active">Learn More</a>
+                        <br>
+                        <a class="show-for-medium-up">Remove from plan</a>
+                        <a class="show-for-small-only button secondary">Remove from plan</a>
+                      </div>
+                    </div>
+                    <div class="row top-margin-20">
+                      <div class="small-6 large-4 columns">
+                        <div class="product">
+                          <div class="text-center">
+                            <img src="img/smart-purchases/power1.png" height="150" width="125">
+                          </div>
+                          <div class="text-center">
+                            <p class="text-black">Belkin 6-outlet
+                              <br>Powerstrip
+                              <br>$4.97</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="small-6 large-4 columns">
+                        <div class="product">
+                          <div class="text-center">
+                            <img src="img/smart-purchases/power2.png" height="150" width="125">
+                          </div>
+                          <div class="text-center">
+                            <p class="text-black">Belkin 6-outlet Wall
+                              <br>Mount surge protector
+                              <br>$9.57br<br/>&nbsp;</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="small-6 large-4 columns end">
+                        <div class="product">
+                          <div class="text-center">
+                            <img src="img/smart-purchases/power3.png" height="150" width="125">
+                          </div>
+                          <div class="text-center">
+                            <p class="text-black">Defiant 10 Outlet
+                              <br>Metal surge protector
+                              <br>$37.37</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="row top-margin-20">
+                      <div class="large-3 large-centered columns text-center">
+                        <a>View All Powerstrips</a>
+                      </div>
+                    </div>
+                  </section>
+                  <!-- END POWER STRIPS SECTION -->
+
+
+
+
+                  <div class="top-margin-20 show-all">
+                    <a class="show-for-medium-up triangle">Show all recommendations</a>
+                    <a class="show-for-small-only button triangle">Show all recommendations</a>
+                  </div>
+
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="js/vendor/angularjs-slider/rzslider.js"></script>
+  <script src="scss/lib/zurb-foundation/js/foundation/foundation.js"></script>
+  <script src="js/vendor/angular-route-min.js"></script>
+  <script src="js/vendor/mm-foundation-tpls-0.3.0.min.js"></script>
+  <script src="js/vendor/angular-animate.min.js"></script>
+  <script src="js/vendor/lodash.js"></script>
+  <script src="js/vendor/angularjs-dropdown-multiselect.js"></script>
+  <script src="js/vendor/Chart.min.js"></script>
+  <script src="js/vendor/tc-angular-chartjs.min.js"></script>
+  <script src="js/vendor/raphael.js"></script>
+  <script src="js/vendor/elroi.js"></script>
+  <script src="js/vendor/d3.min.js"></script>
+  <script src="js/vendor/angular-charts.js"></script>
+  <script src="js/vendor/angular-count-to.min.js"></script>
+  <script src="js/app.js"></script>
+
+
+</body>
+
+</html>

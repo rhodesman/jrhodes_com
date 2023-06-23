@@ -1,0 +1,69 @@
+.dropdown-toggle {
+    margin-top:5px;
+}
+
+.chart-toggle {
+    //margin-top:5px !important;
+    .pie-filters & {
+      //  margin-top:20px !important;
+    }
+}
+
+.chart-button-group .button {
+  font-weight: bold !important;
+  line-height: 0.75em;
+  padding-left: 0;
+  padding-right: 0;
+  text-align: center;
+  width: 45px;
+  .geomicon {
+    font-weight: normal !important;
+    font-size: $font-size-tiny;
+    line-height: 0.75em;
+    &:before {
+      font-size: $font-size-medium;
+      line-height: 0;
+      position: relative;
+      top: 2px;
+    }
+    &.geomicon-pie-chart:before {
+      font-size: 1.25rem;
+      top: 4px;
+    }
+  }
+}
+
+.chart.pie .button {
+    margin: 0 auto;
+    margin-top: 2rem;
+    display: block;
+}
+
+.button.has-points-value {
+  padding-right: 120px;
+  position: relative;
+  .points-value {
+    @include geomicon("\e606");
+    @include position(absolute, 6px 0px 0 0);
+    border-left: 1px solid #007fa9;
+    font-size: 0.6em;
+    display: inline-block;
+    padding-left: 30px;
+    width: 100px;
+    .points-amount {
+      line-height:1;
+    }
+    strong {
+      font-size: 1.75em;
+      display: block;
+    }
+    &:before {
+      top: -4px;
+      left: 6px;
+      font-size: 3.5em;
+    }
+  }
+}
+.bill-breakdown-chart .button-wrap {
+    text-align: center;
+}

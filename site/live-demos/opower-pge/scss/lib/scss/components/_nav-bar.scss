@@ -1,0 +1,122 @@
+
+// _nav-bar.scss
+// Author: justin.secor@opower.com
+
+
+
+.nav-bar {
+    background: none;
+    @include background-image(linear-gradient($warmGray, darken($warmGray, 10%)));
+    border-radius: $buttonRadius $buttonRadius 0 0;
+    border-bottom: 1px solid darken($mainColor, 20);
+    margin: 0px;
+
+    &>li {
+        border: 0;
+        border-left: 1px solid $white;
+        border-right: 1px solid $mediumGray;
+
+        &>a {
+            background: none;
+            color: $black;
+            font-weight: 600;
+            line-height: $navbarHeight;
+
+            &:hover {
+                background: darken($warmGray, 10%);
+            }
+        }
+
+        &.has-flyout a:first-child::after {
+            border-color: $black transparent transparent transparent;
+        }
+        &:first-child {
+            border-radius: $buttonRadius 0 0 0;
+            border-left: none;
+            a {
+                border-radius: $buttonRadius 0 0 0;
+            }
+        }
+        &:last-child {
+            border-right: 1px solid $mediumGray;
+        }
+        &:hover {
+            background: darken($warmGray, 10%);
+            a {
+                &:after {
+                    border-color: $white transparent transparent transparent;
+                }
+            }
+        }
+        &.active:hover, &.active a:hover {
+            background: $mainColor;
+        }
+
+        .flyout {
+            box-shadow: 0 0 0 #000;
+            background: none;
+            border: 1px solid $white;
+            border-top: 1px solid darken($warmGray, 20);
+            top: $navbarHeight - 1px;
+            // left: 1px;
+
+            li {
+                border: none;
+                border-bottom: 1px solid darken($warmGray, 20);
+                a {
+                    box-shadow: 0 0 0 #000;
+                    background: darken($warmGray, 10%);
+                    border: none;
+                    font-weight: 600;
+                    padding: 10px 20px;
+
+                    &:hover {
+                        background: darken($warmGray, 20);
+                    }
+                }
+
+                &:last-child {
+                    border-bottom: none;
+                }
+            }
+        }
+    }
+
+    &.vertical {
+        border-radius: 0;
+        background: $warmGray;
+        border: none;
+
+        &>li {
+            border: none;
+
+            &:first-child a {
+                border-radius: 0
+            }
+            &:last-child {
+                border: none;
+            }
+            &.active {
+                border: none;
+            }
+            &.has-flyout {
+                a {
+                    background: none;
+                }
+            }
+        }
+        &>li .flyout {
+            background: $mediumGray;
+            top: 0px;
+            li a {
+                background: $mediumGray;
+                &:hover {
+                    background: darken($mediumGray, 10);
+                }
+            }
+        }
+    }
+    @media only screen and (max-width: 767px) {
+        margin-bottom: 20px;
+    }
+}

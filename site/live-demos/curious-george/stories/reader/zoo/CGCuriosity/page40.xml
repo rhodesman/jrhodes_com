@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<smil xmlns="http://www.w3.org/ns/SMIL" version="3.0" profile="http://www.idpf.org/epub/30/profile/content/">
+<body>
+ <par>
+    <audio clipBegin="855.790276" clipEnd="856.438209" aText="pets" id="w000502"/>
+  </par>
+  <par>
+    <audio clipBegin="858.671166" clipEnd="859.881354" aText="parakeet" id="w000503"/>
+  </par>
+  <par>
+    <audio clipBegin="860.004515" clipEnd="860.855930" aText="ant farm" id="w000504"/>
+  </par>
+  <par>
+    <audio clipBegin="862.023279" clipEnd="863.078178" aText="dog" id="w000505"/>
+  </par>
+  <par>
+    <audio clipBegin="863.201338" clipEnd="864.475784" aText="puppy" id="w000506"/>
+  </par>
+  <par>
+    <audio clipBegin="864.545397" clipEnd="866.178615" aText="kitten" id="w000507"/>
+  </par>
+  <par>
+    <audio clipBegin="866.435646" clipEnd="867.030030" aText="turtle" id="w000508"/>
+  </par>
+  <par>
+    <audio clipBegin="867.752930" clipEnd="868.406217" aText="rabbit" id="w000509"/>
+  </par>
+  <par>
+    <audio clipBegin="868.989892" clipEnd="869.723502" aText="fish" id="w000510"/>
+  </par>
+  <par>
+    <audio clipBegin="870.328596" clipEnd="871.035431" aText="ferret" id="w000511"/>
+  </par>
+  <par>
+    <audio clipBegin="871.586977" clipEnd="872.309877" aText="lizard" id="w000512"/>
+  </par>
+  <par>
+    <audio clipBegin="873.134518" clipEnd="873.927030" aText="hamster" id="w000513"/>
+  </par>
+ 
+  
+	 
+
+</body>
+</smil>
