@@ -99,7 +99,7 @@ $minheight: 500px;
 
       &:before {
         content: '\f0d7';
-        @extend .fas;
+        @extend .fa-solid;
         text-indent: 0;
         display: block;
         position: absolute;

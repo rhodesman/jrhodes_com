@@ -1,37 +1,38 @@
-$(document).ready(function() {
+document.addEventListener('DOMContentLoaded', function() {
   console.log(sysReady);
   var f = 0;
   rotatePhone();
-  $( window ).resize(function() {
-    rotatePhone();
-  });
+  window.addEventListener('resize', rotatePhone);
+
   function rotatePhone() {
     if( window.innerWidth < 420 ) {
-      $('.rotate-page').addClass('pleaseRotate');
+      document.querySelector('.rotate-page').classList.add('pleaseRotate');
     }else {
-      $('.rotate-page').removeClass('pleaseRotate');
+      document.querySelector('.rotate-page').classList.remove('pleaseRotate');
     }
   }
 
-
-  $('#bizcard').on('click', function(e) {
+  document.getElementById('bizcard').addEventListener('click', function(e) {
     e.stopPropagation();
-    $('.row').each(function() {
-      if($(this).attr('id') != "portfolio") {
-        $(this).toggleClass('hidden');
+    document.querySelectorAll('.row').forEach(function(row) {
+      if(row.id !== 'portfolio') {
+        row.classList.toggle('hidden');
       }
-    })
+    });
 
-    if($('#bizcard').hasClass('hidden')) {
-      $('.back-btn').removeClass('hidden');
+    if(document.getElementById('bizcard').classList.contains('hidden')) {
+      document.querySelector('.back-btn').classList.remove('hidden');
     }
-  });//row
+  });
 
-  $('.back-btn').on('click', function(e) {
+  document.querySelector('.back-btn').addEventListener('click', function(e) {
     e.stopPropagation();
-    if(!$('.back-btn').hasClass('hidden')) {
-      $('.row').toggleClass('hidden');
-      $('.back-btn').addClass('hidden');
+    var backBtn = document.querySelector('.back-btn');
+    if(!backBtn.classList.contains('hidden')) {
+      document.querySelectorAll('.row').forEach(function(row) {
+        row.classList.toggle('hidden');
+      });
+      backBtn.classList.add('hidden');
     }else {
       f++;
       if(f == 1) {
@@ -58,16 +59,5 @@ $(document).ready(function() {
           }
         }
     }
-  });//back-btn
-
-  /*$('#options a').on('click', function(e) {
-    e.stopPropagation();
-    e.preventDefault();
-    var thisElm = $(this).parent().attr('class').split(' ')[1];
-    var theFrame;
-    if(thisElm == "desginer"){
-      theFrame = "/live-demos/curious-george/";
-    }
-
-  });*/
+  });
 });

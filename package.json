@@ -1,21 +1,29 @@
 {
   "name": "jrhodes_com",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "Jason Rhodes's website",
   "main": "app.js",
   "scripts": {
-    "start": "nodemon app.js",
+    "build:css": "sass src/scss/main.scss site/dist/main.css --source-map --style=compressed --load-path=src/scss",
+    "build:js": "terser src/js/ansi.js src/js/main.js --compress --mangle --source-map --output site/dist/main-min.js",
+    "build": "npm run build:css && npm run build:js",
+    "watch:css": "sass src/scss/main.scss site/dist/main.css --source-map --watch --load-path=src/scss",
+    "watch:js": "nodemon --watch src/js --ext js --exec \"npm run build:js\"",
+    "dev": "concurrently \"npm run watch:css\" \"npm run watch:js\" \"nodemon app.js\"",
+    "start": "npm run build && node app.js",
     "test": "node --inspect app.js"
   },
   "author": "Jason Rhodes",
   "license": "ISC",
   "dependencies": {
-    "body-parser": "^1.19.0",
-    "bootstrap": "^4.5.0",
-    "express": "^4.17.1",
-    "fontawesome": "^5.6.3",
-    "jquery": "^3.5.1",
-    "nodemon": "^1.19.4",
-    "popper.js": "^1.16.1"
+    "@fortawesome/fontawesome-free": "^6.7.2",
+    "bootstrap": "^5.3.8",
+    "express": "^5.2.1"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2",
+    "nodemon": "^3.1.14",
+    "sass": "^1.89.1",
+    "terser": "^5.39.1"
   }
 }
