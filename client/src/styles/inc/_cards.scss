@@ -1,7 +1,6 @@
 $minheight: 500px;
 
 #options {
-  //min-height: $minheight;
   div[class^="col"] {
     display: flex;
     justify-content:center;
@@ -29,7 +28,6 @@ $minheight: 500px;
       background-color: rgba($sectBG,0);
       @extend .toAnimate;
       .proj-list {
-        //overflow: hidden;
         height:0;
         opacity: 0;
         ul {
@@ -50,14 +48,10 @@ $minheight: 500px;
         color:$jrblack;
         background-color: rgba($sectBG,1);
         .proj-list {
-          //overflow: auto;
           height:100%;
           opacity: 1;
         }
       }
-    }
-    &:last-child {
-
     }
   }
 }
@@ -66,7 +60,7 @@ $minheight: 500px;
   .logo {
     display: block;
     height: 100%;
-    background-image: url('../img/logo.png');
+    background-image: url('/img/logo.png');
     background-position: center;
     background-size: 60%;
     background-repeat: no-repeat;
@@ -87,27 +81,6 @@ $minheight: 500px;
       li {
         font-size: 28px;
         color:$jrblack;
-      }
-    }
-    a {
-      display: block;
-      position: relative;
-      overflow: hidden;
-      width: 40px;
-      height: 40px;
-      text-indent: -9999px;
-
-      &:before {
-        content: '\f0d7';
-        @extend .fa-solid;
-        text-indent: 0;
-        display: block;
-        position: absolute;
-        top:0;
-        left:0;
-        right:0;
-        bottom: 0;
-        text-align: center;
       }
     }
   }

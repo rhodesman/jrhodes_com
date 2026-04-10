@@ -2,14 +2,19 @@
 
 'use strict';
 
-const express = require("express");
+const express = require('express');
 const path = require('path');
 const app = express();
 const port = process.env.PORT || 8888;
 
 app.use(express.urlencoded({ extended: true }));
 
-app.use(express.static('site'));
+// Serve the Vite-built React app (site/dist contains index.html + assets/*)
+// before the rest of site/ so that `/` resolves to the built index.html.
+app.use(express.static(path.join(__dirname, 'site/dist')));
+
+// Serve the rest of site/: live-demos, img, webfonts, uploads, favicon, etc.
+app.use(express.static(path.join(__dirname, 'site')));
 
 var routes = require('./controls/routes');
 routes(app);

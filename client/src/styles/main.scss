@@ -15,16 +15,11 @@ $minheight: 400px;
 
 html, body {
   min-height: 100vh;
-  //height: 100%;
-  //min-width:780px;
 }
 body {
   background: $pageBG;
   .container {
-    //min-height: 100%;
-    //position:relative;
     align-items: center;
-    //min-width: 780px;
     section {
       position: absolute;
       width: 100%;
@@ -32,7 +27,6 @@ body {
       max-width: 800px;
       top: 50%;
       left:50%;
-      //transform: translateY(-50%);
       background: $sectBG;
       box-shadow: 0 9px 15px 0 rgba(0,0,0,.1);
       @extend .toAnimate;

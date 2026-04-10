@@ -1,0 +1,8 @@
+// FontAwesome 6 Free + Karla are loaded globally:
+//  - FontAwesome CSS is imported from node_modules in main.tsx
+//  - Karla is linked from Google Fonts in client/index.html
+// This file only needs to set the body font-family.
+
+body {
+  font-family: 'Karla', sans-serif;
+}
