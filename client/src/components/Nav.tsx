@@ -5,7 +5,7 @@ const LINKS = [
   { href: '#skills',     label: 'Skills'     },
   { href: '#experience', label: 'Experience' },
   { href: '#portfolio',  label: 'Work'       },
-  { href: '#game',       label: 'Game'       },
+
   { href: '#contact',    label: 'Contact'    },
 ];
 
@@ -42,7 +42,7 @@ export function Nav() {
             </li>
           ))}
           <li>
-            <a className="nav-cta" href="mailto:jason.rhodes@gmail.com">Hire Me</a>
+            <a className="nav-cta" href="#contact" onClick={e => { e.preventDefault(); document.querySelector('#contact')?.scrollIntoView({ behavior: 'smooth' }); }}>Hire Me</a>
           </li>
         </ul>
       </div>

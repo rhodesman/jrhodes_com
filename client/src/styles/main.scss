@@ -744,6 +744,12 @@ img { max-width: 100%; }
     box-shadow: 0 0 40px rgba(0,229,255,0.1), 0 0 80px rgba(123,97,255,0.1);
     cursor: pointer;
     display: block;
+
+    &--quincy {
+      aspect-ratio: 10 / 7;
+      cursor: crosshair;
+      box-shadow: 0 0 40px rgba(232,85,0,0.1), 0 0 80px rgba(123,97,255,0.1);
+    }
     transition: border-color 0.2s;
 
     &:hover { border-color: var(--primary); }

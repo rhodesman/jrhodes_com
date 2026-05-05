@@ -86,11 +86,6 @@ export function Hero() {
     e.preventDefault();
     document.querySelector('#portfolio')?.scrollIntoView({ behavior: 'smooth' });
   };
-  const scrollToGame = (e: React.MouseEvent) => {
-    e.preventDefault();
-    document.querySelector('#game')?.scrollIntoView({ behavior: 'smooth' });
-  };
-
   return (
     <section className="hero" id="hero">
       <StarCanvas />
@@ -111,7 +106,7 @@ export function Hero() {
         <div className="hero__ctas">
           <a className="btn btn--primary" href="#portfolio" onClick={scrollToWork}>View My Work</a>
           <a className="btn btn--ghost" href="#about" onClick={scrollToAbout}>About Me</a>
-          <a className="btn btn--game" href="#game" onClick={scrollToGame}>Play a Game ↓</a>
+
         </div>
         <div className="hero__social">
           <a href="https://github.com/rhodesman" target="_blank" rel="noreferrer" title="GitHub">
@@ -120,7 +115,7 @@ export function Hero() {
           <a href="https://linkedin.com/in/rhodesman" target="_blank" rel="noreferrer" title="LinkedIn">
             <i className="fa-brands fa-linkedin" />
           </a>
-          <a href="mailto:jason.rhodes@gmail.com" title="Email">
+          <a href="#contact" title="Email" onClick={e => { e.preventDefault(); document.querySelector('#contact')?.scrollIntoView({ behavior: 'smooth' }); }}>
             <i className="fa-regular fa-envelope" />
           </a>
         </div>

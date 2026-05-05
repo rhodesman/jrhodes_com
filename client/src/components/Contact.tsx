@@ -7,16 +7,9 @@ export function Contact() {
         <p className="contact-intro">
           I&apos;m actively looking for my next senior frontend or full-stack role.
           Remote preferred, Baltimore/DC metro open to hybrid.
-          Target range: $140K–$180K.
         </p>
         <div className="contact-links">
-          <a className="contact-card" href="mailto:jason.rhodes@gmail.com">
-            <i className="fa-regular fa-envelope" />
-            <div>
-              <div className="contact-card__label">Email</div>
-              <div className="contact-card__value">jason.rhodes@gmail.com</div>
-            </div>
-          </a>
+
           <a className="contact-card" href="https://linkedin.com/in/rhodesman" target="_blank" rel="noreferrer">
             <i className="fa-brands fa-linkedin" />
             <div>
