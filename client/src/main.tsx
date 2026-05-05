@@ -1,11 +1,10 @@
 import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
 
-// Third-party CSS (imported before our own styles so our SCSS can override).
-import 'bootstrap/dist/css/bootstrap.min.css';
+// FontAwesome icons (free set covers github, linkedin, envelope, etc.)
 import '@fortawesome/fontawesome-free/css/all.min.css';
 
-// App styles.
+// App styles — our own design system, no Bootstrap dependency
 import './styles/main.scss';
 
 import { App } from './App';

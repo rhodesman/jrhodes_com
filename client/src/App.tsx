@@ -1,79 +1,44 @@
-import { useEffect, useRef, useState } from 'react';
-import { BizCard } from './components/BizCard';
-import { Options } from './components/Options';
-import { BackButton } from './components/BackButton';
-import { RotatePrompt } from './components/RotatePrompt';
-import { newman, sysReady } from './lib/ansi';
-
-type View = 'bizcard' | 'options';
+import { useEffect } from 'react';
+import { Nav } from './components/Nav';
+import { Hero } from './components/Hero';
+import { About } from './components/About';
+import { Skills } from './components/Skills';
+import { Experience } from './components/Experience';
+import { Portfolio } from './components/Portfolio';
+import { BlackHoleGame } from './components/BlackHoleGame';
+import { Contact } from './components/Contact';
+import { sysReady } from './lib/ansi';
 
 export function App() {
-  const [view, setView] = useState<View>('bizcard');
-  // Count of "extra" back button clicks after the back button has already
-  // hidden itself. Replicates the v1.x easter egg.
-  const extraClicks = useRef(0);
-
-  // Log the Jurassic Park system banner to the console on first mount.
+  // Jurassic Park easter egg — still alive
   useEffect(() => {
     // eslint-disable-next-line no-console
     console.log(sysReady);
+    // eslint-disable-next-line no-console
+    console.log(
+      '%c👋 Hey, you found the console.',
+      'color:#00e5ff;font-size:14px;font-weight:bold;',
+    );
+    // eslint-disable-next-line no-console
+    console.log(
+      '%cThat means you\'re probably a developer. I like you already.\n' +
+      'Jason Rhodes — Senior Frontend Developer — jason.rhodes@gmail.com',
+      'color:#b0bec5;font-size:12px;',
+    );
   }, []);
-
-  const showOptions = () => {
-    if (view === 'bizcard') setView('options');
-  };
-
-  const handleBack = () => {
-    if (view === 'options') {
-      setView('bizcard');
-      extraClicks.current = 0;
-      return;
-    }
-
-    // The bizcard is already showing — the user is smashing the hidden back
-    // button. Re-run the original Jurassic Park easter egg.
-    extraClicks.current += 1;
-    const f = extraClicks.current;
-    if (f === 1) {
-      // eslint-disable-next-line no-console
-      console.log('> access security');
-      // eslint-disable-next-line no-console
-      console.log('access: PERMISSION DENIED.');
-    } else if (f === 2) {
-      // eslint-disable-next-line no-console
-      console.log('> access security grid');
-      // eslint-disable-next-line no-console
-      console.log('access: PERMISSION DENIED.');
-    } else {
-      // eslint-disable-next-line no-console
-      console.log('> access main security grid');
-      // eslint-disable-next-line no-console
-      console.log('access: PERMISSION DENIED....and....');
-      const n = 34;
-      for (let i = 0; i < n; i++) {
-        const iteration = i;
-        setTimeout(() => {
-          // eslint-disable-next-line no-console
-          console.log("YOU DIDN'T SAY THE MAGIC WORD!");
-          // eslint-disable-next-line no-console
-          console.log('\n');
-          if (iteration === n - 1) {
-            // eslint-disable-next-line no-console
-            console.log(newman);
-          }
-        }, 150 * iteration);
-      }
-    }
-  };
 
   return (
     <>
-      <RotatePrompt />
-      <div className="container">
-        <BizCard hidden={view !== 'bizcard'} onClick={showOptions} />
-        <Options hidden={view !== 'options'} />
-        <BackButton hidden={view !== 'options'} onClick={handleBack} />
-      </div>
+      <Nav />
+      <main>
+        <Hero />
+        <About />
+        <Skills />
+        <Experience />
+        <Portfolio />
+        <BlackHoleGame />
+        <Contact />
+      </main>
     </>
   );
 }
