@@ -690,6 +690,34 @@ img { max-width: 100%; }
       transform: translate(-4px, 4px);
       transition: all 0.2s;
     }
+
+    // Stretched overlay: the whole card opens the live site.
+    &__link {
+      position: absolute;
+      inset: 0;
+      z-index: 1;
+      border-radius: inherit;
+    }
+
+    // Secondary link — sits above the overlay so it's independently clickable.
+    &__repo {
+      position: relative;
+      z-index: 2;
+      align-self: flex-start;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      margin-top: 0.2rem;
+      font-family: var(--font-mono);
+      font-size: 0.72rem;
+      letter-spacing: 0.03em;
+      color: var(--text-dim);
+      text-decoration: none;
+      transition: color 0.2s;
+
+      i { font-size: 0.9rem; }
+      &:hover { color: var(--cyan); }
+    }
   }
 }
 
