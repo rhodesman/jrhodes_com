@@ -28,8 +28,8 @@ export const projectColumns: ProjectColumn[] = [
       { name: 'Window Nation', url: 'https://windownation.com/' },
       { name: 'Cleco Neotek', url: 'https://neotek.jasonrhodes.me/' },
       { name: 'Power to Decide Online Store', url: 'https://shop.powertodecide.org/' },
-      { name: 'Liberty Mutual', url: '/live-demos/liberty-mutual/' },
-      { name: 'oPower - PG&E', url: '/live-demos/opower-pge/' },
+      { name: 'Iron Radar', url: 'https://ironradar.jasonrhodes.me/' },
+      { name: 'oPower - PG&E', url: 'https://opower.jasonrhodes.me/' },
     ],
   },
   {
