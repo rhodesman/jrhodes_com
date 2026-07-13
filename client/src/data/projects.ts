@@ -37,7 +37,6 @@ export const projectColumns: ProjectColumn[] = [
     title: 'Tech Expert',
     projects: [
       { name: 'Power Dashboard', url: 'https://dash.wblabs.co/d/EDge3c4Zk/live-graph?orgId=1' },
-      { name: 'City Garage Kiosk (4k touch)', url: 'https://cgkiosk.wblabs.co/' },
       { name: 'Plex Web Service', url: 'https://plex.wblabs.co' },
     ],
   },
