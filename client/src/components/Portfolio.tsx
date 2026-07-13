@@ -16,10 +16,10 @@ const PROJECTS = [
     featured: true,
   },
   {
-    name: 'Cleco Neotek',
+    name: 'Cleco',
     category: 'UX + Full Stack',
-    desc: 'Industrial tooling brand site with complex product navigation and UX redesign.',
-    url: 'https://neotek.jasonrhodes.me/',
+    desc: 'Unified brand site combining the Neotek, Grinder, and CellCore product lines into a single entry point, with complex product navigation and a UX redesign.',
+    url: 'https://cleco.jasonrhodes.me/',
     tags: ['UX Design', 'Frontend', 'SCSS'],
     featured: false,
   },

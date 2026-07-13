@@ -15,7 +15,7 @@ export const projectColumns: ProjectColumn[] = [
     title: 'UX Designer',
     projects: [
       { name: 'Vagrant Coffee', url: 'http://vagrant.wm-development.com/' },
-      { name: 'Cleco Neotek', url: 'https://neotek.jasonrhodes.me/' },
+      { name: 'Cleco', url: 'https://cleco.jasonrhodes.me/' },
       { name: 'YMCA of Maryland 5k', url: 'https://ymdturkeytrot.org/' },
       { name: 'Curious George', url: 'https://curiousgeorge.jasonrhodes.me/' },
       { name: 'Curious World', url: '/live-demos/curious-world/#' },
@@ -26,7 +26,7 @@ export const projectColumns: ProjectColumn[] = [
     title: 'Full Stack Developer',
     projects: [
       { name: 'Window Nation', url: 'https://windownation.com/' },
-      { name: 'Cleco Neotek', url: 'https://neotek.jasonrhodes.me/' },
+      { name: 'Cleco', url: 'https://cleco.jasonrhodes.me/' },
       { name: 'Power to Decide Online Store', url: 'https://shop.powertodecide.org/' },
       { name: 'Iron Radar', url: 'https://ironradar.jasonrhodes.me/' },
       { name: 'oPower - PG&E', url: 'https://opower.jasonrhodes.me/' },
