@@ -52,14 +52,6 @@ const PROJECTS = [
     featured: true,
   },
   {
-    name: 'City Garage 4K Touch Kiosk',
-    category: 'Hardware Interface',
-    desc: 'Custom-built 4K touchscreen kiosk UI for auto service shop. Yes, really.',
-    url: 'https://cgkiosk.wblabs.co/',
-    tags: ['Touch UI', 'JavaScript', '4K Display'],
-    featured: false,
-  },
-  {
     name: 'YMCA Maryland 5K',
     category: 'UX Design',
     desc: 'Event marketing site with registration flow for annual turkey trot 5K run.',
