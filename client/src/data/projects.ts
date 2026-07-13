@@ -16,7 +16,6 @@ export const projectColumns: ProjectColumn[] = [
     projects: [
       { name: 'Vagrant Coffee', url: 'http://vagrant.wm-development.com/' },
       { name: 'Cleco', url: 'https://cleco.jasonrhodes.me/' },
-      { name: 'YMCA of Maryland 5k', url: 'https://ymdturkeytrot.org/' },
       { name: 'Curious George', url: 'https://curiousgeorge.jasonrhodes.me/' },
       { name: 'Curious World', url: '/live-demos/curious-world/#' },
     ],
