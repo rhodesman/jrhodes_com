@@ -12,14 +12,16 @@ const PROJECTS = [
     category: 'UX + Frontend',
     desc: 'Award-nominated children\'s education platform. Interactive games, stories, and printables.',
     url: 'https://curiousgeorge.jasonrhodes.me/',
+    repo: 'https://github.com/rhodesman/curious-george-jr',
     tags: ['UX Design', 'JavaScript', 'CSS', 'Education'],
     featured: true,
   },
   {
-    name: 'Cleco Neotek',
+    name: 'Cleco',
     category: 'UX + Full Stack',
-    desc: 'Industrial tooling brand site with complex product navigation and UX redesign.',
-    url: 'https://neotek.jasonrhodes.me/',
+    desc: 'Unified brand site combining the Neotek, Grinder, and CellCore product lines into a single entry point, with complex product navigation and a UX redesign.',
+    url: 'https://cleco.jasonrhodes.me/',
+    repo: 'https://github.com/rhodesman/Cleco-Client',
     tags: ['UX Design', 'Frontend', 'SCSS'],
     featured: false,
   },
@@ -35,17 +37,19 @@ const PROJECTS = [
     name: 'oPower / PG&E Energy Dashboard',
     category: 'Data Visualization',
     desc: 'AngularJS energy usage dashboard with real-time data, usage history, and utility billing UI.',
-    url: '/live-demos/opower-pge/',
+    url: 'https://opower.jasonrhodes.me/',
+    repo: 'https://github.com/rhodesman/opower-pge',
     tags: ['AngularJS', 'D3.js', 'Foundation', 'APIs'],
     featured: true,
   },
   {
-    name: 'Liberty Mutual Annual Review',
-    category: 'Marketing',
-    desc: 'Interactive corporate annual review site with video modals and multimedia content.',
-    url: '/live-demos/liberty-mutual/',
-    tags: ['jQuery', 'Bootstrap', 'Video', 'HTML5'],
-    featured: false,
+    name: 'Iron Radar',
+    category: 'Security / Dashboard',
+    desc: 'Framework-detection recon dashboard — identifies web technologies on target systems with confidence scoring, detection-coverage analysis, and CSV export.',
+    url: 'https://ironradar.jasonrhodes.me/',
+    repo: 'https://github.com/rhodesman/ironRadar',
+    tags: ['Node.js', 'SCSS', 'Docker', 'Security', 'Dashboard'],
+    featured: true,
   },
   {
     name: 'City Garage 4K Touch Kiosk',
@@ -73,23 +77,37 @@ export function Portfolio() {
         <h3 className="section-title">Things I&apos;ve shipped</h3>
         <div className="portfolio-grid">
           {PROJECTS.map(p => (
-            <a
+            <div
               key={p.name}
-              href={p.url}
-              target={p.url.startsWith('http') ? '_blank' : '_self'}
-              rel={p.url.startsWith('http') ? 'noreferrer' : undefined}
               className={`portfolio-card${p.featured ? ' portfolio-card--featured' : ''}`}
             >
+              <a
+                className="portfolio-card__link"
+                href={p.url}
+                target={p.url.startsWith('http') ? '_blank' : '_self'}
+                rel={p.url.startsWith('http') ? 'noreferrer' : undefined}
+                aria-label={`${p.name} — open live site`}
+              />
               <div className="portfolio-card__category">{p.category}</div>
               <div className="portfolio-card__name">{p.name}</div>
               <div className="portfolio-card__desc">{p.desc}</div>
               <div className="portfolio-card__tags">
                 {p.tags.map(t => <span key={t} className="tag">{t}</span>)}
               </div>
-              <div className="portfolio-card__arrow">
+              {p.repo && (
+                <a
+                  className="portfolio-card__repo"
+                  href={p.repo}
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <i className="fa-brands fa-github" /> View code
+                </a>
+              )}
+              <span className="portfolio-card__arrow" aria-hidden="true">
                 <i className="fa-solid fa-arrow-up-right-from-square" />
-              </div>
-            </a>
+              </span>
+            </div>
           ))}
         </div>
       </div>
