@@ -51,14 +51,6 @@ const PROJECTS = [
     tags: ['Node.js', 'SCSS', 'Docker', 'Security', 'Dashboard'],
     featured: true,
   },
-  {
-    name: 'YMCA Maryland 5K',
-    category: 'UX Design',
-    desc: 'Event marketing site with registration flow for annual turkey trot 5K run.',
-    url: 'https://ymdturkeytrot.org/',
-    tags: ['UX Design', 'CSS', 'Events'],
-    featured: false,
-  },
 ];
 
 export function Portfolio() {
