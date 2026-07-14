@@ -1,3 +1,5 @@
+import { track } from '../lib/analytics';
+
 export function Contact() {
   return (
     <section className="contact-section" id="contact">
@@ -10,14 +12,14 @@ export function Contact() {
         </p>
         <div className="contact-links">
 
-          <a className="contact-card" href="https://linkedin.com/in/rhodesman" target="_blank" rel="noreferrer">
+          <a className="contact-card" href="https://linkedin.com/in/rhodesman" target="_blank" rel="noreferrer" onClick={() => track('contact: LinkedIn')}>
             <i className="fa-brands fa-linkedin" />
             <div>
               <div className="contact-card__label">LinkedIn</div>
               <div className="contact-card__value">linkedin.com/in/rhodesman</div>
             </div>
           </a>
-          <a className="contact-card" href="https://github.com/rhodesman" target="_blank" rel="noreferrer">
+          <a className="contact-card" href="https://github.com/rhodesman" target="_blank" rel="noreferrer" onClick={() => track('contact: GitHub')}>
             <i className="fa-brands fa-github" />
             <div>
               <div className="contact-card__label">GitHub</div>
