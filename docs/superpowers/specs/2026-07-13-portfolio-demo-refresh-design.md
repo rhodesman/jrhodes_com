@@ -87,3 +87,48 @@ These are documented in the new project's README; the deploy itself is manual.
 - `npm run build` succeeds and `site/dist` reflects the changes.
 - The standalone `opower-pge` project renders content locally (no blank page) and has a
   working Docker build.
+
+---
+
+## Delivered (2026-07-13 → 2026-07-14)
+
+This section records the actual outcome, including follow-on changes made beyond the
+original plan above. All portfolio changes shipped via PRs #1–4 (all merged to `main`
+and deployed).
+
+### Portfolio card changes (`client/src/components/Portfolio.tsx`, mirrored in `client/src/data/projects.ts`)
+- **Liberty Mutual → Iron Radar** — links to `https://ironradar.jasonrhodes.me/`.
+- **oPower** — repointed from the broken in-repo `/live-demos/opower-pge/` to
+  `https://opower.jasonrhodes.me/`.
+- **Cleco Neotek → Cleco** — a single card at `https://cleco.jasonrhodes.me/`, described
+  as unifying the Neotek, Grinder, and CellCore product lines.
+- **GitHub "View code" links** — added to the four cards with public repos (Iron Radar,
+  oPower, Cleco, Curious George). Implementation: the card is a `<div>` with a stretched
+  overlay `<a>` (live site) plus a separate, higher-`z-index` repo link so both are
+  independently clickable.
+- **Removed cards:** City Garage 4K Touch Kiosk (both live URLs broken; being rebuilt in
+  React — hidden until ready) and YMCA Maryland 5K (trim to an even six cards). Both
+  preserved in git history.
+
+Final grid = 6 cards: Window Nation, Curious George, Cleco, Power to Decide, oPower,
+Iron Radar.
+
+### oPower standalone project
+- Split into repo `rhodesman/opower-pge`, blank-page bug fixed (removed a dead
+  `easy.myfonts.net` loader; the real "blank page" was caused by serving at a subpath —
+  it renders fine at the subdomain root). Runs as a Docker Compose service
+  (`opower-web`, `restart: unless-stopped`, host port 8083) behind nginx-proxy-manager.
+
+### Adjacent fixes made during the session (not portfolio code)
+- **Main site 502:** the Express app wasn't running — restarted under PM2 (`jrhodes-com`).
+- **`curiousgeorge.jasonrhodes.me`:** JS was dead because its Apache-hosted `index.html`
+  had `<base href>` pointing at the main site, forcing cross-origin asset loads that
+  failed on a 522. Fixed by rewriting the base to `/` in the Apache docroot so it uses
+  its self-hosted copy.
+- **Docs:** `CLAUDE.md` and `README.md` refreshed to describe the current Vite + React +
+  TypeScript architecture (they had described the retired Express/Bootstrap + SCSS/Terser
+  setup).
+
+Deployment topology and recurring gotchas (Apache static-hosting `<base href>` / `/fw/*`
+traps, 502-vs-522 signatures) are captured in the assistant's project memory rather than
+here, since they describe server state outside this repo.
