@@ -4,9 +4,9 @@ Personal portfolio website for Jason Rhodes — UX Designer & Full Stack Develop
 
 ## Tech Stack
 
-- **Server:** Express 5 (Node.js)
-- **Frontend:** Bootstrap 5, FontAwesome 6 Free, vanilla JS
-- **Build:** Dart Sass (SCSS → CSS), Terser (JS minification)
+- **Frontend:** React 19 + TypeScript, built with Vite 6
+- **Styling:** SCSS (compiled by Vite via `sass-embedded`), Bootstrap 5, FontAwesome 6 Free
+- **Server:** Express 5 (Node.js) — serves the built SPA and static assets
 
 ## Getting Started
 
@@ -15,34 +15,42 @@ npm install
 npm run dev
 ```
 
-This starts the SCSS/JS file watchers and the Express server concurrently. The site runs at `http://localhost:8888`.
+`npm run dev` runs the Vite dev server and the Express server together. The app runs at `http://localhost:8888`.
 
 ## Scripts
 
 | Command | Description |
 |---|---|
-| `npm run dev` | Watch files + run dev server |
-| `npm run build` | One-shot compile of CSS and JS |
-| `npm run build:css` | Compile SCSS to `site/dist/main.css` |
-| `npm run build:js` | Minify JS to `site/dist/main-min.js` |
-| `npm start` | Build + start server (production) |
-| `npm test` | Start server with Node inspector |
+| `npm run dev` | Run the Vite client and Express server concurrently |
+| `npm run build` | Build the React app (`client/`) to `site/dist/` |
+| `npm run typecheck` | Type-check with `tsc --noEmit` |
+| `npm start` | Build, then start the Express server (production) |
+| `npm run serve` | Start the Express server without building |
+| `npm test` | Launch the server with the Node inspector (no test suite) |
 
 ## Project Structure
 
 ```
-app.js              Express server entry point
-controls/routes.js  Route definitions (serves node_modules assets via /fw/:name)
-site/               Static site root (served by Express)
-  ├── index.html    Main page
-  ├── dist/         Compiled CSS and JS output
-  ├── webfonts/     FontAwesome 6 font files
-  ├── img/          Images and logos
-  └── live-demos/   Self-contained portfolio demo projects
-src/                Source files
-  ├── js/           JavaScript source (main.js, ansi.js)
-  └── scss/         SCSS source (main.scss + partials in inc/)
+app.js                Express server — serves site/dist then the rest of site/
+controls/routes.js    Stub for future server-side endpoints
+client/               Vite + React + TypeScript source
+  ├── index.html      Vite HTML entry
+  ├── vite.config.ts  Vite config
+  └── src/
+      ├── main.tsx        App entry (mounts <App>, imports FontAwesome CSS)
+      ├── App.tsx         Page composition
+      ├── components/     Section components (Hero, Portfolio, etc.) + games
+      ├── data/           projects.ts (not currently imported)
+      ├── lib/            ansi.ts (console easter egg)
+      └── styles/         main.scss + inc/ partials
+site/                 Static root served by Express
+  ├── dist/           Vite build output (gitignored)
+  └── live-demos/     Self-contained legacy demo projects
 ```
+
+## Deployment
+
+Runs under PM2 (`ecosystem.config.js`) on port 8888, behind nginx-proxy-manager and Cloudflare. Redeploy with `git pull && npm run build && pm2 restart jrhodes-com`.
 
 ## License
 
