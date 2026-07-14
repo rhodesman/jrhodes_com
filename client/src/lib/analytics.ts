@@ -5,7 +5,7 @@
 // To enable: create a project at https://clarity.microsoft.com, copy its
 // project ID, and paste it below. Until then everything here is a no-op, so
 // the site works fine with analytics "off".
-const CLARITY_PROJECT_ID = '';
+const CLARITY_PROJECT_ID = 'xmjq39vuxh';
 
 type ClarityFn = ((...args: unknown[]) => void) & { q?: unknown[] };
 
