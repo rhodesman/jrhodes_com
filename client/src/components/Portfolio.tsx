@@ -1,3 +1,5 @@
+import { track } from '../lib/analytics';
+
 const PROJECTS = [
   {
     name: 'Window Nation',
@@ -71,6 +73,7 @@ export function Portfolio() {
                 target={p.url.startsWith('http') ? '_blank' : '_self'}
                 rel={p.url.startsWith('http') ? 'noreferrer' : undefined}
                 aria-label={`${p.name} — open live site`}
+                onClick={() => track(`project: ${p.name}`)}
               />
               <div className="portfolio-card__category">{p.category}</div>
               <div className="portfolio-card__name">{p.name}</div>
@@ -84,6 +87,7 @@ export function Portfolio() {
                   href={p.repo}
                   target="_blank"
                   rel="noreferrer"
+                  onClick={() => track(`code: ${p.name}`)}
                 >
                   <i className="fa-brands fa-github" /> View code
                 </a>

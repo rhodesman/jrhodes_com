@@ -8,6 +8,10 @@ import '@fortawesome/fontawesome-free/css/all.min.css';
 import './styles/main.scss';
 
 import { App } from './App';
+import { initAnalytics } from './lib/analytics';
+
+// Load Microsoft Clarity (no-op until a project ID is configured in analytics.ts).
+initAnalytics();
 
 const container = document.getElementById('root');
 if (!container) {
