@@ -3,10 +3,10 @@ import { track } from '../lib/analytics';
 const PROJECTS = [
   {
     name: 'Window Nation',
-    category: 'Full Stack',
-    desc: 'Full site migration from legacy WordPress to Next.js/React. 150K+ monthly visitors, Lighthouse 27→97.',
+    category: 'Full Stack / Lead',
+    desc: 'Led the external development agency team through full site modernization from legacy WordPress to Next.js/React. 150K+ monthly visitors, directed the Lighthouse improvement from 27→97.',
     url: 'https://windownation.com/',
-    tags: ['Next.js', 'React', 'TypeScript', 'Performance'],
+    tags: ['Leadership', 'Next.js', 'React', 'Performance'],
     featured: true,
   },
   {

@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-Personal portfolio website for Jason Rhodes (UX Designer & Full Stack Developer). It's a **Vite + React 19 + TypeScript** single-page app in `client/`, built to `site/dist/` and served by a thin **Express 5** server (`app.js`).
+Personal portfolio website for Jason Rhodes (Sr. Web Developer, Development Team Lead & Frontend Engineer). It's a **Vite + React 19 + TypeScript** single-page app in `client/`, built to `site/dist/` and served by a thin **Express 5** server (`app.js`).
 
 ## Commands
 

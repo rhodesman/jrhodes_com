@@ -1,8 +1,11 @@
 import { useEffect, useRef, useState } from 'react';
 
 const ROLES = [
-  'Senior Frontend Developer',
+  'Sr. Web Developer',
+  'Development Team Lead',
+  'Frontend Engineering Lead',
   'Full Stack Engineer',
+  'AI-Assisted Developer',
   'UX Thinker',
   'Performance Obsessive',
   'Car Enthusiast',

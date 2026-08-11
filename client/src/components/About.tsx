@@ -30,10 +30,19 @@ export function About() {
               Not a bad thing to have on a wall.
             </p>
             <p>
-              Most recently I rebuilt{' '}
+              Most recently at Window Nation, I led the modernization of{' '}
               <a href="https://windownation.com" target="_blank" rel="noreferrer">windownation.com</a>{' '}
-              — migrating a legacy WordPress site to Next.js/React serving 150K+ monthly
-              visitors, pushing Lighthouse from <strong>27 → 97</strong>.
+              — advising the CEO and C-suite on vendor RFP evaluations, then leading the
+              external development agency through the migration from legacy WordPress to
+              Next.js/React on a site serving 150K+ monthly visitors. Directed the effort
+              that pushed Lighthouse from <strong>27 → 97</strong>.
+            </p>
+            <p>
+              <strong>Claude Code</strong> has been my daily engineering workflow for over
+              a year — I&apos;ve built the prompt patterns, guardrails, and review discipline
+              for AI-assisted development, including the discipline of knowing when to
+              trust AI output and when not to. It&apos;s a craft tool, not a replacement for
+              judgment.
             </p>
             <p>
               When I&apos;m not coding, I&apos;m probably wrenching on a car, messing with my home lab,

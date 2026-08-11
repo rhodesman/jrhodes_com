@@ -47,6 +47,17 @@ const SKILL_GROUPS = [
       { name: 'Chrome DevTools',    level: 90 },
     ],
   },
+  {
+    label: 'AI-Assisted Dev',
+    icon: 'fa-solid fa-robot',
+    skills: [
+      { name: 'Claude Code',              level: 95 },
+      { name: 'Prompt Engineering',       level: 90 },
+      { name: 'AI-Assisted Refactoring',  level: 92 },
+      { name: 'AI Code Review',           level: 90 },
+      { name: 'MCP / Tool Integration',   level: 85 },
+    ],
+  },
 ];
 
 export function Skills() {

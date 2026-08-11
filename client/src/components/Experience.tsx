@@ -1,16 +1,17 @@
 const JOBS = [
   {
-    title: 'Sr. Frontend Developer',
+    title: 'Sr. Web Developer / Development Team Lead',
     company: 'Window Nation',
     location: 'Fulton, MD (Remote)',
     dates: '2023 – 2026',
     highlights: [
-      'Led full migration from legacy WordPress to Next.js/React for 150K+ monthly visitors',
-      'Lifted Lighthouse score from 27 → 97 via code splitting, lazy loading, and asset optimization',
-      'Built reusable React component library with SCSS design tokens',
-      'Established Git workflows, CI/CD pipelines, and QA review processes',
+      'Advised the CEO and C-suite on vendor RFP evaluations; selected the external development partner for the site modernization',
+      'Led the external development agency team through end-to-end migration from legacy WordPress to Next.js/React (150K+ monthly visitors)',
+      'Directed the effort that improved Lighthouse from 27 → 97; served as the technical interface between the vendor team and internal SEO, design, and executive stakeholders',
+      'Owned end-to-end custom-domain CDN setup — coordinated internal IT and hosting company on DNS, TLS certificates, and origin validation',
+      'Personally re-architected a legacy ASP.NET application into a modern custom CMS using Claude Code — individual technical contribution alongside team-lead duties',
     ],
-    tags: ['React', 'Next.js', 'TypeScript', 'SCSS', 'CI/CD'],
+    tags: ['Leadership', 'React', 'Next.js', 'TypeScript', 'Vendor Mgmt', 'AI-Assisted Dev'],
     accent: false,
   },
   {

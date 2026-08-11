@@ -1,6 +1,6 @@
 # jrhodes.com
 
-Personal portfolio website for Jason Rhodes — UX Designer & Full Stack Developer.
+Personal portfolio website for Jason Rhodes — Sr. Web Developer, Development Team Lead & Frontend Engineer.
 
 ## Tech Stack
 
