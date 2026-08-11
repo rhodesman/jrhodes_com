@@ -11,9 +11,9 @@ export function About() {
             </h3>
             <p>
               My career started in 2000 — the wild-west era of table layouts and Flash intros.
-              I've watched the web grow up, and I grew with it. Today I specialize in
-              modern React/TypeScript frontends with a deep obsession for performance,
-              accessibility, and UX that actually makes sense.
+              I've watched the web grow up, and I grew with it. Today I lead engineering
+              teams building modern React/TypeScript frontends, with a deep obsession for
+              performance, accessibility, and UX that actually makes sense.
             </p>
             <p>
               My Computer Science degree had a focus on{' '}
